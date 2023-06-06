@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="../dist/css/swiper.min.css">
+
+  <!-- Demo styles -->
+  <style>
+  *{box-sizing:border-box;}
+    html, body {
+      position: relative;
+      height: 100%;
+    }
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color:#000;
+      margin: 0;
+      padding: 0;
+    }
+    .swiper-container {
+	  border:1px solid #fe1020;
+      width: 100%;
+      height: 100%;
+    }
+    .swiper-slide {
+	  width:100%;height:100%;
+      text-align: center;
+      font-size: 18px;
+      border:1px solid #0020ef;
+	  background-size:cover;
+	  background-position:50% 50%;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+	.s1{
+		background-image:url('../images/pattern_wallpaper1.jpg');
+	}
+	.s2{
+		background-image:url('../images/pattern_wallpaper2.jpg');
+	}
+	.s3{
+		background-image:url('../images/pattern_wallpaper3.jpg');
+	}
+	.s4{
+		background-image:url('../images/pattern_wallpaper4.jpg');
+	}
+	.s5{
+		background-image:url('../images/pattern_wallpaper5.jpg');
+	}
+	.s6{
+		background-image:url('../images/pattern_wallpaper6.jpg');
+	}
+	.s7{
+		background-image:url('../images/pattern_wallpaper7.jpg');
+	}
+	.s8{
+		background-image:url('../images/pattern_wallpaper8.jpg');
+	}
+     .swiper-button-next{
+          right:50px;
+          width:80px;
+          height:80px;
+          background-image:
+     }
+     .swiper-button-prev{
+
+     }
+  </style>
+</head>
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide s1"></div>
+      <div class="swiper-slide s2"></div>
+      <div class="swiper-slide s3"></div>
+      <div class="swiper-slide s4"></div>
+      <div class="swiper-slide s5"></div>
+      <div class="swiper-slide s6"></div>
+      <div class="swiper-slide s7"></div>
+      <div class="swiper-slide s8"></div>
+      <!--<div class="swiper-slide"><img src='../images/pattern-wallpaper1.jpg' alt='' /></div>
+      <div class="swiper-slide"><img src='../images/pattern-wallpaper1.jpg' alt='' /></div>-->
+    </div>
+
+	 <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="../dist/js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container',
+	{
+		navigation:{
+			nextEl:'.swiper-button-next',
+			prevEl:'.swiper-button-prev',
+		},
+
+		//direction:'vertical',
+		loop:true,
+
+		pagination:{
+			el:'.swiper-pagination',
+			clickable:true,
+			type:'fraction'
+		},
+		scrollbar:{
+			el:'.swiper-scrollbar'
+		},
+		//effect:fade
+		autoplay:{
+			delay:3000,
+			disableOnInteraction:false
+		},
+		speed:1000
+	});
+
+</script>
+</body>
+</html>
