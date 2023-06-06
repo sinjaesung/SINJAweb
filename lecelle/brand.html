@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/position_and_another_based.css"/>
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+<header class="lecell_header position_absolute zindex550
+mobile_flex_horizontal_spaceBetween mobile_paddingtop_35 mobile_paddingleft_34 mobile_paddingright_32 mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent
+
+tablet_flex_horizontal_spaceBetween mt_paddingtop_35 mt_paddingleft_34 mt_paddingright_32 mt_positiontop_0 mt_positionleft_0 tablet_width_100_percent 
+
+pc_flex_horizontal_flexStart pcfixed_paddingtop_40 pcfixed_paddingleft_68 pcfixed_paddingright_68 pcfixed_pcfixed_paddingbottom_40 pcfixed_positiontop_0 pcfixed_positionleft_0 pc_width_100_percent 
+">
+    <a href="main.html"><img src="img/mobile/sitelogo2.png" class="display_block sitelogo
+    mobile_width_192 mobile_height_46
+    mt_width_192 mt_height_46
+    pcfixed_width_130 pcfixed_height_31
+    " style="flex:0 0 auto"></a>
+
+    <ul class="headermenu 
+    pc_flex_horizontal_flexStart pc_onlyview pcfixed_marginleft_66">
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='brand.html'>브랜드</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='shoplist.html'>제품보기</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='#'>정기구독</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>선물하기</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_fontsize_17"><a href='#'>FAQ</a></li>
+    </ul>
+
+    <div class="menucontrol
+    mobile_flex_horizontal_flexEnd
+    tablet_flex_horizontal_flexEnd
+    pc_flex_horizontal_flexEnd" style="flex:1 0 auto">
+        <span class="colorblack display_block
+        pc_onlyview pcfixed_fontsize_17 pcfixed_paddingright_35"><a href="login.html">로그인</a></span>
+        <a href="cart.html">
+            <span class="display_block bgcolor_graywhite
+            mobile_width_80 mobile_height_80 mobile_marginright_42 mobile_borderradius_40 mobile_flex_horizontal_Center
+            mt_width_80  mt_height_80 mt_marginright_42 mt_borderradius_40 tablet_flex_horizontal_Center
+            pcfixed_width_50 pcfixed_height_50 pcfixed_borderradius_25 pc_flex_horizontal_Center
+            ">
+                <img src="img/mobile/cart.svg" class="display_block
+                mobile_width_33 mobile_height_33
+                mt_width_33 mt_height_33
+                pcfixed_width_20 pcfixed_height_20">
+            </span>
+        </a>
+        
+        <img src="img/mobile/menubar2.png" class="
+        mobile_width_41 mobile_height_25 mobile_onlyview
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger
+        "
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+        <img src="img/mobile/menubar2.png" class="
+        mt_width_41 mt_height_25 tablet_onlyview
+        
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+    </div>
+</header>
+
+<div class="popupbg" targetindex="navBg" style="display:none"></div>
+<nav class="position_absolute zindex999
+    width_720 positiontop_0 
+    mobile_width_720  mobile_height_100_percent mobile_positiontop_0 
+    mt_width_720  tablet_positiontop_0 tablet_height_100_percent
+    pc_height_100_percent"
+targetindex="lecelle_navigation"
+style="left:-120%;">
+    <img src="img/mobile/naviBg.png" class="img_background_cover_center"/>
+    <div class="position_relative_zindex3
+    flex_horizontal_spaceBetween paddingtop_38 paddingleft_34 paddingright_39 
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_38 mobile_paddingleft_34 mobile_paddingright_39
+    tablet_flex_horizontal_spaceBetween mt_paddingtop_38 mt_paddingleft_34 mt_paddingright_39">
+        <img src="img/mobile/sitelogo.png" class="
+        width_192 height_46
+        mobile_width_192 mobile_height_46 
+        mt_width_192 mt_height_46">
+        <img src="img/mobile/xbtn.png" class="
+        width_32 height_32 
+        mobile_width_32 mobile_height_32
+        mt_width_32 mt_height_32
+
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|-120%",  "viewunviewTarget":"navBg","viewunviewto":"none"}'/>
+    </div>
+
+    <ul class="menulist position_relative_zindex3 
+    textalignCenter paddingtop_110
+    mobile_textalignCenter mobile_paddingtop_110
+    tablet_textalignCenter mt_paddingtop_110
+    ">
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='brand.html'>브랜드</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='shoplist.html'>제품보기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='surveyform.html'>선물하기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="usercontrol colorwhite bordercolorwhite position_relative_zindex3 borderstyle_solid
+    flex_horizontal_Center margintop_88 bordertop_1 borderbottom_1 textalignCenter
+    mobile_flex_horizontal_Center mobile_margintop_88 mobile_bordertop_1 mobile_borderbottom_1 mobile_textalignCenter
+    tablet_flex_horizontal_Center mt_margintop_88 mt_bordertop_1 mt_borderbottom_1 tablet_textalignCenter">
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 borderright_1
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360 mobile_borderright_1
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360 mt_borderright_1
+        "><a href='mypage.html'>마이페이지</a></p>
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360
+        "><a href='#'>로그아웃</a></p>
+    </div>
+</nav>
+
+<section class="section1 position_relative_normal bgcolor_lecelle1
+mobile_height_1443
+mt_height_1443
+pcfixed_height_1250
+">
+    <img src="img/mobile/brandimg.png" class="display_block img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/brandimg.png" class="display_block position_absolute
+    tablet_onlyview tablet_positionright_0 tablet_positiontop_0 mt_width_720 tablet_height_100_percent"/>
+
+    <img src="img/pc/brandimg.png" class="display_block position_absolute
+    pc_onlyview pc_positionright_0 pc_positiontop_0 pcfixed_width_960 pcfixed_height_1250"/>
+
+    <div class="messagearea position_absolute colorwhite zindex50
+    mobile_paddingtop_604 mobile_textalignCenter mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent mobile_height_100_percent
+    mt_paddingtop_604 tablet_textalignCenter mt_positiontop_0 mt_positionleft_0 mt_width_720 tablet_height_100_percent
+    pcfixed_paddingtop_544 pc_textalignCenter pc_positiontop_0 pc_positionleft_0 pc_response_width_960 pc_height_100_percent
+    " >
+        <h2 class="tit
+        mobile_fontsize_42 
+        mt_fontsize_42
+        pcfixed_fontsize_40">
+            “오늘 머리 감았어?”<br/>
+            “감은지 얼마 안 되었는데...”
+        </h2>
+        <p class="txt
+        mobile_margintop_81 mobile_fontsize_28
+        mt_margintop_81 mt_fontsize_28
+        pcfixed_margintop_54 pcfixed_fontsize_23
+        ">
+            만수르 지성인
+        </p>
+       
+    </div>
+    <img src="img/mobile/brandarrow.png" class="display_block position_absolute
+    mobile_width_45 mobile_height_46 mobile_positionbottom_120 mobile_positionleft_338
+    mt_width_45 mt_height_46 mt_positionbottom_120 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+    pcfxied_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940
+    "/>
+</section>
+<section class="section2 position_relative_normal bgcolor_warmbrightness
+mobile_height_1443
+mt_height_1443
+pcfixed_height_1250">
+    <img src="img/mobile/brandimg2.png" class="display_block img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/brandimg2.png" class="display_block position_absolute
+    tablet_onlyview mt_width_720 tablet_height_100_percent tablet_positionright_0 tablet_positiontop_0"/>
+    
+    <img src="img/pc/brandimg2.png" class="display_block position_absolute
+    pc_onlyview pcfixed_width_960 pcfixed_height_1250 pc_positionleft_0 pc_positiontop_0"/>
+
+
+    <div class="messagearea position_absolute colorblack zindex50
+    mobile_paddingtop_564 mobile_textalignCenter mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent mobile_height_100_percent
+    mt_paddingtop_564 tablet_textalignCenter tablet_positiontop_0 tablet_positionleft_0 mt_width_720 tablet_height_100_percent
+    pcfixed_paddingtop_544 pc_textalignRight pc_positiontop_0 pc_positionright_0 pc_response_width_960 pc_height_100_percent
+    ">
+        <h2 class="tit
+        mobile_fontsize_42 
+        mt_fontsize_42
+        pcfixed_fontsize_40 pc_response_paddingright_60">
+        “아 사무실<br/>
+        너무 건조해...”
+        </h2>
+        <p class="txt
+        mobile_margintop_81 mobile_fontsize_28
+        mt_margintop_81 mt_fontsize_28
+        pcfixed_margintop_81 pcfixed_fontsize_28 pc_response_paddingright_60
+        ">
+            가습기 러버
+        </p>
+    </div>
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+    mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+    mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+    pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_56 pc_response_positionleft_940"/>
+</section>
+
+<section class="section3 position_relative_normal bgcolor_lecelle1
+mobile_height_1443
+mt_height_1443
+pcfixed_height_1250">
+    <img src="img/mobile/brandimg3.png" class="display_block img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/brandimg3.png" class="display_block position_absolute
+    tablet_onlyview mt_width_720 tablet_height_100_percent tablet_positionright_0 tablet_positiontop_0"/>
+
+    <img src="img/pc/brandimg3.png" class="display_block position_absolute
+    pc_onlyview pcfixed_width_960 pcfixed_height_1250 pc_positionright_0 pc_positiontop_0"/>
+
+    <div class="messagearea position_absolute colorwhite zindex50
+    mobile_paddingtop_604 mobile_textalignCenter mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent mobile_height_100_percent
+    mt_paddingtop_604 tablet_textalignCenter tablet_positiontop_0 tablet_positionleft_0 mt_width_720 tablet_height_100_percent
+    pcfixed_paddingtop_544 pc_textalignCenter pc_positiontop_0 pc_positionleft_0 pc_response_width_960 pc_height_100_percent">
+        <h2 class="tit
+        mobile_fontsize_42 
+        mt_fontsize_42
+        pcfixed_fontsize_40">
+        “정민아. 옷에 머리카락<br/>
+        묻었다, 떼줄까?”
+        </h2>
+        <p class="txt
+        mobile_margintop_77 mobile_fontsize_28 
+        mt_margintop_77 mt_fontsize_28
+        pcfixed_margintop_54 pcfixed_fontsize_23
+        ">
+        블랙코트 커리어우먼
+        </p>
+
+    </div>
+    <img src="img/mobile/brandarrow.png" class="display_block position_absolute
+    mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+    mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+    pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_56 pc_response_positionleft_940
+    "/>
+</section>
+
+<section class="section4 position_relative_normal
+mobile_height_1443
+mt_height_1333 tablet_overflow_hidden
+pcfixed_height_1250 pc_overflow_hidden
+">
+    <img src="img/mobile/brandimg4.png" class="display_block img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/brandimg4.png" class="display_block img_background_cover_width_center
+    tablet_onlyview"/>
+    <img src="img/pc/brandimg4.png" class="display_block img_background_cover_height
+    pc_onlyview"/>
+    
+
+    <div class="messagearea position_absolute colorwhite zindex50
+    mobile_paddingtop_76 mobile_textalignCenter mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent mobile_height_100_percent
+    mt_paddingtop_96 tablet_textalignCenter tablet_positiontop_0 tablet_positionleft_0 tablet_width_100_percent tablet_height_100_percent
+    pcfixed_paddingtop_81 pc_textalignCenter pc_positiontop_0 pc_positionleft_0 pc_width_100_percent pc_height_100_percent">
+        <h2 class="tit fontfamily_NewBaskerville_Roman
+        mobile_fontsize_69
+        mt_fontsize_69
+        pcfixed_fontsize_64">
+        It’s truly yours
+        </h2>
+        <span class="display_block bgcolor_white
+        mobile_width_480 mobile_height_1 mobile_margintop_44 mobile_marginhorizontal_auto
+        mt_width_480 mt_height_1 mt_margintop_44 tablet_marginhorizontal_auto
+        pcfixed_width_480 pcfixed_height_1 pcfixed_margintop_45 pc_marginhorizontal_auto"></span>
+        <p class="txt
+        mobile_margintop_30 mobile_fontsize_28 
+        mt_margintop_30 mt_fontsize_28
+        pcfixed_margintop_32 pcfixed_fontsize_26
+        ">
+        당신이 원하는 기능과 향의 330가지 조합, <br/>
+        새로운 경험의 맞춤케어 브랜드 <br/>
+        ‘le celle 르셀르’
+        </p>
+        <span class="display_block bgcolor_white
+        mobile_width_480 mobile_height_1 mobile_margintop_32 mobile_marginhorizontal_auto
+        mt_width_480 mt_height_1 mt_margintop_32 tablet_marginhorizontal_auto
+        pcfixed_width_480 pcfixed_height_1 pcfixed_margintop_30 pc_marginhorizontal_auto
+        "></span>
+
+        <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940
+        "/>
+    </div>
+</section>
+
+<section class="section5 position_relative_normal bgcolor_warmbrightness
+
+pc_overflow_hidden">
+    <div class="messagearea  colorblack zindex50 
+    mobile_textalignCenter mobile_width_100_percent
+    tablet_textalignCenter tablet_width_100_percent
+    pc_textalignCenter pc_width_100_percent
+    ">
+        <h2 class="tit
+        mobile_paddingtop_93 mobile_fontsize_42 
+        mt_paddingtop_93 mt_fontsize_42
+        pcfixed_paddingtop_93 pcfixed_fontsize_40">
+        혹시 당신도 <br/>
+        샴푸 유목민 이신가요?
+        </h2>
+        <p class="txts
+        mobile_fontsize_28 mobile_margintop_37
+        mt_fontsize_28 mt_margintop_37
+        pcfixed_fontsize_26 pcfixed_margintop_54">
+        샴푸 유목민이란?
+        </p>
+       
+        <span class="display_block borderstyle_solid bordercolorblack1
+        mobile_width_29 mobile_height_29 mobile_border_1 mobile_margintop_72 mobile_marginhorizontal_auto
+        mt_width_29 mt_height_29 mt_border_1 mt_margintop_72 tablet_marginhorizontal_auto
+        pcfixed_width_29 pcfixed_height_29 pcfixed_border_1 pcfixed_margintop_52 pc_marginhorizontal_auto
+        ">
+            <img src="img/mobile/check.png" class="display_block position_relative_normal
+            mobile_marginleft_6 mobile_width_35 mobile_height_26 mobile_positionbottom_7
+            mt_marginleft_6 mt_width_35 mt_height_26 mt_positionbottom_7
+            pcfixed_marginleft_6 pcfixed_width_35 pcfixed_height_26 pcfixed_positionbottom_7
+            "/>
+        </span>
+        <p class="content
+        mobile_fontsize_28 mobile_margintop_24
+        mt_fontsize_28 mt_margintop_24
+        pcfixed_fontsize_26 pcfixed_margintop_25
+        ">
+        마트나 드럭스토어에서 눈에 띄거나<br/>
+        세일하는 샴푸를 고르는 사람
+        </p>
+        
+        <span class="display_block borderstyle_solid bordercolorblack1
+        mobile_width_29 mobile_height_29 mobile_border_1 mobile_margintop_53 mobile_marginhorizontal_auto
+        mt_width_29 mt_height_29 mt_border_1 mt_margintop_53 tablet_marginhorizontal_auto
+        pcfixed_width_29 pcfixed_height_29 pcfixed_border_1 pcfixed_margintop_55 pc_marginhorizontal_auto">
+            <img src="img/mobile/check.png" class="display_block position_relative_normal
+            mobile_marginleft_6 mobile_width_35 mobile_height_26 mobile_positionbottom_7
+            mt_marginleft_6 mt_width_35 mt_height_26 mt_positionbottom_7
+            pcfixed_marginleft_6 pcfixed_width_35 pcfixed_height_26 pcfixed_positionbottom_7"/>
+        </span>
+        <p class="content
+        mobile_fontsize_28 mobile_margintop_22
+        mt_fontsize_28 mt_margintop_22
+        pcfixed_fontsize_28 pcfixed_margintop_22">
+        안전하고 나에게 맞는 샴푸를 찾아 헤매는 사람
+        </p>
+    </div>
+    <div class="wrappingimg position_relative_normal
+    mobile_margintop_98
+    mt_margintop_98 
+    pc_width_100_percent pcfixed_height_624 pcfixed_margintop_68
+    ">
+        <img src="img/mobile/brandimg5.png" class="display_block
+        mobile_height_786  mobile_onlyview
+        "/>
+        <img src="img/mobile/brandimg5.png" class="display_block
+        mt_height_786  tablet_onlyview tablet_marginhorizontal_auto
+        "/>
+        <img src="img/pc/brandimg5.png" class="display_block 
+        img_background_cover_height_center_top pc_onlyview
+        "/>
+    </div>
+   
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_56 pc_response_positionleft_940"/>
+</section>
+
+<section class="section6 position_relative_normal bgcolor_warmbrightness
+mobile_paddingbottom_150 mobile_paddingtop_84
+mt_paddingbottom_150 mt_paddingtop_84
+pcfixed_paddingbottom_130 pcfixed_paddingtop_60">
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter mobile_width_650 mobile_marginhorizontal_auto mobile_borderradius_10
+    tablet_textalignCenter mt_width_650 tablet_marginhorizontal_auto mt_borderradius_10
+    pc_textalignCenter pcfixed_width_872 pc_marginhorizontal_auto pcfixed_borderradius_10">
+        <h2 class="tits
+        mobile_paddingtop_61 mobile_fontsize_38 
+        mt_paddingtop_61 mt_fontsize_38
+        pcfixed_paddingtop_64 pcfixed_fontsize_36">
+        우리는 끼니를 때우듯 샴푸를 <br/>
+        대충사서 쓰고 있습니다.
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_49 mobile_fontsize_38 mobile_paddingbottom_74
+        mt_paddintop_49 mt_fontsize_38 mt_paddingbottom_74
+        pcfixed_paddingtop_54 pcfixed_fontsize_36 pcfixed_paddingbottom_55">
+        형형색색의 제품들과 어찌해도<br/>
+        어지러운 우리 욕실
+        </h2>
+    </div>
+    <img src="img/mobile/brandimg6.png" class="display_block
+    mobile_height_780 mobile_width_650 mobile_marginhorizontal_auto mobile_margintop_81 mobile_onlyview"/>
+    <img src="img/mobile/brandimg6.png" class="display_block
+    mt_height_780 mt_width_650 tablet_marginhorizontal_auto mt_margintop_81 tablet_onlyview"/>
+
+    <img src="img/pc/brandimg6.png" class="display_block
+    pcfixed_height_701 pcfixed_width_872 pc_marginhorizontal_auto pcfixed_margintop_37 pc_onlyview"/>
+
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section7 position_relative_normal
+mobile_paddingtop_398 mobile_paddingbottom_157
+mt_paddingtop_338 mt_paddingbottom_137 tablet_overflow_hidden
+pcfixed_paddingtop_80 pcfixed_paddingbottom_606 pc_overflow_hidden">
+    <img src="img/mobile/brandimg7.png" class="display_block img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/brandimg7.png" class="display_block img_background_cover_width_center
+    tablet_onlyview"/>
+    
+    <img src="img/pc/brandimg7.png" class="display_block img_background_cover_height
+    pc_onlyview"/>
+
+    <div class="messagearea colorblack zindex50 position_relative_normal
+    mobile_textalignCenter mobile_width_550 mobile_marginhorizontal_auto
+    tablet_textalignCenter mt_width_550 tablet_marginhorizontal_auto
+    pc_textalignCenter pcfixed_width_772 pc_marginhorizontal_auto"
+    style="background-color:rgba(255,255,255,0.25)">
+        <h2 class="tit
+        mobile_fontsize_42 mobile_paddingtop_76
+        mt_fontsize_42 mt_paddingtop_76
+        pcfixed_fontsize_40 pcfixed_paddingtop_68">
+        제품에 나를 맞추지 말고<br/>
+        나에게 제품을 
+        맞추세요
+        </h2>
+        <p class="txt
+        mobile_fontsize_50 mobile_paddingtop_85
+        mt_fontsize_50 mt_paddingtop_85
+        pcfixed_fontsize_47 pcfixed_paddingtop_40
+        ">
+        /</p>
+        <p class="txt
+        mobile_paddingtop_31 mobile_fontsize_28 mobile_paddingbottom_64
+        mt_paddingtop_31 mt_fontsize_28 mt_paddingbottom_64
+        pcfixed_paddingtop_52 pcfixed_fontsize_26 pcfixed_paddingbottom_76">
+        르셀르는 건강한 헤어/바디스킨을<br/>
+        유지할 수 있는 베이스에, <br/>
+        고객의 습관과 고민에 맞춰, <br/>
+        기능성 애드온을 더한<br/>
+        맞춤형 헤어/바디케어 <br/>
+        제품을 만듭니다.
+        </p>
+    </div>
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+    mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+    mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+    pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section8 position_relative_normal 
+mobile_paddingbottom_198
+mt_paddingbottom_198
+pcfixed_paddingbottom_205 pc_overflow_hidden
+">
+    <div class="imgwrapping position_relative_normal
+    mobile_height_821
+    mt_height_821
+    pcfixed_height_657">
+        <img src="img/mobile/brandimg8.png" class="display_block
+         mobile_onlyview mobile_height_100_percent"/>
+         <img src="img/mobile/brandimg8.png" class="display_block
+        tablet_onlyview tablet_height_100_percent tablet_marginhorizontal_auto"/>
+         
+        <img src="img/pc/brandimg8.png" class="display_block position_absolute img_background_cover_height_center_top
+         pc_onlyview"/>
+    </div>
+   
+
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_77 mobile_fontsize_32 
+        mt_paddingtop_77 mt_fontsize_32
+        pcfixed_paddingtop_76 pcfixed_fontsize_28">
+        01
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_44 mobile_fontsize_42 mobile_paddingbottom_61
+        mt_paddingtop_44 mt_fontsize_42 mt_paddingbottom_61
+        pcfixed_paddingtop_46 pcfixed_fontsize_40 pcfixed_paddingbottom_58
+        ">
+        당신의 헤어/피부 컨디션 고민에<br/>
+        대해서 묻고 듣습니다.
+        </h2>
+        <p class="contents
+        mobile_fontsize_28
+        mt_fontsize_28
+        pcfixed_fontsize_26
+        ">
+        두피 타입은 어떤지, 염색이나 펌을 했는지,<br/>
+        어떤 고민이 있는지 묻고<br/>
+        샴푸 시 물의 온도처럼 평소에<br/>
+        생각해본 적 없던 것도 질문합니다.
+        </p>
+    </div>
+    
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section9 position_relative_normal
+mobile_paddingbottom_157
+mt_paddingbottom_157
+pcfixed_paddingbottom_205 pc_overflow_hidden">
+
+    <div class="imgwrapping position_relative_normal
+    mobile_height_823
+    mt_height_823
+    pcfixed_height_657">
+        <img src="img/mobile/brandimg9.png" class="display_block
+         mobile_onlyview mobile_height_100_percent"/>
+         <img src="img/mobile/brandimg9.png" class="display_block
+        tablet_onlyview tablet_height_100_percent tablet_marginhorizontal_auto"/>
+        <img src="img/pc/brandimg9.png" class="display_block position_absolute img_background_cover_height_center_top
+        pc_onlyview"/>
+    </div>
+  
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_77 mobile_fontsize_32
+        mt_paddingtop_77 mt_fontsize_32
+        pcfixed_paddingtop_76 pcfixed_fontsize_28">
+        02
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_44 mobile_fontsize_42 mobile_paddingbottom_54
+        mt_paddingtop_44 mt_fontsize_42 mt_paddingbottom_54 
+        pcfixed_paddingtop_46 pcfixed_fontsize_40 pcfixed_paddingbottom_58">
+        르셀르만의 알고리즘을 통해<br/>
+        최적의 성분과 기능의 조합을<br/>
+        도출합니다.
+        </h2>
+        <p class="contents
+        mobile_fontsize_28
+        mt_fontsize_28
+        pcfixed_fontsize_26
+        ">
+        당신의 설문을 분석하여 당신만의<br/>
+        복잡한 헤어/피부 고민에 도움을 줄 수 있는<br/>
+        베이스와 고기능 추출물인 애드온을<br/>
+        매칭합니다.
+        </p>
+    </div>
+    
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+<section class="section10 position_relative_normal
+mobile_paddingbottom_131
+mt_paddingbottom_131
+pcfixed_paddingbottom_170 pc_overflow_hidden">
+   
+    <div class="imgwrapping position_relative_normal
+    mobile_height_823
+    mt_height_823
+    pcfixed_height_657">
+        <img src="img/mobile/brandimg9_1.png" class="display_block
+         mobile_onlyview mobile_height_100_percent"/>
+         <img src="img/mobile/brandimg9_1.png" class="display_block
+        tablet_onlyview tablet_height_100_percent tablet_marginhorizontal_auto"/>
+        <img src="img/pc/brandimg9_1.png" class="display_block position_absolute img_background_cover_height_center_top
+        pc_onlyview"/>
+    </div>
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_77 mobile_fontsize_32 
+        mt_paddingtop_77 mt_fontsize_32
+        pcfixed_paddingtop_76 pcfixed_fontsize_28
+        ">
+        03
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_44 mobile_fontsize_42 mobile_paddingbottom_60
+        mt_paddingtop_44 mt_fontsize_42 mt_paddingbottom_60
+        pcfixed_paddingtop_46 pcfixed_fontsize_40 pcfixed_paddingbottom_58">
+        프랑스 정원에서 영감을 받은<br/>
+        세 가지 향을 담았습니다.
+        </h2>
+        <p class="contents
+        mobile_fontsize_28
+        mt_fontsize_28
+        pcfixed_fontsize_26
+        ">
+        프랑스 향료교육전문기관 ISIPCA<br/>
+        (Institut Superieur International du Parfum de <br/>
+        la Cosmetcique et de l'Aromatique)에서<br/>
+        향료학을 전공한 최연희 조향사님과 조향 전문<br/>
+        디렉터님을 만나 프렌치 모던가든을 담은<br/>
+        세 가지 향을 개발했습니다.
+        </p>
+    </div>
+    
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+<section class="section11 position_relative_normal
+mobile_paddingbottom_233
+mt_paddingbottom_233
+pcfixed_paddingbottom_240 pc_overflow_hidden
+"> 
+    <div class="imgwrapping position_relative_normal
+    mobile_height_823
+    mt_height_823
+    pcfixed_height_657">
+        <img src="img/mobile/brandimg10.png" class="display_block
+        mobile_onlyview mobile_height_100_percent"/>
+        <img src="img/mobile/brandimg10.png" class="display_block
+        tablet_onlyview tablet_height_100_percent tablet_marginhorizontal_auto"/>
+        
+        <img src="img/pc/brandimg10.png" class="display_block position_absolute img_background_cover_height_center_top
+        pc_onlyview"/>
+    </div>
+  
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_77 mobile_fontsize_32 
+        mt_paddingtop_77 mt_fontsize_32
+        pcfixed_paddingtop_76 pcfixed_fontsize_28
+        ">
+        04
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_44 mobile_fontsize_42 mobile_paddingbottom_61
+        mt_paddingtop_44 mt_fontsize_42 mt_paddingbottom_61
+        pcfixed_paddingtop_46 pcfixed_fontsize_40 pcfixed_paddingbottom_58">
+        당신이 원하는 이름으로<br/>
+레터링 서비스를 제공합니다.
+        </h2>
+        <p class="contents
+        mobile_fontsize_28
+        mt_fontsize_28
+        pcfixed_fontsize_26">
+        패키지 박스와 별도 카드에 당신이<br/>
+원하는 이름으로 레터링된 제품을<br/>
+받아보세요.
+        </p>
+    </div>
+    
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section12 position_relative_normal
+mobile_paddingbottom_166
+mt_paddingbottom_166
+pcfixed_paddingbottom_169 pc_overflow_hidden
+">
+
+    <div class="imgwrapping position_relative_normal
+    mobile_height_823
+    mt_height_823
+    pcfixed_height_657">
+        <img src="img/mobile/brandimg11.png" class="display_block
+        mobile_onlyview mobile_height_100_percent"/>
+        <img src="img/mobile/brandimg11.png" class="display_block
+        tablet_onlyview tablet_height_100_percent tablet_marginhorizontal_auto"/>
+        
+        <img src="img/pc/brandimg11.png" class="display_block position_absolute img_background_cover_height_center_top
+        pc_onlyview"/>
+    </div>
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_77 mobile_fontsize_32 
+        mt_paddingtop_77 mt_fontsize_32
+        pcfixed_paddingtop_76 pcfixed_fontsize_28">
+        05
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_44 mobile_fontsize_42 mobile_paddingbottom_61
+        mt_paddingtop_44 mt_fontsize_42 mt_paddingbottom_61
+        pcfixed_paddingtop_45 pcfixed_fontsize_40 pcfixed_paddingbottom_58">
+        환경까지 생각한 착하고 정성스러운<br/>
+패키지에 담아 드립니다.
+        </h2>
+        <p class="contents
+        mobile_fontsize_28
+        mt_fontsize_28
+        pcfixed_fontsize_26">
+        재활용이 가능한 종이로<br/>
+제품 크기에 꼭 맞는 상자를 제작했습니다.<br/>
+당신이 제품을 받고 상자를 여는 과정에서도<br/>
+만족감을 느낄 수 있도록<br/>
+정성스럽게 담아 드립니다.
+        </p>
+    </div>
+    
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section13 position_relative_normal
+mobile_paddingbottom_230
+mt_paddingbottom_230
+pcfixed_paddingbottom_205 pc_overflow_hidden">
+ 
+    <div class="imgwrapping position_relative_normal
+    mobile_height_821
+    mt_height_821
+    pcfixed_height_657">
+        <img src="img/mobile/brandimg12.png" class="display_block
+        mobile_onlyview mobile_height_100_percent"/>
+        <img src="img/mobile/brandimg12.png" class="display_block
+        tablet_onlyview tablet_height_100_percent tablet_marginhorizontal_auto"/>
+        
+        <img src="img/pc/brandimg12.png" class="display_block position_absolute img_background_cover_height_center_top
+        pc_onlyview"/>
+    </div>
+
+    <div class="messagearea bgcolor_white colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter
+    ">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_77 mobile_fontsize_32 
+        mt_paddingtop_77 mt_fontsize_32
+        pcfixed_paddingtop_76 pcfixed_fontsize_28
+        ">
+        06
+        </h2>
+        <h2 class="tits
+        mobile_paddingtop_44 mobile_fontsize_42 mobile_paddingbottom_61
+        mt_paddingtop_44 mt_fontsize_42 mt_paddingbottom_61
+        pcfxied_paddingtop_46 pcfixed_fontsize_40 pcfixed_paddingbottom_57">
+        르셀르가 만들고<br/>
+당신이 완성합니다.
+        </h2>
+        <p class="contents
+        mobile_fontsize_28
+        mt_fontsize_28
+        pcfixed_fontsize_26">
+        보내드린 애드온을<br/>
+        직접 베이스 샴푸에 넣고 섞으시면<br/>
+        오직 나만의 맞춤 애드온샴푸가 완성됩니다.
+        </p>
+    </div>
+    
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section14 position_relative_normal bgcolor_warmbrightness
+mobile_paddingbottom_260
+mt_paddingbottom_260
+pcfixed_paddingbottom_214
+">
+    <div class="messagearea colorblack zindex50 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_92 mobile_fontsize_42
+        mt_paddingtop_92 mt_fontsize_42
+        pcfixed_paddingtop_82 pcfixed_fontsize_40
+        ">
+            <img src="img/mobile/Stringgroup.png" class="display_block
+            mobile_width_40 mobile_height_32 mobile_marginhorizontal_auto
+            mt_width_40 mt_height_32 tablet_marginhorizontal_auto
+            pcfixed_width_40 pcfixed_height_32 pc_marginhorizontal_auto"/>
+            <span
+            class="display_block
+            mobile_paddingtop_38 mobile_paddingbottom_51
+            mt_paddingtop_38 mt_paddingbottom_51
+            pcfixed_paddingtop_36 pcfixed_paddingbottom_30
+            ">
+                le celle는 프랑스어로 <br/>
+‘단 하나’를 의미합니다. 
+            </span>
+            <img src="img/mobile/Stringgroup.png" class="display_block rotate180_fix
+            mobile_width_40 mobile_height_32 mobile_marginhorizontal_auto
+            mt_width_40 mt_height_32 tablet_marginhorizontal_auto
+            pcfixed_width_40 pcfixed_height_32 pc_marginhorizontal_auto
+            "/>
+        </h2>
+        <span class="display_block bgcolor_warm2
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto mobile_margintop_69
+        mt_width_650 mt_height_1 tablet_marginhorizontal_auto mt_margintop_69
+        pcfixed_width_650 pcfixed_height_1 pc_marginhorizontal_auto pcfixed_margintop_64"></span>
+        <p class="contents
+        mobile_fontsize_28 mobile_margintop_87
+        mt_fontsize_28 mt_margintop_87
+        pcfixed_fontsize_26 pcfixed_margintop_70
+        ">
+        세상에 ‘단 하나’뿐인 당신을 위해<br/>
+        르셀르는 구매부터 사용까지<br/>
+        모든 과정에서 진심으로 케어받는<br/>
+        경험을 전하고자 합니다.<br/>
+        <br/>
+        <br/>
+        유행하는 제품이 아닌, <br/>
+        느리지만 고집 있게 
+        </p>
+        <span class="display_block bgcolor_warm2
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto mobile_margintop_65
+        mt_width_650 mt_height_1 tablet_marginhorizontal_auto mt_margintop_65
+        pcfixed_width_650 pcfixed_height_1 pc_marginhorizontal_auto pcfixed_margintop_70"></span>
+    </div>
+    <div class="messagearea bgcolor_white colorblack zindex50 box_shadow1
+    mobile_textalignCenter mobile_width_645 mobile_borderradius_10 mobile_marginhorizontal_auto mobile_margintop_67
+    tablet_textalignCenter mt_width_645 mt_borderradius_10 tablet_marginhorizontal_auto mt_margintop_67
+    pc_textalignCenter pcfixed_width_645 pcfixed_borderradius_10 pc_marginhorizontal_auto pcfixed_margintop_75">
+        <p class="colorlecelle2 
+        mobile_fontsize_42 mobile_paddingtop_70 mobile_paddingbottom_70
+        mt_fontsize_42 mt_paddingtop_70 mt_paddingbottom_70
+        pcfixed_fontsize_40 pcfixed_paddingtop_67 pcfixed_paddingbottom_67">
+            제품 본연의 품질과<br/>
+당신의 경험에 집중하는<br/>
+브랜드를 지향합니다.
+        </p>
+    </div>
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute
+        mobile_width_45 mobile_height_46 mobile_positionbottom_56 mobile_positionleft_338
+        mt_width_45 mt_height_46 mt_positionbottom_56 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+        pcfixed_width_45 pcfixed_height_46 pcfixed_positionbottom_50 pc_response_positionleft_940"/>
+</section>
+
+<section class="section15 position_relative_normal
+mobile_height_1443
+mt_height_1343 tablet_overflow_hidden
+pcfixed_height_1250 pc_overflow_hidden">
+
+    <img src="img/mobile/brandimg13.png" class="img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/brandimg13.png" class="img_background_cover_width_center
+    tablet_onlyview"/>
+
+    <img src="img/pc/brandimg13.png" class="img_background_cover_height
+    pc_onlyview"/>
+
+
+    <img src="img/mobile/brandarrow2.png" class="display_block position_absolute rotate180_fix
+    mobile_width_45 mobile_height_46 mobile_positiontop_65 mobile_positionleft_338
+    mt_width_45 mt_height_46 mt_positiontop_65 tablet_positionleft_0 tablet_positionright_0 tablet_marginhorizontal_auto
+    pcfixed_width_45 pcfixed_height_46 pcfixed_positiontop_54 pc_response_positionleft_940"/>
+    <div class="messagearea colorblack zindex50 position_relative_normal 
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h2 class="tits fontweight_500
+        mobile_paddingtop_176 mobile_fontsize_42
+        mt_paddingtop_176 mt_fontsize_42
+        pcfixed_paddingtop_155 pcfixed_fontsize_40">
+            이제 르셀르를 경험해보세요.
+        </h2>
+        <a href="surveyform.html">
+            <button class="display_block bgcolor_black colorwhite
+            mobile_margintop_71 mobile_width_325 mobile_height_100 mobile_fontsize_24 mobile_marginhorizontal_auto
+            mt_margintop_71 mt_width_325 mt_height_100 mt_fontsize_24 tablet_marginhorizontal_auto
+            pcfixed_margintop_40 pcfixed_width_400 pcfixed_height_90 pcfixed_fontsize_18 pc_marginhorizontal_auto">맞춤주문</button>
+        </a>
+        <a href="surveyform.html">
+            <button class="display_block bgcolor_black colorwhite
+            mobile_margintop_14 mobile_width_325 mobile_height_100 mobile_fontsize_24 mobile_marginhorizontal_auto
+            mt_margintop_14 mt_width_325 mt_height_100 mt_fontsize_24 tablet_marginhorizontal_auto
+            pcfixed_margintop_20 pcfixed_width_400 pcfixed_height_90 pcfixed_fontsize_18 pc_marginhorizontal_auto
+            ">선물하기</button>
+        </a>
+    </div>
+    
+   
+</section>
+
+<script src="common_function.js"></script>
+<script src="commonui_javascript.js"></script>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>-->
+
+<script>
+    var swiper=new Swiper('.mainbanner',{
+        slidesPerView:'auto',
+        autoResize: false,
+        centeredSlides:true,
+        //loop:true
+        pagination:{
+            el : '.swiper-pagination1',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next1',
+            prevEl : '.swiper-button-prev1'
+        },
+        on:{
+            slideChangeTransitionEnd : function(){
+                console.log("현재 슬라이드카운트 index:",this.activeIndex+1);
+                let target=document.querySelector(`[targetindex='javascript_swipercustom_slidecountTarget_0']`);
+                target.innerText = this.activeIndex+1 < 10? '0'+(this.activeIndex+1) : (this.activeIndex+1);
+            }
+        }
+    })
+
+    var swiper2=new Swiper('.banner1',{
+        slidesPerView:'auto',
+        autoResize: true,
+        pagination:{
+            el :'.swiper-pagination2',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },
+    })
+
+    var swiper3=new Swiper('.banner2',{
+        slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination3',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl :'.swiper-button-next3',
+            prevEl :'.swiper-button-prev3'
+        }
+    })
+
+    var swiper4=new Swiper('.banner3',{
+        slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination4',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl :'.swiper-button-next4',
+            prevEl :'.swiper-button-prev4'
+        }
+    })
+    var swiper5=new Swiper('.banner4',{
+        slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination5',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl :'.swiper-button-next5',
+            prevEl :'.swiper-button-prev5'
+        }
+    })
+
+    var swiper5=new Swiper('.banner5',{
+        slidesPerView:'auto',
+        autoResize: false,
+        navigation:{
+            nextEl :'.next1',
+            prevEl :'.prev1'
+        }
+        /*pagination:{
+            el : '.swiper-pagination',
+            clickable:true
+        }*/
+    })
+
+</script>
+</body>
+</html>

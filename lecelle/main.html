@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/position_and_another_based.css"/>
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+<header class="lecell_header position_absolute zindex550
+mobile_flex_horizontal_spaceBetween mobile_paddingtop_35 mobile_paddingleft_34 mobile_paddingright_32 mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent
+
+tablet_flex_horizontal_spaceBetween mt_paddingtop_35 mt_paddingleft_34 mt_paddingright_32 mt_positiontop_0 mt_positionleft_0 tablet_width_100_percent 
+
+pc_flex_horizontal_flexStart pcfixed_paddingtop_40 pcfixed_paddingleft_68 pcfixed_paddingright_68 pcfixed_pcfixed_paddingbottom_40 pcfixed_positiontop_0 pcfixed_positionleft_0 pc_width_100_percent 
+">
+    <a href="main.html"><img src="img/mobile/sitelogo.png" class="display_block sitelogo
+    mobile_width_192 mobile_height_46
+    mt_width_192 mt_height_46
+    pcfixed_width_130 pcfixed_height_31
+    " style="flex:0 0 auto"></a>
+
+    <ul class="headermenu 
+    pc_flex_horizontal_flexStart pc_onlyview pcfixed_marginleft_66">
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='brand.html'>브랜드</a></li>
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='shoplist.html'>제품보기</a></li>
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='#'>정기구독</a></li>
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>선물하기</a></li>
+        <li class="item display_block colorwhite fontweight_500
+        pcfixed_fontsize_17"><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="menucontrol
+    mobile_flex_horizontal_flexEnd
+    tablet_flex_horizontal_flexEnd
+    pc_flex_horizontal_flexEnd" style="flex:1 0 auto">
+        <a href="login.html"><span class="colorwhite display_block
+        pc_onlyview pcfixed_fontsize_17 pcfixed_paddingright_35">로그인</span></a>
+        <a href="cart.html">
+            <span class="display_block bgcolor_graywhite
+            mobile_width_80 mobile_height_80 mobile_marginright_42 mobile_borderradius_40 mobile_flex_horizontal_Center
+            mt_width_80  mt_height_80 mt_marginright_42 mt_borderradius_40 tablet_flex_horizontal_Center
+            pcfixed_width_50 pcfixed_height_50 pcfixed_borderradius_25 pc_flex_horizontal_Center
+            ">
+                <img src="img/mobile/cart.svg" class="display_block
+                mobile_width_33 mobile_height_33
+                mt_width_33 mt_height_33
+                pcfixed_width_20 pcfixed_height_20">
+            </span>
+        </a>
+        
+        <img src="img/mobile/menubar.png" class="
+        mobile_width_41 mobile_height_25 mobile_onlyview
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger
+        "
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+        <img src="img/mobile/menubar.png" class="
+        mt_width_41 mt_height_25 tablet_onlyview
+        
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+    </div>
+</header>
+
+
+<div class="popupbg" targetindex="navBg" style="display:none"></div>
+<nav class="position_absolute zindex999
+    width_720 positiontop_0 
+    mobile_width_720  mobile_height_100_percent mobile_positiontop_0 
+    mt_width_720  tablet_positiontop_0 tablet_height_100_percent
+    pc_height_100_percent"
+targetindex="lecelle_navigation"
+style="left:-120%;">
+    <img src="img/mobile/naviBg.png" class="img_background_cover_center"/>
+    <div class="position_relative_zindex3
+    flex_horizontal_spaceBetween paddingtop_38 paddingleft_34 paddingright_39 
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_38 mobile_paddingleft_34 mobile_paddingright_39
+    tablet_flex_horizontal_spaceBetween mt_paddingtop_38 mt_paddingleft_34 mt_paddingright_39">
+        <img src="img/mobile/sitelogo.png" class="
+        width_192 height_46
+        mobile_width_192 mobile_height_46 
+        mt_width_192 mt_height_46">
+        <img src="img/mobile/xbtn.png" class="
+        width_32 height_32 
+        mobile_width_32 mobile_height_32
+        mt_width_32 mt_height_32
+
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|-120%",  "viewunviewTarget":"navBg","viewunviewto":"none"}'/>
+    </div>
+
+    <ul class="menulist position_relative_zindex3 
+    textalignCenter paddingtop_110
+    mobile_textalignCenter mobile_paddingtop_110
+    tablet_textalignCenter mt_paddingtop_110
+    ">
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='brand.html'>브랜드</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='shoplist.html'>제품보기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='surveyform.html'>선물하기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="usercontrol colorwhite bordercolorwhite position_relative_zindex3 borderstyle_solid
+    flex_horizontal_Center margintop_88 bordertop_1 borderbottom_1 textalignCenter
+    mobile_flex_horizontal_Center mobile_margintop_88 mobile_bordertop_1 mobile_borderbottom_1 mobile_textalignCenter
+    tablet_flex_horizontal_Center mt_margintop_88 mt_bordertop_1 mt_borderbottom_1 tablet_textalignCenter">
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 borderright_1
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360 mobile_borderright_1
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360 mt_borderright_1
+        "><a href='mypage.html'>마이페이지</a></p>
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360
+        "><a href='#'>로그아웃</a></p>
+    </div>
+</nav>
+
+
+<section class="mainbanner_section position_relative_normal
+mobile_height_1120
+mt_height_1120
+pcfixed_height_1247
+">
+
+    <div class="messagearea position_absolute colorwhite zindex50 
+    mobile_paddingtop_232 mobile_paddingleft_238 mobile_paddingright_32 mobile_textalignRight mobile_positiontop_0 mobile_positionleft_0 mobile_flex_horizontal_flexEnd 
+    mt_paddingtop_232 mt_paddingleft_238 mt_paddingright_32 tablet_textalignRight tablet_positiontop_0 tablet_positionright_0 tablet_flex_horizontal_flexEnd
+    pcfixed_paddingtop_302 pc_textalignRight pcfixed_positiontop_0 pcfixed_positionright_82 pcfixed_width_600 pc_flex_horizontal_flexEnd 
+    ">
+        <h2 class="tit fontfamily_NewBaskerville_Roman
+        mobile_fontsize_69 mobile_width_100_percent
+        mt_fontsize_69 tablet_width_100_percent
+        pcfixed_fontsize_72 pc_width_100_percent
+        ">It's truly yours</h2>
+        <p class="txt
+        mobile_margintop_33 mobile_fontsize_28  mobile_width_100_percent
+        mt_margintop_33 mt_fontsize_28 tablet_width_100_percent
+        pcfixed_margintop_23 pcfixed_fontsize_30 pc_width_100_percent">
+            새로운 경험의 르셀르<br/>
+            르셀르는 당신에게 꼭 맞는<br/>
+            맞춤 케어제품을 만듭니다
+        </p>
+        <div class="buttonwrap
+        mobile_width_306
+        mt_width_306
+        pcfixed_margintop_50 pc_flex_horizontal_flexStart 
+        ">
+            <button class="bgcolor_white colorlecelle1 display_block
+            mobile_width_306 mobile_height_100 mobile_fontsize_24 mobile_margintop_44
+            mt_width_306 mt_height_100 mt_fontsize_24 mt_margintop_44
+            pcfixed_width_259 pcfixed_height_93 pcfixed_fontsize_20
+            "><a href='surveyform.html'>맞춤주문</a></button>
+            <button class="bgcolor_white colorlecelle1 display_block
+            mobile_width_306 mobile_height_100 mobile_fontsize_24 mobile_margintop_16
+            mt_width_306 mt_height_100 mt_fontsize_24 mt_margintop_16
+            pcfixed_width_259 pcfixed_height_93 pcfixed_marginleft_15 pcfixed_fontsize_20
+            "><a href='surveyform.html'>선물하기</a></button>
+        </div>
+    </div>
+    <div class="swiper-container mainbanner 
+    mobile_height_100_percent
+    tablet_height_100_percent
+    pc_height_100_percent
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_overflow_hidden
+            tablet_height_100_percent tablet_overflow_hidden
+            pc_height_100_percent pc_overflow_hidden
+            ">
+                <img src="img/mobile/mainbannerimg.png" class="display_block 
+                mobile_width_100_percent mobile_height_100_percent  mobile_onlyview
+                "/>
+                <img src="img/mobile/mainbannerimg.png" class="display_block 
+                img_background_cover_width_center tablet_onlyview
+                "/>
+                <img src="img/pc/mainbannerimg.png" class="display_block pc_onlyview
+                pc_width_auto pc_height_100_percent 
+                "/>
+            </div>
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_overflow_hidden
+            tablet_height_100_percent tablet_overflow_hidden
+            pc_height_100_percent pc_overflow_hidden
+            ">
+                <img src="img/mobile/mainbannerimg.png" class="display_block 
+                mobile_width_100_percent mobile_height_100_percent  mobile_onlyview
+                "/>
+                <img src="img/mobile/mainbannerimg.png" class="display_block 
+                img_background_cover_width_center tablet_onlyview
+                "/>
+                <img src="img/pc/mainbannerimg.png" class="display_block pc_onlyview
+                pc_width_auto pc_height_100_percent pc_marginhorizontal_auto
+                "/>
+            </div>
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_overflow_hidden
+            tablet_height_100_percent tablet_overflow_hidden
+            pc_height_100_percent pc_overflow_hidden
+            ">
+                <img src="img/mobile/mainbannerimg.png" class="display_block 
+                mobile_width_100_percent mobile_height_100_percent  mobile_onlyview
+                "/>
+                <img src="img/mobile/mainbannerimg.png" class="display_block 
+                img_background_cover_width_center tablet_onlyview
+                "/>
+                <img src="img/pc/mainbannerimg.png" class="display_block pc_onlyview
+                pc_width_auto pc_height_100_percent pc_marginhorizontal_auto
+                "/>
+            </div>
+        </div>
+       
+        <div class="swiper-button-prev swiper-button-prev1
+        mobile_width_18 mobile_height_32 mobile_positionleft_auto mobile_positiontop_auto mobile_positionbottom_40 mobile_positionright_134
+        mt_width_18 mt_height_32 tablet_positionleft_auto tablet_positiontop_auto mt_positionbottom_40 mt_positionright_134
+        pcfixed_width_12 pcfixed_height_20 pc_positionleft_auto pc_positiontop_auto pcfixed_positionbottom_91 pc_response_positionright_156">
+        </div>
+        <div class="swiper-button-next swiper-button-next1
+        mobile_width_18 mobile_height_32 mobile_positionright_36 mobile_positiontop_auto mobile_positionbottom_40
+        mt_width_18 mt_height_32 mt_positionright_36 tablet_positiontop_auto mt_positionbottom_40
+        pcfixed_width_12 pcfixed_height_20 pc_positionleft_auto pc_response_positionright_92 pc_positiontop_auto pcfixed_positionbottom_91 
+        "
+        ></div>
+
+        <div class="swiper-pagination swiper-pagination1
+        mobile_positionbottom_156 mobile_positiontop_auto mobile_height_3
+        mt_positionbottom_156 tablet_positiontop_auto mt_height_3
+        pcfixed_positionbottom_102 pc_positiontop_auto pcfixed_height_3 pc_response_width_1587 pc_response_positionleft_133
+        "
+        ></div>
+
+        <span class="display_block position_absolute zindex50 fontfamily_NewBaskerville_Roman fontweight_900
+        mobile_fontsize_40 mobile_positionbottom_41 mobile_positionleft_43
+        mt_fontsize_40 mt_positionbottom_41 mt_positionleft_43
+        pcfixed_fontsize_29 pcfixed_positionbottom_90 pc_response_positionleft_68
+        "
+        targetindex="javascript_swipercustom_slidecountTarget_0">
+        01
+        </span>
+    </div>
+</section>
+
+<section class="section1 bgcolor_warmbrightness">
+    <h2 class="colorblack
+    mobile_paddingtop_118 mobile_fontsize_42 mobile_textalignCenter 
+    mt_paddingtop_118 mt_fontsize_42 tablet_textalignCenter
+    pcfixed_paddingtop_130 pcfixed_fontsize_40 pc_textalignCenter
+    ">
+     그동안 고민 많았죠?
+    </h2>
+
+    <div class="swiper-container banner1 
+    mobile_paddingbottom_154 mobile_margintop_180
+    mt_paddingbottom_154 mt_margintop_180
+    pcfixed_paddingbottom_154 pcfixed_margintop_180  
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide 
+            
+            mt_width_600
+            pc_flex_horizontal_Center pc_flex_alignitems_flexStart  pc_flex_nowrap">
+                <img src="img/mobile/symbolimg1.png" class="display_block
+                mobile_width_561 mobile_height_561 mobile_marginhorizontal_auto 
+                mt_width_561 mt_height_561 tablet_marginhorizontal_auto
+                pcfixed_width_411 pcfixed_height_382 
+                "/>
+                <div class="wrapping
+                ">
+                    <div class="message colorblack
+                    mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexStart mobile_margintop_27 mobile_paddingleft_148
+                    tablet_flex_horizontal_Center tablet_flex_alignitems_flexStart mt_margintop_27  tablet_textalignCenter
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart pcfixed_margintop_165 pc_response_paddingleft_150
+                    ">
+                        <img src="img/mobile/Stringgroup.png" class="position_relative_normal display_block
+                        mobile_width_35 mobile_height_27 mobile_positiontop_5
+                        mt_width_35 mt_height_27 mt_positiontop_5
+                        pcfixed_width_39 pcfixed_height_32 pcfixed_positiontop_5
+                        ">
+                        <p class="txt 
+                        mobile_width_301  mobile_overflow_hidden mobile_marginleft_26 mobile_fontsize_28
+                        mt_width_301 tablet_overflow_hidden mt_marginleft_26 mt_fontsize_28
+                        pcfixed_width_245 pc_overflow_hidden pc_response_marginleft_41 pcfixed_fontsize_22 pc_textalignCenter
+                        ">
+                            두피샴푸 썼더니<br/>
+                            파마가 풀리는 것 같은데...
+                        </p>
+                    </div>
+                    <div class="info colorblack
+                    mobile_flex_horizontal_flexStart mobile_paddingleft_276 mobile_margintop_37
+                    tablet_flex_horizontal_Center mt_margintop_37 tablet_textalignCenter
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexEnd pcfixed_margintop_48 pc_response_paddingleft_280">
+                        <p class="txt
+                        mobile_width_180 mobile_fontsize_24
+                        mt_width_180 mt_fontsize_24
+                        pcfixed_width_128 pcfixed_fontsize_17
+                        ">
+                        이**님 32세, 모델
+                        </p>
+                        <img src="img/mobile/Stringgroup.png" class="rotate180_fix display_block
+                        mobile_width_35 mobile_height_27 mobile_marginleft_86
+                        mt_width_35 mt_height_27 mt_marginleft_86
+                        pcfixed_width_39 pcfixed_height_32 pc_response_marginleft_90
+                        ">
+                    </div>    
+                </div>
+            </div>
+            <div class="swiper-slide 
+            
+            mt_width_600
+            pc_flex_horizontal_Center pc_flex_alignitems_flexStart  pc_flex_nowrap">
+                <img src="img/mobile/symbolimg1.png" class="display_block
+                mobile_width_561 mobile_height_561 mobile_marginhorizontal_auto 
+                mt_width_561 mt_height_561 tablet_marginhorizontal_auto
+                pcfixed_width_411 pcfixed_height_382 
+                "/>
+                <div class="wrapping
+                ">
+                    <div class="message colorblack
+                    mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexStart mobile_margintop_27 mobile_paddingleft_148
+                    tablet_flex_horizontal_Center tablet_flex_alignitems_flexStart mt_margintop_27  tablet_textalignCenter
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart pcfixed_margintop_165 pc_response_paddingleft_150
+                    ">
+                        <img src="img/mobile/Stringgroup.png" class="position_relative_normal display_block
+                        mobile_width_35 mobile_height_27 mobile_positiontop_5
+                        mt_width_35 mt_height_27 mt_positiontop_5
+                        pcfixed_width_39 pcfixed_height_32 pcfixed_positiontop_5
+                        ">
+                        <p class="txt 
+                        mobile_width_301  mobile_overflow_hidden mobile_marginleft_26 mobile_fontsize_28
+                        mt_width_301 tablet_overflow_hidden mt_marginleft_26 mt_fontsize_28
+                        pcfixed_width_245 pc_overflow_hidden pc_response_marginleft_41 pcfixed_fontsize_22 pc_textalignCenter
+                        ">
+                            두피샴푸 썼더니<br/>
+                            파마가 풀리는 것 같은데...
+                        </p>
+                    </div>
+                    <div class="info colorblack
+                    mobile_flex_horizontal_flexStart mobile_paddingleft_276 mobile_margintop_37
+                    tablet_flex_horizontal_Center mt_margintop_37 tablet_textalignCenter
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexEnd pcfixed_margintop_48 pc_response_paddingleft_280">
+                        <p class="txt
+                        mobile_width_180 mobile_fontsize_24
+                        mt_width_180 mt_fontsize_24
+                        pcfixed_width_128 pcfixed_fontsize_17
+                        ">
+                        이**님 32세, 모델
+                        </p>
+                        <img src="img/mobile/Stringgroup.png" class="rotate180_fix display_block
+                        mobile_width_35 mobile_height_27 mobile_marginleft_86
+                        mt_width_35 mt_height_27 mt_marginleft_86
+                        pcfixed_width_39 pcfixed_height_32 pc_response_marginleft_90
+                        ">
+                    </div>    
+                </div>
+            </div>
+            <div class="swiper-slide 
+            
+            mt_width_600
+            pc_flex_horizontal_Center pc_flex_alignitems_flexStart  pc_flex_nowrap">
+                <img src="img/mobile/symbolimg1.png" class="display_block
+                mobile_width_561 mobile_height_561 mobile_marginhorizontal_auto 
+                mt_width_561 mt_height_561 tablet_marginhorizontal_auto
+                pcfixed_width_411 pcfixed_height_382 
+                "/>
+                <div class="wrapping
+                ">
+                    <div class="message colorblack
+                    mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexStart mobile_margintop_27 mobile_paddingleft_148
+                    tablet_flex_horizontal_Center tablet_flex_alignitems_flexStart mt_margintop_27  tablet_textalignCenter
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart pcfixed_margintop_165 pc_response_paddingleft_150
+                    ">
+                        <img src="img/mobile/Stringgroup.png" class="position_relative_normal display_block
+                        mobile_width_35 mobile_height_27 mobile_positiontop_5
+                        mt_width_35 mt_height_27 mt_positiontop_5
+                        pcfixed_width_39 pcfixed_height_32 pcfixed_positiontop_5
+                        ">
+                        <p class="txt 
+                        mobile_width_301  mobile_overflow_hidden mobile_marginleft_26 mobile_fontsize_28
+                        mt_width_301 tablet_overflow_hidden mt_marginleft_26 mt_fontsize_28
+                        pcfixed_width_245 pc_overflow_hidden pc_response_marginleft_41 pcfixed_fontsize_22 pc_textalignCenter
+                        ">
+                            두피샴푸 썼더니<br/>
+                            파마가 풀리는 것 같은데...
+                        </p>
+                    </div>
+                    <div class="info colorblack
+                    mobile_flex_horizontal_flexStart mobile_paddingleft_276 mobile_margintop_37
+                    tablet_flex_horizontal_Center mt_margintop_37 tablet_textalignCenter
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexEnd pcfixed_margintop_48 pc_response_paddingleft_280">
+                        <p class="txt
+                        mobile_width_180 mobile_fontsize_24
+                        mt_width_180 mt_fontsize_24
+                        pcfixed_width_128 pcfixed_fontsize_17
+                        ">
+                        이**님 32세, 모델
+                        </p>
+                        <img src="img/mobile/Stringgroup.png" class="rotate180_fix display_block
+                        mobile_width_35 mobile_height_27 mobile_marginleft_86
+                        mt_width_35 mt_height_27 mt_marginleft_86
+                        pcfixed_width_39 pcfixed_height_32 pc_response_marginleft_90
+                        ">
+                    </div>    
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev2
+        mobile_width_18 mobile_height_32 mobile_positionleft_44 mobile_positiontop_471 mobile_positionbottom_auto mobile_positionright_auto
+        mt_width_18 mt_height_32 mt_positionleft_44 mt_positiontop_471 tablet_positionbottom_auto tablet_positionright_auto
+        pcfixed_width_18 pcfixed_height_32 pc_response_positionleft_296 pcfixed_positiontop_181 pc_positionbottom_auto pc_positionright_auto
+        "
+        ></div>
+        <div class="swiper-button-next swiper-button-next2
+        mobile_width_18 mobile_height_32 mobile_positionright_36 mobile_positiontop_471 mobile_positionbottom_auto
+        mt_width_18 mt_height_32 mt_positionright_36 mt_positiontop_471 tablet_positionbottom_auto
+        pcfixed_width_18 pcfixed_height_32 pc_response_positionright_296 pcfixed_positiontop_181 pc_positionbottom_auto 
+        "
+        ></div>
+
+        <div class="swiper-pagination swiper-pagination2
+        mobile_positionbottom_120 mobile_positiontop_auto mobile_height_3 mobile_width_650 mobile_positionleft_35 mobile_onlyview"
+        ></div>
+    </div>
+</section>
+
+<section class="section2 bgcolor_warmbrightness2 
+mobile_paddingtop_120 mobile_paddingbottom_120 mobile_textalignCenter
+mt_paddingtop_130 mt_paddingbottom_120 tablet_textalignCenter tablet_flex_horizontal_Center
+pcfixed_paddingtop_130 pcfixed_paddingbottom_181 pc_textalignCenter pc_flex_horizontal_Center">
+    <h2 class="tit  colorblack
+    mobile_fontsize_42 mobile_width_100_percent
+    mt_fontsize_42 tablet_width_100_percent
+    pcfixed_fontsize_40  pc_width_100_percent pcfixed_paddingbottom_175
+    ">
+    당신에게 맞춘<br/>
+    프리미엄 헤어 케어
+    </h2>
+
+    <div class="wrapping
+    tablet_width_auto tablet_flex_horizontal_Center
+    pc_flex_horizontal_Center pc_width_auto">
+        <div class="wrapping
+        mt_marginleft_30 mt_marginright_30">
+            <p class="txt colorblack
+            mobile_fontsize_28 mobile_margintop_90 mobile_marginbottom_49
+            mt_fontsize_28 mt_margintop_90 mt_marginbottom_49
+            pcfixed_fontsize_24 pcfixed_marginbottom_55
+            ">
+            1:1맞춤 설문
+            </p>
+            <img src="img/mobile/symbolimg2.png" class="
+            mobile_width_399 mobile_height_328
+            mt_width_399 mt_height_328
+            pcfixed_width_328 pcfixed_height_269
+            "/>
+            <p class="content colorblack
+            mobile_fontsize_26 mobile_margintop_46
+            mt_fontsize_26 mt_margintop_46
+            pcfixed_fontsize_20  pcfixed_margintop_49
+            ">
+                당신의 두피타입은 어떤가요? 헤어 고민은요?<br/>
+            샴푸하는 습관을 알려주세요.<br/>
+            오직 당신을 위한 케어를 제공하기 위해<br/>
+            작은 습관까지 질문합니다.
+            </p>    
+        </div>
+       
+        <span class="sep_line display_block bgcolor_warm1
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto mobile_margintop_89
+
+        pcfixed_width_1 pcfixed_height_537 pc_response_marginleft_222 pc_response_marginright_224
+        "></span>
+        
+        <div class="wrapping
+        mt_marginleft_30 mt_marginright_30">
+            <p class="txt colorblack
+            mobile_fontsize_28 mobile_margintop_98 mobile_marginbottom_45
+            mt_fontsize_28 mt_margintop_98 mt_marginbottom_45
+            pcfixed_fontsize_24 pcfixed_marginbottom_55
+            ">
+            맞춤 애드온
+            </p>
+            <img src="img/mobile/symbolimg3.png" class="
+            mobile_width_324 mobile_height_343
+            mt_width_324 mt_height_343
+            pcfixed_width_266 pcfixed_height_281"/>
+            <p class="content colorblack
+            mobile_fontsize_26 mobile_margintop_46
+            mt_fontsize_26 mt_margintop_46
+            pcfixed_fontsize_20 pcfixed_margintop_49">
+            설문 결과에 따라 당신의<br/>
+            두피건강을 지키는 샴푸 베이스에 더해,<br/>
+            헤어컨디션과 고민에 맞춘<br/>
+            고기능성 맞춤 애드온을 제공합니다.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="section3 bgcolor_warm2 
+mobile_paddingtop_97 mobile_paddingbottom_120 mobile_textalignCenter
+mt_paddingtop_97 mt_paddingbottom_120 tablet_textalignCenter
+pc_flex_horizontal_flexEnd pc_flex_alignitems_flexStart pc_flex_nowrap">
+    <div class="wrapping
+    pc_textalignCenter">
+        <h2 class="tit  colorblack
+        mobile_fontsize_42 
+        mt_fontsize_42
+        pcfixed_paddingtop_90 pc_response_paddingright_151 pcfixed_fontsize_40 pcfixed_fontsize_40
+        ">
+            당신도, 이 행복을 누릴 만한<br/>
+        소중한 사람이에요.
+        </h2>
+
+        <img src="img/mobile/mainimg1.png" class="
+        mobile_height_408 mobile_margintop_78 mobile_onlyview
+        "/>
+        <img src="img/mobile/mainimg1.png" class="display_block
+        mt_height_408 mt_margintop_78 tablet_onlyview tablet_marginhorizontal_auto
+        "/>
+        <div class="buttonwrap 
+        mobile_flex_horizontal_flexStart mobile_margintop_81 mobile_width_652 mobile_marginhorizontal_auto
+        tablet_flex_horizontal_flexStart mt_margintop_81 mt_width_652 tablet_marginhorizontal_auto
+        pc_flex_horizontal_flexStart pcfixed_margintop_49 pcfixed_width_520 pc_response_marginright_113
+        ">
+            <button class="colorblack borderstyle_solid bgcolor_transparent
+            mobile_width_326 mobile_height_115 mobile_fontsize_24 mobile_borderleft_1 mobile_bordertop_1 mobile_borderbottom_1
+            mt_width_326 mt_height_115 mt_fontsize_24 mt_border_1
+            pcfixed_width_260 pcfixed_height_102 pcfixed_fontsize_23 pcfixed_border_1">
+            맞춤주문
+            </button>
+            <button class="colorblack borderstyle_solid bgcolor_transparent
+            mobile_width_326 mobile_height_115 mobile_fontsize_24 mobile_borderleft_1 mobile_bordertop_1 mobile_borderbottom_1 mobile_borderright_1
+            mt_width_326 mt_height_115 mt_fontsize_24 mt_border_1
+            pcfixed_width_260 pcfixed_height_102  pcfixed_fontsize_23  pcfixed_border_1">
+            선물하기
+            </button>
+        </div>
+    </div>
+    <div class="rightimgpc
+    pc_onlyview pcfixed_height_424 pc_response_width_1030" style="background-image:url('img/pc/mainimg2.png'); background-size:cover;background-repeat:no-repeat">
+    </div>
+    
+</section>
+
+<section class="section4 bgcolor_warmbrightness 
+mobile_paddingtop_120 mobile_paddingbottom_120  mobile_textalignCenter
+mt_paddingtop_120 mt_paddingbottom_120 tablet_textalignCenter
+pcfixed_paddingtop_120 pcfixed_paddingbottom_126 pc_flex_horizontal_Center pc_textalignCenter
+">
+    <h2 class="tit colorblack
+    mobile_fontsize_42 
+    mt_fontsize_42
+    pcfixed_fontsize_40 pc_width_100_percent
+    ">
+    프랑스 정원에서<br/>
+    영감을 받은 세가지 향
+    </h2>
+    <p class="content colorblack
+    mobile_fontsize_26 mobile_margintop_64
+    mt_fontsize_26 mt_margintop_64
+    pcfixed_fontsize_22 pcfixed_margintop_61 pc_width_100_percent  pcfixed_marginbottom_73
+    ">
+    프랑스 조향스쿨 출신의 전문 조향사가 만든<br/>
+    르셀르의 세 가지 시그니처 향이<br/>
+    당신을 정원으로 안내합니다.
+    </p>
+
+    <div class="wrapping
+    
+    tablet_flex_horizontal_Center
+    pc_flex_horizontal_Center">
+        <div class="bgcolor_white
+        mobile_width_651 mobile_marginhorizontal_auto mobile_margintop_92 mobile_paddingtop_16  mobile_paddingbottom_41 mobile_paddingleft_21 mobile_paddingright_20
+        
+        mt_width_541 mt_margintop_40 mt_paddingtop_16 mt_paddingbottom_41 mt_paddingleft_21 mt_paddingright_20 mt_marginright_10 mt_marginleft_10
+
+        pcfixed_width_411 pcfixed_paddingtop_10 pcfixed_paddingbottom_22 pcfixed_paddingleft_13 pcfixed_paddingright_13 pcfixed_marginbottom_20
+        ">
+            <img src="img/mobile/smell1.png" class="display_block
+            mobile_width_100_percent mobile_height_343
+            tablet_width_100_percent 
+            pc_width_100_percent pcfixed_height_217
+            "/>
+
+            <p class="tit colorblack
+            mobile_fontsize_26 mobile_margintop_41
+            mt_fontsize_26 mt_margintop_41
+            pcfixed_fontsize_18 pcfixed_margintop_25
+            ">
+            Fleurette [플로레트]
+            </p>
+
+            <p class="message colorblack
+            mobile_fontsize_26 mobile_margintop_36
+            mt_fontsize_26 mt_margintop_36
+            pcfixed_fontsize_16 pcfixed_margintop_18
+            ">
+            Versailes 정원의 순수하고 부드러운 장미 향
+            </p>
+
+            <p class="message colorblack fontfamily_Avenir
+            mobile_fontsize_22 mobile_margintop_33 
+            mt_fontsize_22 mt_margintop_33
+            pcfixed_fontsize_14 pcfixed_margintop_17
+            ">
+            Turkish Red Rose, Geranium Magnolia,<br/>
+            White Amber, Musk, Sunny Sandalwood       
+            </p>
+        </div>
+        <div class="bgcolor_white
+        mobile_width_651 mobile_marginhorizontal_auto  mobile_paddingtop_16  mobile_paddingbottom_41 mobile_paddingleft_21 mobile_paddingright_20 mobile_margintop_26
+        
+        mt_width_541 mt_paddingtop_16 mt_paddingbottom_41 mt_paddingleft_21 mt_paddingright_20 mt_margintop_40 mt_marginright_10 mt_marginleft_10
+
+        pcfixed_width_411 pcfixed_paddingtop_10 pcfixed_paddingbottom_22 pcfixed_paddingleft_13 pcfixed_paddingright_13 pc_response_marginleft_32 pc_response_marginright_32 pcfixed_marginbottom_20
+        ">
+            <img src="img/mobile/smell2.png" class="display_block
+            mobile_width_100_percent mobile_height_343
+            tablet_width_100_percent 
+            pc_width_100_percent pcfixed_height_217
+            "/>
+
+            <p class="tit colorblack
+            mobile_fontsize_26 mobile_margintop_41
+            mt_fontsize_26 mt_margintop_41
+            pcfixed_fontsize_18 pcfixed_margintop_25
+            ">
+            Lavern [라번]
+            </p>
+
+            <p class="message colorblack
+            mobile_fontsize_26 mobile_margintop_36
+            mt_fontsize_26 mt_margintop_36
+            pcfixed_fontsize_16 pcfixed_margintop_18
+            ">
+            d’Eden 정원의 신비롭고 깊은 나무 향
+            </p>
+
+            <p class="message colorblack fontfamily_Avenir
+            mobile_fontsize_22 mobile_margintop_33 
+            mt_fontsize_22 mt_margintop_33
+            pcfixed_fontsize_14 pcfixed_margintop_17
+            ">
+            Cypress, Eucalyptus, Hinoki Wood,<br/>
+    cedar Wood, White Musk
+            </p>
+        </div>
+        <div class="bgcolor_white
+        mobile_width_651 mobile_marginhorizontal_auto  mobile_paddingtop_16  mobile_paddingbottom_41 mobile_paddingleft_21 mobile_paddingright_20 mobile_margintop_26
+        
+        mt_width_541 mt_paddingtop_16 mt_paddingbottom_41 mt_paddingleft_21 mt_paddingright_20 mt_margintop_40 mt_marginright_10 mt_marginleft_10
+
+        pcfixed_width_411 pcfixed_paddingtop_10 pcfixed_paddingbottom_22 pcfixed_paddingleft_13 pcfixed_paddingright_13 pcfixed_marginbottom_20
+        ">
+            <img src="img/mobile/smell3.png" class="display_block
+            mobile_width_100_percent mobile_height_343
+            tablet_width_100_percent
+            pc_width_100_percent pcfixed_height_217
+            "/>
+
+            <p class="tit colorblack
+            mobile_fontsize_26 mobile_margintop_41
+            mt_fontsize_26 mt_margintop_41
+            pcfixed_fontsize_18 pcfixed_margintop_25
+            ">
+            Ines [이네스]
+            </p>
+
+            <p class="message colorblack
+            mobile_fontsize_26 mobile_margintop_36
+            mt_fontsize_26 mt_margintop_36
+            pcfixed_fontsize_16 pcfixed_margintop_18
+            ">
+            Boissonna 정원의 물기를 머금은 연꽃 잎 향
+            </p>
+
+            <p class="message colorblack fontfamily_Avenir
+            mobile_fontsize_22 mobile_margintop_33 
+            mt_fontsize_22 mt_margintop_33
+            pcfixed_fontsize_14 pcfixed_margintop_17
+            ">
+            White Lotus, Peony, Iris, Light Citrus<br/>
+    (Grapefruit, Lemon Bergamot)    
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="section5 
+mobile_paddingtop_113  mobile_textalignCenter
+mt_paddingtop_113 tablet_textalignCenter
+pcfixed_paddingtop_105 pc_textalignCenter pc_flex_alignitems_flexStart pc_response_paddingleft_210  pc_flex_horizontal_flexStart  pc_flex_nowrap">
+    <h2 class="borderstyle_solid colorblack
+    mobile_width_230 mobile_height_79 mobile_borderradius_39 mobile_border_1 mobile_fontsize_26 mobile_flex_horizontal_Center mobile_marginhorizontal_auto
+    
+    mt_width_230 mt_height_79 mt_borderradius_39 mt_border_1 mt_fontsize_26 tablet_flex_horizontal_Center tablet_marginhorizontal_auto
+    pcfixed_width_194 pcfixed_height_70 pcfixed_borderradius_35 pcfixed_border_1 pcfixed_fontsize_22 pc_flex_horizontal_Center">
+     세트
+    </h2>
+
+    <div class="swiper-container banner2  
+    mobile_paddingbottom_184 mobile_margintop_122  mobile_height_auto
+    mt_paddingbottom_184 mt_margintop_122 tablet_height_auto
+    pcfixed_paddingbottom_159 pc_response_width_1336 pc_response_paddingleft_168 pc_response_paddingright_80 pc_margin_0
+    ">
+        <div class="swiper-wrapper
+        mobile_height_auto
+        tablet_height_auto
+        pc_height_auto">
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product1.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto
+                
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto
+                "/>
+                <p class="bgcolor_browngold colorwhite
+                mobile_width_110 mobile_height_43 mobile_borderradius_21 mobile_fontsize_20 mobile_flex_horizontal_Center mobile_margintop_51  mobile_marginhorizontal_auto
+                
+                mt_width_110 mt_height_43 mt_borderradius_21 mt_fontsize_20 tablet_flex_horizontal_Center mt_margintop_51 tablet_marginhorizontal_auto 
+
+                pcfixed_width_60 pcfixed_height_24 pcfixed_borderradius_12 pcfixed_fontsize_11 pc_flex_horizontal_Center pcfixed_margintop_48 pc_marginhorizontal_auto
+                ">
+                SALE
+                </p>
+                <p class="info colorblack
+                mobile_margintop_25 mobile_fontsize_24
+                
+                mt_margintop_25 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17
+                ">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17
+                ">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product2.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto
+                
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto
+                "/>
+                <p class="bgcolor_browngold colorwhite
+                mobile_width_110 mobile_height_43 mobile_borderradius_21 mobile_fontsize_20 mobile_flex_horizontal_Center mobile_margintop_51  mobile_marginhorizontal_auto
+                
+                mt_width_110 mt_height_43 mt_borderradius_21 mt_fontsize_20 tablet_flex_horizontal_Center mt_margintop_51 tablet_marginhorizontal_auto 
+
+                pcfixed_width_60 pcfixed_height_24 pcfixed_borderradius_12 pcfixed_fontsize_11 pc_flex_horizontal_Center pcfixed_margintop_48 pc_marginhorizontal_auto
+                ">
+                SALE
+                </p>
+                <p class="info colorblack
+                mobile_margintop_25 mobile_fontsize_24
+                
+                mt_margintop_25 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17
+                ">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17
+                ">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product3.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto
+                
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto
+                "/>
+                <p class="bgcolor_browngold colorwhite
+                mobile_width_110 mobile_height_43 mobile_borderradius_21 mobile_fontsize_20 mobile_flex_horizontal_Center mobile_margintop_51  mobile_marginhorizontal_auto
+                
+                mt_width_110 mt_height_43 mt_borderradius_21 mt_fontsize_20 tablet_flex_horizontal_Center mt_margintop_51 tablet_marginhorizontal_auto 
+
+                pcfixed_width_60 pcfixed_height_24 pcfixed_borderradius_12 pcfixed_fontsize_11 pc_flex_horizontal_Center pcfixed_margintop_48 pc_marginhorizontal_auto
+                ">
+                SALE
+                </p>
+                <p class="info colorblack
+                mobile_margintop_25 mobile_fontsize_24
+                
+                mt_margintop_25 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17
+                ">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17
+                ">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev swiper-button-prev3
+        mobile_width_18 mobile_height_32 mobile_positionleft_35 mobile_positiontop_144 mobile_positionbottom_auto mobile_positionright_auto 
+        mt_width_18 mt_height_32 mt_positionleft_35 mt_positiontop_144 tablet_positionbottom_auto tablet_positionright_auto
+        pcfixed_width_8 pcfixed_height_14 pcfixed_positionleft_54 pcfixed_positiontop_205 pc_positionbottom_auto pc_positionright_auto"
+        ></div>
+        <div class="swiper-button-next swiper-button-next3
+        mobile_width_18 mobile_height_32 mobile_positionright_36 mobile_positiontop_144 mobile_positionbottom_auto
+        mt_width_18 mt_height_32 mt_positionright_35 mt_positiontop_144 tablet_positionbottom_auto 
+        pcfixed_width_8 pcfixed_height_14 pcfixed_positionright_10 pcfixed_positiontop_205 pc_positionbottom_auto"
+        ></div>
+
+        <div class="swiper-pagination swiper-pagination3
+        mobile_positionbottom_120 mobile_positiontop_auto mobile_height_4 mobile_width_650 mobile_positionleft_35
+        mt_positionbottom_120 tablet_positiontop_auto mt_height_4 tablet_width_100_percent 
+        pcfixed_positionbottom_110 pc_positiontop_auto pcfixed_height_2 pc_response_width_1088 pc_response_positionleft_175"
+        ></div>
+    </div>
+</section>
+<section class="section6 bgcolor_warmbrightness
+mobile_paddingtop_113 mobile_textalignCenter
+
+mt_paddingtop_113 tablet_textalignCenter
+pcfixed_paddingtop_105 pc_textalignCenter pc_flex_alignitems_flexStart pc_response_paddingleft_210  pc_flex_horizontal_flexStart  pc_flex_nowrap
+">
+    <h2 class="borderstyle_solid colorblack
+    mobile_width_230 mobile_height_79 mobile_borderradius_39 mobile_border_1 mobile_fontsize_26 mobile_flex_horizontal_Center mobile_marginhorizontal_auto
+    mt_width_230 mt_height_79 mt_borderradius_39 mt_border_1 mt_fontsize_26 tablet_flex_horizontal_Center tablet_marginhorizontal_auto
+    pcfixed_width_194 pcfixed_height_70 pcfixed_borderradius_35 pcfixed_border_1 pcfixed_fontsize_22 pc_flex_horizontal_Center
+    ">
+     헤어케어
+    </h2>
+
+    <div class="swiper-container banner3  
+    mobile_paddingbottom_184 mobile_margintop_122  mobile_height_auto
+    mt_paddingbottom_184 mt_margintop_122 tablet_height_auto
+    pcfixed_paddingbottom_159 pc_response_width_1336 pc_response_paddingleft_168 pc_response_paddingright_80 pc_margin_0
+    ">
+        <div class="swiper-wrapper
+        mobile_height_auto
+        tablet_height_auto
+        pc_height_auto">
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product1.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto 
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto"/>
+                <p class="info colorblack
+                mobile_margintop_60 mobile_fontsize_24
+                mt_margintop_60 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product2.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto 
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto
+                "/>
+                <p class="info colorblack
+                mobile_margintop_60 mobile_fontsize_24
+                mt_margintop_60 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445
+            ">
+                <img src="img/mobile/product3.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto 
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto"/>
+                <p class="info colorblack
+                mobile_margintop_60 mobile_fontsize_24
+                mt_margintop_60 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_9 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+        </div>
+
+        <div class="swiper-button-prev swiper-button-prev4
+        mobile_width_18 mobile_height_32 mobile_positionleft_35 mobile_positiontop_144 mobile_positionbottom_auto mobile_positionright_auto
+        mt_width_18 mt_height_32 mt_positionleft_35 mt_positiontop_144 tablet_positionbottom_auto tablet_positionright_auto
+        pcfixed_width_8 pcfixed_height_14 pcfixed_positionleft_54 pcfixed_positiontop_205 pc_positionbottom_auto pc_positionright_auto"
+        ></div>
+        <div class="swiper-button-next swiper-button-next4
+        mobile_width_18 mobile_height_32 mobile_positionright_36 mobile_positiontop_144 mobile_positionbottom_auto
+        mt_width_18 mt_height_32 mt_positionright_36 mt_positiontop_144 tablet_positionbottom_auto
+        pcfixed_width_8 pcfixed_height_14 pcfixed_positionright_10 pcfixed_positiontop_205 pc_positionbottom_auto "
+        ></div>
+
+        <div class="swiper-pagination swiper-pagination4
+        mobile_positionbottom_120 mobile_positiontop_auto mobile_height_4 mobile_width_650 mobile_positionleft_35
+        mt_positionbottom_120 tablet_positiontop_auto mt_height_4 tablet_width_100_percent tablet_positionleft_0
+        pcfixed_positionbottom_110 pc_positiontop_auto pcfixed_height_2 pc_response_width_1088 pc_response_positionleft_175"
+        ></div>
+    </div>
+</section>
+
+<section class="section7 
+mobile_paddingtop_113  mobile_textalignCenter
+mt_paddingtop_105 tablet_textalignCenter 
+
+pcfixed_paddingtop_105 pc_textalignCenter pc_flex_alignitems_flexStart pc_response_paddingleft_210  pc_flex_horizontal_flexStart  pc_flex_nowrap
+">
+    <h2 class="borderstyle_solid colorblack
+    mobile_width_230 mobile_height_79 mobile_borderradius_39 mobile_border_1 mobile_fontsize_26 mobile_flex_horizontal_Center mobile_marginhorizontal_auto
+    mt_width_230 mt_height_79 mt_borderradius_39 mt_border_1 mt_fontsize_26 tablet_flex_horizontal_Center tablet_marginhorizontal_auto
+    pcfixed_width_194 pcfixed_height_70 pcfixed_borderradius_35 pcfixed_border_1 pcfixed_fontsize_22 pc_flex_horizontal_Center">
+     바디케어
+    </h2>
+
+    <div class="swiper-container banner4  
+    mobile_paddingbottom_184 mobile_margintop_122  mobile_height_auto
+    mt_paddingbottom_184 mt_margintop_122 tablet_height_auto
+    pcfixed_paddingbottom_159 pc_response_width_1336 pc_response_paddingleft_168 pc_response_paddingright_80 pc_margin_0
+    ">
+        <div class="swiper-wrapper
+        mobile_height_auto
+        tablet_height_auto
+        pc_height_auto">
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product1.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto"/>
+                <p class="bgcolor_black colorwhite
+                mobile_width_110 mobile_height_43 mobile_borderradius_21 mobile_fontsize_20 mobile_flex_horizontal_Center mobile_margintop_51  mobile_marginhorizontal_auto
+                mt_width_110 mt_height_43 mt_borderradius_21 mt_fontsize_20 tablet_flex_horizontal_Center mt_margintop_51 tablet_marginhorizontal_auto
+                pcfixed_width_60 pcfixed_height_24 pcfixed_borderradius_12 pcfixed_fontsize_11 pc_flex_horizontal_Center pcfixed_margintop_48 pc_marginhorizontal_auto">
+                NEW
+                </p>
+                <p class="info colorblack
+                mobile_margintop_25 mobile_fontsize_24
+                mt_margintop_25 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445 ">
+                <img src="img/mobile/product2.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto"/>
+                <p class="bgcolor_black colorwhite
+                mobile_width_110 mobile_height_43 mobile_borderradius_21 mobile_fontsize_20 mobile_flex_horizontal_Center mobile_margintop_51  mobile_marginhorizontal_auto
+                mt_width_110 mt_height_43 mt_borderradius_21 mt_fontsize_20 tablet_flex_horizontal_Center mt_margintop_51 tablet_marginhorizontal_auto
+                pcfixed_width_60 pcfixed_height_24 pcfixed_borderradius_12 pcfixed_fontsize_11 pc_flex_horizontal_Center pcfixed_margintop_48 pc_marginhorizontal_auto">
+                NEW
+                </p>
+                <p class="info colorblack
+                mobile_margintop_25 mobile_fontsize_24
+                mt_margintop_25 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+            <div class="swiper-slide 
+            mt_width_680
+            pc_response_marginright_162 pcfixed_width_445">
+                <img src="img/mobile/product3.png" class="display_block
+                mobile_width_auto mobile_height_303 mobile_marginhorizontal_auto 
+                tablet_width_auto mt_height_303 tablet_marginhorizontal_auto
+                pc_width_auto pcfixed_height_320 pc_marginhorizontal_auto"/>
+                <p class="bgcolor_black colorwhite
+                mobile_width_110 mobile_height_43 mobile_borderradius_21 mobile_fontsize_20 mobile_flex_horizontal_Center mobile_margintop_51  mobile_marginhorizontal_auto
+                mt_width_110 mt_height_43 mt_borderradius_21 mt_fontsize_20 tablet_flex_horizontal_Center mt_margintop_51 tablet_marginhorizontal_auto
+                pcfixed_width_60 pcfixed_height_24 pcfixed_borderradius_12 pcfixed_fontsize_11 pc_flex_horizontal_Center pcfixed_margintop_48 pc_marginhorizontal_auto">
+                NEW
+                </p>
+                <p class="info colorblack
+                mobile_margintop_25 mobile_fontsize_24
+                mt_margintop_25 mt_fontsize_24
+                pcfixed_margintop_21 pcfixed_fontsize_17">
+                르셀르 샴푸&트리트먼트 세트 450ml x 2ea
+                </p>
+                <p class="info colorgray1 fontfamily_Avenir
+                mobile_margintop_14 mobile_fontsize_24
+                mt_margintop_14 mt_fontsize_24
+                pcfixed_margintop_9 pcfixed_fontsize_17">
+                Shampoo & Body Cleanser                
+                </p>
+            </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev5
+        mobile_width_18 mobile_height_32 mobile_positionleft_35 mobile_positiontop_144 mobile_positionbottom_auto mobile_positionright_auto
+        mt_width_18 mt_height_32 mt_positionleft_35 mt_positiontop_144 tablet_positionbottom_auto tablet_positionright_auto
+        pcfixed_width_8 pcfixed_height_14 pcfixed_positionleft_54 pcfixed_positiontop_205 pc_positionbottom_auto pc_positionright_auto"
+        ></div>
+        <div class="swiper-button-next swiper-button-next5
+        mobile_width_18 mobile_height_32 mobile_positionright_36 mobile_positiontop_144 mobile_positionbottom_auto
+        mt_width_18 mt_height_32 mt_positionright_36 mt_positiontop_144 tablet_positionbottom_auto
+        pcfixed_width_8 pcfixed_height_14 pcfixed_positionright_10 pcfixed_positiontop_205 pc_positionbottom_auto"
+        ></div>
+
+        <div class="swiper-pagination swiper-pagination5
+        mobile_positionbottom_120 mobile_positiontop_auto mobile_height_4 mobile_width_650 mobile_positionleft_35
+        mt_positionbottom_120 tablet_positiontop_auto mt_height_4 tablet_width_100_percent tablet_positionleft_0
+        pcfixed_positionbottom_110 pc_positiontop_auto pcfixed_height_2 pc_response_width_1088 pc_response_positionleft_175"
+        ></div>
+    </div>
+</section>
+ 
+<section class="section8 colorblack position_relative_normal
+mobile_height_1020 mobile_textalignCenter mobile_paddingtop_528
+mt_height_1020 mt_paddingtop_528 tablet_overflow_hidden
+pcfixed_height_604 pcfixed pc_flex_alignitems_flexStart pc_flex_horizontal_flexEnd pc_overflow_hidden
+">
+    <img src="img/mobile/mainimg5.png" class="img_background_cover_center
+    mobile_onlyview"/>
+    <img src="img/mobile/mainimg5.png" class="img_background_cover_width_center
+    tablet_onlyview"/>
+    <img src="img/pc/mainimg5.png" class="img_background_cover_height pc_onlyview"/>
+
+    <h2 class="tit position_relative_zindex3 colorwhite
+    mobile_fontsize_42
+    mt_fontsize_42 mt_paddingleft_80
+    pcfixed_fontsize_40  pc_textalignCenter pc_response_paddingright_345 pcfixed_paddingtop_115 pc_width_100_percent pc_flex_horizontal_flexEnd
+    ">
+        세상에 단 <br/>
+        하나뿐인 패키지
+    </h2>
+
+    <p class="content position_relative_zindex3 colorwhite
+    mobile_margintop_44 mobile_fontsize_26
+    mt_margintop_44 mt_fontsize_26 mt_paddingleft_80
+    pcfixed_margintop_41 pcfixed_fontsize_22 pc_textalignCenter pc_response_paddingright_352 pc_width_100_percent pc_flex_horizontal_flexEnd">
+    받으시는 분의 각인을 넣은<br/>
+    맞춤 패키지에 담아드립니다.
+    </p>
+
+    <div class="buttonwrap  position_relative_zindex3 
+    mobile_flex_horizontal_flexStart mobile_margintop_71 mobile_width_652 mobile_marginhorizontal_auto
+    tablet_flex_horizontal_flexStart mt_margintop_71 mt_width_652 mt_marginleft_80
+    pc_flex_horizontal_flexStart pcfixed_margintop_49 pc_response_marginright_217 pcfixed_width_520
+    ">
+        <button class="colorwhite borderstyle_solid bgcolor_transparent
+        mobile_width_326 mobile_height_115 mobile_fontsize_24 mobile_borderleft_1 mobile_bordertop_1 mobile_borderbottom_1
+        mt_width_326 mt_height_115 mt_fontsize_24 mt_borderleft_1 mt_bordertop_1 mt_borderbottom_1
+        pcfixed_width_258 pcfixed_height_102 pcfixed_fontsize_23 pcfixed_border_1">
+        맞춤주문
+        </button>
+        <button class="colorwhite borderstyle_solid bgcolor_transparent
+        mobile_width_326 mobile_height_115 mobile_fontsize_24 mobile_borderleft_1 mobile_bordertop_1 mobile_borderbottom_1 mobile_borderright_1
+        mt_width_326 mt_height_115 mt_fontsize_24 mt_border_1
+        pcfixed_width_258 pcfixed_height_102 pcfixed_fontsize_23 pcfixed_border_1
+        ">
+        선물하기
+        </button>
+    </div>
+</section>
+
+<section class="section9 colorblack position_relative_normal
+ mobile_textalignCenter
+ tablet_textalignCenter
+ pc_textalignCenter">
+    <h2 class="tit bgcolor_warmbrightness
+    mobile_fontsize_42 mobile_paddingtop_122 mobile_paddingbottom_120
+    mt_fontsize_42 mt_paddingtop_122 mt_paddingbottom_120
+    pcfixed_fontsize_40 pcfixed_paddingtop_132 pcfixed_paddingbottom_127
+    ">
+       Brand Movie
+    </h2>
+
+   <div class="videowrap 
+   mobile_height_720
+   mt_height_720
+   pcfixed_height_1080
+   ">
+   </div>
+  <h2 class="bgcolor_warmbrightness
+  mobile_paddingbottom_120
+  mt_paddingbottom_120
+  pcfixed_paddingbottom_183">
+  </h2>
+</section>
+
+<section class="section10 colorblack position_relative_normal 
+">
+    <h2 class="tit  colorlecelle1
+    mobile_fontsize_42 mobile_paddingtop_118 mobile_paddingbottom_65 mobile_paddingleft_33
+    mt_fontsize_42 mt_paddingtop_118 mt_paddingbottom_65 mt_paddingleft_33
+    pc_response_paddingleft_304 pcfixed_paddingtop_130 pcfixed_paddingbottom_115 pcfixed_fontsize_40
+    ">
+        르셀르는 질문을 환영합니다.
+    </h2>
+
+    <ul class="questionlist colorblack
+    
+    pc_response_paddingleft_304">
+        <li class="
+        mobile_paddingtop_56 mobile_flex_horizontal_spaceBetween mobile_paddingbottom_53 mobile_paddingleft_33 mobile_paddingright_35 mobile_borderbottom_1
+        mt_paddingtop_56 tablet_flex_horizontal_spaceBetween mt_paddingbottom_53 mt_paddingleft_33 mt_paddingright_35 mt_borderbottom_1
+        pcfixed_paddingtop_47 pc_flex_horizontal_spaceBetween pcfixed_paddingbottom_38 pc_response_width_1280
+        ">
+            <span class="
+            mobile_fontsize_26
+            mt_fontsize_26
+            pcfixed_fontsize_22
+            
+            
+            javascript_slideToggle
+            javascript_iconToggle"
+            targetdata='{"slideTarget":"slideToggleTarget1","iconTarget":"iconToggleTarget1","iconEffect":"rotate180_fix"}'
+            toggle_status="closed">정기구독은 어떻게 하는건가요? </span>
+            <img src="img/mobile/downarrow.png" class="display_block
+            mobile_width_19 mobile_height_13
+            mt_width_19 mt_height_13
+            pcfixed_width_16 pcfixed_height_10"
+            targetindex="iconToggleTarget1"/>
+            <p class='subcontent 
+            mobile_paddingtop_38 mobile_fontsize_24 mobile_width_545 mobile_textalignLeft
+            mt_paddingtop_38 mt_fontsize_24 tablet_textalignLeft tablet_width_100_percent
+            pcfixed_paddingtop_47 pcfixed_fontsize_20 pc_width_100_percent pc_textalignLeft
+            '
+            
+            targetindex="slideToggleTarget1"
+            style="display:none">걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, 
+                다른 조합의 맞춤제품을 보내드려요. 
+            </p>
+        </li>
+        <li class="bgcolor_gray1
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+        tablet_width_100_percent mt_height_1 tablet_marginhorizontal_auto
+        pc_response_width_1280 pcfixed_height_1 
+        "></li>
+        <li class="
+        mobile_paddingtop_56 mobile_flex_horizontal_spaceBetween mobile_paddingbottom_53 mobile_paddingleft_33 mobile_paddingright_35 mobile_borderbottom_1
+        mt_paddingtop_56 tablet_flex_horizontal_spaceBetween mt_paddingbottom_53 mt_paddingleft_33 mt_paddingright_35 mt_borderbottom_1
+        pcfixed_paddingtop_47 pc_flex_horizontal_spaceBetween pcfixed_paddingbottom_38 pc_response_width_1280
+        ">
+            <span class="
+            mobile_fontsize_26
+            mt_fontsize_26
+            pcfixed_fontsize_22
+            
+            javascript_slideToggle
+            javascript_iconToggle"
+            
+            targetdata='{"slideTarget":"slideToggleTarget0","iconTarget":"iconToggleTarget0","iconEffect":"rotate180_fix"}'
+            toggle_status="closed">제품이 저한테 맞지 않으면 어쩌죠? </span>
+            <img src="img/mobile/downarrow.png" class="display_block
+            mobile_width_19 mobile_height_13 
+            mt_width_19 mt_height_13
+            pcfixed_width_16 pcfixed_height_10
+            "
+            
+            targetindex="iconToggleTarget0"/>
+            <p class='subcontent 
+            mobile_paddingtop_38 mobile_fontsize_24 mobile_width_545 mobile_textalignLeft
+            mt_paddingtop_38 mt_fontsize_24 tablet_textalignLeft tablet_width_100_percent
+            pcfixed_paddingtop_47 pcfixed_fontsize_20 pc_width_100_percent pc_textalignLeft
+            '
+            
+            targetindex="slideToggleTarget0"
+            style="display:none">걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, 
+                다른 조합의 맞춤제품을 보내드려요. 
+            </p>
+        </li>
+        <li class="bgcolor_gray1
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+        tablet_width_100_percent mt_height_1 tablet_marginhorizontal_auto
+        pc_response_width_1280 pcfixed_height_1 
+        "></li>
+        <li class="
+        mobile_paddingtop_56 mobile_flex_horizontal_spaceBetween mobile_paddingbottom_53 mobile_paddingleft_33 mobile_paddingright_35 mobile_borderbottom_1
+        mt_paddingtop_56 tablet_flex_horizontal_spaceBetween mt_paddingbottom_53 mt_paddingleft_33 mt_paddingright_35 mt_borderbottom_1
+        pcfixed_paddingtop_47 pc_flex_horizontal_spaceBetween pcfixed_paddingbottom_38 pc_response_width_1280
+        ">
+            <span class="
+            mobile_fontsize_26
+            mt_fontsize_26
+            pcfixed_fontsize_22
+            
+            javascript_slideToggle
+            javascript_iconToggle"
+            targetdata='{"slideTarget":"slideToggleTarget2","iconTarget":"iconToggleTarget2","iconEffect":"rotate180_fix"}'
+            toggle_status="closed">정기구독은 어떻게 하는건가요? </span>
+            <img src="img/mobile/downarrow.png" class="display_block
+            mobile_width_19 mobile_height_13
+            mt_width_19 mt_height_13
+            pcfixed_width_16 pcfixed_height_10"
+            
+            targetindex="iconToggleTarget2"/>
+            <p class='subcontent 
+            mobile_paddingtop_38 mobile_fontsize_24 mobile_width_545 mobile_textalignLeft
+            mt_paddingtop_38 mt_fontsize_24 tablet_textalignLeft tablet_width_100_percent
+            pcfixed_paddingtop_47 pcfixed_fontsize_20 pc_width_100_percent pc_textalignLeft
+            '
+            
+            targetindex="slideToggleTarget2"
+            style="display:none">걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, 
+                다른 조합의 맞춤제품을 보내드려요. 
+            </p>
+        </li>
+        <li class="bgcolor_gray1
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+        tablet_width_100_percent mt_height_1 tablet_marginhorizontal_auto
+        pc_response_width_1280 pcfixed_height_1 
+        "></li>
+        <li class="
+        mobile_paddingtop_56 mobile_flex_horizontal_spaceBetween mobile_paddingbottom_53 mobile_paddingleft_33 mobile_paddingright_35 mobile_borderbottom_1
+        mt_paddingtop_56 tablet_flex_horizontal_spaceBetween mt_paddingbottom_53 mt_paddingleft_33 mt_paddingright_35 mt_borderbottom_1
+        pcfixed_paddingtop_47 pc_flex_horizontal_spaceBetween pcfixed_paddingbottom_38 pc_response_width_1280
+        ">
+            <span class="
+            mobile_fontsize_26
+            mt_fontsize_26
+            pcfixed_fontsize_22
+            
+            javascript_slideToggle
+            javascript_iconToggle"
+            
+            targetdata='{"slideTarget":"slideToggleTarget3","iconTarget":"iconToggleTarget3","iconEffect":"rotate180_fix"}'
+            toggle_status="closed">정기구독은 어떻게 하는건가요? </span>
+            <img src="img/mobile/downarrow.png" class="display_block
+            mobile_width_19 mobile_height_13
+            mt_width_19 mt_height_13
+            pcfixed_width_16 pcfixed_height_10
+            "
+            targetindex="iconToggleTarget3"/>
+            <p class='subcontent 
+            mobile_paddingtop_38 mobile_fontsize_24 mobile_width_545 mobile_textalignLeft
+            mt_paddingtop_38 mt_fontsize_24 tablet_textalignLeft tablet_width_100_percent
+            pcfixed_paddingtop_47 pcfixed_fontsize_20 pc_width_100_percent pc_textalignLeft
+            '
+            
+            targetindex="slideToggleTarget3"
+            style="display:none">걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, 
+                다른 조합의 맞춤제품을 보내드려요. 
+            </p>
+        </li>
+        <li class="bgcolor_gray1
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+        tablet_width_100_percent mt_height_1 tablet_marginhorizontal_auto
+        pc_response_width_1280 pcfixed_height_1 
+        "></li>
+        <li class="
+        mobile_paddingtop_56 mobile_flex_horizontal_spaceBetween mobile_paddingbottom_53 mobile_paddingleft_33 mobile_paddingright_35 mobile_borderbottom_1
+        mt_paddingtop_56 tablet_flex_horizontal_spaceBetween mt_paddingbottom_53 mt_paddingleft_33 mt_paddingright_35 mt_borderbottom_1
+        pcfixed_paddingtop_47 pc_flex_horizontal_spaceBetween pcfixed_paddingbottom_38 pc_response_width_1280
+        ">
+            <span class="
+            mobile_fontsize_26
+            mt_fontsize_26
+            pcfixed_fontsize_22
+            
+            javascript_slideToggle
+            javascript_iconToggle"
+            
+            targetdata='{"slideTarget":"slideToggleTarget4","iconTarget":"iconToggleTarget4","iconEffect":"rotate180_fix"}'
+            toggle_status="closed">정기구독은 어떻게 하는건가요? </span>
+            <img src="img/mobile/downarrow.png" class="display_block
+            mobile_width_19 mobile_height_13
+            mt_width_19 mt_height_13
+            pcfixed_width_16 pcfixed_height_10"
+            
+            targetindex="iconToggleTarget4"/>
+            <p class='subcontent 
+            mobile_paddingtop_38 mobile_fontsize_24 mobile_width_545 mobile_textalignLeft
+            mt_paddingtop_38 mt_fontsize_24 tablet_textalignLeft tablet_width_100_percent
+            pcfixed_paddingtop_47 pcfixed_fontsize_20 pc_width_100_percent pc_textalignLeft
+            '
+            
+            targetindex="slideToggleTarget4"
+            style="display:none">걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, 
+                다른 조합의 맞춤제품을 보내드려요. 
+            </p>
+        </li>
+        <li class="bgcolor_gray1
+        mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+        tablet_width_100_percent mt_height_1 tablet_marginhorizontal_auto
+        pc_response_width_1280 pcfixed_height_1 
+        "></li>
+    </ul>
+   <p class="colorblack
+   mobile_margintop_31 mobile_fontsize_24 mobile_textalignRight mobile_paddingright_35 mobile_paddingbottom_120
+   mt_margintop_31 mt_fontsize_24 tablet_textalignRight mt_paddingright_35 mt_paddingbottom_120
+   pcfixed_margintop_27 pcfixed_fontsize_20 pc_textalignRight pc_response_paddingright_311 pcfixed_paddingbottom_132
+   ">
+   더 궁금한 사항은 1:1문의에 남겨주세요.
+    </p>
+</section>
+
+<section class="section11 colorblack position_relative_normal  bgcolor_warmbrightness2
+">
+    <h2 class="tit colorblack
+    mobile_fontsize_42 mobile_paddingtop_118 mobile_paddingbottom_118 mobile_textalignCenter
+    mt_fontsize_42 mt_paddingtop_118 mt_paddingbottom_118 tablet_textalignCenter
+    pcfixed_fontsize_40 pcfixed_paddingtop_98 pcfixed_paddingbottom_92 pc_textalignCenter">
+        제품은 후기로 말합니다.
+    </h2>
+
+    <div class="swiper-container banner5  
+    mobile_paddingbottom_175 mobile_paddingleft_109 
+    mt_paddingbottom_175 mt_paddingleft_109
+    pc_response_width_1152 pcfixed_paddingbottom_106
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide  
+            mobile_width_503 mobile_marginright_30
+            mt_width_503 mt_marginright_30
+            pcfixed_width_362 pcfixed_marginright_33
+            ">
+                <img src="img/mobile/reviewimg.png" class="display_block
+                mobile_width_100_percent mobile_height_525
+                tablet_width_100_percent mt_height_525
+                pc_width_100_percent pcfixed_height_322
+                "/>
+                <div class="bgcolor_white colorblack
+                mobile_paddingleft_53 mobile_paddingtop_44 mobile_paddingright_88 mobile_paddingbottom_62
+                mt_paddingleft_53 mt_paddingtop_44 mt_paddingright_88 mt_paddingbottom_62
+                pcfixed_paddingleft_32 pcfixed_paddingtop_27 pcfixed_paddingright_32 pcfixed_paddingbottom_40
+                ">
+                    <img src="img/mobile/Stringgroup.png" class="
+                    mobile_width_35 mobile_height_27
+                    mt_width_35 mt_height_27
+                    pcfixed_width_22 pcfixed_height_17
+                    ">
+                    <p class="content fontweight_300
+                    mobile_paddingtop_34 mobile_fontsize_28
+                    mt_paddingtop_34 mt_fontsize_28
+                    pcfixed_paddintop_17 pcfixed_fontsize_20
+                    ">
+                    스킨케어는 다 각각 자기에게<br/>
+                    맞는걸 쓰면서 왜 헤어케어는<br/>
+                    따로 쓰지 않았을까 싶더라고요.                    
+                    </p>
+                    <p class="contents fontweight_500
+                    mobile_margintop_41 mobile_fontsize_24
+                    mt_margintop_41 mt_fontsize_24
+                    pcfixed_margintop_34 pcfixed_fontsize_15
+                    ">
+                    최**님 32세, 디자이너
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide  
+            mobile_width_503 mobile_marginright_30
+            mt_width_503 mt_marginright_30
+            pcfixed_width_362 pcfixed_marginright_33
+            ">
+                <img src="img/mobile/reviewimg2.png" class="display_block
+                mobile_width_100_percent mobile_height_525
+                tablet_width_100_percent mt_height_525
+                pc_width_100_percent pcfixed_height_322
+                "/>
+                <div class="bgcolor_white colorblack
+                mobile_paddingleft_53 mobile_paddingtop_44 mobile_paddingright_88 mobile_paddingbottom_62
+                mt_paddingleft_53 mt_paddingtop_44 mt_paddingright_88 mt_paddingbottom_62
+                pcfixed_paddingleft_32 pcfixed_paddingtop_27 pcfixed_paddingright_32 pcfixed_paddingbottom_40
+                ">
+                    <img src="img/mobile/Stringgroup.png" class="
+                    mobile_width_35 mobile_height_27
+                    mt_width_35 mt_height_27
+                    pcfixed_width_22 pcfixed_height_17
+                    ">
+                    <p class="content fontweight_300
+                    mobile_paddingtop_34 mobile_fontsize_28
+                    mt_paddingtop_34 mt_fontsize_28
+                    pcfixed_paddintop_17 pcfixed_fontsize_20
+                    ">
+                    여름과 겨울이 다른 제 헤어 <br/>
+                    컨디션을 르셀르는 맞춰줘서 좋아요.
+                 
+                    </p>
+                    <p class="contents fontweight_500
+                    mobile_margintop_41 mobile_fontsize_24
+                    mt_margintop_41 mt_fontsize_24
+                    pcfixed_margintop_34 pcfixed_fontsize_15
+                    ">
+                    이**님 29세, 교사
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide  
+            mobile_width_503 mobile_marginright_30
+            mt_width_503 mt_marginright_30
+            pcfixed_width_362 pcfixed_marginright_33
+            ">
+                <img src="img/mobile/reviewimg3.png" class="display_block
+                mobile_width_100_percent mobile_height_525
+                tablet_width_100_percent mt_height_525
+                pc_width_100_percent pcfixed_height_322
+                "/>
+                <div class="bgcolor_white colorblack
+                mobile_paddingleft_53 mobile_paddingtop_44 mobile_paddingright_88 mobile_paddingbottom_62
+                mt_paddingleft_53 mt_paddingtop_44 mt_paddingright_88 mt_paddingbottom_62
+                pcfixed_paddingleft_32 pcfixed_paddingtop_27 pcfixed_paddingright_32 pcfixed_paddingbottom_40
+                ">
+                    <img src="img/mobile/Stringgroup.png" class="
+                    mobile_width_35 mobile_height_27
+                    mt_width_35 mt_height_27
+                    pcfixed_width_22 pcfixed_height_17
+                    ">
+                    <p class="content fontweight_300
+                    mobile_paddingtop_34 mobile_fontsize_28
+                    mt_paddingtop_34 mt_fontsize_28
+                    pcfixed_paddintop_17 pcfixed_fontsize_20
+                    ">
+                    선물을 받은 것 같은 즐거운 경험과<br/>
+                    패키징이네요.
+
+                    </p>
+                    <p class="contents fontweight_500
+                    mobile_margintop_41 mobile_fontsize_24
+                    mt_margintop_41 mt_fontsize_24
+                    pcfixed_margintop_34 pcfixed_fontsize_15
+                    ">
+                    강**님 31세, 포토그래퍼
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section12 colorblack position_relative_normal 
+">
+    <h2 class="tit colorblack
+     mobile_paddingtop_116  mobile_paddingbottom_121 mobile_flex_horizontal_Center
+     mt_paddingtop_116 mt_paddingbottom_121 tablet_flex_horizontal_Center
+     pcfixed_paddingtop_121 pcfixed_paddingbottom_74 pc_flex_horizontal_Center">
+        <span class="bgcolor_black display_block
+        mobile_width_175 mobile_height_1
+        mt_width_175 mt_height_1
+        pcfixed_width_230 pcfixed_height_1
+        ">
+        </span>
+        <span class="
+        mobile_paddingleft_31 mobile_paddingright_37 mobile_fontsize_42
+        mt_paddingleft_31 mt_paddingright_37 mt_fontsize_42
+        pcfixed_paddingleft_25 pcfixed_paddingright_25 pcfixed_fontsize_40">
+            정기구독 혜택
+        </span>
+        <span class="bgcolor_black display_block
+        mobile_width_175 mobile_height_1
+        mt_width_175 mt_height_1
+        pcfixed_width_230 pcfixed_height_1">
+        </span>
+    </h2>
+
+    <ul class="
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <li class="listitem
+        ">
+            <h3 class="steptit fontweight_900
+            mobile_fontsize_24 
+            mt_fontsize_24
+            pcfixed_fontsize_19
+            ">
+                01 
+                <span class="bgcolor_black display_block
+                mobile_width_30 mobile_height_3 mobile_margintop_10 mobile_marginhorizontal_auto
+                mt_width_30 mt_height_3 mt_margintop_10 tablet_marginhorizontal_auto
+                pcfixed_width_22 pcfixed_height_2 pcfixed_margintop_6 pc_marginhorizontal_auto">
+                </span>
+            </h3>
+            <p class='txt
+            mobile_fontsize_27 mobile_paddingtop_31 mobile_paddingbottom_77
+            mt_fontsize_27 mt_paddingtop_31 mt_paddingbottom_77
+            pcfixed_fontsize_22 pcfixed_paddingtop_17 pcfixed_paddingbottom_74
+            '>
+            최대 40%<br/>
+            할인 혜택
+            </p>
+        </li>
+        <li class="listitem
+        ">
+            <h3 class="steptit fontweight_900
+            mobile_fontsize_24 
+            mt_fontsize_24
+            pcfixed_fontsize_19">
+                02 
+                <span class="bgcolor_black display_block
+                mobile_width_30 mobile_height_3 mobile_margintop_10 mobile_marginhorizontal_auto
+                mt_width_30 mt_height_3 mt_margintop_10 tablet_marginhorizontal_auto
+                pcfixed_width_22 pcfixed_height_2 pcfixed_margintop_6 pc_marginhorizontal_auto">
+                </span>
+            </h3>
+            <p class='txt
+            mobile_fontsize_27 mobile_paddingtop_35 mobile_paddingbottom_89
+            mt_fontsize_27 mt_paddingtop_35 mt_paddingbottom_89
+            pcfixed_fontsize_22 pcfixed_paddingtop_17 pcfixed_paddingbottom_74
+            '>
+            컨디션과 날씨에 따라<br/>
+            기능과 향기도 매번 다르게
+            </p>
+        </li>
+        <li class="listitem
+        ">
+            <h3 class="steptit fontweight_900
+            mobile_fontsize_24 
+            mt_fontsize_24
+            pcfixed_fontsize_19">
+                03
+                <span class="bgcolor_black display_block
+                mobile_width_30 mobile_height_3 mobile_margintop_10 mobile_marginhorizontal_auto
+                mt_width_30 mt_height_3 mt_margintop_10 tablet_marginhorizontal_auto
+                pcfixed_width_22 pcfixed_height_2 pcfixed_margintop_6 pc_marginhorizontal_auto">
+                </span>
+            </h3>
+            <p class='txt
+            mobile_fontsize_27 mobile_paddingtop_30 mobile_paddingbottom_116
+            mt_fontsize_27 mt_paddingtop_30 mt_paddingbottom_116
+            pcfixed_fontsize_22 pcfixed_paddingtop_17 pcfixed_paddingbottom_74'>
+            여행 가실때<br/>
+            트래블키트도 챙겨드려요
+            </p>
+        </li>
+    </ul>
+    <button class="viewmore bgcolor_black colorwhite display_block
+    mobile_width_650 mobile_height_110 mobile_marginhorizontal_auto mobile_fontsize_24
+    mt_width_650 mt_height_110 tablet_marginhorizontal_auto mt_fontsize_24
+    pcfixed_width_740 pcfixed_height_90 pc_marginhorizontal_auto pcfixed_fontsize_17
+    ">
+    정기구독 더 알아보기  >
+    </button>
+</section>
+
+<footer class="bgcolor_warmbrightness
+    mobile_margintop_120
+    mt_margintop_120
+  pc_flex_horizontal_flexStart  pc_flex_alignitems_flexStart pc_flex_nowrap pcfixed_margintop_90">
+    <div class="pcblockleft 
+    pc_onlyview pc_response_width_415 pcfixed_height_324" style="flex:0 1 auto">
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_200 pcfixed_borderbottom_1"></div>
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_124 pcfixed_borderright_1"></div>
+    </div>
+    <div class="customer borderstyle_solid bordercolorlecelle2
+    mt_border_1 
+    pc_response_paddingright_80 pcfixed_borderbottom_1 pcfixed_borderleft_1 " >
+        <h3 class="fontweight_500 colorlecelle1
+        mobile_fontsize_24 mobile_paddingleft_33 mobile_paddingtop_45 mobile_paddingbottom_43
+        mt_fontsize_20 mt_paddingleft_33 mt_paddingtop_25 mt_paddingbottom_23
+        pcfixed_fontsize_18 pc_response_paddingleft_42 pcfixed_paddingtop_39 pcfixed_paddingbottom_37">
+        고객센터</h3>
+        <p class="tel colorlecelle1
+        mobile_fontsize_36 mobile_paddingleft_33 mobile_paddingbottom_20
+        mt_fontsize_30 mt_paddingleft_33 mt_paddingbottom_20 mt_paddingright_43
+        pcfixed_fontsize_23 pc_response_paddingleft_42 pcfixed_paddingbottom_16
+        ">
+        070.8656.9610</p>
+        <p class="desc colorlecelle1
+        mobile_fontsize_24 mobile_paddingleft_33 mobile_paddingbottom_42
+        mt_fontsize_22 mt_paddingleft_33 mt_paddingbottom_22
+        pcfixed_fontsize_17 pc_response_paddingleft_42 pcfixed_paddingbottom_45
+        ">
+        평일 11:00 ~ 17:00<br/>
+        주말 및 공휴일 휴무
+        </p>
+    </div>
+    <span class="display_block bgcolor_warm2
+    mobile_width_100_percent mobile_height_1 mobile_onlyview
+    ">
+    </span>
+ 
+
+    <div class="social borderstyle_solid bordercolorlecelle2
+    mobile_paddingleft_33
+    mt_paddingleft_33 mt_borderbottom_1 mt_borderright_1 mt_paddingbottom_25 
+    pc_response_paddingleft_44  pcfixed_borderbottom_1 pcfixed_borderleft_1 ">
+        <h3 class="fontweight_500 colorlecelle1
+        mobile_fontsize_24  mobile_paddingtop_40 mobile_paddingbottom_45
+        mt_fontsize_20 mt_paddingtop_20 mt_paddingbottom_25
+        pcfixed_fontsize_18 pcfixed_paddingtop_39 pcfixed_paddingbottom_36">
+        소셜
+        </h3>
+        <ul class="list
+        mobile_flex_horizontal_flexStart
+        tablet_flex_horizontal_flexStart mt_marginright_43
+        pc_flex_horizontal_flexStart pcfixed_paddingbottom_90 pc_response_marginright_99">
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10">
+                <img src="img/mobile/kakaologo.png" class="display_block
+                mobile_width_43 mobile_height_40
+                mt_width_38 mt_height_35
+                pcfixed_width_34 pcfixed_height_32"/>
+            </li>
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10
+            ">
+                <img src="img/mobile/instalogo.png" class="display_block
+                mobile_width_40 mobile_height_40
+                mt_width_37 mt_height_37
+                pcfixed_width_31 pcfixed_height_33"/>
+            </li>
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10">
+                <img src="img/mobile/naverlogo.png" class="display_block
+                mobile_width_35 mobile_height_34
+                mt_width_32 mt_height_30
+                pcfixed_width_30 pcfixed_height_29"/>
+            </li>
+            <li class="item
+            ">
+                <img src="img/mobile/utubelogo.png" class="display_block
+                mobile_width_52 mobile_height_37
+                mt_width_46 mt_height_32
+                pcfixed_width_38 pcfixed_height_30"/>
+            </li>
+        </ul>
+    </div>
+    <span class="display_block bgcolor_warm2 
+    mobile_width_100_percent mobile_height_1 mobile_margintop_38 mobile_marginbottom_41 mobile_onlyview">
+    </span>
+  
+
+    <div class="wrapping terms borderstyle_solid bordercolorlecelle2
+    mobile_width_556
+    mt_border_1
+    pcfixed_width_433 pcfixed_borderbottom_1 pcfixed_borderleft_1 pcfixed_borderbottom_1 pcfixed_borderright_1" >
+        <ul class="colorlecelle1
+        mobile_paddingleft_33 mobile_flex_horizontal_flexStart
+        mt_paddingleft_33 tablet_flex_horizontal_flexStart mt_paddingtop_20
+        pc_response_paddingleft_40 pc_flex_horizontal_flexStart pcfixed_paddingtop_40
+        ">
+            <li class="item fontweight_500
+            mobile_fontsize_24 mobile_paddingright_37
+            mt_fontsize_20 mt_paddingright_37
+            pcfixed_fontsize_18 pc_response_paddingright_22">
+            이용약관</li>
+            <li class="item fontweight_500
+            mobile_fontsize_24
+            mt_fontsize_20
+            pcfixed_fontsize_18">
+            개인정보처리방침</li>
+        </ul>
+
+        <p class="copyright colorlecelle1
+        mobile_paddingleft_33 mobile_paddingtop_46 mobile_paddingbottom_53  mobile_fontsize_21
+        
+        mt_paddingleft_33 mt_paddingtop_26 mt_paddingbottom_43 mt_paddingright_33  mt_fontsize_18
+
+        pc_response_paddingleft_40 pcfixed_paddingtop_34 pcfixed_paddingbottom_44  pcfixed_fontsize_16 pc_response_paddingright_105
+        " style="word-break:break-all">
+        (주)나인빌리언앤코  l  서울특별시 강남구 강남대로 464, 7층
+        대표자: 김홍성  l 대표 이메일: lecelle.contact@9billion.care
+        개인정보보호책임자 : 김민지  ㅣ 사업자번호 : 223-87-01239
+        통신판매신고 : 2019-서울강남-02469호<br/>
+        Copyright © 나인빌리언앤코
+        </p>
+    </div>
+    <div class="pcblockright 
+    pc_onlyview pc_response_width_415 pcfixed_height_324">
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_200 pcfixed_borderbottom_1"></div>
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_124 pcfixed_borderleft_1"></div>
+    </div>
+</footer>
+
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<!--<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>-->
+<script src="common_function.js"></script>
+<script src="commonui_javascript.js"></script>
+<script>
+    var swiper=new Swiper('.mainbanner',{
+        slidesPerView:'auto',
+        autoResize: false,
+        centeredSlides:true,
+        //loop:true
+        pagination:{
+            el : '.swiper-pagination1',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next1',
+            prevEl : '.swiper-button-prev1'
+        },
+        on:{
+            slideChangeTransitionEnd : function(){
+                console.log("현재 슬라이드카운트 index:",this.activeIndex+1);
+                let target=document.querySelector(`[targetindex='javascript_swipercustom_slidecountTarget_0']`);
+                target.innerText = this.activeIndex+1 < 10? '0'+(this.activeIndex+1) : (this.activeIndex+1);
+            }
+        }
+    })
+
+    var swiper2=new Swiper('.banner1',{
+        slidesPerView:'auto',
+        autoResize: true,
+        pagination:{
+            el :'.swiper-pagination2',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },
+    })
+
+    var swiper3=new Swiper('.banner2',{
+        slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination3',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl :'.swiper-button-next3',
+            prevEl :'.swiper-button-prev3'
+        }
+    })
+
+    var swiper4=new Swiper('.banner3',{
+        slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination4',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl :'.swiper-button-next4',
+            prevEl :'.swiper-button-prev4'
+        }
+    })
+    var swiper5=new Swiper('.banner4',{
+        slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination5',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl :'.swiper-button-next5',
+            prevEl :'.swiper-button-prev5'
+        }
+    })
+
+    var swiper5=new Swiper('.banner5',{
+        slidesPerView:'auto',
+        autoResize: false,
+        navigation:{
+            nextEl :'.next1',
+            prevEl :'.prev1'
+        }
+        /*pagination:{
+            el : '.swiper-pagination',
+            clickable:true
+        }*/
+    })
+
+</script>
+</body>
+</html>

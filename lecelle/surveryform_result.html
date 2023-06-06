@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/position_and_another_based.css"/>
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+<header class="lecell_header position_relative_normal zindex550 bgcolor_warmbrightness
+mobile_flex_horizontal_spaceBetween mobile_paddingtop_35 mobile_paddingbottom_35 mobile_paddingleft_34 mobile_paddingright_32 mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent
+
+tablet_flex_horizontal_spaceBetween mt_paddingtop_35 mt_paddingbottom_35 mt_paddingleft_34 mt_paddingright_32 mt_positiontop_0 mt_positionleft_0 tablet_width_100_percent 
+
+pc_flex_horizontal_flexStart pcfixed_paddingtop_40 pcfixed_paddingbottom_40 pcfixed_paddingleft_68 pcfixed_paddingright_68 pcfixed_pcfixed_paddingbottom_40 pcfixed_positiontop_0 pcfixed_positionleft_0 pc_width_100_percent 
+">
+    <a href="main.html"><img src="img/mobile/sitelogo2.png" class="display_block sitelogo
+    mobile_width_192 mobile_height_46
+    mt_width_192 mt_height_46
+    pcfixed_width_130 pcfixed_height_31
+    " style="flex:0 0 auto"></a>
+
+    <ul class="headermenu 
+    pc_flex_horizontal_flexStart pc_onlyview pcfixed_marginleft_66">
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='brand.html'>브랜드</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='shoplist.html'>제품보기</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='#'>정기구독</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>선물하기</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_fontsize_17"><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="menucontrol
+    mobile_flex_horizontal_flexEnd
+    tablet_flex_horizontal_flexEnd
+    pc_flex_horizontal_flexEnd" style="flex:1 0 auto">
+        <a href="login.html"><span class="colorblack display_block
+        pc_onlyview pcfixed_fontsize_17 pcfixed_paddingright_35">로그인</span></a>
+        <a href="cart.html">
+            <span class="display_block bgcolor_graywhite
+            mobile_width_80 mobile_height_80 mobile_marginright_42 mobile_borderradius_40 mobile_flex_horizontal_Center
+            mt_width_80  mt_height_80 mt_marginright_42 mt_borderradius_40 tablet_flex_horizontal_Center
+            pcfixed_width_50 pcfixed_height_50 pcfixed_borderradius_25 pc_flex_horizontal_Center
+            ">
+                <img src="img/mobile/cart.svg" class="display_block
+                mobile_width_33 mobile_height_33
+                mt_width_33 mt_height_33
+                pcfixed_width_20 pcfixed_height_20">
+            </span>
+        </a>
+        
+        <img src="img/mobile/menubar2.png" class="
+        mobile_width_41 mobile_height_25 mobile_onlyview
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger
+        "
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+        <img src="img/mobile/menubar2.png" class="
+        mt_width_41 mt_height_25 tablet_onlyview
+        
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+    </div>
+</header>
+
+<div class="popupbg" targetindex="navBg" style="display:none"></div>
+<nav class="position_absolute zindex999
+    width_720 positiontop_0 
+    mobile_width_720  mobile_height_100_percent mobile_positiontop_0 
+    mt_width_720  tablet_positiontop_0 tablet_height_100_percent
+    pc_height_100_percent"
+targetindex="lecelle_navigation"
+style="left:-120%;">
+    <img src="img/mobile/naviBg.png" class="img_background_cover_center"/>
+    <div class="position_relative_zindex3
+    flex_horizontal_spaceBetween paddingtop_38 paddingleft_34 paddingright_39 
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_38 mobile_paddingleft_34 mobile_paddingright_39
+    tablet_flex_horizontal_spaceBetween mt_paddingtop_38 mt_paddingleft_34 mt_paddingright_39">
+        <img src="img/mobile/sitelogo.png" class="
+        width_192 height_46
+        mobile_width_192 mobile_height_46 
+        mt_width_192 mt_height_46">
+        <img src="img/mobile/xbtn.png" class="
+        width_32 height_32 
+        mobile_width_32 mobile_height_32
+        mt_width_32 mt_height_32
+
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|-120%",  "viewunviewTarget":"navBg","viewunviewto":"none"}'/>
+    </div>
+
+    <ul class="menulist position_relative_zindex3 
+    textalignCenter paddingtop_110
+    mobile_textalignCenter mobile_paddingtop_110
+    tablet_textalignCenter mt_paddingtop_110
+    ">
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='brand.html'>브랜드</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='shoplist.html'>제품보기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='surveyform.html'>선물하기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="usercontrol colorwhite bordercolorwhite position_relative_zindex3 borderstyle_solid
+    flex_horizontal_Center margintop_88 bordertop_1 borderbottom_1 textalignCenter
+    mobile_flex_horizontal_Center mobile_margintop_88 mobile_bordertop_1 mobile_borderbottom_1 mobile_textalignCenter
+    tablet_flex_horizontal_Center mt_margintop_88 mt_bordertop_1 mt_borderbottom_1 tablet_textalignCenter">
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 borderright_1
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360 mobile_borderright_1
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360 mt_borderright_1
+        "><a href='mypage.html'>마이페이지</a></p>
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360
+        "><a href='#'>로그아웃</a></p>
+    </div>
+</nav>
+
+<ul class="menu_category_list colorblack  bgcolor_warm1 
+mobile_flex_horizontal_flexStart mobile_paddingleft_34 mobile_paddingtop_44 mobile_paddingbottom_45 mobile_flex_nowrap
+tablet_flex_horizontal_flexStart mt_paddingleft_34 mt_paddingtop_44 mt_paddingbottom_45 tablet_flex_nowrap
+pc_flex_horizontal_flexStart pc_response_paddingleft_266 pcfixed_paddingtop_29 pcfixed_paddingbottom_32 pc_flex_nowrap">
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    상태&고민
+      
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pcfixed_marginleft_26 pcfixed_marginright_22 ">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    생활습관
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pcfixed_marginleft_26 pcfixed_marginright_22 ">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    원하는 향기
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pcfixed_marginleft_26 pcfixed_marginright_22 ">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    레터링
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pcfixed_marginleft_26 pcfixed_marginright_22 ">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    결과
+    <span class="display_block bgcolor_black position_relative_normal
+    mobile_width_100_percent mobile_height_2 mobile_positionbottom_minus9
+    tablet_width_100_percent mt_height_2 mt_positionbottom_minus9
+    pc_width_100_percent pcfixed_height_1 pcfixed_positionbottom_minus5"></span>
+    </li>
+</ul>
+    
+
+<section class="section bgcolor_warmbrightness position_relative_normal
+mobile_paddingbottom_85
+mt_paddingbottom_85
+pcfixed_paddingbottom_62">
+    <h2 class="tit fontweight_500 colorblack
+    mobile_fontsize_42 mobile_paddingtop_99 mobile_paddingbottom_75 mobile_textalignCenter
+    mt_fontsize_42 mt_paddingtop_99 mt_paddingbottom_75 tablet_textalignCenter
+    pcfixed_fontsize_38 pcfixed_paddingtop_108 pcfixed_paddingbottom_62 pc_textalignCenter">
+        한경민님께 추천드려요
+    </h2>
+   
+    <div class="QuestonResult1 bgcolor_white
+    mobile_width_650  mobile_marginhorizontal_auto mobile_borderradius_15 mobile_paddingbottom_53
+    mt_width_650 tablet_marginhorizontal_auto mt_borderradius_15 mt_paddingbottom_53
+    pcfixed_width_793 pc_marginhorizontal_auto pcfixed_borderradius_15 pcfixed_paddingbottom_40">
+        <div class="hairstatus1
+        mobile_flex_horizontal_Center
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <h3 class="tit fontweight_500 colorlecelle3
+            mobile_fontsize_24 mobile_paddingtop_54 mobile_paddingbottom_31 mobile_textalignCenter mobile_width_100_percent
+            mt_fontsize_24 mt_paddingtop_54 mt_paddingbottom_31 tablet_textalignCenter tablet_width_100_percent
+            pcfixed_fontsize_16 pcfixed_paddingtop_46 pcfixed_paddingbottom_24 pc_textalignCenter pc_width_100_percent">두피상태</h3>
+            
+            <div class="wrapping
+            mobile_marginright_19
+            mt_marginright_19
+            pcfixed_marginright_14">
+                <div class="statusshape borderstyle_solid bordercolorgray
+                mobile_width_171 mobile_height_171 mobile_border_1 mobile_borderradius_85 mobile_flex_horizontal_Center
+                mt_width_171 mt_height_171 mt_border_1 mt_borderradius_85 tablet_flex_horizontal_Center
+                pcfixed_width_131 pcfixed_height_131 pcfixed_border_1 pcfixed_borderradius_65 pc_flex_horizontal_Center">
+                    <img src="img/mobile/hairstatus1.png" class="display_block
+                    mobile_width_103 mobile_height_99
+                    mt_width_103 mt_height_99
+                    pcfixed_width_77 pcfixed_height_74"/>
+                </div>
+                <p class="txt
+                mobile_fontsize_23 mobile_margintop_20 mobile_textalignCenter
+                mt_fontsize_23 mt_margintop_20 tablet_textalignCenter
+                pcfixed_fontsize_16 pcfixed_margintop_18 pc_textalignCenter">지성</p>
+            </div>
+            <div class="wrapping">
+                <div class="statusshape borderstyle_solid bordercolorgray
+                mobile_width_171 mobile_height_171 mobile_border_1 mobile_borderradius_85 mobile_flex_horizontal_Center
+                mt_width_171 mt_height_171 mt_border_1 mt_borderradius_85 tablet_flex_horizontal_Center
+                pcfixed_width_131 pcfixed_height_131 pcfixed_border_1 pcfixed_borderradius_65 pc_flex_horizontal_Center">
+                    <img src="img/mobile/hairstatus2.png" class="display_block
+                    mobile_width_104 mobile_height_104
+                    mt_width_104 mt_height_104
+                    pcfixed_width_79 pcfixed_height_78"/>
+                </div>
+                <p class="txt
+                mobile_fontsize_23 mobile_margintop_20 mobile_textalignCenter
+                mt_fontsize_23 mt_margintop_20 tablet_textalignCenter
+                pcfixed_fontsize_16 pcfixed_margintop_16 pc_textalignCenter">비듬/지루성</p>
+            </div>
+        </div>
+
+        <div class="hairstatus2
+        mobile_flex_horizontal_Center
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <h3 class="tit fontweight_500 colorlecelle3
+            mobile_fontsize_24 mobile_paddingtop_58 mobile_paddingbottom_33 mobile_textalignCenter mobile_width_100_percent
+            mt_fontsize_24 mt_paddingtop_58 mt_paddingbottom_33 tablet_textalignCenter tablet_width_100_percent
+            pcfixed_fontsize_16 pcfixed_paddingtop_53 pcfixed_paddingbottom_24 pc_textalignCenter pc_width_100_percent">모발상태</h3>
+            
+            <div class="wrapping
+            mobile_marginright_19
+            mt_marginright_19
+           pcfixed_marginright_11 ">
+                <div class="statusshape borderstyle_solid bordercolorgray
+                mobile_width_171 mobile_height_171 mobile_border_1 mobile_borderradius_85 mobile_flex_horizontal_Center
+                mt_width_171 mt_height_171 mt_border_1 mt_borderradius_85 tablet_flex_horizontal_Center
+                pcfixed_width_131 pcfixed_height_131 pcfixed_border_1 pcfixed_borderradius_65 pc_flex_horizontal_Center">
+                    <img src="img/mobile/thinhair_small.png" class="display_block
+                    mobile_width_82 mobile_height_75
+                    mt_width_82 mt_height_75
+                    pcfixed_width_61 pcfixed_height_56"/>
+                </div>
+                <p class="txt
+                mobile_fontsize_23 mobile_margintop_20 mobile_textalignCenter
+                mt_fontsize_23 mt_margintop_20 tablet_textalignCenter
+                pcfixed_fontsize_16 pcfixed_margintop_17 pc_textalignCenter">얇은 모발</p>
+            </div>
+            <div class="wrapping
+            mobile_marginright_19
+            mt_marginright_19
+            pcfixed_marginright_11">
+                <div class="statusshape borderstyle_solid bordercolorgray
+                mobile_width_171 mobile_height_171 mobile_border_1 mobile_borderradius_85 mobile_flex_horizontal_Center
+                mt_width_171 mt_height_171 mt_border_1 mt_borderradius_85 tablet_flex_horizontal_Center
+                pcfixed_width_131 pcfixed_height_131 pcfixed_border_1 pcfixed_borderradius_65 pc_flex_horizontal_Center">
+                    <img src="img/mobile/hairImg.png" class="display_block
+                    mobile_width_97 mobile_height_91
+                    mt_width_97 mt_height_91
+                    pcfixed_width_73 pcfixed_height_68"/>
+                </div>
+                <p class="txt
+                mobile_fontsize_23 mobile_margintop_20 mobile_textalignCenter
+                mt_fontsize_23 mt_margintop_20 tablet_textalignCenter
+                pcfixed_fontsize_16 pcfixed_margintop_17 pc_textalignCenter">반곱슬</p>
+            </div>
+            <div class="wrapping">
+                <div class="statusshape borderstyle_solid bordercolorgray
+                mobile_width_171 mobile_height_171 mobile_border_1 mobile_borderradius_85 mobile_flex_horizontal_Center
+                mt_width_171 mt_height_171 mt_border_1 mt_borderradius_85 tablet_flex_horizontal_Center
+                pcfixed_width_131 pcfixed_height_131 pcfixed_border_1 pcfixed_borderradius_65 pc_flex_horizontal_Center">
+                    <img src="img/mobile/hairImg2.png" class="display_block
+                    mobile_width_101 mobile_height_96
+                    mt_width_101 mt_height_96
+                    pcfixed_width_76 pcfixed_height_73"/>
+                </div>
+                <p class="txt
+                mobile_fontsize_23 mobile_margintop_20 mobile_textalignCenter
+                mt_fontsize_23 mt_margintop_20 tablet_textalignCenter
+                pcfixed_fontsize_16 pcfixed_margintop_17 pc_textalignCenter">펌</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="QuestonResult2 bgcolor_white
+    mobile_width_650  mobile_marginhorizontal_auto mobile_borderradius_15 mobile_paddingbottom_53 mobile_paddingleft_50 mobile_paddingright_48 mobile_paddingtop_55 mobile_fontsize_26 mobile_margintop_20
+    mt_width_650 tablet_marginhorizontal_auto mt_borderradius_15 mt_paddingbottom_53 mt_paddingleft_50 mt_paddingright_48 mt_paddingtop_55 mt_fontsize_26 mt_margintop_20
+    pcfixed_width_794 pc_marginhorizontal_auto pcfixed_borderradius_15 pcfixed_paddingbottom_32 pcfixed_paddingtop_32 pc_textalignCenter pcfixed_fontsize_20 pcfixed_margintop_17
+    ">
+    한경민님은 지성두피, 지루성두피를 가지셨군요.<br/>
+    얇은 모발과/와 함께 반곱슬 헤어를 지니고 계시고,<br/>
+    펌을 하신 한경민님께는 다음의 기능을 추천드려요.
+    </div>
+
+    <div class="QuestonResult3 bgcolor_white
+    mobile_width_650  mobile_marginhorizontal_auto mobile_borderradius_15 mobile_paddingbottom_53 mobile_paddingleft_51 mobile_paddingright_57 mobile_paddingtop_61 mobile_fontsize_26 mobile_margintop_20 mobile_textalignCenter
+    mt_width_650 tablet_marginhorizontal_auto mt_borderradius_15 mt_paddingbottom_53 mt_paddingleft_51 mt_paddingright_57 mt_paddingtop_61 mt_fontsize_26 mt_margintop_20 tablet_textalignCenter
+    pcfixed_width_794 pc_marginhorizontal_auto pcfixed_borderradius_15 pcfixed_paddingbottom_42 pc_textalignCenter pcfixed_paddingtop_41 pcfixed_fontsize_20 pcfixed_margintop_17 ">
+        <h4 class="tits
+        mobile_fontsize_32 mobile_paddingbottom_49
+        mt_fontsize_32 mt_paddingbottom_49
+        pcfixed_fontsize_25 pcfixed_paddingbottom_34">기능 추천</h4>
+        좋은 모발은 건강한 두피로부터 시작한답니다.<br/>
+        그래서 한경민님께 두피케어 기본 기능으로 <br/>
+        권해 드려요. 그리고 한경민님의 고민을 반영해서, <br/>
+        두피케어와 함께 보습, 볼륨 강화 그리고 펌 컬 유지<br/>
+        기능을 추천드려요! 마지막으로 한경민님의 <br/>
+        부드럽고 건강한 모발 관리를 위해, 모발케어 <br/>
+        기능도 권해드립니다
+    </div>
+</section>
+
+
+<section class="section bgcolor_warmbrightness2 position_relative_normal 
+mobile_textalignCenter mobile_paddingbottom_101
+tablet_textalignCenter mt_paddingbottom_101
+pc_textalignCenter pcfixed_paddingbottom_73">
+    <h2 class="tit fontweight_500 colorblack
+    mobile_fontsize_42 mobile_paddingtop_134 mobile_paddingbottom_131 
+    mt_fontsize_42 mt_paddingtop_134 mt_paddingbottom_131
+    pcfixed_fontsize_30 pcfixed_paddingtop_83 pcfixed_paddingbottom_77">
+        성분 추천
+    </h2>
+   
+    <div class="ingredientsList 
+    mobile_width_100_percent mobile_paddingleft_48 mobile_paddingright_48 mobile_flex_horizontal_spaceBetween mobile_flex_alignitems_flexEnd
+    mt_width_720 mt_paddingleft_48 mt_paddingright_48 tablet_flex_horizontal_spaceBetween tablet_flex_alignitems_flexEnd tablet_marginhorizontal_auto
+    pcfixed_width_794 pc_flex_horizontal_flexStart pc_flex_alignitems_flexEnd pc_marginhorizontal_auto pcfixed_paddingleft_77 pcfixed_paddingright_77">
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_80
+        mt_width_169 mt_paddingbottom_80
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem1.png" class="display_block
+            mobile_width_133 mobile_height_117 mobile_marginhorizontal_auto
+            mt_width_133 mt_height_117 tablet_marginhorizontal_auto
+            pcfixed_width_94 pcfixed_height_81 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">은행나무잎추출물</p>
+        </div>
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_80
+        mt_width_169 mt_paddingbottom_80
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem2.png" class="display_block
+            mobile_width_117 mobile_height_123 mobile_marginhorizontal_auto
+            mt_width_117 mt_height_123 tablet_marginhorizontal_auto
+            pcfixed_width_83 pcfixed_height_85 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">살비아잎</p>
+        </div>   
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_80
+        mt_width_169 mt_paddingbottom_80
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem3.png" class="display_block
+            mobile_width_124 mobile_height_126 mobile_marginhorizontal_auto
+            mt_width_124 mt_height_126 tablet_marginhorizontal_auto
+            pcfixed_width_83 pcfixed_height_85 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">멘톨</p>
+        </div>
+
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_80
+        mt_width_169 mt_paddingbottom_80
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem4.png" class="display_block
+            mobile_width_113 mobile_height_110 mobile_marginhorizontal_auto
+            mt_width_113 mt_height_110 tablet_marginhorizontal_auto
+            pcfixed_width_79 pcfixed_height_77 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">황기뿌리추출물</p>
+        </div>
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_80
+        mt_width_169 mt_paddingbottom_80
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem5.png" class="display_block
+            mobile_width_108 mobile_height_120 mobile_marginhorizontal_auto
+            mt_width_108 mt_height_120 tablet_marginhorizontal_auto
+            pcfixed_width_76 pcfixed_height_85 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">한련초</p>
+        </div>   
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_80
+        mt_width_169 mt_paddingbottom_80
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem6.png" class="display_block
+            mobile_width_144 mobile_height_100 mobile_marginhorizontal_auto
+            mt_width_144 mt_height_100 tablet_marginhorizontal_auto
+            pcfixed_width_102 pcfixed_height_71 pc_marginhorizontal_auto"/>
+            
+            <p class="mobile_textalignCenter
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">황금추출물</p>
+        </div> 
+        
+        
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_120
+        mt_width_169 mt_paddingbottom_120
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem7.png" class="display_block
+            mobile_width_106 mobile_height_110 mobile_marginhorizontal_auto
+            mt_width_106 mt_height_110 tablet_marginhorizontal_auto
+            pcfixed_width_74 pcfixed_height_78 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">뽕나무껍질</p>
+        </div>
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_120
+        mt_width_169 mt_paddingbottom_120
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem8.png" class="display_block
+            mobile_width_154 mobile_height_76 mobile_marginhorizontal_auto
+            mt_width_154 mt_height_76 tablet_marginhorizontal_auto
+            pcfixed_width_108 pcfixed_height_54 pc_marginhorizontal_auto"/>
+            
+            <p class="txt
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">홍해삼</p>
+        </div>   
+        <div class="item wrapping
+        mobile_width_169 mobile_paddingbottom_120
+        mt_width_169 mt_paddingbottom_120
+        pcfixed_width_160 pcfixed_paddingbottom_55">
+            <img src="img/mobile/hairitem9.png" class="display_block
+            mobile_width_107 mobile_height_105 mobile_marginhorizontal_auto
+            mt_width_107 mt_height_105 tablet_marginhorizontal_auto
+            pcfixed_width_76 pcfixed_height_73 pc_marginhorizontal_auto"/>
+            
+            <p class="mobile_textalignCenter
+            mobile_fontsize_22 mobile_margintop_45 mobile_textalignCenter
+            mt_fontsize_22 mt_margintop_45 tablet_textalignCenter
+            pcfixed_fontsize_16 pcfixed_margintop_32 pc_textalignCenter">알로에</p>
+        </div> 
+    </div>
+
+    <div class="QuestonResult4 bgcolor_warm1
+    mobile_width_650  mobile_marginhorizontal_auto mobile_borderradius_15 mobile_paddingbottom_62 mobile_paddingleft_31 mobile_paddingright_30 mobile_paddingtop_60 mobile_fontsize_26 mobile_textalignCenter
+    
+    mt_width_650 tablet_marginhorizontal_auto mt_borderradius_15 mt_paddingbottom_62 mt_paddingleft_31 mt_paddingright_30 mt_paddingtop_60 mt_fontsize_26 tablet_textalignCenter
+
+    pcfixed_width_794 pc_marginhorizontal_auto pcfixed_borderradius_15 pcfixed_paddingbottom_35 pc_textalignCenter pcfixed_paddingtop_41 pcfixed_fontsize_20">
+    두피케어를 위해서는 혈행을 돕는 은행나무잎추출물,<br/>
+    피부진정을 돕는 세이지리프추출물 그리고 두피의 <br/>
+    산성을 조절해주고 항균력이 있는 아미노산복합체<br/>
+    (운데실레노일그라이신 등)을 성분이 도움이 됩답니다.<br/>
+    <br/>
+    그리고 한경민님의 보습을 위해 자일리톨 성분, <br/>
+    볼륨 강화를 위해 홍해삼콘드로이친 성분, 그리고 <br/>
+    펌 컬 유지를 위해 (황기뿌리 추추물, 한련초 추출물, <br/>
+    황금추출물)을 기반으로 한경민님만의 맞춤샴푸를 <br/>
+    만드려고 합니다. <br/>
+    <br/>
+    또한 모발케어를 위해 동백꽃, 올리브 추출물과<br/>
+    자이리톨을 듬뿍 담아 드리겠습니다.
+    
+    </div>
+</section>
+
+<section class="section bgcolor_warmbrightness position_relative_normal 
+mobile_textalignCenter mobile_paddingbottom_105 mobile_paddingtop_91
+tablet_textalignCenter mt_paddingbottom_105 mt_paddingtop_91
+pc_textalignCenter pcfixed_paddingtop_80 pcfixed_paddingbottom_83">
+   
+    <div class="QuestonResult5 bgcolor_white
+    mobile_width_650  mobile_marginhorizontal_auto mobile_paddingleft_15 mobile_paddingright_15 mobile_paddingtop_15 mobile_fontsize_26 mobile_textalignCenter
+    
+    mt_width_650 tablet_marginhorizontal_auto mt_paddingleft_15 mt_paddingright_15 mt_paddingtop_15 mt_fontsize_26 
+    tablet textalignCenter 
+
+    pcfixed_width_794 pc_marginhorizontal_auto pcfixed_paddingleft_7 pcfixed_paddingright_7 pcfixed_paddingbottom_7 pcfixed_paddingtop_7 pcfixed_fontsize_19 pc_textalignCenter pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart">
+        <img src="img/mobile/smell3.png" class="display_block
+        mobile_width_100_percent
+        tablet_width_100_percent
+        pcfixed_width_435 pcfixed_height_210"/>
+
+        <div class="wrapping
+        pcfixed_width_270 pcfixed_marginleft_40">
+            <h3 class="tits
+            mobile_fontsize_28 mobile_paddingtop_49 mobile_paddingbottom_33
+            mt_fontsize_28 mt_paddingtop_49 mt_paddingbottom_33
+            pcfixed_fontsize_19 pcfixed_paddingtop_28 pcfixed_paddingbottom_22">
+            Ines [이네스]</h3>
+            <p class="desc
+            mobile_fontsize_28
+            mt_fontsize_28
+            pcfixed_fontsize_17">
+            Boissonna 정원의 물기를 <br/>
+            머금은 연꽃잎 향</p>
+            <p class="descs
+            mobile_fontsize_22 mobile_paddingtop_34 mobile_paddingbottom_48
+            mt_fontsize_22 mt_paddingtop_34 mt_paddingbottom_48
+            pcfixed_fontsize_14 pcfixed_paddingtop_21">
+            White Lotus, Peony, Iris, Light Citrus<br/>
+            (Grapefruit, Lemon Bergamot)
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<section class="section bgcolor_white position_relative_normal 
+mobile_textalignCenter mobile_paddingbottom_120
+tablet_textalignCenter mt_paddingbottom_120
+pc_textalignCenter pcfixed_paddingbottom_200">
+   
+    <div class="QuestonResult6 bgcolor_white
+    mobile_textalignCenter
+    tablet_textalignCenter
+    pc_textalignCenter">
+        <h3 class="tits
+        mobile_fontsize_33 mobile_paddingtop_122 mobile_paddingbottom_98
+        mt_fontsize_33 mt_paddingtop_122 mt_paddingbottom_98
+        pcfixed_fontsize_30 pcfixed_paddingtop_118 pcfixed_paddingbottom_77">
+        적어주신 Emily Han 이름을<br/>
+        레터링하여 정성스레 제품을 <br/>
+        만들도록 하겠습니다. 
+        </h3>
+        <div class="imgwrappingdeco boxshadowstyle1 bgcolor_transparent
+        mobile_width_564 mobile_marginhorizontal_auto
+        mt_width_564 tablet_marginhorizontal_auto
+        pcfixed_width_580 pc_marginhorizontal_auto">
+            <img src="img/mobile/forYou.png" class="display_block 
+            mobile_width_564 mobile_marginhorizontal_auto
+            mt_width_564 tablet_marginhorizontal_auto
+            pcfixed_width_580 pc_marginhorizontal_auto"/>
+        </div>
+        
+       <a href="cart.html">
+            <button class="cartbtn borderstyle_solid colorblack bgcolor_transparent
+            mobile_width_525 mobile_height_100 mobile_fontsize_24 mobile_margintop_100 mobile_border_1
+            mt_width_525 mt_height_100 mt_fontsize_24 mt_margintop_20 mt_border_1
+            pcfixed_width_375 pcfixed_height_82 pcfixed_fontsize_16 pcfixed_margintop_80 pcfixed_border_1">카트담기</button>
+       </a>
+       <a href="buyform.html">
+            <button class="cartbtn bgcolor_black colorwhite
+            mobile_width_525 mobile_height_100 mobile_fontsize_24 mobile_margintop_20
+            mt_width_525 mt_height_100 mt_fontsize_24 mt_margintop_20
+            pcfixed_width_375 pcfixed_height_82 pcfixed_fontsize_16 pcfixed_margintop_80">결제하기</button>
+       </a>
+    </div>
+</section>
+
+<footer class="bgcolor_warmbrightness
+  mobile_margintop_120
+  mt_margintop_120
+  pc_flex_horizontal_flexStart  pc_flex_alignitems_flexStart pc_flex_nowrap pcfixed_margintop_90">
+    <div class="pcblockleft 
+    pc_onlyview pc_response_width_415 pcfixed_height_324" style="flex:0 1 auto">
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_200 pcfixed_borderbottom_1"></div>
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_124 pcfixed_borderright_1"></div>
+    </div>
+    <div class="customer borderstyle_solid bordercolorlecelle2
+    mt_border_1 
+    pc_response_paddingright_80 pcfixed_borderbottom_1 pcfixed_borderleft_1 " >
+        <h3 class="fontweight_500 colorlecelle1
+        mobile_fontsize_24 mobile_paddingleft_33 mobile_paddingtop_45 mobile_paddingbottom_43
+        mt_fontsize_20 mt_paddingleft_33 mt_paddingtop_25 mt_paddingbottom_23
+        pcfixed_fontsize_18 pc_response_paddingleft_42 pcfixed_paddingtop_39 pcfixed_paddingbottom_37">
+        고객센터</h3>
+        <p class="tel colorlecelle1
+        mobile_fontsize_36 mobile_paddingleft_33 mobile_paddingbottom_20
+        mt_fontsize_30 mt_paddingleft_33 mt_paddingbottom_20 mt_paddingright_43
+        pcfixed_fontsize_23 pc_response_paddingleft_42 pcfixed_paddingbottom_16
+        ">
+        070.8656.9610</p>
+        <p class="desc colorlecelle1
+        mobile_fontsize_24 mobile_paddingleft_33 mobile_paddingbottom_42
+        mt_fontsize_22 mt_paddingleft_33 mt_paddingbottom_22
+        pcfixed_fontsize_17 pc_response_paddingleft_42 pcfixed_paddingbottom_45
+        ">
+        평일 11:00 ~ 17:00<br/>
+        주말 및 공휴일 휴무
+        </p>
+    </div>
+    <span class="display_block bgcolor_warm2
+    mobile_width_100_percent mobile_height_1 mobile_onlyview
+    ">
+    </span>
+ 
+
+    <div class="social borderstyle_solid bordercolorlecelle2
+    mobile_paddingleft_33
+    mt_paddingleft_33 mt_borderbottom_1 mt_borderright_1 mt_paddingbottom_25 
+    pc_response_paddingleft_44  pcfixed_borderbottom_1 pcfixed_borderleft_1 ">
+        <h3 class="fontweight_500 colorlecelle1
+        mobile_fontsize_24  mobile_paddingtop_40 mobile_paddingbottom_45
+        mt_fontsize_20 mt_paddingtop_20 mt_paddingbottom_25
+        pcfixed_fontsize_18 pcfixed_paddingtop_39 pcfixed_paddingbottom_36">
+        소셜
+        </h3>
+        <ul class="list
+        mobile_flex_horizontal_flexStart
+        tablet_flex_horizontal_flexStart mt_marginright_43
+        pc_flex_horizontal_flexStart pcfixed_paddingbottom_90 pc_response_marginright_99">
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10">
+                <img src="img/mobile/kakaologo.png" class="display_block
+                mobile_width_43 mobile_height_40
+                mt_width_38 mt_height_35
+                pcfixed_width_34 pcfixed_height_32"/>
+            </li>
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10
+            ">
+                <img src="img/mobile/instalogo.png" class="display_block
+                mobile_width_40 mobile_height_40
+                mt_width_37 mt_height_37
+                pcfixed_width_31 pcfixed_height_33"/>
+            </li>
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10">
+                <img src="img/mobile/naverlogo.png" class="display_block
+                mobile_width_35 mobile_height_34
+                mt_width_32 mt_height_30
+                pcfixed_width_30 pcfixed_height_29"/>
+            </li>
+            <li class="item
+            ">
+                <img src="img/mobile/utubelogo.png" class="display_block
+                mobile_width_52 mobile_height_37
+                mt_width_46 mt_height_32
+                pcfixed_width_38 pcfixed_height_30"/>
+            </li>
+        </ul>
+    </div>
+    <span class="display_block bgcolor_warm2 
+    mobile_width_100_percent mobile_height_1 mobile_margintop_38 mobile_marginbottom_41 mobile_onlyview">
+    </span>
+  
+
+    <div class="wrapping terms borderstyle_solid bordercolorlecelle2
+    mobile_width_556
+    mt_border_1
+    pcfixed_width_433 pcfixed_borderbottom_1 pcfixed_borderleft_1 pcfixed_borderbottom_1 pcfixed_borderright_1" >
+        <ul class="colorlecelle1
+        mobile_paddingleft_33 mobile_flex_horizontal_flexStart
+        mt_paddingleft_33 tablet_flex_horizontal_flexStart mt_paddingtop_20
+        pc_response_paddingleft_40 pc_flex_horizontal_flexStart pcfixed_paddingtop_40
+        ">
+            <li class="item fontweight_500
+            mobile_fontsize_24 mobile_paddingright_37
+            mt_fontsize_20 mt_paddingright_37
+            pcfixed_fontsize_18 pc_response_paddingright_22">
+            이용약관</li>
+            <li class="item fontweight_500
+            mobile_fontsize_24
+            mt_fontsize_20
+            pcfixed_fontsize_18">
+            개인정보처리방침</li>
+        </ul>
+
+        <p class="copyright colorlecelle1
+        mobile_paddingleft_33 mobile_paddingtop_46 mobile_paddingbottom_53  mobile_fontsize_21
+        
+        mt_paddingleft_33 mt_paddingtop_26 mt_paddingbottom_43 mt_paddingright_33  mt_fontsize_18
+
+        pc_response_paddingleft_40 pcfixed_paddingtop_34 pcfixed_paddingbottom_44  pcfixed_fontsize_16 pc_response_paddingright_105
+        " style="word-break:break-all">
+        (주)나인빌리언앤코  l  서울특별시 강남구 강남대로 464, 7층
+        대표자: 김홍성  l 대표 이메일: lecelle.contact@9billion.care
+        개인정보보호책임자 : 김민지  ㅣ 사업자번호 : 223-87-01239
+        통신판매신고 : 2019-서울강남-02469호<br/>
+        Copyright © 나인빌리언앤코
+        </p>
+    </div>
+    <div class="pcblockright 
+    pc_onlyview pc_response_width_415 pcfixed_height_324">
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_200 pcfixed_borderbottom_1"></div>
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_124 pcfixed_borderleft_1"></div>
+    </div>
+</footer>
+
+<script src="common_function.js"></script>
+<script src="commonui_javascript.js"></script>
+<script>
+    
+
+</script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/position_and_another_based.css"/>
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+
+<div class="popupbox position_absolute bgcolor_warmbrightness2
+mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent mobile_paddingbottom_40
+tablet_positontop_0 tablet_positionleft_0 tablet_width_100_percent mt_paddingbottom_40
+pc_positiontop_0 pc_positionleft_0 pc_width_100_percent pcfixed_paddingbottom_40" style="display:block">
+    <div class="headline
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_37 mobile_paddingleft_36 mobile_paddingright_36 mobile_paddingbottom_48
+    tablet_flex_horizontal_spaceBetween mt_paddingtop_37 mt_padingleft_36 mt_paddingright_36 mt_paddingbottom_48
+    pc_flex_horizontal_spaceBetween pcfixed_paddingtop_37  pcfixed_paddingright_36 pcfixed_paddingleft_36 pcfixed_paddingbottom_48
+    ">
+        <img src="img/mobile/prevpage.png" class="display_block opacity0
+        mobile_width_26 mobile_height_20 
+        mt_width_26 mt_height_20
+        pcfixed_width_26 pcfixed_height_20
+        "/>
+        <img src="img/mobile/closeblack.png" class="display_block
+        mobile_width_24 mobile_height_24
+        mt_width_24 mt_height_24
+        pcfixed_width_24 pcfixed_height_24
+        
+        javascript_prevpageMove"/>
+    </div>
+
+    <h3 class="tits colorblack
+    mobile_paddingleft_34 mobile_fontsize_42 mobile_paddingbottom_36
+    mt_paddingleft_34 mt_fontsize_42 mt_paddingbottom_36
+    pcfixed_paddingleft_34 pcfixed_fontsize_36 pcfixed_paddingbottom_36">
+    르셀르에 다시 오신것을<br/>
+    환영합니다.</h3>
+    <p class="subtits colorblack
+    mobile_paddingleft_34 mobile_fontsize_26 mobile_paddingbottom_54
+    mt_paddingleft_34 mt_fontsize_26 mt_paddingbottom_54
+    pcfixed_paddingleft_34 pcfixed_fontsize_26 pcfixed_paddingbottom_54
+    ">패스워드를 확인하십시오. </p>
+    <p class="subtits colorred
+    mobile_paddingleft_36 mobile_fontsize_26
+    mt_paddingleft_36 mt_fontsize_26
+    pcfixed_paddingleft_36 pcfixed_fontsize_23
+    ">
+        이메일과 패스워드가 일치하지 않습니다. <br/>
+        다시 입력해주세요.
+    </p>
+
+
+    <div class="formlabel
+    mobile_paddingleft_34 mobile_paddingtop_72 mobile_paddingright_34 mobile_paddingbottom_35 mobile_flex_horizontal_spaceBetween
+    mt_paddingleft_34 mt_paddingtop_72 mt_paddingright_34 mt_paddingbottom_35 tablet_flex_horizontal_spaceBetween
+    pcfixed_paddingleft_34 pcfixed_paddingtop_72 pcfixed_paddingright_34 pcfixed_paddingbottom_35 pc_flex_horizontal_spaceBetween
+    ">
+        <p class="tit
+        mobile_fontsize_24
+        mt_fontsize_24
+        pcfixed_fontsize_18
+        ">이메일 주소</p>
+    </div>
+    <input type="text" value='-' name='email' class="inputtext
+    mobile_paddingleft_34 mobile_paddingright_34 mobile_width_100_percent mobile_fontsize_26 mobile_height_40
+    mt_paddingleft_34 mt_paddingright_34 mt_width_720 mt_fontsize_26 mt_height_40
+    pcfixed_paddingleft_34 pcfixed_paddingright_34 pcfixed_width_720 pcfixed_fontsize_18 pcfixed_height_40
+    ">
+    <span class="display_block bgcolor_gray2
+    mobile_width_650 mobile_marginhorizontal_auto mobile_height_1 mobile_margintop_20
+    mt_width_650 mt_marginleft_36 mt_height_1 mt_margintop_20
+    pcfixed_width_650 pcfixed_marginleft_36 pcfixed_height_1 pcfixed_margintop_20
+    "></span>
+
+
+    <div class="formlabel
+    mobile_paddingleft_34 mobile_paddingtop_72 mobile_paddingright_34 mobile_paddingbottom_35 mobile_flex_horizontal_spaceBetween
+    mt_paddingleft_34 mt_paddingtop_72 mt_paddingright_34 mt_paddingbottom_35 tablet_flex_horizontal_spaceBetween
+    pcfixed_paddingleft_34 pcfixed_paddingtop_72 pcfixed_paddinright_34 pcfixed_paddingbottom_35 pc_flex_horizontal_spaceBetween
+    ">
+        <p class="tit
+        mobile_fontsize_24
+        mt_fontsize_24
+        pcfixed_fontsize_18">패스워드</p>
+    </div>
+    <input type="password" value='-' name='password' class="inputtext
+    mobile_paddingleft_34 mobile_paddingright_34 mobile_width_100_percent mobile_fontsize_26 mobile_height_40
+    mt_paddingleft_34 mt_paddingright_34 mt_width_720 mt_fontsize_26 mt_height_40
+    pcfixed_paddingleft_34 pcfixed_paddingright_34 pcfixed_width_720 pcfixed_fontsize_18 pcfixed_height_40
+    ">
+    <span class="display_block bgcolor_gray2
+    mobile_width_650 mobile_marginhorizontal_auto mobile_height_1 mobile_margintop_20
+    mt_width_650 mt_marginleft_36 mt_height_1 mt_margintop_20
+    pcfixed_width_650 pcfixed_marginleft_36 pcfixed_height_1 pcfixed_margintop_20
+    "></span>
+
+    <p class="display_block
+    mobile_margintop_25 mobile_textalignRight mobile_paddingright_36 mobile_paddingleft_34 mobile_fontsize_24
+    mt_margintop_25 tablet_textalignLeft mt_paddingleft_36 mt_fontsize_24
+    pcfixed_margintop_25 pc_textalignLeft pcfixed_paddingleft_36 pcfixed_fontsize_18"><a href='passwordResetguide.html'>패스워드 재설정하기</a></p>
+
+    <button class="display_block colorwhite bgcolor_black
+    mobile_width_650 mobile_height_100 mobile_marginhorizontal_auto mobile_fontsize_24 mobile_margintop_70
+    mt_width_650 mt_height_100 tablet_marginhorizontal_auto mt_fontsize_24 mt_margintop_70
+    pcfixed_width_650 pcfixed_height_100 pc_marginhorizontal_auto pcfixed_fontsize_24 pcfixed_margintop_70
+    ">로그인</button>
+</div>
+
+<script src="commonui_javascript.js"></script>
+<script>
+
+</script>
+</body>
+</html>

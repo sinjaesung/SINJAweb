@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/position_and_another_based.css"/>
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+<header class="lecell_header position_relative_normal zindex550 bgcolor_warmbrightness
+mobile_flex_horizontal_spaceBetween mobile_paddingtop_35 mobile_paddingbottom_35 mobile_paddingleft_34 mobile_paddingright_32 mobile_positiontop_0 mobile_positionleft_0 mobile_width_100_percent
+
+tablet_flex_horizontal_spaceBetween mt_paddingtop_35 mt_paddingbottom_35 mt_paddingleft_34 mt_paddingright_32 mt_positiontop_0 mt_positionleft_0 tablet_width_100_percent 
+
+pc_flex_horizontal_flexStart pcfixed_paddingtop_40 pcfixed_paddingbottom_40 pcfixed_paddingleft_68 pcfixed_paddingright_68 pcfixed_pcfixed_paddingbottom_40 pcfixed_positiontop_0 pcfixed_positionleft_0 pc_width_100_percent 
+">
+    <a href="main.html"><img src="img/mobile/sitelogo2.png" class="display_block sitelogo
+    mobile_width_192 mobile_height_46
+    mt_width_192 mt_height_46
+    pcfixed_width_130 pcfixed_height_31
+    " style="flex:0 0 auto"></a>
+
+    <ul class="headermenu 
+    pc_flex_horizontal_flexStart pc_onlyview pcfixed_marginleft_66">
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='brand.html'>브랜드</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='shoplist.html'>제품보기</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='#'>정기구독</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_paddingright_40 pcfixed_fontsize_17"><a href='surveyform.html'>선물하기</a></li>
+        <li class="item display_block colorblack fontweight_500
+        pcfixed_fontsize_17"><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="menucontrol
+    mobile_flex_horizontal_flexEnd
+    tablet_flex_horizontal_flexEnd
+    pc_flex_horizontal_flexEnd" style="flex:1 0 auto">
+        <a href="login.html"><span class="colorblack display_block
+        pc_onlyview pcfixed_fontsize_17 pcfixed_paddingright_35">로그인</span></a>
+        <a href="cart.html">
+            <span class="display_block bgcolor_graywhite
+            mobile_width_80 mobile_height_80 mobile_marginright_42 mobile_borderradius_40 mobile_flex_horizontal_Center
+            mt_width_80  mt_height_80 mt_marginright_42 mt_borderradius_40 tablet_flex_horizontal_Center
+            pcfixed_width_50 pcfixed_height_50 pcfixed_borderradius_25 pc_flex_horizontal_Center
+            ">
+                <img src="img/mobile/cart.svg" class="display_block
+                mobile_width_33 mobile_height_33
+                mt_width_33 mt_height_33
+                pcfixed_width_20 pcfixed_height_20">
+            </span>
+        </a>
+        
+        <img src="img/mobile/menubar2.png" class="
+        mobile_width_41 mobile_height_25 mobile_onlyview
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger
+        "
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+        <img src="img/mobile/menubar2.png" class="
+        mt_width_41 mt_height_25 tablet_onlyview
+        
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|0%", "viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+    </div>
+</header>
+
+
+
+<div class="popupbg" targetindex="navBg" style="display:none"></div>
+<nav class="position_absolute zindex999
+    width_720 positiontop_0 
+    mobile_width_720  mobile_height_100_percent mobile_positiontop_0 
+    mt_width_720  tablet_positiontop_0 tablet_height_100_percent
+    pc_height_100_percent"
+targetindex="lecelle_navigation"
+style="left:-120%;">
+    <img src="img/mobile/naviBg.png" class="img_background_cover_center"/>
+    <div class="position_relative_zindex3
+    flex_horizontal_spaceBetween paddingtop_38 paddingleft_34 paddingright_39 
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_38 mobile_paddingleft_34 mobile_paddingright_39
+    tablet_flex_horizontal_spaceBetween mt_paddingtop_38 mt_paddingleft_34 mt_paddingright_39">
+        <img src="img/mobile/sitelogo.png" class="
+        width_192 height_46
+        mobile_width_192 mobile_height_46 
+        mt_width_192 mt_height_46">
+        <img src="img/mobile/xbtn.png" class="
+        width_32 height_32 
+        mobile_width_32 mobile_height_32
+        mt_width_32 mt_height_32
+
+
+        javascript_moveTrigger
+        javascript_viewunviewTrigger"
+        
+        targetdata='{"moveTarget":"lecelle_navigation","moveto":"left|-120%",  "viewunviewTarget":"navBg","viewunviewto":"none"}'/>
+    </div>
+
+    <ul class="menulist position_relative_zindex3 
+    textalignCenter paddingtop_110
+    mobile_textalignCenter mobile_paddingtop_110
+    tablet_textalignCenter mt_paddingtop_110
+    ">
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='brand.html'>브랜드</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='shoplist.html'>제품보기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='reviewlist.html'>리뷰</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60"><a href='surveyform.html'>맞춤주문</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='surveyform.html'>선물하기</a></li>
+        <li class="fontweight_500 colorwhite
+        fontsize_30 height_42 marginbottom_60
+        mobile_fontsize_30 mobile_height_42 mobile_marginbottom_60
+        mt_fontsize_30 mt_height_42 mt_marginbottom_60
+        "><a href='faq.html'>FAQ</a></li>
+    </ul>
+
+    <div class="usercontrol colorwhite bordercolorwhite position_relative_zindex3 borderstyle_solid
+    flex_horizontal_Center margintop_88 bordertop_1 borderbottom_1 textalignCenter
+    mobile_flex_horizontal_Center mobile_margintop_88 mobile_bordertop_1 mobile_borderbottom_1 mobile_textalignCenter
+    tablet_flex_horizontal_Center mt_margintop_88 mt_bordertop_1 mt_borderbottom_1 tablet_textalignCenter">
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 borderright_1
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360 mobile_borderright_1
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360 mt_borderright_1
+        "><a href='mypage.html'>마이페이지</a></p>
+        <p class="login fontweight_500 borderstyle_solid bordercolorwhite
+        fontsize_30 paddingtop_43 paddingbottom_41 width_360 
+        mobile_fontsize_30 mobile_paddingtop_43 mobile_paddingbottom_41 mobile_width_360
+        mt_fontsize_30 mt_paddingtop_43 mt_paddingbottom_41 mt_width_360
+        "><a href='#'>로그아웃</a></p>
+    </div>
+</nav>
+
+<h2 class="tit bgcolor_warmbrightness
+mobile_fontsize_42 mobile_paddingtop_48 mobile_paddingbottom_50 mobile_paddingleft_37
+mt_fontsize_42 mt_paddingtop_48 mt_paddingbottom_50 mt_paddingleft_37
+pcfixed_fontsize_38 pcfixed_paddingtop_140 pcfixed_paddingbottom_38 pc_response_paddingleft_260">FAQ</h2>
+<ul class="menu_category_list colorblack  bgcolor_warm1 
+mobile_flex_horizontal_flexStart mobile_paddingleft_34 mobile_paddingtop_44 mobile_paddingbottom_45 mobile_flex_nowrap
+tablet_flex_horizontal_flexStart mt_paddingleft_34 mt_paddingtop_44 mt_paddingbottom_45 tablet_flex_nowrap
+pc_flex_horizontal_flexStart pc_response_paddingleft_260 pcfixed_paddingtop_45 pcfixed_paddingbottom_49 pc_flex_nowrap">
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24 
+    pcfixed_fontsize_16">
+    전체보기
+        <span class="display_block bgcolor_black position_relative_normal
+        mobile_width_100_percent mobile_height_2 mobile_positionbottom_minus9
+        tablet_width_100_percent mt_height_2 mt_positionbottom_minus9
+        pc_width_100_percent pcfixed_height_2 pcfixed_positionbottom_minus7"></span>
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pc_response_marginleft_21 pc_response_marginright_19">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    제품
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pc_response_marginleft_21 pc_response_marginright_19">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    설문
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pc_response_marginleft_21 pc_response_marginright_19">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    교환/환불
+    </li>
+    <li class="item bgcolor_lecelle1
+    mobile_width_2 mobile_height_18 mobile_marginleft_28 mobile_marginright_28
+    mt_width_2 mt_height_18 mt_marginleft_28 mt_marginright_28
+    pcfixed_width_2 pcfixed_height_10 pc_response_marginleft_21 pc_response_marginright_19">
+    </li>
+    <li class="item fontweight_500 position_relative_normal
+    mobile_fontsize_24
+    mt_fontsize_24
+    pcfixed_fontsize_16">
+    정기구독
+    </li>
+</ul>
+
+<ul class="bgcolor_warmbrightness2
+mobile_paddingbottom_117
+mt_paddingbottom_117
+pc_width_100_percent pcfixed_paddingbottom_240 pc_response_paddingleft_260">
+    <li class="item colorblack position_relative_normal
+    mobile_flex_horizontal_flexStart mobile_paddingleft_33 mobile_paddingright_48 mobile_paddingtop_56 mobile_paddingbottom_48
+    tablet_flex_horizontal_flexStart mt_paddingleft_33 mt_paddingright_48 mt_paddingtop_56 mt_paddingbottom_48
+    pc_flex_horizontal_flexStart pcfixed_paddingtop_49 pcfixed_paddingbottom_40 pc_response_width_1388">
+        <span class="display_block fontweight_500 colorlecelle1
+        mobile_fontsize_22 mobile_paddingright_19
+        mt_fontsize_22 mt_paddingright_19
+        pcfixed_fontsize_16 pc_response_paddingright_28">제품</span>
+        <span class="display_block cursorpointer
+        mobile_fontsize_26 
+        mt_fontsize_26
+        pcfixed_fontsize_20
+        
+        javascript_slideToggle
+        javascript_iconToggle"
+        targetdata='{"slideTarget":"slideToggleTarget0","iconTarget":"iconToggleTarget0","iconEffect":"rotate180_fix"}'
+        toggle_status="closed">정기구독은 어떻게 하는건가요?</span>
+        
+        <img src="img/mobile/downarrow.png" class="display_block position_absolute
+        mobile_width_19 mobile_height_13 mobile_positionright_48 mobile_positiontop_61
+        mt_width_19 mt_height_13 mt_positionright_48 mt_positiontop_61
+        pcfixed_width_16 pcfixed_height_10 pc_positionright_0 pcfixed_positiontop_53"
+
+        targetindex="iconToggleTarget0"
+        />
+
+        <div class="colorblack
+        mobile_width_100_percent mobile_paddingtop_38 mobile_fontsize_24
+        tablet_width_100_percent mt_paddingtop_38 mt_fontsize_24
+        pc_width_100_percent pcfixed_paddingtop_50 pcfixed_fontsize_17" 
+        style="display:none"
+        targetindex="slideToggleTarget0">
+        걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, <br/>
+다른 조합의 맞춤제품을 보내드려요. 
+        </div>
+    </li>
+    <li class="bgcolor_lecelle1 display_block
+    mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+    tablet_width_100_percent mt_height_1   
+    pc_response_width_1388 pcfixed_height_1"></li>
+    <li class="item colorblack position_relative_normal
+    mobile_flex_horizontal_flexStart mobile_paddingleft_33 mobile_paddingright_48 mobile_paddingtop_56 mobile_paddingbottom_48
+    tablet_flex_horizontal_flexStart mt_paddingleft_33 mt_paddingright_48 mt_paddingtop_56 mt_paddingbottom_48
+    pc_flex_horizontal_flexStart pcfixed_paddingtop_49 pcfixed_paddingbottom_40 pc_response_width_1388">
+        <span class="display_block fontweight_500 colorlecelle1
+        mobile_fontsize_22 mobile_paddingright_19
+        mt_fontsize_22 mt_paddingright_19
+        pcfixed_fontsize_16 pc_response_paddingright_28">제품</span>
+        <span class="display_block cursorpointer
+        mobile_fontsize_26 
+        mt_fontsize_26
+        pcfixed_fontsize_20  
+
+        javascript_slideToggle
+        javascript_iconToggle"
+
+        targetdata='{"slideTarget":"slideToggleTarget1","iconTarget":"iconToggleTarget1","iconEffect":"rotate180_fix"}'
+        toggle_status="closed"
+        
+        >정기구독은 어떻게 하는건가요?</span>
+        
+        <img src="img/mobile/downarrow.png" class="display_block position_absolute
+        mobile_width_19 mobile_height_13 mobile_positionright_48 mobile_positiontop_61
+        mt_width_19 mt_height_13 mt_positionright_48 mt_positiontop_61
+        pcfixed_width_16 pcfixed_height_10 pc_positionright_0 pcfixed_positiontop_53"
+        targetindex="iconToggleTarget1"/>
+
+        <div class="colorblack
+        mobile_width_100_percent mobile_paddingtop_38 mobile_fontsize_24
+        tablet_width_100_percent mt_paddingtop_38 mt_fontsize_24
+        pc_width_100_percent pcfixed_paddingtop_50 pcfixed_fontsize_17" 
+        targetindex="slideToggleTarget1"style="display:none">
+        걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, <br/>
+다른 조합의 맞춤제품을 보내드려요. 
+        </div>
+    </li>
+    <li class="bgcolor_lecelle1 display_block
+    mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+    tablet_width_100_percent mt_height_1   
+    pc_response_width_1388 pcfixed_height_1"></li>
+    <li class="item colorblack position_relative_normal
+    mobile_flex_horizontal_flexStart mobile_paddingleft_33 mobile_paddingright_48 mobile_paddingtop_56 mobile_paddingbottom_48
+    tablet_flex_horizontal_flexStart mt_paddingleft_33 mt_paddingright_48 mt_paddingtop_56 mt_paddingbottom_48
+    pc_flex_horizontal_flexStart pcfixed_paddingtop_49 pcfixed_paddingbottom_40 pc_response_width_1388">
+        <span class="display_block fontweight_500 colorlecelle1
+        mobile_fontsize_22 mobile_paddingright_19
+        mt_fontsize_22 mt_paddingright_19
+        pcfixed_fontsize_16 pc_response_paddingright_28">설문</span>
+        <span class="display_block cursorpointer
+        mobile_fontsize_26 
+        mt_fontsize_26
+        pcfixed_fontsize_20
+        
+        javascript_slideToggle
+        javascript_iconToggle"
+        targetdata='{"slideTarget":"slideToggleTarget2","iconTarget":"iconToggleTarget2","iconEffect":"rotate180_fix"}'
+        toggle_status="closed">친구에게 선물할건데 어떻게 하나요?</span>
+        
+        <img src="img/mobile/downarrow.png" class="display_block position_absolute
+        mobile_width_19 mobile_height_13 mobile_positionright_48 mobile_positiontop_61
+        mt_width_19 mt_height_13 mt_positionright_48 mt_positiontop_61
+        pcfixed_width_16 pcfixed_height_10 pc_positionright_0 pcfixed_positiontop_53"
+        
+        targetindex="iconToggleTarget2"/>
+
+        <div class="colorblack
+        mobile_width_100_percent mobile_paddingtop_38 mobile_fontsize_24
+        tablet_width_100_percent mt_paddingtop_38 mt_fontsize_24
+        pc_width_100_percent pcfixed_paddingtop_50 pcfixed_fontsize_17"
+        targetindex="slideToggleTarget2"style="display:none">
+        메뉴의 선물하기 버튼을 눌러주세요. 친구가 직접 맞춤설문을 하게 할 수도 있고, 고객님이 직접 간단하게  선물을 만들 수도 있어요. 
+        </div>
+    </li>
+    <li class="bgcolor_lecelle1 display_block
+    mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+    tablet_width_100_percent mt_height_1   
+    pc_response_width_1388 pcfixed_height_1"></li>
+    
+    <li class="item colorblack position_relative_normal
+    mobile_flex_horizontal_flexStart mobile_paddingleft_33 mobile_paddingright_48 mobile_paddingtop_56 mobile_paddingbottom_48
+    tablet_flex_horizontal_flexStart mt_paddingleft_33 mt_paddingright_48 mt_paddingtop_56 mt_paddingbottom_48
+    pc_flex_horizontal_flexStart pcfixed_paddingtop_49 pcfixed_paddingbottom_40 pc_response_width_1388">
+        <span class="display_block fontweight_500 colorlecelle1
+        mobile_fontsize_22 mobile_paddingright_19
+        mt_fontsize_22 mt_paddingright_19
+        pcfixed_fontsize_16 pc_response_paddingright_28">제품</span>
+        <span class="display_block cursorpointer
+        mobile_fontsize_26 
+        mt_fontsize_26
+        pcfixed_fontsize_20
+        
+        javascript_slideToggle
+        javascript_iconToggle"
+
+        targetdata='{"slideTarget":"slideToggleTarget3","iconTarget":"iconToggleTarget3","iconEffect":"rotate180_fix"}'
+        toggle_status="closed">정기구독은 어떻게 하는건가요?</span>
+        
+        <img src="img/mobile/downarrow.png" class="display_block position_absolute
+        mobile_width_19 mobile_height_13 mobile_positionright_48 mobile_positiontop_61
+        mt_width_19 mt_height_13 mt_positionright_48 mt_positiontop_61
+        pcfixed_width_16 pcfixed_height_10 pc_positionright_0 pcfixed_positiontop_53"
+        targetindex="iconToggleTarget3"/>
+
+        <div class="colorblack
+        mobile_width_100_percent mobile_paddingtop_38 mobile_fontsize_24
+        tablet_width_100_percent mt_paddingtop_38 mt_fontsize_24
+        pc_width_100_percent pcfixed_paddingtop_50 pcfixed_fontsize_17"
+        targetindex="slideToggleTarget3" style="display:none">
+        걱정하지 마세요. 배송 완료일 이후 10일 이내 문의주시면, <br/>
+다른 조합의 맞춤제품을 보내드려요. 
+        </div>
+    </li>
+    <li class="bgcolor_lecelle1 display_block
+    mobile_width_650 mobile_height_1 mobile_marginhorizontal_auto
+    tablet_width_100_percent mt_height_1   
+    pc_response_width_1388 pcfixed_height_1"></li>
+</ul>
+
+<footer class="bgcolor_warmbrightness
+  
+  pc_flex_horizontal_flexStart  pc_flex_alignitems_flexStart pc_flex_nowrap ">
+    <div class="pcblockleft 
+    pc_onlyview pc_response_width_415 pcfixed_height_324" style="flex:0 1 auto">
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_200 pcfixed_borderbottom_1"></div>
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_124 pcfixed_borderright_1"></div>
+    </div>
+    <div class="customer borderstyle_solid bordercolorlecelle2
+    mt_border_1 
+    pc_response_paddingright_80 pcfixed_borderbottom_1 pcfixed_borderleft_1 " >
+        <h3 class="fontweight_500 colorlecelle1
+        mobile_fontsize_24 mobile_paddingleft_33 mobile_paddingtop_45 mobile_paddingbottom_43
+        mt_fontsize_20 mt_paddingleft_33 mt_paddingtop_25 mt_paddingbottom_23
+        pcfixed_fontsize_18 pc_response_paddingleft_42 pcfixed_paddingtop_39 pcfixed_paddingbottom_37">
+        고객센터</h3>
+        <p class="tel colorlecelle1
+        mobile_fontsize_36 mobile_paddingleft_33 mobile_paddingbottom_20
+        mt_fontsize_30 mt_paddingleft_33 mt_paddingbottom_20 mt_paddingright_43
+        pcfixed_fontsize_23 pc_response_paddingleft_42 pcfixed_paddingbottom_16
+        ">
+        070.8656.9610</p>
+        <p class="desc colorlecelle1
+        mobile_fontsize_24 mobile_paddingleft_33 mobile_paddingbottom_42
+        mt_fontsize_22 mt_paddingleft_33 mt_paddingbottom_22
+        pcfixed_fontsize_17 pc_response_paddingleft_42 pcfixed_paddingbottom_45
+        ">
+        평일 11:00 ~ 17:00<br/>
+        주말 및 공휴일 휴무
+        </p>
+    </div>
+    <span class="display_block bgcolor_warm2
+    mobile_width_100_percent mobile_height_1 mobile_onlyview
+    ">
+    </span>
+ 
+
+    <div class="social borderstyle_solid bordercolorlecelle2
+    mobile_paddingleft_33
+    mt_paddingleft_33 mt_borderbottom_1 mt_borderright_1 mt_paddingbottom_25 
+    pc_response_paddingleft_44  pcfixed_borderbottom_1 pcfixed_borderleft_1 ">
+        <h3 class="fontweight_500 colorlecelle1
+        mobile_fontsize_24  mobile_paddingtop_40 mobile_paddingbottom_45
+        mt_fontsize_20 mt_paddingtop_20 mt_paddingbottom_25
+        pcfixed_fontsize_18 pcfixed_paddingtop_39 pcfixed_paddingbottom_36">
+        소셜
+        </h3>
+        <ul class="list
+        mobile_flex_horizontal_flexStart
+        tablet_flex_horizontal_flexStart mt_marginright_43
+        pc_flex_horizontal_flexStart pcfixed_paddingbottom_90 pc_response_marginright_99">
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10">
+                <img src="img/mobile/kakaologo.png" class="display_block
+                mobile_width_43 mobile_height_40
+                mt_width_38 mt_height_35
+                pcfixed_width_34 pcfixed_height_32"/>
+            </li>
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10
+            ">
+                <img src="img/mobile/instalogo.png" class="display_block
+                mobile_width_40 mobile_height_40
+                mt_width_37 mt_height_37
+                pcfixed_width_31 pcfixed_height_33"/>
+            </li>
+            <li class="item
+            mobile_marginright_17
+            mt_marginright_17
+            pc_response_marginright_10">
+                <img src="img/mobile/naverlogo.png" class="display_block
+                mobile_width_35 mobile_height_34
+                mt_width_32 mt_height_30
+                pcfixed_width_30 pcfixed_height_29"/>
+            </li>
+            <li class="item
+            ">
+                <img src="img/mobile/utubelogo.png" class="display_block
+                mobile_width_52 mobile_height_37
+                mt_width_46 mt_height_32
+                pcfixed_width_38 pcfixed_height_30"/>
+            </li>
+        </ul>
+    </div>
+    <span class="display_block bgcolor_warm2 
+    mobile_width_100_percent mobile_height_1 mobile_margintop_38 mobile_marginbottom_41 mobile_onlyview">
+    </span>
+  
+
+    <div class="wrapping terms borderstyle_solid bordercolorlecelle2
+    mobile_width_556
+    mt_border_1
+    pcfixed_width_433 pcfixed_borderbottom_1 pcfixed_borderleft_1 pcfixed_borderbottom_1 pcfixed_borderright_1" >
+        <ul class="colorlecelle1
+        mobile_paddingleft_33 mobile_flex_horizontal_flexStart
+        mt_paddingleft_33 tablet_flex_horizontal_flexStart mt_paddingtop_20
+        pc_response_paddingleft_40 pc_flex_horizontal_flexStart pcfixed_paddingtop_40
+        ">
+            <li class="item fontweight_500
+            mobile_fontsize_24 mobile_paddingright_37
+            mt_fontsize_20 mt_paddingright_37
+            pcfixed_fontsize_18 pc_response_paddingright_22">
+            이용약관</li>
+            <li class="item fontweight_500
+            mobile_fontsize_24
+            mt_fontsize_20
+            pcfixed_fontsize_18">
+            개인정보처리방침</li>
+        </ul>
+
+        <p class="copyright colorlecelle1
+        mobile_paddingleft_33 mobile_paddingtop_46 mobile_paddingbottom_53  mobile_fontsize_21
+        
+        mt_paddingleft_33 mt_paddingtop_26 mt_paddingbottom_43 mt_paddingright_33  mt_fontsize_18
+
+        pc_response_paddingleft_40 pcfixed_paddingtop_34 pcfixed_paddingbottom_44  pcfixed_fontsize_16 pc_response_paddingright_105
+        " style="word-break:break-all">
+        (주)나인빌리언앤코  l  서울특별시 강남구 강남대로 464, 7층
+        대표자: 김홍성  l 대표 이메일: lecelle.contact@9billion.care
+        개인정보보호책임자 : 김민지  ㅣ 사업자번호 : 223-87-01239
+        통신판매신고 : 2019-서울강남-02469호<br/>
+        Copyright © 나인빌리언앤코
+        </p>
+    </div>
+    <div class="pcblockright 
+    pc_onlyview pc_response_width_415 pcfixed_height_324">
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_200 pcfixed_borderbottom_1"></div>
+        <div class="borderstyle_solid bordercolorlecelle2
+        pc_width_100_percent pcfixed_height_124 pcfixed_borderleft_1"></div>
+    </div>
+</footer>
+
+<script src="common_function.js"></script>
+<script src="commonui_javascript.js"></script>
+
+<script>
+    
+</script>
+</body>
+</html>
