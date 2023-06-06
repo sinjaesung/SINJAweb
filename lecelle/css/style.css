@@ -1,0 +1,113 @@
+/*swiper pagination common style project per local stylesss*/
+.swiper-pagination .swiper-pagination-bullet{
+    background-color:#858585;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color:#fe5040
+}
+.swiper-pagination1.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#303031 !important
+}
+.swiper-pagination1.swiper-pagination-progressbar{
+    background:#ccc !important;
+}
+.swiper-button-prev{
+    background-image:url('../img/mobile/naviArrow2.png') !important;background-position:center !important;
+    background-size:cover !important;
+}
+.swiper-button-next{
+    background-image:url('../img/mobile/naviArrow1.png') !important;background-position:center !important;
+    background-size:cover !important;
+}
+
+
+.swiper-pagination2.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:white !important
+}
+.swiper-pagination2.swiper-pagination-progressbar{
+    background:#e7cfbe !important;
+}
+
+.swiper-pagination3.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#2e2e2e !important
+}
+.swiper-pagination3.swiper-pagination-progressbar{
+    background:#cacaca !important;
+}
+.swiper-pagination4.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#2e2e2e !important
+}
+.swiper-pagination4.swiper-pagination-progressbar{
+    background:#cacaca !important;
+}
+.swiper-pagination5.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#2e2e2e !important
+}
+.swiper-pagination5.swiper-pagination-progressbar{
+    background:#cacaca !important;
+}
+
+.popupbg{
+    background-color:rgba(0,0,0,0.7); position:fixed; z-index:600; 
+     left:0;top:0; width:100%;height:100vh;
+}
+
+@media all and (max-width:720px){
+    .boxshadow1{
+        box-shadow:calc(100vw *(3/720)) calc(100vw *(3/720)) calc(100vw *(58/720)) calc(100vw *(10/720)) rgba(227,208,192,0.71);
+    }
+    .boxshadowstyle1{
+        box-shadow:calc(100vw *(8/720)) calc(100vw *(6/720)) calc(100vw *(10/720)) calc(100vw *(2/720)) rgba(200,200,200,0.8)
+    }
+
+
+    .headermenu{
+        display:none;
+    }
+
+}
+@media all and (min-width:721px) and (max-width:1240px){
+    .boxshadow1{
+        box-shadow:calc(720px *(3/720)) calc(720px *(3/720)) calc(720px *(58/720)) calc(720px *(10/720)) rgba(227,208,192,0.71);
+    }
+    .boxshadowstyle1{
+        box-shadow:calc(720px *(8/720)) calc(720px *(6/720)) calc(720px *(10/720)) calc(720px *(2/720)) rgba(200,200,200,0.8)
+    }
+
+    .headermenu{
+        display:none;
+    }
+
+ 
+}
+
+@media all and (min-width:1241px){
+    .boxshadow1{
+        box-shadow:3px 3px 58px 10px rgba(227,208,192,0.71)
+    }
+    .boxshadowstyle1{
+        box-shadow:8px 6px 10px 2px rgba(200,200,200,0.8)
+    }
+
+    .headermenu{
+        display:flex !important;flex:0 0 auto
+    }
+
+     /*푸터스타일*/
+     footer .pcblockleft{
+        flex:0 1 auto !important;
+    }
+    footer .pcblockright{
+        flex:0 1 auto !important;
+    }
+    footer .social{
+        flex:0 0 auto !important;
+    }   
+    footer .customer{
+        flex:0 0 auto !important;
+    }
+    footer .terms{
+        flex:0 0 auto !important;
+    }
+
+}
