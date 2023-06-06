@@ -1,0 +1,2553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+<div id="pageLoader">
+    <img src="img/Circle-Loading.svg"/>
+</div> 
+
+<div class="topbanner position_absolute bgcolor_red4 javascript_Css_define zindex999
+mobile_flex_horizontal_Center tablet_flex_horizontal_Center pc_flex_horizontal_flexStart"
+javascript_Css_define="
+0~720|720$height:74fixed;width:100%^
+721~1400|1320$height:44fixed;width:100%^
+1401~9999|1920$height:44fixed;width:100%;padding-left:792response">
+    <div class="flex_horizontal_flexStart colorwhite  javascript_Css_define"javascript_Css_define="
+    0~720|720$font-size:16px^
+    721~1400|1320$font-size:19px^
+    1401~9999|1920$font-size:19px">
+        <span>뉴턴몰 회원가입하면 최대 5,000원 할인</span>
+        <img src="img/arrowiconwhite.svg" class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:9fixed;height:16fixed;margin-left:30response^
+        721~1400|1320$width:9fixed;height:16fixed;margin-left:30response^
+        1401~9999|1920$width:9fixed;height:16fixed;margin-left:38response"/>
+    </div>
+    <img src="img/xButton.svg" class="display_block position_absolute javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$right:16response;top:17fixed;width:10fixed;height:10fixed^
+    721~1400|1320$right:16response;top:17fixed;width:10fixed;height:10fixed^
+    1401~9999|1920$right:300response;top:17fixed;width:10fixed;height:10fixed"/>
+</div>
+<header
+class="position_relative_normal">
+    <div class="inner  javascript_Css_define
+    mobile_flex_horizontal_spaceBetween mobile_flex_alignitems_flexEnd 
+    tablet_marginhorizontal_auto tablet_flex_horizontal_spaceBetween tablet_flex_alignitems_flexEnd
+    pc_marginhorizontal_auto pc_flex_horizontal_spaceBetween pc_flex_alignitems_flexEnd"
+    javascript_Css_define="
+    0~720|720$width:100%;padding-top:98fixed;padding-left:14response;padding-right:18response^
+    721~1400|1320$width:1200response;padding-top:85fixed;^
+    1401~9999|1920$width:1320fixed;padding-top:85fixed">
+        <a href="mainNew.html"><img src="./img/logo.png" class="display_block  javascript_Css_define"javascript_Css_define="
+        0~720|720$width:109fixed;height:24fixed^
+        721~1400|1320$width:200fixed;height:45fixed^
+        1401~9999|1920$width:200fixed;height:45fixed"/></a>
+        <div class="usermenu 
+        mobile_display_none
+        tablet_flex_horizontal_flexStart
+        pc_flex_horizontal_flexStart">
+            <p class="item fontweight_500 javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13fixed^
+            721~1400|1320$font-size:14fixed^
+            1401~9999|1920$font-size:14fixed">로그인</p>
+            <p class="item fontweight_500 javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13fixed;margin-left:16response^
+            721~1400|1320$font-size:14fixed;margin-left:18response^
+            1401~9999|1920$font-size:14fixed;margin-left:18response">회원가입</p>
+            <span class="display_block bgcolor_gray2 javascript_Css_define"javascript_Css_define="
+            0~720|720$width:1fixed;height:12fixed;margin-left:10response;margin-right:10response^
+            721~1400|1320$width:1fixed;height:12fixed;margin-left:18response;margin-right:18response^
+            1401~9999|1920$width:1fixed;height:12fixed;margin-left:18response;margin-right:18response"></span>
+            <img src="./img/usericon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20fixed;height:22fixed^
+            721~1400|1320$width:20fixed;height:22fixed^
+            1401~9999|1920$width:20fixed;height:22fixed"/>
+        </div>
+    </div>
+    <div class="inner  javascript_Css_define
+    mobile_width_100_percent mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexEnd  mobile_flex_nowrap
+    tablet_marginhorizontal_auto tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexEnd tablet_flex_nowrap
+    pc_marginhorizontal_auto pc_flex_horizontal_flexStart pc_flex_alignitems_flexEnd pc_flex_nowrap"javascript_Css_define="
+    0~720|720$padding-left:14response;padding-right:18response;margin-top:28fixed;^
+    721~1400|1320$width:1200response;margin-top:21fixed^
+    1401~9999|1920$width:1320fixed;margin-top:25fixed">
+  
+        <ul class="headermenus flex_horizontal_flexStart javascript_Css_define
+        mobile_flex_shrink1 tablet_flex_shrink1 pc_flex_shrink1"
+        javascript_Css_define="
+        721~1400|1320$width:851response^
+        1401~9999|1920$width:983fixed">
+            <li class="item
+            ">
+                <img src="img/menuIcon.svg" class="display_block cursorpointer javascript_Css_define
+                javascript_moveTrigger
+                javascript_viewunviewTrigger"javascript_Css_define="
+                0~720|720$width:21fixed;height:18px^
+                721~1400|1320$width:21fixed;height:18fixed^
+                1401~9999|1920$width:21fixed;height:18fixed"
+                targetdata='{"moveTarget":"nutine_navigation","moveto":"left|0%","viewunviewTarget":"navBg","viewunviewto":"block"}'>
+            </li>
+            <li class="item display_block position_relative_normal  javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:14response">
+                <a href="#"
+                class="javascript_slideToggle"
+                targetdata='{"slideTarget":"slideToggleTarget0"}'
+                toggle_status="closed">전체상품</a>
+
+                <div class="display_block bgcolor_white flex_horizontal_spaceBetween position_absolute zindex50 javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:10response;padding-top:16fixed;padding-bottom:20fixed;padding-right:10response;width:660response;top:30fixed;left:-10response;border-radius:20response^
+                721~1400|1320$padding-left:30response;padding-top:20fixed;padding-bottom:20fixed;padding-right:20response;width:820response;top:30fixed;left:-50response;border-radius:20response^
+                1401~9999|1920$padding-left:30fixed;padding-top:30fixed;padding-bottom:30fixed;padding-right:30fixed;width:820fixed;top:30fixed;border-radius:20fixed"
+                
+                style="display:none"
+                targetindex="slideToggleTarget0">
+                    <ul class="categorylist flex_horizontal_spaceBetween flex_alignitems_flexStart javascript_Css_define
+                    mobile_width_100_percent  tablet_width_100_percent pc_width_100_percent"javascript_Css_define="
+                    0~720|720$font-size:14fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">
+                        <li class="item  javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:50%^
+                        721~1400|1320$width:250response^
+                        1401~9999|1920$width:250fixed">
+                            <p class="item_ fontweight_600">
+                                <a href="subNew.html">건강식품</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"javascript_Css_define="
+                            0~720|720$margin-top:30fixed^
+                            721~1400|1320$margin-top:40fixed^
+                            1401~9999|1920$margin-top:40fixed">
+                                <a href="subNew.html">유산균</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">타트체리</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">홍삼</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">오메가3</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">새싹보리</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 비타민</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">발효율피</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">선물세트</a> 
+                            </p>
+                        </li>
+                        <li class="item  javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:50%^
+                        721~1400|1320$width:250response^
+                        1401~9999|1920$width:250fixed">
+                            <p class="item_ fontweight_600">
+                                <a href="subNew.html">음료</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"javascript_Css_define="
+                            0~720|720$margin-top:30fixed^
+                            721~1400|1320$margin-top:40fixed^
+                            1401~9999|1920$margin-top:40fixed">
+                                <a href="subNew.html">컨디션</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 헛개수</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  새싹보리</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 비책집약</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  로블렌</a> 
+                            </p>
+                        </li>
+                        <li class="item  javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:50%;padding-top:40fixed^
+                        721~1400|1320$width:250response^
+                        1401~9999|1920$width:250fixed">
+                            <p class="item_ fontweight_600">
+                                <a href="subNew.html">건강가이드</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"javascript_Css_define="
+                            0~720|720$margin-top:30fixed^
+                            721~1400|1320$margin-top:40fixed^
+                            1401~9999|1920$margin-top:40fixed">
+                                <a href="subNew.html">면역/피로개선</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 체지방감소</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  혈행/콜레스트롤</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 장건강</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  눈건강</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 항산화</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 숙취해소</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">베스트</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">건강식품</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">음료</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">이벤트</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">리뷰</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">건강하게 코어핏!</a>
+            </li>
+        </ul>
+
+        <div class="searchwrap bgcolor_graywhite  javascript_Css_define" 
+        javascript_Css_define="
+        0~720|720$width:25fixed;height:24fixed;margin-left:6response;background-color:transparent;position:absolute;top:98fixed;right:58response^
+        721~1400|1320$width:260response;height:45fixed;border-radius:23fixed;position:relative^
+        1401~9999|1920$width:260fixed;height:45fixed;border-radius:23fixed;position:relative">
+            <img src="img/search.svg" class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~720|720$width:25fixed;height:24fixed;top:0;right:0^
+            721~1400|1320$width:23fixed;height:23fixed;top:11fixed;right:19fixed^
+            1401~9999|1920$width:23fixed;height:23fixed;top:11fixed;right:19fixed">
+            <input type="text" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$display:none^
+            721~1400|1320$padding-top:10fixed;padding-bottom:10fixed;padding-left:20response;padding-right:40response;font-size:15fixed;width:100%^
+            1401~9999|1920$padding-top:10fixed;padding-bottom:10fixed;padding-left:20fixed;padding-right:40fixed;font-size:18fixed;width:100%"/>
+        </div>
+        
+        <div class="cartwrap javascript_Css_define
+        mobile_flex_horizontal_Center tablet_flex_horizontal_Center pc_flex_horizontal_Center"
+        javascript_Css_define="
+        0~720|720$width:55fixed;height:28fixed;margin-left:6response;position:absolute;top:94fixed;right:98response^
+        721~1400|1320$width:55fixed;height:49fixed;margin-left:27response;position:relative^
+        1401~9999|1920$width:55fixed;height:49fixed;margin-left:27response;position:relative">
+            <img src="img/cartBag.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:30fixed;height:28fixed^
+            721~1400|1320$width:30fixed;height:28fixed^
+            1401~9999|1920$width:30fixed;height:28fixed"/>
+            <span class="display_block bgcolor_red3 colorwhite position_absolute fontweight_500 javascript_Css_define
+            mobile_flex_horizontal_Center tablet_flex_horizontal_Center pc_flex_horizontal_Center "javascript_Css_define="
+            0~720|720$font-size:14fixed;right:0;top:4fixed;width:20fixed;height:20fixed;border-radius:10fixed^
+            721~1400|1320$font-size:14fixed;right:0;top:15fixed;width:20fixed;height:20fixed;border-radius:10fixed^
+            1401~9999|1920$font-size:14fixed;right:0;top:15fixed;width:20fixed;height:20fixed;border-radius:10fixed">0</span>
+            <p class="fontweight_500 javascript_Css_define"javascript_Css_define="
+            0~720|720$display:none^
+            721~1400|1320$display:block;font-size:14fixed^
+            1401~9999|1920$display:block;font-size:14fixed">장바구니</p>
+        </div>
+    </div>
+</header>
+
+<div class="popupbg 
+javascript_moveTrigger
+javascript_viewunviewTrigger"
+targetdata='{"moveTarget":"nutine_navigation","moveto":"left|-120%","viewunviewTarget":"navBg","viewunviewto":"none"}'
+targetindex="navBg" 
+style="display:none"></div>
+<nav class="nutineNav position_fixed bgcolor_white zindex999 height_100vh javascript_Css_define"javascript_Css_define="
+0~720|720$width:720response;top:0;left:0^
+721~1400|1320$width:720response;top:0;left:0^
+1401~9999|1920$width:720response;top:0;left:0"
+targetindex="nutine_navigation"
+style="left:-120%">
+    <div class="toparea bgcolor_red5 flex_horizontal_spaceBetween javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;height:62fixed;padding-left:16response;padding-right:13response^
+    721~1400|1320$width:100%;height:62fixed;padding-left:16fixed;padding-right:13fixed^
+    1401~9999|1920$width:100%;height:62fixed;padding-left:16fixed;padding-right:13fixed">
+        <p class="loginmenu colorwhite flex_horizontal_flexStart javascript_Css_define"javascript_Css_define="
+        0~720|720$font-size:18fixed^
+        721~1400|1320$font-size:18fixed^
+        1401~9999|1920$font-size:18fixed">
+            <a href="#">로그인해주세요</a>
+            <img src="img/arrowicon3.svg" class="display_block  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1320$width:9fixed;height:16fixed;margin-left:4fixed">
+        </p>
+
+        <div class="rightmenu flex_horizontal_flexStart colorwhite
+        ">
+            <p class="regimenu">
+                <a href="#" class="javascript_Css_define"javascript_Css_define="
+                0~720|720$font-size:14fixed^
+                721~1400|1320$font-size:14fixed^
+                1401~9999|1920$font-size:14fixed">회원가입</a>
+                <span class="bgcolor_white display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1320$width:100%;height:1fixed;margin-top:3fixed">
+                </span>
+            </p>
+            <img src="img/xbutton2.svg" class="display_block  javascript_Css_define
+            javascript_moveTrigger
+            javascript_viewunviewTrigger"javascript_Css_define="
+            0~720|720$width:26fixed;height:26fixed;margin-left:9response^
+            721~1400|1320$width:26fixed;height:26fixed;margin-left:9fixed^
+            1401~9999|1920$width:26fixed;height:26fixed;margin-left:9fixed"
+            targetdata='{"moveTarget":"nutine_navigation","moveto":"left|-120%","viewunviewTarget":"navBg","viewunviewto":"none"}'
+            >
+        </div>
+    </div>
+
+    <ul class="navmenu flex_horizontal_spaceBetween javascript_Css_define"javascript_Css_define="
+    0~720|720$padding-left:60response;padding-right:52response;margin-top:22fixed^
+    721~1400|1320$padding-left:60fixed;padding-right:52fixed;margin-top:22fixed^
+    1401~9999|1920$padding-left:60fixed;padding-right:52fixed;margin-top:22fixed">
+        <li class="item textalignCenter
+        ">
+            <img src="img/SpeakSound.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:37fixed;height:26fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:15fixed">공지사항</p>
+        </li>
+        <li class="item textalignCenter
+        ">
+            <img src="img/truck.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:36fixed;height:27fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:14fixed">주문조회</p>
+        </li>
+        <li class="item textalignCenter
+        ">
+            <img src="img/clock.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:29fixed;height:28fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:14fixed">최근 본 상품</p>
+        </li>
+        <li class="item textalignCenter
+        ">
+            <img src="img/usericon.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:24fixed;height:26fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:17fixed">마이페이지</p>
+        </li>
+    </ul>
+
+    <ul class="navmenuList javascript_Css_define"javascript_Css_define="
+    0~720|720$padding-left:16response;padding-right:16response;margin-top:76fixed^
+    721~1400|1320$padding-left:16fixed;padding-right:16fixed;margin-top:76fixed^
+    1401~9999|1920$padding-left:16fixed;padding-right:16fixed;margin-top:76fixed">
+        <li class="flex_horizontal_spaceBetween fontweight_900 position_relative_normal javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed">
+           <a href="#">전체상품</a> 
+           <img src="img/arrowdownicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+           0~9999|1320$width:14fixed;height:7fixed"/>
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+           <a href="#">베스트</a> 
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+           <a href="#">건강식품</a> 
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+           <a href="#">음료</a> 
+           
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+           <a href="#">이벤트</a> 
+          
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+           <a href="#">리뷰</a> 
+           
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+           <a href="#">뉴틴건강 솔루션!</a> 
+          
+        </li>
+    </ul>
+</nav>
+
+
+<section class="mainbannerSection javascript_Css_define"javascript_Css_define="
+0~720|720$margin-top:16fixed;height:829response^
+721~1400|1320$margin-top:33fixed;height:490fixed^
+1401~9999|1920$margin-top:28fixed;height:580fixed">
+    <div class="swiper-container mainbanner 
+    mobile_height_100_percent
+    tablet_height_100_percent
+    pc_height_100_percent
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal javascript_Css_define"javascript_Css_define="
+            0~720|720$height:100%;width:100%;overflow:hidden^
+            721~1400|1320$width:840px !important;margin-left:20fixed;margin-right:20fixed;overflow:hidden;border-radius:20fixed^
+            1401~9999|1920$width:1100px !important;height:100%;overflow:hidden;margin-left:20fixed;margin-right:20fixed;border-radius:20fixed">
+                <img src="img/mainbannermob1.jpg" class="display_block  javascript_Css_define
+                mobile_width_100_percent mobile_height_100_percent"javascript_Css_define="
+                0~720|720$display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/mainbanner1.png" class="display_block  javascript_Css_define
+                tablet_height_100_percent"javascript_Css_define="
+                0~720|720$display:none^
+                721~1400|1320$display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/mainbanner1.png" class="display_block javascript_Css_define
+                pc_width_100_percent pc_height_100_percent "javascript_Css_define="
+                0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:block"/>
+            </div>
+            <div class="swiper-slide position_relative_normal javascript_Css_define"javascript_Css_define="
+            0~720|720$height:100%;width:100%;overflow:hidden^
+            721~1400|1320$width:840px !important;margin-left:20fixed;margin-right:20fixed;overflow:hidden;border-radius:20fixed^
+            1401~9999|1920$width:1100px !important;height:100%;overflow:hidden;margin-left:20fixed;margin-right:20fixed;border-radius:20fixed">
+                <img src="img/mainbannermob2.jpg" class="display_block  javascript_Css_define
+                mobile_width_100_percent mobile_height_100_percent"javascript_Css_define="
+                0~720|720$display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/mainbanner2.png" class="display_block  javascript_Css_define
+                tablet_height_100_percent"javascript_Css_define="
+                0~720|720$display:none^
+                721~1400|1320$display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/mainbanner2.png" class="display_block javascript_Css_define
+                pc_width_100_percent pc_height_100_percent "javascript_Css_define="
+                0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:block"/>
+            </div>
+            <div class="swiper-slide position_relative_normal javascript_Css_define"javascript_Css_define="
+            0~720|720$height:100%;width:100%;overflow:hidden^
+            721~1400|1320$width:840px !important;margin-left:20fixed;margin-right:20fixed;overflow:hidden;border-radius:20fixed^
+            1401~9999|1920$width:1100px !important;height:100%;overflow:hidden;margin-left:20fixed;margin-right:20fixed;border-radius:20fixed">
+                <img src="img/mainbannermob3.jpg" class="display_block  javascript_Css_define
+                mobile_width_100_percent mobile_height_100_percent"javascript_Css_define="
+                0~720|720$display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/mainbanner3.png" class="display_block  javascript_Css_define
+                tablet_height_100_percent"javascript_Css_define="
+                0~720|720$display:none^
+                721~1400|1320$display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/mainbanner3.png" class="display_block javascript_Css_define
+                pc_width_100_percent pc_height_100_percent "javascript_Css_define="
+                0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:block"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section1">
+    <div class="inner javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:15response^
+    721~1400|1320$padding-left:64response;padding-right:64response^
+    1401~9999|1920$width:1320fixed;margin:0 auto">
+        <h2 class="tit fontweight_900 javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:20fixed;padding-top:50fixed;padding-bottom:21fixed^
+        721~1400|1320$font-size:38fixed;padding-top:97fixed;padding-bottom:30fixed^
+        1401~9999|1920$font-size:38fixed;padding-top:100fixed;padding-bottom:30fixed">베스트 상품</h2>
+
+        <div class="swiper-container slide1 javascript_Css_define"
+        javascript_Css_define="0~720|720$padding-bottom:98px !important^
+        721~1400|1320$padding-bottom:192px !important^
+        1401~9999|1920$padding-bottom:194px !important">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$margin-right:9fixed;width:316fixed^
+                721~1400|1320$margin-right:25fixed;width:278fixed^
+                1401~9999|1920$margin-right:25fixed;width:311fixed">
+                    <img src="img/proimg1.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:316fixed;border-radius:12fixed^
+                    721~1400|1320$width:100%;height:278fixed;border-radius:12fixed^
+                    1401~9999|1920$width:100%;height:311fixed;border-radius:12fixed"/>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define
+                    flex_horizontal_Center"
+                    javascript_Css_define="0~720|720$margin-top:9fixed;font-size:10fixed;width:67fixed;height:27fixed;border-radius:14fixed;border-width:1fixed^
+                    721~1400|1320$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed^
+                    1401~9999|1920$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed">1/2/4/8박스</p>
+                    <span class="display_block bgcolor_gray javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:270fixed;height:1fixed;margin-top:10fixed^
+                    721~1400|1320$width:278fixed;height:1fixed;margin-top:14fixed^
+                    1401~9999|1920$width:300fixed;height:1fixed;margin-top:15fixed"></span>
+                    <p class="tits  javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:13fixed;font-size:16fixed;height:48fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:16fixed;font-size:20fixed;height:56fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:15fixed;font-size:20fixed;width:294fixed;line-height:1.4;height:56fixed;overflow:hidden">
+                    [뉴틴] 식물성 알티지 오메가3 순도 80%
+                    80%
+                    </p>
+                    <div class="discount_area fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart  tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:32fixed^
+                    721~1400|1320$margin-top:24fixed^
+                    1401~9999|1920$margin-top:32fixed">
+                        <p class="percent  colorblue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:16fixed^
+                        721~1400|1320$font-size:18fixed^
+                        1401~9999|1920$font-size:26fixed">34%</p>
+                        <p class="price  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:16fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:24fixed;padding-left:11fixed">39,000원</p>
+                        <p class="originprice  linethrough colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:14fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:17fixed;padding-left:11fixed">59,000원</p>
+                    </div>
+                    <div class="revscores fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:4fixed^
+                    721~1400|1320$margin-top:10fixed^
+                    1401~9999|1920$margin-top:14fixed">
+                        <img src="img/stars.svg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                        721~1400|1320$width:19fixed;height:17fixed^
+                        1401~9999|1920$width:24fixed;height:22fixed">
+                        <p class="numbervalue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.8</p>
+                        <p class="numbervalue colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:20fixed;padding-left:5fixed">(417)</p>
+                    </div>
+                </div>    
+                <div class="swiper-slide position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$margin-right:9fixed;width:316fixed^
+                721~1400|1320$margin-right:25fixed;width:278fixed^
+                1401~9999|1920$margin-right:25fixed;width:311fixed">
+                    <img src="img/proimg2.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:316fixed;border-radius:12fixed^
+                    721~1400|1320$width:100%;height:278fixed;border-radius:12fixed^
+                    1401~9999|1920$width:100%;height:311fixed;border-radius:12fixed"/>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define
+                    flex_horizontal_Center"
+                    javascript_Css_define="0~720|720$margin-top:9fixed;font-size:10fixed;width:67fixed;height:27fixed;border-radius:14fixed;border-width:1fixed^
+                    721~1400|1320$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed^
+                    1401~9999|1920$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed">1/1+1/5박스</p>
+                    <span class="display_block bgcolor_gray javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:270fixed;height:1fixed;margin-top:10fixed^
+                    721~1400|1320$width:278fixed;height:1fixed;margin-top:14fixed^
+                    1401~9999|1920$width:300fixed;height:1fixed;margin-top:15fixed"></span>
+                    <p class="tits  javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:13fixed;font-size:16fixed;height:48fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:16fixed;font-size:20fixed;height:56fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:15fixed;font-size:20fixed;width:294fixed;line-height:1.4;height:56fixed;overflow:hidden">
+                    [뉴틴] 몽모랑시 타트체리 콜라겐 뷰티
+                    스틱 1+1 박스 (28포..
+                    </p>
+                    <div class="discount_area fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart  tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:32fixed^
+                    721~1400|1320$margin-top:24fixed^
+                    1401~9999|1920$margin-top:32fixed">
+                        <p class="percent  colorblue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:16fixed^
+                        721~1400|1320$font-size:18fixed^
+                        1401~9999|1920$font-size:26fixed">36%</p>
+                        <p class="price  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:16fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:24fixed;padding-left:11fixed">15,900원</p>
+                        <p class="originprice  linethrough colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:14fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:17fixed;padding-left:11fixed">25,000원</p>
+                    </div>
+                    <div class="revscores fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:4fixed^
+                    721~1400|1320$margin-top:10fixed^
+                    1401~9999|1920$margin-top:14fixed">
+                        <img src="img/stars.svg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                        721~1400|1320$width:19fixed;height:17fixed^
+                        1401~9999|1920$width:24fixed;height:22fixed">
+                        <p class="numbervalue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.8</p>
+                        <p class="numbervalue colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:20fixed;padding-left:5fixed">(189)</p>
+                    </div>
+                </div>   
+                <div class="swiper-slide position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$margin-right:9fixed;width:316fixed^
+                721~1400|1320$margin-right:25fixed;width:278fixed^
+                1401~9999|1920$margin-right:25fixed;width:311fixed">
+                    <img src="img/proimg3.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:316fixed;border-radius:12fixed^
+                    721~1400|1320$width:100%;height:278fixed;border-radius:12fixed^
+                    1401~9999|1920$width:100%;height:311fixed;border-radius:12fixed"/>
+                    <div class="flex_horizontal_flexStart">
+                        <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define
+                        flex_horizontal_Center"
+                        javascript_Css_define="0~720|720$margin-top:9fixed;font-size:10fixed;width:67fixed;height:27fixed;border-radius:14fixed;border-width:1fixed^
+                        721~1400|1320$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed^
+                        1401~9999|1920$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed">1/2박스</p>
+                        <p class="badge display_block borderstyle_solid bordercolorred2 colorred javascript_Css_define
+                        flex_horizontal_Center"
+                        javascript_Css_define="0~720|720$margin-top:9fixed;margin-left:4response;font-size:10fixed;width:67fixed;height:27fixed;border-radius:14fixed;border-width:1fixed^
+                        721~1400|1320$margin-top:15fixed;margin-left:9response;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed^
+                        1401~9999|1920$margin-top:15fixed;margin-left:7fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed">리뉴얼 특가</p>
+                    </div>
+                       
+                    <span class="display_block bgcolor_gray javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:270fixed;height:1fixed;margin-top:10fixed^
+                    721~1400|1320$width:278fixed;height:1fixed;margin-top:14fixed^
+                    1401~9999|1920$width:300fixed;height:1fixed;margin-top:15fixed"></span>
+                    <p class="tits  javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:13fixed;font-size:16fixed;height:48fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:16fixed;font-size:20fixed;height:56fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:15fixed;font-size:20fixed;width:294fixed;line-height:1.4;height:56fixed;overflow:hidden">
+                    [뉴틴] 면역 멀티 비타민 1+1 박스
+                    </p>
+                    <div class="discount_area fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart  tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:32fixed^
+                    721~1400|1320$margin-top:24fixed^
+                    1401~9999|1920$margin-top:32fixed">
+                        <p class="percent  colorblue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:16fixed^
+                        721~1400|1320$font-size:18fixed^
+                        1401~9999|1920$font-size:26fixed">40%</p>
+                        <p class="price  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:16fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:24fixed;padding-left:11fixed">26,900원</p>
+                        <p class="originprice  linethrough colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:14fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:17fixed;padding-left:11fixed">45,000원</p>
+                    </div>
+                    <div class="revscores fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:4fixed^
+                    721~1400|1320$margin-top:10fixed^
+                    1401~9999|1920$margin-top:14fixed">
+                        <img src="img/stars.svg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                        721~1400|1320$width:19fixed;height:17fixed^
+                        1401~9999|1920$width:24fixed;height:22fixed">
+                        <p class="numbervalue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:21fixed;padding-left:5fixed">5</p>
+                        <p class="numbervalue colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:20fixed;padding-left:5fixed">(0)</p>
+                    </div>
+                </div> 
+                <div class="swiper-slide position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$margin-right:9fixed;width:316fixed^
+                721~1400|1320$margin-right:25fixed;width:278fixed^
+                1401~9999|1920$margin-right:25fixed;width:311fixed">
+                    <img src="img/proimg4.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:316fixed;border-radius:12fixed^
+                    721~1400|1320$width:100%;height:278fixed;border-radius:12fixed^
+                    1401~9999|1920$width:100%;height:311fixed;border-radius:12fixed"/>
+                    <div class="flex_horizontal_flexStart">
+                        <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define
+                        flex_horizontal_Center"
+                        javascript_Css_define="0~720|720$margin-top:9fixed;font-size:10fixed;width:67fixed;height:27fixed;border-radius:14fixed;border-width:1fixed^
+                        721~1400|1320$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed^
+                        1401~9999|1920$margin-top:15fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed">1개월</p>
+                        <p class="badge display_block borderstyle_solid bordercolorred2 colorred javascript_Css_define
+                        flex_horizontal_Center"
+                        javascript_Css_define="0~720|720$margin-top:9fixed;margin-left:4response;font-size:10fixed;width:67fixed;height:27fixed;border-radius:14fixed;border-width:1fixed^
+                        721~1400|1320$margin-top:15fixed;margin-left:9response;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed^
+                        1401~9999|1920$margin-top:15fixed;margin-left:7fixed;font-size:13fixed;width:95fixed;height:33fixed;border-radius:16fixed;border-width:1fixed">쇼핑백증정</p>
+                    </div>
+                       
+                    <span class="display_block bgcolor_gray javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:270fixed;height:1fixed;margin-top:10fixed^
+                    721~1400|1320$width:278fixed;height:1fixed;margin-top:14fixed^
+                    1401~9999|1920$width:300fixed;height:1fixed;margin-top:15fixed"></span>
+                    <p class="tits  javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:13fixed;font-size:16fixed;height:48fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:16fixed;font-size:20fixed;height:56fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:15fixed;font-size:20fixed;width:294fixed;line-height:1.4;height:56fixed;overflow:hidden">
+                    [뉴틴] 홍삼진 프로바이오 홍삼 유산균 1박스
+                    </p>
+                    <div class="discount_area fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart  tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:32fixed^
+                    721~1400|1320$margin-top:24fixed^
+                    1401~9999|1920$margin-top:32fixed">
+                        <p class="percent  colorblue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:16fixed^
+                        721~1400|1320$font-size:18fixed^
+                        1401~9999|1920$font-size:26fixed">57%</p>
+                        <p class="price  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:16fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:24fixed;padding-left:11fixed">35,900원</p>
+                        <p class="originprice  linethrough colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:14fixed;padding-left:4fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:17fixed;padding-left:11fixed">84,000원</p>
+                    </div>
+                    <div class="revscores fontweight_500 javascript_Css_define
+                    mobile_flex_horizontal_flexStart tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:4fixed^
+                    721~1400|1320$margin-top:10fixed^
+                    1401~9999|1920$margin-top:14fixed">
+                        <img src="img/stars.svg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                        721~1400|1320$width:19fixed;height:17fixed^
+                        1401~9999|1920$width:24fixed;height:22fixed">
+                        <p class="numbervalue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.8</p>
+                        <p class="numbervalue colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:3fixed^
+                        1401~9999|1920$font-size:20fixed;padding-left:5fixed">(101)</p>
+                    </div>
+                </div> 
+            </div>
+    
+            <div class="swiper-pagination swiper-pagination_style6 javascript_Css_define"
+            javascript_Css_define="0~720|720$bottom:65px !important;top:auto !important;height:1fixed;width:705response;left:0 !important^
+            721~1400|1320$bottom:120px !important;top:auto !important;height:1fixed;width:1254response;left:0 !important^
+            1401~9999|1920$bottom:120px !important;top:auto !important;height:1fixed;width:1320response;left:0 !important"
+            ></div>
+        </div>
+    </div>
+</section>
+
+<section class="section2 javascript_Css_define"
+javascript_Css_define="0~720|720$height:260response^
+721~1400|1320$height:200fixed^
+1401~9999|1920$height:200fixed">
+    <div class="swiper-container slide2 
+    mobile_height_100_percent
+    tablet_height_100_percent
+    pc_height_100_percent">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_width_100_percent mobile_overflow_hidden 
+            tablet_height_100_percent tablet_width_100_percent tablet_overflow_hidden  
+            pc_width_100_percent pc_height_100_percent pc_overflow_hidden  
+            ">
+                <img src="img/banner_mob1.jpg" class="display_block position_absolute  javascript_Css_define"
+                javascript_Css_define="0~720|720$width:100%;height:100%;display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc1.jpg" class="display_block  position_absolute img_background_cover_height_center javascript_Css_define"
+                javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$height:100%;display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc1.jpg" class="display_block position_absolute img_background_cover_height_center javascript_Css_define"javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$height:100%;display:block"/>
+            </div>
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_width_100_percent mobile_overflow_hidden 
+            tablet_height_100_percent tablet_width_100_percent tablet_overflow_hidden  
+            pc_width_100_percent pc_height_100_percent pc_overflow_hidden  
+            ">
+                <img src="img/banner_mob2.jpg" class="display_block position_absolute  javascript_Css_define"
+                javascript_Css_define="0~720|720$width:100%;height:100%;display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc2.jpg" class="display_block  position_absolute img_background_cover_height_center javascript_Css_define"
+                javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$height:100%;display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc2.jpg" class="display_block position_absolute img_background_cover_height_center javascript_Css_define"javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$height:100%;display:block"/>
+            </div>
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_width_100_percent mobile_overflow_hidden 
+            tablet_height_100_percent tablet_width_100_percent tablet_overflow_hidden  
+            pc_width_100_percent pc_height_100_percent pc_overflow_hidden  
+            ">
+                <img src="img/banner_mob3.jpg" class="display_block position_absolute  javascript_Css_define"
+                javascript_Css_define="0~720|720$width:100%;height:100%;display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc3.jpg" class="display_block  position_absolute img_background_cover_height_center javascript_Css_define"
+                javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$height:100%;display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc3.jpg" class="display_block position_absolute img_background_cover_height_center javascript_Css_define"javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$height:100%;display:block"/>
+            </div>
+            <div class="swiper-slide position_relative_normal
+            mobile_height_100_percent mobile_width_100_percent mobile_overflow_hidden 
+            tablet_height_100_percent tablet_width_100_percent tablet_overflow_hidden  
+            pc_width_100_percent pc_height_100_percent pc_overflow_hidden  
+            ">
+                <img src="img/banner_mob4.jpg" class="display_block position_absolute  javascript_Css_define"
+                javascript_Css_define="0~720|720$width:100%;height:100%;display:block^
+                721~1400|1320$display:none^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc4.jpg" class="display_block  position_absolute img_background_cover_height_center javascript_Css_define"
+                javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$height:100%;display:block^
+                1401~9999|1920$display:none"/>
+                <img src="img/banner_pc4.jpg" class="display_block position_absolute img_background_cover_height_center javascript_Css_define"javascript_Css_define="0~720|720$display:none^
+                721~1400|1320$display:none^
+                1401~9999|1920$height:100%;display:block"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section3">
+    <div class="swiper-container section3Swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class=" inner  position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$width:677response;margin:0 auto;padding-top:65fixed;padding-bottom:36fixed^
+                721~1070|1320$width:1262response;margin:0 auto;padding-top:102fixed;padding-bottom:167fixed;display:block^
+                1071~1400|1320$width:1262response;margin:0 auto;padding-top:102fixed;padding-bottom:167fixed;display:flex;justify-content:space-between;align-items:center^
+                1401~9999|1920$width:1320fixed;margin:0 auto;padding-top:103fixed;padding-bottom:61fixed;display:flex;justify-content:space-between">
+                
+                    <div class="leftinfo  javascript_Css_define"javascript_Css_define="0~720|720$width:100%^
+                    721~1070|1320$width:100%^
+                    1071~1400|1320$width:593fixed^
+                    1401~9999|1920$width:586fixed">
+                    
+                        <h3 class="tits fontweight_600  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:20fixed^
+                        721~1400|1320$font-size:33fixed^
+                        1401~9999|1920$font-size:37fixed">스테디셀러<br/>
+                        많은 사랑을 받는 제품들이에요.</h3>
+                    
+                        <p class="message fontweight_500 colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$display:none^
+                        721~1400|1320$font-size:14fixed;width:423fixed;margin-top:30fixed^
+                        1401~9999|1920$font-size:16fixed;width:486fixed;margin-top:27fixed"
+                        targetindex="collapsegroup1Target"
+                        collapseStyle='{"1":{"color":"#505050"}}'>
+                        균형잡힌 건강 솔루션 뉴틴에서부터 숙취해소를 책임지는 컨디션,헛개수까지!
+                        새로워지는 건강 습관,뉴틴몰과 함께 하세요.
+                        </p>
+            
+                        <div class="productCard borderstyle_solid bordercolorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:30fixed;padding-top:22fixed;margin-left:16response;padding-bottom:22fixed;overflow:hidden;padding-left:22response;padding-right:22response;border-width:1response;border-radius:20response^
+                        721~1400|1320$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:58fixed;padding-top:30fixed;padding-bottom:32fixed;padding-left:28fixed;padding-right:29fixed;border-width:1fixed;border-radius:20fixed^
+                        1401~9999|1920$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:64fixed;padding-top:30fixed;padding-bottom:30fixed;padding-left:28fixed;padding-right:29fixed;border-width:1fixed;border-radius:20fixed">
+                            <img src="img/proimg13.jpg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:128fixed;height:130fixed^
+                            721~1400|1320$width:242fixed;height:242fixed^
+                            1401~9999|1920$width:240fixed;height:240fixed"/>
+                            <div class="rightinfo javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:306fixed;margin-left:15response;flex:1 0 auto^
+                            721~1070|1320$width:266fixed;margin-left:20fixed;flex:1 0 auto^
+                            1071~1400|1320$width:266fixed;margin-left:20fixed^
+                            1401~9999|1920$width:266fixed;margin-left:20fixed">
+                                <div class="badgelist flex_horizontal_flexStart">
+                                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define flex_horizontal_Center"
+                                    javascript_Css_define="0~720|720$font-size:10fixed;padding-left:12fixed;padding-right:12fixed;height:25fixed;border-radius:13fixed;border-width:1fixed^
+                                    721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                                    1401~9999|1920$font-size:13fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2/3/6박스</p>
+                                    <p class="badge display_block borderstyle_solid bordercolorred2 colorred flex_horizontal_Center javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:10fixed;padding-left:12fixed;padding-right:12fixed;height:25fixed;border-radius:13fixed;border-width:1fixed;margin-left:6response^
+                                    721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:6response^
+                                    1401~9999|1920$font-size:13fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:6fixed">홈쇼핑PICK!</p>
+                                </div>
+                                <span class="display_block bgcolor_graywhite javascript_Css_define"
+                                javascript_Css_define="0~720|720$width:100%;height:1fixed;margin-top:10fixed^
+                                721~1400|1320$width:100%;height:1fixed;margin-top:14fixed^
+                                1401~9999|1920$width:266fixed;height:1fixed;margin-top:14fixed"></span>
+                                <p class="protits javascript_Css_define"
+                                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:10fixed;height:18fixed;line-height:1.5;overflow:hidden^
+                                721~1400|1320$font-size:20fixed;margin-top:11fixed^
+                                1401~9999|1920$font-size:20fixed;margin-top:14fixed">
+                                [뉴틴] 코어핏 다이어트 4주 발효
+                                율피추출분말 엘라그산 체지방..
+                                </p>
+                                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                                javascript_Css_define="0~720|720$margin-top:22fixed^
+                                721~1400|1320$margin-top:16fixed^
+                                1401~9999|1920$margin-top:15fixed">
+                                    <p class="percent  colorblue javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed^
+                                    721~1400|1320$font-size:17fixed^
+                                    1401~9999|1920$font-size:24fixed">20%</p>
+                                    <p class="price  javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                                    721~1400|1320$font-size:17fixed;padding-left:8fixed^
+                                    1401~9999|1920$font-size:24fixed;padding-left:11fixed">39,000원</p>
+                                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:12fixed;padding-left:4fixed^
+                                    721~1400|1320$font-size:15fixed;padding-left:8fixed^
+                                    1401~9999|1920$font-size:17fixed;padding-left:11fixed">59,000원</p>
+                                </div>
+                                <div class="revscores fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                                javascript_Css_define="0~720|720$margin-top:6fixed^
+                                721~1400|1320$margin-top:12fixed^
+                                1401~9999|1920$margin-top:15fixed">
+                                    <img src="img/stars.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                                    721~1400|1320$width:17fixed;height:15fixed^
+                                    1401~9999|1920$width:24fixed;height:22fixed">
+                                    <p class="numbervalue javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed;padding-left:2fixed^
+                                    721~1400|1320$font-size:17fixed;padding-left:2fixed^
+                                    1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.8</p>
+                                    <p class="numbervalue colorgray javascript_Css_define
+                                    mobilefixed_fontsize_14 mobilefixed_paddingleft_2
+                                    tlfixed_fontsize_15 tlfixed_paddingleft_2
+                                    pcfixed_fontsize_20 pcfixed_paddingleft_5"
+                                    javascript_Css_define="0~720|720$font-size:14fixed;padding-left:2fixed^
+                                    721~1400|1320$font-size:15fixed;padding-left:2fixed^
+                                    1401~9999|1920$font-size:20fixed;padding-left:5fixed">(189)</p>
+                                </div>
+                            </div>    
+                        </div>        
+                    </div>
+            
+                    <div class="rightinfo borderstyle_solid bordercolorlecelle1 javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:282fixed;height:282fixed;display:flex;justify-content:center;border-width:3fixed;border-radius:141fixed;margin:0 auto;margin-top:46fixed;align-items:center^
+                    721~1070|1320$width:505fixed;height:500fixed;display:flex;justify-content:center;border-width:6fixed;border-radius:50%;align-items:center;margin:0 auto;margin-top:36fixed^
+                    1071~1400|1320$width:505response;height:500response;display:flex;justify-content:center;border-width:6fixed;border-radius:50%;align-items:center^
+                    1401~9999|1920$width:628fixed;height:625fixed;display:flex;justify-content:center;border-width:6fixed;border-radius:316fixed;align-items:center">
+                        <img src="img/new_prd01.png" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:261fixed;height:261fixed^
+                        721~1070|1320$width:457fixed;height:456fixed^
+                        1071~1400|1320$width:457response;height:456response^
+                        1401~9999|1920$width:568fixed;height:565fixed"
+                        />
+                    </div>
+                </div>  
+            </div>
+            <div class="swiper-slide">
+                <div class=" inner  position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$width:677response;margin:0 auto;padding-top:65fixed;padding-bottom:36fixed^
+                721~1070|1320$width:1262response;margin:0 auto;padding-top:102fixed;padding-bottom:167fixed;display:block^
+                1071~1400|1320$width:1262response;margin:0 auto;padding-top:102fixed;padding-bottom:167fixed;display:flex;justify-content:space-between;align-items:center^
+                1401~9999|1920$width:1320fixed;margin:0 auto;padding-top:103fixed;padding-bottom:61fixed;display:flex;justify-content:space-between">
+                
+                    <div class="leftinfo  javascript_Css_define"javascript_Css_define="0~720|720$width:100%^
+                    721~1070|1320$width:100%^
+                    1071~1400|1320$width:593fixed^
+                    1401~9999|1920$width:586fixed">
+                    
+                        <h3 class="tits fontweight_600  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:20fixed^
+                        721~1400|1320$font-size:33fixed^
+                        1401~9999|1920$font-size:37fixed">스테디셀러<br/>
+                        많은 사랑을 받는 제품들이에요.</h3>
+                    
+                        <p class="message fontweight_500 colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$display:none^
+                        721~1400|1320$font-size:14fixed;width:423fixed;margin-top:30fixed^
+                        1401~9999|1920$font-size:16fixed;width:486fixed;margin-top:27fixed"
+                        targetindex="collapsegroup1Target"
+                        collapseStyle='{"1":{"color":"#505050"}}'>
+                        균형잡힌 건강 솔루션 뉴틴에서부터 숙취해소를 책임지는 컨디션,헛개수까지!
+                        새로워지는 건강 습관,뉴틴몰과 함께 하세요.
+                        </p>
+            
+                        <div class="productCard borderstyle_solid bordercolorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:30fixed;padding-top:22fixed;margin-left:16response;padding-bottom:22fixed;overflow:hidden;padding-left:22response;padding-right:22response;border-width:1response;border-radius:20response^
+                        721~1400|1320$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:58fixed;padding-top:30fixed;padding-bottom:32fixed;padding-left:28fixed;padding-right:29fixed;border-width:1fixed;border-radius:20fixed^
+                        1401~9999|1920$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:64fixed;padding-top:30fixed;padding-bottom:30fixed;padding-left:28fixed;padding-right:29fixed;border-width:1fixed;border-radius:20fixed">
+                            <img src="img/proimg9.jpg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:128fixed;height:130fixed^
+                            721~1400|1320$width:242fixed;height:242fixed^
+                            1401~9999|1920$width:240fixed;height:240fixed"/>
+                            <div class="rightinfo javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:306fixed;margin-left:15response;flex:1 0 auto^
+                            721~1070|1320$width:266fixed;margin-left:20fixed;flex:1 0 auto^
+                            1071~1400|1320$width:266fixed;margin-left:20fixed^
+                            1401~9999|1920$width:266fixed;margin-left:20fixed">
+                                <div class="badgelist flex_horizontal_flexStart">
+                                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define flex_horizontal_Center"
+                                    javascript_Css_define="0~720|720$font-size:10fixed;padding-left:12fixed;padding-right:12fixed;height:25fixed;border-radius:13fixed;border-width:1fixed^
+                                    721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                                    1401~9999|1920$font-size:13fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1개월</p>
+                                    <p class="badge display_block borderstyle_solid bordercolorred2 colorred flex_horizontal_Center javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:10fixed;padding-left:12fixed;padding-right:12fixed;height:25fixed;border-radius:13fixed;border-width:1fixed;margin-left:6response^
+                                    721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:6response^
+                                    1401~9999|1920$font-size:13fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:6fixed">홈쇼핑PICK!</p>
+                                </div>
+                                <span class="display_block bgcolor_graywhite javascript_Css_define"
+                                javascript_Css_define="0~720|720$width:100%;height:1fixed;margin-top:10fixed^
+                                721~1400|1320$width:100%;height:1fixed;margin-top:14fixed^
+                                1401~9999|1920$width:266fixed;height:1fixed;margin-top:14fixed"></span>
+                                <p class="protits javascript_Css_define"
+                                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:10fixed;height:18fixed;line-height:1.5;overflow:hidden^
+                                721~1400|1320$font-size:20fixed;margin-top:11fixed^
+                                1401~9999|1920$font-size:20fixed;margin-top:14fixed">
+                                [뉴틴] 자일로바이오틱스 듀얼 자일로올리고당 유산균 1박스 (1...
+                                </p>
+                                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                                javascript_Css_define="0~720|720$margin-top:22fixed^
+                                721~1400|1320$margin-top:16fixed^
+                                1401~9999|1920$margin-top:15fixed">
+                                    <p class="percent  colorblue javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed^
+                                    721~1400|1320$font-size:17fixed^
+                                    1401~9999|1920$font-size:24fixed">55%</p>
+                                    <p class="price  javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                                    721~1400|1320$font-size:17fixed;padding-left:8fixed^
+                                    1401~9999|1920$font-size:24fixed;padding-left:11fixed">18,000원</p>
+                                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:12fixed;padding-left:4fixed^
+                                    721~1400|1320$font-size:15fixed;padding-left:8fixed^
+                                    1401~9999|1920$font-size:17fixed;padding-left:11fixed">42,000원</p>
+                                </div>
+                                <div class="revscores fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                                javascript_Css_define="0~720|720$margin-top:6fixed^
+                                721~1400|1320$margin-top:12fixed^
+                                1401~9999|1920$margin-top:15fixed">
+                                    <img src="img/stars.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                                    721~1400|1320$width:17fixed;height:15fixed^
+                                    1401~9999|1920$width:24fixed;height:22fixed">
+                                    <p class="numbervalue javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed;padding-left:2fixed^
+                                    721~1400|1320$font-size:17fixed;padding-left:2fixed^
+                                    1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.9</p>
+                                    <p class="numbervalue colorgray javascript_Css_define
+                                    mobilefixed_fontsize_14 mobilefixed_paddingleft_2
+                                    tlfixed_fontsize_15 tlfixed_paddingleft_2
+                                    pcfixed_fontsize_20 pcfixed_paddingleft_5"
+                                    javascript_Css_define="0~720|720$font-size:14fixed;padding-left:2fixed^
+                                    721~1400|1320$font-size:15fixed;padding-left:2fixed^
+                                    1401~9999|1920$font-size:20fixed;padding-left:5fixed">(178)</p>
+                                </div>
+                            </div>    
+                        </div>        
+                    </div>
+            
+                    <div class="rightinfo borderstyle_solid bordercolorlecelle1 javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:282fixed;height:282fixed;display:flex;justify-content:center;border-width:3fixed;border-radius:141fixed;margin:0 auto;margin-top:46fixed;align-items:center^
+                    721~1070|1320$width:505fixed;height:500fixed;display:flex;justify-content:center;border-width:6fixed;border-radius:50%;align-items:center;margin:0 auto;margin-top:36fixed^
+                    1071~1400|1320$width:505response;height:500response;display:flex;justify-content:center;border-width:6fixed;border-radius:50%;align-items:center^
+                    1401~9999|1920$width:628fixed;height:625fixed;display:flex;justify-content:center;border-width:6fixed;border-radius:316fixed;align-items:center">
+                        <img src="img/new_prd02.png" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:261fixed;height:261fixed^
+                        721~1070|1320$width:457fixed;height:456fixed^
+                        1071~1400|1320$width:457response;height:456response^
+                        1401~9999|1920$width:568fixed;height:565fixed"
+                        />
+                    </div>
+                </div>  
+            </div>
+            <div class="swiper-slide">
+                <div class=" inner  position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$width:677response;margin:0 auto;padding-top:65fixed;padding-bottom:36fixed^
+                721~1070|1320$width:1262response;margin:0 auto;padding-top:102fixed;padding-bottom:167fixed;display:block^
+                1071~1400|1320$width:1262response;margin:0 auto;padding-top:102fixed;padding-bottom:167fixed;display:flex;justify-content:space-between;align-items:center^
+                1401~9999|1920$width:1320fixed;margin:0 auto;padding-top:103fixed;padding-bottom:61fixed;display:flex;justify-content:space-between">
+                
+                    <div class="leftinfo  javascript_Css_define"javascript_Css_define="0~720|720$width:100%^
+                    721~1070|1320$width:100%^
+                    1071~1400|1320$width:593fixed^
+                    1401~9999|1920$width:586fixed">
+                    
+                        <h3 class="tits fontweight_600  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:20fixed^
+                        721~1400|1320$font-size:33fixed^
+                        1401~9999|1920$font-size:37fixed">스테디셀러<br/>
+                        많은 사랑을 받는 제품들이에요.</h3>
+                    
+                        <p class="message fontweight_500 colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$display:none^
+                        721~1400|1320$font-size:14fixed;width:423fixed;margin-top:30fixed^
+                        1401~9999|1920$font-size:16fixed;width:486fixed;margin-top:27fixed"
+                        targetindex="collapsegroup1Target"
+                        collapseStyle='{"1":{"color":"#505050"}}'>
+                        균형잡힌 건강 솔루션 뉴틴에서부터 숙취해소를 책임지는 컨디션,헛개수까지!
+                        새로워지는 건강 습관,뉴틴몰과 함께 하세요.
+                        </p>
+            
+                        <div class="productCard borderstyle_solid bordercolorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:30fixed;padding-top:22fixed;margin-left:16response;padding-bottom:22fixed;overflow:hidden;padding-left:22response;padding-right:22response;border-width:1response;border-radius:20response^
+                        721~1400|1320$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:58fixed;padding-top:30fixed;padding-bottom:32fixed;padding-left:28fixed;padding-right:29fixed;border-width:1fixed;border-radius:20fixed^
+                        1401~9999|1920$display:flex;flex-flow:row nowrap;align-items:flex-start;margin-top:64fixed;padding-top:30fixed;padding-bottom:30fixed;padding-left:28fixed;padding-right:29fixed;border-width:1fixed;border-radius:20fixed">
+                            <img src="img/proimg19.jpg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:128fixed;height:130fixed^
+                            721~1400|1320$width:242fixed;height:242fixed^
+                            1401~9999|1920$width:240fixed;height:240fixed"/>
+                            <div class="rightinfo javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:306fixed;margin-left:15response;flex:1 0 auto^
+                            721~1070|1320$width:266fixed;margin-left:20fixed;flex:1 0 auto^
+                            1071~1400|1320$width:266fixed;margin-left:20fixed^
+                            1401~9999|1920$width:266fixed;margin-left:20fixed">
+                                <div class="badgelist flex_horizontal_flexStart">
+                                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray javascript_Css_define flex_horizontal_Center"
+                                    javascript_Css_define="0~720|720$font-size:10fixed;padding-left:12fixed;padding-right:12fixed;height:25fixed;border-radius:13fixed;border-width:1fixed^
+                                    721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                                    1401~9999|1920$font-size:13fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">30포</p>
+                                    <p class="badge display_block borderstyle_solid bordercolorred2 colorred  flex_horizontal_Center javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:10fixed;padding-left:12fixed;padding-right:12fixed;height:25fixed;border-radius:13fixed;border-width:1fixed;margin-left:6response^
+                                    721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:6response^
+                                    1401~9999|1920$font-size:13fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:6fixed">쇼핑백증정</p>
+                                </div>
+                                <span class="display_block bgcolor_graywhite javascript_Css_define"
+                                javascript_Css_define="0~720|720$width:100%;height:1fixed;margin-top:10fixed^
+                                721~1400|1320$width:100%;height:1fixed;margin-top:14fixed^
+                                1401~9999|1920$width:266fixed;height:1fixed;margin-top:14fixed"></span>
+                                <p class="protits javascript_Css_define"
+                                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:10fixed;height:18fixed;line-height:1.5;overflow:hidden^
+                                721~1400|1320$font-size:20fixed;margin-top:11fixed^
+                                1401~9999|1920$font-size:20fixed;margin-top:14fixed">
+                                [뉴틴] 홍삼진플러스 홍삼진액 즙 70ml 30포 1박스
+                                </p>
+                                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                                javascript_Css_define="0~720|720$margin-top:22fixed^
+                                721~1400|1320$margin-top:16fixed^
+                                1401~9999|1920$margin-top:15fixed">
+                                    <p class="percent  colorblue javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed^
+                                    721~1400|1320$font-size:17fixed^
+                                    1401~9999|1920$font-size:24fixed">47%</p>
+                                    <p class="price  javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed;padding-left:4fixed^
+                                    721~1400|1320$font-size:17fixed;padding-left:8fixed^
+                                    1401~9999|1920$font-size:24fixed;padding-left:11fixed">26,000원</p>
+                                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:12fixed;padding-left:4fixed^
+                                    721~1400|1320$font-size:15fixed;padding-left:8fixed^
+                                    1401~9999|1920$font-size:17fixed;padding-left:11fixed">49,000원</p>
+                                </div>
+                                <div class="revscores fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                                javascript_Css_define="0~720|720$margin-top:6fixed^
+                                721~1400|1320$margin-top:12fixed^
+                                1401~9999|1920$margin-top:15fixed">
+                                    <img src="img/stars.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                                    721~1400|1320$width:17fixed;height:15fixed^
+                                    1401~9999|1920$width:24fixed;height:22fixed">
+                                    <p class="numbervalue javascript_Css_define"
+                                    javascript_Css_define="0~720|720$font-size:15fixed;padding-left:2fixed^
+                                    721~1400|1320$font-size:17fixed;padding-left:2fixed^
+                                    1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.7</p>
+                                    <p class="numbervalue colorgray javascript_Css_define
+                                    mobilefixed_fontsize_14 mobilefixed_paddingleft_2
+                                    tlfixed_fontsize_15 tlfixed_paddingleft_2
+                                    pcfixed_fontsize_20 pcfixed_paddingleft_5"
+                                    javascript_Css_define="0~720|720$font-size:14fixed;padding-left:2fixed^
+                                    721~1400|1320$font-size:15fixed;padding-left:2fixed^
+                                    1401~9999|1920$font-size:20fixed;padding-left:5fixed">(51)</p>
+                                </div>
+                            </div>    
+                        </div>        
+                    </div>
+            
+                    <div class="rightinfo borderstyle_solid bordercolorlecelle1 javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:282fixed;height:282fixed;display:flex;justify-content:center;border-width:3fixed;border-radius:141fixed;margin:0 auto;margin-top:46fixed;align-items:center^
+                    721~1070|1320$width:505fixed;height:500fixed;display:flex;justify-content:center;border-width:6fixed;border-radius:50%;align-items:center;margin:0 auto;margin-top:36fixed^
+                    1071~1400|1320$width:505response;height:500response;display:flex;justify-content:center;border-width:6fixed;border-radius:50%;align-items:center^
+                    1401~9999|1920$width:628fixed;height:625fixed;display:flex;justify-content:center;border-width:6fixed;border-radius:316fixed;align-items:center">
+                        <img src="img/new_prd03.png" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:261fixed;height:261fixed^
+                        721~1070|1320$width:457fixed;height:456fixed^
+                        1071~1400|1320$width:457response;height:456response^
+                        1401~9999|1920$width:568fixed;height:565fixed"
+                        />
+                    </div>
+                </div>  
+            </div>
+        </div> 
+       
+        <div class="swiper-pagination swiper-pagination_section3"></div>
+    </div>
+    
+</section>
+
+<section class="section3">
+    <div class="inner  position_relative_normal javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:15response;padding-right:15response;padding-bottom:124fixed^
+    721~1400|1320$padding-left:65response;padding-right:15response;padding-bottom:120fixed^
+    1401~9999|1920$width:1320fixed;margin:0 auto;padding-bottom:118fixed">
+        <h2 class="tits fontweight_900 javascript_Css_define"
+        javascript_Css_define="0~720|720$padding-top:20fixed;padding-bottom:25fixed;font-size:19fixed^
+        721~1400|1320$padding-top:34fixed;padding-bottom:25fixed;font-size:38fixed^
+        1401~9999|1920$padding-top:36fixed;padding-bottom:20fixed;font-size:38fixed">
+        Nutine Pick! 함께 추천해요</h2>
+
+        <div class="
+        mobile_flex_horizontal_spaceBetween  tablet_flex_horizontal_spaceBetween pc_flex_horizontal_spaceBetween">
+            <div class="badgelist flex_horizontal_flexStart colorgray1">
+                <p class="badge flex_horizontal_Center bgcolor_red4 javascript_Css_define colorwhite"
+                javascript_Css_define="0~720|720$width:77fixed;height:33fixed;border-radius:16fixed;font-size:12fixed;border-width:1fixed;margin-right:7response^
+                721~1400|1320$width:100fixed;height:42fixed;border-radius:21fixed;font-size:15fixed;border-width:1fixed;margin-right:6response^
+                1401~9999|1920$width:120fixed;height:49fixed;border-radius:25fixed;font-size:16fixed;border-width:1fixed;margin-right:13response">
+                면역</p>
+                <p class="badge flex_horizontal_Center borderstyle_solid bordercolorgray javascript_Css_define"
+                javascript_Css_define="0~720|720$width:77fixed;height:33fixed;border-radius:16fixed;font-size:12fixed;border-width:1fixed;margin-right:7response^
+                721~1400|1320$width:100fixed;height:42fixed;border-radius:21fixed;font-size:15fixed;border-width:1fixed;margin-right:6response^
+                1401~9999|1920$width:120fixed;height:49fixed;border-radius:25fixed;font-size:16fixed;border-width:1fixed;margin-right:13response">
+                장건강</p>
+                <p class="badge flex_horizontal_Center borderstyle_solid bordercolorgray javascript_Css_define"
+                javascript_Css_define="0~720|720$width:77fixed;height:33fixed;border-radius:16fixed;font-size:12fixed;border-width:1fixed;margin-right:7response^
+                721~1400|1320$width:100fixed;height:42fixed;border-radius:21fixed;font-size:15fixed;border-width:1fixed;margin-right:6response^
+                1401~9999|1920$width:120fixed;height:49fixed;border-radius:25fixed;font-size:16fixed;border-width:1fixed;margin-right:13response">
+                속취해소</p>
+                <p class="badge flex_horizontal_Center borderstyle_solid bordercolorgray javascript_Css_define"
+                javascript_Css_define="0~720|720$width:77fixed;height:33fixed;border-radius:16fixed;font-size:12fixed;border-width:1fixed^
+                721~1400|1320$width:100fixed;height:42fixed;border-radius:21fixed;font-size:15fixed;border-width:1fixed;margin-right:6response^
+                1401~9999|1920$width:120fixed;height:49fixed;border-radius:25fixed;font-size:16fixed;border-width:1fixed">
+                건강음료</p>
+            </div>
+
+            <div class="viewmore colorgray1 borderstyle_solid bordercolorgray1 javascript_Css_define
+            mobile_flex_horizontal_Center 
+            tablet_flex_horizontal_spaceBetween 
+            pc_flex_horizontal_spaceBetween"
+            javascript_Css_define="0~720|720$width:662response;height:48fixed;border-radius:24fixed;font-size:14fixed;border-width:1fixed;position:absolute;bottom:61fixed;left:30response^
+            721~1400|1320$width:181fixed;height:52fixed;border-radius:26fixed;padding-left:24fixed;padding-right:30fixed;font-size:15fixed;border-width:1fixed^
+            1401~9999|1920$width:201fixed;height:56fixed;border-radius:28fixed;padding-left:28fixed;padding-right:30fixed;font-size:16fixed;border-width:1fixed">
+                <a href="#">더 보러가기</a>
+                <img src="img/arrowicon.svg" class="display_block javascript_Css_define"
+                javascript_Css_define="0~720|720$width:7fixed;height:13fixed;margin-left:9response^
+                721~1400|1320$width:9fixed;height:16fixed^
+                1401~9999|1920$width:9fixed;height:16fixed"/>
+            </div>
+        </div>
+        
+        <div class="contentWrapper javascript_Css_define"
+        javascript_Css_define="0~720|720$margin-top:20fixed;display:block;overflow:hidden^
+        721~1070|1320$margin-top:23fixed;display:block;overflow:hidden^
+        1071~1400|1320$margin-top:23fixed;display:flex;justify-content:space-between;flex-flow:row nowrap;overflow:hidden^
+        1401~9999|1920$margin-top:26fixed;display:flex;justify-content:space-between"
+        >
+            <img src="img/productRec.png" class="display_block javascript_Css_define"
+            javascript_Css_define="0~720|720$width:100%;height:497response^
+            721~1070|1320$width:70%;height:auto^
+            1071~1400|1320$width:700response;height:506response^
+            1401~9999|1920$width:780fixed;height:562fixed"/>
+
+            <div class="rightList javascript_Css_define"
+            javascript_Css_define="0~720|720$width:100%;margin-top:20fixed^
+            721~1070|1320$width:100%;margin-top:32fixed^
+            1071~1400|1320$width:502response^
+            1401~9999|1920$width:502fixed"
+            >
+                <div class="productCard borderstyle_solid bordercolorgray position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$display:flex;justify-content:flex-start;padding-bottom:25fixed;border-bottom-width:1fixed;flex-flow:row nowrap;oveflow:hidden^
+                721~1400|1320$display:flex;justify-content:flex-start;padding-bottom:20fixed;border-bottom-width:1fixed;flex-flow:row nowrap;oveflow:hidden^
+                1401~9999|1920$display:flex;justify-content:flex-start;padding-bottom:20fixed;border-bottom-width:1fixed"
+                >
+                    <img src="img/proimg18.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:135fixed;height:135fixed^
+                    721~1070|1320$width:160fixed;height:160fixed^
+                    1071~1400|1320$width:160fixed;height:160fixed^
+                    1401~9999|1920$width:160fixed;height:160fixed"
+                   />
+
+                    <div class="rightinfo javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:321fixed;padding-left:17fixed;flex:1 0 auto^
+                    721~1070|1320$width:342fixed;padding-left:18fixed;flex:1 0 auto^
+                    1071~1400|1320$width:342fixed;padding-left:18fixed;flex:0 1 auto^
+                    1401~9999|1920$width:342fixed;padding-left:18fixed">
+                        <p class="protits javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:12fixed;line-height:1.3;overflow:hidden;padding-top:23fixed^
+                        721~1400|1320$font-size:16fixed;line-height:1.5;overflow:hidden;padding-top:26fixed^
+                        1401~9999|1920$font-size:16fixed;line-height:1.5;overflow:hidden;padding-top:26fixed">
+                        [뉴틴] 코어핏 다이어트 4주 발효
+                        율피추출분말 엘라그산 체지방
+                        </p>
+                        <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                        javascript_Css_define="0~720|720$margin-top:16fixed^
+                        721~1400|1320$margin-top:19fixed^
+                        1401~9999|1920$margin-top:19fixed">
+                            <p class="percent  colorblue javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:16fixed^
+                            721~1400|1320$font-size:22fixed^
+                            1401~9999|1920$font-size:22fixed">20%</p>
+                            <p class="price  javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:16fixed;padding-left:6response^
+                            721~1400|1320$font-size:20fixed;padding-left:11fixed^
+                            1401~9999|1920$font-size:20fixed;padding-left:11fixed">39,000원</p>
+                            <p class="originprice  linethrough colorgray javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:13fixed;padding-left:6response^
+                            721~1400|1320$font-size:17fixed;padding-left:11fixed^
+                            1401~9999|1920$font-size:17fixed;padding-left:11fixed">59,000원</p>
+                        </div>
+                        <div class="revscores fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                        javascript_Css_define="0~720|720$margin-top:11fixed^
+                        721~1400|1320$margin-top:15fixed^
+                        1401~9999|1920$margin-top:15fixed">
+                            <img src="img/stars.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                            721~1400|1320$width:24fixed;height:22fixed^
+                            1401~9999|1920$width:24fixed;height:22fixed">
+                            <p class="numbervalue javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:14fixed;padding-left:3fixed^
+                            721~1400|1320$font-size:20fixed;padding-left:5fixed^
+                            1401~9999|1920$font-size:20fixed;padding-left:5fixed">4.8</p>
+                            <p class="numbervalue colorgray javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:13fixed;padding-left:3fixed^
+                            721~1400|1320$font-size:19fixed;padding-left:5fixed^
+                            1401~9999|1920$font-size:19fixed;padding-left:5fixed">(189)</p>
+                        </div>
+                    </div> 
+                    <div class="extramenu position_absolute javascript_Css_define flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$right:0;bottom:25fixed^
+                    721~1400|1320$right:5fixed;bottom:35fixed^
+                    1401~9999|1920$right:5fixed;bottom:35fixed">
+                        <span class="display_block bgcolor_graywhite javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center^
+                        721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center^
+                        1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center">
+                            <img src="img/cartBag.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:18fixed;height:17fixed^
+                            721~1400|1320$width:18fixed;height:17fixed^
+                            1401~9999|1920$width:18fixed;height:17fixed"/>
+                        </span>
+                        <span class="display_block bgcolor_graywhite javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;display:flex;margin-left:10fixed;justify-content:center;align-items:center^
+                        721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed;display:flex;justify-content:center;align-items:center^
+                        1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed;display:flex;justify-content:center;align-items:center">
+                            <img src="img/heartIcon.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                            721~1400|1320$width:17fixed;height:15fixed^
+                            1401~9999|1920$width:17fixed;height:15fixed"/>
+                        </span>
+                    </div>
+                </div>    
+                <div class="productCard borderstyle_solid bordercolorgray position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$display:flex;justify-content:flex-start;padding-bottom:25fixed;border-bottom-width:1fixed;flex-flow:row nowrap;oveflow:hidden;margin-top:22fixed^
+                721~1400|1320$display:flex;justify-content:flex-start;padding-bottom:20fixed;border-bottom-width:1fixed;flex-flow:row nowrap;oveflow:hidden;margin-top:22fixed^
+                1401~9999|1920$display:flex;justify-content:flex-start;padding-bottom:20fixed;border-bottom-width:1fixed;margin-top:22fixed"
+                >
+                    <img src="img/proimg14.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:135fixed;height:135fixed^
+                    721~1070|1320$width:160fixed;height:160fixed^
+                    1071~1400|1320$width:160fixed;height:160fixed^
+                    1401~9999|1920$width:160fixed;height:160fixed"
+                   />
+
+                    <div class="rightinfo javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:321fixed;padding-left:17fixed;flex:1 0 auto^
+                    721~1070|1320$width:342fixed;padding-left:18fixed;flex:1 0 auto^
+                    1071~1400|1320$width:342fixed;padding-left:18fixed;flex:0 1 auto^
+                    1401~9999|1920$width:342fixed;padding-left:18fixed">
+                        <p class="protits javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:12fixed;line-height:1.3;overflow:hidden;padding-top:23fixed^
+                        721~1400|1320$font-size:16fixed;line-height:1.5;overflow:hidden;padding-top:26fixed^
+                        1401~9999|1920$font-size:16fixed;line-height:1.5;overflow:hidden;padding-top:26fixed">
+                        [뉴틴] 홍삼진 프로바이오원 홍삼 유산균 31포 1
+                        박스 (1개월)
+                        </p>
+                        <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                        javascript_Css_define="0~720|720$margin-top:16fixed^
+                        721~1400|1320$margin-top:19fixed^
+                        1401~9999|1920$margin-top:19fixed">
+                            <p class="percent  colorblue javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:16fixed^
+                            721~1400|1320$font-size:22fixed^
+                            1401~9999|1920$font-size:22fixed">42%</p>
+                            <p class="price  javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:16fixed;padding-left:6response^
+                            721~1400|1320$font-size:20fixed;padding-left:11fixed^
+                            1401~9999|1920$font-size:20fixed;padding-left:11fixed">22,000원</p>
+                            <p class="originprice  linethrough colorgray javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:13fixed;padding-left:6response^
+                            721~1400|1320$font-size:17fixed;padding-left:11fixed^
+                            1401~9999|1920$font-size:17fixed;padding-left:11fixed">38,000원</p>
+                        </div>
+                        <div class="revscores fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                        javascript_Css_define="0~720|720$margin-top:11fixed^
+                        721~1400|1320$margin-top:15fixed^
+                        1401~9999|1920$margin-top:15fixed">
+                            <img src="img/stars.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                            721~1400|1320$width:24fixed;height:22fixed^
+                            1401~9999|1920$width:24fixed;height:22fixed">
+                            <p class="numbervalue javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:14fixed;padding-left:3fixed^
+                            721~1400|1320$font-size:20fixed;padding-left:5fixed^
+                            1401~9999|1920$font-size:20fixed;padding-left:5fixed">4.6</p>
+                            <p class="numbervalue colorgray javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:13fixed;padding-left:3fixed^
+                            721~1400|1320$font-size:19fixed;padding-left:5fixed^
+                            1401~9999|1920$font-size:19fixed;padding-left:5fixed">(17)</p>
+                        </div>
+                    </div> 
+                    <div class="extramenu position_absolute javascript_Css_define flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$right:0;bottom:25fixed^
+                    721~1400|1320$right:5fixed;bottom:35fixed^
+                    1401~9999|1920$right:5fixed;bottom:35fixed">
+                        <span class="display_block bgcolor_graywhite javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center^
+                        721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center^
+                        1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center">
+                            <img src="img/cartBag.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:18fixed;height:17fixed^
+                            721~1400|1320$width:18fixed;height:17fixed^
+                            1401~9999|1920$width:18fixed;height:17fixed"/>
+                        </span>
+                        <span class="display_block bgcolor_graywhite javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;display:flex;margin-left:10fixed;justify-content:center;align-items:center^
+                        721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed;display:flex;justify-content:center;align-items:center^
+                        1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed;display:flex;justify-content:center;align-items:center">
+                            <img src="img/heartIcon.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                            721~1400|1320$width:17fixed;height:15fixed^
+                            1401~9999|1920$width:17fixed;height:15fixed"/>
+                        </span>
+                    </div>
+                </div>  
+                <div class="productCard borderstyle_solid bordercolorgray position_relative_normal javascript_Css_define"
+                javascript_Css_define="0~720|720$display:flex;justify-content:flex-start;padding-bottom:25fixed;border-bottom-width:1fixed;flex-flow:row nowrap;oveflow:hidden;margin-top:22fixed^
+                721~1400|1320$display:flex;justify-content:flex-start;padding-bottom:20fixed;border-bottom-width:1fixed;flex-flow:row nowrap;oveflow:hidden;margin-top:22fixed^
+                1401~9999|1920$display:flex;justify-content:flex-start;padding-bottom:20fixed;border-bottom-width:1fixed;margin-top:22fixed"
+                >
+                    <img src="img/proimg4.jpg" class="display_block javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:135fixed;height:135fixed^
+                    721~1070|1320$width:160fixed;height:160fixed^
+                    1071~1400|1320$width:160fixed;height:160fixed^
+                    1401~9999|1920$width:160fixed;height:160fixed"
+                   />
+
+                    <div class="rightinfo javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:321fixed;padding-left:17fixed;flex:1 0 auto^
+                    721~1070|1320$width:342fixed;padding-left:18fixed;flex:1 0 auto^
+                    1071~1400|1320$width:342fixed;padding-left:18fixed;flex:0 1 auto^
+                    1401~9999|1920$width:342fixed;padding-left:18fixed">
+                        <p class="protits javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:12fixed;line-height:1.3;overflow:hidden;padding-top:23fixed^
+                        721~1400|1320$font-size:16fixed;line-height:1.5;overflow:hidden;padding-top:26fixed^
+                        1401~9999|1920$font-size:16fixed;line-height:1.5;overflow:hidden;padding-top:26fixed">
+                        [뉴틴] 홍삼진 프로바이오 홍삼 유산균 1박스
+                        </p>
+                        <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                        javascript_Css_define="0~720|720$margin-top:16fixed^
+                        721~1400|1320$margin-top:19fixed^
+                        1401~9999|1920$margin-top:19fixed">
+                            <p class="percent  colorblue javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:16fixed^
+                            721~1400|1320$font-size:22fixed^
+                            1401~9999|1920$font-size:22fixed">57%</p>
+                            <p class="price  javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:16fixed;padding-left:6response^
+                            721~1400|1320$font-size:20fixed;padding-left:11fixed^
+                            1401~9999|1920$font-size:20fixed;padding-left:11fixed">35,900원</p>
+                            <p class="originprice  linethrough colorgray javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:13fixed;padding-left:6response^
+                            721~1400|1320$font-size:17fixed;padding-left:11fixed^
+                            1401~9999|1920$font-size:17fixed;padding-left:11fixed">84,000원</p>
+                        </div>
+                        <div class="revscores fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                        javascript_Css_define="0~720|720$margin-top:11fixed^
+                        721~1400|1320$margin-top:15fixed^
+                        1401~9999|1920$margin-top:15fixed">
+                            <img src="img/stars.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                            721~1400|1320$width:24fixed;height:22fixed^
+                            1401~9999|1920$width:24fixed;height:22fixed">
+                            <p class="numbervalue javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:14fixed;padding-left:3fixed^
+                            721~1400|1320$font-size:20fixed;padding-left:5fixed^
+                            1401~9999|1920$font-size:20fixed;padding-left:5fixed">4.8</p>
+                            <p class="numbervalue colorgray javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:13fixed;padding-left:3fixed^
+                            721~1400|1320$font-size:19fixed;padding-left:5fixed^
+                            1401~9999|1920$font-size:19fixed;padding-left:5fixed">(101)</p>
+                        </div>
+                    </div> 
+                    <div class="extramenu position_absolute javascript_Css_define flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$right:0;bottom:25fixed^
+                    721~1400|1320$right:5fixed;bottom:35fixed^
+                    1401~9999|1920$right:5fixed;bottom:35fixed">
+                        <span class="display_block bgcolor_graywhite javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center^
+                        721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center^
+                        1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;display:flex;justify-content:center;align-items:center">
+                            <img src="img/cartBag.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:18fixed;height:17fixed^
+                            721~1400|1320$width:18fixed;height:17fixed^
+                            1401~9999|1920$width:18fixed;height:17fixed"/>
+                        </span>
+                        <span class="display_block bgcolor_graywhite javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;display:flex;margin-left:10fixed;justify-content:center;align-items:center^
+                        721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed;display:flex;justify-content:center;align-items:center^
+                        1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed;display:flex;justify-content:center;align-items:center">
+                            <img src="img/heartIcon.svg" class="display_block javascript_Css_define"
+                            javascript_Css_define="0~720|720$width:17fixed;height:15fixed^
+                            721~1400|1320$width:17fixed;height:15fixed^
+                            1401~9999|1920$width:17fixed;height:15fixed"/>
+                        </span>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section4 position_relative_normal overflow_hidden javascript_Css_define"
+javascript_Css_define="0~720|720$height:260response^
+721~1400|1320$height:200fixed^
+1401~9999|1920$height:200fixed">
+    <img src="img/banner_mob5.jpg" class="display_block position_absolute 
+    mobile_width_100_percent mobile_height_100_percent mobile_onlyview
+    "/>
+    <img src="img/banner_pc5.jpg" class="display_block  position_absolute img_background_cover_height_center
+    tablet_height_100_percent  tablet_onlyview
+    "/>
+    <img src="img/banner_pc5.jpg" class="display_block position_absolute img_background_cover_height_center
+    pc_height_100_percent   pc_onlyview
+    "/>
+</section>
+
+<section class="section5">
+    <div class="inner contentWrapper  position_relative_normal javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:14response^
+    721~1400|1320$padding-left:66response;padding-right:66response^
+    1401~9999|1920$width:1320fixed;margin:0 auto">
+        <h2 class='tits fontweight_900 javascript_Css_define'
+        javascript_Css_define="0~720|720$font-size:20fixed;padding-top:49fixed;padding-bottom:17fixed^
+        721~1400|1320$font-size:38fixed;padding-top:117fixed;padding-bottom:30fixed^
+        1401~9999|1920$font-size:38fixed;padding-top:117fixed;padding-bottom:30fixed">
+        구매자가 말하는! 진짜리뷰
+        </h2>
+        <div class="viewmore colorgray1 borderstyle_solid bordercolorgray1 position_absolute javascript_Css_define
+        mobile_flex_horizontal_Center  tablet_flex_horizontal_spaceBetween pc_flex_horizontal_spaceBetween"
+        javascript_Css_define="0~720|720$width:662response;height:48fixed;border-radius:24fixed;font-size:14fixed;border-width:1fixed;position:absolute;bottom:65fixed;left:30response^
+        721~1400|1320$width:201fixed;height:56fixed;border-radius:28fixed;padding-left:28fixed;padding-right:30fixed;font-size:16fixed;border-width:1fixed;position:absolute;right:66response;top:112fixed^
+        1401~9999|1920$width:201fixed;height:56fixed;border-radius:28fixed;padding-left:28fixed;padding-right:30fixed;font-size:16fixed;border-width:1fixed;position:absolute;right:0;top:112fixed">
+            <a href="#">더 보러가기</a>
+            <img src="img/arrowicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="0~720|720$width:7fixed;height:13fixed;margin-left:9response^
+            721~1400|1320$width:9fixed;height:16fixed^
+            1401~9999|1920$width:9fixed;height:16fixed"/>
+        </div>
+
+        <div class="swiper-container slide3 javascript_Css_define"
+        javascript_Css_define="0~720|720$padding-bottom:148px !important^
+        721~1400|1320$padding-bottom:120px !important^
+        1401~9999|1920$padding-bottom:120px !important">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide reviewCard bordercolorgray borderstyle_solid javascript_Css_define"
+                javascript_Css_define="0~720|720$width:100% !important;padding-left:21fixed;padding-right:21fixed;padding-top:31fixed;padding-bottom:17fixed;border-radius:10fixed;border-width:1fixed;margin-right:23fixed^
+                721~1400|1320$width:380px !important;padding-left:24fixed;padding-right:24fixed;padding-top:51fixed;padding-bottom:34fixed;border-radius:14fixed;border-width:1fixed;margin-right:23fixed^
+                1401~9999|1920$width:421px !important;padding-left:24fixed;padding-right:24fixed;padding-top:51fixed;padding-bottom:34fixed;border-radius:14fixed;border-width:1fixed;margin-right:27fixed">
+                    <ul class="reviewscore flex_horizontal_flexStart 
+                    ">
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                    </ul>
+                    <p class="revtit fontweight_600 javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow  
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$margin-top:8fixed;font-size:15fixed;height:18fixed^
+                    721~1400|1320$margin-top:18fixed;font-size:22fixed;height:28fixed^
+                    1401~9999|1920$margin-top:18fixed;font-size:22fixed;height:28fixed">
+                    [뉴틴] 식물성 알티지 오메가3 선물세트입니다.
+                    </p>
+                    <p class="revdesc fontweight_500 javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:7fixed;font-size:12fixed;height:36fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:18fixed;font-size:14fixed;height:40fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:18fixed;font-size:14fixed;height:40fixed;line-height:1.4;overflow:hidden">
+                    혈관건강 신경쓸 나이라서 신랑하고 나하고 같이 먹으려고 주문했
+                    어요. 어취가 없어서 좋아요.
+                    </p>
+                    <p class="imgframe position_relative_normal overflow_hidden javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:367response;margin-top:33fixed^
+                    721~1400|1320$width:100%;height:215fixed;margin-top:28fixed^
+                    1401~9999|1920$width:100%;height:242fixed;margin-top:28fixed">
+                        <img src="img/revimg1.jpg" class="display_block img_background_cover_width_center 
+                    "/>
+                    </p>
+        
+                    <div class="productCard borderstyle_solid bordercolorgray position_relative_normal javascript_Css_define
+                    mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexStart mobile_flex_nowrap
+                    tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexStart tablet_flex_nowrap
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart pc_flex_nowrap"
+                    javascript_Css_define="0~720|720$margin-top:20fixed^
+                    721~1400|1320$margin-top:17fixed^
+                    1401~9999|1920$margin-top:20fixed"
+                    >
+                        <img src="img/proimg18.jpg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:115fixed;height:115fixed^
+                        721~1400|1320$width:135fixed;height:135fixed^
+                        1401~9999|1920$width:135fixed;height:135fixed"/>
+        
+                        <div class="rightinfo javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:448response;padding-left:13response^
+                        721~1400|1320$width:192fixed;padding-left:18fixed;flex:1 0 auto^
+                        1401~9999|1920$width:233fixed;padding-left:16fixed;flex:1 0 auto"
+                        >                        
+                            <p class="protits javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:12fixed;line-height:1.5;height:18fixed;overflow:hidden;margin-top:10fixed^
+                            721~1400|1320$font-size:15fixed;line-height:1.4;height:42fixed;overflow:hidden;margin-top:18fixed^
+                            1401~9999|1920$font-size:15fixed;line-height:1.3;height:40fixed;overflow:hidden;margin-top:14fixed"
+                            >
+                            [뉴틴] 코어핏 다이어트 4주 발효
+                            율피추출분말 엘라그산 체지방
+                            </p>
+                            <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                            javascript_Css_define="0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:9fixed^
+                            1401~9999|1920$margin-top:11fixed">
+                               
+                                <p class="price  javascript_Css_define"
+                                javascript_Css_define="0~720|720$font-size:15fixed;padding-left:6response^
+                                721~1400|1320$font-size:17fixed;padding-left:9fixed^
+                                1401~9999|1920$font-size:17fixed;padding-left:9fixed">39,000원</p>
+                            </div>
+                            <div class="extramenu  javascript_Css_define flex_horizontal_flexStart"
+                            javascript_Css_define="0~720|720$margin-top:5fixed^
+                            721~1400|1320$margin-top:5fixed^
+                            1401~9999|1920$margin-top:9fixed">
+                                <span class="display_block bgcolor_graywhite javascript_Css_define flex_horizontal_Center"
+                                javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%^
+                                721~1400|1320$width:40fixed;height:40fixed;border-radius:50%^
+                                1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%">
+                                    <img src="img/cartBag.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~720|720$width:18fixed;height:17fixed^
+                                    721~1400|1320$width:18fixed;height:17fixed^
+                                    1401~9999|1920$width:18fixed;height:17fixed"/>
+                                </span>
+                                <span class="display_block bgcolor_graywhite javascript_Css_define flex_horizontal_Center"
+                                javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed^
+                                721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed^
+                                1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed">
+                                    <img src="img/heartIcon.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~9999|1320$width:17fixed;height:15fixed"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="swiper-slide reviewCard bordercolorgray borderstyle_solid javascript_Css_define"
+                javascript_Css_define="0~720|720$width:100% !important;padding-left:21fixed;padding-right:21fixed;padding-top:31fixed;padding-bottom:17fixed;border-radius:10fixed;border-width:1fixed;margin-right:23fixed^
+                721~1400|1320$width:380px !important;padding-left:24fixed;padding-right:24fixed;padding-top:51fixed;padding-bottom:34fixed;border-radius:14fixed;border-width:1fixed;margin-right:23fixed^
+                1401~9999|1920$width:421px !important;padding-left:24fixed;padding-right:24fixed;padding-top:51fixed;padding-bottom:34fixed;border-radius:14fixed;border-width:1fixed;margin-right:27fixed">
+                    <ul class="reviewscore flex_horizontal_flexStart 
+                    ">
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                    </ul>
+                    <p class="revtit fontweight_600 javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow  
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$margin-top:8fixed;font-size:15fixed;height:18fixed^
+                    721~1400|1320$margin-top:18fixed;font-size:22fixed;height:28fixed^
+                    1401~9999|1920$margin-top:18fixed;font-size:22fixed;height:28fixed">
+                    [뉴틴] 리뉴얼 비책집약 여주차 실속형...
+                    </p>
+                    <p class="revdesc fontweight_500 javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:7fixed;font-size:12fixed;height:36fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:18fixed;font-size:14fixed;height:40fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:18fixed;font-size:14fixed;height:40fixed;line-height:1.4;overflow:hidden">
+                    선물이 아니라면 실속형이 훨씬 나은거 같아요~너무쓰지도않고 마시기 딱 좋은거같아요
+                    </p>
+                    <p class="imgframe position_relative_normal overflow_hidden javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:367response;margin-top:33fixed^
+                    721~1400|1320$width:100%;height:215fixed;margin-top:28fixed^
+                    1401~9999|1920$width:100%;height:242fixed;margin-top:28fixed">
+                        <img src="img/revimg2.jpg" class="display_block img_background_cover_width_center 
+                    "/>
+                    </p>
+        
+                    <div class="productCard borderstyle_solid bordercolorgray position_relative_normal javascript_Css_define
+                    mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexStart mobile_flex_nowrap
+                    tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexStart tablet_flex_nowrap
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart pc_flex_nowrap"
+                    javascript_Css_define="0~720|720$margin-top:20fixed^
+                    721~1400|1320$margin-top:17fixed^
+                    1401~9999|1920$margin-top:20fixed"
+                    >
+                        <img src="img/proimg10.jpg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:115fixed;height:115fixed^
+                        721~1400|1320$width:135fixed;height:135fixed^
+                        1401~9999|1920$width:135fixed;height:135fixed"/>
+        
+                        <div class="rightinfo javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:448response;padding-left:13response^
+                        721~1400|1320$width:192fixed;padding-left:18fixed;flex:1 0 auto^
+                        1401~9999|1920$width:233fixed;padding-left:16fixed;flex:1 0 auto"
+                        >                        
+                            <p class="protits javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:12fixed;line-height:1.5;height:18fixed;overflow:hidden;margin-top:10fixed^
+                            721~1400|1320$font-size:15fixed;line-height:1.4;height:42fixed;overflow:hidden;margin-top:18fixed^
+                            1401~9999|1920$font-size:15fixed;line-height:1.3;height:40fixed;overflow:hidden;margin-top:14fixed"
+                            >
+                            [뉴틴] 리뉴얼 비책집약 여주차 실
+                            속형 50포
+                            </p>
+                            <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                            javascript_Css_define="0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:9fixed^
+                            1401~9999|1920$margin-top:11fixed">
+                                <p class="discount  javascript_Css_define colorblue"
+                                javascript_Css_define="0~720|720$font-size:15fixed^
+                                721~1400|1320$font-size:17fixed^
+                                1401~9999|1920$font-size:17fixed">68%</p>
+                                <p class="price  javascript_Css_define"
+                                javascript_Css_define="0~720|720$font-size:15fixed;padding-left:6response^
+                                721~1400|1320$font-size:17fixed;padding-left:9fixed^
+                                1401~9999|1920$font-size:17fixed;padding-left:9fixed">29,000원</p>
+                            </div>
+                            <div class="extramenu  javascript_Css_define flex_horizontal_flexStart"
+                            javascript_Css_define="0~720|720$margin-top:5fixed^
+                            721~1400|1320$margin-top:5fixed^
+                            1401~9999|1920$margin-top:9fixed">
+                                <span class="display_block bgcolor_graywhite javascript_Css_define flex_horizontal_Center"
+                                javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%^
+                                721~1400|1320$width:40fixed;height:40fixed;border-radius:50%^
+                                1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%">
+                                    <img src="img/cartBag.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~720|720$width:18fixed;height:17fixed^
+                                    721~1400|1320$width:18fixed;height:17fixed^
+                                    1401~9999|1920$width:18fixed;height:17fixed"/>
+                                </span>
+                                <span class="display_block bgcolor_graywhite javascript_Css_define flex_horizontal_Center"
+                                javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed^
+                                721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed^
+                                1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed">
+                                    <img src="img/heartIcon.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~9999|1320$width:17fixed;height:15fixed"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="swiper-slide reviewCard bordercolorgray borderstyle_solid javascript_Css_define"
+                javascript_Css_define="0~720|720$100% !important;padding-left:21fixed;padding-right:21fixed;padding-top:31fixed;padding-bottom:17fixed;border-radius:10fixed;border-width:1fixed;margin-right:23fixed^
+                721~1400|1320$width:380px !important;padding-left:24fixed;padding-right:24fixed;padding-top:51fixed;padding-bottom:34fixed;border-radius:14fixed;border-width:1fixed;margin-right:23fixed^
+                1401~9999|1920$width:421px !important;padding-left:24fixed;padding-right:24fixed;padding-top:51fixed;padding-bottom:34fixed;border-radius:14fixed;border-width:1fixed;margin-right:27fixed">
+                    <ul class="reviewscore flex_horizontal_flexStart 
+                    ">
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                        <li class="item javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:18fixed;height:16fixed^
+                        721~1400|1320$width:18fixed;height:16fixed^
+                        1401~9999|1920$width:18fixed;height:16fixed">
+                            <img src="img/stars.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </li>
+                    </ul>
+                    <p class="revtit fontweight_600 javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow  
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$margin-top:8fixed;font-size:15fixed;height:18fixed^
+                    721~1400|1320$margin-top:18fixed;font-size:22fixed;height:28fixed^
+                    1401~9999|1920$margin-top:18fixed;font-size:22fixed;height:28fixed">
+                    [뉴틴] 자일로바이오틱스 듀얼 자...
+                    </p>
+                    <p class="revdesc fontweight_500 javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:7fixed;font-size:12fixed;height:36fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$margin-top:18fixed;font-size:14fixed;height:40fixed;line-height:1.4;overflow:hidden^
+                    1401~9999|1920$margin-top:18fixed;font-size:14fixed;height:40fixed;line-height:1.4;overflow:hidden">
+                    항상 믿고 구매하는 제품입니다.벌써 1년넘게 재구매해서
+                    아침마다 복용하고 있습니다.맛도 콩가루 맛이고 물에 잘..
+                    </p>
+                    <p class="imgframe position_relative_normal overflow_hidden javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:100%;height:367response;margin-top:33fixed^
+                    721~1400|1320$width:100%;height:215fixed;margin-top:28fixed^
+                    1401~9999|1920$width:100%;height:242fixed;margin-top:28fixed">
+                        <img src="img/revimg3.jpg" class="display_block img_background_cover_width_center 
+                    "/>
+                    </p>
+        
+                    <div class="productCard borderstyle_solid bordercolorgray position_relative_normal javascript_Css_define
+                    mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexStart mobile_flex_nowrap
+                    tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexStart tablet_flex_nowrap
+                    pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart pc_flex_nowrap"
+                    javascript_Css_define="0~720|720$margin-top:20fixed^
+                    721~1400|1320$margin-top:17fixed^
+                    1401~9999|1920$margin-top:20fixed"
+                    >
+                        <img src="img/proimg14.jpg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:115fixed;height:115fixed^
+                        721~1400|1320$width:135fixed;height:135fixed^
+                        1401~9999|1920$width:135fixed;height:135fixed"/>
+        
+                        <div class="rightinfo javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:448response;padding-left:13response^
+                        721~1400|1320$width:192fixed;padding-left:18fixed;flex:1 0 auto^
+                        1401~9999|1920$width:233fixed;padding-left:16fixed;flex:1 0 auto"
+                        >                        
+                            <p class="protits javascript_Css_define"
+                            javascript_Css_define="0~720|720$font-size:12fixed;line-height:1.5;height:18fixed;overflow:hidden;margin-top:10fixed^
+                            721~1400|1320$font-size:15fixed;line-height:1.4;height:42fixed;overflow:hidden;margin-top:18fixed^
+                            1401~9999|1920$font-size:15fixed;line-height:1.3;height:40fixed;overflow:hidden;margin-top:14fixed"
+                            >
+                            [뉴틴] 자일로바이오틱스 듀얼 자일로 올리고당 유산...
+                            </p>
+                            <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                            javascript_Css_define="0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:9fixed^
+                            1401~9999|1920$margin-top:11fixed">
+                                <p class="discount  javascript_Css_define colorblue"
+                                javascript_Css_define="0~720|720$font-size:15fixed^
+                                721~1400|1320$font-size:17fixed^
+                                1401~9999|1920$font-size:17fixed">68%</p>
+                                <p class="price  javascript_Css_define"
+                                javascript_Css_define="0~720|720$font-size:15fixed;padding-left:6response^
+                                721~1400|1320$font-size:17fixed;padding-left:9fixed^
+                                1401~9999|1920$font-size:17fixed;padding-left:9fixed">106,000원</p>
+                            </div>
+                            <div class="extramenu  javascript_Css_define flex_horizontal_flexStart"
+                            javascript_Css_define="0~720|720$margin-top:5fixed^
+                            721~1400|1320$margin-top:5fixed^
+                            1401~9999|1920$margin-top:9fixed">
+                                <span class="display_block bgcolor_graywhite javascript_Css_define flex_horizontal_Center"
+                                javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%^
+                                721~1400|1320$width:40fixed;height:40fixed;border-radius:50%^
+                                1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%">
+                                    <img src="img/cartBag.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~720|720$width:18fixed;height:17fixed^
+                                    721~1400|1320$width:18fixed;height:17fixed^
+                                    1401~9999|1920$width:18fixed;height:17fixed"/>
+                                </span>
+                                <span class="display_block bgcolor_graywhite javascript_Css_define flex_horizontal_Center"
+                                javascript_Css_define="0~720|720$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed^
+                                721~1400|1320$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed^
+                                1401~9999|1920$width:40fixed;height:40fixed;border-radius:50%;margin-left:10fixed">
+                                    <img src="img/heartIcon.svg" class="display_block javascript_Css_define"
+                                    javascript_Css_define="0~9999|1320$width:17fixed;height:15fixed"/>
+                                </span>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section6 bgcolor_beizi">
+    <div class="inner contentWrapper  position_relative_normal javascript_Css_define" 
+    javascript_Css_define="0~720|720$width:690response;margin:0 auto;padding-top:80fixed;padding-bottom:95fixed^
+    721~1170|1320$width:1200response;margin:0 auto;padding-top:100fixed;padding-bottom:100fixed;display:block;overflow:hidden^
+    1171~1400|1320$width:1200response;margin:0 auto;padding-top:100fixed;padding-bottom:100fixed;display:flex;justify-content:space-between;overflow:hidden;flex-flow:row nowrap^
+    1401~9999|1920$width:1320fixed;margin:0 auto;padding-top:100fixed;padding-bottom:100fixed;display:flex;justify-content:space-between;overflow:hidden">   
+        
+        <div class="imgframe position_relative_normal javascript_Css_define"
+        javascript_Css_define="0~720|720$width:100%;height:452response^
+        721~1170|1320$width:840response;height:550response^
+        1171~1400|1320$width:665response;height:436response^
+        1401~9999|1920$width:738fixed;height:484fixed">
+            <iframe src="https://www.youtube.com/embed/JDbVPPxxspA" title="Youtune video palyer" frameborder="0" allow="accelerometer;autoplay; clipboard-write; encrypted-media;gyroscope;picture-in-picture" allowfullscreen
+            
+            class="display_block position_absolute javascript_Css_define"
+            javascript_Css_define="0~720|720$border-radius:25fixed;width:100%;height:100%^
+            721~1400|1320$border-radius:25fixed;width:100%;height:100%^
+            1401~9999|1920$border-radius:25fixed;width:100%;height:100%"></iframe>
+            <img src="img/viewimg1.png" class="display_block position_relative_zindex3 
+            mobile_width_100_percent mobile_height_100_percent
+            tablet_width_100_percent tablet_height_100_percent
+            pc_width_100_percent pc_height_100_percent
+            "
+            targetindex="fadeouteffectTarget0"
+            />
+            <img src="img/video_start.png" class="position_absolute margin_auto zindex50 cursorpointer
+            mobile_positionleft_0 mobile_positionright_0 mobile_positiontop_0 mobile_positionbottom_0
+            tablet_positionleft_0 tablet_positionright_0 tablet_positiontop_0 tablet_positionbottom_0
+            pc_positionleft_0 pc_positionright_0 pc_positiontop_0 pc_positionbottom_0
+            javascript_effectTrigger"
+            targetindex="fadeouteffectTarget1"
+            targetdata='{"effectTarget":"fadeouteffectTarget0^fadeouteffectTarget1","event_per_effects":{"click":"fadeout_simple"}}'
+            />
+        </div>
+      
+        <div class="rightinfo javascript_Css_define"
+        javascript_Css_define="0~720|720$width:100%^
+        721~1170|1320$width:100%;margin-top:26fixed^
+        1171~1400|1320$width:475fixed^
+        1401~9999|1920$width:528fixed"
+        >
+            <h3 class="tits fontweight_500 javascript_Css_define"
+            javascript_Css_define="0~720|720$position:absolute;padding-top:39fixed;font-size:20fixed;top:0;left:0^
+            721~1170|1320$position:absolute;padding-top:39fixed;font-size:34fixed;top:0;left:0^
+            1171~1400|1320$font-size:38fixed;padding-top:26fixed^
+            1401~9999|1920$font-size:38fixed;padding-top:39fixed">
+            나의 건강한 루틴,뉴틴</h3>
+            
+            <div class="bgcolor_white productCard  javascript_Css_define"
+            javascript_Css_define="0~720|720$margin-top:20fixed;width:100%;border-radius:20fixed;padding-left:20response;padding-right:20response;padding-top:23fixed;padding-bottom:22fixed;display:flex;flex-flow:row nowrap;justify-content:space-between;overflow:hidden^
+            721~1400|1320$margin-top:25fixed;width:100%;border-radius:20fixed;padding-left:25fixed;padding-right:16fixed;padding-top:29fixed;padding-bottom:30fixed;display:flex;flex-flow:row nowrap;justify-content:space-between^
+            1401~9999|1920$margin-top:26fixed;width:100%;border-radius:20fixed;padding-left:26fixed;padding-right:16fixed;padding-top:29fixed;padding-bottom:30fixed;display:flex;flex-flow:row nowrap;justify-content:space-between">
+                <img src="img/proimg13.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="0~720|720$width:124fixed;height:125fixed^
+                721~1400|1320$width:150fixed;height:150fixed^
+                1401~9999|1920$width:200fixed;height:200fixed"/>
+                <div class="rightinfo javascript_Css_define"
+                javascript_Css_define="0~720|720$width:525response;padding-left:17response;flex:1 0 auto^
+                721~1170|1320$width:256fixed;flex:1 0 auto;padding-left:22response^
+                1171~1400|1320$width:256fixed^
+                1401~9999|1920$width:256fixed"
+                >
+                    <div class="badgelist flex_horizontal_flexStart">
+                        <p class="badge borderstyle_solid bordercolor_gray2 javascript_Css_define flex_horizontal_Center"
+                        javascript_Css_define="0~720|720$width:77fixed;height:25fixed;border-radius:13fixed;font-size:11fixed;border-width:1fixed^
+                        721~1400|1320$width:95fixed;height:26fixed;border-radius:13fixed;font-size:14fixed;border-width:1fixed^
+                        1401~9999|1920$width:95fixed;height:26fixed;border-radius:13fixed;font-size:14fixed;border-width:1fixed">1/2/3/6박스</p>
+                        <p class="badge borderstyle_solid bordercolor_gray2 javascript_Css_define flex_horizontal_Center"
+                        javascript_Css_define="0~720|720$width:77fixed;height:25fixed;border-radius:13fixed;font-size:11fixed;border-width:1fixed;margin-left:4response^
+                        721~1400|1320$width:95fixed;height:26fixed;border-radius:13fixed;font-size:14fixed;border-width:1fixed;margin-left:4response^
+                        1401~9999|1920$width:95fixed;height:26fixed;border-radius:13fixed;font-size:14fixed;border-width:1fixed;margin-left:4response">홈쇼핑 PICK!</p>
+                    </div>
+                    <span class="display_block bgcolor_gray javascript_Css_define"
+                    javascript_Css_define="0~720|720$margin-top:10fixed;width:266response;height:1fixed;margin-bottom:10fixed^
+                    721~1400|1320$margin-top:15fixed;width:100%;height:1fixed;margin-bottom:13fixed^
+                    1401~9999|1920$margin-top:15fixed;width:100%;height:1fixed;margin-bottom:13fixed"></span>
+                    <p class="protit javascript_Css_define"
+                    javascript_Css_define="0~720|720$font-size:12fixed;height:36fixed;line-height:1.5;overflow:hidden^
+                    721~1400|1320$font-size:20fixed;height:60fixed;line-height:1.5;overflow:hidden^
+                    1401~9999|1920$font-size:20fixed;height:60fixed;line-height:1.5;overflow:hidden">
+                    [뉴틴] 코어핏 다이어트 4주 발효
+                    율피추출분말 엘라그산 체지방..
+                    </p>
+                    <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                    javascript_Css_define="0~720|720$margin-top:8fixed^
+                    721~1400|1320$margin-top:13fixed^
+                    1401~9999|1920$margin-top:13fixed">
+                        <p class="percent  colorblue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:16fixed^
+                        721~1400|1320$font-size:18fixed^
+                        1401~9999|1920$font-size:26fixed">20%</p>
+                        <p class="price  javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:15fixed;padding-left:2fixed^
+                        721~1400|1320$font-size:16fixed;padding-left:11fixed^
+                        1401~9999|1920$font-size:24fixed;padding-left:8fixed">39,000원</p>
+                        <p class="originprice linethrough colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:13fixed;padding-left:2fixed^
+                        721~1400|1320$font-size:15fixed;padding-left:8fixed^
+                        1401~9999|1920$font-size:17fixed;padding-left:11fixed">59,000원</p>
+                    </div>
+                    <div class="revscores fontweight_500 flex_horizontal_flexStart javascript_Css_define"
+                     javascript_Css_define="0~720|720$margin-top:6fixed^
+                     721~1400|1320$margin-top:10fixed^
+                     1401~9999|1920$margin-top:10fixed">
+                        <img src="img/stars.svg" class="display_block javascript_Css_define"
+                        javascript_Css_define="0~720|720$width:16fixed;height:14fixed^
+                        721~1400|1320$width:17fixed;height:15fixed^
+                        1401~9999|1920$width:24fixed;height:22fixed">
+                        <p class="numbervalue javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:14fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:16fixed;padding-left:5fixed^
+                        1401~9999|1920$font-size:21fixed;padding-left:5fixed">4.8</p>
+                        <p class="numbervalue colorgray javascript_Css_define"
+                        javascript_Css_define="0~720|720$font-size:13fixed;padding-left:3fixed^
+                        721~1400|1320$font-size:14fixed;padding-left:5fixed^
+                        1401~9999|1920$font-size:19fixed;padding-left:5fixed">(189)</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="footerTop">
+    <div class="inner  position_relative_normal javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:15response;padding-right:15response;padding-top:14fixed;padding-bottom:15fixed^
+    721~1024|1320$width:1200response;padding-top:47fixed;padding-bottom:51fixed;margin:0 auto;display:block^
+    1025~1400|1320$width:1200response;padding-top:47fixed;padding-bottom:51fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row nowrap^
+    1401~9999|1920$width:1320fixed;padding-top:47fixed;padding-bottom:51fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row nowrap">
+      
+        <div class="customercenter javascript_Css_define"
+        javascript_Css_define="0~720|720$width:100%;display:flex;justify-content:space-between;flex-flow:row nowrap^
+        721~1024|1320$width:100%;display:flex;justify-content:space-between;flex-flow:row nowrap^
+        1025~1400|1320$width:332fixed;flex:0 1 auto^
+        1401~9999|1920$width:332fixed">
+            <div class="wrap">
+                <h3 class="tit javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:14fixed;padding-bottom:18fixed^
+                721~1400|1320$font-size:20fixed;padding-bottom:22fixed^
+                1401~9999|1920$font-size:20fixed;padding-bottom:22fixed">고객센터</h3>
+                <p class="tel javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:22fixed^
+                721~1400|1320$font-size:34fixed^
+                1401~9999|1920$font-size:34fixed">080-700-8802</p>
+                <p class="message javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:10fixed^
+                721~1400|1320$font-size:14fixed;margin-top:11fixed^
+                1401~9999|1920$font-size:14fixed;margin-top:11fixed">
+                평일AM 08:30~PM  17:30 (점심 11:30-12:30)
+                주말 및 공휴 일은 휴무입니다.</p>
+            </div>
+            
+            <div class="linklist  javascript_Css_define"
+            javascript_Css_define="721~1024|1320$display:block^
+            1025~1400|1320$margin-top:22fixed;display:flex^
+            1401~9999|1920$margin-top:22fixed;display:flex">
+                <a href="#" class="display_block borderstyle_solid bordercolor_gray2 javascript_Css_define"
+                javascript_Css_define="0~720|720$width:98fixed;height:30fixed;border-radius:15fixed;display:flex;justify-content:center;font-size:12fixed;border-width:1fixed;align-items:center^
+                721~1400|1320$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;align-items:center^
+                1401~9999|1920$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;align-items:center">1:1문의</a>
+                <a href="#" class="display_block borderstyle_solid bordercolor_gray2 javascript_Css_define"
+                javascript_Css_define="0~720|720$width:98fixed;height:30fixed;border-radius:15fixed;display:flex;justify-content:center;font-size:12fixed;border-width:1fixed;align-items:center;margin-top:4fixed^
+                721~1024|1320$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;margin-top:4fixed;align-items:center^
+                1025~1400|1320$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;margin-left:10response;align-items:center^
+                1401~9999|1920$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;margin-left:10response;align-items:center"
+                >자주묻는질문</a>
+            </div>
+        </div>
+
+        <div class="notice javascript_Css_define"
+        javascript_Css_define="0~720|720$width:100%;margin-top:26fixed^
+        721~1024|1320$width:100%;margin-top:32fixed^
+        1025~1400|1320$width:448fixed;padding-left:116fixed;flex:0 1 auto^
+        1401~9999|1920$width:332fixed;margin-left:116fixed"
+        >
+            <ul class="flex_horizontal_flexStart"
+            >
+                <li class="javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:14fixed^
+                721~1400|1320$font-size:20fixed^
+                1401~9999|1920$font-size:20fixed"><a href='#'>공지사항</a>
+                </li>
+                <li class="bgcolor_gray javascript_Css_define"
+                javascript_Css_define="0~720|720$width:1fixed;height:16fixed;margin-left:9response;margin-right:9response^
+                721~1400|1320$width:1fixed;height:16fixed;margin-left:8response;margin-right:8response^
+                1401~9999|1920$width:1fixed;height:16fixed;margin-left:8response;margin-right:8response">
+                </li>
+                <li class="javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:14fixed^
+                721~1400|1320$font-size:20fixed^
+                1401~9999|1920$font-size:20fixed"><a href='#'>이벤트</a>
+                </li>
+            </ul>
+            <ul class="noticelist javascript_Css_define"
+            javascript_Css_define="0~720|720$margin-top:9fixed^
+            721~1400|1320$margin-top:17fixed^
+            1401~9999|1920$margin-top:17fixed">
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed^
+                721~1400|1320$font-size:15fixed^
+                1401~9999|1920$font-size:15fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">10월 카드사 무이자 할부 안내</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.10.04</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">[당첨자 발표] 8월 BEST 리뷰</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.09.08</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">9월 카드사 무이자 할부 안내</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.09.01</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">[당첨자 발표] 7월 BEST 리뷰</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.08.05</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">8월 카드사 무이자 할부 안내</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.07.30</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nutine javascript_Css_define"
+        javascript_Css_define="0~720|720$margin-top:33fixed^
+        721~1024|1320$width:192fixed;margin-top:33fixed^
+        1025~1400|1320$width:192fixed;padding-left:120fixed;flex:0 1 auto^
+        1401~9999|1920$margin-left:120fixed"
+         >
+            <h3 class="tit javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:14fixed;padding-bottom:5fixed^
+            721~1400|1320$font-size:20fixed;padding-bottom:17fixed^
+            1401~9999|1920$font-size:20fixed;padding-bottom:17fixed">Nutine</h3>
+            <ul class="nutinelist">
+                <li class="item javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed^
+                721~1400|1320$font-size:15fixed^
+                1401~9999|1920$font-size:15fixed"><a href='#'>미디어</a></li>
+                <li class="item javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:5fixed^
+                721~1400|1320$font-size:15fixed;margin-top:11fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:11fixed"><a href='#'>프레스</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="bgcolor_graywhite">
+    <div class="inner  borderstyle_solid bordercolorgray2 position_relative_normal javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:14response;padding-top:34fixed;padding-right:24response;padding-bottom:125fixed;border-top-width:1fixed^
+    721~1400|1320$padding-left:66response;padding-top:34fixed;padding-right:190response;padding-bottom:73fixed;border-top-width:1fixed^
+    1401~9999|1920$width:1320fixed;margin:0 auto;padding-top:34fixed;padding-bottom:73fixed;border-top-width:1fixed">
+        <ul class="footermenu fontweight_600 flex_horizontal_flexStart">
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>회사소개</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>이용약관</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>개인정보처리방침</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>사이트이용</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>대량구매/제휴문의</a>
+            </li>
+        </ul>
+        <p class="infom colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:38fixed^
+        721~1400|1320$font-size:13fixed;margin-top:35fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:35fixed">
+        상호명 : 에이치케이이노엔(주) 대표자 : 곽달원 주소 : 충청북도 청주시 흥덕구 오송읍 오송생명2로 239 / 서울지사 : 서울특별시 중구 을지로 100, 6층,7층,8층 (을지로2가, 파인에비뉴 에이동)
+        </p>
+        <p class="infom colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:18fixed^
+        721~1400|1320$font-size:13fixed;margin-top:13fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:13fixed">
+        사업자등록번호 : 201-86-38914 사업자번호조회 > 통신판매업신고번호 : 제2019-서울중구-1517호
+        </p>
+        <p class="infom colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:18fixed^
+        721~1400|1320$font-size:13fixed;margin-top:13fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:13fixed">
+        개인정보 보호책임자 : 서무정 FAX : 080-700-8802 TEL : 080-700-8802 E-mail : nutine@mynutine.com
+        </p>
+        <p class="copyright colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:18fixed^
+        721~1400|1320$font-size:13fixed;margin-top:13fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:28fixed">
+        COPYRIGHT 2022 NUTINE ALL RIGHTS RESERVED.
+        </p>
+
+        <img src="img/ft_logo.png" class="display_block position_absolute javascript_Css_define"
+        javascript_Css_define="0~720|720$width:80fixed;height:20fixed;left:15response;bottom:50response^
+        721~1400|1320$width:116fixed;height:29fixed;right:66response;top:163fixed^
+        1401~9999|1920$width:116fixed;height:29fixed;right:0;top:163fixed"/>
+    </div>
+</footer>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+
+<script src="js/commonui_javascript.js"></script>
+<script src="js/common_function.js"></script>
+
+<script src="js/CssStyleDefine_layout.js"></script>
+
+
+<script src="js/scrollTest.js"></script>
+<script src="js/collapseLayout.js"></script>
+
+<script>
+ var swiper=new Swiper('.mainbanner',{
+        slidesPerView:'auto',
+        autoResize: false,
+        centeredSlides:true,
+        loop:true
+        /*pagination:{
+            el : '.swiper-pagination1',
+            type:'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next1',
+            prevEl : '.swiper-button-prev1'
+        },
+        on:{
+            slideChangeTransitionEnd : function(){
+                console.log("현재 슬라이드카운트 index:",this.activeIndex+1);
+                let target=document.querySelector(`[targetindex='javascript_swipercustom_slidecountTarget_0']`);
+                target.innerText = this.activeIndex+1 < 10? '0'+(this.activeIndex+1) : (this.activeIndex+1);
+            }
+        }*/
+    })
+
+    var swiper2=new Swiper('.slide1',{
+        slidesPerView:'auto',
+        autoResize: true,
+        pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        /*navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var swiper3=new Swiper('.slide2',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var section3Swiper=new Swiper('.section3Swiper',{
+        effect: "flip",
+        grabCursor: true,
+        pagination:{
+            el:'.swiper-pagination_section3',
+            clickable:"true",
+            renderBullet: function(index,className){
+                return '<span class="'+className+'">'+(index+1)+"</span>";
+            }
+        },
+       
+    })
+    var swiper4=new Swiper('.slide3',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,1886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body>
+<div id="pageLoader">
+    <img src="img/Circle-Loading.svg"/>
+</div>
+
+<div class="topbanner position_absolute bgcolor_red4 javascript_Css_define zindex999
+mobile_flex_horizontal_Center tablet_flex_horizontal_Center pc_flex_horizontal_flexStart"
+javascript_Css_define="
+0~720|720$height:74fixed;width:100%^
+721~1400|1320$height:44fixed;width:100%^
+1401~9999|1920$height:44fixed;width:100%;padding-left:792response">
+    <div class="flex_horizontal_flexStart colorwhite  javascript_Css_define"javascript_Css_define="
+    0~720|720$font-size:16px^
+    721~1400|1320$font-size:19px^
+    1401~9999|1920$font-size:19px">
+        <span>뉴턴몰 회원가입하면 최대 5,000원 할인</span>
+        <img src="img/arrowiconwhite.svg" class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:9fixed;height:16fixed;margin-left:30response^
+        721~1400|1320$width:9fixed;height:16fixed;margin-left:30response^
+        1401~9999|1920$width:9fixed;height:16fixed;margin-left:38response"/>
+    </div>
+    <img src="img/xButton.svg" class="display_block position_absolute javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$right:16response;top:17fixed;width:10fixed;height:10fixed^
+    721~1400|1320$right:16response;top:17fixed;width:10fixed;height:10fixed^
+    1401~9999|1920$right:300response;top:17fixed;width:10fixed;height:10fixed"/>
+</div>
+<header
+class="position_relative_normal">
+    <div class="inner  javascript_Css_define
+    mobile_flex_horizontal_spaceBetween mobile_flex_alignitems_flexEnd 
+    tablet_marginhorizontal_auto tablet_flex_horizontal_spaceBetween tablet_flex_alignitems_flexEnd
+    pc_marginhorizontal_auto pc_flex_horizontal_spaceBetween pc_flex_alignitems_flexEnd"
+    javascript_Css_define="
+    0~720|720$width:100%;padding-top:98fixed;padding-left:14response;padding-right:18response^
+    721~1400|1320$width:1200response;padding-top:85fixed;^
+    1401~9999|1920$width:1320fixed;padding-top:85fixed">
+        <a href="mainNew.html"><img src="./img/logo.png" class="display_block  javascript_Css_define"javascript_Css_define="
+        0~720|720$width:109fixed;height:24fixed^
+        721~1400|1320$width:200fixed;height:45fixed^
+        1401~9999|1920$width:200fixed;height:45fixed"/></a>
+        <div class="usermenu 
+        mobile_display_none
+        tablet_flex_horizontal_flexStart
+        pc_flex_horizontal_flexStart">
+            <p class="item fontweight_500 javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13fixed^
+            721~1400|1320$font-size:14fixed^
+            1401~9999|1920$font-size:14fixed">로그인</p>
+            <p class="item fontweight_500 javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13fixed;margin-left:16response^
+            721~1400|1320$font-size:14fixed;margin-left:18response^
+            1401~9999|1920$font-size:14fixed;margin-left:18response">회원가입</p>
+            <span class="display_block bgcolor_gray2 javascript_Css_define"javascript_Css_define="
+            0~720|720$width:1fixed;height:12fixed;margin-left:10response;margin-right:10response^
+            721~1400|1320$width:1fixed;height:12fixed;margin-left:18response;margin-right:18response^
+            1401~9999|1920$width:1fixed;height:12fixed;margin-left:18response;margin-right:18response"></span>
+            <img src="./img/usericon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20fixed;height:22fixed^
+            721~1400|1320$width:20fixed;height:22fixed^
+            1401~9999|1920$width:20fixed;height:22fixed"/>
+        </div>
+    </div>
+    <div class="inner  javascript_Css_define
+    mobile_width_100_percent mobile_flex_horizontal_flexStart mobile_flex_alignitems_flexEnd  mobile_flex_nowrap
+    tablet_marginhorizontal_auto tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexEnd tablet_flex_nowrap
+    pc_marginhorizontal_auto pc_flex_horizontal_flexStart pc_flex_alignitems_flexEnd pc_flex_nowrap"javascript_Css_define="
+    0~720|720$padding-left:14response;padding-right:18response;margin-top:28fixed;^
+    721~1400|1320$width:1200response;margin-top:21fixed^
+    1401~9999|1920$width:1320fixed;margin-top:25fixed">
+    
+        <ul class="headermenus flex_horizontal_flexStart javascript_Css_define
+        mobile_flex_shrink1 tablet_flex_shrink1 pc_flex_shrink1"
+        javascript_Css_define="
+        721~1400|1320$width:851response^
+        1401~9999|1920$width:983fixed">
+            <li class="item
+            ">
+                <img src="img/menuIcon.svg" class="display_block cursorpointer javascript_Css_define
+                javascript_moveTrigger
+                javascript_viewunviewTrigger"javascript_Css_define="
+                0~720|720$width:21fixed;height:18px^
+                721~1400|1320$width:21fixed;height:18fixed^
+                1401~9999|1920$width:21fixed;height:18fixed"
+                targetdata='{"moveTarget":"nutine_navigation","moveto":"left|0%","viewunviewTarget":"navBg","viewunviewto":"block"}'>
+            </li>
+            <li class="item display_block position_relative_normal  javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:14response">
+                <a href="#"
+                class="javascript_slideToggle"
+                targetdata='{"slideTarget":"slideToggleTarget0"}'
+                toggle_status="closed">전체상품</a>
+
+                <div class="display_block bgcolor_white flex_horizontal_spaceBetween position_absolute zindex50 javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:10response;padding-top:16fixed;padding-bottom:20fixed;padding-right:10response;width:660response;top:30fixed;left:-10response;border-radius:20response^
+                721~1400|1320$padding-left:30response;padding-top:20fixed;padding-bottom:20fixed;padding-right:20response;width:820response;top:30fixed;left:-50response;border-radius:20response^
+                1401~9999|1920$padding-left:30fixed;padding-top:30fixed;padding-bottom:30fixed;padding-right:30fixed;width:820fixed;top:30fixed;border-radius:20fixed"
+                
+                style="display:none"
+                targetindex="slideToggleTarget0">
+                    <ul class="categorylist flex_horizontal_spaceBetween flex_alignitems_flexStart javascript_Css_define
+                    mobile_width_100_percent  tablet_width_100_percent pc_width_100_percent"javascript_Css_define="
+                    0~720|720$font-size:14fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">
+                        <li class="item  javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:50%^
+                        721~1400|1320$width:250response^
+                        1401~9999|1920$width:250fixed">
+                            <p class="item_ fontweight_600">
+                                <a href="subNew.html">건강식품</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"javascript_Css_define="
+                            0~720|720$margin-top:30fixed^
+                            721~1400|1320$margin-top:40fixed^
+                            1401~9999|1920$margin-top:40fixed">
+                                <a href="subNew.html">유산균</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">타트체리</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">홍삼</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">오메가3</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">새싹보리</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 비타민</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">발효율피</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">선물세트</a> 
+                            </p>
+                        </li>
+                        <li class="item  javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:50%^
+                        721~1400|1320$width:250response^
+                        1401~9999|1920$width:250fixed">
+                            <p class="item_ fontweight_600">
+                                <a href="subNew.html">음료</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"javascript_Css_define="
+                            0~720|720$margin-top:30fixed^
+                            721~1400|1320$margin-top:40fixed^
+                            1401~9999|1920$margin-top:40fixed">
+                                <a href="subNew.html">컨디션</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 헛개수</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  새싹보리</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 비책집약</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  로블렌</a> 
+                            </p>
+                        </li>
+                        <li class="item  javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:50%;padding-top:40fixed^
+                        721~1400|1320$width:250response^
+                        1401~9999|1920$width:250fixed">
+                            <p class="item_ fontweight_600">
+                                <a href="subNew.html">건강가이드</a> 
+                            </p>
+                            <p class="item_ javascript_Css_define"javascript_Css_define="
+                            0~720|720$margin-top:30fixed^
+                            721~1400|1320$margin-top:40fixed^
+                            1401~9999|1920$margin-top:40fixed">
+                                <a href="subNew.html">면역/피로개선</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 체지방감소</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  혈행/콜레스트롤</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 장건강</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html">  눈건강</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 항산화</a>
+                            </p>
+                            <p class="item_ javascript_Css_define"
+                            javascript_Css_define="
+                            0~720|720$margin-top:8fixed^
+                            721~1400|1320$margin-top:12fixed^
+                            1401~9999|1920$margin-top:16fixed">
+                                <a href="subNew.html"> 숙취해소</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">베스트</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">건강식품</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">음료</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">이벤트</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">리뷰</a>
+            </li>
+            <li class="item display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:13px;padding-left:10response^
+            721~1400|1320$font-size:15px;padding-left:14response^
+            1401~9999|1920$font-size:18px;padding-left:23response">
+                <a href="#">건강하게 코어핏!</a>
+            </li>
+        </ul>
+
+        <div class="searchwrap bgcolor_graywhite  javascript_Css_define" 
+        javascript_Css_define="
+        0~720|720$width:25fixed;height:24fixed;margin-left:6response;background-color:transparent;position:absolute;top:98fixed;right:58response^
+        721~1400|1320$width:260response;height:45fixed;border-radius:23fixed;position:relative^
+        1401~9999|1920$width:260fixed;height:45fixed;border-radius:23fixed;position:relative">
+            <img src="img/search.svg" class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+            0~720|720$width:25fixed;height:24fixed;top:0;right:0^
+            721~1400|1320$width:23fixed;height:23fixed;top:11fixed;right:19fixed^
+            1401~9999|1920$width:23fixed;height:23fixed;top:11fixed;right:19fixed">
+            <input type="text" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$display:none^
+            721~1400|1320$padding-top:10fixed;padding-bottom:10fixed;padding-left:20response;padding-right:40response;font-size:15fixed;width:100%^
+            1401~9999|1920$padding-top:10fixed;padding-bottom:10fixed;padding-left:20fixed;padding-right:40fixed;font-size:18fixed;width:100%"/>
+        </div>
+        
+        <div class="cartwrap javascript_Css_define
+        mobile_flex_horizontal_Center tablet_flex_horizontal_Center pc_flex_horizontal_Center"
+        javascript_Css_define="
+        0~720|720$width:55fixed;height:28fixed;margin-left:6response;position:absolute;top:94fixed;right:98response^
+        721~1400|1320$width:55fixed;height:49fixed;margin-left:27response;position:relative^
+        1401~9999|1920$width:55fixed;height:49fixed;margin-left:27response;position:relative">
+            <img src="img/cartBag.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:30fixed;height:28fixed^
+            721~1400|1320$width:30fixed;height:28fixed^
+            1401~9999|1920$width:30fixed;height:28fixed"/>
+            <span class="display_block bgcolor_red3 colorwhite position_absolute fontweight_500 javascript_Css_define
+            mobile_flex_horizontal_Center tablet_flex_horizontal_Center pc_flex_horizontal_Center "javascript_Css_define="
+            0~720|720$font-size:14fixed;right:0;top:4fixed;width:20fixed;height:20fixed;border-radius:10fixed^
+            721~1400|1320$font-size:14fixed;right:0;top:15fixed;width:20fixed;height:20fixed;border-radius:10fixed^
+            1401~9999|1920$font-size:14fixed;right:0;top:15fixed;width:20fixed;height:20fixed;border-radius:10fixed">0</span>
+            <p class="fontweight_500 javascript_Css_define"javascript_Css_define="
+            0~720|720$display:none^
+            721~1400|1320$display:block;font-size:14fixed^
+            1401~9999|1920$display:block;font-size:14fixed">장바구니</p>
+        </div>
+    </div>
+</header>
+
+<div class="popupbg 
+javascript_moveTrigger
+javascript_viewunviewTrigger"
+targetdata='{"moveTarget":"nutine_navigation","moveto":"left|-120%","viewunviewTarget":"navBg","viewunviewto":"none"}'
+targetindex="navBg" 
+style="display:none"></div>
+<nav class="nutineNav position_fixed bgcolor_white zindex999 height_100vh javascript_Css_define"javascript_Css_define="
+0~720|720$width:720response;top:0;left:0^
+721~1400|1320$width:720response;top:0;left:0^
+1401~9999|1920$width:720response;top:0;left:0"
+targetindex="nutine_navigation"
+style="left:-120%">
+    <div class="toparea bgcolor_red5 flex_horizontal_spaceBetween javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;height:62fixed;padding-left:16response;padding-right:13response^
+    721~1400|1320$width:100%;height:62fixed;padding-left:16fixed;padding-right:13fixed^
+    1401~9999|1920$width:100%;height:62fixed;padding-left:16fixed;padding-right:13fixed">
+        <p class="loginmenu colorwhite flex_horizontal_flexStart javascript_Css_define"javascript_Css_define="
+        0~720|720$font-size:18fixed^
+        721~1400|1320$font-size:18fixed^
+        1401~9999|1920$font-size:18fixed">
+            <a href="#">로그인해주세요</a>
+            <img src="img/arrowicon3.svg" class="display_block  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1320$width:9fixed;height:16fixed;margin-left:4fixed">
+        </p>
+
+        <div class="rightmenu flex_horizontal_flexStart colorwhite
+        ">
+            <p class="regimenu">
+                <a href="#" class="javascript_Css_define"javascript_Css_define="
+                0~720|720$font-size:14fixed^
+                721~1400|1320$font-size:14fixed^
+                1401~9999|1920$font-size:14fixed">회원가입</a>
+                <span class="bgcolor_white display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1320$width:100%;height:1fixed;margin-top:3fixed">
+                </span>
+            </p>
+            <img src="img/xbutton2.svg" class="display_block  javascript_Css_define
+            javascript_moveTrigger
+            javascript_viewunviewTrigger"javascript_Css_define="
+            0~720|720$width:26fixed;height:26fixed;margin-left:9response^
+            721~1400|1320$width:26fixed;height:26fixed;margin-left:9fixed^
+            1401~9999|1920$width:26fixed;height:26fixed;margin-left:9fixed"
+            targetdata='{"moveTarget":"nutine_navigation","moveto":"left|-120%","viewunviewTarget":"navBg","viewunviewto":"none"}'
+            >
+        </div>
+    </div>
+
+    <ul class="navmenu flex_horizontal_spaceBetween javascript_Css_define"javascript_Css_define="
+    0~720|720$padding-left:60response;padding-right:52response;margin-top:22fixed^
+    721~1400|1320$padding-left:60fixed;padding-right:52fixed;margin-top:22fixed^
+    1401~9999|1920$padding-left:60fixed;padding-right:52fixed;margin-top:22fixed">
+        <li class="item textalignCenter
+        ">
+            <img src="img/SpeakSound.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:37fixed;height:26fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:15fixed">공지사항</p>
+        </li>
+        <li class="item textalignCenter
+        ">
+            <img src="img/truck.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:36fixed;height:27fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:14fixed">주문조회</p>
+        </li>
+        <li class="item textalignCenter
+        ">
+            <img src="img/clock.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:29fixed;height:28fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:14fixed">최근 본 상품</p>
+        </li>
+        <li class="item textalignCenter
+        ">
+            <img src="img/usericon.svg" class="display_block marginhorizontal_auto javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:24fixed;height:26fixed"/>
+            <p class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$font-size:15fixed;margin-top:17fixed">마이페이지</p>
+        </li>
+    </ul>
+
+    <ul class="navmenuList javascript_Css_define"javascript_Css_define="
+    0~720|720$padding-left:16response;padding-right:16response;margin-top:76fixed^
+    721~1400|1320$padding-left:16fixed;padding-right:16fixed;margin-top:76fixed^
+    1401~9999|1920$padding-left:16fixed;padding-right:16fixed;margin-top:76fixed">
+        <li class="flex_horizontal_spaceBetween fontweight_900 position_relative_normal javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed">
+            <a href="#">전체상품</a> 
+            <img src="img/arrowdownicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1320$width:14fixed;height:7fixed"/>
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+            <a href="#">베스트</a> 
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+            <a href="#">건강식품</a> 
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+            <a href="#">음료</a> 
+            
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+            <a href="#">이벤트</a> 
+            
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+            <a href="#">리뷰</a> 
+            
+        </li>
+        <li class="flex_horizontal_spaceBetween fontweight_900 javascript_Css_define"javascript_Css_define="
+        0~9999|1320$font-size:16fixed;margin-top:25fixed">
+            <a href="#">뉴틴건강 솔루션!</a> 
+            
+        </li>
+    </ul>
+</nav>
+
+<section class="bannerSection position_relative_normal overflow_hidden javascript_Css_define"
+javascript_Css_define="
+0~720|720$height:202response;margin-top:16fixed^
+721~1400|1320$height:250fixed;margin-top:30fixed^
+1401~9999|1920$height:250fixed;margin-top:30fixed">
+    <img src="img/bannermob_display.jpg" class="display_block position_absolute img_background_cover_height_center
+     mobile_height_100_percent  mobile_onlyview 
+    "/>
+    <img src="img/bannerpc_display.jpg" class="display_block  position_absolute img_background_cover_height_center
+    tablet_height_100_percent  tablet_onlyview
+    "/>
+    <img src="img/bannerpc_display.jpg" class="display_block position_absolute img_background_cover_height_center
+    pc_height_100_percent   pc_onlyview
+    "/>
+</section>
+
+<section class="productlist">
+    <div class="inner  javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$padding-left:15response;padding-right:15response^
+    721~1400|1320$padding-left:40response;padding-right:40response^
+    1401~9999|1920$width:1760response;margin:0 auto">
+        <h2 class="tit fontweight_900 textalignCenter javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$display:none^
+        721~1400|1320$font-size:27fixed;padding-top:57fixed;padding-bottom:91fixed^
+        1401~9999|1920$font-size:27fixed;padding-top:57fixed;padding-bottom:91fixed">전체상품</h2>
+        <ul class="badgelist  javascript_Css_define
+        mobile_flex_horizontal_flexStart
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center"javascript_Css_define="
+        0~720|720$margin-top:11fixed">
+            <li class="item borderstyle_solid bordercolorgray javascript_Css_define
+            tablet_flex_horizontal_Center pc_flex_horizontal_Center"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;height:24fixed;padding-right:20response^
+            721~1400|1320$font-size:14fixed;height:36fixed;padding-left:20fixed;padding-right:20fixed;border-width:1fixed;border-radius:18fixed^
+            1401~9999|1920$font-size:14fixed;height:36fixed;padding-left:20fixed;padding-right:20fixed;border-width:1fixed;border-radius:18fixed">
+            건강식품</li>
+            <li class="item borderstyle_solid bordercolorgray javascript_Css_define
+            tablet_flex_horizontal_Center pc_flex_horizontal_Center"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;height:24fixed;padding-right:20response^
+            721~1400|1320$font-size:14fixed;height:36fixed;padding-left:20fixed;padding-right:20fixed;border-width:1fixed;border-radius:18fixed;margin-left:10fixed^
+            1401~9999|1920$font-size:14fixed;height:36fixed;padding-left:20fixed;padding-right:20fixed;border-width:1fixed;border-radius:18fixed;margin-left:10fixed">
+            음료</li>
+            <li class="item borderstyle_solid bordercolorgray javascript_Css_define
+            tablet_flex_horizontal_Center pc_flex_horizontal_Center"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;height:24fixed;padding-right:20response^
+            721~1400|1320$font-size:14fixed;height:36fixed;padding-left:20fixed;padding-right:20fixed;border-width:1fixed;border-radius:18fixed;margin-left:10fixed^
+            1401~9999|1920$font-size:14fixed;height:36fixed;padding-left:20fixed;padding-right:20fixed;border-width:1fixed;border-radius:18fixed;margin-left:10fixed">
+            건강가이드</li>
+        </ul>
+
+        <div class="listwrap flex_horizontal_flexStart  javascript_Css_define
+        javascript_widthcalculatePercent_layout2"
+        javascript_Css_define="
+        0~720|720$margin-top:80fixed^
+        721~1400|1320$margin-top:65fixed^
+        1401~9999|1920$margin-top:65fixed"
+        adapt_range='{"mobile": "0~720","extra" : "721~1120","tablet" : "1121~1400", "pc" : "1401~9999"}'
+        res_per_column='{"mobile" : 2,"extra" : 3,"tablet" : 4,"pc" : 5}'
+       >
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg1.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg2.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>   
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg3.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div> 
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg4.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg5.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg6.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg7.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>        
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg8.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg9.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>  
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg10.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg11.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg12.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg13.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>      
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg14.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg15.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg16.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>    
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg17.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div> 
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg18.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>      
+            <div class="widthcalculate_item position_relative_normal javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-bottom:33fixed^
+            721~1400|1320$padding-bottom:28fixed^
+            1401~9999|1920$padding-bottom:90fixed">
+                <img src="img/proimg19.jpg" class="display_block
+                mobile_width_100_percent  
+                tablet_width_100_percent  
+                pc_width_100_percent  
+                "/>
+                <div class="badgelist flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1320$margin-top:15fixed">
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed">1/2박스</p>
+                    <p class="badge display_block borderstyle_solid bordercolorgray colorgray flex_horizontal_Center javascript_Css_define"
+                     javascript_Css_define="
+                     0~720|720$font-size:11fixed;padding-left:8fixed;padding-right:8fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     721~1400|1320$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed^
+                     1401~9999|1920$font-size:14fixed;padding-left:13fixed;padding-right:13fixed;height:26fixed;border-radius:13fixed;border-width:1fixed;margin-left:7fixed">리뉴얼특가</p>
+                </div>
+               
+                <p class="tits  javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$margin-top:8fixed;font-size:12fixed;height:32fixed;line-height:1.3;overflow:hidden^
+                721~1400|1320$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden^
+                1401~9999|1920$margin-top:10fixed;font-size:16fixed;height:42fixed;line-height:1.3;overflow:hidden">
+                [뉴틴] 코어핏 다이어트 4주 발효율피추출분만 엘라
+                그산 체지방 감소
+                </p>
+                <div class="discount_area fontweight_500 javascript_Css_define flex_horizontal_flexStart"
+                javascript_Css_define="
+                0~1400|1320$margin-top:8fixed^
+                1401~9999|1920$margin-top:12fixed">
+                    <p class="originprice  linethrough colorgray javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed">99,000원</p>
+                    <p class="percent  colorblue javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:18fixed^
+                    1401~9999|1920$font-size:18fixed;padding-left:11fixed">34%</p>
+                    <p class="price javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:13fixed^
+                    721~1400|1320$font-size:16fixed^
+                    1401~9999|1920$font-size:16fixed;padding-left:11fixed">39,000원</p>  
+                </div>
+            </div>      
+        </div>
+
+        <ul class="pagenumber flex_horizontal_Center javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$margin-top:110fixed;margin-bottom:110fixed^
+        721~1400|1320$margin-top:152fixed;margin-bottom:103fixed^
+        1401~9999|1920$margin-top:160fixed;margin-bottom:181fixed">
+            <li class="item flex_horizontal_Center borderstyle_solid javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1320$width:34fixed;height:34fixed;font-size:14fixed;border-width:1fixed">
+            <a href='#'>1</a>
+            </li>
+            <li class="item flex_horizontal_Center borderstyle_solid javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1320$width:34fixed;height:34fixed;font-size:14fixed;border-width:1fixed;margin-left:3fixed">
+            <a href='#'>2</a>
+            </li>
+            <li class="item flex_horizontal_Center borderstyle_solid javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1320$width:34fixed;height:34fixed;font-size:14fixed;border-width:1fixed;margin-left:3fixed">
+            <a href='#'>3</a>
+        </ul>
+    </div>
+</section>
+
+
+<section class="footerTop">
+    <div class="inner  position_relative_normal javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:15response;padding-right:15response;padding-top:14fixed;padding-bottom:15fixed^
+    721~1024|1320$width:1200response;padding-top:47fixed;padding-bottom:51fixed;margin:0 auto;display:block^
+    1025~1400|1320$width:1200response;padding-top:47fixed;padding-bottom:51fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row nowrap^
+    1401~9999|1920$width:1320fixed;padding-top:47fixed;padding-bottom:51fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row nowrap">
+      
+        <div class="customercenter javascript_Css_define"
+        javascript_Css_define="0~720|720$width:100%;display:flex;justify-content:space-between;flex-flow:row nowrap^
+        721~1024|1320$width:100%;display:flex;justify-content:space-between;flex-flow:row nowrap^
+        1025~1400|1320$width:332fixed;flex:0 1 auto^
+        1401~9999|1920$width:332fixed">
+            <div class="wrap">
+                <h3 class="tit javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:14fixed;padding-bottom:18fixed^
+                721~1400|1320$font-size:20fixed;padding-bottom:22fixed^
+                1401~9999|1920$font-size:20fixed;padding-bottom:22fixed">고객센터</h3>
+                <p class="tel javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:22fixed^
+                721~1400|1320$font-size:34fixed^
+                1401~9999|1920$font-size:34fixed">080-700-8802</p>
+                <p class="message javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:10fixed^
+                721~1400|1320$font-size:14fixed;margin-top:11fixed^
+                1401~9999|1920$font-size:14fixed;margin-top:11fixed">
+                평일AM 08:30~PM  17:30 (점심 11:30-12:30)
+                주말 및 공휴 일은 휴무입니다.</p>
+            </div>
+            
+            <div class="linklist  javascript_Css_define"
+            javascript_Css_define="721~1024|1320$display:block^
+            1025~1400|1320$margin-top:22fixed;display:flex^
+            1401~9999|1920$margin-top:22fixed;display:flex">
+                <a href="#" class="display_block borderstyle_solid bordercolor_gray2 javascript_Css_define"
+                javascript_Css_define="0~720|720$width:98fixed;height:30fixed;border-radius:15fixed;display:flex;justify-content:center;font-size:12fixed;border-width:1fixed;align-items:center^
+                721~1400|1320$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;align-items:center^
+                1401~9999|1920$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;align-items:center">1:1문의</a>
+                <a href="#" class="display_block borderstyle_solid bordercolor_gray2 javascript_Css_define"
+                javascript_Css_define="0~720|720$width:98fixed;height:30fixed;border-radius:15fixed;display:flex;justify-content:center;font-size:12fixed;border-width:1fixed;align-items:center;margin-top:4fixed^
+                721~1024|1320$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;margin-top:4fixed;align-items:center^
+                1025~1400|1320$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;margin-left:10response;align-items:center^
+                1401~9999|1920$width:143fixed;height:45fixed;border-radius:23fixed;display:flex;justify-content:center;font-size:16fixed;border-width:1fixed;margin-left:10response;align-items:center"
+                >자주묻는질문</a>
+            </div>
+        </div>
+
+        <div class="notice javascript_Css_define"
+        javascript_Css_define="0~720|720$width:100%;margin-top:26fixed^
+        721~1024|1320$width:100%;margin-top:32fixed^
+        1025~1400|1320$width:448fixed;padding-left:116fixed;flex:0 1 auto^
+        1401~9999|1920$width:332fixed;margin-left:116fixed"
+        >
+            <ul class="flex_horizontal_flexStart"
+            >
+                <li class="javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:14fixed^
+                721~1400|1320$font-size:20fixed^
+                1401~9999|1920$font-size:20fixed"><a href='#'>공지사항</a>
+                </li>
+                <li class="bgcolor_gray javascript_Css_define"
+                javascript_Css_define="0~720|720$width:1fixed;height:16fixed;margin-left:9response;margin-right:9response^
+                721~1400|1320$width:1fixed;height:16fixed;margin-left:8response;margin-right:8response^
+                1401~9999|1920$width:1fixed;height:16fixed;margin-left:8response;margin-right:8response">
+                </li>
+                <li class="javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:14fixed^
+                721~1400|1320$font-size:20fixed^
+                1401~9999|1920$font-size:20fixed"><a href='#'>이벤트</a>
+                </li>
+            </ul>
+            <ul class="noticelist javascript_Css_define"
+            javascript_Css_define="0~720|720$margin-top:9fixed^
+            721~1400|1320$margin-top:17fixed^
+            1401~9999|1920$margin-top:17fixed">
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed^
+                721~1400|1320$font-size:15fixed^
+                1401~9999|1920$font-size:15fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">10월 카드사 무이자 할부 안내</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.10.04</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">[당첨자 발표] 8월 BEST 리뷰</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.09.08</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">9월 카드사 무이자 할부 안내</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.09.01</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">[당첨자 발표] 7월 BEST 리뷰</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.08.05</p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:4fixed^
+                721~1400|1320$font-size:15fixed;margin-top:12fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:12fixed">
+                    <span class="display_block bgcolor_black javascript_Css_define"
+                    javascript_Css_define="0~720|720$width:2fixed;height:2fixed;border-radius:50%^
+                    721~1400|1320$width:2fixed;height:2fixed;border-radius:50%^
+                    1401~9999|1920$width:2fixed;height:2fixed;border-radius:50%"></span>
+                    <p class="javascript_Css_define
+                    mobile_textoverflow_prevent_singlerow   tablet_textoverflow_prevent_singlerow pc_textoverflow_prevent_singlerow"
+                    javascript_Css_define="0~720|720$padding-left:8response;width:122fixed;height:15fixed^
+                    721~1400|1320$padding-left:8fixed;width:128fixed;height:22fixed^
+                    1401~9999|1920$padding-left:8fixed;width:128fixed;height:22fixed">8월 카드사 무이자 할부 안내</p>
+                    <p class="javascript_Css_define
+                    tablet_textoverflow_prevent_singlerow 
+                    pc_textoverflow_prevent_singlerow"javascript_Css_define="0~720|720$width:52fixed;height:15fixed;flex:1 0 auto;text-align:right^
+                    721~1024|1320$width:73fixed;flex:1 0 auto;text-align:right;height:22fixed^
+                    1025~1400|1320$margin-left:90response;width:73fixed;height:22fixed^
+                    1401~9999|1920$margin-left:90response;width:73fixed;height:22fixed"
+                    >2022.07.30</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="nutine javascript_Css_define"
+        javascript_Css_define="0~720|720$margin-top:33fixed^
+        721~1024|1320$width:192fixed;margin-top:33fixed^
+        1025~1400|1320$width:192fixed;padding-left:120fixed;flex:0 1 auto^
+        1401~9999|1920$margin-left:120fixed"
+         >
+            <h3 class="tit javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:14fixed;padding-bottom:5fixed^
+            721~1400|1320$font-size:20fixed;padding-bottom:17fixed^
+            1401~9999|1920$font-size:20fixed;padding-bottom:17fixed">Nutine</h3>
+            <ul class="nutinelist">
+                <li class="item javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed^
+                721~1400|1320$font-size:15fixed^
+                1401~9999|1920$font-size:15fixed"><a href='#'>미디어</a></li>
+                <li class="item javascript_Css_define"
+                javascript_Css_define="0~720|720$font-size:12fixed;margin-top:5fixed^
+                721~1400|1320$font-size:15fixed;margin-top:11fixed^
+                1401~9999|1920$font-size:15fixed;margin-top:11fixed"><a href='#'>프레스</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer class="bgcolor_graywhite">
+    <div class="inner  borderstyle_solid bordercolorgray2 position_relative_normal javascript_Css_define"
+    javascript_Css_define="0~720|720$padding-left:14response;padding-top:34fixed;padding-right:24response;padding-bottom:125fixed;border-top-width:1fixed^
+    721~1400|1320$padding-left:66response;padding-top:34fixed;padding-right:190response;padding-bottom:73fixed;border-top-width:1fixed^
+    1401~9999|1920$width:1320fixed;margin:0 auto;padding-top:34fixed;padding-bottom:73fixed;border-top-width:1fixed">
+        <ul class="footermenu fontweight_600 flex_horizontal_flexStart">
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>회사소개</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>이용약관</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>개인정보처리방침</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>사이트이용</a>
+            </li>
+            <li class="item colorgray javascript_Css_define"
+            javascript_Css_define="0~720|720$font-size:13fixed;margin-right:16response^
+            721~1400|1320$font-size:16fixed;margin-right:25response^
+            1401~9999|1920$font-size:16fixed;margin-right:25response">
+                <a href='#'>대량구매/제휴문의</a>
+            </li>
+        </ul>
+        <p class="infom colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:38fixed^
+        721~1400|1320$font-size:13fixed;margin-top:35fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:35fixed">
+        상호명 : 에이치케이이노엔(주) 대표자 : 곽달원 주소 : 충청북도 청주시 흥덕구 오송읍 오송생명2로 239 / 서울지사 : 서울특별시 중구 을지로 100, 6층,7층,8층 (을지로2가, 파인에비뉴 에이동)
+        </p>
+        <p class="infom colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:18fixed^
+        721~1400|1320$font-size:13fixed;margin-top:13fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:13fixed">
+        사업자등록번호 : 201-86-38914 사업자번호조회 > 통신판매업신고번호 : 제2019-서울중구-1517호
+        </p>
+        <p class="infom colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:18fixed^
+        721~1400|1320$font-size:13fixed;margin-top:13fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:13fixed">
+        개인정보 보호책임자 : 서무정 FAX : 080-700-8802 TEL : 080-700-8802 E-mail : nutine@mynutine.com
+        </p>
+        <p class="copyright colorgray javascript_Css_define"
+        javascript_Css_define="0~720|720$font-size:11fixed;margin-top:18fixed^
+        721~1400|1320$font-size:13fixed;margin-top:13fixed^
+        1401~9999|1920$font-size:13fixed;margin-top:28fixed">
+        COPYRIGHT 2022 NUTINE ALL RIGHTS RESERVED.
+        </p>
+
+        <img src="img/ft_logo.png" class="display_block position_absolute javascript_Css_define"
+        javascript_Css_define="0~720|720$width:80fixed;height:20fixed;left:15response;bottom:50response^
+        721~1400|1320$width:116fixed;height:29fixed;right:66response;top:163fixed^
+        1401~9999|1920$width:116fixed;height:29fixed;right:0;top:163fixed"/>
+    </div>
+</footer>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/common_function.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+<script src="js/widthcalculatepercentLayout.js"></script>
+<script src="js/collapseLayout.js"></script>
+</body>
+</html>
