@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+
+<body>
+<div id="pageLoader">
+    <img src="img/Circle-Loading.svg"/>
+</div> 
+<header class=" javascript_Css_define position_absolute zindex50"javascript_Css_define="
+0~600|600$width:100%,padding-left:13response,padding-right:30response,padding-top:13fixed,padding-bottom:13fixed^
+601~1400|1200$width:100%,padding-left:18response,padding-right:40response,padding-top:18fixed,padding-bottom:18fixed^
+1401~9999|1920$width:100%,padding-left:98response,padding-right:122response,padding-top:33fixed,padding-bottom:33fixed,left:0,top:0">
+    <div class="search_area bgcolor_purple1 color_white zindex9999 javascript_Css_define"
+    javascript_Css_define="
+    0~600|600$position:absolute,width:100%,padding-top:80fixed,padding-bottom:60fixed,top:0,left:0^
+    601~1400|1200$position:absolute,width:100%,padding-top:120fixed,padding-bottom:90fixed,top:0,left:0^
+    1401~9999|1920$position:absolute,width:100%,padding-top:160fixed,padding-bottom:120fixed,top:0,left:0"
+
+    targetindex="slidedownEffectTarget0_search|slideupEffectTarget0_search"
+    style="display:none">
+        <div class="inner
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$width:90%,margin:0 auto^
+            601~1400|1200$width:520fixed^
+            1401~9999|1920$width:520fixed">
+                <div class="searchwrap  position_relative_normal colorwhite display_block javascript_Css_define
+                mobile_flex_horizontal_spaceBetween tablet_flex_horizontal_spaceBetween  pc_flex_horizontal_spaceBetween "
+                javascript_Css_define="
+                0~600|600$width:100%^
+                601~1400|1200$width:520fixed^
+                1401~9999|1920$width:520fixed">
+                    <input type="search" name="search_keyword" class="display_block colorwhite javascript_Css_define"
+                    javascript_Css_define="
+                    0~600|600$font-size:15fixed,line-heigh:1.5,width:80%,padding-left:20response,padding-right:20response^
+                    601~1400|1200$font-size:18fixed,line-heigh:1.5,width:80%,padding-left:20fixed,padding-right:20fixed^
+                    1401~9999|1920$font-size:18fixed,line-heigh:1.5,width:80%,padding-left:20fixed,padding-right:20fixed"
+                    targetindex="searchform_inputkeyword" placeholder="검색어를 입력해 주세요"/>
+                    <button  class="display_block bgcolor_transparent javascript_Css_define cursorpointer"
+                    javascript_Css_define="
+                    0~600|600$width:20fixed,height:20fixed,margin-right:20response^
+                    601~1400|1200$width:20fixed,height:20fixed,margin-right:20response^
+                    1401~9999|1920$width:20fixed,height:20fixed,margin-right:20response">
+                        <img src="img/searchwhite.svg" class="display_block 
+                        mobile_width_100_percent mobile_height_100_percent
+                        tablet_width_100_percent tablet_height_100_percent
+                        pc_width_100_percent pc_height_100_percent"/>
+                    </button>
+                    <span class="display_block bgcolor_white  javascript_Css_define"
+                    javascript_Css_define="
+                    0~600|600$height:1fixed,width:100%,margin-top:16fixed^
+                    601~1400|1200$height:1fixed,width:100%,margin-top:20fixed^
+                    1401~9999|1920$height:1fixed,width:100%,margin-top:20fixed"></span>
+                </div>
+            </form>
+
+            <img src="img/xbutton2.svg" class="display_block cursorpointer javascript_Css_define             javascript_effectTrigger"javascript_Css_define="
+            0~600|600$width:28fixed,height:28fixed,margin-top:60px !important,margin:0 auto^
+            601~1400|1200$width:32fixed,height:32fixed,margin-left:50response^
+            1401~9999|1920$width:32fixed,height:32fixed,margin-left:200response"
+            targetdata='{"effectTarget":"slideupEffectTarget0_search","event_per_effects":{"click":"slideup_simple"}}'/>
+        </div>
+   </div>
+   <div class="innerContent flex_nowrap
+   mobile_flex_horizontal_spaceBetween mobile_flex_nowrap
+   tablet_flex_horizontal_spaceBetween tablet_flex_nowrap
+   pc_flex_horizontal_spaceBetween pc_flex_nowrap">
+        <h2 class="siteLogo javascript_Css_define colorwhite flex_horizontal_flexStart flex_alignitems_flexEnd
+        mobile_flex_shrink0 
+        tablet_flex_shrink0
+        pc_flex_shrink0">
+            <span class="javascript_Css_define"javascript_Css_define="
+            0~600|600$font-size:33fixed,letter-spacing:-0.2px,line-height:1^
+            601~1400|1200$font-size:54fixed,letter-spacing:-0.2px,line-height:1^
+            1401~9999|1920$font-size:56fixed,letter-spacing:-0.2px,line-height:1">
+            <a href='mainNew.html'>SL</a>
+            </span>
+            <span class="javascript_Css_define"javascript_Css_define="
+            0~600|600$font-size:22fixed,letter-spacing:0.3px,line-height:1,padding-left:4response^
+            601~1400|1200$font-size:30fixed,letter-spacing:0.3px,line-height:1,padding-left:4response^
+            1401~9999|1920$font-size:34fixed,letter-spacing:0.3px,line-height:1,padding-left:4response">
+            <a href='mainNew.html'>STUDIO</a>
+            </span>
+        </h2>
+        <ul class="headermenu colorwhite javascript_Css_define
+        pc_flex_horizontal_flexStart pc_flex_shrink1 pc_flex_nowrap"javascript_Css_define="
+        0~600|600$display:none^
+        601~1400|1200$display:none^
+        1401~9999|1920$display:flex">
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header0","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header0"
+                >
+                    <li><a href='#'>SL STUDIO</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>GREETING</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>FACILITY</a></li>
+                </ul>
+                <a href='#' class="position_relative_normal">ABOUT</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header1","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header1"
+                >
+                    <li></li>
+                </ul>
+                <a href='subNew.html' class="position_relative_normal">TRAINER</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header2","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header2"
+                >
+                    <li></li>
+                </ul>
+                <a href='#' class="position_relative_normal">CLASS</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header3","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header3"
+                >
+                    <li></li>
+                </ul>
+                <a href='#' class="position_relative_normal">AUDITION</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header4","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header4"
+                >
+                    <li></li>
+                </ul>
+                <a href='#' class="position_relative_normal">KIDS</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header5","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header5"
+                >
+                    <li><a href='#'>PHOTO</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>VIDEO</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>GLOBAL CAMP</a></li>
+                </ul>
+                <a href='#' class="position_relative_normal">ARCHIVE</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header6","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header6"
+                >
+                    <li><a href='#'>NEWS</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>FAQ</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>CONTACT</a></li>
+                </ul>
+                <a href='#' class="position_relative_normal">NOTICE</a>
+            </li>
+        </ul>
+        <ul class="usermenu flex_horizontal_flexStart
+        mobile_flex_shrink0 tablet_flex_shrink0 pc_flex_shrink0">
+            <li class="item">
+                <img src="img/share.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:19fixed,height:19fixed^
+                601~1400|1200$width:19fixed,height:19fixed^
+                1401~9999|1920$width:19fixed,height:19fixed"/>
+            </li>
+            <li class="item javascript_Css_define cursorpointer"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:20response^
+            1401~9999|1920$margin-left:40response">
+                <img src="img/searchwhite.svg" class="display_block javascript_Css_define javascript_effectTrigger"javascript_Css_define="
+                0~600|600$width:23fixed,height:23fixed^
+                601~1400|1200$width:23fixed,height:23fixed^
+                1401~9999|1920$width:23fixed,height:23fixed"
+                targetdata='{"effectTarget":"slidedownEffectTarget0_search","event_per_effects":{"click":"slidedown_simple"}}'/>
+            </li>
+            <li class="item javascript_Css_define cursorpointer"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:20response^
+            1401~9999|1920$display:none">
+                <img src="img/menuIcon2.svg" class="display_block javascript_Css_define 
+                javascript_moveTrigger
+                javascript_viewunviewTrigger"javascript_Css_define="
+                0~600|600$width:28fixed,height:23fixed^
+                601~1400|1200$width:28fixed,height:23fixed" targetdata='{"moveTarget":"slstudio_navigation","moveto":"left|0%","viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+            </li>
+        </ul>
+   </div>
+</header>
+<div class="popupbg
+javascript_moveTrigger
+javascript_viewunviewTrigger"
+            
+targetdata='{"moveTarget":"slstudio_navigation","moveto":"left|-160%","viewunviewTarget":"navBg","viewunviewto":"none"}'
+targetindex="navBg" 
+style="display:none"></div>
+<nav class="Nav position_fixed bgcolor_purple1 zindex999 height_100vh javascript_Css_define"javascript_Css_define="
+0~600|600$width:600response,top:0,left:0^
+601~1400|1200$width:600fixed,top:0,left:0^
+1401~9999|1920$width:720fixed,top:0,left:0"
+targetindex="slstudio_navigation"
+style="left:-160%;">
+    
+    <img src="img/xButton.svg" class="display_block position_absolute javascript_Css_define 
+    javascript_moveTrigger
+    javascript_viewunviewTrigger"
+    javascript_Css_define="
+    0~600|600$right:40fixed,top:40fixed,width:20fixed,height:20fixed^
+    601~1400|1200$right:40fixed,top:40fixed,width:20fixed,height:20fixed^
+    1401~9999|1920$right:40fixed,top:40fixed,width:20fixed,height:20fixed"
+    targetdata='{"moveTarget":"slstudio_navigation","moveto":"left|-160%","viewunviewTarget":"navBg","viewunviewto":"none"}'/>
+    <ul class="navmenu colorwhite javascript_Css_define"javascript_Css_define="
+    0~600|600$padding-left:20response,padding-right:22response,top:122fixed,font-size:23px^
+    601~1400|1200$padding-left:20response,padding-right:22response,top:122fixed,font-size:23px^
+    1401~9999|1920$padding-left:20response,padding-right:22response,top:122fixed,font-size:23px">
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$padding-top:140fixed^
+        601~1400|1200$padding-top:140fixed^
+        1401~9999|1920$padding-top:140fixed">
+           <a href='#'>ABOUT</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='subNew.html'>TRAINER</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>CLASS</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>AUDITION</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>KIDS</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>ARCHIVE</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>NOTICE</a>
+        </li>
+    </ul>
+</nav>
+
+<section class="pageNaviSection position_relative_normal javascript_Css_define colorwhite"javascript_Css_define="
+0~600|600$padding-left:16response,padding-right:16response,padding-top:90fixed,padding-bottom:28fixed^
+601~1400|1200$padding-left:24response,padding-right:24response,padding-top:123fixed,padding-bottom:34fixed^
+1401~9999|1920$padding-left:100response,padding-bottom:67fixed,padding-right:96response,padding-top:263fixed"style="background-image: linear-gradient(-45deg, #8c7ddc, #8dafa1);">
+    <h2 class="pageNav javascript_Css_define"javascript_Css_define="
+    0~600|600$font-size:12fixed,line-height:1,letter-spacing:-0.2px,display:flex,align-items:center^
+    601~1400|1200$font-size:15fixed,line-height:1,letter-spacing:-0.2px,display:flex,align-items:center^
+    1401~9999|1920$font-size:15fixed,line-height:1,letter-spacing:-0.2px,display:flex,align-items:center">
+        <span>HOME</span>
+        <span class="display_block javascript_Css_define bgcolor_white"javascript_Css_define="
+        0~600|600$width:2px,height:2px,border-radius:50%,margin-left:8fixed,margin-right:8fixed^
+        601~1400|1200$width:2px,height:2px,border-radius:50%,margin-left:12fixed,margin-right:12fixed^
+        1401~9999|1920$width:2px,height:2px,border-radius:50%,margin-left:12fixed,margin-right:12fixed"></span>
+        <span>TRAINER</span>
+    </h2>
+    <h3 class="subtits javascript_Css_define"javascript_Css_define="
+    0~600|600$font-size:36fixed,font-weight:600,letter-spacing:-0.2fixed,margin-top:11fixed^
+    601~1400|1200$font-size:60fixed,font-weight:600,letter-spacing:-0.2fixed,margin-top:21fixed^
+    1401~9999|1920$font-size:70fixed,font-weight:600,letter-spacing:-0.2fixed,margin-top:46fixed">TRAINER</h3>
+
+    <ul class="snslink flex_horizontal_flexStart javascript_Css_define"javascript_Css_define="
+    0~600|600$position:relative,margin-top:32fixed^
+    601~1400|1200$position:absolute,bottom:40fixed,right:23response^
+    1401~9999|1920$position:absolute,bottom:74fixed,right:96response">
+        <li class="item">
+            <img src="img/katokIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~600|600$width:26fixed,height:24fixed^
+            601~1400|1200$width:26fixed,height:24fixed^
+            1401~9999|1920$width:26fixed,height:24fixed"/>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-left:20response^
+        601~1400|1200$margin-left:35response^
+        1401~9999|1920$margin-left:58response">
+            <img src="img/facebookicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~600|600$width:11fixed,height:22fixed^
+            601~1400|1200$width:11fixed,height:22fixed^
+            1401~9999|1920$width:11fixed,height:22fixed"/>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-left:20response^
+        601~1400|1200$margin-left:35response^
+        1401~9999|1920$margin-left:58response">
+            <img src="img/instaIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~600|600$width:22fixed,height:22fixed^
+            601~1400|1200$width:22fixed,height:22fixed^
+            1401~9999|1920$width:22fixed,height:22fixed"/>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-left:20response^
+        601~1400|1200$margin-left:35response^
+        1401~9999|1920$margin-left:58response">
+            <img src="img/utubeicon_.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~600|600$width:28fixed,height:22fixed^
+            601~1400|1200$width:28fixed,height:22fixed^
+            1401~9999|1920$width:28fixed,height:21fixed"/>
+        </li>
+    </ul>
+</section>
+
+<section class="section1 javascript_Css_define"javascript_Css_define="
+0~600|600$padding-top:33fixed,width:570response,margin:0 auto^
+601~1400|1200$padding-top:60fixed,width:1150response,margin:0 auto^
+1401~9999|1920$padding-top:150fixed,width:1860response,margin:0 auto">
+    <ul class="list_cond  javascript_Css_define
+    mobile_Xoverflow_horizontal_list tablet_Xoverflow_horizontal_list_scrollvisible pc_flex_horizontal_flexStart"
+    javascript_Css_define="
+    0~600|600$padding-bottom:23fixed^
+    601~1400|1200$padding-bottom:40fixed^
+    1401~9999|1920$padding-bottom:40fixed">
+        <li class="item bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:15fixed,padding-left:14response,padding-right:14response,height:27fixed,border-radius:13fixed^
+        601~1400|1200$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed^
+        1401~9999|1920$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed">
+        <a href='#'>ALL</a>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:15fixed,padding-left:14response,padding-right:14response,height:27fixed,border-radius:13fixed^
+        601~1400|1200$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed^
+        1401~9999|1920$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed">
+        <a href='#'>Vocal</a>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:15fixed,padding-left:14response,padding-right:14response,height:27fixed,border-radius:13fixed^
+        601~1400|1200$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed^
+        1401~9999|1920$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed">
+        <a href='#'>Dance</a>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:15fixed,padding-left:14response,padding-right:14response,height:27fixed,border-radius:13fixed^
+        601~1400|1200$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed^
+        1401~9999|1920$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed">
+        <a href='#'>Instrument</a>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:15fixed,padding-left:14response,padding-right:14response,height:27fixed,border-radius:13fixed^
+        601~1400|1200$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed^
+        1401~9999|1920$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed">
+        <a href='#'>Acting</a>
+        </li>
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:15fixed,padding-left:14response,padding-right:14response,height:27fixed,border-radius:13fixed^
+        601~1400|1200$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed^
+        1401~9999|1920$font-size:25fixed,padding-left:40response,padding-right:40response,height:45fixed,border-radius:22fixed">
+        <a href='#'>Special</a>
+        </li>
+    </ul>
+
+    <div class="listArea flex_horizontal_flexStart flex_alignitems_flexStart javascript_Css_define
+    javascript_widthcalculatePercent_layout2"
+    javascript_Css_define="
+    0~600|600$padding-bottom:60fixed^
+    601~1400|1200$padding-bottom:210fixed^
+    1401~9999|1920$padding-bottom:210fixed"
+    adapt_range='{"mobile": "0~600","extra" : "601~1120","tablet" : "1121~1400", "pc" : "1401~1800","extra2" : "1801~9999"}'
+    res_per_column='{"mobile" : 2,"extra" : 3,"tablet" : 4,"pc" : 4,"extra2" : 5}'>
+
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_sdgsd789","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher1.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_sdgsd789"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KIM SOO A</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">김수아</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_sdgde709","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher2.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_sdgde709"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">IN BO RAM</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">인보람</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_Xdgde109","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher3.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_Xdgde109"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">HYUN SAE ROM</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">현새롬</p>
+            </div>
+        </div>
+        
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_cdgde629","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher5.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_cdgde629"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KANG MIN HEE</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">강민희</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_cXdgde549","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher6.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_cXdgde549"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KIM EUN JOONG</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">김은중</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EXdgde168","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher7.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EXdgde168"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">PARK GHA YOUNG</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">박가영</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EXdgde108","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher8.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EXdgde108"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">CHANG PAUL </h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">장규식</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EXdye118","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher9.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EXdye118"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">ANN JUN HYNN</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">안준현</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EXSye113","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher10.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EXSye113"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KIM SU JIN</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">김수진</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EXSye910","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher11.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EXSye910"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KIM YONG JAE</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">김용재</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_oxEye919","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher12.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_oxEye919"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">GO YE JIN</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">고예진</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_oxrre509","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher13.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_oxrre509"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">LEE MI YOUNG</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">이미영</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_XRrre199","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher14.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_XRrre199"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">LEE JI HEON</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">이지헌</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_XRddx569","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher15.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_XRddx569"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KANG HYE RIM</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">강혜림</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_rcRddx569","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher16.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_rcRddx569"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KIM KANG JUN</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">김강준</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EdfRdsf216","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher17.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EdfRdsf216"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">GO SE HYEON</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">고세현</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_EFRRdsf216","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher18.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_EFRRdsf216"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KANG MIN JI</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">강민지</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_XEFRRdsf216","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher19.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_XEFRRdsf216"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">SON NA YOUNG</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">손나영</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_XRDORdTf656","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher20.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_XRDORdTf656"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">LEE BYUNG HOON</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">이병훈</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_dferRdTf620","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher21.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "
+           />
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter 
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            targetindex="fadeEffectTarget_dferRdTf620"
+            >
+                <h4 class="tits javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$font-size:14fixed,width:100%^
+                601~1400|1200$font-size:15fixed,width:100%^
+                1401~9999|1920$font-size:15fixed,width:100%">Acting Trainer</h4>
+                <h2 class="name fontweight_700 javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:23fixed,margin-top:20fixed,width:100%^
+                601~1400|1200$font-size:26fixed,margin-top:20fixed,width:100%^
+                1401~9999|1920$font-size:26fixed,margin-top:20fixed,width:100%">KIM MI JIN</h2>
+                <p class="names  javascript_Css_define"javascript_Css_define="
+                0~600|600$font-size:14fixed,margin-top:6fixed,width:100%^
+                601~1400|1200$font-size:17fixed,margin-top:8fixed,width:100%^
+                1401~9999|1920$font-size:17fixed,margin-top:6fixed,width:100%">김미진</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_9ddgraphic18","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher22.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent"/>
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            
+            targetindex="fadeEffectTarget_9ddgraphic18"
+            >
+                <h4 class="tits
+                mobilefixed_fontsize_14 mobile_width_100_percent
+                tlfixed_fontsize_15 tablet_width_100_percent
+                pcfixed_fontsize_15 pc_width_100_percent">Acting Trainer</h4>
+                <h2 class="name fontweight_700
+                mobilefixed_fontsize_23 mobilefixed_margintop_20 mobile_width_100_percent
+                tlfixed_fontsize_26 tlfixed_margintop_20 tablet_width_100_percent
+                pcfixed_fontsize_26 pcfixed_margintop_20 pc_width_100_percent">CHUN JONG HYUN</h2>
+                <p class="names 
+                mobilefixed_fontsize_14 mobilefixed_margintop_6 mobile_width_100_percent
+                tlfixed_fontsize_17 tlfixed_margintop_8 tablet_width_100_percent
+                pcfixed_fontsize_17 pcfixed_margintop_8 pc_width_100_percent">천종현</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+        targetdata='{"effectTarget":"fadeEffectTarget_computer96","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher23.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent"/>
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            
+            targetindex="fadeEffectTarget_computer96"
+            >
+                <h4 class="tits
+                mobilefixed_fontsize_14 mobile_width_100_percent
+                tlfixed_fontsize_15 tablet_width_100_percent
+                pcfixed_fontsize_15 pc_width_100_percent">Acting Trainer</h4>
+                <h2 class="name fontweight_700
+                mobilefixed_fontsize_23 mobilefixed_margintop_20 mobile_width_100_percent
+                tlfixed_fontsize_26 tlfixed_margintop_20 tablet_width_100_percent
+                pcfixed_fontsize_26 pcfixed_margintop_20 pc_width_100_percent">KIM HWO MIN</h2>
+                <p class="names 
+                mobilefixed_fontsize_14 mobilefixed_margintop_6 mobile_width_100_percent
+                tlfixed_fontsize_17 tlfixed_margintop_8 tablet_width_100_percent
+                pcfixed_fontsize_17 pcfixed_margintop_8 pc_width_100_percent">김효민</p>
+            </div>
+        </div>
+        <div class="widthcalculate_item position_relative_normal javascript_Css_define javascript_effectTrigger"
+        javascript_Css_define="
+        0~600|600$margin-bottom:24response^
+        601~1400|1200$margin-bottom:50fixed^
+        1401~9999|1920$margin-bottom:50fixed"
+
+        targetdata='{"effectTarget":"fadeEffectTarget_computer106","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+            <img src="img/teachers/teacher25.jpg" class="display_block
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent"/>
+            <div class="fadeinEffect position_absolute colorwhite flex_horizontal_Center textalignCenter
+            mobile_width_100_percent mobile_height_100_percent mobile_positionleft_0 mobile_positiontop_0
+            tablet_width_100_percent tablet_height_100_percent tablet_positionleft_0 tablet_positiontop_0
+            pc_width_100_percent pc_height_100_percent pc_positionleft_0 pc_positiontop_0" 
+            style="background:rgba(137,67,255,0.8);display:none;"
+            
+            targetindex="fadeEffectTarget_computer106"
+            >
+                <h4 class="tits
+                mobilefixed_fontsize_14 mobile_width_100_percent
+                tlfixed_fontsize_15 tablet_width_100_percent
+                pcfixed_fontsize_15 pc_width_100_percent">Acting Trainer</h4>
+                <h2 class="name fontweight_700
+                mobilefixed_fontsize_23 mobilefixed_margintop_20 mobile_width_100_percent
+                tlfixed_fontsize_26 tlfixed_margintop_20 tablet_width_100_percent
+                pcfixed_fontsize_26 pcfixed_margintop_20 pc_width_100_percent">JUNG HAE IN</h2>
+                <p class="names 
+                mobilefixed_fontsize_14 mobilefixed_margintop_6 mobile_width_100_percent
+                tlfixed_fontsize_17 tlfixed_margintop_8 tablet_width_100_percent
+                pcfixed_fontsize_17 pcfixed_margintop_8 pc_width_100_percent">정혜인</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer javascript_Css_define position_relative_normal bgcolor_dark colorwhite"javascript_Css_define="
+0~600|600$padding-left:16response,padding-right:16response,padding-top:38fixed,padding-bottom:28fixed^
+601~1400|1200$padding-left:23response,padding-right:80response,padding-top:104fixed,padding-bottom:108fixed^
+1401~9999|1920$padding-left:57response,padding-right:190response,padding-top:110fixed,padding-bottom:88fixed">
+    <div class="inner
+    tablet_flex_horizontal_spaceBetween tablet_flex_alignitems_flexStart
+    pc_flex_horizontal_spaceBetween">
+        <div clsas="wrap">
+            <h4 class="footerTit javascript_Css_define fontweight_800"javascript_Css_define="
+            0~600|600$font-size:18fixed^
+            601~1400|1200$font-size:38fixed^
+            1401~9999|1920$font-size:45fixed">
+            KPOP INCUBATING SYSTEM <br/>SL Studio
+            </h4>
+            <ul class="footerlink javascript_Css_define"javascript_Css_define="
+            0~600|600$display:flex,flex-flow:row nowrap,margin-top:34fixed^
+            601~1400|1200$display:flex,flex-flow:row nowrap,margin-top:68fixed^
+            1401~9999|1920$display:flex,flex-flow:row nowrap,margin-top:38fixed">
+                <li class="footeritem javascript_Css_define"javascript_Css_define="
+                0~600|600$display:flex,flex-flow:row nowrap,font-size:14fixed,line-height:1,letter-spacing:0.8fixed^
+                601~1400|1200$display:flex,flex-flow:row nowrap,font-size:20fixed,line-height:1,letter-spacing:0.8fixed^
+                1401~9999|1920$display:flex,flex-flow:row nowrap,font-size:21fixed,line-height:1,letter-spacing:0.8fixed">
+                    <span>카카오톡 상담</span>
+                    <img src="img/linkIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                    0~600|600$width:22fixed,height:22fixed,margin-left:15response^
+                    601~1400|1200$width:22fixed,height:22fixed,margin-left:15response^
+                    1401~9999|1920$width:22fixed,height:22fixed,margin-left:15response"/>
+                </li>
+                <li class="footeritem javascript_Css_define"javascript_Css_define="
+                0~600|600$display:flex,flex-flow:row nowrap,font-size:14fixed,line-height:1,letter-spacing:0.8fixed,margin-left:35response^
+                601~1400|1200$display:flex,flex-flow:row nowrap,font-size:20fixed,line-height:1,letter-spacing:0.8fixed,margin-left:28response^
+                1401~9999|1920$display:flex,flex-flow:row nowrap,font-size:21fixed,line-height:1,letter-spacing:0.8fixed,margin-left:47response">
+                    <span>1:1 문의</span>
+                    <img src="img/linkIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                    0~600|600$width:22fixed,height:22fixed,margin-left:15response^
+                    601~1400|1200$width:22fixed,height:22fixed,margin-left:15response^
+                    1401~9999|1920$width:22fixed,height:22fixed,margin-left:15response"/>
+                </li>
+            </ul>
+        </div>
+        <div class="footerinfo javascript_Css_define"javascript_Css_define="
+        0~600|600$padding-top:32fixed,font-size:14fixed,line-height:1,letter-spacing:0.9fixed^
+        601~1400|1200$padding-top:24fixed,font-size:19fixed,line-height:1,letter-spacing:0.9fixed^
+        1401~9999|1920$padding-top:21fixed,font-size:21fixed,line-height:1,letter-spacing:0.9fixed">
+            <p >서울시 강남구 압구정로 30길 63-1</p>
+            <p class="javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-top:7fixed^
+            601~1400|1200$margin-top:16fixed^
+            1401~9999|1920$margin-top:18fixed">02) 511-7088</p>
+            <p class="javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-top:7fixed^
+            601~1400|1200$margin-top:16fixed^
+            1401~9999|1920$margin-top:18fixed">slstudiotraning@gmail.com</p>
+        </div>
+    </div>
+    <div class="inner javascript_Css_define"javascript_Css_define="
+    0~600|600$padding-top:43fixed^
+    601~1400|1200$padding-top:90fixed,display:flex^
+    1401~9999|1920$padding-top:62fixed,display:flex">
+        <div class="familySite javascript_Css_define"javascript_Css_define="
+        0~600|600$display:flex,flex-flow:row nowrap,align-items:flex-start,font-size:13fixed,line-height:1,letter-spacing:0.6fixed^
+        601~1400|1200$display:flex,flex-flow:row nowrap,align-items:flex-start,font-size:18fixed,line-height:1,letter-spacing:0.6fixed^
+        1401~9999|1920$display:flex,flex-flow:row nowrap,align-items:flex-start,font-size:18fixed,line-height:1,letter-spacing:0.6fixed">
+            <span>Family Site</span>
+            <img src="img/arrowupicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~600|600$width:10fixed,height:6fixed,margin-left:36response^
+            601~1400|1200$width:16fixed,height:9fixed,margin-left:32response^
+            1401~9999|1920$width:16fixed,height:9fixed,margin-left:32response"/>
+        </div>
+        <ul class="snslink flex_horizontal_flexStart javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:43fixed^
+        601~1400|1200$margin-left:92response^
+        1401~9999|1920$margin-left:87response">
+            <li class="item">
+                <img src="img/katokIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:26fixed,height:24fixed^
+                601~1400|1200$width:26fixed,height:24fixed^
+                1401~9999|1920$width:26fixed,height:24fixed"/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:35response^
+            1401~9999|1920$margin-left:38response">
+                <img src="img/facebookicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:11fixed,height:22fixed^
+                601~1400|1200$width:11fixed,height:22fixed^
+                1401~9999|1920$width:11fixed,height:22fixed"/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:35response^
+            1401~9999|1920$margin-left:38response">
+                <img src="img/instaIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:22fixed,height:22fixed^
+                601~1400|1200$width:22fixed,height:22fixed^
+                1401~9999|1920$width:22fixed,height:22fixed"/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:35response^
+            1401~9999|1920$margin-left:38response">
+                <img src="img/utubeicon_.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:28fixed,height:22fixed^
+                601~1400|1200$width:28fixed,height:22fixed^
+                1401~9999|1920$width:28fixed,height:21fixed"/>
+            </li>
+        </ul>
+        <p class="copyright javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:12fixed,line-height:1,letter-spacing:0.3fixed,margin-top:61fixed^
+        601~1400|1200$flex:1 0 auto,font-size:21fixed,line-height:1,letter-spacing:0.9fixed,text-align:right^
+        1401~9999|1920$flex:1 0 auto,font-size:21fixed,line-height:1,letter-spacing:0.9fixed,text-align:right">© SL STUDIO.</p>
+    </div>
+</footer>
+<script src="js/common_function.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/widthcalculatepercentLayout.js"></script>
+<script src="granim.js-2.0.0/dist/granim.js"></script>
+
+
+</body>
+</html>

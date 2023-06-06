@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body >
+<div id="pageLoader">
+    <img src="img/Circle-Loading.svg"/>
+</div> 
+
+<header class=" javascript_Css_define position_absolute zindex50"javascript_Css_define="
+0~600|600$width:100%,padding-left:13response,padding-right:30response,padding-top:13fixed,padding-bottom:13fixed^
+601~1400|1200$width:100%,padding-left:18response,padding-right:40response,padding-top:18fixed,padding-bottom:18fixed^
+1401~9999|1920$width:100%,padding-left:98response,padding-right:122response,padding-top:33fixed,padding-bottom:33fixed,left:0,top:0">
+    <div class="search_area bgcolor_purple1 color_white zindex9999 javascript_Css_define"
+    javascript_Css_define="
+    0~600|600$position:absolute,width:100%,padding-top:80fixed,padding-bottom:60fixed,top:0,left:0^
+    601~1400|1200$position:absolute,width:100%,padding-top:120fixed,padding-bottom:90fixed,top:0,left:0^
+    1401~9999|1920$position:absolute,width:100%,padding-top:160fixed,padding-bottom:120fixed,top:0,left:0"
+
+    targetindex="slidedownEffectTarget0_search|slideupEffectTarget0_search"
+    style="display:none">
+        <div class="inner
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$width:90%,margin:0 auto^
+            601~1400|1200$width:520fixed^
+            1401~9999|1920$width:520fixed">
+                <div class="searchwrap  position_relative_normal colorwhite display_block javascript_Css_define
+                mobile_flex_horizontal_spaceBetween tablet_flex_horizontal_spaceBetween  pc_flex_horizontal_spaceBetween "
+                javascript_Css_define="
+                0~600|600$width:100%^
+                601~1400|1200$width:520fixed^
+                1401~9999|1920$width:520fixed">
+                    <input type="search" name="search_keyword" class="display_block colorwhite javascript_Css_define"
+                    javascript_Css_define="
+                    0~600|600$font-size:15fixed,line-heigh:1.5,width:80%,padding-left:20response,padding-right:20response^
+                    601~1400|1200$font-size:18fixed,line-heigh:1.5,width:80%,padding-left:20fixed,padding-right:20fixed^
+                    1401~9999|1920$font-size:18fixed,line-heigh:1.5,width:80%,padding-left:20fixed,padding-right:20fixed"
+                    targetindex="searchform_inputkeyword" placeholder="검색어를 입력해 주세요"/>
+                    <button  class="display_block bgcolor_transparent javascript_Css_define cursorpointer"
+                    javascript_Css_define="
+                    0~600|600$width:20fixed,height:20fixed,margin-right:20response^
+                    601~1400|1200$width:20fixed,height:20fixed,margin-right:20response^
+                    1401~9999|1920$width:20fixed,height:20fixed,margin-right:20response">
+                        <img src="img/searchwhite.svg" class="display_block 
+                        mobile_width_100_percent mobile_height_100_percent
+                        tablet_width_100_percent tablet_height_100_percent
+                        pc_width_100_percent pc_height_100_percent"/>
+                    </button>
+                    <span class="display_block bgcolor_white  javascript_Css_define"
+                    javascript_Css_define="
+                    0~600|600$height:1fixed,width:100%,margin-top:16fixed^
+                    601~1400|1200$height:1fixed,width:100%,margin-top:20fixed^
+                    1401~9999|1920$height:1fixed,width:100%,margin-top:20fixed"></span>
+                </div>
+            </form>
+
+            <img src="img/xbutton2.svg" class="display_block cursorpointer javascript_Css_define             javascript_effectTrigger"javascript_Css_define="
+            0~600|600$width:28fixed,height:28fixed,margin-top:60px !important,margin:0 auto^
+            601~1400|1200$width:32fixed,height:32fixed,margin-left:50response^
+            1401~9999|1920$width:32fixed,height:32fixed,margin-left:200response"
+            targetdata='{"effectTarget":"slideupEffectTarget0_search","event_per_effects":{"click":"slideup_simple"}}'/>
+        </div>
+   </div>
+   <div class="innerContent flex_nowrap
+   mobile_flex_horizontal_spaceBetween mobile_flex_nowrap
+   tablet_flex_horizontal_spaceBetween tablet_flex_nowrap
+   pc_flex_horizontal_spaceBetween pc_flex_nowrap">
+        <h2 class="siteLogo javascript_Css_define colorwhite flex_horizontal_flexStart flex_alignitems_flexEnd
+        mobile_flex_shrink0 
+        tablet_flex_shrink0
+        pc_flex_shrink0">
+            <span class="javascript_Css_define"javascript_Css_define="
+            0~600|600$font-size:33fixed,letter-spacing:-0.2px,line-height:1^
+            601~1400|1200$font-size:54fixed,letter-spacing:-0.2px,line-height:1^
+            1401~9999|1920$font-size:56fixed,letter-spacing:-0.2px,line-height:1">
+            <a href='mainNew.html'>SL</a>
+            </span>
+            <span class="javascript_Css_define"javascript_Css_define="
+            0~600|600$font-size:22fixed,letter-spacing:0.3px,line-height:1,padding-left:4response^
+            601~1400|1200$font-size:30fixed,letter-spacing:0.3px,line-height:1,padding-left:4response^
+            1401~9999|1920$font-size:34fixed,letter-spacing:0.3px,line-height:1,padding-left:4response">
+            <a href='mainNew.html'>STUDIO</a>
+            </span>
+        </h2>
+        <ul class="headermenu colorwhite javascript_Css_define
+        pc_flex_horizontal_flexStart pc_flex_shrink1 pc_flex_nowrap"javascript_Css_define="
+        0~600|600$display:none^
+        601~1400|1200$display:none^
+        1401~9999|1920$display:flex">
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header0","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header0"
+                >
+                    <li><a href='#'>SL STUDIO</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>GREETING</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>FACILITY</a></li>
+                </ul>
+                <a href='#' class="position_relative_normal">ABOUT</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header1","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header1"
+                >
+                    <li></li>
+                </ul>
+                <a href='subNew.html' class="position_relative_normal">TRAINER</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header2","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header2"
+                >
+                    <li></li>
+                </ul>
+                <a href='#' class="position_relative_normal">CLASS</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header3","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header3"
+                >
+                    <li></li>
+                </ul>
+                <a href='#' class="position_relative_normal">AUDITION</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header4","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header4"
+                >
+                    <li></li>
+                </ul>
+                <a href='#' class="position_relative_normal">KIDS</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header5","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header5"
+                >
+                    <li><a href='#'>PHOTO</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>VIDEO</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>GLOBAL CAMP</a></li>
+                </ul>
+                <a href='#' class="position_relative_normal">ARCHIVE</a>
+            </li>
+            <li class="item javascript_Css_define javascript_effectTrigger position_relative_normal"javascript_Css_define="
+            0~600|600$display:none^
+            601~1400|1200$display:none^
+            1401~1620|1920$font-size:18fixed,padding-left:40response,padding-right:40response,line-height:1,letter-spacing:-0.2px^
+            1621~9999|1920$font-size:19fixed,padding-left:60response,padding-right:60response,line-height:1,letter-spacing:-0.2px"
+            targetdata='{"effectTarget":"fadeEffectTarget_header6","event_per_effects":{"mouseenter":"fadein_simple","mouseleave":"fadeout_simple"}}'>
+                <ul class="submenu textalignCenter bgcolor_purple1 colorwhite javascript_Css_define"javascript_Css_define="
+                0~600|600$display:none^
+                601~1400|1200$display:none^
+                1401~1620|1200$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none^
+                1621~9999|1920$width:100%,padding-bottom:50fixed,position:absolute,top:-50px,padding-top:120fixed,left:0,right:0,margin:0 auto,display:none" targetindex="fadeEffectTarget_header6"
+                >
+                    <li><a href='#'>NEWS</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>FAQ</a></li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~600|600$display:none^
+                    601~1400|1200$display:none^
+                    1401~1620|1200$margin-top:20fixed^
+                    1621~9999|1920$margin-top:20fixed"><a href='#'>CONTACT</a></li>
+                </ul>
+                <a href='#' class="position_relative_normal">NOTICE</a>
+            </li>
+        </ul>
+        <ul class="usermenu flex_horizontal_flexStart
+        mobile_flex_shrink0 tablet_flex_shrink0 pc_flex_shrink0">
+            <li class="item">
+                <img src="img/share.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:19fixed,height:19fixed^
+                601~1400|1200$width:19fixed,height:19fixed^
+                1401~9999|1920$width:19fixed,height:19fixed"/>
+            </li>
+            <li class="item javascript_Css_define cursorpointer"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:20response^
+            1401~9999|1920$margin-left:40response">
+                <img src="img/searchwhite.svg" class="display_block javascript_Css_define javascript_effectTrigger"javascript_Css_define="
+                0~600|600$width:23fixed,height:23fixed^
+                601~1400|1200$width:23fixed,height:23fixed^
+                1401~9999|1920$width:23fixed,height:23fixed"
+                targetdata='{"effectTarget":"slidedownEffectTarget0_search","event_per_effects":{"click":"slidedown_simple"}}'/>
+            </li>
+            <li class="item javascript_Css_define cursorpointer"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:20response^
+            1401~9999|1920$display:none">
+                <img src="img/menuIcon2.svg" class="display_block javascript_Css_define 
+                javascript_moveTrigger
+                javascript_viewunviewTrigger"javascript_Css_define="
+                0~600|600$width:28fixed,height:23fixed^
+                601~1400|1200$width:28fixed,height:23fixed" targetdata='{"moveTarget":"slstudio_navigation","moveto":"left|0%","viewunviewTarget":"navBg","viewunviewto":"block"}'/>
+            </li>
+        </ul>
+   </div>
+</header>
+<div class="popupbg
+javascript_moveTrigger
+javascript_viewunviewTrigger"
+            
+targetdata='{"moveTarget":"slstudio_navigation","moveto":"left|-160%","viewunviewTarget":"navBg","viewunviewto":"none"}'
+targetindex="navBg" 
+style="display:none"></div>
+<nav class="Nav position_fixed bgcolor_purple1 zindex999 height_100vh javascript_Css_define"javascript_Css_define="
+0~600|600$width:600response,top:0,left:0^
+601~1400|1200$width:600fixed,top:0,left:0^
+1401~9999|1920$width:720fixed,top:0,left:0"
+targetindex="slstudio_navigation"
+style="left:-160%">
+    
+    <img src="img/xButton.svg" class="display_block position_absolute javascript_Css_define 
+    javascript_moveTrigger
+    javascript_viewunviewTrigger"
+    javascript_Css_define="
+    0~600|600$right:40fixed,top:40fixed,width:20fixed,height:20fixed^
+    601~1400|1200$right:40fixed,top:40fixed,width:20fixed,height:20fixed^
+    1401~9999|1920$right:40fixed,top:40fixed,width:20fixed,height:20fixed"
+    targetdata='{"moveTarget":"slstudio_navigation","moveto":"left|-160%","viewunviewTarget":"navBg","viewunviewto":"none"}'/>
+    <ul class="navmenu colorwhite javascript_Css_define"javascript_Css_define="
+    0~600|600$padding-left:20response,padding-right:22response,top:122fixed,font-size:23px^
+    601~1400|1200$padding-left:20response,padding-right:22response,top:122fixed,font-size:23px^
+    1401~9999|1920$padding-left:20response,padding-right:22response,top:122fixed,font-size:23px">
+        <li class="item javascript_Css_define"javascript_Css_define="
+        0~600|600$padding-top:140fixed^
+        601~1400|1200$padding-top:140fixed^
+        1401~9999|1920$padding-top:140fixed">
+           <a href='#'>ABOUT</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='subNew.html'>TRAINER</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>CLASS</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>AUDITION</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>KIDS</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>ARCHIVE</a>
+        </li>
+        <li class="item  javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:40fixed^
+        601~1400|1200$margin-top:40fixed^
+        1401~9999|1920$margin-top:40fixed">
+           <a href='#'>NOTICE</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="WrappingContainer bgcolor_dark">
+    <section class="search_section bgcolor_dark colorwhite javascript_Css_define"
+    javascript_Css_define="
+    0~600|600$padding-top:383fixed,padding-bottom:83fixed,width:570response,margin:0 auto^
+    601~1400|1200$padding-top:550fixed,padding-bottom:150fixed,width:1150response,margin:0 auto^
+    1401~9999|1920$padding-top:550fixed,padding-bottom:150fixed,width:1600response,margin:0 auto">
+        <div class="inner
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$width:90%,margin:0 auto^
+            601~1400|1200$width:520fixed^
+            1401~9999|1920$width:520fixed">
+                <div class="searchwrap  position_relative_normal  display_block borderstyle_solid bordercolorgray2
+                mobile_flex_horizontal_spaceBetween 
+                tablet_flex_horizontal_spaceBetween
+                pc_flex_horizontal_spaceBetween javascript_Css_define"
+                javascript_Css_define="
+                0~600|600$width:100%,padding-top:20fixed,padding-bottom:20fixed,border-radius:20fixed,border-width:1fixed^
+                601~1400|1200$width:520fixed,padding-top:30fixed,padding-bottom:30fixed,border-radius:20fixed,border-width:1fixed^
+                1401~9999|1920$width:520fixed,padding-top:30fixed,padding-bottom:30fixed,border-radius:20fixed,border-width:1fixed">
+                    <input type="search" name="search_keyword" class="display_block  colorwhite javascript_Css_define"
+                    javascript_Css_define="
+                    0~600|600$font-size:15fixed,line-height:1.5,width:80%,padding-left:20response,padding-right:20response^
+                    601~1400|1200$font-size:18fixed,line-height:1.5,width:80%,padding-left:20fixed,padding-right:20fixed^
+                    1401~9999|1920$font-size:18fixed,line-height:1.5,width:80%,padding-left:20fixed,padding-right:20fixed"
+                    targetindex="searchform_inputkeyword|searchpage_intialize_searchkeyword" placeholder="please input search"/>
+                    <button  class="display_block bgcolor_transparent javascript_Css_define"
+                    javascript_Css_define="
+                    0~600|600$width:20fixed,height:20fixed,margin-right:20response^
+                    601~1400|1200$width:20fixed,height:20fixed,margin-right:20fixed^
+                    1401~9999|1920$width:20fixed,height:20fixed,margin-right:20fixed">
+                        <img src="img/searchwhite.svg" class="display_block
+                        mobile_width_100_percent mobile_height_100_percent
+                        tablet_width_100_percent tablet_height_100_percent
+                        pc_width_100_percent pc_height_100_percent"/>
+                    </button>
+                    <!--<span class="display_block bgcolor_white 
+                    mobile_width_100_percent mobilefixed_height_1 mobilefixed_margintop_16
+                    tablet_width_100_percent tlfixed_height_1 tlfixed_margintop_20
+                    pc_width_100_percent pcfixed_height_1 pcfixed_margintop_20 "></span>-->
+                </div>
+            </form>
+
+            <!--<img src="img/xbutton2.svg" class="display_block cursorpointer
+            mobilefixed_width_28 mobilefixed_height_28 mobile_response_margintop_60_important mobile_marginhorizontal_auto
+            tlfixed_width_32 tlfixed_height_32 tl_response_marginleft_50
+            pcfixed_width_32 pcfixed_height_32 pc_response_marginleft_220
+            
+            javascript_effectTrigger"
+            targetdata='{"effectTarget":"slidedownEffectTarget0_search","event_per_effects":{"click":"slideup_simple"}}'/>-->
+        </div>
+        <p class=" textalignCenter javascript_Css_define"
+        javascript_Css_define="
+        0~600|600$font-size:17fixed,margin-top:22fixed^
+        601~1400|1200$font-size:22fixed,margin-top:32fixed^
+        1401~9999|1920$font-size:22fixed,margin-top:32fixed">keyword: <span class="colorblue" targetindex="searchpage_intialize_searchkeyword"></span> to results</p>
+    </section>
+
+    <section class="searchresult bgcolor_dark  colorwhite javascript_Css_define"
+        javascript_Css_define="
+        0~600|600$width:570response,margin:0 auto^
+        601~1400|1200$width:1150response,margin:0 auto^
+        1401~9999|1920$width:1600response,margin:0 auto">
+        <div class="inner
+        ">
+            <h3 class="tits textalignCenter javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$font-size:22fixed,line-height:1.5^
+            601~1400|1200$font-size:38fixed,line-height:1.5^
+            1401~9999|1920$font-size:42fixed,line-height:1.5"> search results</h3>
+            <p class="res_cnt javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$font-size:14fixed^
+            601~1400|1200$font-size:20fixed^
+            1401~9999|1920$font-size:22fixed">total <span targetindex="searchcnt_intialize_value">0</span> cnts</p>
+
+            <span class="display_block bgcolor_white javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$width:100%,height:1fixed,margin-top:10fixed^
+            601~1400|1200$width:100%,height:1fixed,margin-top:16fixed^
+            1401~9999|1920$width:100%,height:1fixed,margin-top:16fixed"></span>
+            <div class="contents javascript_Css_define"
+            javascript_Css_define="
+            0~600|600$padding-top:60fixed,padding-bottom:60fixed^
+            601~1400|1200$padding-top:120fixed,padding-bottom:120fixed^
+            1401~9999|1920$padding-top:120fixed,padding-bottom:120fixed">
+
+            </div>
+        </div>
+        <!--<span class="display_block bgcolor_white javascript_Css_define"
+        javascript_Css_define="
+        0~600|600$width:100%,height:2fixed,margin-top:83fixed^
+        601~1400|1200$width:100%,height:2fixed,margin-top:83fixed^
+        1401~9999|1920$width:100%,height:2fixed,margin-top:83fixed"></span>-->
+    </section>
+
+</div>
+
+
+<footer class="footer javascript_Css_define position_relative_normal bgcolor_dark colorwhite"javascript_Css_define="
+0~600|600$padding-left:16response,padding-right:16response,padding-top:38fixed,padding-bottom:28fixed^
+601~1400|1200$padding-left:23response,padding-right:80response,padding-top:104fixed,padding-bottom:108fixed^
+1401~9999|1920$padding-left:57response,padding-right:190response,padding-top:110fixed,padding-bottom:88fixed">
+    <div class="inner
+    tablet_flex_horizontal_spaceBetween tablet_flex_alignitems_flexStart
+    pc_flex_horizontal_spaceBetween">
+        <div clsas="wrap">
+            <h4 class="footerTit javascript_Css_define fontweight_800"javascript_Css_define="
+            0~600|600$font-size:18fixed^
+            601~1400|1200$font-size:38fixed^
+            1401~9999|1920$font-size:45fixed">
+            KPOP INCUBATING SYSTEM <br/>SL Studio
+            </h4>
+            <ul class="footerlink javascript_Css_define"javascript_Css_define="
+            0~600|600$display:flex,flex-flow:row nowrap,margin-top:34fixed^
+            601~1400|1200$display:flex,flex-flow:row nowrap,margin-top:68fixed^
+            1401~9999|1920$display:flex,flex-flow:row nowrap,margin-top:38fixed">
+                <li class="footeritem javascript_Css_define"javascript_Css_define="
+                0~600|600$display:flex,flex-flow:row nowrap,font-size:14fixed,line-height:1,letter-spacing:0.8fixed^
+                601~1400|1200$display:flex,flex-flow:row nowrap,font-size:20fixed,line-height:1,letter-spacing:0.8fixed^
+                1401~9999|1920$display:flex,flex-flow:row nowrap,font-size:21fixed,line-height:1,letter-spacing:0.8fixed">
+                    <span>카카오톡 상담</span>
+                    <img src="img/linkIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                    0~600|600$width:22fixed,height:22fixed,margin-left:15response^
+                    601~1400|1200$width:22fixed,height:22fixed,margin-left:15response^
+                    1401~9999|1920$width:22fixed,height:22fixed,margin-left:15response"/>
+                </li>
+                <li class="footeritem javascript_Css_define"javascript_Css_define="
+                0~600|600$display:flex,flex-flow:row nowrap,font-size:14fixed,line-height:1,letter-spacing:0.8fixed,margin-left:35response^
+                601~1400|1200$display:flex,flex-flow:row nowrap,font-size:20fixed,line-height:1,letter-spacing:0.8fixed,margin-left:28response^
+                1401~9999|1920$display:flex,flex-flow:row nowrap,font-size:21fixed,line-height:1,letter-spacing:0.8fixed,margin-left:47response">
+                    <span>1:1 문의</span>
+                    <img src="img/linkIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                    0~600|600$width:22fixed,height:22fixed,margin-left:15response^
+                    601~1400|1200$width:22fixed,height:22fixed,margin-left:15response^
+                    1401~9999|1920$width:22fixed,height:22fixed,margin-left:15response"/>
+                </li>
+            </ul>
+        </div>
+        <div class="footerinfo javascript_Css_define"javascript_Css_define="
+        0~600|600$padding-top:32fixed,font-size:14fixed,line-height:1,letter-spacing:0.9fixed^
+        601~1400|1200$padding-top:24fixed,font-size:19fixed,line-height:1,letter-spacing:0.9fixed^
+        1401~9999|1920$padding-top:21fixed,font-size:21fixed,line-height:1,letter-spacing:0.9fixed">
+            <p >서울시 강남구 압구정로 30길 63-1</p>
+            <p class="javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-top:7fixed^
+            601~1400|1200$margin-top:16fixed^
+            1401~9999|1920$margin-top:18fixed">02) 511-7088</p>
+            <p class="javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-top:7fixed^
+            601~1400|1200$margin-top:16fixed^
+            1401~9999|1920$margin-top:18fixed">slstudiotraning@gmail.com</p>
+        </div>
+    </div>
+    <div class="inner javascript_Css_define"javascript_Css_define="
+    0~600|600$padding-top:43fixed^
+    601~1400|1200$padding-top:90fixed,display:flex^
+    1401~9999|1920$padding-top:62fixed,display:flex">
+        <div class="familySite javascript_Css_define"javascript_Css_define="
+        0~600|600$display:flex,flex-flow:row nowrap,align-items:flex-start,font-size:13fixed,line-height:1,letter-spacing:0.6fixed^
+        601~1400|1200$display:flex,flex-flow:row nowrap,align-items:flex-start,font-size:18fixed,line-height:1,letter-spacing:0.6fixed^
+        1401~9999|1920$display:flex,flex-flow:row nowrap,align-items:flex-start,font-size:18fixed,line-height:1,letter-spacing:0.6fixed">
+            <span>Family Site</span>
+            <img src="img/arrowupicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~600|600$width:10fixed,height:6fixed,margin-left:36response^
+            601~1400|1200$width:16fixed,height:9fixed,margin-left:32response^
+            1401~9999|1920$width:16fixed,height:9fixed,margin-left:32response"/>
+        </div>
+        <ul class="snslink flex_horizontal_flexStart javascript_Css_define"javascript_Css_define="
+        0~600|600$margin-top:43fixed^
+        601~1400|1200$margin-left:92response^
+        1401~9999|1920$margin-left:87response">
+            <li class="item">
+                <img src="img/katokIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:26fixed,height:24fixed^
+                601~1400|1200$width:26fixed,height:24fixed^
+                1401~9999|1920$width:26fixed,height:24fixed"/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:35response^
+            1401~9999|1920$margin-left:38response">
+                <img src="img/facebookicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:11fixed,height:22fixed^
+                601~1400|1200$width:11fixed,height:22fixed^
+                1401~9999|1920$width:11fixed,height:22fixed"/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:35response^
+            1401~9999|1920$margin-left:38response">
+                <img src="img/instaIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:22fixed,height:22fixed^
+                601~1400|1200$width:22fixed,height:22fixed^
+                1401~9999|1920$width:22fixed,height:22fixed"/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~600|600$margin-left:16response^
+            601~1400|1200$margin-left:35response^
+            1401~9999|1920$margin-left:38response">
+                <img src="img/utubeicon_.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                0~600|600$width:28fixed,height:22fixed^
+                601~1400|1200$width:28fixed,height:22fixed^
+                1401~9999|1920$width:28fixed,height:21fixed"/>
+            </li>
+        </ul>
+        <p class="copyright javascript_Css_define"javascript_Css_define="
+        0~600|600$font-size:12fixed,line-height:1,letter-spacing:0.3fixed,margin-top:61fixed^
+        601~1400|1200$flex:1 0 auto,font-size:21fixed,line-height:1,letter-spacing:0.9fixed,text-align:right^
+        1401~9999|1920$flex:1 0 auto,font-size:21fixed,line-height:1,letter-spacing:0.9fixed,text-align:right">© SL STUDIO.</p>
+    </div>
+</footer>
+<script src="js/common_function.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+<script src="js/form_related.js"></script>
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/widthcalculatepercentLayout.js"></script>
+<script src="granim.js-2.0.0/dist/granim.js"></script>
+
+</body>
+</html>
