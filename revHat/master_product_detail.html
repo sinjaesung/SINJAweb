@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type='text/javascript' src='js/jquery-1.12.3.min.js'></script>
+  <script type='text/javascript' src='js/common.js'></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li cursorpointer"id='prevPage'><a href="#" class="util-a"><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>행사상품상세</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-left-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="product_detail_container container">
+        <section class="detail_head cursorpointer"onclick="location.href='master_product_detail_popup1.html'">
+            <article class="badge_status">
+                <span class="badge-span warm-span">MD추천</span>
+                <span class="badge-span cold-span">MD추천</span>
+                <span class="badge-span green-span">MD추천</span>
+            </article>
+            <p class='item_tit'>
+                [대한항공/파노라마 IN 북유럽] 스톡시청사(30유로)+플롬(100유로)포함 러시아/북유럽/에스토니아6국 12일 당장 출발[대한항공/파노라마 IN 북유럽] 스톡시청사(30유로)+플롬(100유로)포함 러시아/북유럽/에스토니아6국 12일 당장 출발[대한항공/파노라마 IN 북유럽] 스톡시청사(30유로)+플롬(100유로)포함 러시아/북유럽/에스토니아6국 12일 당장 출발
+            </p>
+            <p class='item_desc'>
+                3月 예약자 예약자 스톡홀름시청사(30€)+플롬(100€)포함(일부날짜 제외) 1.빙하박물관(30€)+암석교회(10유로)포함 2.고객선호1위 & 대한항공직항 3.러시아+북유럽4국+에스토니아 탈린관광3月 예약자 예약자 스톡홀름시청사(30€)+플롬(100€)포함(일부날짜 제외) 1.빙하박물관(30€)+암석교회(10유로)포함 2.고객선호1위 & 대한항공직항 3.러시아+북유럽4국+에스토니아 탈린관광
+            </p>
+            <article class="item_img_area">
+                <img src="images/detail_img_sample.svg" class="img" alt="">
+            </article>
+            <div class="price_info">
+                <span class="txt">상품가격</span>
+                <span class="cond">*성인1인기준</span>
+                <p class="price">
+                    <span class="value">2,500,000</span><span class="txt">원</span>
+                </p>
+            </div>
+        </section>
+        <section class="detail_base">
+            <article class="tit_area">
+                <span class="txt">상품요약정보</span><span class="arrow opened"><img src="images/arrow_icon_black.svg" alt="" class="img"></span>
+            </article>
+            <div class="base_info_element full_visible">
+                <div class="info_item_block margin-bottom-10px">
+                    <dt class="logo logo1"><img src="images/prd_detail_icon1.svg" alt="" class="icon"></dt>
+                    <dd class="subject">예약현황</dd>
+                    <dd class="value">남은 좌석 4석 [최소출발 20명]</dd>
+                </div>
+                <div class="info_item_block margin-bottom-10px">
+                    <dl class="info_item_inlineBlock width_50_percent">
+                        <dt class="logo logo2"><img src="images/prd_detail_icon2.svg" alt="" class="icon"></dt>
+                        <dd class="subject" >쇼핑횟수</dd>
+                        <dd class="value">1회</dd>
+                    </dl>
+                    <dl class="info_item_inlineBlock width_50_percent">
+                        <dt class="logo logo3"><img src="images/prd_detail_icon3.svg" alt="" class="icon"></dt>
+                        <dd class="subject" >여행기간</dd>
+                        <dd class="value">10박 12일</dd>
+                    </dl>
+                </div>
+                <div class='info_item_block margin-bottom-10px'>
+                    <dl class='info_item_inlineBlock width_50_percent'>
+                        <dt class='logo logo4'><img src='images/prd_detail_icon4.svg' alt='' class='icon'></dt>
+                        <dd class='subject'>출발공항</dd>
+                        <dd class='value'>인천공항(ICN)</dd>
+                    </dl>
+                    <dl class='info_item_inlineBlock width_50_percent'>
+                        <dt class='logo logo5'><img src='images/prd_detail_icon5.svg' alt='' class='icon'></dt>
+                        <dd class='subject'>항공편</dd>
+                        <dd class='value padding-left-18px'>제주에어</dd>
+                    </dl>
+                </div>
+                <div class="info_item_block margin-bottom-10px">
+                    <dl class="info_item_inlineBlock width_50_percent">
+                        <dt class="logo logo6"><img src="images/prd_detail_icon6.svg" alt="" class="icon"></dt>
+                        <dd class="subject">출국일</dd>
+                        <dd class="value_block">
+                            <p class="row margin-bottom-4px">출발 . 2020.08.01 (토) 18:00</p>
+                            <p class="row">도착 . 2020.08.02 (일) 08:00</p>
+                        </dd>
+                    </dl>
+                    <dl class='info_item_inlineBlock width_50_percent'>
+                        <dt class='logo logo7'><img src='images/prd_detail_icon7.svg' alt='' class='icon'></dt>
+                        <dd class='subject'>귀국일</dd>
+                        <dd class='value_block'>
+                            <p class='row margin-bottom-4px'>출발 · 2020.08.01 (토) 18:00</p>
+                            <P class='row'>도착 · 2020.08.02 (일) 08:00</p>
+                        </dd>
+                    </dl>
+                </div>
+                <div class='info_item_block margin-bottom-10px'>
+                    <dt class='logo logo8'><img src='images/prd_detail_icon8.svg' alt='' class='icon'></dt>
+                    <dd class='subject'>방문도시</dd>
+                    <dd class='value_block'>
+                        <p class='row multi_row'>
+                            상트페테르부르크-헬싱키-스톡홀롬-칼스타드-오따-게이랑에르-뵈이야-송네-라르달-플롬-베르겐-야일로-오슬로-코펜하겐-스톡홀롬-탈린-상트페테르부르크-모스크바(항공에따라 순서 변경가능)상트페테르부르크-헬싱키-스톡홀롬-칼스타드-오따-게이랑에르-뵈이야-송네-라르달-플롬-베르겐-야일로-오슬로-코펜하겐-스톡홀롬-탈린-상트페테르부르크-모스크바(항공에따라 순서 변경가능)
+                        </p>
+                    </dd>
+                </div>
+                <div class='info_item_block margin-bottom-10px'>
+                    <dt class='logo logo9'><img src='images/prd_detail_icon9.svg' alt='' class='icon'></dt>
+                    <dd class='subject'>여행자보험</dd>
+                    <dd class='value_block'>
+                        <p class='row'>
+                            해외 여행자 보험(한화 손해보험/최대 30억원)
+                        </p>
+                    </dd>
+                </div>
+                <div class='info_item_block margin-bottom-10px'>
+                    <dt class='logo logo10'><img src='images/prd_detail_icon10.svg' alt='' class='icon'></dt>
+                    <dd class='subject'>인솔자정보</dd>
+                    <dd class='value_block'>
+                        <p class='row color1'>현지가이드 있음 or 인솔자 있음</p>
+                        <p class='row multi_row margin-top-6px'>
+                            인솔자가 동반하지 않는 상품입니다. 현지 싱가폴 공항에서 000피켓을 들고있는 가이드를 찾아주세요인솔자가 동반하지 않는 상품입니다. 현지 싱가폴 공항에서 000피켓을 들고있는 가이드를 찾아주세요
+                        </p>
+                    </dd>
+                </div>
+                <div class='info_item_block margin-bottom-10px'>
+                    <dt class='logo logo11'><img src='images/prd_detail_icon11.svg' alt='' class='icon'></dt>
+                    <dd class='subject'>자유일정</dd>
+                    <dd class='value_block'>
+                        <p class='row color1'>있음 or 없음</p>
+                        <p class='row margin-top-6px'>
+                            자유일정을 포함하고 있지 않습니다. 자유롭게 놀수 없어자유일정을 포함하고 있지 않습니다. 자유롭게 놀수 없어
+                        </p>
+                    </dd>
+                </div>
+                <div class='info_item_block margin-bottom-10px'>
+                    <dt class='logo logo12'><img src='images/prd_detail_icon12.svg' alt='' class='icon'></dt>
+                    <dd class='subject'>팁정보</dd>
+                    <dd class='value_block'>
+                        <p class='row color1'>있음 or 없음</p>
+                        <p class='row margin-top-6px'>
+                            자유일정을 포함하고 있지 않습니다. 자유롭게 놀수 없어자유일정을 포함하고 있지 않습니다. 자유롭게 놀수 없어
+                        </p>
+                    </dd>
+                </div>
+            </div>
+            <button class='view_more_btn'>전체보기</button>
+        </section>
+
+        <section class="detail_includes_or_notincludes">
+            <article class="tit_area">
+                <span class="txt">포함/불포함 정보</span>
+                <span class="arrow opened"><img src="images/arrow_icon_black.svg" alt="" class="img"></span>
+            </article>
+            <div class="rel_info_area">
+                <div class="includes_content">
+                    <p class="tit"><span class="txt">포함사항</span><span class="arrow opened"><img src="images/arrow_icon_gray.svg" alt="" class="img"></span></p>
+                    <div class='contents'>
+                        <dl class='items'>
+                            <dt class='dt'>-왕복항공권</dt>
+                            <dd class='dd_txt'>왕복 항공권 및 제세공과금 포함</dd>
+                        </dl>
+                        <dl class='items'>
+                            <dt class='dt'>-유료할증료</dt>
+                            <dd class='dd_txt'>유류할증료 포함</dd>
+                        </dl>
+                        <dl class='items'>
+                            <dt class='dt'>-제세공과금 (공항세,투어리스트 텍스 등)</dt>
+                            <dd class='dd_txt'>왕복 항공권 및 제세공과금 포함</dd>
+                        </dl>
+                        <dl class='items'>
+                            <dt class='dt'>-호텔</dt>
+                            <dd class='dd_txt'>4성급 특급호텔 숙박</dd>
+                        </dl>
+                        <dl class='items margin-bottom-0'>
+                            <dt class='dt'>-크루즈 선실료</dt>
+                            <dd class='dd_txt'>크루즈 선실 이용료 무료</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class='not_includes_content margin-top-10px'>
+                    <p class='tit'><span class='txt'>불포함사항</span><span class='arrow opened'><img src='images/arrow_icon_gray.svg' alt='' class='img'></span></p>
+                    <div class='contents'>
+                        <dl class='items'>
+                            <dt class='dt'>-왕복항공권</dt>
+                            <dd class='dd_txt'>왕복 항공권 및 제세공과금 포함</dd>
+                        </dl>
+                        <dl class='items margin-bottom-0'>
+                            <dt class='dt'>-유료할증료</dt>
+                            <dd class='dd_txt'>유류할증료 포함</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="core_point_highlight local_container">
+            <article class="tit_area">
+                <span class="txt">핵심포인트</span>
+                <span class="arrow opened"><img src="images/arrow_icon_black.svg" alt="" class="img"></span>
+            </article>
+            <div class="rel_info_area">
+                <div class="content1">
+                    <p class="tit"><span class="txt">핵심포인트</span><span class="arrow opened"><img src="images/arrow_icon_gray.svg" alt="" class="img"></span></p>
+                    <dl class="items">
+                        <dd class='dd_txt'>-노쇼핑,노옵션,가이드경비 포함</dd>
+                        <dd class='dd_txt margin-bottom-3px margin-top-3px'>-특급호텔 2박+마리나베이샌즈 1박</dd>
+                        <dd class='dd_txt'>-칠리크랩,카야토스트,슬링 제공</dd>
+                    </dl>
+                </div>
+                <div class="content2">
+                    <p class="tit"><span class="txt">참고사항</span><span class="arrow opended"><img src="iages/arrow_icon_gray.svg" alt="" class="img"></span></p>
+                    <dl class="items">
+                        <dd class='dd_txt'>
+                            - 예약진행 후 연장체류 및 리턴 연장은 불가하며, 최초 예약당시 일정 연장을 원하실 경우 담당자에서 확인하시기바랍니다.
+                        </dd>
+                        <dd class='dd_txt margin-bottom-6px margin-top-6px'>
+                            - 이 상품은 인원에 따라 차량이 배정되며, 지역별/인원별 차량 및 가이드가 배정 됩니다.
+                        </dd>
+                        <dd class='dd_txt'>
+                            - 싱가포르 출/도착 상품은 인솔자가 동행하지 않고, 현지에서 한국인 가이드가 안내해 드립니다.
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+        <section class="detail_img local_container">
+            <article class="tit_area">
+                <span class="txt">상품소개</span>
+            </article>
+            <article class="imgBox part_visible">
+                <img src="images/prd_detail_imgRec.png" alt="" class="img">
+                <button class="view_more_btn">
+                    전체보기
+                </button>
+            </article>
+
+            <article class="tab_area">
+                <ul class="tab_menu_list">
+                    <li class="li"><a href="#" class="li-a">상세일정</a><span class="menu_bar"></span></li><li class="li"><a href="#" class="li-a">쇼핑&선택관광</a></li><li class="li"><a href="#" class="li-a">안전수칙</a></li><li class="li"><a href="#" class="li-a">약관/환불규정</a></li>
+                </ul>
+                <div class="detail_schedule" id="tab_option1">
+                    <ul class="rel_menu">
+                        <li class="li"><a href="#day1" class="li-a">1일차</a></li><li class="li"><a href="#day2" class="li-a">2일차</a></li>
+                        <li class="li"><a href="#day3" class="li-a">3일차</a></li><li class="li"><a href="#day4" class="li-a">4일차</a></li><li class="li"><a href="#day5" class="li-a">5일차</a></li>
+                    </ul>
+                    <div class="day_schedule_area" id="day1">
+                        <p class="tit">
+                            <span class="txt">1일차 (8월 12일)</span><span class="arrow_icon opened"><img src="images/arrow_icon_gray.svg" alt="" class="img"></span>
+                        </p>
+                        <div class="content_element traffic_load">
+                            <span class="traffic_load_line">
+                                <span class="real_line"></span>
+                            </span>
+                            <dl class="date_row airport_traffic_info">
+                                <dt class="subject">
+                                    <div class="iconbox"><img src="images/prd_detail_traffic_icon1.svg" alt="" class="icon icon1"></div>
+                                    <span class='txt'>대한항공 [ZE593] · 인천공항(ICN) → 다낭공항(DAD)대한항공 [ZE593] · 인천공항(ICN) → 다낭공항(DAD)</span>
+                                </dt>
+                                <dd class="time_value">
+                                    소요시간 : 5시간 50분
+                                </dd>
+                                <dd class="message">
+                                   긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급긴급ㅍ긴급긴급
+                                </dd>
+                            </dl>
+                            <dl class='date_row bus traffic_info'>
+                                <dt class='subject'>
+                                    <div class='iconbox'><img src='images/prd_detail_traffic_icon2.svg' alt='' class='icon icon2'></div>
+                                    <span class='txt'>대형버스</span>
+                                </dt>
+                                <dd class='time_value'>
+                                    소요시간 : 1시간 00분
+                                </dd>
+                                <dd class='message'>
+                                    버스를 타고 여행지로 이동합니다.
+                                </dd>
+                            </dl>
+                            <dl class='date_row road traffic_info'>
+                                <dt class='subject'>
+                                    <div class='iconbox'><img src='images/prd_detail_traffic_icon2.svg' alt='' class='icon icon3'></div>
+                                    <span class='txt'>파리시내관광</span>
+                                </dt>
+                                <dd class='message'>
+                                    비올지도 모르니깐 우산 챙기세요
+                                </dd>
+                            </dl>
+                            <div class="description">
+                                <p class="tit">에펠탑</p>
+                                <p class="small_slider">
+                                    <img src="images/prd_detail_sliderImg.svg" alt="" class="img">
+                                    <img src="images/prd_detail_sliderImg.svg" alt="" class="img">
+                                    <img src="images/prd_detail_sliderImg.svg" alt="" class="img">
+                                    <img src="images/prd_detail_sliderImg.svg" alt="" class="img">
+                                </p>
+                                <p class='desc part_visible'>
+                                    에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다.에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다.
+                                </p>
+                                <p class='tip'>
+                                    관광팁: 바가지 조심하세요
+                                </p>
+                                <a href='#' class='view_more_desc'>펼치기</a>
+                            </div>
+                            <div class='description'>
+                                <p class='tit'>개선문</p>
+                                <p class='small_slider'>
+                                    <img src='images/prd_detail_sliderImg.svg' alt='' class='img'>
+                                    <img src='images/prd_detail_sliderImg.svg' alt='' class='img'>
+                                    <img src='images/prd_detail_sliderImg.svg' alt='' class='img'>
+                                    <img src='images/prd_detail_sliderImg.svg' alt='' class='img'>
+                                </p>
+                                <p class='desc full_visible'>
+                                    개선문(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 개선문(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다.개선문(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 개선문(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다. 에펠 탑(프랑스어: Tour Eiffel, [tuʁ ɛfɛl], 영어: Eiffel Tower)은 1889년 파리 마르스 광장에 지어진 탑이다.
+                                </p>
+                                <p class='tip'>
+                                    관광팁: 바가지 조심하세요
+                                </p>
+                                <a href='#' class='view_more_desc'>펼치기</a>
+                            </div>
+                            <dl class="date_row bus traffic_info margin-bottom-0">
+                                <span class="traffic_load_line_hide"></span>
+                                <dt class="subject">
+                                    <div class="iconbox"><img src="images/prd_detail_traffic_icon1.svg" alt="" class="icon icon4"></div>
+                                    <span class="txt">대형버스</span>
+                                </dt>
+                                <dd class="time_value">
+                                    소요시간 : 1시간 00분
+                                </dd>
+                                <dd class="message">
+                                    버스를 타고 여행지로 이동합니다
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="content_element another_info">
+                            <dl class="date_row hotels hotel_info">
+                                <dt class="subject">
+                                    <div class="iconbox"><img src="images/prd_detail_another_icon1.svg" alt="" class="icon icon5"></div>
+                                    <span class="txt">다낭 쉐라톤 호텔 > 다낭 쉐라톤 호텔 > 다낭 쉐라톤 호텔 ></span>
+                                </dt>
+                            </dl>
+                            <dl class="date_row food food_info">
+                                <dt class="subject">
+                                    <div class="iconbox"><img src="images/prd_detail_another_icon2.svg" alt="" class="icon icon6"></div>
+                                    <span class='txt inline_txt'>
+                                        <b class='bold'>조식</b><span class='gray'>한식</span>
+                                    </span>
+                                    <span class='sep_dot'></span>
+                                    <span class='txt inline_txt margin-left-0'>
+                                        <b class='bold'>중식</b><span class='gray'>현지식</span>
+                                    </span>
+                                    <span class='sep_dot'></span>
+                                    <span class='txt inline_txt margin-left-0'>
+                                        <b class='bold'>석식</b><span class='gray'>호텔식</span>
+                                    </span>
+                                </dt>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="day_schedule_area" id="day2">
+                        <p class="tit">
+                            <span class="txt">2일차 (8월 13일)</span><span class="arrow_icon"><img src="images/arrow_icon_gray.svg" alt="" class="img"></span>
+                        </p>
+                    </div>
+                    <div class="day_schedule_area" id="day3">
+                        <p class="tit">
+                            <span class="txt">3일차 (8월 14일)</span><span class="arrow_icon"><img src="images/arrow_icon_gray.svg" alt="" class="img"></span>
+                        </p>
+                    </div>
+                    <div class="day_schedule_area" id="day4">
+                        <p class="tit">
+                            <span class="txt">4일차 (8월 15일)</span><span class="arrow_icon"><img src="images/arrow_icon_gray.svg" alt="" class="img"></span>
+                        </p>
+                    </div>
+                </div><!--tap-opotion1-->
+                
+                <div class="tab_option2_element" id="tab_option2">
+                    <article class="tit_area">
+                        <span class="txt">쇼핑정보</span>
+                    </article>
+                    <div class="content">
+                      
+                        <dl class='items'>
+                            <dt class='dt'>총 쇼핑횟수 1회</dt>
+                        </dl>
+                        <dl class="items">
+                            <dt class="dt">롯데월드타워&몰</dt>
+                            <dd class="dd_txt">
+                                롯데월드타워 몰에는 상점, 카페, 레스토랑, 갤러리, 콘서트 홀이 있습니다. 이 타워는 세계에서 5번째로 제일 높으며 전망대, 스카이워크, 럭셔리한 호텔이 있습니다.
+                            </dd>
+                        </dl>
+                        <dl class='items margin-bottom-0 border-bottom-0 padding-bottom-0'>
+                            <dt class='dt'>롯데월드타워&몰</dt>
+                            <dd class='dd_txt'>
+                                롯데월드타워 몰에는 상점, 카페, 레스토랑, 갤러리, 콘서트 홀이 있습니다. 이 타워는 세계에서 5번째로 제일 높으며 전망대, 스카이워크, 럭셔리한 호텔이 있습니다.
+                            </dd>
+                        </dl>
+                        <p class='message'>
+                            쇼핑을 하지 않으면 그냥 누워 있으면 됩니다.
+                        </p>
+                    </div>
+
+                    <article class="tit_area">
+                        <span class="txt">선택관광</span>
+                    </article>
+                    
+                    <div class="content">
+                        <p class="head_txt">
+                            선택관광 비용은 상품가격에 포함되어 있지 않습니다.
+                            선택관광 미참가시 추가비용 및 일정상 불이익은 없습니다.
+                        </p>
+                        <dl class="items">
+                            <dt class="dt">럭셔리 요트 세일링</dt>
+                            <dd class="dd_txt">
+                                <span class="inline_txt width_50_percent">
+                                    <span class="dot"></span><span class="txt">가격</span><span class="value">200,000 USD</span>
+                                </span>
+                                <span class="inline_txt width_50_percent">
+                                    <span class="dot"></span><span class="txt">결제방법</span><span class="value">현장결제</span>
+                                </span>
+                            </dd>
+                        </dl>
+                        <dl class='items padding-bottom-0 border-bottom-0'>
+                            <dt class='dt'>정글 사파리 투어</dt>
+                            <dd class='dd_txt'>
+                                <span class='inline_txt width_50_percent'>
+                                    <span class='dot'></span><span class='txt'>가격</span><span class='value'>200,000 USD</span>
+                                </span>
+                                <span class='inline_txt width_50_percent'>
+                                    <span class='dot'></span><span class='txt'>결제방법</span><span class='value'>현장결제</span>
+                                </span>
+                            </dd>
+                        </dl>
+                        <p class='message'>
+                            쇼핑을 하지 않으면 그냥 누워 있으면 됩니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tab_option3_element" id="tab_option3">
+                    <article class="tit_area">
+                        <span class="txt">물놀이 안전수칙</span>
+                    </article>
+                    <div class="content">
+                        <dl class="items">
+                            <dt class="dt">물놀이 이전에 먼저 해야 할 것들</dt>
+                            <dd class="dd_txt">
+                                - 반드시 준비운동을 하고 구명조끼를 착용합니다.<br/>
+                                - 피부보호를 위하여 햇빛 차단 크림을 바릅니다.<br/>
+                                - 머리카락이 긴 사람은 묶거나 수영 모자를 쏩니다.<br/>
+                                (* 물놀이 중에 머리카락이 목에 감길 수 있습니다.)
+                            </dd>
+                        </dl>
+                        <dl class="items">
+                            <dt class="dt">물놀이 이전에 먼저 해야 할 것들</dt>
+                            <dd class="dd_txt">
+                                - 물에 들어갈 때는 손, 발 > 다리 > 얼굴 > 가슴의 순서로 몸에 물을 적신 후 천천히 들어갑니다.<br/>
+                                - 물 깊이를 알고 있는 곳에서만 물놀이를 합니다.<br/>
+                                - 다리에 쥐가 나면 즉시 물밖으로 나옵니다.<br/>
+                                - 다음의 증상이 있으면 물놀이 중지합니다.<br/>
+                                . 몸이 떨리거나, 입술이 푸르고 얼굴이 당기는 증상<br/>
+                                . 피부에 소름이 돋을 때<br/>
+                                - 위급할 때는 한쪽 팔을 최대한 높이 올리고 흔들어 도움을 청합니다.<br/>
+                                - 물놀이 중에는 껌이나 사탕을 먹지 않습니다.
+                            </dd>
+                        </dl>
+                    </div>
+
+                    <article class="tit_area">
+                        <span class="txt">위험구역 안전수칙</span>
+                    </article>
+                    <div class="content">
+                        <dl class="items">
+                            <dt class="dt">물놀이 이전에 먼저 해야 할 것들</dt>
+                            <dd class="dd_txt">
+                                - 물에 들어갈 때는 손, 발 > 다리 > 얼굴 > 가슴의 순서로 몸에 물을 적신 후 천천히 들어갑니다.<br/>
+                                - 물 깊이를 알고 있는 곳에서만 물놀이를 합니다.<br/>
+                                - 다리에 쥐가 나면 즉시 물밖으로 나옵니다.<br/>
+                                - 다음의 증상이 있으면 물놀이 중지합니다.
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="tab_option4_element" id="tab_option4">
+                    <ul class="options">
+                        <li class="li active"><a href="#" class="li-a">일반약관</a></li>
+                        <li class="li"><a href="#" class="li-a">특별약관</a></li>
+                    </ul>
+                    <p class='contents'>
+                        ▶ 약관<br/>
+                        상기 상품은 국외여행표준약관(소비자분쟁해결기준)과 달리 국외여행 표준약관 제5조에 의거한 특별약관이 적용되어 별도로 아래와 같은 취소수수료 특약이 적용되며, 별도의 동의 절차를 거치게 됩니다.<br/>
+                        ▶ 항공규정<br/>
+                        ① 항공권 발권 후 예약 변경이나 재발행(영문변경)으로 인하여 발생되는 비용은 항공사 규정에 따릅니다.<br/>
+                        ② 전세기 및 일부 특가 항공권은 예약 확정 또는 항공권 발권 후 취소 시 100% 비용이 부과됩니다.<br/>
+                        ③ 항공사 좌석상황&발권조건에 따라 선발권 요청이 진행될 수 있으며, 발권을 못하는 경우, 항공좌석 불가 또는 운임이 상승 될 수 있습니다.<br/>
+                        ▶ 기간에 따른 취소 환불 규정<br/>
+                        - 여행개시 30일전(~30)까지 취소 통보시 : 예약금 전액 환불 가능<br/>
+                        - 여행개시 20일전(29~20)까지 취소 통보시 : 여행요금의 30% 배상<br/>
+                        - 여행개시 10일전(19~10)까지 취소 통보시 : 여행요금의 60% 배상<br/>
+                        - 여행개시 9일전 - 여행출발 당일까지 : 여행요금의 100% 배상<br/>
+                        ※ 꼭 확인 부탁드립니다.<br/>
+                        ① 항공권 선발권시 발권 후 취소의 경우 기간에 따른 규정 외 발권취소패널티가 부가됩니다.<br/>
+                        ② 호텔파이널(객실선납) 이후는 기간에 따른 규정 외 호텔취소패널티가 부가됩니다.<br/>
+                        ①,② 경우는 예약담당자가 사전공지하며, ‘기간에 따른 취소환불규정’과 무관하게 취소료가 징수될수 있습니다.<br/>
+                        ▶ 취소위약금 증빙 제공 및 계약해제<br/>
+                        고객은 계약취소와 관련하여 취소수수료(여행사 인건비 포함) 부과내역에 대한 구체적인 증빙과 설명을 여행사에 요구할 수 있으며, 여행사는 관련 설명과 증빙을 제시하고 취소수수료 규정과 차액이 있는 경우 환급합니다.<br/>
+                        ※ 행사 진행 중 천재지변 및 불가피한 상황 발생으로 소요되는 비용은 고객님께서 부담하셔야 합니다.<br/>
+                        ※ 취소기준일은 취소를 통지한 날로 여행사과 항공사의 업무특성 상 영업일(월~금-09:00~18:00, 공휴일 제외) 기준입니다.<br/>
+                    </p>
+                </div>
+            </article>
+        </section>
+
+        <section class="review_area">
+            <article class="tit_area">
+                <span class="txt">이용후기</span>
+            </article>
+            <article class="list_content test_full_visible">
+                <div class="list_item cursorpointer"onclick="location.href='master_product_detail_popup2.html'">
+                    <p class="rev_tit">
+                        <span class="txt">싸게 잘 다녀왔어요.</span>
+                        <span class="arrow rotate90">
+                            <img src="images/arrow_icon_gray.svg" alt=""class="img">
+                        </span>
+                    </p>
+                    <p class="rev_string">
+                        저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임
+                    </p>
+                    <p class="rev_user_name">
+                        192932번 고객님.
+                    </p>
+                    <p class="review_hashtags">
+                        #아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다
+                    </p>
+                    <p class="rev_date">
+                        2020.08.13
+                    </p>
+                    <div class="rev_img_area">
+                        <img src="images/prd_detail_reviewImg.png" alt="" class="rev_img">
+                    </div>
+                </div>
+                <div class="list_item cursorpointer"onclick="location.href='master_product_detail_popup2.html'">
+                    <p class="rev_tit">
+                        <span class="txt">싸게 잘 다녀왔어요.</span>
+                        <span class="arrow rotate90">
+                            <img src="images/arrow_icon_gray.svg" alt=""class="img">
+                        </span>
+                    </p>
+                    <p class="rev_string">
+                        저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임
+                    </p>
+                    <p class="rev_user_name">
+                        192932번 고객님.
+                    </p>
+                    <p class="review_hashtags">
+                        #아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다
+                    </p>
+                    <p class="rev_date">
+                        2020.08.13
+                    </p>
+                    <div class="rev_img_area">
+                        <img src="images/prd_detail_reviewImg.png" alt="" class="rev_img">
+                    </div>
+                </div>
+                <div class="list_item cursorpointer"onclick="location.href='master_product_detail_popup2.html'">
+                    <p class="rev_tit">
+                        <span class="txt">싸게 잘 다녀왔어요.</span>
+                        <span class="arrow rotate90">
+                            <img src="images/arrow_icon_gray.svg" alt=""class="img">
+                        </span>
+                    </p>
+                    <p class="rev_string">
+                        저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임저랑 친구 둘이서 다녀왔는데 혹 시나 동남아라서 조금 위험한 감이 없지 않나 싶었는 데 전혀 그런거 못느꼈구! 완전 아임
+                    </p>
+                    <p class="rev_user_name">
+                        192932번 고객님.
+                    </p>
+                    <p class="review_hashtags">
+                        #아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다#아이엠트립 # 진짜재밌어요 #대박 #신난다
+                    </p>
+                    <p class="rev_date">
+                        2020.08.13
+                    </p>
+                    <div class="rev_img_area">
+                        <img src="images/prd_detail_reviewImg.png" alt="" class="rev_img">
+                    </div>
+                </div>
+            </article>
+            <button class="view_more_btn">+ 더보기</button>
+        </section>
+
+        <div class="buy_control_fixed">
+            <button class="close_and_open opened">
+                <img src="images/arrow_icon.svg" alt="" class="icon">
+            </button>
+            <form action="" method="post">
+                <div class="buy_control_form_detail">
+                    <div class="row margin-bottom-10px">
+                        <dl class="cond_control">
+                            <dt class="cond_and_price">
+                                <span class="object">성인</span>
+                                <span class='dot'></span>
+                                <span class='count'>1명</span>
+                            </dt>
+                            <dd class="price">
+                                2,500,000원
+                            </dd>
+                            <input type="hidden" name="adult_count" value="1">
+                        </dl>
+                        <div class="count_control">
+                            <span class="minus_button">-</span>
+                            <span class="value">0</span>
+                            <span class="plus_button">+</span>
+                        </div>
+                    </div>
+                    <div class='row margin-bottom-10px'>
+                        <dl class='cond_control'>
+                            <dt class='cond_and_price'>
+                                <span class='object'>유아</span>
+                                <span class='dot'></span>
+                                <span class='count'>0명</span>
+                            </dt>
+                            <dd class='price'>
+                                2,500,000원
+                            </dd>
+                            <input type='hidden' name='baby_count' value=1>
+                        </dl>
+                        <div class='count_control'>
+                            <span class='minus_button'>-</span>
+                            <span class='value'>0</span>
+                            <span class='plus_button'>+</span>
+                        </div>
+                    </div>
+                    <div class='row last_row'>
+                        <dl class='cond_control'>
+                            <dt class='cond_and_price'>
+                                <span class='object'>아동</span>
+                                <span class='dot'></span>
+                                <span class='count'>1명</span>
+                            </dt>
+                            <dd class='price'>
+                                2,500,000원
+                            </dd>
+                            <input type='hidden' name='kid_count' value=1>
+                        </dl>
+                        <div class='count_control'>
+                            <span class='minus_button'>-</span>
+                            <span class='value'>0</span>
+                            <span class='plus_button'>+</span>
+                        </div>
+                    </div>
+                    <dl class="total_status">
+                        <dt class="tit">총 결제 예정 금액</dt>
+                        <dd class="price">
+                            <span class="value">2,500,000</span><span class="txt">원</span>
+                        </dd>
+                        <dd class="message">
+                            * 상품가/유류할증료/제세공과금 포함
+                        </dd>
+                    </dl>
+                </div>
+                <dl class="base_form">
+                    <dd class="like_btn cursorpointer"onclick='location.href="mypage_likeList.html"'>
+                        <img src="images/like_icon.svg" alt="" class="icon"><span class="span">찜하기</span>
+                    </dd>
+                    <dd class="reserve_btn cursorpointer" onclick='location.href="login_reserveForm_step2.html"'>
+                        (성인1.유아1.아동2) 예약하기
+                    </dd>
+                </dl>
+            </form>
+        </div>
+    </div><!--product detail container-->
+
+    <footer class='footer margin-top-33px'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+      
+</div>
+<script src="js/common.js"></script>
+</body>
+</html>

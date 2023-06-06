@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/comon.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header login_terms_agreement_ver">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"onclick='history.back()'><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>예약하기</h2></li>
+                <li class="util-li float_right display_none"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+                <li class="util-li float_right">
+                    <ul class="agreement_step_list">
+                        <li class="step_item active">
+                            <span class="default_txt display_none">1</span>
+                            <span class="now_step_check">
+                                <img src='images/check_icon.svg' alt='' class='icon'>
+                            </span>
+                        </li>
+                        <li class="step_item middle_step active">
+                            <span class="default_txt display_none">2</span>
+                            <span class="now_step_check">
+                                <img src='images/check_icon.svg' alt='' class='icon'>
+                            </span>
+                        </li>
+                        <li class="step_item">
+                            <span class="default_txt">3</span>
+                        </li>
+                        <li class="horizontal_background_line"></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-left-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="login_container container">
+        <section class="reserve_form_area input_form_area">
+            <form class="reserve_form input_form" action="" method="post">
+                <article class="form_input">
+                    <p class="tit">예약자정보</p>
+                    <p class="input_row">
+                        <span class="form_label">이름</span>
+                        <input type="text" class="input_text_block" name="mem_name" placeholder="이름을 입력해주세요">
+                    </p>
+                    <p class="input_row">
+                        <span class="form_label">전화번호</span>
+                        <span class="select_dropdown pone_frontNum_Select">
+                            <select class="selectbox" name="mem_phone1">
+                                <option value='010' selected>010</option>
+                                <option value='011'>011</option>
+                                <option value='012'>012</option>
+                                <option value='014'>014</option>
+                                <option value='019'>019</option>
+                            </select>
+                            <span class="dropdown_arrow">
+                                <img src="images/arrow_icon_gray.svg" alt="" class="icon">
+                            </span>
+                        </span>
+                        <input type="text" class="input_text_inline middle_margin invalid_error" name="mem_phone2">
+                        <input type="text" class="input_text_inline invalid_error" name="mem_phone3">
+                    </p>
+                    <p class="input_row">
+                        <span class="form_label">이메일</span>
+                        <input type="email" class="input_text_inline2" name="mem_email1" placeholder="e-mail 입력">
+                        <span class="email_txt">@</span>
+                        <span class="select_dropdown_half email_select">
+                            <select class="selectbox" name="mem_email2">
+                                <option value='naver'>naver</option>
+                                <option value='kakao'>kakao</option>
+                                <option value='nate'>nate</option>
+                                <option value='gmail'>gmail</option>
+                                <option value='yahoo'>yahoo</option> 
+                            </select>
+                            <span class="dropdown_arrow">
+                                <img src="images/arrow_icon_gray.svg" alt="" class="icon">
+                            </span>
+                        </span>
+                    </p>
+                    <p class="input_row">
+                        <span class="form_label">생년월일</span>
+                        <span class="select_dropdown year_select">
+                            <select class="selectbox" name="mem_birth_year">
+                                <option value='년도' selected>년도</option>
+                                <option value='1990'>1990</option>
+                                <option value='1991'>1991</option>
+                                <option value='1992'>1992</option>
+                                <option value='1993'>1993</option>
+                                <option value='1994'>1994</option>
+                                <option value='1995'>1995</option>
+                                <option value='1996'>1996</option>
+                                <option value='1997'>1997</option>
+                                <option value='1998'>1998</option>
+                                <option value='1999'>1999</option>
+                                <option value='2000'>2000</option>
+                                <option value='2001'>2001</option>
+                                <option value='2002'>2002</option>
+                            </select>
+                            <span class="dropdown_arrow">
+                                <img src="images/arrow_icon_gray.svg" alt="" class="icon">
+                            </span>
+                        </span>
+                        <span class="select_dropdown month_select">
+                            <select class="selectbox" name="mem_birth_month">
+                                <option value='월' selected>월</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                                <option value='6'>6</option>
+                                <option value='7'>7</option>
+                                <option value='8'>8</option>
+                                <option value='9'>9</option>
+                                <option value='10'>10</option>
+                                <option value='11'>11</option>
+                                <option value='12'>12</option>
+                            </select>
+                            <span class="dropdown_arrow">
+                                <img src="images/arrow_icon_gray.svg" alt="" class="icon">
+                            </span>
+                        </span>
+                        <span class='select_dropdown date_select'>
+                            <select class='selectbox' name='mem_birth_date'>
+                                <option value='일' selected>일</option>
+                                <option value='1'>1</option>
+                                <option value='2'>2</option>
+                                <option value='3'>3</option>
+                                <option value='4'>4</option>
+                                <option value='5'>5</option>
+                                <option value='6'>6</option>
+                                <option value='7'>7</option>
+                                <option value='8'>8</option>
+                                <option value='9'>9</option>
+                                <option value='10'>10</option>
+                                <option value='11'>11</option>
+                                <option value='12'>12</option>
+                            </select>
+                            <span class='dropdown_arrow'>
+                                <img src='images/arrow_icon_gray.svg' alt='' class='icon'>
+                            </span>
+                        </span>
+                    </p>
+                    <p class="input_row">
+                        <span class="form_label">성별</span>
+                        <span class="select_dropdown_full gender_select">
+                            <select class="selectbox" name="mem_gender">
+                                <option value="여" selected>여</option>
+                                <option value="남">남</option>
+                            </select>
+                            <span class="dropdown_arrow">
+                                <img src="images/arrow_icon_gray.svg" alt="" class="icon">
+                            </span>
+                        </span>
+                    </p>
+                    <p class="input_row">
+                        <span class="form_label">국적</span>
+                        <span class="select_dropdown_full country_select">
+                            <select class="selectbox" name="mem_country">
+                                <option value="내국인" selected>내국인</option>
+                                <option value="외국인">외국인</option>
+                            </select>
+                            <span class="dropdown_arrow">
+                                <img src="images/arrow_icon_gray.svg" alt="" class="icon">
+                            </span>
+                        </span>
+                    </p>
+                </article>
+                <article class="reserve_info_status">
+                    <p class="tit">인원정보</p>
+                    <div class="reserve_count_and_price_area">
+                        <dl class="reserve_count_and_price adult">
+                            <dt class="count_and_price">
+                                <span class="count">성인 <span class="dot"></span> <span class="gray">1명</span> </span>
+                                <span class="price">2,500,000원</span>
+                            </dt>
+                            <dd class="count_control">
+                                <span class="minus_button">-</span>
+                                <span class="value">1</span>
+                                <span class="plus_button">+</span>
+                            </dd>
+                            <input type="hidden" name="reserve_adult_count" value="">
+                        </dl>
+                        <dl class="reserve_count_and_price baby">
+                            <dt class="count_and_price">
+                                <span class="count">유아 <span class="dot"></span> <span class="gray">0명</span> </span>
+                                <span class="price">2,500,000원</span>
+                            </dt>
+                            <dd class="count_control">
+                                <span class="minus_button">-</span>
+                                <span class="value">1</span>
+                                <span class="plus_button">+</span>
+                            </dd>
+                            <input type="hidden" name="reserve_baby_count" value="">
+                        </dl>
+                        <dl class="reserve_count_and_price kids">
+                            <dt class="count_and_price">
+                                <span class="count">아동 <span class="dot"></span> <span class="gray">0명</span> </span>
+                                <span class="price">2,500,000원</span>
+                            </dt>
+                            <dd class="count_control">
+                                <span class="minus_button">-</span>
+                                <span class="value">1</span>
+                                <span class="plus_button">+</span>
+                            </dd>
+                            <input type="hidden" name="reserve_kids_count" value="">
+                        </dl>
+                        <span class="sep_border"></span>
+                    </div>
+                    <div class="total_price">
+                        <p class="tit">총 결제 예정 금액</p>
+                        <p class="price"><span class="value">2,500,000</span><span class="txt">원</span></p>
+                        <p class="cond">*상품가/유류할증료/제세공과금 포함</p>
+                        <p class="message">쿠폰 또는 마일리지는 결제화면에서 선택 할 수 있습니다</p>
+                    </div>
+                </article>
+                <article class="reserve_extra_request">
+                    <p class="tit">추가요청사항</p>
+                    <div class="textarea_wrap">
+                        <textarea name="mem_extra_request" class="mem_extra_request_textarea">
+
+                        </textarea>
+                    </div>
+                </article>
+            </form>
+        </section>
+
+        <div class="reserve_form_submit_ctrl_fixed">
+            <div class="info">
+                <dl class="reserve_man_select_total">
+                    <dt class="subject">인원</dt>
+                    <dd class="value">성인2 <span class="dot"></span>유아1 <span class="dot"></span> 아동2</dd>
+                </dl>
+                <p class="total_price_print">총 금액 2,500,000원</p>
+            </div>
+            <div class="submit_ctrl">
+                <input type="reset" class="reset_btn" value="예약취소">
+                <button class="submit_btn"onclick="location.href='login_reserveConfirm_step3.html'">(성인선택안됨)예약하기</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class='footer margin-top-0'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+     
+</div>    
+</body>
+</html>

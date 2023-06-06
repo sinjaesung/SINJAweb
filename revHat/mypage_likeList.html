@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"onclick='history.back()'><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>마이페이지</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="mypage_container container padding-bottom-16px">
+        <section class="mypage_profile_head">
+            <img src="images/mypage_user_symbol.svg" alt="" class="profile_symbol">
+            <p class="user_identity">반갑습니다.{{고객이름}}님</p>
+            <a href="mypage_userinfochangeForm.html" class="user_info_modify">개인정보수정</a>
+        </section>
+        <ul class='mypage_menu'>
+            <li class='menu_item cursorpointer'onclick='location.href="mypage_reserveList.html"'>
+                <img src='images/mypage_menu1.svg' class='menu_icon1' alt=''>
+                <p class='txt'><a href='mypage_reserveList.html'>예약내역</a></p>
+            </li>
+            <li class='menu_item cursorpointer'onclick='location.href="mypage_coupon&mile.html"'>
+                <img src='images/mypage_menu2.svg' class='menu_icon2' alt=''>
+                <p class='txt'><a href='mypage_coupon&mile.html'>쿠폰/마일리지</a></p>
+            </li>
+            <li class='menu_item cursorpointer'onclick='location.href="mypage_questionList.html"'>
+                <img src='images/mypage_menu3.svg' class='menu_icon3' alt=''>
+                <p class='txt'><a href='mypage_questionList.html'>1:1문의</a></p>
+            </li>
+            <li class='menu_item cursorpointer active'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/mypage_menu4_active.svg' class='menu_icon4' alt=''>
+                <p class='txt'><a href='mypage_likeList.html'>찜한상품</a></p>
+            </li>
+        </ul>
+
+        <section class="search_result_area_related">
+            <article class="search_result_head">
+                판매가 중지된 여행상품은 자동으로 삭제됩니다.
+            </article>
+            <article class="search_result_item">
+                <div class="badge_status">
+                    <span class="badge-span warm-span">마감임박</span>
+                    <span class="badge-span cold-span">MD추천</span>
+                    <span class="badge-span green-span">MD추천</span>
+                    <div class="like_button">
+                        <input type="checkbox" class="checkbox_element" value="" id="like_product9"><label class="like_chk" for="like_product9"></label>
+                    </div>
+                </div>
+                <p class='item_tit'>
+                    [오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···
+                </p>
+                <p class='item_desc cursorpointer'onclick='location.href="master_product_detail.html"'>
+                    엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···
+                </p>
+                <div class="hashtags">
+                    <img src="images/hashtag_icon.svg" alt="" class="icon">
+                    <ul class='list'>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#지금 당장갈까??..</a></li>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#지금 당장갈까??..</a></li>
+                    </ul>
+                </div>
+                <div class="extra_info">
+                    <p class="info">
+                        <img src="images/term_icon.svg" alt="" class="icon"><span class="txt">10박 12일</span>
+                    </p>
+                    <span class="dot"></span>
+                    <p class="info">
+                        <img src="images/airport_icon.svg" alt="" class="icon"><span class="txt">아시아나항공</span>
+                    </p>
+                </div>
+                <div class="bottom_info">
+                    <p class='term_date'>
+                        <span class='start_point'>2020-07-02 (목) 08:00</span> ~ 2020-07-10 <span class='weekend blue-color'>(토)</span> 12:00
+                    </p>
+                    <div class='price_and_decide'>
+                        <p class='price'><span class='value'>1,200,000</span><span class='txt'>원</span></p>
+                        <button class='decide_btn decide_status'onclick='location.href="search_result_master_event.html"'>출발확정(잔여:2)</button>
+                    </div>
+                </div>
+            </article>
+            <article class='search_result_item'>
+                <div class='badge_status'>
+                    <span class='badge-span warm-span'>마감임박</span>
+                    <span class='badge-span cold-span'>MD추천</span>
+                    <span class='badge-span green-span'>MD추천</span>
+                    <div class='like_button'>
+                        <input type='checkbox' class='checkbox_element'value='' id='like_product27'><label class='like_chk' for='like_product27'></label>
+                    </div>
+                </div>
+                <p class='item_tit'>
+                    [오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···
+                </p>
+                <p class='item_desc cursorpointer'onclick='location.href="master_product_detail.html"'>
+                    엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···
+                </p>
+                <div class='hashtags'>
+                    <img src='images/hashtag_icon.svg' alt='' class='icon'>
+                    <ul class='list'>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                    </ul>
+                </div>
+                <div class='extra_info'>
+                    <p class='info'>
+                        <img src='images/term_icon.svg' alt='' class='icon'><span class='txt'>10박 12일</span>
+                    </p>
+                    <span class='dot'></span>
+                    <p class='info'>
+                        <img src='images/airport_icon.svg' alt='' class='icon'><span class='txt'>아시아나항공</span>
+                    </p>
+                </div>
+                <div class='bottom_info'>
+                    <p class='term_date'>
+                        <span class='start_point'>2020-07-02 <span class='weekend blue-color'>(토)</span> 08:00</span> ~ 2020-07-10 <span class='weekend blue-color'>(토)</span> 12:00
+                    </p>
+                    <div class='price_and_decide'>
+                        <p class='price'><span class='value'>1,200,000</span><span class='txt'>원</span></p>
+                        <button class='decide_btn possible_status'onclick="location.href='login_reserveForm_step2.html'">예약가능(잔여:99)</button>
+                    </div>
+                </div>
+            </article>
+            <article class='search_result_item'>
+                <div class='badge_status'>
+                    <span class='badge-span warm-span'>마감임박</span>
+                    <span class='badge-span cold-span'>MD추천</span>
+                    <span class='badge-span green-span'>MD추천</span>
+                    <div class='like_button'>
+                        <input type='checkbox' class='checkbox_element'value='' id='like_product5'><label class='like_chk' for='like_product5'></label>
+                    </div>
+                </div>
+                <p class='item_tit'>
+                    [오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···
+                </p>
+                <p class='item_desc cursorpointer'onclick='location.href="master_product_detail.html"'>
+                    엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···
+                </p>
+                <div class='hashtags'>
+                    <img src='images/hashtag_icon.svg' alt='' class='icon'>
+                    <ul class='list'>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                    </ul>
+                </div>
+                <div class='extra_info'>
+                    <p class='info'>
+                        <img src='images/term_icon.svg' alt='' class='icon'><span class='txt'>10박 12일</span>
+                    </p>
+                    <span class='dot'></span>
+                    <p class='info'>
+                        <img src='images/airport_icon.svg' alt='' class='icon'><span class='txt'>아시아나항공</span>
+                    </p>
+                </div>
+                <div class='bottom_info'>
+                    <p class='term_date'>
+                        <span class='start_point'>2020-07-02 <span class='weekend red-color'>(일)</span> 08:00</span> ~ 2020-07-10 <span class='weekend blue-color'>(토)</span> 12:00
+                    </p>
+                    <div class='price_and_decide'>
+                        <p class='price'><span class='value'>200,000</span><span class='txt'>원</span></p>
+                        <button class='decide_btn not_possible_status'>예약마감</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer class='footer margin-top-0'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+      <div class='help_area'>
+        <ul class='helper_menu'>
+            <li class='helper_menu_util1 help_btn cursorpointer'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/help_icon.svg' alt='' class='symbol'>
+            </li>
+            <li class='helper_menu_util2 top_btn'>
+                <img src='images/top_btn_icon.svg' alt='' class='symbol'>
+            </li>
+        </ul>
+        <div class='empty_space'></div>
+    </div>
+</div>   
+</body>
+</html>

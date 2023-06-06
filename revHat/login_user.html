@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"onclick='location.href="navigation.html"'><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>로그인</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-left-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="login_container container">
+        <section class="login_area">
+            <ul class="login_type_menu">
+                <li class="li active"><a href="login_user.html" class="li-a">회원</a></li>
+                <li class="li "><a href="login_notuser.html" class="li-a">비회원</a></li>
+            </ul>
+            <form action="login_user_validatePopup.html" method="post">
+                <div class="user_login_area">
+                    <p class="input_row margin-bottom-4px">
+                        <input type="text" class="input_text invalid_error" placeholder="아이디를 입력해주세요" value="" name="mem_id"/>
+                    </p>
+                    <p class="input_row">
+                        <input type="text" class="input_text" placeholder="비밀번호를 입력해주세요" value="" name="mem_pw"/>
+                    </p>
+                    <p class="normal_row">
+                        <input type="checkbox" class="checkbox_element" id="auto_login_check"><label for="auto_login_check" class="check_label"></label><label class="label_txt" for="auto_login_check">자동로그인</label>
+                    </p>
+                    <button class="login_btn">로그인</button>
+                </div>
+            </form>
+            <p class="sep_deco"><span class="txt">또는</span></p>
+            <div class="sns_login_area">
+                <p class="naver_login_btn sns_login_btn margin-bottom-4px"><img src="images/naver_logo.png" alt="" class="icon"><span class="txt">네이버 계정으로 시작하기</span></p>
+                <p class="kakao_login_btn sns_login_btn margin-bottom-5px"><img src="images/kakao_logo.png" alt="" class="icon"><span class="txt">카카오톡 계정으로 시작하기</span></p> 
+                <p class="google_login_btn sns_login_btn"><img src="images/google_logo.png" alt="" class="icon"><span class="txt">구글 계정으로 시작하기</span></p>               
+            </div>
+        </section>
+        <ul class="user_services">
+            <li class="li"><a href="login_user_findIdPopup.html" class="li-a">아이디찾기</a></li>
+            <li class="li center_menu"><a href="login_user_findpwPopup.html" class="li-a">비밀번호찾기</a></li>
+            <li class="li another_width"><a href="register_terms_agreement.html" class="li-a">회원가입</a></li>
+        </ul>
+    </div>
+
+    <footer class='footer margin-top-117px'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+    </footer>
+    <div class='help_area'>
+        <ul class='helper_menu'>
+            <li class='helper_menu_util1 help_btn cursorpointer'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/help_icon.svg' alt='' class='symbol'>
+            </li>
+            <li class='helper_menu_util2 top_btn'>
+                <img src='images/top_btn_icon.svg' alt='' class='symbol'>
+            </li>
+        </ul>
+        <div class='empty_space'></div>
+    </div>
+</div>   
+</body>
+</html>

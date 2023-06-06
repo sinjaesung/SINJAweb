@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <div class="product_list_container container">
+        <section class="popup_area">
+            <div class="filter_popup">
+                <p class="tit">
+                    <span class="txt">필터</span>
+                    <img src="images/close_btn.svg" alt="" class="close_btn cursorpointer"onclick='history.back();'>
+                </p>
+                <article class="options">
+                    <p class="condition_txt"><span class="txt">여행기간</span></p>
+                    <ul class="condition_list">
+                        <li class="condition_item">
+                            <input type="radio" name="period" value="모든기간" class="radio_element" id="period_option1"><label for="period_option1" class="radio_checkbox"></label><label class="label_txt"for="period_option1">모든기간</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="radio" name="period" value="~ 5일이하" class="radio_element" id="period_option2"><label for="period_option2" class="radio_checkbox"></label><label class="label_txt"for="period_option2">모든기간</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="radio" name="period" value="5~10일 이하" class="radio_element" id="period_option3"><label for="period_option3" class="radio_checkbox"></label><label class="label_txt"for="period_option3">모든기간</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="radio" name="period" value="10~15일 이하" class="radio_element" id="period_option4"><label for="period_option4" class="radio_checkbox"></label><label class="label_txt"for="period_option4">모든기간</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="radio" name="period" value="15일 이상" class="radio_element" id="period_option5"><label for="period_option5" class="radio_checkbox"></label><label class="label_txt"for="period_option5">모든기간</label>
+                        </li>
+                    </ul>
+                </article>
+                <article class="options">
+                    <p class="condition_txt">
+                        <span class="txt">출발요일</span>
+                        <span class="all_check_control">
+                            <input type="checkbox" value="" id="is_all_check" class="checkbox_element"><label for="is_all_check" class="check_status"></label><label for="is_all_check" class="label_txt">전체선택/전체취소</label>
+                        </span>
+                    </p>
+                    <ul class="condition_list">
+                        <li class="condition_item">
+                            <input type="checkbox" name="start_day" class="checkbox_element" value="주중(월,화,수,목,금)" id="start_day_option1"><label for="start_day_option1" class="check_checkbox"></label><label class="label_txt" for="start_day_option1">주중(월,화,수,목,금)</label>
+                        </li>
+                        <li class="condition_item padding-bottom-0 border-bottom-0">
+                            <input type="checkbox" name="start_day" class="checkbox_element" value="주말(토,일)" id="start_day_option2"><label for="start_day_option2" class="check_checkbox"></label><label class="label_txt" for="start_day_option2">주말(토,일)</label>
+                        </li>
+                    </ul>
+                </article>
+                <article class="options">
+                    <p class="condition_txt">
+                        <span class="txt">출발공항</span>
+                        <span class="all_check_control">
+                            <input type="checkbox" value="" id="is_all_check2" class="checkbox_element"><label for="is_all_check2" class="check_status"></label><label for="is_all_check2" class="label_txt">전체선택/전체취소</label>
+                        </span>
+                    </p>
+                    <ul class="condition_list">
+                        <li class="condition_item">
+                            <input type="checkbox" name="start_airport" class="checkbox_element" value="인천공항(ICN)" id="start_airport_option1"><label for="start_airport_option1" class="check_checkbox"></label><label class="label_txt" for="start_airport_option1">인천공항(ICN)</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="checkbox" name="start_airport" class="checkbox_element" value="인천공항(ICN)2"
+                            id="start_airport_option2"><label for="start_airport_option2" class="check_checkbox"></label><label class="label_txt" for="start_airport_option2">인천공항(ICN)2</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="checkbox" name="start_airport" class="checkbox_element" value="인천공항(ICN)3" id="start_airport_option3"><label for="start_airport_option3" class="check_checkbox"></label><label class="label_txt" for="start_airport_option3">인천공항(ICN)3</label>
+                        </li>
+                        <li class="condition_item">
+                            <input type="checkbox" name="start_airport" class="checkbox_element" value="인천공항(ICN)4" id="start_airport_option4"><label for="start_airport_option4" class="check_checkbox"></label><label class="label_txt" for="start_airport_option4">인천공항(ICN)4</label>
+                        </li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </div>
+</div>
+</body>
+</html>

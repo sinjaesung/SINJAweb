@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css-->
+  <link rel='stylesheet' href='css/reset.css'>
+  <link rel='stylesheet' href='css/common.css'>
+  <link rel='stylesheet' href='css/style.css'>
+  <!--Import -->
+  <script type='text/javascript' src='js/jquery-1.12.3.min.js'></script>
+  <script type='text/javascript' src='js/common.js'></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"onclick='history.back()'><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>행사리스트</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-left-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="product_list_container container">
+        <div class='product_tit'>[대한항공/파노라마 IN 북유럽] 스톡시청사(30유로)+플롯 [대한항공/파노라마 IN 북유럽] 스톡시청사(30유로)+플롯 [대한항공/파노라마 IN 북유럽] 스톡시청사(30유로)+플롯 </div>
+
+        <section class="date_picker_area">
+            <article class="head">
+                <p class="tit">행사날짜선택</p>
+                <p class="select_control">
+                    <input type="checkbox" class="checkbox_element" id="all_check" value=''><label class="check_icon" for="all_check"></label><label class="txt" for="all_check">전체선택/전체취소</label>
+                </p>
+            </article>
+            <article class='body'>
+                <dl class="month_status">
+                    <dt class='date_arrow'>
+                        <span class='prev_arrow'>◀</span>
+                    </dt>
+                    <dd class='date_status'>2020.02</dd>
+                    <dt class='date_arrow'>
+                        <span class='next_arrow'>▶</span>
+                    </dt>
+                </dl>
+                <ul class="calendar_head">
+                    <li class='head_item'><a href='#' class='li-a weekend red-color'>일</a></li>
+                    <li class='head_item'><a href='#' class='li-a'>월</a></li>
+                    <li class='head_item'><a href='#' class='li-a'>화</a></li>
+                    <li class='head_item'><a href='#' class='li-a'>수</a></li>
+                    <li class='head_item'><a href='#' class='li-a'>목</a></li>
+                    <li class='head_item'><a href='#' class='li-a'>금</a></li>
+                    <li class='head_item'><a href='#' class='li-a weekend blue-color'>토</a></li>
+                </ul>
+                <ul class="calendar_body">
+                      <!-- 달력 첫줄-->
+                      <li class='body_item'></li>
+                      <li class='body_item'></li>
+                      <li class='body_item'></li>
+                      <li class='body_item'></li>
+                      <li class='body_item'></li>
+                      <li class='body_item'></li>
+                      <li class='body_item default'><div class='cell_background'>1</div><input type='checkbox' name='date_value'class='checkbox_element' value='1' id='day1'><label for='day1'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <!-- 달력 둘째줄-->
+                      <li class='body_item default'><div class='cell_background'>2</div><input type='checkbox' name='date_value'class='checkbox_element' value='2' id='day2'><label for='day2'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item default'><div class='cell_background'>3</div><input type='checkbox' name='date_value'class='checkbox_element' value='3' id='day3'><label for='day3'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item default'><div class='cell_background'>4</div><input type='checkbox' name='date_value'class='checkbox_element' value='4' id='day4'><label for='day4'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item default'><div class='cell_background'>5</div><input type='checkbox' name='date_value'class='checkbox_element' value='5' id='day5'><label for='day5'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item default'><div class='cell_background'>6</div><input type='checkbox' name='date_value'class='checkbox_element' value='6' id='day6'><label for='day6'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background'>7</div><input type='checkbox' name='date_value'class='checkbox_element' value='7' id='day7'><label for='day7'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background weekend blue-color'>8</div><input type='checkbox' name='date_value'class='checkbox_element' value='8' id='day8'><label for='day8'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <!-- 달력 3줄-->
+                      <li class='body_item not_possible'><div class='cell_background weekend red-color'>9</div><input type='checkbox' name='date_value'class='checkbox_element' value='9' id='day9'><label for='day9'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item not_possible'><div class='cell_background'>10</div><input type='checkbox' class='checkbox_element' name='date_value'value='10' id='day10'><label for='day10'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>11</div><input type='checkbox' class='checkbox_element' name='date_value'value='11' id='day11'><label for='day11'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>12</div><input type='checkbox' class='checkbox_element'name='date_value' value='12' id='day12'><label for='day12'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background'>13</div><input type='checkbox' class='checkbox_element'name='date_value' value='13' id='day13'><label for='day13'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>14</div><input type='checkbox' class='checkbox_element' name='date_value'value='14' id='day14'><label for='day14'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background weekend blue-color'>15</div><input type='checkbox'name='date_value' class='checkbox_element' value='15' id='day15'><label for='day15'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <!-- 달력 4줄-->
+                      <li class='body_item not_possible'><div class='cell_background weekend red-color'>16</div><input type='checkbox' name='date_value'class='checkbox_element' value='16' id='day16'><label for='day16'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item not_possible'><div class='cell_background'>17</div><input type='checkbox' class='checkbox_element'name='date_value' value='17' id='day17'><label for='day17'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item not_possible'><div class='cell_background'>18</div><input type='checkbox' class='checkbox_element' name='date_value'value='18' id='day18'><label for='day18'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item not_possible'><div class='cell_background'>19</div><input type='checkbox' class='checkbox_element' name='date_value'value='19' id='day19'><label for='day19'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>20</div><input type='checkbox' class='checkbox_element'name='date_value' value='20' id='day20'><label for='day20'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>21</div><input type='checkbox' class='checkbox_element' name='date_value'value='21' id='day21'><label for='day21'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background weekend blue-color'>22</div><input type='checkbox' name='date_value'class='checkbox_element' value='22' id='day22'><label for='day22'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <!-- 달력 5줄-->
+                      <li class='body_item decide'><div class='cell_background weekend red-color'>23</div><input type='checkbox' class='checkbox_element' name='date_value'value='23' id='day23'><label for='day23'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>24</div><input type='checkbox' class='checkbox_element' value='24' name='date_value'id='day24'><label for='day24'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>25</div><input type='checkbox' class='checkbox_element' value='25' name='date_value'id='day25'><label for='day25'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>26</div><input type='checkbox' class='checkbox_element' value='26' name='date_value'id='day26'><label for='day26'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background'>27</div><input type='checkbox' class='checkbox_element' value='27' name='date_value'id='day27'><label for='day27'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item decide'><div class='cell_background'>28</div><input type='checkbox' class='checkbox_element' value='28' name='date_value'id='day28'><label for='day28'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item not_possible'><div class='cell_background weekend blue-color'>29</div><input type='checkbox' class='checkbox_element' name='date_value'value='29' id='day29'><label for='day29'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <!-- 달력 6줄-->
+                      <li class='body_item possible'><div class='cell_background weekend red-color'>30</div><input type='checkbox' class='checkbox_element' name='date_value'value='30' id='day30'><label for='day30'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                      <li class='body_item possible'><div class='cell_background'>31</div><input type='checkbox' class='checkbox_element' value='31' name='date_value'id='day31'><label for='day31'class='li-label'><img src='images/calendar_chk.svg' alt='' class='chk_img'></label></li>
+                </ul>
+
+                <ul class="status_info">
+                    <li class='li'><span class='status_color status1'></span><span class='txt'>출발확정</span></li>
+                    <li class='li'><span class='status_color status2'></span><span class='txt'>예약가능/대기</span></li>
+                    <li class='li'><span class='status_color status3'></span><span class='txt'>예약마감</span></li>
+                    <li class='li'><span class='dot'></span></li>
+                    <li class='li'><span class='status_color status4'></span><span class='txt'>선택</span></li>            
+                </ul>
+            </article>
+        </section>
+
+        <section class="search_result_area_related">
+            <article class="search_result_head ver2">
+                <p class="search_count">전체 <span class="count">24개</span> 상품</p>
+                <p class="search_filter">
+                    <input type="checkbox" class="checkbox_element" value="" id="ispossible_option" checked/><label for="ispossible_option" class="label_chk"></label><label class="label_txt" for="ispossible_option">예약가능 상품만</label>
+                </p>
+                <p class="search_filter2">
+                    <img src="images/sort_icon.svg" class="low_sorted"/><label class="label_txt">낮은 가격순</label>
+                </p>
+            </article>
+            <article class="search_result_item">
+                <div class="badge_status">
+                    <span class="badge-span warm-span">마감임박</span>
+                    <span class="badge-span cold-span">MD추천</span>
+                    <span class="badge-span green-span">MD추천</span>
+                    <div class="like_button">
+                        <input type="checkbox" class="checkbox_element" value="" id="like_product9"><label class="like_chk" for="like_product9"></label>
+                    </div>
+                </div>
+                <p class='item_tit'>
+                    [오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···
+                </p>
+                <p class='item_desc cursorpointer'onclick="location.href='master_product_detail.html'">
+                    엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···
+                </p>
+                <div class="hashtags">
+                    <img src="images/hashtag_icon.svg" alt="" class="icon">
+                    <ul class='list'>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#지금 당장갈까??..</a></li>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#지금 당장갈까??..</a></li>
+                    </ul>
+                </div>
+                <div class="extra_info">
+                    <p class="info">
+                        <img src="images/term_icon.svg" alt="" class="icon"><span class="txt">10박 12일</span>
+                    </p>
+                    <span class="dot"></span>
+                    <p class="info">
+                        <img src="images/airport_icon.svg" alt="" class="icon"><span class="txt">아시아나항공</span>
+                    </p>
+                </div>
+                <div class="bottom_info">
+                    <p class='term_date'>
+                        <span class='start_point'>2020-07-02 (목) 08:00</span> ~ 2020-07-10 <span class='weekend blue-color'>(토)</span> 12:00
+                    </p>
+                    <div class='price_and_decide'>
+                        <p class='price'><span class='value'>1,200,000</span><span class='txt'>원</span></p>
+                        <button class='decide_btn decide_status'>출발확정(잔여:2)</button>
+                    </div>
+                </div>
+            </article>
+            <article class="search_result_item">
+                <div class="badge_status">
+                    <span class="badge-span warm-span">마감임박</span>
+                    <span class="badge-span cold-span">MD추천</span>
+                    <span class="badge-span green-span">MD추천</span>
+                    <div class="like_button">
+                        <input type="checkbox" class="checkbox_element" value="" id="like_product10"><label class="like_chk" for="like_product10"></label>
+                    </div>
+                </div>
+                <p class='item_tit'>
+                    [오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···
+                </p>
+                <p class='item_desc cursorpointer'onclick="location.href='master_product_detail.html'">
+                    엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···
+                </p>
+                <div class="hashtags">
+                    <img src="images/hashtag_icon.svg" alt="" class="icon">
+                    <ul class='list'>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                    </ul>
+                </div>
+                <div class="extra_info">
+                    <p class="info">
+                        <img src="images/term_icon.svg" alt="" class="icon"><span class="txt">10박 12일</span>
+                    </p>
+                    <span class="dot"></span>
+                    <p class="info">
+                        <img src="images/airport_icon.svg" alt="" class="icon"><span class="txt">아시아나항공</span>
+                    </p>
+                </div>
+                <div class="bottom_info">
+                    <p class='term_date'>
+                        <span class='start_point'>2020-07-02 (목) 08:00</span> ~ 2020-07-10 <span class='weekend blue-color'>(토)</span> 12:00
+                    </p>
+                    <div class='price_and_decide'>
+                        <p class='price'><span class='value'>1,200,000</span><span class='txt'>원</span></p>
+                        <button class='decide_btn possible_status'onclick='location.href="login_reserveForm_step2.html"'>예약가능(잔여:99)</button>
+                    </div>
+                </div>
+            </article>
+            <article class="search_result_item">
+                <div class="badge_status">
+                    <span class="badge-span warm-span">마감임박</span>
+                    <span class="badge-span cold-span">MD추천</span>
+                    <span class="badge-span green-span">MD추천</span>
+                    <div class="like_button">
+                        <input type="checkbox" class="checkbox_element" value="" id="like_product11"><label class="like_chk" for="like_product11"></label>
+                    </div>
+                </div>
+                <p class='item_tit'>
+                    [오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···[오사카3일][스마트연합]온천체험 지금 당장 출발 하는···
+                </p>
+                <p class='item_desc cursorpointer'onclick="location.href='master_product_detail.html'">
+                    엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···엄선된 호텔 및 식사, 보다 여유로운 일정을 제공해 드리는 홋카이도 너무 신나서 너무 좋다야 좋아 좋아 좋아 좋아 ···
+                </p>
+                <div class="hashtags">
+                    <img src="images/hashtag_icon.svg" alt="" class="icon">
+                    <ul class='list'>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#지금 당장갈까??..</a></li>
+                        <li class='item'><a href='#' class='a_link'>#날씨좋아</a></li>
+                        <li class='item'><a href='#' class='a_link'>#비그만</a></li>
+                        <li class='item'><a href='#' class='a_link'>#물놀이가자</a></li>
+                        <li class='item'><a href='#' class='a_link'>#지금 당장갈까??..</a></li>
+                    </ul>
+                </div>
+                <div class="extra_info">
+                    <p class="info">
+                        <img src="images/term_icon.svg" alt="" class="icon"><span class="txt">10박 12일</span>
+                    </p>
+                    <span class="dot"></span>
+                    <p class="info">
+                        <img src="images/airport_icon.svg" alt="" class="icon"><span class="txt">아시아나항공</span>
+                    </p>
+                </div>
+                <div class="bottom_info">
+                    <p class='term_date'>
+                        <span class='start_point'>2020-07-02 (목) 08:00</span> ~ 2020-07-10 <span class='weekend blue-color'>(토)</span> 12:00
+                    </p>
+                    <div class='price_and_decide'>
+                        <p class='price'><span class='value'>1,200,000</span><span class='txt'>원</span></p>
+                        <button class='decide_btn not_possible_status'>예약마감</button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer class='footer margin-top-33px'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+      <div class='help_area'>
+        <ul class='helper_menu'>
+            <li class='helper_menu_util1 help_btn cursorpointer'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/help_icon.svg' alt='' class='symbol'>
+            </li>
+            <li class='helper_menu_util2 top_btn'>
+                <img src='images/top_btn_icon.svg' alt='' class='symbol'>
+            </li>
+        </ul>
+        <div class='empty_space'></div>
+    </div>
+</div>  
+</body>
+</html>

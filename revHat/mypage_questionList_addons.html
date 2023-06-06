@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>마이페이지</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="mypage_container container padding-bottom-16px">
+        <section class='mypage_profile_head'>
+            <img src='images/mypage_user_symbol.svg' alt='' class='profile_symbol'>
+            <p class='user_identity'>반갑습니다.{{고객이름}}님</p>
+            <a href='#' class='user_info_modify'>개인정보수정></a>
+        </section>
+        <ul class='mypage_menu'>
+            <li class='menu_item'>
+                <img src='images/mypage_menu1.svg' class='menu_icon1' alt=''>
+                <p class='txt'><a href='#'>예약내역</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu2.svg' class='menu_icon2' alt=''>
+                <p class='txt'><a href='#'>쿠폰/마일리지</a></p>
+            </li>
+            <li class='menu_item active'>
+                <img src='images/mypage_menu3_active.svg' class='menu_icon3' alt=''>
+                <p class='txt'><a href='#'>1:1문의</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu4.svg' class='menu_icon4' alt=''>
+                <p class='txt'><a href='#'>찜한상품</a></p>
+            </li>
+        </ul>
+        <section class="question_input_area boxshadow2_232">
+            <div class="inner">
+                <p class="LeftMediumtit">
+                    <span class="bold">서비스</span>를 이용하는데<br/>
+                    <span class="bold">궁금한 내용</span>이 있나요?
+                </p>
+                <p class="message">주저하지 말고 물어보세요 빠르게 답변 드리겠습니다.</p>
+                <div class="input_write_area">
+                    <textarea name="user_question" class="write_textarea" placeholder="문의 사항을 등록해보세요 :-"></textarea>
+                    <div class="upload_img_displayArea">
+                        <span class="imgbox">
+                            <img src="images/upload_imgSample.png" alt="" class="img">
+                            <span class="img_delbtn">X</span>
+                        </span>
+                    </div>
+                    <div class="control_area">
+                        <input type="file" class="display_none" name="upload_img_question" accept="image/png,image/jpeg" id="upload_img_question">
+                        <label for='upload_img_question' class="upload_img_icon">
+                            <img src="images/upload_img.svg" class="icon display_none" alt="">
+                            <img src="images/upload_img_nonactive.svg" class="icon nonactive" alt="">
+                        </label>
+                        <span class="upload_rule_message display_none">최대 1개 이미지</span>
+                        <button class="write_btn display_none">등록하기</button>
+                        <button class="write_btn gray_nonactive_btn loading_effect"><img src="images/review_registing.svg" alt="" class="loading_effect_icon rotate360_infinite"></button>
+                    </div>
+                    <div class="registing_effect"></div>
+                </div>
+            </div>
+        </section>
+        <section class="question_list_wrap margin-bottom-10px boxshadow2_232">
+            <div class="inner">
+                <div class="tit"><img src="images/recently_time_icon.svg" alt="" class="icon"><span class="txt">최근에 답변받은 문의</span></div>
+                <dl class="list_row">
+                    <dt class="head info_row padding0">
+                        <span class="status keycolor">답변완료</span>
+                        <a href="#" class="detail_view">상세내역 ></a>
+                    </dt>
+                    <dd class="content">
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class="history_date">
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+                <dl class='list_row'>
+                    <dt class='head info_row padding0'>
+                        <span class='status keycolor'>답변완료</span>
+                        <a href='#' class='detail_view'>상세내역 ></a>
+                    </dt>
+                    <dd class='content'>
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class='history_date'>
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+                <dl class='list_row'>
+                    <dt class='head info_row padding0'>
+                        <span class='status keycolor'>답변완료</span>
+                        <a href='#' class='detail_view'>상세내역 ></a>
+                    </dt>
+                    <dd class='content'>
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class='history_date'>
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <button class='view_more_btn for_queston_list_replied_recently'>+ 더보기</button>
+
+        <section class="question_list_wrap margin-top-10px">
+            <div class="inner">
+                <div class="tit"><img src="images/registed_icon.svg" alt="" class="icon"><span class="txt">등록된 모든 문의</span></div>
+                <div class="filter_control">
+                    <input type="checkbox" class="checkbox_element" id="reply_completed" value="답변완료" checked><label for="reply_completed" class="label_chk">답변완료</label>
+                    <input type="checkbox" class="checkbox_element" id="reply_pending" value="답변대기" checked><label for="reply_pending" class="label_chk">답변대기</label>
+                </div>
+                <dl class='list_row '>
+                    <dt class='head info_row padding0'>
+                        <span class='status keycolor'>답변완료</span>
+                        <a href='#' class='detail_view'>상세내역 ></a>
+                    </dt>
+                    <dd class='content'>
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class='history_date'>
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+                <dl class='list_row'>
+                    <dt class='head info_row padding0'>
+                        <span class='status keycolor'>답변완료</span>
+                        <a href='#' class='detail_view'>상세내역 ></a>
+                    </dt>
+                    <dd class='content'>
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class='history_date'>
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+                <dl class='list_row'>
+                    <dt class='head info_row padding0'>
+                        <span class='status'>답변대기</span>
+                        <a href='#' class='detail_view'>상세내역 ></a>
+                    </dt>
+                    <dd class='content'>
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class='history_date'>
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+                <dl class='list_row margin-bottom-0 padding-bottom-0 border-bottom-0'>
+                    <dt class='head info_row padding0'>
+                        <span class='status'>답변대기</span>
+                        <a href='#' class='detail_view'>상세내역 ></a>
+                    </dt>
+                    <dd class='content'>
+                        다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에 다낭은 베트남 남중부 지방의 최대 상업 및 항구도시이자 베트남의 다섯 개의 직할시 중 하나이고, 베트남에
+                    </dd>
+                    <dd class='history_date'>
+                        작성일 2020. 08. 11 · 답변일 2020. 08. 12
+                    </dd>
+                </dl>
+            </div>
+        </section>
+        <button class='view_more_btn for_question_list_allRegisted'>+ 더보기</button>
+
+        <section class="question_use_guide boxshadow2_232">
+            <div class="inner">
+                <div class="tit"><img src="images/guide_icon.svg" alt="" class="icon"><span class="txt">이용안내</span></div>
+                <p class='guide_message'>
+                    <span class='padding_left_area'>
+                        <span class='dot'></span>
+                    </span>
+                    1:1 문의 게시판은 월요일에서 금요일 10:00 - 18:00 운영됩니다.
+                </p>
+                <p class='guide_message'>
+                    <span class='padding_left_area'>
+                        <span class='dot'></span>
+                    </span>
+                    급한 문의는 1577 - 1577로 문의해주세요.
+                </p>
+                <p class='guide_message'>
+                    <span class='padding_left_area'>
+                        <span class='dot'></span>
+                    </span>
+                    운영 시간 내에는 2시간 이내에 답변을 드리나, 문의가 많을 때에는 다소 지연될 수 있습니다.
+                </p>
+                <p class='guide_message'>
+                    <span class='padding_left_area'>
+                        <span class='dot'></span>
+                    </span>
+                    본 게시판은 여행상품 관련 문의를 위한 공간입니다.
+                </p>
+                <p class='guide_message'>
+                    <span class='padding_left_area'>
+                        <span class='dot'></span>
+                    </span>
+                    상업적인 내용의 글 혹은 확인되지 않은 음해성 글은 관리자에 의해 삭제됨을 알려드립니다.
+                </p>
+                <p class='guide_message'>
+                    <span class='padding_left_area'>
+                        <span class='dot'></span>
+                    </span>
+                    개인정보 작성시 타인에게 노출될 위험이 있으니 주의하시기 바랍니다.
+                </p>
+            </div>
+        </section>        
+    </div>
+
+    <footer class='footer margin-top-0'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+      <div class='help_area'>
+        <ul class='helper_menu'>
+            <li class='helper_menu_util1 help_btn cursorpointer'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/help_icon.svg' alt='' class='symbol'>
+            </li>
+            <li class='helper_menu_util2 top_btn'>
+                <img src='images/top_btn_icon.svg' alt='' class='symbol'>
+            </li>
+        </ul>
+        <div class='empty_space'></div>
+    </div>
+</div>
+
+<script>
+    window.setTimeout(function(){
+        alert("문의작성 완료");
+        location.href='mypage_questionList.html';
+    },1500)
+</script>
+</body>
+</html>

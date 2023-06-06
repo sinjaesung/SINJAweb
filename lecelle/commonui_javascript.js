@@ -54,7 +54,7 @@ function execute_comment(){
     //navBg관련 nav활성화시에 navBg가 켜지는데, navBg가 켜진상태는 display:block상태일때로 간주하고, 켜졌을떄 네비활성화로 간주하고 html overflow:hidden처리.
     window.setInterval(function(){
         let navBg=document.querySelector(`[targetindex='navBg']`);
-        console.log("navBg styles:",navBg.style.display);
+        //console.log("navBg styles:",navBg.style.display);
 
         let nav_isactive=navBg.style.display=='block'?true:false;
         if(nav_isactive){

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>마이페이지</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="mypage_container container padding-bottom-16px">
+        <section class="mypage_profile_head">
+            <img src="images/mypage_user_symbol.svg" alt="" class="profile_symbol">
+            <p class="user_identity">반갑습니다.{{고객이름}}님</p>
+            <a href="#" class="user_info_modify">개인정보수정</a>
+        </section>
+        <ul class="mypage_menu">
+            <li class="menu_item">
+                <img src="images/mypage_menu1.svg" class="menu_icon1" alt="">
+                <p class="txt"><a href="#">예약내역</a></p>
+            </li>
+            <li class='menu_item active'>
+                <img src='images/mypage_menu2_active.svg' class='menu_icon2' alt=''>
+                <p class='txt'><a href='#'>쿠폰/마일리지</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu3.svg' class='menu_icon3' alt=''>
+                <p class='txt'><a href='#'>1:1문의</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu4.svg' class='menu_icon4' alt=''>
+                <p class='txt'><a href='#'>찜한상품</a></p>
+            </li>
+        </ul>
+        <section class="mypage_have_mileage mypage_content margin-bottom-10px margin-top-10px">
+            <div class="inner boxshadow2_232">
+                <article class="head_info">
+                    <p class="tit border0 centerBig">보유중인 마일리지</p>
+                    <p class="total_value centerBig"><span class="keycolor">없음</span></p>
+                    <span class="sep_border"></span>
+                    <div class="detail_value flex_center_items">
+                        <div class="item margin_right_go">
+                            <p class="txt">적립예정 마일리지</p>
+                            <p class="value_txt">30 mileage</p>
+                        </div>
+                        <div class="item">
+                            <p class="txt">사용대기 마일리지</p>
+                            <p class="value_txt">2,000 Mileage</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="mileage_history table_layout display_none">
+                    <dl class="table_head">
+                        <dt class="date">날짜</dt>
+                        <dt class="num_value">마일리지</dt>
+                        <dt class="history">내역</dt>
+                    </dl>
+                    <dl class='table_row'>
+                        <dd class='date'>2020.02.11</dd>
+                        <dd class='num_value'>+25,203</dd>
+                        <dd class='history'>가입기념 회원 적립금 입니다</dd>
+                    </dl>
+                    <dl class='table_row'>
+                        <dd class='date'>2020.02.11</dd>
+                        <dd class='num_value'>+25,203</dd>
+                        <dd class='history'>가입기념 회원 입니다</dd>
+                    </dl>
+                    <dl class='table_row'>
+                        <dd class='date'>2020.02.11</dd>
+                        <dd class='num_value'>+25,203</dd>
+                        <dd class='history'>청도 패키지 여행 예약자 기념입니다. 얼마든지 이용</dd>
+                    </dl>
+                    <dl class='table_row'>
+                        <dd class='date'>2020.02.11</dd>
+                        <dd class='num_value'>-25,203</dd>
+                        <dd class='history'>예약결제</dd>
+                    </dl>
+                </article>
+                <button class="table_view_more display_none">+ 더보기</button>
+                <p class='message'>최근 3개월 이내에 마일리지를 조회 내역입니다</p>
+            </div>
+        </section>
+        <section class="mypage_content mypage_have_coupon">
+            <div class="inner box_shadow2_232">
+                <article class="head_info">
+                    <p class="tit border0 centerBig">보유중인 쿠폰</p>
+                    <p class="total_value centerBig"><span class="keycolor">없음</span></p>
+                </article>
+                <article class="coupon_history display_none">
+                    <dl class="flex_row flex_spacebetween">
+                        <dd class="left">
+                            <p class="txt">
+                                사용가능 <span class="dot"></span> DGSDGASG56
+                            </p>
+                            <p class='txt'>프로모션 5% 할인쿠폰 신나게 써보세용</p>
+                            <p class='txt'>사용기간 : 2020.03.11 ~ 2020.03.15</p>
+                        </dd>
+                        <dl class="right coupon_symbol">
+                            COUPON
+                        </dl>
+                    </dl>
+                    <dl class="flex_row flex_spacebetween gray_style">
+                        <dd class="left">
+                            <p class="txt">
+                                사용완료 <span class="dot"></span> sgsdgDFSDEEFE
+                            </p>
+                            <p class='txt'>회원가입 10% 할인 회원가입 10% 할인회원가입 10% 할인회원가입 10% 할인</p>
+                            <p class='txt'>사용기간 : 2020.03.11 ~ 2020.03.15</p>
+                        </dd>
+                        <dl class="right coupon_symbol">
+                            COUPON
+                        </dl>
+                    </dl>
+                     <dl class="flex_row flex_spacebetween gray_style">
+                        <dd class="left">
+                            <p class="txt">
+                                사용가능 <span class="dot"></span> DI2039817
+                            </p>
+                            <p class='txt'>프로모션 5% 할인쿠폰 신나게 써보세용</p>
+                            <p class='txt'>사용기간 : 2020.03.11 ~ 2020.03.15</p>
+                        </dd>
+                        <dl class="right coupon_symbol">
+                            COUPON
+                        </dl>
+                    </dl>
+                </article>
+                <p class="message">사용이 만료된 쿠폰은 자동 소멸됩니다.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class='footer margin-top-0'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+      <div class='help_area'>
+        <ul class='helper_menu'>
+            <li class='helper_menu_util1 help_btn cursorpointer'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/help_icon.svg' alt='' class='symbol'>
+            </li>
+            <li class='helper_menu_util2 top_btn'>
+                <img src='images/top_btn_icon.svg' alt='' class='symbol'>
+            </li>
+        </ul>
+        <div class='empty_space'></div>
+    </div>
+</div>    
+</body>
+</html>

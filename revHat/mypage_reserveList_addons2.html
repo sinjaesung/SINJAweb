@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>마이페이지</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-left-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="mypage_container container">
+        <div class="popup_area display_none">
+            <div class="review_write_success">
+                <p class="message margin0">
+                    리뷰가 성공적으로 작성됐습니다.
+                </p>
+                <p class="controls">
+                    <span class="confirm">확인</span>
+                    <a href="#" class="link_btn">작성페이지로 이동</a>
+                </p>
+            </div>
+        </div>
+        <section class='mypage_profile_head'>
+            <img src='images/mypage_user_symbol.svg' alt='' class='profile_symbol'>
+            <p class='user_identity'>반갑습니다.{{고객이름}}님</p>
+            <a href='#' class='user_info_modify'>개인정보수정></a>
+        </section>
+        <ul class='mypage_menu'>
+            <li class='menu_item active'>
+                <img src='images/mypage_menu1_active.svg' class='menu_icon1' alt=''>
+                <p class='txt'><a href='#'>예약내역</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu2.svg' class='menu_icon2' alt=''>
+                <p class='txt'><a href='#'>쿠폰/마일리지</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu3.svg' class='menu_icon3' alt=''>
+                <p class='txt'><a href='#'>1:1문의</a></p>
+            </li>
+            <li class='menu_item'>
+                <img src='images/mypage_menu4.svg' class='menu_icon4' alt=''>
+                <p class='txt'><a href='#'>찜한상품</a></p>
+            </li>
+        </ul>
+
+        <section class="mypage_review_write_slider">
+            <article class="slider_area">
+                <div class="slider_item boxshadow2_232">
+                    <p class="user_identity">
+                        {{고객명}} 고객님
+                    </p>
+                    <p class="suggestion">
+                        "<span class='reserve_trip_target'>다낭 10박 11일,오면 무조건 무조건 무조건 다낭 10박 11일,오면 무조건 무조건 무조건 </span>"은 어떠셨나요?<br/>
+                        여행이 경험을 다른사람에게 공유해보세요.
+                    </p>
+                    <div class="input_write_area margin-top-10px">
+                        <textarea name="user_review_tripPrd78" class="write_textarea"></textarea>
+                        <div class="upload_img_displayArea">
+                            <span class="imgbox">
+                                <img src="images/upload_imgSample.png" alt="" class="img">
+                                <span class="img_delbtn">X</span>
+                            </span>
+                        </div>
+                        <div class="control_area">
+                            <input type='file' class='display_none'name='upload_img_tripPrd78' accept='image/png,image/jpeg' id='upload_img_tripPrd78'>
+                            <label for="upload_img_tripPrd78" class="upload_img_icon">
+                                <img src="images/upload_img.svg" class="icon display_none" alt="">
+                                <img src="images/upload_img_nonactive.svg" class="icon nonactive" alt="">
+                            </label>
+                            <span class="upload_rule_message">최대 1개 이미지</span>
+                            <button class="write_btn display_none">후기작성</button>
+                            <button class="write_btn gray_nonactive_btn"><img src="images/review_registing.svg" alt="" class="loading_effect_icon rotate360_infinite"></button>
+                        </div>
+                        <div class="registing_effect"></div>
+                    </div>
+                    <p class="message">😢 후기 작성하기 않기</p>
+                </div>
+            </article>
+        </section>  
+        <section class="review_list_count boxshadow2_232">
+            <div class="inner">
+                <p class="count_status">총 <span class="keycolor">3</span>개의 내역이 있습니다.</p>
+                <div class="reserve_status_select">
+                    <select class='selectbox'>
+                        <option value='전체선택' selected>전체선택</option>
+                        <option value='예약확정'>예약확정</option>
+                        <option value='예약확인'>예약확인</option>
+                        <option value='여행완료'>여행완료</option>
+                    </select>
+                    <span class="icon">
+                        <img src="images/arrow_icon.svg" alt="" class="icon_img">
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="reserve_list_area">
+            <article class="reserve_list_item boxshadow2_232">
+                <div class="item_head info_row padding0">
+                    <p class="status dt">예약확정</p>
+                    <a href="#" class="reserve_detail_confirm dd">상세내역 ></a>
+                </div>
+                <div class="item_body">
+                    <dl class="info_row item_row padding0 margin0">
+                        <dt class='dt'>예약코드</dt>
+                        <dd class='dd'>202019283929292</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>상품명</dt>
+                        <dd class='dd'>[다낭알뜰형] 다낭 관광을 한번에 다시 다시 진행[다낭알뜰형] 다낭 관광을 한번에 다시 다시 진행 </dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>여행기간</dt>
+                        <dd class='dd'>3박 5일</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>여행일정</dt>
+                        <dd class='dd'>2020.03.11 ~ 2020.03.15</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>인원</dt>
+                        <dd class='dd'>성인1 <span class='dot'></span> 아동1 <span class='dot'></span> 유아1</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>금액</dt>
+                        <dd class='dd'>3,500,100원</dd>
+                    </dl>
+                </div>
+                <div class="item_foot">
+                    <button class="local_btn blue_border_btn margin-bottom-5px">일정보기</button>
+                    <button class="local_btn blue_active_btn margin-bottom-5px">결제하기</button>
+                    <button class="local_btn gray_nonactive_btn margin-bottom-5px display_none">예약확인중</button>
+                    <button class="local_btn blue_active_btn margin-bottom-5px display_none">후기등록</button>
+                    <button class="local_btn blue_border_btn margin-bottom-5px display_none">후기수정</button>
+                </div>
+            </article>
+            <article class="reserve_list_item boxshadow2_232">
+                <div class="item_head info_row padding0">
+                    <p class="status dt">예약확인</p>
+                    <a href="#" class="reserve_detail_confirm dd">상세내역 ></a>
+                </div>
+                <div class="item_body">
+                    <dl class="info_row item_row padding0 margin0">
+                        <dt class='dt'>예약코드</dt>
+                        <dd class='dd'>202019283929292</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>상품명</dt>
+                        <dd class='dd'>[다낭알뜰형] 다낭 관광을 한번에 다시 다시 진행[다낭알뜰형] 다낭 관광을 한번에 다시 다시 진행 </dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>여행기간</dt>
+                        <dd class='dd'>3박 5일</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>여행일정</dt>
+                        <dd class='dd'>2020.03.11 ~ 2020.03.15</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>인원</dt>
+                        <dd class='dd'>성인3 <span class='dot'></span> 아동1 <span class='dot'></span> 유아1</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>금액</dt>
+                        <dd class='dd'>14,900,100원</dd>
+                    </dl>
+                </div>
+                <div class="item_foot">
+                    <button class="local_btn blue_border_btn margin-bottom-5px">일정보기</button>
+                    <button class="local_btn blue_active_btn margin-bottom-5px display_none">결제하기</button>
+                    <button class="local_btn gray_nonactive_btn margin-bottom-5px ">예약확인중</button>
+                    <button class="local_btn blue_active_btn margin-bottom-5px display_none">후기등록</button>
+                    <button class="local_btn blue_border_btn margin-bottom-5px display_none">후기수정</button>
+                </div>
+            </article>
+            <article class="reserve_list_item boxshadow2_232">
+                <div class="item_head info_row padding0">
+                    <p class="status dt">여행완료</p>
+                    <a href="#" class="reserve_detail_confirm dd">상세내역 ></a>
+                </div>
+                <div class="item_body">
+                    <dl class="info_row item_row padding0 margin0">
+                        <dt class='dt'>예약코드</dt>
+                        <dd class='dd'>202019283929292</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>상품명</dt>
+                        <dd class='dd'>[다낭알뜰형] 다낭 관광을 한번에 다시 다시 진행[다낭알뜰형] 다낭 관광을 한번에 다시 다시 진행 </dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>여행기간</dt>
+                        <dd class='dd'>3박 5일</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>여행일정</dt>
+                        <dd class='dd'>2020.03.11 ~ 2020.03.15</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>인원</dt>
+                        <dd class='dd'>성인3 <span class='dot'></span> 아동1 <span class='dot'></span> 유아1</dd>
+                    </dl>
+                    <dl class='item_row info_row padding0 margin0'>
+                        <dt class='dt'>금액</dt>
+                        <dd class='dd'>14,900,100원</dd>
+                    </dl>
+                </div>
+                <div class="item_foot">
+                    <button class="local_btn blue_border_btn margin-bottom-5px display_none">일정보기</button>
+                    <button class="local_btn blue_active_btn margin-bottom-5px display_none">결제하기</button>
+                    <button class="local_btn gray_nonactive_btn margin-bottom-5px display_none">예약확인중</button>
+                    <button class="local_btn blue_active_btn margin-bottom-5px">후기등록</button>
+                    <button class="local_btn blue_border_btn margin-bottom-5px">후기수정</button>
+                </div>
+            </article>
+        </section>
+    </div>
+    <footer class='footer margin-top-0'><!--footer-->
+        <div class="inner">
+          <div class="address">
+            <p class="address-p">
+                <b>(주)리브햇</b><br/>
+                서울시 중구 세조대로 55 부영태평빌딩 19층 레오팔레스21<br/>
+                02)1661-7690 · revhat@naver.com<br/>
+                <br/>
+                대표이사 김영준 · 통신판매번호 2018-경기시흥-0343 · 사업자등번호 549-87-00845<br/>
+                <br/>
+                개인정보처리방침 · 이용약관
+            </p>
+          </div>
+          <p class="copy">Copylight 2020 'Revhat Co. All right reserved</p>
+        </div>
+      </footer>
+      <div class='help_area'>
+        <ul class='helper_menu'>
+            <li class='helper_menu_util1 help_btn cursorpointer'onclick='location.href="mypage_likeList.html"'>
+                <img src='images/help_icon.svg' alt='' class='symbol'>
+            </li>
+            <li class='helper_menu_util2 top_btn'>
+                <img src='images/top_btn_icon.svg' alt='' class='symbol'>
+            </li>
+        </ul>
+        <div class='empty_space'></div>
+    </div>
+</div>   
+
+<script>
+    window.setTimeout(function(){
+        location.href='mypage_reserveList_addons.html';
+    },1000);
+</script>
+</body>
+</html>

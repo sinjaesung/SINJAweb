@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css-->
+  <link rel='stylesheet' href='css/reset.css'>
+  <link rel='stylesheet' href='css/common.css'>
+  <link rel='stylesheet' href='css/index.css'>
+  <!--Import -->
+  <script type='text/javascript' src='js/jquery-1.12.3.min.js'></script>
+  <script type='text/javascript' src='js/common.js'></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header">
+        <div class="util-top">
+            <div class="divbox">
+              <ul class="util-ul">
+                  <li class="util-li"><a href="#" class="util-a"><img class="logo" src=""></a></li>
+                  <li class="util-li"><a href="#" class="util-a"><img class="menubar" src=""></a></li>
+              </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi">
+        <div class="gnb-area">
+            <div class="gnb-tit">
+                <span class="gnb-tit-txt">메뉴</span>
+                <span class="gnb-close">
+                    <img src="images/close_btn.svg" alt="" class="img">
+                </span>
+            </div>
+            <div class="gnb-body">
+                <div class="gnb-body-top">
+                    <p class="p_txt"><em class="user_name">홍길동</em> 고객님으로 로그인 중입니다.</p>
+                    <a href="#" class="a_link display_none">로그인/회원가입</a>
+                    <a href="#" class="mypage_link">마이페이지 > </a>
+                    <p class="search_wrap">
+                        <input type="search" name="search_string" class="search_input" value="" placeholder="검색어를 입력해주세요"/>
+                        <img src="images/search_icon.svg" class="search_icon"/>
+                    </p>
+                </div>
+                <ul class="gnb-menu">
+                    <li class='gnb-menu-li'>
+                        <img src='images/home_icon.svg' class='menu_symbol home_icon' alt=''/>
+                        <span class='menu_txt'><a href='#'>처음으로</a></span>
+                    </li>
+                    <li class='gnb-menu-li'>
+                        <img src='images/plan_icon.svg' class='menu_symbol plan_icon' alt=''/>
+                        <span class='menu_txt'><a href='#'>기획전</a></span>
+                    </li>
+                    <li class='gnb-menu-li'>
+                        <img src='images/blog_icon.svg' class='menu_symbol blog_icon' alt=''/>
+                        <span class='menu_txt'><a href='#'>블로그</a></span>
+                    </li>
+                    <li class='gnb-menu-li'>
+                        <img src='images/event_icon.svg' class='menu_symbol event_icon' alt=''/>
+                        <span class='menu_txt'><a href='#'>이벤트</a></span>
+                    </li>
+                </ul>
+                <div class="gnb-category-menu">
+                    <p class="gnb-category-tit">전체메뉴</p>
+                    <ul class="category-list">
+                        <li class="category-list-li depth1">
+                            <div class="list-li-row">
+                                <a href="#" class="li-a">해외패키지</a><span class="view_more_wrap"><img src="images/arrow_icon.svg" class="view_more closed"></span>
+                            </div>
+                            <ul class="sub-area depth2 display_none">
+                                <li class="sub-area-li border-bottom-1px border-right-1px">
+                                    <a href="#" class="sub-area-li-a">말레이시아</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px padding-left-6px">
+                                    <a href="#" class="sub-area-li-a">베트남</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px border-right-1px">
+                                    <a href="#" class="sub-area-li-a">일본</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px padding-left-6px">
+                                    <a href="#" class="sub-area-li-a">베트남</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="category-list-li depth1">
+                            <div class='list-li-row'>
+                                <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                            </div>
+                            <ul class="sub-area depth2">
+                                <li class="sub-area-li border-bottom-1px border-right-1px">
+                                    <a href="#" class="sub-area-li-a">말레이시아</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px padding-left-6px">
+                                    <a href="#" class="sub-area-li-a">베트남</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px border-right-1px">
+                                    <a href="#" class="sub-area-li-a">일본</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px padding-left-6px">
+                                    <a href="#" class="sub-area-li-a">베트남</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="category-list-li depth1">
+                            <div class='list-li-row'>
+                                <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more closed'></span>
+                            </div>
+                            <ul class="sub-area depth2 display_none">
+                                <li class="sub-area-li border-bottom-1px border-right-1px">
+                                    <a href="#" class="sub-area-li-a">말레이시아</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px">
+                                    <a href="#" class="sub-area-li-a text-null">text-null</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="category-list-li depth1">
+                            <div class='list-li-row'>
+                                <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more closed'></span>
+                            </div>
+                            <ul class="sub-area depth2 display_none">
+                                <li class="sub-area-li border-bottom-1px border-right-1px">
+                                    <a href="#" class="sub-area-li-a">말레이시아</a>
+                                </li>
+                                <li class="sub-area-li border-bottom-1px">
+                                    <a href="#" class="sub-area-li-a text-null">text-null</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</div>    
+</body>
+</html>

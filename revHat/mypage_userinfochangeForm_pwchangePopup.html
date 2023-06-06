@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--css-->
+<link rel='stylesheet' href='css/reset.css'>
+<link rel='stylesheet' href='css/common.css'>
+<link rel='stylesheet' href='css/style.css'>
+<!--Import -->
+<script type='text/javascript' src='js/jquery-1.12.3.min.js'></script>
+<script type='text/javascript' src='js/common.js'></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <header class="header sub_header">
+        <div class="util-top">
+            <ul class="util-ul">
+                <li class="util-li"><a href="#" class="util-a"><img class="back_icon" src="images/back_icon.svg"></a></li>
+                <li class="util-li"><h2 class='page_name'>개인정보수정</h2></li>
+                <li class="util-li float_right"><a href="navigation.html" class="util-a"><img class="menubar" src="images/header_menubar.png"></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="gnb-wrap mobile_navi display_none height_0">
+      <div class="gnb-area">
+        <div class="gnb-tit">
+            <span class='gnb-tit-txt'>메뉴</span>
+            <span class='gnb-close'>
+                <img src='images/close_btn.svg' alt='' class='img'>
+            </span>
+        </div>
+        <div class="gnb-body">
+            <div class='gnb-body-top'>
+                <p class='p_txt'>로그인이 필요합니다</p>
+                <a href='#' class='a_link'>로그인/회원가입</a>
+                <p class='search_wrap'>
+                    <input type='search' name='search_string' class='search_input' value='검색어를 입력해주세요'/>
+                    <img src='images/search_icon.svg' alt='' class='search_icon'/>
+                </p>
+            </div>
+            <ul class='gnb-menu'>
+                <li class='gnb-menu-li'>
+                    <img src='images/home_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>처음으로</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/plan_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>기획전</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/blog_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>블로그</span>
+                </li>
+                <li class='gnb-menu-li'>
+                    <img src='images/event_icon.svg' class='menu_symbol' alt=''/>
+                    <span class='menu_txt'>이벤트</span>
+                </li>
+            </ul>
+            <div class="gnb-category-menu">
+                <p class='gnb-category-tit'>전체메뉴</p>
+                <ul class="category-list">
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">해외패키지</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">자유여행</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">일본</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a">베트남</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">스페셜상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-right-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="category-list-li depth1">
+                        <div class='list-li-row'>
+                            <a href="#" class="li-a">홈쇼핑상품</a><span class='view_more_wrap'><img src='images/arrow_icon.svg' alt='' class='view_more'></span>
+                        </div>
+                        <ul class="sub-area depth2">
+                            <li class="sub-area-li border-bottom-1px border-left-1px">
+                                <a href="#" class="sub-area-li-a">말레이시아</a>
+                            </li>
+                            <li class="sub-area-li border-bottom-1px">
+                                <a href="#" class="sub-area-li-a"></a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--category_menu-->
+        </div>
+      </div>
+    </div><!--mobile_navi-->
+
+    <div class="login_container container">
+        <div class="popup_area">
+            <div class="login_util input_form_area common_popup">
+                <p class="tit">
+                    <span class="txt">비밀번호 재설정</span>
+                    <img src="images/close_btn.svg" alt="" class="cursorpointer close_btn"onclick='history.back()'>
+                </p>
+                <form action='' class="pw_change_form input_form">
+                    <article class="find_method  form_input pw_change_method_addons">
+                        <p class="txt padding-top-0 display_none">등록된 정보로 찾기</p>
+                        <p class="input_row">
+                            <span class="form_label">기존 비밀번호</span>
+                            <input type="text" class="input_text_block" placeholder="비밀번호를 입력해주세요" name="mem_pwd_original">
+                        </p>
+                        <p class="input_row">
+                            <span class="form_label">변경 비밀번호</span>
+                            <span class="pwd_input_wrap">
+                                <input type="text" class="input_text_block" name="mem_pwd_new1" placeholder="비밀번호를 입력해주세요">
+                                <span class="pwd_check_element">
+                                    <img src="images/pwd_check_pass.svg" alt="" class="pwd_check_pass">
+                                    <img src="images/pwd_chk_fail.svg" class="pwd_check_fail">
+                                </span>
+                            </span>
+                        </p>
+                        <p class="invalid_error_message_print ver2 margin-bottom-10px">최소 8자리 이상, 영어 대문자, 소문자, 숫자, 특수문자 중 2종류 조합해 주세요</p>
+                        <p class="input_row">
+                            <span class="form_label">변경 비밀번호 재입력</span>
+                            <span class='pwd_input_wrap'>
+                                <input type='text' class='input_text_block' name='mem_pwd_new2' placeholder='비밀번호를 다시 입력해주세요'>
+                                <span class='pwd_check_element'>
+                                    <img src='images/pwd_chk_pass.svg' alt='' class='pwd_check_pass display_none'>
+                                    <img src='images/pwd_chk_fail.svg' alt='' class='pwd_check_fail'>
+                                </span>
+                            </span>
+                        </p>
+                        <p class='invalid_error_message_print ver2'>최소 8자리 이상, 영어 대문자, 소문자, 숫자,특수문자 중 2종류 조합해 주세요</p>
+                        <div class='button_wrap'>
+                            <button class='inputbtn blue-border-btn'>변경하기</button>
+                        </div>
+                        <p class='message'>
+                            <span class='padding_left_area'>
+                                <span class='dot'></span>
+                            </span>
+                            본인 인증을 통한 회원 가입을 하지 않은 경우 본인 인증 수단으로 찾기 또는 변경이 불가능 할 수 있습니다.
+                        </p>
+                        <p class='message margin-top-0'>
+                            <span class='padding_left_area'>
+                                <span class='dot'></span>
+                            </span>
+                            사이트 가입정보와 휴대폰 가입정보가 일치 하지 않을 경우 인증이 불가능 할 수 있습니다.
+                        </p>
+                    </article>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

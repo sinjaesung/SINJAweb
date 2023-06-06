@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+<div id="wrapper" class="blue">
+    <div class="login_container container">
+        <section class="login_util_popup_area pw_find">
+            <p class="tit">
+                <span class="txt">비밀번호찾기</span>
+                <img src="images/close_btn.svg" alt="" class="close_btn cursorpointer"onclick='history.back();'>
+            </p>
+            <form action="login_user_emailSendComplete.html" class="pwfind_method_action">
+                <article class="find_method">
+                    <p class="txt">인증수단으로 찾기</p>
+                    <p class="input_row">
+                        <span class="form_label">아이디</span>
+                        <input type="text" class="input_text_block" placeholder="아이디를 입력해주세요" name="mem_id">
+                    </p>
+                    <div class="button_wrap">
+                        <button class="phone_certification">휴대폰인증</button>
+                    </div>
+                </article>
+                <p class="sep_deco">
+                    <span class="padding_inner">또는</span>
+                </p>
+                <article class="find_method">
+                    <p class="txt padding-top-0">등록된 정보로 찾기</p>
+                    <p class='input_row'>
+                        <span class='form_label'>이름</span>
+                        <input type='text' class='input_text_block'placeholder='이름을 입력해주세요' name='mem_name'>
+                    </p>
+                    <p class='input_row'>
+                        <span class='form_label'>아이디</span>
+                        <input type='text' class='input_text_block' placeholder='아이디를 입력해주세요' name='mem_id_2'>
+                    </p>
+                    <div class='button_wrap'>
+                        <button class='submit_btn'>확인하기</button>
+                    </div>
+                    <p class='message'>
+                        <span class='padding_left_area'>
+                            <span class='dot'></span>
+                        </span>
+                        본인 인증을 통한 회원 가입을 하지 않은 경우 본인 인증 수단으로 찾기 또는 변경이 불가능 할 수 있습니다.
+                    </p>
+                    <p class='message margin-top-0'>
+                        <span class='padding_left_area'>
+                            <span class='dot'></span>
+                        </span>
+                        사이트 가입정보와 휴대폰 가입정보가 일치 하지 않을 경우 인증이 불가능 할 수 있습니다.
+                    </p>
+                </article>
+            </form>
+        </section>
+        
+    </div>
+</div>
+</body>
+</html>
