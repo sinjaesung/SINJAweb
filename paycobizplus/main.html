@@ -1,0 +1,1890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body class="position_relative_normal">
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<div class="bgFrame1 position_absolute javascript_Css_define overflow_hidden"
+javascript_Css_define="
+0~499|500$width:100%;height:1340response;top:1184fixed;left:0^
+500~720|720$width:100%;height:1220fixed;top:1134fixed;left:0^
+721~1320|1240$width:100%;height:2417fixed;top:1423fixed;left:0^
+1321~9999|1920$width:100%;height:2417fixed;top:1423fixed;left:0">
+    <img src="imgs/bg_main_new.png" class="display_block img_background_cover_height_center javascript_Css_define"javascript_Css_define="
+    0~720|720$display:none^
+    721~1320|1240$display:block^
+    1321~9999|1920$display:block"/>
+    <img src="imgs/bg_m_main_new.png" class="display_block img_background_cover_height_center javascript_Css_define"javascript_Css_define="
+    0~720|720$display:block^
+    721~1320|1240$display:none^
+    1321~9999|1920$display:none"/>
+</div>
+<div class="bgFrame2 position_absolute javascript_Css_define overflow_hidden"
+javascript_Css_define="
+0~499|500$display:none^
+500~720|720$width:100%;height:1140fixed;top:2334fixed;left:0^
+721~990|1240$width:100%;height:1497fixed;top:3423fixed;left:0^
+991~1320|1240$width:100%;height:1697fixed;top:3523fixed;left:0^
+1321~9999|1920$width:100%;height:2417fixed;top:3423fixed;left:0">
+    <img src="imgs/bg_main_new.png" class="display_block img_background_cover_height_center javascript_Css_define"javascript_Css_define="
+    0~720|720$display:none^
+    721~1320|1240$display:block^
+    1321~9999|1920$display:block"/>
+    <img src="imgs/bg_m_main_new.png" class="display_block img_background_cover_height_center javascript_Css_define"javascript_Css_define="
+    0~720|720$display:block^
+    721~1320|1240$display:none^
+    1321~9999|1920$display:none"/>
+</div>
+
+<header
+class="position_absolute bgcolor_white  javascript_Css_define zindex999"
+javascript_Css_define="
+0~9999|1920$left:0;top:0;width:100%">
+    <div class="inner javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$display:flex;justify-content:flex-end;padding-left:15response;padding-right:20response^
+    721~1320|1240$border-bottom-width:1fixed;border-color:#e7e7e7;border-style:solid^
+    1321~9999|1920$border-bottom-width:1fixed;border-color:#e7e7e7;border-style:solid">
+        <ul class="usermenu flex_horizontal_flexEnd javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$padding-top:19fixed;padding-bottom:18fixed^
+        721~1320|1240$width:100%;padding-top:7fixed;padding-bottom:9fixed;padding-right:40response;padding-left:40response^
+        1321~9999|1920$width:1180fixed;margin:0 auto;padding-top:7fixed;padding-bottom:9fixed">
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:12fixed;font-weight:500;color:#000^
+            721~1320|1240$font-size:12fixed;font-weight:800;color:#969698^
+            1321~9999|1920$font-size:12fixed;font-weight:800;color:#969698">
+                <a href='#'>로그인</a>
+            </li> 
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~720|720$width:1fixed;height:10fixed;margin-left:8response;margin-right:8response;background-color:#000^
+            721~1320|1240$margin-right:8fixed;margin-left:8fixed;background-color:#969698;width:1fixed;height:10fixed^
+            1321~9999|1920$margin-right:8fixed;margin-left:8fixed;background-color:#969698;width:1fixed;height:10fixed">   
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:12fixed;font-weight:500;color:#000^
+            721~1320|1240$font-size:12fixed;font-weight:800;color:#969698^
+            1321~9999|1920$font-size:12fixed;font-weight:800;color:#969698">
+                <a href='#'>회원가입</a>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="inner javascript_Css_define fontweight_900
+    tablet_flex_horizontal_spaceBetween pc_flex_horizontal_spaceBetween"
+    javascript_Css_define="
+    0~720|720$width:100%;height:auto^
+    721~1320|1240$padding-top:48fixed;padding-bottom:48fixed;width:100%;padding-left:62response;padding-right:35response^
+    1321~9999|1920$padding-top:48fixed;padding-bottom:48fixed;width:1180fixed;margin:0 auto">
+        <a href='main.html' class="flex_horizontal_flexStart javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$position:absolute;top:15fixed;left:15response">
+            <img src="imgs/paycologo.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:107fixed;height:24fixed^
+            721~1320|1240$width:107fixed;height:24fixed^
+            1321~9999|1920$width:107fixed;height:24fixed"/>
+            <img src="imgs/bizplus.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:57fixed;height:26fixed;margin-left:10response^
+            721~1320|1240$width:57fixed;height:26fixed;margin-left:10response^
+            1321~9999|1920$width:57fixed;height:26fixed;margin-left:10response"/>
+        </a>
+        <ul class="headermenu flex_horizontal_flexStart">
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1320|1240$margin-right:20response;font-size:15fixed^
+            1321~9999|1920$margin-right:40fixed;font-size:18fixed" 
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},
+                     {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#8020ef"}},{"target":"headertxtTarget001","effectType":"instant","instant_parameters":{"color":"#8020ef"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},
+                    {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}},{"target":"headertxtTarget001","effectType":"instant","instant_parameters":{"color":"#000"}}
+                    ]
+                }
+            }'>
+                <a href="#" targetindex="headertxtTarget001">직원관리</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1240$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget1_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1320|1240$margin-right:20response;font-size:15fixed^
+            1321~9999|1920$margin-right:40fixed;font-size:18fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget2_header","effectType":"instant","instant_parameters":{"background-color":"#00d79d"}},{"target":"headertxtTarget002","effectType":"instant","instant_parameters":{"color":"#00d79d"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},
+                    {"target":"widthsizeTarget2_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}},{"target":"headertxtTarget002","effectType":"instant","instant_parameters":{"color":"#000"}}
+                    ]
+                }
+            }'>
+                <a href="#"targetindex="headertxtTarget002">사용내역</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1240$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget2_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1320|1240$margin-right:20response;font-size:15fixed^
+            1321~9999|1920$margin-right:40fixed;font-size:18fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget3_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget3_header","effectType":"instant","instant_parameters":{"background-color":"#df9050"}},{"target":"headertxtTarget003","effectType":"instant","instant_parameters":{"color":"#df9050"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget3_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget3_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}},{"target":"headertxtTarget003","effectType":"instant","instant_parameters":{"color":"#000"}}
+                    ]
+                }
+            }'>
+                <a href="#"targetindex="headertxtTarget003">지급/회수관리</a> 
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1240$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget3_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1320|1240$margin-right:20response;font-size:15fixed^
+            1321~9999|1920$font-size:18fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget4_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget4_header","effectType":"instant","instant_parameters":{"background-color":"#dfdf50"}},{"target":"headertxtTarget004","effectType":"instant","instant_parameters":{"color":"#dfdf50"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget4_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget4_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}},{"target":"headertxtTarget004","effectType":"instant","instant_parameters":{"color":"#000"}}
+                    ]
+                }
+            }'>
+                <a href="#"targetindex="headertxtTarget004">설정</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1240$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget4_header"></span>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<section class="mainbannerSection position_relative_normal javascript_Css_define"javascript_Css_define="
+0~720|720$height:510fixed;background-color:#fff^
+721~1320|1240$height:952fixed;background-color:#fff^
+1321~9999|1920$height:952fixed;background-color:#fff">
+    <ul class="bannerLink javascript_Css_define"javascript_Css_define="
+    0~720|720$position:absolute;bottom:16fixed;left:206response;display:block;z-index:20^
+    721~1320|1240$position:absolute;bottom:153fixed;left:270response;display:flex;z-index:20^
+    1321~9999|1920$position:absolute;bottom:153fixed;left:370response;display:flex;z-index:20">
+        <li class="cusorpointer linkitem javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+        0~720|720$width:308response;height:40fixed;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11response^
+        721~1320|1240$padding-left:16fixed;padding-right:16fixed;height:47fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed^
+        1321~9999|1920$width:125fixed;height:56fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed">
+            <a href="#">소개서보기</a>
+        </li>
+        <li class="cusorpointer linkitem javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+        0~720|720$width:308response;height:40fixed;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11response;margin-top:10fixed^
+        721~1320|1240$padding-left:16fixed;padding-right:16fixed;height:47fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed^
+        1321~9999|1920$width:125fixed;height:56fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed">
+            <a href="#">FAQ</a>
+        </li>
+        <li class="cusorpointer linkitem javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+        0~720|720$width:308response;height:40fixed;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11response;margin-top:10fixed^
+        721~1320|1240$padding-left:16fixed;padding-right:16fixed;height:47fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed^
+        1321~9999|1920$width:125fixed;height:56fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed">
+            <a href="#">문의하기</a>
+        </li>
+        <li class="cusorpointer linkitem javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+        0~720|720$width:308response;height:40fixed;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11response;margin-top:10fixed^
+        721~1320|1240$padding-left:16fixed;padding-right:16fixed;height:47fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed^
+        1321~9999|1920$width:125fixed;height:56fixed;margin-right:12response;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed">
+            <a href="#">기업 도입신청</a>
+        </li>
+        <li class="cusorpointer linkitem javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+        0~720|720$width:308response;height:40fixed;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11response;margin-top:10fixed^
+        721~1320|1240$padding-left:16fixed;padding-right:16fixed;height:47fixed;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed^
+        1321~9999|1920$width:125fixed;height:56fixed;font-size:14fixed;font-weight:500;letter-spacing:-0.8fixed;background-color:white;border-radius:11fixed">
+            <a href="#">식권 가맹점 신청</a>
+        </li>
+    </ul>
+    <div class="swiper-container mainbanner 
+    mobile_height_100_percent
+    tablet_height_100_percent
+    pc_height_100_percent
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:104fixed;padding-bottom:16fixed;background-image:url(imgs/bg_main_new_slide.png);background-repeat:no-repeat;background-size:cover;background-position:center;text-align:center^
+                721~920|1240$padding-top:317fixed;padding-bottom:450fixed;background-image:url(imgs/bg_main_new_slide.png);background-repeat:no-repeat;background-size:cover;background-position:center;padding-left:164response^
+                921~1320|1240$padding-top:317fixed;padding-bottom:450fixed;padding-left:264response;background-image:url(imgs/bg_main_new_slide.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1321~9999|1920$padding-top:317fixed;padding-bottom:431fixed;padding-left:370response;background-image:url(imgs/bg_main_new_slide.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <!--<img src="imgs/bg_main_new_slide.png" class="display_block position_absolute
+                    img_background_cover_height_center javascript_Css_define" javascript_Css_define="
+                    0~720|720$height:768fixed^
+                    721~1240|1120$height:920fixed^
+                    1241~9999|1920$top:60% !important"/>-->
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~499|500$width:100%;font-size:24response;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    500~720|720$width:100%;font-size:24fixed;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    721~920|1240$width:100%;font-size:38fixed;font-weight:500;color:white;line-height:1.2^
+                    921~1320|1240$width:100%;font-size:42fixed;font-weight:500;color:white;line-height:1.2^
+                    1321~9999|1920$width:100%;font-size:48fixed;font-weight:500;color:white;line-height:1.1">식권,복지포인트,상품권을 한번에!<br/>
+                    PAYCO로 스마트하게 관리하는 복지</h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~720|720$display:none^
+                    721~920|1240$width:341fixed;font-size:18fixed;font-weight:500;color:white;margin-top:34fixed^
+                    921~1320|1240$width:341fixed;font-size:20fixed;font-weight:500;color:white;margin-top:34fixed^
+                    1321~9999|1920$width:396fixed;font-size:22fixed;font-weight:500;color:white;margin-top:34fixed">
+                    우리회사 맞춤 복지서비스를 이용해보세요!
+                    임직원이 원하는 최고의 복지를 제공합니다.</h4>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:104fixed;padding-bottom:16fixed;background-image:url(imgs/bg_main_new_slide2.png);background-repeat:no-repeat;background-size:cover;background-position:center;text-align:center^
+                721~920|1240$padding-top:317fixed;padding-bottom:450fixed;background-image:url(imgs/bg_main_new_slide2.png);background-repeat:no-repeat;background-size:cover;background-position:center;padding-left:164response^
+                921~1320|1240$padding-top:317fixed;padding-bottom:450fixed;padding-left:260response;background-image:url(imgs/bg_main_new_slide2.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1321~9999|1920$padding-top:317fixed;padding-bottom:431fixed;padding-left:370response;background-image:url(imgs/bg_main_new_slide2.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <!--<img src="imgs/bg_main_new_slide2.png" class="display_block position_absolute
+                    img_background_cover_height_center javascript_Css_define" javascript_Css_define="
+                    0~720|720$height:768fixed^
+                    721~1240|1120$height:920fixed^
+                    1241~9999|1920$top:60% !important"/>-->
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>   
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~499|500$width:100%;font-size:24response;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    500~720|720$width:100%;font-size:24fixed;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    721~920|1240$width:100%;font-size:38fixed;font-weight:500;color:white;line-height:1.2^
+                    921~1320|1240$width:100%;font-size:42fixed;font-weight:500;color:white;line-height:1.2^
+                    1321~9999|1920$width:100%;font-size:48fixed;font-weight:500;color:white;line-height:1.1">꼭 필요한 복지<br/>직원들 모두가 만족할 수 있게</h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~720|720$display:none^
+                    721~920|1240$width:341fixed;font-size:18fixed;font-weight:500;color:white;margin-top:34fixed^
+                    921~1320|1240$width:100%;font-size:20fixed;font-weight:500;color:white;margin-top:34fixed^
+                    1321~9999|1920$width:100%;font-size:22fixed;font-weight:500;color:white;margin-top:34fixed">
+                    복지포인트로 내 주위 모든 가맹점에서 사용하세요</h4>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:104fixed;padding-bottom:16fixed;background-image:url(imgs/bg_main_new_slide3.png);background-repeat:no-repeat;background-size:cover;background-position:center;text-align:center^
+                721~920|1240$padding-top:317fixed;padding-bottom:450fixed;background-image:url(imgs/bg_main_new_slide3.png);background-repeat:no-repeat;background-size:cover;background-position:center;padding-left:164response^
+                921~1320|1240$padding-top:317fixed;padding-bottom:450fixed;padding-left:260response;background-image:url(imgs/bg_main_new_slide3.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1321~9999|1920$padding-top:317fixed;padding-bottom:431fixed;padding-left:370response;background-image:url(imgs/bg_main_new_slide3.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <!--<img src="imgs/bg_main_new_slide3.png" class="display_block position_absolute
+                    img_background_cover_height_center javascript_Css_define" javascript_Css_define="
+                    0~720|720$height:768fixed^
+                    721~1240|1120$height:920fixed^
+                    1241~9999|1920$top:60% !important"/>-->
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>      
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~499|500$width:100%;font-size:24response;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    500~720|720$width:100%;font-size:24fixed;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    721~920|1240$width:100%;font-size:38fixed;font-weight:500;color:white;line-height:1.2^
+                    921~1320|1240$width:100%;font-size:42fixed;font-weight:500;color:white;line-height:1.2^
+                    1321~9999|1920$width:100%;font-size:48fixed;font-weight:500;color:white;line-height:1.1">언제 어디서나 맛있는<br/> 식사를 지원하세요.</h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~720|720$display:none^
+                    721~920|1240$width:341fixed;font-size:18fixed;font-weight:500;color:white;margin-top:34fixed^
+                    921~1320|1240$width:100%;font-size:20fixed;font-weight:500;color:white;margin-top:34fixed^
+                    1321~9999|1920$width:100%;font-size:22fixed;font-weight:500;color:white;margin-top:34fixed">
+                    회사 주변은 물론 재택근무에 안전하게!</h4>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:104fixed;padding-bottom:16fixed;background-image:url(imgs/bg_main_new_slide4.png);background-repeat:no-repeat;background-size:cover;background-position:center;text-align:center^
+                721~920|1240$padding-top:317fixed;padding-bottom:450fixed;background-image:url(imgs/bg_main_new_slide4.png);background-repeat:no-repeat;background-size:cover;background-position:center;padding-left:164response^
+                921~1320|1240$padding-top:317fixed;padding-bottom:450fixed;padding-left:260response;background-image:url(imgs/bg_main_new_slide4.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1321~9999|1920$padding-top:317fixed;padding-bottom:431fixed;padding-left:370response;background-image:url(imgs/bg_main_new_slide4.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <!--<img src="imgs/bg_main_new_slide4.png" class="display_block position_absolute javascript_Css_define
+                    img_background_cover_height_center"
+                    javascript_Css_define="
+                    0~720|720$height:768fixed^
+                    721~1240|1120$height:920fixed^
+                    1241~9999|1920$top:60% !important"/>-->
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>       
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~499|500$width:100%;font-size:24response;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    500~720|720$width:100%;font-size:24fixed;font-weight:500;color:white;line-height:1.2;letter-spacing:-0.8fixed^
+                    721~920|1240$width:100%;font-size:38fixed;font-weight:500;color:white;line-height:1.2^
+                    921~1320|1240$width:100%;font-size:42fixed;font-weight:500;color:white;line-height:1.2^
+                    1321~9999|1920$width:100%;font-size:48fixed;font-weight:500;color:white;line-height:1.1">감사의 마음을 전하는<br/> 확실한 선물!</h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~720|720$display:none^
+                    721~920|1240$width:341fixed;font-size:18fixed;font-weight:500;color:white;margin-top:34fixed^
+                    921~1320|1240$width:100%;font-size:20fixed;font-weight:500;color:white;margin-top:34fixed^
+                    1321~9999|1920$width:100%;font-size:22fixed;font-weight:500;color:white;margin-top:34fixed">
+                    온/오프라인 국내 최다 사용처에서 사용하세요.</h4>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-pagination swiper-pagination-styleBar1 javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$display:none^
+        721~1320|1240$bottom:260px !important;left:calc(100vw * (270/1240)) !important;width:200px !important;right:auto !important^
+        1321~9999|1920$bottom:60px !important;right:calc(100vw * (360/1920)) !important;width:200px !important;left:auto !important"></div>
+    </div>
+</section>
+
+<section class="section1 position_relative_normal javascript_Css_define position_relative_normal"
+javascript_Css_define="
+0~720|720$padding-bottom:40fixed^
+721~1320|1240$height:1125fixed^
+1321~9999|1920$height:1125fixed">
+    <h2 class="sectionTit javascript_Css_define position_relative_zindex3 "
+    javascript_Css_define="
+    0~499|500$font-size:25response;width:240response;margin:0 auto;padding-top:216fixed;padding-bottom:27fixed;font-weight:800;text-align:center^
+    500~720|720$font-size:25fixed;width:240fixed;margin:0 auto;padding-top:216fixed;padding-bottom:27fixed;font-weight:800;text-align:center^
+    721~1320|1240$font-size:40fixed;padding-left:93response;padding-top:153fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:97fixed^
+    1321~9999|1920$font-size:51fixed;padding-left:367response;padding-top:143fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:87fixed">
+    이미 수 많은 기업들이<br/>
+    가장 편리한 복지를 경험하고 있습니다.
+    </h2>
+
+    <h4 class="subject javascript_Css_define position_relative_zindex3"
+    javascript_Css_define="
+    0~499|500$font-size:14response;letter-spacing:-0.8fixed;padding-bottom:10fixed;text-align:center^
+    500~720|720$font-size:14fixed;letter-spacing:-0.8fixed;padding-bottom:10fixed;text-align:center^
+    721~1320|1240$font-size:22fixed;letter-spacing:-0.8fixed;padding-bottom:33fixed;padding-left:93response^
+    1321~9999|1920$font-size:22fixed;letter-spacing:-0.8fixed;padding-bottom:22fixed;padding-left:367response">
+    이용 임직원 수
+    </h4>
+    <p class="highlight_stat javascript_Css_define position_relative_zindex3"javascript_Css_define="
+    0~499|500$font-size:33response;font-weight:800;letter-spacing:-0.8fixed;text-align:center^
+    500~720|720$font-size:33fixed;font-weight:800;letter-spacing:-0.8fixed;text-align:center^
+    721~1320|1240$font-size:60fixed;font-weight:800;letter-spacing:-0.8fixed;padding-left:93response^
+    1321~9999|1920$font-size:62fixed;font-weight:800;letter-spacing:-0.8fixed;padding-left:367response">
+    140,454 명
+    </p>
+
+    <h4 class="subject javascript_Css_define position_relative_zindex3"
+    javascript_Css_define="
+    0~499|500$font-size:14response;letter-spacing:-0.8fixed;padding-bottom:10fixed;text-align:center^
+    500~720|720$font-size:14fixed;letter-spacing:-0.8fixed;padding-bottom:10fixed;text-align:center;padding-top:16fixed^
+    721~1320|1240$font-size:22fixed;letter-spacing:-0.8fixed;padding-bottom:26fixed;padding-left:93response;padding-top:60fixed^
+    1321~9999|1920$font-size:22fixed;letter-spacing:-0.8fixed;padding-bottom:26fixed;padding-left:367response;padding-top:60fixed">
+    이용 기업 수
+    </h4>
+    <p class="highlight_stat javascript_Css_define position_relative_zindex3"javascript_Css_define="
+    0~499|500$font-size:33response;font-weight:800;letter-spacing:-0.8fixed;text-align:center^
+    500~720|720$font-size:33fixed;font-weight:800;letter-spacing:-0.8fixed;text-align:center^
+    721~1320|1240$font-size:60fixed;font-weight:800;letter-spacing:-0.8fixed;padding-left:93response^
+    1321~9999|1920$font-size:62fixed;font-weight:800;letter-spacing:-0.8fixed;padding-left:367response">
+    1,741 개
+    </p>
+
+    <div class="imgHandshake display_block  javascript_Css_define "
+    javascript_Css_define="
+    0~720|720$width:183fixed;height:134fixed;position:absolute;top:68fixed;left:0;right:0;margin:0 auto^
+    721~1320|1240$width:406fixed;height:297fixed;position:absolute;top:395fixed;right:96response^
+    1321~9999|1920$width:505fixed;height:370fixed;position:absolute;top:353fixed;right:380response">
+        <img src="imgs/img_handshake.png" class="display_block position_absolute  javascript_Css_define" 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1320|1240$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1321~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+    </div>
+    <div class="imgStones display_block  javascript_Css_define "
+    javascript_Css_define="
+    0~720|720$width:165fixed;height:85fixed;position:absolute;top:64fixed;right:0;left:0;margin:0 auto^
+    721~1320|1240$width:365fixed;height:187fixed;position:absolute;top:408fixed;right:110response^
+    1321~9999|1920$width:453fixed;height:233fixed;position:absolute;top:370fixed;right:398response">
+        <img src="imgs/img_stone.png" class="display_block position_absolute  javascript_Css_define " 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1320|1240$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1321~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+    </div>
+
+    <div class="partnersList swiper-container section1Slider javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$margin-top:36px !important^
+    721~1320|1240$margin-top:57px !important^
+    1321~9999|1920$margin-top:64px !important">
+        <div class='swiper-wrapper'>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_cancer_center.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_daewoong.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_doosan.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_dsme.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_incheon.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_jeonnam.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_jinair.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_koreabank.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_krafton.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_nc.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_neowiz.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_netmarble.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_nexon.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_severance.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_shilla.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_sk.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_sncity.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_ssg.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_tmon.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+            <div class="swiper-slide partner javascript_Css_define"javascript_Css_define="
+            0~720|720$width:180px !important;height:205fixed;margin-right:8fixed^
+            721~1320|1240$width:180px !important;height:205fixed;margin-right:8fixed^
+            1321~9999|1920$width:180px !important;height:205fixed;margin-right:8fixed">
+                <img src="imgs/partner/logo_yogiyo.png" class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:100%;height:100%"/>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section2 position_relative_normal">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;text-align:center^
+    721~990|1240$idth:100%;text-align:center^
+    991~1320|1240$width:100%;padding-left:93response;padding-right:93response^
+    1321~9999|1920$width:1180fixed;margin:0 auto">
+        <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|720$padding-top:250fixed;padding-bottom:8fixed;font-weight:500;color:#fff;letter-spacing:-0.8fixed;font-size:26fixed^
+        500~720|720$padding-top:250fixed;padding-bottom:8fixed;font-weight:500;color:#fff;letter-spacing:-0.8fixed;font-size:32fixed^
+        721~990|1240$padding-top:300fixed;padding-bottom:8fixed;font-weight:500;color:#fff;letter-spacing:-0.8fixed;font-size:42fixed^
+        991~1320|1240$padding-top:138fixed;padding-bottom:20fixed;font-weight:500;color:#fff;letter-spacing:-0.8fixed;font-size:51fixed^
+        1321~9999|1920$padding-top:240fixed;padding-bottom:20fixed;font-weight:500;color:#fff;letter-spacing:-0.8fixed;font-size:51fixed">
+        페이코식권
+        </h2>
+        <h4 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|720$padding-bottom:33fixed;color:#fff;font-size:14fixed;letter-spacing:-0.8fixed;width:225fixed;margin:0 auto^
+        500~720|720$padding-bottom:33fixed;color:#fff;font-size:15fixed;letter-spacing:-0.8fixed;width:225fixed;margin:0 auto^
+        720~990|720$padding-bottom:33fixed;color:#fff;font-size:18fixed;letter-spacing:-0.8fixed;width:100%^
+        991~1320|1240$padding-bottom:250fixed;color:#fff;font-size:23fixed;letter-spacing:-0.8fixed;width:600response^
+        1321~9999|1920$padding-bottom:87fixed;color:#fff;font-size:23fixed;letter-spacing:-0.8fixed">
+        언제 어디서나 우리 회사의 직원들에게 맛있는 식사를 지원하세요.
+        </h4>
+    </div>
+
+    <div class="foodhand display_block  javascript_Css_define "
+    javascript_Css_define="
+    0~720|720$width:172fixed;height:220fixed;position:absolute;top:36fixed;right:0;left:0;margin:0 auto^
+    720~990|1240$width:220fixed;height:280fixed;position:absolute;top:36fixed;right:0;left:0;margin:0 auto^
+    991~1320|1240$width:440fixed;height:560fixed;position:absolute;top:70fixed;right:46response^
+    1321~9999|1920$width:440fixed;height:560fixed;position:absolute;top:0;right:434response">
+        <img src="imgs/img_food_total.png" class="display_block position_absolute  javascript_Css_define " 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1320|1240$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1321~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+    </div>
+    
+    <ul class="cardList javascript_Css_define position_relative_zindex3"
+    javascript_Css_define="
+    0~499|600$width:93%;margin:0 auto;padding-bottom:50response^
+    500~720|720$width:420fixed;margin:0 auto;padding-bottom:50fixed^
+    721~1320|1240$width:100%;padding-left:80response;padding-right:80response;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:177fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:232fixed">
+    
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">총 7만여 개의 사용처
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">회사 근처 맛집부터 주변 편의점까지
+                다양하게 사용해보세요.
+                </p>
+            </div>
+            <img src="imgs/img_food_01.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">관리 업무는 최소화
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">식당제류/식당관리/정산업무
+                모두 페이코가 책임집니다.
+                </p>
+            </div>
+            <img src="imgs/img_food_02.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">재택 근무에도 안전하게 사용
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">배달/픽업/밀키트로 원하는 장소로
+                안전하게 이용해보세요.
+                </p>
+            </div>
+            <img src="imgs/img_food_03.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">강력한 사용 편의 기능
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">원터치 식권 결제,
+                함꼐 모아 쓰기,야근 식권 신청 등
+                </p>
+            </div>
+            <img src="imgs/img_food_04.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+    </ul>
+</section>
+<section class="section3  position_relative_normal">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;text-align:center^
+    721~1320|1240$width:100%;padding-left:80response;padding-right:80response;text-align:right^
+    1321~9999|1920$width:1180fixed;margin:0 auto;text-align:right">
+        <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|500$padding-top:190fixed;padding-bottom:8fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:32response^
+        500~720|720$padding-top:190fixed;padding-bottom:8fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:32fixed^
+        721~1320|1240$padding-top:256fixed;padding-bottom:20fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:51fixed^
+        1321~9999|1920$padding-top:154fixed;padding-bottom:20fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:51fixed">
+        복지포인트
+        </h2>
+        <h4 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|720$padding-bottom:33fixed;color:#000;font-size:14fixed;letter-spacing:-0.8fixed;width:225fixed;margin:0 auto^
+        500~720|720$padding-bottom:33fixed;color:#000;font-size:15fixed;letter-spacing:-0.8fixed;width:187fixed;margin:0 auto^
+        721~1320|1240$padding-bottom:75fixed;color:#000;font-size:23fixed;letter-spacing:-0.8fixed;width:100%^
+        1321~9999|1920$padding-bottom:77fixed;color:#000;font-size:23fixed;letter-spacing:-0.8fixed">
+        꼭 필요한 복지 직원들 모두가 만족할 수 있도록!
+        </h4>
+    </div>
+
+    <div class="foodpoint display_block  javascript_Css_define "
+    javascript_Css_define="
+    0~720|720$width:188fixed;height:188fixed;position:absolute;top:0;right:0;left:0;margin:0 auto^
+    721~1320|1240$width:360fixed;height:360fixed;position:absolute;top:25fixed;left:409response^
+    1321~9999|1920$width:360fixed;height:360fixed;position:absolute;top:-55fixed;left:677response">
+        <img src="imgs/img_point.png" class="display_block position_absolute  javascript_Css_define " 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1320|1240$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1321~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+    </div>
+    
+    <ul class="cardList javascript_Css_define position_relative_zindex3"
+    javascript_Css_define="
+    0~499|600$width:93%;margin:0 auto;padding-bottom:50response^
+    500~720|720$width:420fixed;margin:0 auto;padding-bottom:50fixed^
+    721~1320|1240$width:100%;padding-left:80response;padding-right:80response;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:87fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:200fixed">
+    
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">원하는 사용처 어디서나 사용
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">온/오프라인 사용처는 물론,
+                복지카드 발급 시
+                카드 가맹점이라면 어디든지 가능해요.
+                </p>
+            </div>
+            <img src="imgs/img_point_01.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">효율적인 관리 기능
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">관리자 페이지에서
+                지급가회수를 간단하게.
+                사용 내역은 실시간으로 조회하세요.
+                </p>
+            </div>
+            <img src="imgs/img_point_02.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">편리한 사용성
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">언제 어디서든 PAYCO앱과
+                복지카드로 사용이 가능해요.
+                </p>
+            </div>
+            <img src="imgs/img_point_03.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">손쉬운 복지카드 발급
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">PAYCO 앱에서
+                1분 만에 발급 받으세요.
+                </p>
+            </div>
+            <img src="imgs/img_point_04.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+    </ul>
+</section>
+
+<section class="section4  position_relative_normal">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;text-align:center^
+    721~1320|1240$width:100%;padding-left:80response;padding-right:80response^
+    1321~9999|1920$width:1180fixed;margin:0 auto">
+        <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|500$padding-top:250fixed;padding-bottom:8fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:25fixed^
+        500~720|720$padding-top:250fixed;padding-bottom:8fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:32fixed^
+        721~1320|1240$padding-top:200fixed;padding-bottom:20fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:51fixed;color:#d1d1d1^
+        1321~9999|1920$padding-top:160fixed;padding-bottom:20fixed;font-weight:500;color:#000;letter-spacing:-0.8fixed;font-size:51fixed;color:#d1d1d1">
+        페이코 상품권
+        </h2>
+        <h4 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|720$padding-bottom:26fixed;color:#000;font-size:14fixed;letter-spacing:-0.8fixed;width:100%;margin:0 auto^
+        500~720|720$padding-bottom:33fixed;color:#000;font-size:15fixed;letter-spacing:-0.8fixed;width:200fixed;margin:0 auto^
+        721~1320|1240$padding-bottom:124fixed;color:#000;font-size:23fixed;letter-spacing:-0.8fixed;width:100%;color:#d1d1d1^
+        1321~9999|1920$padding-bottom:62fixed;color:#000;font-size:23fixed;letter-spacing:-0.8fixed;color:#d1d1d1">
+        감사의 마음을 전하는 확실한 선물!
+        </h4>
+    </div>
+
+    <div class="img_gift_02 display_block  javascript_Css_define "
+    javascript_Css_define="
+    0~499|500$width:196fixed;height:176fixed;position:absolute;top:0;right:0;left:0;margin:0 auto^
+    500~720|720$width:196fixed;height:176fixed;position:absolute;top:0;right:205response^
+    721~990|990$width:380fixed;height:calc(380px * (432/480));position:absolute;top:74fixed;right:88response^
+    991~1320|1240$width:480fixed;height:432fixed;position:absolute;top:74fixed;right:48response^
+    1321~9999|1920$width:480fixed;height:432fixed;position:absolute;top:32fixed;right:370response">
+        <img src="imgs/img_gift_02.png" class="display_block position_absolute  javascript_Css_define " 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1320|1240$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1321~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+    </div>
+    <div class="gift01 display_block  javascript_Css_define "
+    javascript_Css_define="
+    0~499|500$width:196fixed;height:136fixed;position:absolute;top:107fixed;right:0;left:0;margin:0 auto^
+    500~720|720$width:196fixed;height:136fixed;position:absolute;top:107fixed;right:270response^
+    721~990|990$width:380fixed;height:calc(380px * (332/480));position:absolute;top:284fixed;right:189response^
+    991~1320|1240$width:480fixed;height:332fixed;position:absolute;top:334fixed;right:189response^
+    1321~9999|1920$width:480fixed;height:332fixed;position:absolute;top:292fixed;right:511response">
+        <img src="imgs/img_gift_01.png" class="display_block position_absolute  javascript_Css_define " 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1320|1240$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1321~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+    </div>
+    
+    <ul class="cardList javascript_Css_define position_relative_zindex3"
+    javascript_Css_define="
+    0~499|600$width:93%;margin:0 auto;padding-bottom:50response^
+    500~720|720$width:420fixed;margin:0 auto;padding-bottom:50fixed^
+    721~1320|1240$width:100%;padding-left:80response;padding-right:80response;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:223fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:336fixed">
+    
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">사용처 국내 1위
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">오픈마켓,앱스토어,배달앱,편의점 등
+                온/오프라인 국내 최다 사용처에서 사용하세요.
+                </p>
+            </div>
+            <img src="imgs/img_card_01.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:0^
+        721~990|720$width:48%;height:0^
+        991~1320|1240$width:520response;height:0^
+        1321~9999|1920$width:571fixed;height:0"></li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response;width:200response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed;width:200fixed">모바일 상품권으로
+                편리하고 간편하게
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">원하는 권종으로 주문 후 바로 발송하세요.
+                </p>
+            </div>
+            <img src="imgs/img_card_02.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:32response;padding-bottom:26response;padding-left:30response;padding-right:30response;border-radius:30response;background-color:#fff;margin-bottom:11response;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        721~990|720$width:48%;height:auto;padding-top:26fixed;padding-bottom:26fixed;padding-left:14response;padding-right:14response;border-radius:30response;background-color:#fff;margin-bottom:11fixed;display:flex;justify-content:space-between;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        991~1320|1240$width:520response;height:auto;padding-top:27response;padding-left:37response;padding-bottom:17response;padding-right:37response;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:28response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+        1321~9999|1920$width:571fixed;height:auto;padding-top:37fixed;padding-left:44fixed;padding-bottom:36fixed;padding-right:44fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:30fixed;margin-bottom:30fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:10response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:27response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:27fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14fixed">프로모션, 명절 상품권으로도
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:16response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:280response^
+                500~990|720$font-size:16fixed;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                991~1320|1240$font-size:19response;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:280response^
+                1321~9999|1920$font-size:19fixed;letter-spacing:-0.8fixed;color:#787677;line-height:1.2;width:260fixed">다양한 목적으로 상품권을 활용하세요.
+                </p>
+            </div>
+            <img src="imgs/img_card_03.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:120response;height:120response^
+            1321~9999|1920$width:120fixed;height:120fixed"/>
+        </li>
+    </ul>
+</section>
+
+<section class="section5  position_relative_normal">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;text-align:center;padding-top:40fixed^
+    721~1320|1240$width:100%;padding-left:86response;padding-right:52response;padding-top:137fixed;justify-content:space-between;align-items:flex-start;display:flex^
+    1321~9999|1920$width:1180fixed;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;padding-top:148fixed">
+        <div class='wrapbox'>
+            <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+            0~499|500$padding-top:40fixed;padding-bottom:6fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:24fixed^
+            500~720|720$padding-top:40fixed;padding-bottom:6fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:30fixed^
+            721~990|990$padding-bottom:20fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:40fixed^
+            991~1320|1240$padding-bottom:20fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:51fixed^
+            1321~9999|1920$padding-bottom:17fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:51fixed">
+            그 외 서비스
+            </h2>
+            <h4 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+            0~499|720$padding-bottom:26fixed;font-size:14fixed;letter-spacing:-0.8fixed;width:100%;margin:0 auto^
+            500~720|720$padding-bottom:28fixed;font-size:15fixed;letter-spacing:-0.8fixed;width:100%^
+            721~990|990$padding-bottom:103fixed;font-size:18fixed;letter-spacing:-0.8fixed;width:100%^
+            991~1320|1240$padding-bottom:103fixed;font-size:23fixed;letter-spacing:-0.8fixed;width:100%^
+            1321~9999|1920$padding-bottom:36fixed;font-size:23fixed;letter-spacing:-0.8fixed">
+            기업을 위한 PAYCO의 다양한 서비스를 만나보세요.
+            </h4>    
+        </div>
+        <a class="display_block linkbtn javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+        0~499|600$width:70%;bottom:52fixed;padding-top:11fixed;padding-bottom:11fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19response;font-weight:500;letter-spacing:-0.8fixed;text-align:center;left:0;right:0;margin:0 auto;position:absolute^
+        500~720|720$width:420fixed;bottom:64fixed;padding-top:11fixed;padding-bottom:11fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19fixed;font-weight:500;letter-spacing:-0.8fixed;text-align:center;left:0;right:0;margin:0 auto;position:absolute^
+        721~990|1240$padding:14fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19fixed;font-weight:500;letter-spacing:-0.8fixed^
+        991~1320|1240$padding:20fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:23fixed;font-weight:500;letter-spacing:-0.8fixed^
+        1321~9999|1920$padding:20fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:23fixed;font-weight:500;letter-spacing:-0.8fixed">
+        블로그에서 소식 확인하기</a>
+    </div>
+
+    <ul class="cardList javascript_Css_define position_relative_zindex3"
+    javascript_Css_define="
+    0~499|600$width:93%;margin:0 auto;padding-bottom:130fixed^
+    500~720|720$width:420fixed;margin:0 auto;padding-bottom:130fixed^
+    721~1320|1240$width:100%;padding-left:30response;padding-right:30response;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:97fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;display:flex;justify-content:space-between;flex-flow:row wrap;padding-bottom:153fixed">
+    
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:34response;padding-bottom:34response;padding-left:40response;padding-right:17response;border-radius:20response;background-color:#fff;margin-bottom:20response;display:flex;justify-content:space-between;background-color:#f8f9fd^
+        721~990|720$width:48%;height:auto;padding-top:28fixed;padding-bottom:100fixed;padding-left:28response;padding-right:14response;border-radius:20response;background-color:#fff;display:flex;margin-bottom:20response;justify-content:space-between;background-color:#f8f9fd^
+        991~1320|1240$width:380response;height:auto;padding-top:28response;padding-left:38response;padding-bottom:130response;padding-right:20response;display:flex;justify-content:space-between;background-color:#f8f9fd;border-radius:20response^
+        1321~9999|1920$width:380fixed;height:auto;padding-top:24fixed;padding-left:38fixed;padding-bottom:130fixed;padding-right:18fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:20fixed;background-color:#f8f9fd">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:23response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:23fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:15fixed;padding-top:19fixed">페이코 오더
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:17response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                500~990|720$font-size:17fixed;letter-spacing:-0.8fixed;color:#b5b5b7;line-height:1.2;width:100%^
+                991~1320|1240$font-size:17response;letter-spacing:-0.8fixed;color:#b5b5b7;line-height:1.2;width:206response^
+                1321~9999|1920$font-size:17fixed;color:#b5b5b7;line-height:1.2;width:206fixed">사내카페가 있다면 도입 시급!
+                앱/QR코드로 이용하는
+                픽업 주문 서비스
+                </p>
+            </div>
+            <img src="imgs/img_order.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:100response;height:100response^
+            1321~9999|1920$width:100fixed;height:100fixed"/>
+
+           
+            <a href='#' class="display_block linkbtn javascript_Css_define position_absolute flex_horizontal_flexStart"javascript_Css_define="
+            0~720|500$display:none^
+            721~990|990$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:30fixed;left:40response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+            991~1320|1240$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:40response;left:40response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+            1321~9999|1920$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:46fixed;left:40fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            자세히 보기 <img src="imgs/arrowicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:4fixed;height:7fixed;margin-left:10fixed^
+            991~1320|1240$width:4fixed;height:7fixed;margin-left:10fixed^
+            1321~9999|1920$width:4fixed;height:7fixed;margin-left:10fixed"/>
+            </a>
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:34response;padding-bottom:34response;padding-left:40response;padding-right:17response;border-radius:20response;background-color:#fff;margin-bottom:20response;display:flex;justify-content:space-between;background-color:#f8f9fd^
+        721~990|720$width:48%;height:auto;padding-top:28fixed;padding-bottom:100fixed;padding-left:28response;padding-right:14response;border-radius:20response;background-color:#fff;display:flex;margin-bottom:20response;justify-content:space-between;background-color:#f8f9fd^
+        991~1320|1240$width:380response;height:auto;padding-top:28response;padding-left:38response;padding-bottom:130response;padding-right:20response;display:flex;justify-content:space-between;background-color:#f8f9fd;border-radius:20response^
+        1321~9999|1920$width:380fixed;height:auto;padding-top:24fixed;padding-left:38fixed;padding-bottom:130fixed;padding-right:18fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:20fixed;background-color:#f8f9fd">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:23response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:23fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:15fixed;padding-top:19fixed">모바일 쿠폰
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:17response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                500~990|720$font-size:17fixed;letter-spacing:-0.8fixed;color:#b5b5b7;line-height:1.2;width:100%^
+                991~1320|1240$font-size:17response;letter-spacing:-0.8fixed;color:#b5b5b7;line-height:1.2;width:206response^
+                1321~9999|1920$font-size:17fixed;color:#b5b5b7;line-height:1.2;width:206fixed">80여개 브랜드사의 2,100여개 상품
+                선물 가능! 대량발송, 정기발송 OK!
+                </p>
+            </div>
+            <img src="imgs/img_coupon.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:100response;height:100response^
+            1321~9999|1920$width:100fixed;height:100fixed"/>
+
+           
+            <a href='#' class="display_block linkbtn javascript_Css_define position_absolute flex_horizontal_flexStart"javascript_Css_define="
+            0~720|500$display:none^
+            721~990|990$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:30fixed;left:40response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+            991~1320|1240$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:40response;left:40response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+            1321~9999|1920$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:46fixed;left:40fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            자세히 보기 <img src="imgs/arrowicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:4fixed;height:7fixed;margin-left:10fixed^
+            991~1320|1240$width:4fixed;height:7fixed;margin-left:10fixed^
+            1321~9999|1920$width:4fixed;height:7fixed;margin-left:10fixed"/>
+            </a>
+          
+        </li>
+        <li class="carditem javascript_Css_define position_relative_normal"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-top:34response;padding-bottom:34response;padding-left:40response;padding-right:17response;border-radius:20response;background-color:#fff;margin-bottom:20response;display:flex;justify-content:space-between;background-color:#f8f9fd^
+        721~990|720$width:48%;height:auto;padding-top:28fixed;padding-bottom:100fixed;padding-left:28response;padding-right:14response;border-radius:20response;background-color:#fff;display:flex;margin-bottom:20response;justify-content:space-between;background-color:#f8f9fd^
+        991~1320|1240$width:380response;height:auto;padding-top:28response;padding-left:38response;padding-bottom:130response;padding-right:20response;display:flex;justify-content:space-between;background-color:#f8f9fd;border-radius:20response^
+        1321~9999|1920$width:380fixed;height:auto;padding-top:24fixed;padding-left:38fixed;padding-bottom:130fixed;padding-right:18fixed;display:flex;justify-content:space-between;background-color:#fff;border-radius:20fixed;background-color:#f8f9fd">
+            <div class="left">
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:19response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6response^
+                500~990|720$font-size:19fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+                991~1320|1240$font-size:23response;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:14response^
+                1321~9999|1920$font-size:23fixed;font-weight:800;letter-spacing:-0.8fixed;padding-bottom:15fixed;padding-top:19fixed">건강검진
+                </p>
+                <p class="objectTit javascript_Css_define"
+                javascript_Css_define="
+                0~499|500$font-size:17response;letter-spacing:-0.8fixed;color:#767677;line-height:1.2;width:100%^
+                500~990|720$font-size:17fixed;letter-spacing:-0.8fixed;color:#b5b5b7;line-height:1.2;width:100%^
+                991~1320|1240$font-size:17response;letter-spacing:-0.8fixed;color:#b5b5b7;line-height:1.2;width:206response^
+                1321~9999|1920$font-size:17fixed;color:#b5b5b7;line-height:1.2;width:206fixed">국내 최다 의료기관 보유!
+                20년간 노하우로 통합 서비스 제공
+                </p>
+            </div>
+            <img src="imgs/img_chart.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:66fixed;height:66fixed^
+            991~1320|1240$width:100response;height:100response^
+            1321~9999|1920$width:100fixed;height:100fixed"/>
+
+           
+            <a href='#' class="display_block linkbtn javascript_Css_define position_absolute flex_horizontal_flexStart"javascript_Css_define="
+            0~720|500$display:none^
+            721~990|990$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:30fixed;left:40response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+            991~1320|1240$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:40response;left:40response;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)^
+            1321~9999|1920$padding:12px 16px;border-radius:10fixed;background-color:white;font-size:12fixed;font-weight:500;letter-spacing:-0.8fixed;bottom:46fixed;left:40fixed;box-shadow:0 4px 4px 0 rgba(0,0,0,0.25)">
+            자세히 보기 <img src="imgs/arrowicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~499|500$width:66response;height:66response^
+            500~990|720$width:4fixed;height:7fixed;margin-left:10fixed^
+            991~1320|1240$width:4fixed;height:7fixed;margin-left:10fixed^
+            1321~9999|1920$width:4fixed;height:7fixed;margin-left:10fixed"/>
+            </a>
+        </li>
+    </ul>
+</section>
+
+<section class="section6  position_relative_normal">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;padding-top:130fixed;padding-bottom:20fixed;text-align:center^
+    721~1320|1240$width:100%;padding-left:82response;padding-right:37response;padding-top:22fixed;padding-bottom:64fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-start;padding-top:14fixed">
+        <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|600$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:24fixed^
+        500~720|720$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:26fixed^
+        721~990|990$padding-bottom:57fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:40fixed^
+        991~1320|1240$padding-bottom:57fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:46fixed^
+        1321~9999|1920$padding-bottom:52fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:51fixed">
+        사용처를 확인해보세요!
+        </h2>  
+
+        <div class="pc_flex_horizontal_flexStart tablet_flex_horizontal_flexEnd">
+            <a class="display_block linkbtn javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+            0~499|600$width:70%;padding-top:9fixed;padding-bottom:9fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19response;font-weight:500;letter-spacing:-0.8fixed;margin:0 auto;margin-bottom:7fixed^
+            500~720|720$width:281fixed;padding-top:9fixed;padding-bottom:9fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19fixed;font-weight:500;letter-spacing:-0.8fixed;margin:0 auto;margin-bottom:7fixed^
+            721~990|1240$padding:14fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19fixed;font-weight:500;letter-spacing:-0.8fixed;margin-right:17response^
+            991~1320|1240$padding:20fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:23fixed;font-weight:500;letter-spacing:-0.8fixed;margin-right:17response^
+            1321~9999|1920$padding:20fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:23fixed;font-weight:500;letter-spacing:-0.8fixed;margin-right:17fixed">
+            식권 사용처</a>
+            <a class="display_block linkbtn javascript_Css_define flex_horizontal_Center"javascript_Css_define="
+            0~499|600$width:70%;padding-top:9fixed;padding-bottom:9fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19response;font-weight:500;letter-spacing:-0.8fixed;margin:0 auto;margin-bottom:7fixed^
+            500~720|720$width:281fixed;padding-top:9fixed;padding-bottom:9fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19fixed;font-weight:500;letter-spacing:-0.8fixed;margin:0 auto;^
+            721~990|1240$padding:14fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:19fixed;font-weight:500;letter-spacing:-0.8fixed^
+            991~1320|1240$padding:20fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:23fixed;font-weight:500;letter-spacing:-0.8fixed^
+            1321~9999|1920$padding:20fixed;border-radius:10fixed;background-color:#fa2829;color:white;font-size:23fixed;font-weight:500;letter-spacing:-0.8fixed">
+            복지포인트/상품권 사용처</a>
+        </div>
+    </div>
+   
+    <div class="partnerlist javascript_Css_define position_relative_normal"
+    javascript_Css_define="
+    0~499|600$width:94%;margin:0 auto;padding-bottom:68fixed^
+    500~720|720$width:281fixed;margin:0 auto;padding-bottom:68fixed^
+    721~1320|1240$width:1118response;margin:0 auto;padding-bottom:127fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;padding-bottom:153fixed">
+        <img src="imgs/img_logos.png" class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$display:none^
+        721~1320|1240$width:100%^
+        1321~9999|1920$width:100%"/>
+
+        <img src="imgs/img_m_logos.png" class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:100%^
+        721~9999|1920$display:none"/>
+    </div>
+</section>
+
+<section class="section7 colorwhite position_relative_normal javascript_Css_define"style='background-color:#111'
+javascript_Css_define="
+0~720|720$width:100%;padding-bottom:64fixed^
+721~990|990$width:100%;padding-bottom:93fixed">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;padding-top:75fixed;padding-bottom:10fixed;text-align:center^
+    721~990|990$width:100%;padding-left:88response;padding-right:88response;padding-top:84fixed^
+    991~1320|1240$width:100%;padding-left:88response;padding-right:88response;padding-top:84fixed;padding-bottom:636fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;padding-top:151fixed;padding-bottom:421fixed">
+        <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|600$padding-bottom:9fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:24fixed^
+        500~720|720$padding-bottom:9fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:26fixed^
+        721~990|990$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:38fixed^
+        991~1320|1240$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:46fixed^
+        1321~9999|1920$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:51fixed">
+        모든 데이터는 암호화 됩니다.
+        </h2>  
+        <h4 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~499|720$padding-bottom:10fixed;font-size:14fixed;letter-spacing:-0.8fixed;width:100%^
+        500~720|720$padding-bottom:10fixed;font-size:15fixed;letter-spacing:-0.8fixed;width:100%^
+        721~990|990$font-size:19fixed;letter-spacing:-0.8fixed;width:100%^
+        991~1320|1240$font-size:23fixed;letter-spacing:-0.8fixed;width:100%^
+        1321~9999|1920$font-size:23fixed;letter-spacing:-0.8fixed">
+        자료 손실과 자료 유출. 걱정하지 마세요.<br/>
+        PAYCO는 모든 데이터를 암호화해서 저장합니다.
+        </h4>    
+    </div>
+   
+    <div class="security javascript_Css_define position_relative_normal"
+    javascript_Css_define="
+    0~499|500$width:316response;height:143response;margin:0 auto^
+    500~720|720$width:316fixed;height:143fixed;margin:0 auto^
+    721~990|990$width:860response;height:390response;position:relative;margin:0 auto^
+    991~1320|1240$width:992fixed;height:450fixed;position:absolute;top:243fixed;right:0;left:0;margin:0 auto^
+    1321~9999|1920$width:992fixed;height:450fixed;position:absolute;top:128fixed;right:370response">
+        <img src="imgs/img_security.png" class="display_block javascript_Css_define"javascript_Css_define="
+        0~9999|1920$width:100%;height:100%"/>
+    </div>
+
+    <div class="security2 javascript_Css_define position_relative_normal"
+    javascript_Css_define="
+    0~499|500$width:300response;height:38response;margin:0 auto;margin-top:9fixed^
+    500~720|720$width:300fixed;height:38fixed;margin:0 auto;margin-top:9fixed^
+    721~990|990$width:468response;height:60response;position:relative;margin:0 auto;margin-top:8fixed^
+    991~1320|1240$width:468fixed;height:60fixed;position:absolute;bottom:93fixed;left:0;right:0;margin:0 auto^
+    1321~9999|1920$width:468fixed;height:60fixed;position:absolute;bottom:163fixed;left:370response">
+        <img src="imgs/img_security_grade.png" class="display_block javascript_Css_define"javascript_Css_define="
+        0~9999|1920$width:100%;height:100%"/>
+    </div>
+</section>
+
+<section class="section8 position_relative_normal">
+    <div class="wrapping javascript_Css_define"javascript_Css_define="
+    0~720|720$width:100%;padding-top:83fixed;padding-bottom:38fixed;text-align:center^
+    721~1320|1240$width:100%;padding-left:68response;padding-right:43response;padding-top:87fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;padding-top:159fixed">
+        <h2 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$padding-bottom:10fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:26fixed^
+        721~1320|990$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:46fixed^
+        1321~9999|1920$padding-bottom:16fixed;font-weight:500;letter-spacing:-0.8fixed;font-size:51fixed">
+        문의하기
+        </h2>  
+        <h4 class="sectionTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$font-size:15fixed;letter-spacing:-0.8fixed;width:204fixed;margin:0 auto^
+        721~1320|990$font-size:19fixed;letter-spacing:-0.8fixed;width:100%^
+        1321~9999|1920$font-size:23fixed;letter-spacing:-0.8fixed">
+        해당 폼을 작성해 문의 주시면 최대한 빠르게 답변 드리겠습니다.
+        </h4>    
+    </div>
+    
+    <form>
+    <div class="inputwrap javascript_Css_define
+    flex_horizontal_spaceBetween flex_alignitems_flexStart"
+    javascript_Css_define="
+    0~720|720$width:100%;padding-left:30response;padding-right:30response;margin-top:38fixed;padding-bottom:100fixed^
+    721~1320|1240$width:100%;padding-left:68response;padding-right:42response;margin-top:51fixed;padding-bottom:203fixed^
+    1321~9999|1920$width:1180fixed;margin:0 auto;margin-top:54fixed;padding-bottom:256fixed">
+        <div class="inputCol position_relative_normal javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-bottom:21fixed^
+        721~1320|1240$width:48%;padding-bottom:23fixed^
+        1321~9999|1920$width:571fixed;padding-bottom:30fixed">
+            <div class="formlabel  javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            721~1320|1240$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            1321~9999|1920$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed">
+                <p class="tit">
+                    기업명
+                </p>            
+            </div>
+
+            <input type="text" placeholder='기업명을 입력해주세요' value='' name='company' class="inputtext javascript_Css_define        
+            javascript_inputvalidate"javascript_Css_define="
+            0~720|720$padding-left:15response;padding-right:15response;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            721~1320|1240$padding-left:15response;padding-right:15response;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            1321~9999|1920$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%">
+        </div>
+        
+        <div class="inputCol position_relative_normal javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-bottom:21fixed^
+        721~1320|1240$width:48%;padding-bottom:23fixed^
+        1321~9999|1920$width:571fixed;padding-bottom:30fixed">
+            <div class="formlabel  javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            721~1320|1240$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            1321~9999|1920$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed">
+                <p class="tit">
+                    담당자 이름
+                </p>            
+            </div>
+
+            <input type="text" placeholder='담당자 이름을 입력해주세요.' value='' name='naming' class="inputtext javascript_Css_define        
+            javascript_inputvalidate"javascript_Css_define="
+            0~720|720$padding-left:15response;padding-right:15response;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            721~1320|1240$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            1321~9999|1920$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%">
+        </div>
+
+        <div class="inputCol position_relative_normal javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-bottom:21fixed^
+        721~1320|1240$width:48%;padding-bottom:23fixed^
+        1321~9999|1920$width:571fixed;padding-bottom:30fixed">
+            <div class="formlabel  javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            721~1320|1240$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            1321~9999|1920$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed">
+                <p class="tit">
+                    연락처
+                </p>            
+            </div>
+
+            <input type="text" placeholder='연락처를 입력해주세요' value='' name='phone' class="inputtext javascript_Css_define        
+            javascript_inputvalidate_keyboard javascript_inputvalidate"javascript_Css_define="
+            0~720|720$padding-left:15response;padding-right:15response;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            721~1320|1240$padding-left:15response;padding-right:15response;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            1321~9999|1920$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%"
+            targetdata='{"Target":"validatemessage_phone","validationtype":"phone"}'
+            isvalid="false">
+
+            <div class="shapewrap javascript_Css_define"   
+            targetindex="validatemessage_phone"
+
+            style="display:none"
+            javascript_Css_define="
+            0~9999|1920$position:absolute;bottom:-20%;left:0">
+                <div class="traiangle1 display_block borderstyle_solid bordercolordark javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:0;height:0;border-left-width:16fixed;border-top-width:16fixed^
+                721~1320|1240$width:0;height:0;border-left-width:16fixed;border-top-width:16fixed^
+                1321~9999|1920$width:0;height:0;border-left-width:16fixed;border-top-width:16fixed">
+                </div>
+                <div class="validatemessagebox bgcolor_dark colorwhite fontweight_800 colorwhite flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-left:20fixed;padding-right:20fixed;height:38fixed;border-radius:5fixed;width:270fixed^
+                721~1320|1240$font-size:13fixed;padding-left:20fixed;padding-right:20fixed;height:38fixed;border-radius:5fixed;width:270fixed^
+                1321~9999|1920$font-size:12fixed;padding-left:20fixed;padding-right:20fixed;height:42fixed;border-radius:5fixed;width:270fixed"
+            >휴대폰 형식이 올바르지 않습니다.</div>
+            </div>
+        </div>
+        
+        <div class="inputCol position_relative_normal javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-bottom:21fixed^
+        721~1320|1240$width:48%;padding-bottom:23fixed^
+        1321~9999|1920$width:571fixed;padding-bottom:30fixed">
+            <div class="formlabel  javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            721~1320|1240$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            1321~9999|1920$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed">
+                <p class="tit">
+                    이메일
+                </p>            
+            </div>
+
+            <input type="email" placeholder='이메일 주소를 입력해주세요.' value='' name='emailaddress' class="inputtext javascript_Css_define        
+            javascript_inputvalidate_keyboard javascript_inputvalidate"javascript_Css_define="
+            0~720|720$padding-left:15response;padding-right:15response;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            721~1320|1240$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%^
+            1321~9999|1920$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%"
+            targetdata='{"Target":"validatemessage_email","validationtype":"email"}'
+            isvalid="false">
+
+            <div class="shapewrap javascript_Css_define"   
+            targetindex="validatemessage_email"
+
+            style="display:none"
+            javascript_Css_define="
+            0~9999|1920$position:absolute;bottom:-20%;left:0">
+                <div class="traiangle1 display_block borderstyle_solid bordercolordark javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:0;height:0;border-left-width:16fixed;border-top-width:16fixed^
+                721~1320|1240$width:0;height:0;border-left-width:16fixed;border-top-width:16fixed^
+                1321~9999|1920$width:0;height:0;border-left-width:16fixed;border-top-width:16fixed">
+                </div>
+                <div class="validatemessagebox bgcolor_dark colorwhite fontweight_800 colorwhite flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-left:20fixed;padding-right:20fixed;height:38fixed;border-radius:5fixed;width:270fixed^
+                721~1320|1240$font-size:13fixed;padding-left:20fixed;padding-right:20fixed;height:38fixed;border-radius:5fixed;width:270fixed^
+                1321~9999|1920$font-size:12fixed;padding-left:20fixed;padding-right:20fixed;height:42fixed;border-radius:5fixed;width:270fixed"
+            >이메일 형식이 올바르지 않습니다.</div>
+            </div>
+        </div>
+
+        <div class="inputCol position_relative_normal javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%^
+        721~1320|1240$width:100%^
+        1321~9999|1920$width:100%">
+            <div class="formlabel  javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            721~1320|1240$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed^
+            1321~9999|1920$font-size:16fixed;letter-spacing:-0.8fixed;padding-bottom:6fixed">
+                <p class="tit">
+                    문의내용
+                </p>            
+            </div>
+
+            <textarea placeholder='문의사항에 대해 자유롭게 작성해주세요.' value='' name='question' class="inputtextarea javascript_Css_define        
+            javascript_inputvalidate"javascript_Css_define="
+            0~720|720$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%;min-height:138fixed^
+            721~1320|1240$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%;min-height:170fixed^
+            1321~9999|1920$padding-left:15fixed;padding-right:15fixed;padding-top:17fixed;padding-bottom:15fixed;color:#adadad;font-size:16fixed;border-style:solid;border-color:#efefef;border-width:1fixed;width:100%;min-height:170fixed"></textarea>
+        </div>
+
+        <p class="allagree javascript_Css_define flex_horizontal_flexStart"
+        javascript_Css_define="
+        0~720|720$width:100%;margin-top:28fixed^
+        721~1320|1240$width:100%;margin-top:33fixed^
+        1321~9999|1920$width:100%;margin-top:33fixed">
+            <input type="checkbox" class="checkbox_element javascript_inputvalidate" id="allagree" name="allagree" targetindex="agree_checkgroup0">
+            <label for="allagree" class="checklabel1 display_block borderstyle_solid bordercolor_black  flex_horizontal_Center javascript_Css_define"
+
+            targetindex="allcheckToggle_trigger"
+            targetdata='{"match_group_targets":"0^1^2","groupid":"agree_checkgroup0"}'
+            javascript_Css_define="
+            0~9999|1920$width:32fixed;height:32fixed;border-width:1fixed;border-radius:50%">
+                <img src="imgs/checkdefault.png" class="javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1920$width:18fixed;height:15fixed"/>
+            </label>
+            <label for='allagree' class="txt position_relative_zindex3 javascript_Css_define"
+            targetindex="allcheckToggle_trigger"
+            targetdata='{"match_group_targets":"0^1^2","groupid":"agree_checkgroup0"}'
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;padding-left:10fixed^
+            721~1320|1240$font-size:14fixed;padding-left:10fixed^
+            1321~9999|1920$font-size:14fixed;padding-left:10fixed"
+            >모두 동의하기</label>
+        </p>
+        <span class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;height:1fixed;margin-top:17fixed;background-color:#efefef^
+        721~1320|1240$width:100%;height:1fixed;margin-top:17fixed;background-color:#efefef^
+        1321~9999|1920$width:100%;height:1fixed;margin-top:17fixed;background-color:#efefef"></span>
+
+        <div class="agreewrap flex_horizontal_spaceBetween javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-top:20fixed;padding-left:10fixed^
+        721~1320|1240$width:100%;padding-top:20fixed;padding-left:10fixed^
+        1321~9999|1920$width:100%;padding-top:20fixed;padding-left:10fixed">
+            <p class="agree flex_horizontal_flexStart">
+                <input type="checkbox" class="checkbox_element" id="agree1" name="agrees"
+                
+                targetindex="agree_checkgroup0_0"
+                >
+                <label for="agree1" class="checklabel1 display_block borderstyle_solid bordercolor_black flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1920$width:32fixed;height:32fixed;border-width:1fixed;border-radius:50%">
+                    <img src="imgs/checkdefault.png" class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~9999|1920$width:18fixed;height:15fixed"/>
+                </label>
+                <label for='agree1' class="txt position_relative_zindex3 javascript_Css_define"javascript_Css_define="
+                0~720|720$font-size:14fixed;padding-left:10fixed^
+                721~1320|1240$font-size:14fixed;padding-left:10fixed^
+                1321~9999|1920$font-size:14fixed;padding-left:10fixed">이용 약관 동의<span class="colorlecelle1">(필수)</span></label>
+            </p>
+        </div>
+        <div class="agreewrap flex_horizontal_spaceBetween javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-top:20fixed;padding-left:10fixed^
+        721~1320|1240$width:100%;padding-top:20fixed;padding-left:10fixed^
+        1321~9999|1920$width:100%;padding-top:20fixed;padding-left:10fixed">
+            <p class="agree flex_horizontal_flexStart">
+                <input type="checkbox" class="checkbox_element" id="agree2" name="agrees"
+                
+                targetindex="agree_checkgroup0_1"
+                >
+                <label for="agree2" class="checklabel1 display_block borderstyle_solid bordercolor_black flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1920$width:32fixed;height:32fixed;border-width:1fixed;border-radius:50%">
+                    <img src="imgs/checkdefault.png" class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~9999|1920$width:18fixed;height:15fixed"/>
+                </label>
+                <label for='agree2' class="txt position_relative_zindex3 javascript_Css_define"javascript_Css_define="
+                0~720|720$font-size:14fixed;padding-left:10fixed^
+                721~1320|1240$font-size:14fixed;padding-left:10fixed^
+                1321~9999|1920$font-size:14fixed;padding-left:10fixed">개인정보처리 방침 동의<span class="colorlecelle1">(필수)</span></label>
+            </p>
+        </div>
+        <div class="agreewrap flex_horizontal_spaceBetween javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;padding-top:20fixed;padding-left:10fixed^
+        721~1320|1240$width:100%;padding-top:20fixed;padding-left:10fixed^
+        1321~9999|1920$width:100%;padding-top:20fixed;padding-left:10fixed">
+            <p class="agree flex_horizontal_flexStart">
+                <input type="checkbox" class="checkbox_element" id="agree3" name="agrees"
+                
+                targetindex="agree_checkgroup0_2"
+                >
+                <label for="agree3" class="checklabel1 display_block borderstyle_solid bordercolor_black flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1920$width:32fixed;height:32fixed;border-width:1fixed;border-radius:50%">
+                    <img src="imgs/checkdefault.png" class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~9999|1920$width:18fixed;height:15fixed"/>
+                </label>
+                <label for='agree3' class="txt position_relative_zindex3 javascript_Css_define"javascript_Css_define="
+                0~720|720$font-size:14fixed;padding-left:10fixed^
+                721~1320|1240$font-size:14fixed;padding-left:10fixed^
+                1321~9999|1920$font-size:14fixed;padding-left:10fixed">마케팅 수신 동의<span class="colorlecelle1">(필수)</span></label>
+            </p>
+        </div>
+        <button class="display_block colorwhite bgcolor_black javascript_Css_define javascript_trigger"
+        
+        id="javascript_validateform_submit"
+        isvalid="false"
+        javascript_Css_define="
+        0~720|720$width:100%;height:46fixed;font-size:20fixed;color:white;background-color:#fa2829;margin-top:52fixed;border-radius:10fixed^
+        721~1320|1240$width:160fixed;height:60fixed;font-size:21fixed;color:white;background-color:#fa2829;margin-left:auto;margin-top:20fixed;border-radius:10fixed^
+        1321~9999|1920$width:180fixed;height:68fixed;font-size:23fixed;color:white;background-color:#fa2829;margin-left:auto;margin-top:20fixed;border-radius:10fixed">
+        문의하기
+        </button>
+    </div>
+    </form>
+</section>
+
+<footer class="javascript_Css_define"
+javascript_Css_define="
+0~720|720$width:100%;padding-top:20fixed;padding-bottom:170fixed;border-top-width:17fixed;border-color:#f8f9fd;border-style:solid^
+721~1320|1240$padding-left:30response;padding-right:30response;padding-top:30fixed;padding-bottom:136fixed;border-top-width:17fixed;border-color:#f8f9fd;border-style:solid^
+1321~9999|1920$padding-top:32fixed;padding-bottom:312fixed;border-top-width:17fixed;border-color:#f8f9fd;border-style:solid">
+    <div class="innerContainer position_relative_normal javascript_Css_define 
+    pc_flex_horizontal_flexStart tablet_flex_horizontal_flexStart mobile_flex_horizontal_Center"
+    javascript_Css_define="
+    721~1320|1240$width:100%;padding-left:150response^
+    1321~9999|1920$width:1180fixed;margin:0 auto;padding-left:152fixed">
+        <img src="imgs/nhnpayco2.jpg" class="display_block javascript_Css_define position_absolute"
+        javascript_Css_define="
+        0~720|720$width:90fixed;height:36fixed;left:0;right:0;margin:0 auto;top:102fixed^
+        721~9999|1920$width:90fixed;height:36fixed;left:0;top:0"/>
+        <ul class="footermenu flex_horizontal_flexStart">
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:13fixed;color:#949295;padding-right:23response^
+            721~1320|1240$font-size:14fixed;color:#949295;padding-right:25response^
+            1321~9999|1920$font-size:14fixed;color:#949295;padding-right:25response">
+                <a href="#">회사소개</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:13fixed;color:#949295;padding-right:23response^
+            721~1320|1240$font-size:14fixed;color:#949295;padding-right:25response^
+            1321~9999|1920$font-size:14fixed;color:#949295;padding-right:25response">
+                <a href="#">회원약관</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:13fixed;color:#949295;padding-right:23response^
+            721~1320|1240$font-size:14fixed;color:#949295;padding-right:25response^
+            1321~9999|1920$font-size:14fixed;color:#949295;padding-right:25response">
+                <a href="#">서비스약관</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:13fixed;color:#949295^
+            721~1320|1240$font-size:14fixed;color:#949295^
+            1321~9999|1920$font-size:14fixed;color:#949295">
+                <a href="#">개인정보처리방침</a>
+            </li>
+        </ul>
+        <div class="selectwrap javascript_Css_define position_relative_normal"javascript_Css_define="
+        0~720|720$display:none^
+        721~1320|1240$width:218fixed;height:27fixed;flex:1 0 auto;display:flex;justify-content:flex-end^
+        1321~9999|1920$width:218fixed;height:27fixed;flex:1 0 auto;display:flex;justify-content:flex-end">
+            <select class="footerSelectbox  borderstyle_solid  javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center^
+            721~1320|1240$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center;border-width:1fixed;width:220fixed;height:27fixed;border-color:#7b6045^
+            1321~9999|1920$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center;border-width:1fixed;width:220fixed;height:27fixed;border-color:#7b6045">
+                <option value='Family Site' selected>Family Site</option>
+                <option value='넥스트레벨'>넥스트레벨</option>
+                <option value='(주)페이코'>(주)넥센</option>
+                <option value='KNN'>KNN</option>
+                <option value='네이버블로그'>네이버블로그</option>
+                <option value='페이스북'>페이스북</option>
+                <option value='유튜브'>유튜브</option>
+                <option value='네이버포스트'>네이버포스트</option>
+            </select>  
+            <img src="imgs/arrowdownicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0^
+            721~1320|1240$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0^
+            1321~9999|1920$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0"/>
+        </div>
+    </div>
+    <div class="innerContainer javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$text-align:center^
+    721~1320|1240$width:100%;padding-left:150response^
+    1321~9999|1920$width:1180fixed;margin:0 auto;padding-left:152fixed">
+        <div class="info">
+            <div class="footerinfo flex_horizontal_flexStart">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">상호: 엔에이치엔페이코(주)
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa^
+                1321~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">대표자 : 정연훈
+                </p> 
+            </div>  
+            <div class="footerinfo flex_horizontal_flexStart">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">주소 : 경기도 성남시 분당구 삼평동 629 플레이뮤지엄
+                </p> 
+            </div> 
+            <div class="footerinfo flex_horizontal_flexStart">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">(경기도 성남시 분당구 대왕판교로 645 번길 16 플레이뮤_지엄)
+                </p> 
+            </div>  
+            <div class="footerinfo flex_horizontal_flexStart">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">사업자 등록번호 : 563-81-00723
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa^
+                1321~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">통신판매업신고번호 : 제2017-성남분당-0458
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa^
+                1321~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">호스팅서비스 사업자 : 엔에이치엔페이코(주)
+                </p> 
+            </div>
+            <div class="footerinfo flex_horizontal_flexStart">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">TEL : 1599-0674
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa^
+                1321~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#aaa">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1320|1240$font-size:13fixed;color:#aaa^
+                1321~9999|1920$font-size:13fixed;color:#aaa">Email : help@payco.com
+                </p> 
+            </div> 
+            <p class="footerCopyright javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-top:32fixed;font-size:13fixed;color:#aaa^
+            721~1320|1240$margin-top:34fixed;font-size:13fixed;color:#aaa^
+            1321~9999|1920$margin-top:34fixed;font-size:13fixed;color:#aaa">
+            @ NHN PAYCO Corp. All rights reserved.
+            </p>
+        </div>
+    </div>
+</footer>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/common_function.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+<script src="js/inputkeyboard_validate.js"></script>
+<script>
+ var swiper=new Swiper('.mainbanner',{
+        //slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination-styleBar1',
+        },
+        navigation:{
+            nextEl : '.swiper-button-next-style1',
+            prevEl : '.swiper-button-prev-style1'
+        },
+       
+     
+        /*
+        on:{
+            slideChangeTransitionEnd : function(){
+                console.log("현재 슬라이드카운트 index:",this.activeIndex+1);
+                let target=document.querySelector(`[targetindex='javascript_swipercustom_slidecountTarget_0']`);
+                target.innerText = this.activeIndex+1 < 10? '0'+(this.activeIndex+1) : (this.activeIndex+1);
+            }
+        }*/
+    
+    })
+
+    var swiper2=new Swiper('.section1Slider',{
+        slidesPerView:'auto',
+        autoResize: true,
+        //loop:true,
+
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },*/
+        /*navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var swiper3=new Swiper('.slide2',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var section3Swiper=new Swiper('.section3Swiper',{
+        effect: "flip",
+        grabCursor: true,
+        pagination:{
+            el:'.swiper-pagination_section3',
+            clickable:"true",
+            renderBullet: function(index,className){
+                return '<span class="'+className+'">'+(index+1)+"</span>";
+            }
+        },
+       
+    })
+    var swiper4=new Swiper('.slide3',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+
+</script>
+</body>
+</html>
