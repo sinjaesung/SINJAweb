@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+<body class="position_relative_normal">
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<header
+class="position_absolute javascript_Css_define"
+javascript_Css_define="
+0~9999|1920$left:0;top:0;width:100%;z-index:800">
+    <div class="inner javascript_Css_define fontweight_900 flex_horizontal_flexStart"
+    javascript_Css_define="
+    0~720|720$padding-top:30fixed;padding-bottom:30fixed;width:100%;padding-left:15response;padding-right:15response^
+    721~1240|1024$padding-top:30fixed;padding-bottom:30fixed;width:100%;padding-left:15response;padding-right:15response^
+    1241~9999|1920$padding-top:54fixed;padding-bottom:48fixed;width:100%;padding-left:50response;padding-right:56response">
+        <a href='main.html' class="flex_horizontal_flexStart javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$margin-right:20response^
+        721~1240|1024$margin-right:18response^
+        1241~9999|1920$margin-right:26fixed">
+            <img src="imgs/headerlogo.png" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:130fixed;height:20fixed^
+            721~1240|1024$width:130fixed;height:20fixed^
+            1241~9999|1920$width:194fixed;height:30fixed"/>
+        </a>
+        <ul class="langmenu flex_horizontal_flexStart"
+       >
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:11fixed;color:#cf0817^
+            721~1240|1024$font-size:11fixed;color:#cf0817^
+            1241~9999|1920$font-size:11fixed;color:#cf0817" 
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},
+                     {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#e20613"}},{"target":"headertxtTarget001","effectType":"instant","instant_parameters":{"color":"#e20613"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},
+                    {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#978e9a"}},{"target":"headertxtTarget001","effectType":"instant","instant_parameters":{"color":"#978e9a"}}
+                    ]
+                }
+            }'>
+               
+                <a href="#" targetindex="headertxtTarget001" class="javascript_Css_define"
+                javascript_Css_define="
+                0~9999|1024$color:#eaeaea">KOR</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1024$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget1_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$margin-left:12response;font-size:11fixed^
+            721~1240|1024$margin-left:12response;font-size:11fixed^
+            1241~9999|1920$margin-left:12response;font-size:11fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget2_header","effectType":"instant","instant_parameters":{"background-color":"#e20613"}},{"target":"headertxtTarget002","effectType":"instant","instant_parameters":{"color":"#e20613"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},
+                    {"target":"widthsizeTarget2_header","effectType":"instant","instant_parameters":{"background-color":"#978e9a"}},{"target":"headertxtTarget002","effectType":"instant","instant_parameters":{"color":"#978e9a"}}
+                    ]
+                }
+            }'>
+            <a href="#" targetindex="headertxtTarget002" class="javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1024$color:#eaeaea">ENG</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1024$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget2_header"></span>
+            </li>
+        </ul>
+        <div class="headersitemap  cursorpointer javascript_Css_define flex_horizontal_flexEnd"javascript_Css_define="
+        0~9999|1920$width:auto;flex:1 0 auto">
+            <img src="imgs/sitemaplogo.png" class="javascript_Css_define javascript_StyleEffectTrigger2"javascript_Css_define="
+            0~9999|1024$width:20fixed;height:20fixed"
+            targetdata='{
+                "event_per_effects":{
+                    "click":[
+                    {"shinhan_navigation":{"animstyle":{"height":"80%","opacity":"100%"},"instantstyle":{"display":"block"},"duration":450}},
+                    {"navBg":{"instantstyle":{"display":"block"}}}
+                    ]
+                }
+            }'/>
+        </div>
+    </div>
+</header>
+
+<div class="popupbg" 
+targetindex="navBg"style="display:none" 
+></div>
+<nav class="Nav position_fixed  height_100vh javascript_Css_define"
+javascript_Css_define="0~720|720$width:100%;top:0;left:0;z-index:601^
+721~1240|1024$width:100%;top:0;left:0;z-index:601^
+1241~9999|1920$width:100%;top:0;left:0;z-index:601"targetindex="shinhan_navigation"
+style="height:0%;opacity:0%;display:none">
+    
+   <div class="inner javascript_Css_define"
+   javascript_Css_define="0~720|720$width:100%;top:0;left:0;z-index:601;background-color:#000;padding-top:140fixed;padding-bottom:100fixed^
+   721~1240|1024$width:100%;top:0;left:0;z-index:601;background-color:#000;padding-top:140fixed;padding-bottom:40fixed^
+   1241~9999|1920$width:100%;top:0;left:0;z-index:601;background-color:#000;padding-top:140fixed;padding-bottom:40fixed">
+        <span class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1920$width:100%;height:1fixed;background-color:#d7d7d7"></span>
+
+        <ul class="navmenu colorwhite javascript_Css_define 
+        pc_flex_horizontal_Center tablet_flex_horizontal_Center ">
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed;padding-top:60fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu1","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu1","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">About Us</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu1">
+                </span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu2","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu2","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">Products</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu2">
+                </span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu3","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu3","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">Brand</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu3">
+                </span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu4","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu4","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">Import Brands</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu4">
+                </span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu5","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu5","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">Inspiration</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu5">
+                </span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu6","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu6","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">Discover</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu6">
+                </span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$font-size:18fixed;padding-left:20response;padding-bottom:20fixed^
+            721~1240|1024$font-size:19fixed;padding:30px 10px 0^
+            1241~9999|1920$font-size:24fixed;padding:30px 16px 0"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"naviMenu7","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":100}]}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"naviMenu7","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":100}]}
+                    ]
+                }
+            }'>
+                <a href="#">Store</a>
+                <span class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~9999|1920$position:absolute;height:5fixed;background-color:#fe3020;left:50%;transform:translateX(-50%);top:-3px"style='width:0%'
+                targetindex="naviMenu7">
+                </span>
+            </li>
+        </ul>
+        <img src="imgs/xButton.svg" class="cursorpointer display_block javascript_Css_define javascript_StyleEffectTrigger2"targetdata='{
+            "event_per_effects":{
+                "click":[
+                {"shinhan_navigation":{"animstyle":{"height":"0%","opacity":"0%"},"animaftercallback":{"display":"none"},"duration":450}},
+                {"navBg":{"instantstyle":{"display":"none"}}}
+                ]
+            }
+        }'
+        javascript_Css_define="
+        0~720|720$width:32fixed;height:32fixed;bottom:200fixed;position:absolute;left:0;right:0;margin:0 auto^
+        721~9999|1920$width:32fixed;height:32fixed;bottom:600fixed;position:absolute;left:0;right:0;margin:0 auto">
+   </div>
+   
+</nav>
+
+
+<section class="mainbannerSection position_relative_normal javascript_Css_define"javascript_Css_define="
+0~720|720$height:auto;background-color:#fff^
+721~1240|1024$height:1058fixed;background-color:#fff^
+1241~9999|1920$height:1089fixed;background-color:#fff">
+    <div class="swiper-container mainbanner 
+    mobile_height_100_percent
+    tablet_height_100_percent
+    pc_height_100_percent
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent javascript_StyleEffectTrigger" >
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:790response;padding-bottom:153response;padding-left:23response;padding-right:23response;background-image:url(imgs/mainvisualmob1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:416fixed;padding-bottom:417fixed;padding-left:30response;background-image:url(imgs/mainvisual1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:432fixed;padding-bottom:432fixed;padding-left:200response;background-image:url(imgs/mainvisual1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response;color:white^
+                    361~720|720$font-size:31fixed;color:white^
+                    721~1240|1024$font-size:38fixed;color:white^
+                    1241~9999|1920$font-size:38fixed;color:white">
+                    신한 전문가 오일컬러<br/>
+                   </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:14fixed;font-size:13response;color:white;line-height:2^
+                    361~720|720$width:100%;margin-top:14fixed;font-size:13fixed;color:white;line-height:2^
+                    721~1240|1024$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2^
+                    1241~9999|1920$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2">
+                    신한 전문가 유화는 총 109색으로 최고급 안료와 세밀하게 정제된 고급 기름을 사용합니다.
+                    고도의 기술력을 기반으로 유화에서 가장 중요한 균형 잡힌 점도와 뛰어난 발색,높은 내광성을
+                    갖추고 있으며 중후한 깊이와 함께 트렌디한 컬러 감성을 구현합니다.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='mb_learnmore001'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"mb_plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"mb_learnmore001","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"mb_plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"mb_learnmore001","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="mb_widthsizeTarget001"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='mb_plusfonticon001'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="mb_buttontext001">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent 
+            tablet_height_100_percent pc_height_100_percent "
+            >
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:790response;padding-bottom:153response;padding-left:23response;padding-right:23response;background-image:url(imgs/mainvisualmob2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:416fixed;padding-bottom:417fixed;padding-left:30response;background-image:url(imgs/mainvisual2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:432fixed;padding-bottom:432fixed;padding-left:200response;background-image:url(imgs/mainvisual2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response;color:white^
+                    361~720|720$font-size:31fixed;color:white^
+                    721~1240|1024$font-size:38fixed;color:white^
+                    1241~9999|1920$font-size:38fixed;color:white">
+                    신한 전문가 아크릴컬러<br/>
+                   </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:14fixed;font-size:13response;color:white;line-height:2^
+                    361~720|720$width:100%;margin-top:14fixed;font-size:13fixed;color:white;line-height:2^
+                    721~1240|1024$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2^
+                    1241~9999|1920$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2">
+                    최고급 안료와 현대적 컬러 기술로 엄선하여 선택된 깊이있고 중후한 61색의 다양한 색상으로
+                    전문가들의 최고 수준의 아크릴컬러 경험을 선사합니다. 뛰어난 유연성, 내광성, 내수성, 강한
+                    고착력은 장기적인 보존을 가능하게 합니다.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"targetindex='mb_learnmore002'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"mb_plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"mb_learnmore002","effectType":"instant","instant_parameters":{"border-color":"#20df40"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"mb_plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"mb_learnmore002","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                    >
+                        <div class="highlightbox javascript_Css_define" targetindex="mb_widthsizeTarget002"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#20df40;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='mb_plusfonticon002'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="mb_buttontext002">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent "
+           >
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:790response;padding-bottom:153response;padding-left:23response;padding-right:23response;background-image:url(imgs/mainvisualmob3.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:416fixed;padding-bottom:417fixed;padding-left:30response;background-image:url(imgs/mainvisual3.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:432fixed;padding-bottom:432fixed;padding-left:200response;background-image:url(imgs/mainvisual3.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response;color:white^
+                    361~720|720$font-size:31fixed;color:white^
+                    721~1240|1024$font-size:38fixed;color:white^
+                    1241~9999|1920$font-size:38fixed;color:white">
+                    최고급 전문가 수채화 SWC
+                   </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:14fixed;font-size:13response;color:white;line-height:2^
+                    361~720|720$width:100%;margin-top:14fixed;font-size:13fixed;color:white;line-height:2^
+                    721~1240|1024$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2^
+                    1241~9999|1920$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2">
+                    안료의 입자 크기에 따라 단위 면적당 안료 밀도가 다르고 투명도 또한 다르게 나타나며 빛이 반사되어
+                    오는 굴절률에 의해서도 투명도가 다릅니다. SWC는 이러한 재료학적 특성을 실현한 최고급 수채화물감
+                    입니다. 신한 최고급 전문가 수채화물감은 총 104색으로 선보입니다.
+                    </h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define javascript_StyleEffectTrigger  position_relative_normal"targetindex='mb_learnmore003' targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"mb_plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"mb_learnmore003","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"mb_plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"mb_learnmore003","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                    >
+                        <div class="highlightbox javascript_Css_define" targetindex="mb_widthsizeTarget003"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#fe1020;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='mb_plusfonticon003'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="mb_buttontext003">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent ">
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:790response;padding-bottom:153response;padding-left:23response;padding-right:23response;background-image:url(imgs/mainvisualmob4.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:416fixed;padding-bottom:417fixed;padding-left:30response;background-image:url(imgs/mainvisual4.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:432fixed;padding-bottom:432fixed;padding-left:200response;background-image:url(imgs/mainvisual4.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response;color:white^
+                    361~720|720$font-size:31fixed;color:white^
+                    721~1240|1024$font-size:38fixed;color:white^
+                    1241~9999|1920$font-size:38fixed;color:white">
+                    신한 전문가 과슈
+                   </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:14fixed;font-size:13response;color:white;line-height:2^
+                    361~720|720$width:100%;margin-top:14fixed;font-size:13fixed;color:white;line-height:2^
+                    721~1240|1024$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2^
+                    1241~9999|1920$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2">
+                    안료의 입자 크기에 따라 단위 면적당 안료 밀도가 다르고 투명도 또한 다르게 나타나며 빛이 반사되어
+                    오는 굴절률에 의해서도 투명도가 다릅니다. SWC는 이러한 재료학적 특성을 실현한 최고급 수채화물감
+                    입니다. 신한 최고급 전문가 수채화물감은 총 104색으로 선보입니다.
+                    </h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define javascript_StyleEffectTrigger  position_relative_normal"targetindex='mb_learnmore004'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"mb_plusfonticon004","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext004","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"mb_learnmore004","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"mb_plusfonticon004","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext004","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"mb_learnmore004","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                    >
+                        <div class="highlightbox javascript_Css_define" targetindex="mb_widthsizeTarget004"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#fe1020;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='mb_plusfonticon004'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="mb_buttontext004">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent ">
+                <div class="contentinner javascript_Css_define position_relative_normal mobile_height_100_percent
+                tablet_height_100_percent pc_height_100_percent overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:790response;padding-bottom:153response;padding-left:23response;padding-right:23response;background-image:url(imgs/mainvisualmob5.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:416fixed;padding-bottom:417fixed;padding-left:30response;background-image:url(imgs/mainvisual5.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:432fixed;padding-bottom:432fixed;padding-left:200response;background-image:url(imgs/mainvisual5.jpg);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <div class="blurbg javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$width:100%;height:100%;position:absolute;left:0;top:0;background-color:rgba(0,0,0,0.2);z-index:2">
+                    </div>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response;color:white^
+                    361~720|720$font-size:31fixed;color:white^
+                    721~1240|1024$font-size:38fixed;color:white^
+                    1241~9999|1920$font-size:38fixed;color:white">
+                    신한 전문가 포스터컬러
+                   </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:14fixed;font-size:13response;color:white;line-height:2^
+                    361~720|720$width:100%;margin-top:14fixed;font-size:13fixed;color:white;line-height:2^
+                    721~1240|1024$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2^
+                    1241~9999|1920$width:538fixed;margin-top:18fixed;font-size:14fixed;color:white;line-height:2">
+                    안료의 입자 크기에 따라 단위 면적당 안료 밀도가 다르고 투명도 또한 다르게 나타나며 빛이 반사되어
+                    오는 굴절률에 의해서도 투명도가 다릅니다. SWC는 이러한 재료학적 특성을 실현한 최고급 수채화물감
+                    입니다. 신한 최고급 전문가 수채화물감은 총 104색으로 선보입니다.
+                    </h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"targetindex='mb_learnmore005'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget005","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"mb_plusfonticon005","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext005","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"mb_learnmore005","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"mb_widthsizeTarget005","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"mb_plusfonticon005","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"mb_buttontext005","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"mb_learnmore005","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                    >
+                        <div class="highlightbox javascript_Css_define" targetindex="mb_widthsizeTarget005"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#fe1020;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='mb_plusfonticon005'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="mb_buttontext005">Learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-pagination swiper-pagination-styleBar1 javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$bottom:10px !important;right:0 !important;width:206px !important;left:0 !important;margin:0 auto^
+        721~1240|1024$bottom:50px !important;right:calc(100vw * (20/1024)) !important;width:206px !important;left:auto !important^
+        1241~9999|1920$bottom:50px !important;right:calc(100vw * (54/1920)) !important;width:auto !important;left:auto !important"></div>
+    </div>
+    <p class="javascript_Css_define"javascript_Css_define="
+    0~720|720$display:none^
+    721~1240|1024$font-size:13fixed;letter-spacing:4.2fixed;color:white;position:absolute;left:16response;bottom:70fixed;z-index:3;writing-mode:vertical-rl^
+    1241~9999|1920$font-size:13fixed;letter-spacing:4.2fixed;color:white;position:absolute;left:44response;bottom:100fixed;z-index:3;writing-mode:vertical-rl">SCROLL DOWN</p>
+</section>
+
+<section class="section1 position_relative_normal position_relative_normal">
+    <div class='sectionTit flex_horizontal_Center javascript_Css_define'
+    javascript_Css_define="
+    0~720|720$padding-top:50fixed;padding-bottom:15fixed^
+    721~1240|1024$padding-top:50fixed;padding-bottom:20fixed^
+    1241~9999|1920$padding-top:160fixed;padding-bottom:20fixed">
+        <img src="imgs/titlogo.png" class="javascript_Css_define"javascript_Css_define="
+        0~9999|1920$width:30fixed;height:30fixed"/>
+        <h2 class="javascript_Css_define"javascript_Css_define="
+        0~360|360$padding-left:4fixed;font-size:23response^
+        361~720|720$padding-left:4fixed;font-size:23fixed^
+        721~1240|1024$padding-left:10fixed;font-size:37fixed^
+        1241~9999|1920$padding-left:10fixed;font-size:37fixed">News</h2>
+    </div>
+    <p class="javascript_Css_define"javascript_Css_define="
+    0~360|360$text-align:center;font-size:15response;padding-bottom:40fixed;width:90%;margin:0 auto^
+    361~720|720$text-align:center;margin:0 auto;font-size:15fixed;padding-bottom:40fixed;width:301fixed^
+    721~1240|1024$text-align:center;margin:0 auto;font-size:15fixed;padding-bottom:37fixed;width:306fixed^
+    1241~9999|1920$text-align:center;font-size:15fixed;padding-bottom:33fixed">신한화구의 최신 정보와 브랜드,제품,이벤트 등 활동 전반에 관한 소식을 확인하세요.</p>
+
+    <div class="swiper-container slide2 position_relative_normal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:606response;padding-bottom:130response;height:auto;padding-left:20response;padding-right:20response;background-image:url(imgs/sectionslidermob1.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:130fixed;height:525fixed;padding-left:26response;background-image:url(imgs/sectionsliderpc1.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center^
+                1241~1399|1920$padding-top:257fixed;height:736fixed;padding-left:200response;background-image:url(imgs/sectionsliderpc1.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:70% center^
+                1400~9999|1920$padding-top:257fixed;height:736fixed;padding-left:200response;background-image:url(imgs/sectionsliderpc1.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center">
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response^
+                    361~720|720$font-size:29fixed^
+                    721~1240|1024$font-size:38fixed^
+                    1241~9999|1920$font-size:38fixed">
+                    이탈리아 BB 브러시 신제품
+                   </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:18fixed;font-size:14response;line-height:2^
+                    361~720|720$width:100%;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:463fixed;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:562fixed;margin-top:18fixed;font-size:14fixed;line-height:2">
+                    이탈리아 장인들에 의해 완성되는 BB 브러시의 신제품을 소개합니다.붓모 끝이 가늘어지는 환붓 타입의 BB 탑그래픽 600 브러시
+                    붓모 끝이 정밀하게 정렬되고 라인 마무리 채색에 최적화된 BB 탑그래픽601 브러시,고양이 혓바닥 모양</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center  javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC1learnmore001'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC1plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC1learnmore001","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC1plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC1learnmore001","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC1widthsizeTarget001"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC1plusfonticon001'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC1buttontext001">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal colorwhite">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:606response;padding-bottom:130response;height:auto;padding-left:20response;padding-right:20response;background-image:url(imgs/sectionslidermob2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:130fixed;height:525fixed;padding-left:26response;background-image:url(imgs/sectionsliderpc2.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center^
+                1241~9999|1920$padding-top:257fixed;height:736fixed;padding-left:200response;background-image:url(imgs/sectionsliderpc2.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center">
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response^
+                    361~720|720$font-size:29fixed^
+                    721~1240|1024$font-size:38fixed^
+                    1241~9999|1920$font-size:38fixed">
+                    블랙프라이데이 특별 이벤트
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:18fixed;font-size:14response;line-height:2^
+                    361~720|720$width:100%;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:463fixed;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:522fixed;margin-top:18fixed;font-size:14fixed;line-height:2">
+                    2022년 블랙프라이데이와 연말연시를 맞아 신한화구에서 준비한 특별 이벤트를 즐겨보세요. SSENCE 아크릴컬러와 TOUCH 마카,신한 아티스트 브러시에 더해 해오 프리미엄 미술재료 풀뢰로,팬파스텔,마그나니,비비 브러시,쿰 브러시를 합리적인 가격으로 구매 할 수 있는 기회를 놓치지 마세요!</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC1learnmore002'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC1plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC1learnmore002","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC1plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC1learnmore002","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC1widthsizeTarget002"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC1plusfonticon002'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC1buttontext002">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal colorwhite colorwhite">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:606response;padding-bottom:130response;height:auto;padding-left:20response;padding-right:20response;background-image:url(imgs/sectionslidermob3.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:130fixed;height:525fixed;padding-left:26response;background-image:url(imgs/sectionsliderpc3.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center^
+                1241~9999|1920$padding-top:257fixed;height:736fixed;padding-left:200response;background-image:url(imgs/sectionsliderpc3.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center">
+                  
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response^
+                    361~720|720$font-size:29fixed^
+                    721~1240|1024$font-size:38fixed^
+                    1241~9999|1920$font-size:38fixed">
+                    에쎈스 아크릴컬러
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:18fixed;font-size:14response;line-height:2^
+                    361~720|720$width:100%;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:463fixed;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:522fixed;margin-top:18fixed;font-size:14fixed;line-height:2">
+                    SSENCE는 전문가 미술재료 제조 No.1 기업 신한화구의 S와 초석이라는 Essense의 조합으로 탄생한 브랜드입니다. 에쏀스 아크릴컬러는 부드럽고 크리미한 소프트 바디물성으로 누구나 편리한 사용이 가능한 제품입니다.높은 부착력으로 공예와 디자인 크래프트 분야에서 활용할 수 있습니다.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC1learnmore003'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC1plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC1learnmore003","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC1plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC1learnmore003","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC1widthsizeTarget003"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC1plusfonticon003'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC1buttontext003">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal ">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:606response;padding-bottom:130response;height:auto;padding-left:20response;padding-right:20response;background-image:url(imgs/sectionslidermob4.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:130fixed;height:525fixed;padding-left:26response;background-image:url(imgs/sectionsliderpc4.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center^
+                1241~9999|1920$padding-top:257fixed;height:736fixed;padding-left:200response;background-image:url(imgs/sectionsliderpc4.jpg);background-repeat:repeat-x;background-size:auto 100%;background-position:60% center">
+                  
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:28response^
+                    361~720|720$font-size:29fixed^
+                    721~1240|1024$font-size:38fixed^
+                    1241~9999|1920$font-size:38fixed">
+                    패스 하이브리드 화이트
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;margin-top:18fixed;font-size:14response;line-height:2^
+                    361~720|720$width:100%;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:463fixed;margin-top:18fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:522fixed;margin-top:18fixed;font-size:14fixed;line-height:2">
+                    신한 PASS 컬러에서 선보였던 기존 화이트 컬러의 기능을 획기적으로 업그레이드한 Color #899 HYBRID WHITE가 출시되었습니다. 높은 백색도와 뛰어난 은폐력,무광의 깔끔한 매트함을 구현합니다.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center  javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC1learnmore004'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC1plusfonticon004","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext004","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC1learnmore004","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC1widthsizeTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC1plusfonticon004","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC1buttontext004","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC1learnmore004","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC1widthsizeTarget004"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC1plusfonticon004'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC1buttontext004">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="swiper-pagination swiper-pagination_style1 javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$bottom:10px !important;right:0 !important;width:206px !important;left:0 !important;margin:0 auto^
+        721~1240|1024$bottom:30px !important;right:0px !important;width:206px !important;left:0px !important;margin:0 auto^
+        1241~9999|1920$bottom:14px !important;right:0px !important;width:206px !important;left:0px !important;margin:0 auto"></div>
+    </div>
+</section>
+
+<section class="section2 position_relative_normal javascript_Css_define" 
+javascript_Css_define="
+0~720|720$padding-bottom:0^
+721~1240|1024$padding-bottom:50fixed^
+1241~9999|1920$padding-bottom:148fixed">
+    <div class='sectionTit flex_horizontal_Center javascript_Css_define'
+    javascript_Css_define="
+    0~720|720$padding-top:42fixed;padding-bottom:15fixed^
+    721~1240|1024$padding-top:47fixed;padding-bottom:20fixed^
+    1241~9999|1920$padding-top:228fixed;padding-bottom:21fixed">
+        <img src="imgs/titlogo.png" class="javascript_Css_define"javascript_Css_define="
+        0~9999|1920$width:30fixed;height:30fixed"/>
+        <h2 class="javascript_Css_define"javascript_Css_define="
+        0~360|360$padding-left:4fixed;font-size:23response^
+        361~720|720$padding-left:4fixed;font-size:23fixed^
+        721~1240|1024$padding-left:10fixed;font-size:37fixed^
+        1241~9999|1920$padding-left:10fixed;font-size:37fixed">News</h2>
+    </div>
+    <p class="javascript_Css_define"javascript_Css_define="
+    0~360|360$text-align:center;margin:0 auto;font-size:15response;padding-bottom:47fixed;width:90%^
+    361~720|720$text-align:center;margin:0 auto;font-size:15fixed;padding-bottom:47fixed;width:361fixed^
+    721~1240|1024$text-align:center;margin:0 auto;font-size:15fixed;padding-bottom:37fixed;width:366fixed^
+    1241~9999|1920$text-align:center;font-size:15fixed;padding-bottom:35fixed">신한화구는 대한민국 대표 전문가 미술재료 제조 기업으로 미술에 관한 모든 것을 제공합니다.</p>
+
+    <ul class="productList colorwhite  position_relative_normal overflow_hidden flex_horizontal_flexStart 
+    javascript_widthcalculatePercent_layout2 javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$height:auto;padding-left:15response;padding-right:15response^
+    721~1240|1024$height:auto;padding-left:30response;padding-right:30response^
+    1241~9999|1920$height:auto;padding-left:120response;padding-right:120response"
+    adapt_range='{"mobile":"0~720","tablet":"721~1240","pc":"1241~9999"}' 
+    res_per_column='{"mobile":2,"tablet":3,"pc":4}'>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget001":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard001":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText001":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget001":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard001":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText001":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img1.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget001'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;bottom:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard001'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText001'>Poster Colors</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget002":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard002":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText002":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget002":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard002":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText002":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img2.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget002'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;top:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard002'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText002'>Acrylic Colors</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget003":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard003":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText003":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget003":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard003":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText003":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img3.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget003'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;bottom:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard003'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText003'>Korean Colors</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget004":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard004":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText004":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget004":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard004":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText004":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img4.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget004'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;top:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard004'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText004'>Gouahe</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget005":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard005":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText005":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget005":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard005":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText005":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img5.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget005'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;bottom:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard005'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText005'>Pastel</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget006":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard006":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText006":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget006":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard006":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText006":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img6.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget006'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;top:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard006'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText006'>arkers & Graphic Art</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget007":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard007":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText007":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget007":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard007":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText007":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img7.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget007'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;bottom:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard007'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText007'>Mediums</p>
+       </li>
+       <li class="item widthcalculate_item javascript_Css_define position_relative_normal overflow_hidden javascript_StyleEffectTrigger2"javascript_Css_define="
+       0~720|720$margin-bottom:4fixed;height:312response^
+       721~1240|1024$margin-bottom:5fixed;height:322response^
+       1241~9999|1920$margin-bottom:5fixed;height:382response"
+       targetdata='{
+        "event_per_effects":
+        {
+            "mouseenter":[
+            { "scaleEffectTarget008":{"animstyle":{"width":"120%","height":"120%"},"duration":200}},
+            { "viewmorecard008":{"animstyle":{"height":"100%"},"duration":200}},
+            { "productcardText008":{"animstyle":{"opacity":0}}}
+            ],
+            "mouseleave":[
+            { "scaleEffectTarget008":{"animstyle":{"width":"100%","height":"100%"},"duration":200}},
+            { "viewmorecard008":{"animstyle":{"height":"0%"},"duration":200}},
+            { "productcardText008":{"animstyle":{"opacity":1}}}
+            ]
+        }
+        }'>
+            <img src="imgs/section2img8.png" class="display_block position_absolute  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1920$width:100%;height:100%;left:50%;top:50%;transform:translateX(-50%)translateY(-50%)"
+            targetindex='scaleEffectTarget008'/>
+            <div class="highblur javascript_Css_define position_absolute overflow_hidden cursorpointer"javascript_Css_define="
+            0~9999|1920$width:100%;height:0%;left:0;top:0;display:flex;align-items:center;justify-content:center;background-color:rgba(0,0,0,0.8);z-index:9"targetindex='viewmorecard008'>
+                <div class='content flex_horizontal_flexStart'>
+                    More View <img src="imgs/arrowicon3.svg" class="javascript_Css_define"javascript_Css_define="
+                    0~9999|1920$margin-left:12fixed"/>
+                </div>
+            </div>
+            <p class="javascript_Css_define position_relative_zindex3 position_absolute"javascript_Css_define="
+            0~9999|1920$font-size:12fixed;left:20response;bottom:20response"targetindex='productcardText008'>Accessories</p>
+       </li>
+    </ul>
+</section>
+
+<section class="section3 position_relative_normal position_relative_normal bgcolor_graywhite">
+    <div class='sectionTit flex_horizontal_Center javascript_Css_define'
+    javascript_Css_define="
+    0~720|720$padding-top:56fixed;padding-bottom:15fixed^
+    721~1240|1024$padding-top:60fixed;padding-bottom:20fixed^
+    1241~9999|1920$padding-top:160fixed;padding-bottom:20fixed">
+        <img src="imgs/titlogo.png" class="javascript_Css_define"javascript_Css_define="
+        0~9999|1920$width:30fixed;height:30fixed"/>
+        <h2 class="javascript_Css_define"javascript_Css_define="
+        0~360|360$padding-left:4fixed;font-size:23response^
+        361~720|720$padding-left:4fixed;font-size:23fixed^
+        721~1240|1024$padding-left:10fixed;font-size:37fixed^
+        1241~9999|1920$padding-left:10fixed;font-size:37fixed">Major ShinHan Brands</h2>
+    </div>
+    <p class="javascript_Css_define"javascript_Css_define="
+    0~360|360$text-align:center;margin:0 auto;font-size:15response;padding-bottom:40fixed;width:80%^
+    361~720|720$text-align:center;margin:0 auto;font-size:15fixed;padding-bottom:40fixed;width:234fixed^
+    721~1240|1024$text-align:center;font-size:15fixed;padding-bottom:33fixed^
+    1241~9999|1920$text-align:center;font-size:15fixed;padding-bottom:33fixed">전문가부터 주니어까지 신한화구의 특별한 브랜드 라인업을 경험하세요.</p>
+
+    <div class="swiper-container slide3 position_relative_normal">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:636response;padding-bottom:80response;height:auto;padding-left:20response;background-image:url(imgs/section3mobimg1.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:156fixed;height:511fixed;padding-left:30response;padding-right:30response;background-image:url(imgs/section3img1.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:237fixed;height:736fixed;padding-left:200response;background-image:url(imgs/section3img1.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <img src="imgs/section3img1_sub.png" class="display_block javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:auto;height:90response"/>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:80%;margin-top:7fixed;font-size:14response;line-height:1.6^
+                    361~720|720$width:500response;margin-top:7fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:500fixed;margin-top:16fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:520fixed;margin-top:18fixed;font-size:14fixed;line-height:2">
+                    신한의 S와 미술이 ART가 만나다! 미술의 첫 시작을 신한으로 스타트 하세요.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center  javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC3learnmore001'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC3widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC3plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC3buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC3learnmore001","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC3widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC3plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC3buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC3learnmore001","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC3widthsizeTarget001"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC3plusfonticon001'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC3buttontext001">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal colorwhite">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:636response;padding-bottom:80response;height:auto;padding-left:20response;background-image:url(imgs/section3mobimg2.jpg);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:156fixed;height:511fixed;padding-left:30response;padding-right:30response;background-image:url(imgs/section3img2.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:237fixed;height:736fixed;padding-left:200response;background-image:url(imgs/section3img2.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <img src="imgs/section3img2_sub.png" class="display_block javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:60%;height:auto"/>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:80%;margin-top:7fixed;font-size:14response;line-height:1.6^
+                    361~720|720$width:500response;margin-top:7fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:500fixed;margin-top:7fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:520fixed;margin-top:10fixed;font-size:14fixed;line-height:2">
+                    Touch는 정교한 설게와 높은 품질의 디자인마카를 기반으로 각 분야 디자이너,애니메이터 일러스트레이터들에게 필요한 다양한 제품 라인업을 갖춘 전 세계 대표 브랜드입니다.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC3learnmore002'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC3widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC3plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC3buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC3learnmore002","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC3widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC3plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC3buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC3learnmore002","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC3widthsizeTarget002"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC3plusfonticon002'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC3buttontext002">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal colorwhite">
+                <div class="contentinner javascript_Css_define position_relative_normal overflow_hidden"
+                javascript_Css_define="
+                0~720|720$padding-top:636response;padding-bottom:80response;height:auto;padding-left:20response;background-image:url(imgs/section3mobimg3.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                721~1240|1024$padding-top:156fixed;height:511fixed;padding-left:30response;padding-right:30response;background-image:url(imgs/section3img3.png);background-repeat:no-repeat;background-size:cover;background-position:center^
+                1241~9999|1920$padding-top:237fixed;height:736fixed;padding-left:200response;background-image:url(imgs/section3img3.png);background-repeat:no-repeat;background-size:cover;background-position:center">
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~720|720$font-size:68fixed;width:96fixed;height:86fixed^
+                    721~1240|1024$font-size:68fixed;width:96fixed;height:86fixed^
+                    1241~9999|1920$font-size:80fixed;width:113fixed;height:96fixed">
+                    Sh <span class="display_block javascript_Css_define"javascript_Css_define="
+                    0~720|720$right:2fixed;top:2fixed;position:absolute;font-size:40fixed^
+                    721~1240|1024$right:2fixed;top:2fixed;position:absolute;font-size:40fixed^
+                    1241~9999|1920$right:2fixed;top:2fixed;position:absolute;font-size:58fixed">#</span>
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:80%;margin-top:7fixed;font-size:14response;line-height:1.6^
+                    0~720|720$width:500response;margin-top:7fixed;font-size:14fixed;line-height:2^
+                    721~1240|1024$width:500fixed;margin-top:7fixed;font-size:14fixed;line-height:2^
+                    1241~9999|1920$width:520fixed;margin-top:10fixed;font-size:14fixed;line-height:2">
+                    Touch는 정교한 설게와 높은 품질의 디자인마카를 기반으로 각 분야 디자이너,애니메이터 일러스트레이터들에게 필요한 다양한 제품 라인업을 갖춘 전 세계 대표 브랜드입니다.</h4>
+                    <div class="learnmore cursorpointer flex_horizontal_Center colorwhite javascript_Css_define  position_relative_normal javascript_StyleEffectTrigger "targetindex='SEC3learnmore003'targetdata='{
+                        "mouseenter":{
+                            "style_datas": [
+                            {"target":"SEC3widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                             {"target":"SEC3plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC3buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                             {"target":"SEC3learnmore003","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                            ]
+                        },
+                        "mouseleave":{
+                            "style_datas": [
+                            {"target":"SEC3widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                            {"target":"SEC3plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"SEC3buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                            {"target":"SEC3learnmore003","effectType":"instant","instant_parameters":{"border-color":"white"}}
+                            ]
+                        }
+                    }'
+                    javascript_Css_define="
+                    0~720|720$width:153fixed;height:40fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin:0 auto;margin-top:30fixed^
+                    721~1240|1024$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-color:white;border-width:1fixed;font-size:13fixed;margin-top:36fixed"
+                   >
+                        <div class="highlightbox javascript_Css_define" targetindex="SEC3widthsizeTarget003"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='SEC3plusfonticon003'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="SEC3buttontext003">Learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="swiper-pagination swiper-pagination_style1 javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$bottom:10px !important;right:0 !important;width:206px !important;left:0 !important;margin:0 auto^
+        721~1240|1024$bottom:30px !important;right:0px !important;width:206px !important;left:0px !important;margin:0 auto^
+        1241~9999|1920$bottom:14px !important;right:0px !important;width:206px !important;left:0px !important;margin:0 auto"></div>
+    </div>
+</section>
+
+<section class="section4 position_relative_normal  bgcolor_graywhite">
+    <div class='sectionTit flex_horizontal_Center javascript_Css_define'
+    javascript_Css_define="
+    0~720|720$padding-top:56fixed;padding-bottom:15fixed^
+    721~1240|1024$padding-top:60fixed;padding-bottom:20fixed^
+    1241~9999|1920$padding-top:280fixed;padding-bottom:20fixed">
+        <img src="imgs/titlogo.png" class="javascript_Css_define"javascript_Css_define="
+        0~9999|1920$width:30fixed;height:30fixed"/>
+        <h2 class="javascript_Css_define"javascript_Css_define="
+        0~360|360$padding-left:10fixed;font-size:23response^
+        361~720|720$padding-left:10fixed;font-size:23fixed^
+        721~1240|1024$padding-left:20fixed;font-size:37fixed^
+        1241~9999|1920$padding-left:20fixed;font-size:37fixed">Major Import Brands</h2>
+    </div>
+    <p class="javascript_Css_define"javascript_Css_define="
+    0~360|360$text-align:center;margin:0 auto;margin-top:15fixed;font-size:15response;padding-bottom:55fixed;width:80%^
+    361~720|720$text-align:center;margin:0 auto;margin-top:15fixed;font-size:15fixed;padding-bottom:55fixed;width:308fixed^
+    721~1240|1024$text-align:center;font-size:15fixed;padding-bottom:42fixed;width:310fixed;margin:0 auto^
+    1241~9999|1920$text-align:center;font-size:15fixed;padding-bottom:42fixed">지금까지 경험하지 못했던 새로운 해외 프리미엄 미술 재료를 살펴보세요.</p>
+
+    <div class="swiper-container slide4 position_relative_normal javascript_Css_define "
+    javascript_Css_define="
+    0~720|720$padding-left:76response;padding-right:76response;padding-bottom:80response^
+    721~1240|1024$padding-left:50response;padding-right:50response;padding-bottom:134response^
+    1241~9999|1920$padding-left:102response;padding-right:102response;padding-bottom:287response">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;margin-right:16fixed^
+            721~999|1000$width:calc(100vw *(460/1000));height:auto;margin-right:10fixed^
+            1000~1240|1024$width:calc(100vw *(380/1024));height:auto;margin-right:10fixed^
+            1241~9999|1920$width:calc(100vw *(417/1920));height:auto;margin-right:18fixed"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                     {"target":"plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                     {"target":"learnmorebutton001","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget001","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                    {"target":"plusfonticon001","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext001","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                    {"target":"learnmorebutton001","effectType":"instant","instant_parameters":{"border-width":"1px"}}
+                    ]
+                }
+            }'>
+                <div class="contentinner  position_relative_normal overflow_hidden"
+                >
+                    <img src="imgs/section4slider2.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:16response;padding-top:27fixed;padding-bottom:6fixed^
+                    361~720|720$font-size:16fixed;padding-top:27fixed;padding-bottom:6fixed^
+                    721~1240|1024$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed^
+                    1241~9999|1920$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed">
+                    FLEUR
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;font-size:13response^
+                    361~720|720$width:100%;font-size:13fixed^
+                    721~1240|1024$width:90%;font-size:14fixed^
+                    1241~9999|1920$width:90%;font-size:14fixed">
+                    이태리 현지 장인에 의해 빚어지는 진정한 지중해 컬러
+                    세계 최초 확산광 미네랄 아크릴컬러로 즐기는
+                    Art&Design 미술재료
+                    </h4>
+                    <div class="learnmore flex_horizontal_Center  javascript_Css_define position_relative_normal "
+                    javascript_Css_define="
+                    0~1240|1024$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:22fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:62fixed"
+                    targetindex="learnmorebutton001">
+                        <div class="highlightbox javascript_Css_define" targetindex="widthsizeTarget001"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='plusfonticon001'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="buttontext001">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;margin-right:16fixed^
+            721~999|1000$width:calc(100vw *(460/1000));height:auto;margin-right:10fixed^
+            1000~1240|1024$width:calc(100vw *(380/1024));height:auto;margin-right:10fixed^
+            1241~9999|1920$width:calc(100vw *(417/1920));height:auto;margin-right:18fixed"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                     {"target":"plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                     {"target":"learnmorebutton002","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget002","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                    {"target":"plusfonticon002","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext002","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                    {"target":"learnmorebutton002","effectType":"instant","instant_parameters":{"border-width":"1px"}}
+                    ]
+                }
+            }'>
+                <div class="contentinner  position_relative_normal overflow_hidden"
+                >
+                    <img src="imgs/section4slider3.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:16response;padding-top:27fixed;padding-bottom:6fixed^
+                    361~720|720$font-size:16fixed;padding-top:27fixed;padding-bottom:6fixed^
+                    721~1240|1024$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed^
+                    1241~9999|1920$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed">
+                    PANPASTEL
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;font-size:13response^
+                    361~720|720$width:100%;font-size:13fixed^
+                    721~1240|1024$width:90%;font-size:14fixed^
+                    1241~9999|1920$width:90%;font-size:14fixed">
+                    파우더 형식의 고농축 미세안료를
+                    담고 있는 지금까지 볼 수 없었던
+                    새로운 개념의 최고급 파스텔 재료
+                    </h4>
+                    <div class="learnmore flex_horizontal_Center  javascript_Css_define position_relative_normal "
+                    javascript_Css_define="
+                    0~1240|1024$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:22fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:62fixed"targetindex='learnmorebutton002'
+                        >
+                        <div class="highlightbox javascript_Css_define" targetindex="widthsizeTarget002"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='plusfonticon002'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="buttontext002">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;margin-right:16fixed^
+            721~999|1000$width:calc(100vw *(460/1000));height:auto;margin-right:10fixed^
+            1000~1240|1024$width:calc(100vw *(380/1024));height:auto;margin-right:10fixed^
+            1241~9999|1920$width:calc(100vw *(417/1920));height:auto;margin-right:18fixed"
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                     {"target":"plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                     {"target":"learnmorebutton003","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget003","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                    {"target":"plusfonticon003","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext003","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                    {"target":"learnmorebutton003","effectType":"instant","instant_parameters":{"border-width":"1px"}}
+                    ]
+                }
+            }'>
+                <div class="contentinner  position_relative_normal overflow_hidden"
+                >
+                    <img src="imgs/section4slider4.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:16response;padding-top:27fixed;padding-bottom:6fixed^
+                    361~720|720$font-size:16fixed;padding-top:27fixed;padding-bottom:6fixed^
+                    721~1240|1024$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed^
+                    1241~9999|1920$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed">
+                    BB 브러시
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;font-size:13response^
+                    361~720|720$width:100%;font-size:13fixed^
+                    721~1240|1024$width:90%;font-size:14fixed^
+                    1241~9999|1920$width:90%;font-size:14fixed">
+                    전통적인 제조 방법을 고수하고 이태
+                    리의 브러시거장들에 의해 탄생되며 
+                    로마 시스티나 성당의 복원프로젝트
+                    공식 브러시로 채택된 최고급 브러시
+                    브랜드
+                    </h4>
+                    <div class="learnmore flex_horizontal_Center  javascript_Css_define position_relative_normal"
+                    javascript_Css_define="
+                    0~1240|1024$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:22fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:62fixed"targetindex='learnmorebutton003'
+                    >
+                        <div class="highlightbox javascript_Css_define" targetindex="widthsizeTarget003"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='plusfonticon003'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="buttontext003">Learn more</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;margin-right:16fixed^
+            721~999|1000$width:calc(100vw *(460/1000));height:auto;margin-right:10fixed^
+            1000~1240|1024$width:calc(100vw *(380/1024));height:auto;margin-right:10fixed^
+            1241~9999|1920$width:calc(100vw *(417/1920));height:auto;margin-right:18fixed" targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":40}]},
+                     {"target":"plusfonticon004","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext004","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                     {"target":"learnmorebutton004","effectType":"instant","instant_parameters":{"border-color":"#fe1020"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":40}]},
+                    {"target":"plusfonticon004","effectType":"instant","instant_parameters":{"color":"#fff"}},{"target":"buttontext004","effectType":"instant","instant_parameters":{"color":"#fff"}},
+                    {"target":"learnmorebutton004","effectType":"instant","instant_parameters":{"border-width":"1px"}}
+                    ]
+                }
+            }'>
+                <div class="contentinner  position_relative_normal overflow_hidden"
+                >
+                    <img src="imgs/section4slider5.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <h2 class="bannerTit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$font-size:16response;padding-top:27fixed;padding-bottom:6fixed^
+                    361~720|720$font-size:16fixed;padding-top:27fixed;padding-bottom:6fixed^
+                    721~1240|1024$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed^
+                    1241~9999|1920$font-size:21fixed;padding-top:51fixed;padding-bottom:22fixed">
+                    MAGNANI
+                    </h2>
+                    <h4 class="subtit javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                    0~360|360$width:100%;font-size:13response^
+                    361~720|720$width:100%;font-size:13fixed^
+                    721~1240|1024$width:90%;font-size:14fixed^
+                    1241~9999|1920$width:90%;font-size:14fixed">
+                    당대 최고의 화가 피카소가 사용했고
+                    나폴레옹이 선택했으며 이태리 왕실의 
+                    공식 문서 종이로 채택된 600년 역사
+                    의 이태리 최고급 종이 브랜드
+                    </h4>
+                    <div class="learnmore flex_horizontal_Center  javascript_Css_define position_relative_normal"
+                    javascript_Css_define="
+                    0~1240|1024$width:153fixed;height:40fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:22fixed^
+                    1241~9999|1920$width:162fixed;height:52fixed;border-style:solid;border-width:1fixed;font-size:13fixed;margin-top:62fixed"targetindex='learnmorebutton004'
+                    >
+                        <div class="highlightbox javascript_Css_define" targetindex="widthsizeTarget004"javascript_Css_define="
+                        0~9999|1920$width:0;height:100%;background-color:#ff2010;left:0;top:0;position:absolute"></div>
+                        <i class="fa fa-solid fa-plus position_relative_zindex3"targetindex='plusfonticon004'></i>
+                        <p class="javascript_Css_define position_relative_zindex3"javascript_Css_define="
+                        0~9999|1024$font-size:13fixed;padding-left:10fixed"targetindex="buttontext004">Learn more</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bgcolor_dark colorwhite javascript_Css_define"javascript_Css_define="
+0~720|720$width:100%;padding-bottom:56fixed^
+721~1240|1240$width:100%;padding-bottom:84fixed^
+1241~9999|1920$width:100%;padding-bottom:47fixed">
+    <div class="inner_top  javascript_Css_define 
+    pc_flex_horizontal_spaceBetween pc_flex_alignitems_flexStart"
+    javascript_Css_define="
+    0~720|720$width:100%;padding-left:40response;padding-right:40response;padding-bottom:56fixed^
+    721~1240|1240$width:100%;padding-left:40response;padding-right:40response;padding-bottom:30fixed^
+    1241~9999|1920$width:100%;padding-left:120response;padding-right:120response;padding-bottom:47fixed">
+        <h2 class="tit javascript_Css_define"
+        javascript_Css_define="
+        0~360|360$width:100%;padding-top:28fixed;padding-bottom:50fixed;font-size:24response^
+        361~720|720$width:100%;padding-top:28fixed;padding-bottom:50fixed;font-size:24fixed^
+        721~1240|1240$width:100%;padding-top:28fixed;padding-bottom:50fixed;font-size:24fixed^
+        1241~9999|1920$width:100%;padding-top:28fixed;padding-bottom:50fixed;font-size:24fixed">최신 정보 받기
+        </h2>
+        <span class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:100%;height:1fixed;background-color:#fff;margin-bottom:20fixed^
+        721~1240|1240$width:100%;height:1fixed;background-color:#fff;margin-bottom:20fixed^
+        1241~9999|1920$width:100%;height:1fixed;background-color:#fff;margin-bottom:24fixed">
+        </span>
+        <div class="left">
+            <p class="javascript_Css_define"javascript_Css_define="
+            0~360|360$width:80%;font-size:12response;color:white;padding-bottom:27fixed^
+            361~720|720$width:80%;font-size:12fixed;color:white;padding-bottom:27fixed^
+            721~1240|1240$width:424fixed;font-size:12fixed;color:white;padding-bottom:27fixed^
+            1241~9999|1920$width:426fixed;font-size:12fixed;color:white;padding-bottom:22fixed">
+            신한화구의 소셜미디어 플랫폼을 팔로우 하세요. 제품,브랜드,컬러에 대한 최신 정보를
+            공유하고 있으며 DM을 통해 여러분의 문의사항을 신속하게 답변드리고 있습니다.
+            </p>
+            <ul class="snslist flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$margin-top:24fixed^
+            721~1240|1240$margin-top:22fixed^
+            1241~9999|1920$margin-top:22fixed">
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$margin-right:26fixed^
+                721~1240|1240$margin-right:26fixed^
+                1241~9999|1920$margin-right:26fixed">
+                    <img src="imgs/facebookicon.svg" class="display_block javascript_Css_define" javascript_Css_define="
+                    0~9999|1920$width:11fixed;height:24fixed"/>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$margin-right:26fixed^
+                721~1240|1240$margin-right:26fixed^
+                1241~9999|1920$margin-right:26fixed">
+                    <img src="imgs/utubeicon_.svg" class="display_block javascript_Css_define" javascript_Css_define="
+                    0~9999|1920$width:25fixed;height:19fixed"/>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$margin-right:26fixed^
+                721~1240|1240$margin-right:26fixed^
+                1241~9999|1920$margin-right:26fixed">
+                    <img src="imgs/instaIcon.svg" class="display_block javascript_Css_define" javascript_Css_define="
+                    0~9999|1920$width:26fixed;height:26fixed"/>
+                </li>
+            </ul>
+        </div>
+        <div class="right pc_flex_horizontal_flexEnd javascript_Css_define"javascript_Css_define="
+        0~720|720$width:100%;margin-top:28fixed^
+        721~1240|1240$width:100%;margin-top:45fixed^
+        1241~9999|1920$flex:1 0 auto">
+            <div class='wrapping flex_horizontal_spaceBetween flex_alignitems_flexStart javascript_Css_define'javascript_Css_define="
+            0~499|500$width:400response^
+            500~720|720$width:362fixed^
+            721~1240|1240$width:362fixed^
+            1241~9999|1920$width:362fixed">
+                <ul class="javascript_Css_define" javascript_Css_define="
+                0~360|360$height:auto;font-size:12response^
+                361~720|720$height:auto;font-size:12fixed^
+                721~1240|1240$height:auto;font-size:12fixed^
+                1241~9999|1920$height:auto;font-size:12fixed">
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>About Us</a>
+                    </li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Import Brands</a>
+                    </li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Contact</a>
+                    </li>
+                </ul>
+                <ul class="javascript_Css_define" javascript_Css_define="
+                0~360|360$height:auto;font-size:12response^
+                361~720|720$height:auto;font-size:12fixed^
+                721~1240|1240$height:auto;font-size:12fixed^
+                1241~9999|1920$height:auto;font-size:12fixed">
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Import Brands</a>
+                    </li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Inspiration</a>
+                    </li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Discover</a>
+                    </li>
+                </ul>
+                <ul class="javascript_Css_define" javascript_Css_define="
+                0~360|360$height:auto;font-size:12response^
+                361~720|720$height:auto;font-size:12fixed^
+                721~1240|1240$height:auto;font-size:12fixed^
+                1241~9999|1920$height:auto;font-size:12fixed">
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Contact</a>
+                    </li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Tel 02-357-2651</a>
+                    </li>
+                    <li class="javascript_Css_define"javascript_Css_define="
+                    0~720|720$padding-bottom:5fixed^
+                    721~1240|1240$padding-bottom:5fixed^
+                    1241~9999|1920$padding-bottom:5fixed">
+                    <a href='#'>Mail  shinhan@shinhanart.com</a> 
+                    <button class="display_block bgcolor_white flex_horizontal_Center javascript_Css_define"javascript_Css_define="
+                    0~720|720$margin-top:5fixed;width:175fixed;height:25fixed^
+                    721~1240|1240$margin-top:5fixed;width:175fixed;height:25fixed^
+                    1241~9999|1920$margin-top:5fixed;width:175fixed;height:25fixed">문의하기</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <span class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:100%;height:1fixed;background-color:#fff;margin-top:20fixed^
+        721~1240|1240$width:100%;height:1fixed;background-color:#fff;margin-top:20fixed^
+        1241~9999|1920$width:100%;height:1fixed;background-color:#fff;margin-top:24fixed">
+        </span>
+    </div>
+
+    <div class="innerBottom javascript_Css_define"javascript_Css_define="
+    0~720|720$margin-top:42fixed^
+    721~1240|1240$margin-top:23fixed^
+    1241~9999|1920$margin-top:45fixed">
+        <img src="imgs/footerlogo.png" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~360|360$width:70%;height:auto;margin:0 auto^
+        361~720|720$width:192fixed;height:28fixed;margin:0 auto^
+        721~1240|1240$width:192fixed;height:28fixed;margin:0 auto^
+        1241~9999|1920$width:192fixed;height:28fixed;margin:0 auto"/>
+        <p class="copyright javascript_Css_define"javascript_Css_define="
+        0~720|720$margin-top:17fixed;font-size:11fixed;text-align:center^
+        721~1240|1240$margin-top:17fixed;font-size:11fixed;text-align:center^
+        1241~9999|1920$margin-top:17fixed;font-size:11fixed;text-align:center">
+        ⓒ Copyright 2022 ShinHan Art Materials Inc. All Rights Reserved.
+        </p>
+        <ul class="flex_horizontal_Center javascript_Css_define"javascript_Css_define="
+        0~720|720$margin-top:6fixed;font-size:11fixed^
+        721~1240|1240$margin-top:6fixed;font-size:11fixed^
+        1241~9999|1920$margin-top:6fixed;font-size:11fixed">
+            <li class="item">
+                <a href="#">이용약관</a>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~9999|1920$width:2fixed;height:9fixed;margin-left:5fixed;margin-right:5fixed;background-color:#d9d9d9">
+            </li>
+            <li class="item">
+                <a href="#">개인정보 처리방침</a>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~9999|1920$width:2fixed;height:9fixed;margin-left:5fixed;margin-right:5fixed;background-color:#d9d9d9">
+            </li>
+            <li class="item">
+                <a href="#">저작권 안내</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/common_function.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+<script src="js/inputkeyboard_validate.js"></script>
+<script src="js/widthcalculatepercentLayout.js"></script>
+<script>
+ var swiper=new Swiper('.mainbanner',{
+        //slidesPerView:'auto',
+        autoResize: false,
+        autoHeight:true,
+        effect: "fade",
+        autoplay:{
+            delay: 3500,
+            disableOnInteraction:false
+        },
+        pagination:{
+            el : '.swiper-pagination-styleBar1',
+        },
+       
+        /*
+        on:{
+            slideChangeTransitionEnd : function(){
+                console.log("현재 슬라이드카운트 index:",this.activeIndex+1);
+                let target=document.querySelector(`[targetindex='javascript_swipercustom_slidecountTarget_0']`);
+                target.innerText = this.activeIndex+1 < 10? '0'+(this.activeIndex+1) : (this.activeIndex+1);
+            }
+        }*/
+    
+    })
+
+ 
+    var swiper3=new Swiper('.slide2',{
+        slidesPerView:'auto',
+        autoResize: true,
+        autoHeight:true,
+        pagination:{
+            el :'.swiper-pagination_style1',
+        },
+        
+        /*
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var swiper4=new Swiper('.slide3',{
+        slidesPerView:'auto',
+        autoResize: true,
+        autoHeight:true,
+        pagination:{
+            el :'.swiper-pagination_style1',
+        },
+        
+    })
+    var swiper5=new Swiper('.slide4',{
+        slidesPerView:'auto',
+        autoResize: true,
+      
+        
+    })
+</script>
+</body>
+</html>
