@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body class="position_relative_normal">
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<header id="header">
+    <div class="inner">
+        <div class="position_fixed search_area bgcolor_black2 color_white zindex9999 javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$width:100%;height:100vh;top:0%;right:-100%;opacity:0%^
+        541~9999|1920$width:540px;height:100vh;top:0%;right:-100%;opacity:0%"
+        
+        targetindex="searchuiTarget1">
+            <div class="wrap javascript_Css_define"
+            javascript_Css_define="
+            0~540|540$width:100%;height:100%;padding-top:90response;padding-left:20response;padding-right:20response^
+            541~9999|1920$width:100%;height:100%;padding-top:120fixed;padding-left:30fixed;padding-right:30fixed">
+                <form action="search.html" class="searchformtype1 display_block">
+                    <div class="searchuiWrap position_relative_normal colorwhite display_block flex_horizontal_spaceBetween">
+                        <input type="search" name="search_keyword" class="display_block colorwhite javascript_Css_define"
+                        javascript_Css_define="
+                        0~540|540$font-size:14fixed;line-height:1.5;width:80%^
+                        541~9999|1920$font-size:18fixed;line-height:1.5;width:80%"
+                        targetindex="searchform_inputkeyword" placeholder="검색어를 입력해 주세요"/>
+                        <button  class="display_block bgcolor_transparent javascript_Css_define"
+                        javascript_Css_define="
+                        0~540|540$width:20fixed;height:20fixed;margin-right:20response^
+                        541~9999|1920$width:20fixed;height:20fixed;margin-right:20fixed">
+                            <img src="imgs/searchwhite.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </button>
+                        <span class="display_block bgcolor_white  javascript_Css_define
+                        mobile_width_100_percent  tablet_width_100_percent  pc_width_100_percent"
+                        javascript_Css_define="
+                        0~540|540$height:1fixed;margin-top:16fixed^
+                        541~9999|1920$height:1fixed;margin-top:20fixed"></span>
+                    </div>
+                </form>
+                
+                <ul class="search_recommends javascript_Css_define"javascript_Css_define="
+                0~540|540$width:100%;height:auto;padding-top:30fixed;font-size:14fixed;color:#909090^
+                541~9999|1920$width:100%;height:auto;padding-top:30fixed;font-size:16fixed;color:#909090">
+                    <li class="item javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$padding-bottom:8fixed^
+                    541~9999|1920$padding-bottom:8fixed">
+                        <a href="#">#로운</a>
+                    </li>
+                    <li class="item javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$padding-bottom:8fixed^
+                    541~9999|1920$padding-bottom:8fixed">
+                        <a href="#">#위스키</a>
+                    </li>
+                    <li class="item javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$padding-bottom:8fixed^
+                    541~9999|1920$padding-bottom:8fixed">
+                        <a href="#">#에르메스</a>
+                    </li>
+                    <li class="item javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$padding-bottom:8fixed^
+                    541~9999|1920$padding-bottom:8fixed">
+                        <a href="#">#남자</a>
+                    </li>
+                    <li class="item javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$padding-bottom:8fixed^
+                    541~9999|1920$padding-bottom:8fixed">
+                        <a href="#">#겨울</a>
+                    </li>
+                </ul>
+                <button class="display_block borderstyle_solid javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_searchclose"
+                triggerdata='{"click":{}}'
+                javascript_Css_define="
+                0~540|540$width:100%;border-top-width:1px;border-color:#a4a4a4;color:white;font-size:16fixed;position:absolute;bottom:0;left:0;height:70fixed;background-color:#000^
+                541~9999|1920$width:100%;border-top-width:1px;border-color:#a4a4a4;color:white;font-size:18fixed;position:absolute;bottom:0;left:0;height:80fixed;background-color:#000" 
+                >CLOSE</button>
+            </div>
+        </div>
+
+        <h1 class="headerlogo cursorpointer" onclick="location.href='main.html'">
+            <svg width="124" height="32" viewBox="0 0 124 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M111.03 0.0941033V17.6949L93.3017 0.0825195L81.7852 0.0825195V31.8345H94.6726V14.2221L112.517 31.8345H124V0.0825195L111.03 0.0941033Z" fill="black"/>
+            <path d="M19.8256 11.9994L6.6084 0.0825195V12.6394L19.186 24.0883C19.186 24.0883 19.6124 24.515 20.1809 24.0883L31.8348 13.4928V31.8345H44.7753V0.0825195H33.1138L19.8256 11.9994Z" fill="black"/>
+            <path d="M47.0059 31.8345H79.4722V25.3022H60.0585V18.7021H78.4063V12.3021H60.0585V6.69751H79.4722V0.0825195H47.0059V31.8345Z" fill="black"/>
+            <path d="M0 28.3736H2.84241L0 30.1514V32.0002H4.76103V30.6491H1.84756L4.76103 28.8002V27.0225H0V28.3736Z" fill="black"/>
+            <path d="M3.1266 26.8088C4.33463 26.8088 4.90311 25.8132 4.90311 24.6043C4.90311 23.4666 4.33463 22.3999 3.1266 22.3999C1.91858 22.3999 1.3501 23.3955 1.3501 24.6043C1.3501 25.8132 1.84752 26.8088 3.1266 26.8088ZM3.1266 23.8932C3.62402 23.8932 4.1925 24.0355 4.1925 24.6043C4.1925 25.1732 3.62402 25.3155 3.1266 25.3155C2.62918 25.3155 2.0607 25.1732 2.0607 24.6043C2.0607 24.0355 2.62918 23.8932 3.1266 23.8932Z" fill="black"/>
+            <path d="M0 20.9068V22.2579H4.68997V20.9779L4.40573 20.9068C4.68997 20.5513 4.76103 20.409 4.76103 19.9824C4.76103 18.7024 3.97937 18.2046 2.91347 18.2046C1.98968 18.2046 1.20802 18.7024 1.20802 19.9113C1.20802 20.3379 1.35014 20.6935 1.63438 20.9779H0V20.9068ZM3.05559 19.5557C3.48195 19.5557 4.12149 19.6268 4.12149 20.2668C4.12149 20.7646 3.48195 20.9068 3.12665 20.9068C2.70029 20.9068 2.06075 20.8357 2.06075 20.1957C2.06075 19.6268 2.62923 19.5557 3.05559 19.5557Z" fill="black"/>
+            <path d="M3.62428 10.88V12.2311C4.69019 12.2311 4.83231 11.3067 4.83231 10.3111C4.83231 9.38667 4.61913 8.39111 3.69534 8.39111C3.12686 8.39111 2.91368 8.74667 2.77156 9.17334C2.48732 10.0978 2.62944 10.7378 2.27414 10.7378C2.06096 10.7378 1.9899 10.5956 1.9899 10.3822C1.9899 10.1689 2.06096 10.0267 2.13202 9.95556C2.20308 9.88445 2.27414 9.88445 2.41626 9.88445V8.46222C1.49248 8.53334 1.2793 9.38667 1.2793 10.3822C1.2793 11.1644 1.49248 12.2311 2.3452 12.2311C3.62428 12.2311 3.19792 9.88445 3.83746 9.88445C4.05064 9.88445 4.1217 10.0978 4.1217 10.3822C4.1217 10.5244 4.05064 10.7378 3.97958 10.88C3.83746 10.8089 3.69534 10.88 3.62428 10.88Z" fill="black"/>
+            <path d="M3.69511 4.19531C3.12663 4.19531 2.91345 4.47976 2.77133 4.97753C2.48709 5.90198 2.55815 6.54198 2.27391 6.54198C2.06073 6.54198 1.91861 6.39976 1.91861 6.18642C1.91861 5.97309 1.98967 5.83087 2.06073 5.75976C2.13179 5.68865 2.27391 5.61753 2.34497 5.61753V4.26642C1.42119 4.26642 1.20801 5.19087 1.20801 6.11531C1.20801 6.89754 1.42119 7.9642 2.27391 7.9642C3.55299 7.9642 3.12663 5.61753 3.76617 5.61753C3.97935 5.61753 4.05041 5.83087 4.05041 6.11531C4.05041 6.25753 3.97935 6.47087 3.90829 6.61309C3.83723 6.6842 3.69511 6.75531 3.62405 6.6842V8.03531C4.68996 8.03531 4.83208 7.11087 4.83208 6.11531C4.83208 5.19087 4.6189 4.19531 3.69511 4.19531Z" fill="black"/>
+            <path d="M4.76103 16.6401H0V18.0624H4.76103V16.6401Z" fill="black"/>
+            <path d="M3.05557 16.4267C3.55299 16.4267 4.05041 16.2845 4.40572 15.8578C4.76102 15.4312 4.83208 14.9334 4.83208 14.3645C4.83208 13.5112 4.47678 12.729 3.62405 12.5156V13.7956C3.83723 13.8667 4.12147 14.009 4.12147 14.3645C4.12147 14.8623 3.69511 15.0756 3.33981 15.0756V12.5156H3.12663C1.91861 12.5156 1.20801 13.1556 1.20801 14.5067C1.20801 15.0045 1.35013 15.5734 1.77649 16.0001C2.06073 16.2845 2.62921 16.4267 3.05557 16.4267ZM2.62921 13.7956V15.0045C2.20285 15.0045 1.91861 14.8623 1.91861 14.3645C1.84755 13.9378 2.20285 13.7956 2.62921 13.7956Z" fill="black"/>
+            <path d="M3.05557 3.91111C3.55299 3.91111 4.05041 3.76889 4.40572 3.34222C4.76102 2.91556 4.83208 2.41778 4.83208 1.84889C4.83208 0.995555 4.47678 0.213333 3.62405 0V1.28C3.90829 1.42222 4.12147 1.49333 4.19253 1.92C4.19253 2.41778 3.76617 2.63111 3.41087 2.63111V0H3.12663C1.98967 0 1.20801 0.64 1.20801 1.99111C1.20801 2.48889 1.35013 3.05778 1.77649 3.48444C2.06073 3.76889 2.62921 3.91111 3.05557 3.91111ZM2.62921 1.35111V2.56C2.20285 2.56 1.91861 2.41778 1.91861 1.92C1.84755 1.49333 2.20285 1.35111 2.62921 1.35111Z" fill="black"/>
+            </svg>
+        </h1><!-- #logo -->
+        <ul class="headermenu">
+            <li class="item position_relative_normal">
+                <a href="#" class="fontfamily_syncopate javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headernavigroup"triggerevents='{"mouseenter":{},"mouseleave":{}}'>STYLE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:0%;height:0;background-color:#802090;position:absolute;left:50%;top:120%;transform:translateX(-50%)"targetindex="headernavieffect1"></span>
+            </li>
+            <li class="item position_relative_normal">
+                <a href="#" class="fontfamily_syncopate javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headernavigroup"triggerevents='{"mouseenter":{},"mouseleave":{}}'>LIFESTYLE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:0%;height:0;background-color:#2020d0;position:absolute;left:50%;top:120%;transform:translateX(-50%)"targetindex="headernavieffect2"></span>
+            </li>
+            <li class="item position_relative_normal">
+                <a href="#" class="fontfamily_syncopate javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headernavigroup"triggerevents='{"mouseenter":{},"mouseleave":{}}'>PEOPLE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:0%;height:0;background-color:#40f040;position:absolute;left:50%;top:120%;transform:translateX(-50%)"targetindex="headernavieffect3"></span>
+            </li>
+            <li class="item position_relative_normal">
+                <a href="#" class="fontfamily_syncopate javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headernavigroup"triggerevents='{"mouseenter":{},"mouseleave":{}}'>WATCH & JEWELRY</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:0%;height:0;background-color:#9090a0;position:absolute;left:50%;top:120%;transform:translateX(-50%)"targetindex="headernavieffect4"></span>
+            </li>
+            <li class="item position_relative_normal">
+                <a href="#" class="fontfamily_syncopate javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headernavigroup"triggerevents='{"mouseenter":{},"mouseleave":{}}'>NOBLESSE MALL</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1920$width:0%;height:0;background-color:#f03060;position:absolute;left:50%;top:120%;transform:translateX(-50%)"targetindex="headernavieffect5"></span>
+            </li>
+        </ul>
+        <div class="searchwrap cursorpointer">
+            <div class="searchcontrol javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_searchopen"triggerdata='{"click":{}}'>
+                <img src="imgs/searchblack.svg"/>
+            </div>
+        </div>
+        <div class="menubar cursorpointer javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_naviopen"triggerdata='{"click":{}}'>
+            <img src="imgs/menubar.svg"/>
+        </div>
+    </div>
+</header>
+<div class="naviWrap zindex999"targetindex='naviWraps'>
+    <div class="popupbg javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_naviclose"id='naviClose'
+    targetindex="navBg" triggerdata='{"click":{}}'style='display:none'
+    ></div>
+    <nav class="position_absolute zindex999 javascript_Css_define bgcolor_white"javascript_Css_define="
+    0~540|540$width:100%;top:0;height:100vh;padding-top:160response;padding-left:12response^
+    541~1200|1020$width:520fixed;top:0;height:100vh;padding-top:160fixed;padding-left:12response^
+    1201~9999|1920$width:520fixed;top:0;height:100vh;padding-top:160fixed;padding-left:20fixed"
+    targetindex="menno_navigation"
+    style="right:-160%;opacity:0%">
+        <div class="javascript_Css_define cursorpointer javascript_StyleEffectTrigger2   javascript_StyleEffectTrigger2_naviclose"triggerdata='{"click":{}}'javascript_Css_define="
+        0~540|540$position:absolute;right:30response;top:40response;width:30fixed;height:30fixed^
+        541~9999|1920$position:absolute;right:30fixed;top:40fixed;width:30fixed;height:30fixed" >
+            <img src="imgs/Xbutton.PNG" class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1920$width:100%;height:100%"/>
+        </div>
+        <ul class="menulist position_relative_zindex3 textalignCenter javascript_Css_define"javascript_Css_define="
+        0~9999|1120$padding-top:20fixed;padding-left:20response;padding-right:20response">
+            <li class="fontweight_500  javascript_Css_define fontfamily_syncopatebold"
+            javascript_Css_define="
+            0~540|540$font-size:22response;margin-bottom:42response;color:#404040^
+            541~9999|1020$font-size:22fixed;margin-bottom:42fixed;color:#404040"><a href='#'>STYLE</a></li>
+            <li class="fontweight_500  javascript_Css_define fontfamily_syncopatebold"javascript_Css_define="
+            0~540|540$font-size:22response;margin-bottom:42response;color:#404040^
+            541~9999|1020$font-size:22fixed;margin-bottom:42fixed;color:#404040"><a href='#'>LIFESTYLE</a></li>
+            <li class="fontweight_500  javascript_Css_define fontfamily_syncopatebold"javascript_Css_define="
+            0~540|540$font-size:22response;margin-bottom:42response;color:#404040^
+            541~9999|1020$font-size:22fixed;margin-bottom:42fixed;color:#404040"><a href='#'>PEOPLE</a></li>
+            <li class="fontweight_500  javascript_Css_define fontfamily_syncopatebold"javascript_Css_define="
+            0~540|540$font-size:22response;margin-bottom:42response;color:#404040^
+            541~9999|1020$font-size:22fixed;margin-bottom:42fixed;color:#404040"><a href='#'>WATCH & JEWELRY</a></li>
+            <li class="fontweight_500  javascript_Css_define fontfamily_syncopatebold"javascript_Css_define="
+            0~540|540$font-size:22response;margin-bottom:42response;color:#404040^
+            541~9999|1020$font-size:22fixed;margin-bottom:42fixed;color:#404040"><a href='#'>NOBLESSE MALL</a></li>
+        </ul>
+
+        <ul class="small-menu-sns flex_horizontal_Center">
+            <li class="javascript_Css_define borderstyle_solid flex_horizontal_Center"javascript_Css_define="
+            0~540|540$width:50response;height:50response;border-width:3fixed;border-color:#c7c7c7;border-radius:50%^
+            541~9999|1920$width:50fixed;height:50fixed;border-width:3fixed;border-color:#c7c7c7;border-radius:50%">
+                <svg style="width:60%;height:60%" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.8728 8.5C10.8728 8.5 9.17284 10.2 9.17284 12.2C9.17284 14.2 10.8728 15.9 12.8728 15.9C14.8728 15.9 16.5728 14.2 16.5728 12.2C16.5728 10.2 14.8728 8.5 12.8728 8.5Z" fill="black"/>
+                <path d="M17.5731 1H8.27308C4.67308 1 1.87308 3.8 1.87308 7.3V16.6C1.87308 20.2 4.67308 23 8.27308 23H17.5731C21.0731 23 23.8731 20.2 23.8731 16.6V7.3C23.8731 3.8 21.0731 1 17.5731 1ZM12.8731 17.8C9.67308 17.8 7.17308 15.2 7.17308 12.1C7.17308 9 9.67308 6.3 12.8731 6.3C16.0731 6.3 18.5731 8.9 18.5731 12C18.5731 15.1 16.0731 17.8 12.8731 17.8ZM18.7731 7.5C18.0731 7.5 17.4731 6.9 17.4731 6.2C17.4731 5.5 18.0731 4.9 18.7731 4.9C19.4731 4.9 20.0731 5.5 20.0731 6.2C20.0731 6.9 19.4731 7.5 18.7731 7.5Z" fill="black"/>
+                </svg>
+            </li>
+            <li class="javascript_Css_define borderstyle_solid flex_horizontal_Center"javascript_Css_define="
+            0~540|540$width:50response;height:50response;border-width:3fixed;border-color:#c7c7c7;border-radius:50%;margin-left:20response;margin-right:20response^
+            541~9999|1920$width:50fixed;height:50fixed;border-width:3fixed;border-color:#c7c7c7;border-radius:50%;margin-left:20response;margin-right:20response">
+                <svg style="width:60%;height:60%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M23.5,6.6c-0.3-1-1.1-1.9-2.1-2.1C19.5,4,12,4,12,4S4.5,4,2.6,4.5c-1,0.3-1.8,1.1-2.1,2.1C0,8.5,0,12.5,0,12.5 s0,3.9,0.5,5.8c0.3,1,1.1,1.9,2.1,2.1c1.9,0.5,9.4,0.5,9.4,0.5s7.5,0,9.4-0.5c1-0.3,1.8-1.1,2.1-2.1c0.5-1.9,0.5-5.8,0.5-5.8 S24,8.5,23.5,6.6z M9.5,16V8.9l6.3,3.6L9.5,16z" fill="black"/>
+                </svg>
+            </li>
+            <li class="javascript_Css_define borderstyle_solid flex_horizontal_Center"javascript_Css_define="
+            0~540|540$width:50response;height:50response;border-width:3fixed;border-color:#c7c7c7;border-radius:50%^
+            541~9999|1920$width:50fixed;height:50fixed;border-width:3fixed;border-color:#c7c7c7;border-radius:50%">
+                <svg style="width:60%;height:60%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.77784 12.8V20H13.1359V12.9H15.4075L16.0001 9.9H13.1359C13.1359 9.9 13.1359 8.5 13.1359 7.7C13.1359 7.4 13.2346 7 13.7285 7C14.4198 7 15.3087 7 15.3087 7V4C15.3087 4 13.8272 4 12.247 4C11.2593 4 9.77784 5.3 9.77784 6.8C9.77784 8.3 9.77784 9.9 9.77784 9.9H8.00006V12.9L9.77784 12.8Z" fill="black"/>
+                </svg>
+            </li>
+        </ul>
+    </nav>
+</div>
+    
+<div class="WrappingContainer ">
+    <section class="search_section  javascript_Css_define"
+    javascript_Css_define="
+    0~540|540$padding-top:383fixed;padding-bottom:83fixed;width:500response;margin:0 auto^
+    541~1200|1020$padding-top:550fixed;padding-bottom:150fixed;width:920response;margin:0 auto^
+    1201~9999|1920$padding-top:550fixed;padding-bottom:150fixed;width:1600response;margin:0 auto">
+        <div class="inner
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+            javascript_Css_define="
+            0~540|540$width:90%;margin:0 auto^
+            541~1200|1020$width:520fixed^
+            1201~9999|1920$width:520fixed">
+                <div class="searchwrap  position_relative_normal  display_block borderstyle_solid bordercolorgray2
+                mobile_flex_horizontal_spaceBetween 
+                tablet_flex_horizontal_spaceBetween
+                pc_flex_horizontal_spaceBetween javascript_Css_define"
+                javascript_Css_define="
+                0~540|540$width:100%;padding-top:20fixed;padding-bottom:20fixed;border-radius:20fixed;border-width:1fixed^
+                541~1200|1020$width:520fixed;padding-top:30fixed;padding-bottom:30fixed;border-radius:20fixed;border-width:1fixed^
+                1201~9999|1920$width:520fixed;padding-top:30fixed;padding-bottom:30fixed;border-radius:20fixed;border-width:1fixed">
+                    <input type="search" name="search_keyword" class="display_block  javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$font-size:15fixed;line-height:1.5;width:80%;padding-left:20response;padding-right:20response^
+                    541~1200|1020$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed^
+                    1201~9999|1920$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed"
+                    targetindex="searchform_inputkeyword|searchpage_intialize_searchkeyword" placeholder="please input search"/>
+                    <button  class="display_block bgcolor_transparent javascript_Css_define"
+                    javascript_Css_define="
+                    0~540|540$width:20fixed;height:20fixed;margin-right:20response^
+                    541~1200|1020$width:20fixed;height:20fixed;margin-right:20fixed^
+                    1201~9999|1920$width:20fixed;height:20fixed;margin-right:20fixed">
+                        <img src="imgs/searchblack.svg" class="display_block
+                        mobile_width_100_percent mobile_height_100_percent
+                        tablet_width_100_percent tablet_height_100_percent
+                        pc_width_100_percent pc_height_100_percent"/>
+                    </button>
+                    <!--<span class="display_block bgcolor_white 
+                    mobile_width_100_percent mobilefixed_height_1 mobilefixed_margintop_16
+                    tablet_width_100_percent tlfixed_height_1 tlfixed_margintop_20
+                    pc_width_100_percent pcfixed_height_1 pcfixed_margintop_20 "></span>-->
+                </div>
+            </form>
+
+            <!--<img src="img/xbutton2.svg" class="display_block cursorpointer
+            mobilefixed_width_28 mobilefixed_height_28 mobile_response_margintop_60_important mobile_marginhorizontal_auto
+            tlfixed_width_32 tlfixed_height_32 tl_response_marginleft_50
+            pcfixed_width_32 pcfixed_height_32 pc_response_marginleft_220
+            
+            javascript_effectTrigger"
+            targetdata='{"effectTarget":"slidedownEffectTarget0_search";"event_per_effects":{"click":"slideup_simple"}}'/>-->
+        </div>
+        <p class=" textalignCenter javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$font-size:17fixed;margin-top:22fixed^
+        541~1200|1020$font-size:22fixed;margin-top:32fixed^
+        1201~9999|1920$font-size:22fixed;margin-top:32fixed">keyword: <span class="colorblue" targetindex="searchpage_intialize_searchkeyword"></span> to results</p>
+    </section>
+
+    <section class="searchresult   javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$width:500response;margin:0 auto^
+        541~1200|1020$width:920response;margin:0 auto^
+        1201~9999|1920$width:1600response;margin:0 auto">
+        <div class="inner
+        ">
+            <h3 class="tits textalignCenter javascript_Css_define"
+            javascript_Css_define="
+            0~540|540$font-size:22fixed;line-height:1.5^
+            541~1200|1020$font-size:38fixed;line-height:1.5^
+            1201~9999|1920$font-size:42fixed;line-height:1.5"> search results</h3>
+            <p class="res_cnt javascript_Css_define"
+            javascript_Css_define="
+            0~540|540$font-size:14fixed^
+            541~1200|1020$font-size:20fixed^
+            1201~9999|1920$font-size:22fixed">total <span targetindex="searchcnt_intialize_value">0</span> cnts</p>
+
+            <span class="display_block bgcolor_white javascript_Css_define"
+            javascript_Css_define="
+            0~540|540$width:100%;height:1fixed;margin-top:10fixed^
+            541~1200|1020$width:100%;height:1fixed;margin-top:16fixed^
+            1201~9999|1920$width:100%;height:1fixed;margin-top:16fixed"></span>
+            <div class="contents javascript_Css_define"
+            javascript_Css_define="
+            0~540|540$padding-top:60fixed;padding-bottom:60fixed^
+            541~1200|1020$padding-top:120fixed;padding-bottom:120fixed^
+            1201~9999|1920$padding-top:120fixed;padding-bottom:120fixed">
+
+            </div>
+        </div>
+        <!--<span class="display_block bgcolor_white javascript_Css_define"
+        javascript_Css_define="
+        0~600|600$width:100%;height:2fixed;margin-top:83fixed^
+        601~1400|1200$width:100%;height:2fixed;margin-top:83fixed^
+        1401~9999|1920$width:100%;height:2fixed;margin-top:83fixed"></span>-->
+    </section>
+
+</div>
+
+
+<footer class="javascript_Css_define bgcolor_dark colorwhite"
+javascript_Css_define="
+0~540|540$margin-top:60fixed;padding-top:60fixed;padding-left:20response;padding-right:20response;padding-bottom:88fixed^
+541~1200|1020$margin-top:120fixed;padding-top:58fixed;padding-left:30response;padding-right:32response;padding-bottom:38fixed^
+1201~9999|1920$margin-top:200fixed;padding-top:62fixed;padding-left:58response;padding-right:62response;padding-bottom:40fixed">
+    <div class="innertop pc_flex_horizontal_spaceBetween pc_flex_alignitems_flexStart
+    tablet_flex_horizontal_spaceBetween tablet_flex_alignitems_flexStart
+    mobile_flex_horizontal_spaceBetween mobile_flex_alignitems_flexStart">
+        <ul class="footersns javascript_Css_define fontfamily_syncopatebold"
+        javascript_Css_define="
+        0~540|540$font-size:20response;font-weight:bold;padding-top:60response;order:2;width:100%^
+        541~1200|1020$font-size:20fixed;font-weight:bold;padding-bottom:24fixed;order:1^
+        1201~9999|1920$font-size:20fixed;font-weight:bold;order:1">
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:12response^
+            541~1200|1020$padding-bottom:12fixed^
+            1201~9999|1920$padding-bottom:12fixed">
+                <a href="#">INSTAGRAM</a>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:12response^
+            541~1200|1020$padding-bottom:12fixed^
+            1201~9999|1920$padding-bottom:12fixed">
+                <a href="#">YOUTUBE</a>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:12response^
+            541~1200|1020$padding-bottom:12fixed^
+            1201~9999|1920$padding-bottom:12fixed">
+                <a href="#">FACEBOOK</a>
+            </li>
+            <li class="item">
+                <a href="#">NOBLESSE MALL</a>
+            </li>
+        </ul>
+        <ul class="linklist pc_flex_horizontal_flexStart tablet_flex_horizontal_flexStart javascript_Css_define"javascript_Css_define="
+        0~540|540$order:1;width:100%^
+        541~1200|1020$order:2^
+        1201~9999|1920$order:2">
+            <li class="cursorpointer item javascript_Css_define flex_horizontal_Center borderstyle_solid"javascript_Css_define="
+            0~540|540$width:100%;height:77response;border-width:4response;border-color:white;font-size:24response;font-weight:bold^
+            541~1200|1020$width:226fixed;height:48fixed;border-width:4fixed;border-color:white;font-size:15fixed;font-weight:bold^
+            1201~9999|1920$width:226fixed;height:48fixed;border-width:4fixed;border-color:white;font-size:15fixed;font-weight:bold">뉴스레터 신청하기 <img src="imgs/arrowRightTop.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1920$padding-left:6fixed"/>
+            </li>
+            <li class="cursorpointer item javascript_Css_define flex_horizontal_Center borderstyle_solid"javascript_Css_define="
+            0~540|540$width:100%;height:77response;border-width:4response;border-color:white;font-size:24response;font-weight:bold;margin-top:10response^
+            541~1200|1020$width:226fixed;height:48fixed;border-width:4fixed;border-color:white;font-size:15fixed;font-weight:bold;margin-left:11fixed^
+            1201~9999|1920$width:226fixed;height:48fixed;border-width:4fixed;border-color:white;font-size:15fixed;font-weight:bold;margin-left:13fixed">정기구독 신청하기 <img src="imgs/arrowRightTop.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1920$padding-left:6fixed"/>
+            </li>
+        </ul>
+    </div>
+    <div class="innerCenter pc_flex_horizontal_flexStart 
+    tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexStart
+    javascript_Css_define"javascript_Css_define="
+    0~540|540$padding-top:53fixed^
+    541~1200|1020$padding-top:53fixed^
+    1201~9999|1920$padding-top:56fixed">
+        <ul class="introduce javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$font-size:21response;font-weight:bold^
+        541~1200|1020$font-size:15fixed;font-weight:bold^
+        1201~9999|1920$font-size:15fixed;font-weight:bold">
+            <li class="item javascript_Css_define flex_horizontal_flexStart"javascript_Css_define="
+            0~540|540$padding-bottom:6response^
+            541~1200|1020$padding-bottom:5fixed^
+            1201~9999|1920$padding-bottom:5fixed">
+                <a href="#">회사소개</a> <img src="imgs/arrowRightTop.svg" class="display_block "/>
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:6response^
+            541~1200|1020$padding-bottom:5fixed^
+            1201~9999|1920$padding-bottom:5fixed">
+                <a href="#">제휴문의</a> 
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:6response^
+            541~1200|1020$padding-bottom:5fixed^
+            1201~9999|1920$padding-bottom:5fixed">
+                <a href="#">개인정보처리방침</a>
+            </li>
+        </ul>
+        <ul class="introduce javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$font-size:20response;font-weight:bold;margin-top:60response;color:#808080^
+        541~1200|1020$font-size:13fixed;font-weight:bold;padding-left:67response^
+        1201~9999|1920$font-size:13fixed;font-weight:bold;padding-left:108response">
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:6response^
+            541~1200|1020$padding-bottom:8fixed^
+            1201~9999|1920$padding-bottom:8fixed">
+                고객센터 02-3015-8007
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:6response^
+            541~1200|1020$padding-bottom:8fixed^
+            1201~9999|1920$padding-bottom:8fixed">
+                상담시간  09:00~18:00  OFF TIME  12:00~13:00
+            </li>
+            <li class="item javascript_Css_define"javascript_Css_define="
+            0~540|540$padding-bottom:6response^
+            541~1200|1020$padding-bottom:8fixed^
+            1201~9999|1920$padding-bottom:8fixed">
+                m@noblessedigital.com
+            </li>
+        </ul>
+        <div class="floatRightContent javascript_Css_define"javascript_Css_define="
+        0~730|540$display:none^
+        731~1200|1020$flex:1 0 auto;display:flex;flex-flow:row nowrap;justify-content:flex-end;font-size:12fixed;font-weight:bold;color:#6b6c74;line-height:1.4^
+        1201~9999|1920$flex:1 0 auto;display:flex;flex-flow:row nowrap;justify-content:flex-end;font-size:12fixed;font-weight:bold;color:#6b6c74;line-height:1.4">
+            <div class="contentwrap textalignRight">
+                <p>
+                    (주)노블레스디지털솔루션
+                </p>
+                <p>
+                    서울특별시 강남구 선릉로162길 12, 2층
+                </p>
+                <p>
+                    대표이사 : 명제열
+                </p>
+                <p>
+                    사업자등록번호 : 788- 81-01904
+                </p>
+                <p>
+                    통신판매신고번호 : 제 2021-서울강남-01423호
+                </p>
+            </div>  
+        </div>
+    </div>
+    <div class="footerimg flex_horizontal_flexStart 
+    javascript_Css_define"
+    javascript_Css_define="
+    0~540|540$margin-top:43fixed^
+    541~1200|1020$margin-top:24fixed^
+    1201~9999|1920$margin-top:64fixed">
+        <img src="imgs/footerimg1.svg" class="display_block pc_flex_horizontal_flexStart javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$width:86fixed;height:125fixed;margin-right:42response^
+        541~1200|1020$width:62fixed;height:90fixed;margin-right:28response^
+        1201~9999|1920$width:62fixed;height:90fixed;margin-right:28response"/>
+        <img src="imgs/footerimg2.svg" class="display_block pc_flex_horizontal_flexStart javascript_Css_define"
+        javascript_Css_define="
+        0~540|540$width:51fixed;height:123fixed^
+        541~1200|1020$width:37fixed;height:90fixed^
+        1201~9999|1920$width:37fixed;height:90fixed"/>
+    </div>
+    <p class='copyright javascript_Css_define fontfamily_syncopatebold'
+    javascript_Css_define="
+    0~540|540$font-size:23fixed;font-weight:bold;margin-top:58fixed^
+    541~1200|1020$font-size:30fixed;font-weight:bold;margin-top:58fixed^
+    1201~9999|1920$font-size:40fixed;font-weight:bold;margin-top:58fixed">
+    ©2022 MEN NOBLESSE
+    </p>
+</footer>
+
+<script src="js/transformanimate.js"></script>
+<script src="js/common_function.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+<script src="js/inputkeyboard_validate.js"></script>
+<script src="js/styleEffectAnimate.js"></script>
+<script src="js/form_related.js"></script>
+
+<script src="./headerNaviUicommon.js"></script>
+
+
+</body>
+</html>
