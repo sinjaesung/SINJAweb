@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="177" viewBox="0 0 360 177">
+    <defs>
+        <filter id="패스_12574" width="248.18" height="246.146" x="120" y="-97.27" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="20"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_1014" width="355" height="355" x="-100" y="-21" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2" stdDeviation="25"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path">
+            <path id="패스_12617" d="M0 0h360v177H0z" class="cls-1" transform="translate(0 261)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#7339ff}
+        </style>
+    </defs>
+    <g id="bg" clip-path="url(#clip-path)" transform="translate(0 -261)">
+        <g filter="url(#패스_12574)" transform="matrix(1, 0, 0, 1, 0, 261)">
+            <path id="패스_12574-2" d="M655.743 294.791l-75.55 62.109 91.567 34.372z" class="cls-1" transform="translate(840.85 -365.86) rotate(118)"/>
+        </g>
+        <g filter="url(#타원_1014)" transform="matrix(1, 0, 0, 1, 0, 261)">
+            <circle id="타원_1014-2" cx="102.5" cy="102.5" r="102.5" class="cls-1" transform="translate(-25 54)"/>
+        </g>
+    </g>
+</svg>

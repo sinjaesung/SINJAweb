@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="200" viewBox="0 0 1920 200">
+    <defs>
+        <filter id="타원_1013" width="781" height="781" x="947" y="-116" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur" stdDeviation="25"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="패스_12574" width="283.938" height="281.337" x="454.141" y="-126.825" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-2" stdDeviation="20"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur-2" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="타원_1014" width="343" height="343" x="219" y="12" filterUnits="userSpaceOnUse">
+            <feOffset/>
+            <feGaussianBlur result="blur-3" stdDeviation="25"/>
+            <feFlood flood-opacity=".102"/>
+            <feComposite in2="blur-3" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
+        <clipPath id="clip-path">
+            <path id="사각형_6679" d="M0 0H1920V200H0z" class="cls-1" transform="translate(6 5722)"/>
+        </clipPath>
+        <style>
+            .cls-1{fill:#7339ff}
+        </style>
+    </defs>
+    <g id="bg" clip-path="url(#clip-path)" transform="translate(-6 -5722)">
+        <g filter="url(#타원_1013)" transform="matrix(1, 0, 0, 1, 6, 5722)">
+            <circle id="타원_1013-2" cx="315.5" cy="315.5" r="315.5" class="cls-1" transform="translate(1022 -41)"/>
+        </g>
+        <g filter="url(#패스_12574)" transform="matrix(1, 0, 0, 1, 6, 5722)">
+            <path id="패스_12574-2" d="M676.82 294.791l-96.627 79.441L697.3 418.193z" class="cls-1" transform="translate(1210.75 -382.77) rotate(118)"/>
+        </g>
+        <g filter="url(#타원_1014)" transform="matrix(1, 0, 0, 1, 6, 5722)">
+            <circle id="타원_1014-2" cx="96.5" cy="96.5" r="96.5" class="cls-1" transform="translate(294 87)"/>
+        </g>
+    </g>
+</svg>

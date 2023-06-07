@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="154" height="154" viewBox="0 0 154 154">
+    <defs>
+        <filter id="9pbnypsrwa">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="3"/>
+            <feFlood flood-opacity=".161" result="color"/>
+            <feComposite in="SourceGraphic" in2="blur" operator="out"/>
+            <feComposite in="color" operator="in"/>
+            <feComposite in2="SourceGraphic" operator="in"/>
+        </filter>
+    </defs>
+    <g>
+        <g filter="url(#9pbnypsrwa)" transform="matrix(1, 0, 0, 1, 0, 0)">
+            <circle cx="77" cy="77" r="77" fill="#fff" opacity="0.2"/>
+        </g>
+        <g fill="none" stroke="#ed85fe" stroke-width="40px" opacity="0.2">
+            <circle cx="77" cy="77" r="77" stroke="none"/>
+            <circle cx="77" cy="77" r="57"/>
+        </g>
+    </g>
+</svg>
