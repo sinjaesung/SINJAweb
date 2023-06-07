@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en"targetindex="javascript_scrollContaineronly">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/icons" rel="stylesheet"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+
+   
+</head>
+<body class="position_relative_normal">
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<div id='javascript_contentContainer'>
+    <header class="javascript_Css_define position_fixed"javascript_Css_define="
+    0~570|570*1040$width:100%;height:auto;left:0;top:0;padding-top:17responh;padding-bottom:17responh;padding-left:20response;padding-right:20response;z-index:990;background-color:rgba(0,0,0,0.6)^
+    571~1200|1200*1100$width:100%;height:auto;left:0;top:0;padding-top:23responh;padding-bottom:23responh;padding-left:60response;padding-right:60response;z-index:990;background-color:rgba(0,0,0,0.6)^
+    1201~9999|1920*1080$width:100%;height:auto;left:0;top:0;padding-top:20responh;padding-bottom:20responh;padding-left:80response;padding-right:80response;z-index:990;background-color:rgba(0,0,0,0.6)">
+        <div class="inner flex_horizontal_flexStart  flex_nowrap">
+            <img src="imgs/logo-w.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~570|570*1040$width:55px;height:26px;z-index:999^
+            571~1200|1200*1100$width:82px;height:37px;z-index:999^
+            1201~1920|1920*1080$width:82px;height:37px;z-index:999^
+            1921~9999|1920*1080$width:82responmin;height:37responmin;z-index:999"/>
+            <ul class="headermenu flex_horizontal_flexStart flex_alignitems_flexStart colorwhite fontweight_700 javascript_Css_define"javascript_Css_define="
+            0~1200|1200*1100$display:none^
+            1201~1460|1920*1080$padding-left:300response;flex:0 1 auto^
+            1461~9999|1920*1080$padding-left:466response;flex:0 1 auto">
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt1">ABOUT</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar1'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget1'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>INTRODUCE</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>VFXLAB</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt2">V-ARTIST</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar2'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget2'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='rina.html'>RINA</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='mave.html'>MAVE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt3">WORK</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar3'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget3'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>VFX</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>ENTERTAINMENT</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>GAME</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt4">NEWS</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar4'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget4'>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt5">TALENT</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar5'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget5'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>RECRUIT</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>PARTNER</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt6">CONTACT</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar6'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget6'>
+                    </ul>
+                </li>
+            </ul>
+            <div class="rightalignContent flex_horizontal_flexEnd javascript_Css_define"javascript_Css_define="
+            0~1200|1200*1100$flex:1 0 auto;align-self:center^
+            1201~9999|1920*1080$flex:1 0 auto;align-self:center">
+                <div class="menubar cursorpointer javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_naviopen">
+                    <div class="barshape javascript_Css_define bgcolor_white"javascript_Css_define="
+                    0~1200|1200*1100$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1201~1920|1920*1080$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1921~9999|1920*1080$width:26responmin;height:2responmin;margin-bottom:5responmin"></div>
+                    <div class="barshape javascript_Css_define bgcolor_white"javascript_Css_define="
+                    0~1200|1200*1100$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1201~1920|1920*1080$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1921~9999|1920*1080$width:26responmin;height:2responmin;margin-bottom:5responmin"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="naviBg javascript_Css_define position_fixed"targetindex='navBg'javascript_Css_define="
+    0~9999|1920*1080$display:none;left:0;top:0;width:100%;height:100%;background-color:rgba(255,255,255,0.5);z-index:500"style='display:none'></div>
+    <nav class='position_fixed javascript_Css_define' javascript_Css_define="
+    0~9999|1920*1080$width:100%;height:100vh;background-color:rgba(20,20,20,1);left:0;bottom:-100%;z-index:993;opacity:0%;display:none;overflow-y:auto"targetindex='MetaNavi'>
+        <img src="imgs/logo-w.svg" class="display_block javascript_Css_define position_absolute"javascript_Css_define="
+        0~570|570*1040$width:82response;height:37response;z-index:999;left:30response;top:30responh^
+        571~1200|1200*1100$width:82fixed;height:37fixed;z-index:999;left:30fixed;top:30fixed^
+        1201~1920|1920*1080$width:82fixed;height:37fixed;z-index:999;left:30fixed;top:30fixed^
+        1921~9999|1920*1280$width:82responmin;height:37responmin;z-index:999;left:30responmin;top:30responmin
+        "/>
+        <img src="imgs/xbutton.svg" class="cursorpointer display_block javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_naviclose"javascript_Css_define="
+        0~570|570*1040$width:40response;height:40response;right:30response;top:30responh;position:absolute^
+        571~1920|1920*1080$width:30fixed;height:30fixed;right:30fixed;top:30fixed;position:absolute^
+        1921~9999|1920*1080$width:30responmin;height:30responmin;right:30responmin;top:30responmin;position:absolute"/>
+        <div class="inner javascript_Css_define"javascript_Css_define="
+        0~720|570*1040$width:100%;padding-left:18response;padding-right:18response;padding-top:146responh;padding-bottom:411responh^
+        721~1200|1200*1100$width:100%;padding-left:40response;padding-right:40response;padding-top:274responh;padding-bottom:320responh;display:flex;flex-flow:row nowrap;justify-content:space-between^
+        1201~9999|1920*1080$width:100%;padding-left:80response;padding-right:80response;padding-top:258responh;padding-bottom:306responh;display:flex;flex-flow:row nowrap;justify-content:space-between">
+            <div class="leftside">
+                <h3 class="smalltit javascript_Css_define"javascript_Css_define="
+                0~720|570*1040$display:none^
+                721~1200|1200*1100$font-size:19fixed;padding-bottom:25responh;color:white^
+                1201~1920|1920*1080$font-size:19fixed;padding-bottom:28responh;color:white^
+                1921~9999|1920*1080$font-size:19responmin;padding-bottom:28responh;color:white">
+                We Lead Metaverse
+                </h3>
+                <h4 class="bigtit javascript_Css_define"javascript_Css_define="
+                0~720|570*1040$display:none^
+                721~1200|1200*1100$font-size:42response;padding-bottom:148responh;color:white;width:320fixed^
+                1201~1420|1920*1080$font-size:38fixed;padding-bottom:207responh;color:white;width:340fixed^
+                1421~1920|1920*1080$font-size:48fixed;padding-bottom:207responh;color:white^
+                1921~9999|1920*1080$font-size:48responmin;padding-bottom:207responh;color:white
+                ">
+                METAVERSE ENTERTAINMENT
+                </h4>
+                <ul class="contactinfo flex_horizontal_flexStart">
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~720|570*1040$display:none^
+                    721~1200|1200*1100$margin-right:36response;width:116fixed^
+                    1201~9999|1920*1080$padding-right:76response">
+                        <dl class="javascript_Css_define" javascript_Css_define="
+                        0~720|570*1040$display:none^
+                        721~1200|1200*1100$font-size:13fixed;color:#f8f8e0^
+                        1201~1920|1920*1080$font-size:13fixed;color:#f8f8e0^
+                        1921~9999|1920*1080$font-size:13responmin;color:#f8f8e0">
+                            <dt class="javascript_Css_define"javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$font-size:15fixed;padding-bottom:24responh^
+                            1201~1920|1920*1080$font-size:15fixed;padding-bottom:24responh^
+                            1921~9999|1920*1080$font-size:15responmin;padding-bottom:24responh">Contacts</dt>
+                            <dd class="javascript_Css_define"javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$padding-bottom:10responh^
+                            1201~9999|1920*1080$padding-bottom:10responh">meta_info@meta-ent.com</dd>
+                            <dd>+82 2 2271 7871</dd>
+                        </dl>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~720|570*1040$display:none^
+                    721~1200|1200*1100$width:270fixed^
+                    1201~9999|1920*1080$width:270response">
+                        <dl class="javascript_Css_define" javascript_Css_define="
+                        0~720|570*1040$display:none^
+                        721~1200|1200*1100$font-size:13fixed;color:#f8f8e0^
+                        1201~1920|1920*1080$font-size:13fixed;color:#f8f8e0^
+                        1921~9999|1920*1080$font-size:13responmin;color:#f8f8e0">
+                            <dt class='javascript_Css_define'javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$font-size:15fixed;padding-bottom:24responh^
+                            1201~1920|1920*1080$font-size:15fixed;padding-bottom:24responh^
+                            1921~9999|1920*1080$font-size:15responmin;padding-bottom:24responh
+                            ">Office</dt>
+                            <dd class='javascript_Css_define'javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$padding-bottom:10responh^
+                            1201~9999|1920*1080$padding-bottom:10responh">서울시 성동구 뚝섬로1길 63,  11F.  메타버스엔터테인먼트</dd>
+                            <dd>11F, 63, Ttukseom -ro 1-gil, Seongdong-gu, Seoul,  Republic of Korea</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="rightside javascript_Css_define colorwhite"javascript_Css_define="
+            0~760|570*1040$width:100%;display:flex;flex-flow:row wrap^
+            761~1200|1200*1100$flex:1 1 auto;display:flex;flex-flow:row wrap;justify-content:flex-end^
+            1201~9999|1920*1080$flex:1 0 auto;display:flex;flex-flow:row wrap;justify-content:flex-end">
+                <ul class="menuGroup javascript_Css_define flex_horizontal_spaceBetween flex_alignitems_flexStart"javascript_Css_define="
+                0~760|570*1040$width:100%^
+                761~1200|1200*1100$width:98%^
+                1201~9999|1920*1080$width:80%">
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold;padding-bottom:124responh^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold;padding-bottom:167responh^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold;padding-bottom:167responh">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                        <a href='#'>ABOUT</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='#'>회사소개</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='#'>VFX Lab</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold;padding-bottom:124responh^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold;padding-bottom:167responh^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold;padding-bottom:167responh">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>V-ARTIST</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='rina.html'>RINA</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='mave.html'>MAVE</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold;padding-bottom:124responh^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold;padding-bottom:167responh^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold;padding-bottom:167responh
+                    ">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh
+                       ">
+                       <a href='#'> WORK</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='#'>VFX</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh
+                       ">
+                       <a href='#'>ENTERTAINMENT</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='#'>GAME</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>NEWS</a>
+                       </h4>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold">
+                        <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                        571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                        761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                        1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                        1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>TALENT</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh
+                       ">
+                       <a href='#'>RECRUIT</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='#'>PARTNER</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold">
+                        <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                        571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                        761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                        1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                        1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>CONTACT</a>
+                       </h4>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+    <div class="javascript_Css_define position_relative_normal  javascript_scrollTriggerWideArea_general overflow_hidden"id='javascript_scrollTriggerWideArea_general_group1'style='height:4000px'>
+        <div id='javascript_videowrapper'class="videoWrappervisual javascript_Css_define"javascript_Css_define="
+        0~1200|1200*1100$width:100%;height:100vh;position:absolute;left:0;overflow:hidden^
+        1201~9999|1920*1080$width:100%;height:100vh;position:absolute;left:0;overflow:hidden">
+
+            <img src="imgs/scrollgood2.gif" class="display_block javascript_Css_define"javascript_Css_define="
+            0~1200|1200*1100$position:absolute;left:8%;bottom:10%;z-index:15;width:60fixed;height:60fixed^
+            1201~1920|1920*1080$position:absolute;left:8%;bottom:10%;z-index:15;width:100fixed;height:100fixed^
+            1921~9999|1920*1080$position:absolute;left:8%;bottom:10%;z-index:15;width:100responmin;height:100responmin"/>
+            
+            <div id='blackmask' class="javascript_Css_define shapeWrap flex_horizontal_flexEnd position_absolute bgcolor_dark"
+            javascript_Css_define="
+            0~1200|1200*1100$left:0%;top:0%;width:100%;height:100%;z-index:8^
+            1201~9999|1920*1080$left:0%;top:0%;width:100%;height:100%;z-index:8">
+            </div>
+            <div id='blackmask2' class="javascript_Css_define shapeWrap flex_horizontal_flexEnd position_absolute bgcolor_dark"
+            javascript_Css_define="
+            0~1200|1200*1100$right:0%;top:0%;width:100%;height:100%;z-index:8^
+            1201~9999|1920*1080$right:0%;top:0%;width:100%;height:100%;z-index:8">
+            </div>
+            <div id='blackmask3' class="javascript_Css_define shapeWrap flex_horizontal_flexEnd position_absolute bgcolor_dark"
+            javascript_Css_define="
+            0~1200|1200*1100$left:0%;bottom:0%;width:100%;height:100%;z-index:8^
+            1201~9999|1920*1080$left:0%;bottom:0%;width:100%;height:100%;z-index:8">
+            </div>
+            <div id='blackmask4' class="javascript_Css_define shapeWrap flex_horizontal_flexEnd position_absolute bgcolor_dark"
+            javascript_Css_define="
+            0~1200|1200*1100$right:0%;bottom:0%;width:100%;height:100%;z-index:8^
+            1201~9999|1920*1080$right:0%;bottom:0%;width:100%;height:100%;z-index:8">
+            </div>
+            <div id='shapeDeco'class="decoration_horizontal javascript_Css_define flex_horizontal_Center position_absolute"
+            javascript_Css_define="
+            0~570|570*1040$right:0%;top:0%;width:100%;height:100%;z-index:8^
+            571~1200|1200*1100$right:0%;top:0%;width:70%;height:100%;z-index:8^
+            1201~9999|1920*1080$right:0%;top:0%;width:60%;height:100%;z-index:8">
+                <div class="javascript_Css_define shapeWrap bgcolor_dark"javascript_Css_define="
+                0~570|570*1040$width:50%;height:14%;z-index:8;transform:skewY=-25deg;background:linear-gradient(135deg,#e52aed,#7004fd)^
+                571~1200|1200*1100$width:50%;height:14%;z-index:8;transform:skewY=-25deg;background:linear-gradient(135deg,#e52aed,#7004fd)^
+                1201~9999|1920*1080$width:48%;height:18%;z-index:8;transform:skewY=-25deg;background:linear-gradient(135deg,#e52aed,#7004fd)"></div>
+                <div class="javascript_Css_define shapeWrap bgcolor_dark"javascript_Css_define="
+                0~570|570*1040$width:50%;height:14%;margin-top:-18%;margin-left:-10%;z-index:8;transform:skewY=-25deg;background:linear-gradient(135deg,#e52aed,#7004fd)^
+                571~1200|1200*1100$width:50%;height:14%;margin-top:-18%;margin-left:-10%;z-index:8;transform:skewY=-25deg;background:linear-gradient(135deg,#e52aed,#7004fd)^
+                1201~9999|1920*1080$width:48%;height:18%;margin-top:-18%;margin-left:-10%;z-index:8;transform:skewY=-25deg;background:linear-gradient(135deg,#e52aed,#7004fd)"></div>   
+            </div>
+
+            <h2 id='visualTypo'class="javascript_Css_define colorwhite position_absolute"javascript_Css_define="
+            0~570|570*1040$left:6%;top:0%;width:100%;height:auto;z-index:8;font-weight:900;font-size:40response^
+            571~990|990*1280$left:6%;top:0%;width:100%;height:auto;z-index:8;font-weight:900;font-size:69response^
+            991~1200|1200*1100$left:6%;top:0%;width:100%;height:auto;z-index:8;font-weight:900;font-size:69fixed^
+            1201~1920|1920*1080$left:6%;top:0%;width:100%;height:auto;z-index:8;font-weight:900;font-size:87fixed^
+            1921~9999|1920*1080$left:6%;top:0%;width:100%;height:auto;z-index:8;font-weight:900;font-size:87responmin">
+            Beoyond <br/>
+            Technology &<br/>
+            Mankind
+            </h2>
+            
+            <video autoplay muted loop playsinline preload="metadata"
+            class="display_block img_background_cover_height_center javascript_Css_define"javascript_Css_define="
+            0~1200|1200*1100$height:100%^
+            1201~1920|1920*1080$height:1080px^
+            1921~9999|1920*1080$height:1080responmin">
+                <source src="./rina_4K.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <section class="sectionRow javascript_Css_define colorwhite"
+    javascript_Css_define="
+    0~570|570*1040$width:100%;padding-left:20response;padding-right:20response;padding-bottom:80responh^
+    571~990|1200*1100$width:100%;padding-left:30response;padding-right:30response;padding-bottom:160responh^
+    991~1200|1200*1100$width:100%;padding-left:140response;padding-right:140response;padding-bottom:220responh^
+    1201~1440|1920*1080$width:100%;padding-left:140response;padding-right:140response;padding-bottom:170responh^
+    1441~1920|1920*1080$width:1280fixed;margin:0 auto;padding-bottom:170responh^
+    1921~9999|1920*1080$width:1280response;margin:0 auto;padding-bottom:170responh">
+        <h2 class="sectionTit javascript_Css_define javascript_scroll_response position_relative_normal javascript_scroll_response_groupTits" javascript_Css_define="
+        0~570|570*1040$padding-top:98responh;padding-bottom:76responh;font-size:34response;font-weight:bold;opacity:0%;left:-100%^
+        571~1200|1200*1100$padding-top:108responh;padding-bottom:76responh;font-size:36fixed;font-weight:bold;opacity:0%;left:-100%^
+        1201~1920|1920*1080$padding-top:126responh;padding-bottom:48responh;font-size:48fixed;font-weight:bold;opacity:0%;left:-100%^
+        1921~9999|1920*1080$padding-top:126responh;padding-bottom:48responh;font-size:48responmin;font-weight:bold;opacity:0%;left:-100%"
+        targetindex="scrollresponse_sectionTit1">
+        V-ARTIST
+        </h2>
+        <ul class="contentlist flex_horizontal_spaceBetween flex_alignitems_flexStart">
+            <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group1"javascript_Css_define="
+            0~570|570*1040$width:100%;height:auto;padding-bottom:40responh;perspective:4000px;perspective-origin:50% 50%^
+            571~990|1200*1100$width:48%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            991~1200|1200*1100$width:436response;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            1201~9999|1920*1080$width:calc(100% *(616/1280));height:auto;perspective:4000px;perspective-origin:50% 50%">
+                <img src="imgs/sectionimg01.jpg" class="display_block javascript_Css_define position_relative_normal javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~570|570*1040$width:100%;height:auto;margin-bottom:24responh;opacity:0%;left:-100%;transform:rotateX=40deg@rotateY=60deg@translateZ=-600responmax^
+                571~1200|1200*1100$width:100%;height:auto;margin-bottom:24responh;opacity:0%;left:-100%;transform:rotateX=50deg@rotateY=70deg@translateZ=-680responmax^
+                1201~9999|1920*1080$width:100%;height:auto;margin-bottom:26responh;opacity:0%;left:-100%;transform:rotateX=30deg@rotateY=40deg@translateZ=-760responmin"targetindex='scrollresponse_articleimg1' response_properties="transform"/>
+                <dl class="infotxt javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$display:block^
+                571~990|1200*1100$display:block^
+                991~1200|1200*1100$display:flex;flex-flow:row nowrap^
+                1201~9999|1920*1080$display:flex;flex-flow:row nowrap">
+                    <dt class="tit javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:27response;font-weight:bold;width:100%;padding-bottom:8responh;opacity:0%;left:-100%^
+                    571~990|1200*1100$font-size:27fixed;font-weight:bold;width:100%;padding-bottom:4responh;opacity:0%;left:-100%^
+                    991~1200|1200*1100$font-size:27fixed;font-weight:bold;padding-right:66response;opacity:0%;left:-100%^
+                    1201~1920|1920*1080$font-size:33fixed;font-weight:bold;padding-right:63response;opacity:0%;left:-100%^
+                    1921~9999|1920*1080$font-size:33response;font-weight:bold;padding-right:63response;opacity:0%;left:-100%"targetindex='scrollresponse_infotit1'>
+                        RINA
+                    </dt>
+                    <dd class="description javascript_Css_define position_relative_normal" javascript_Css_define="
+                    0~570|570*1040$font-size:20response;font-weight:bold;color:#a6a6a6;width:100%;opacity:0%;left:-100%^
+                    571~990|1200*1100$font-size:15fixed;font-weight:bold;color:#a6a6a6;width:100%;opacity:0%;left:-100%^
+                    991~1200|1200*1100$font-size:15fixed;font-weight:bold;color:#a6a6a6;width:288response;opacity:0%;left:-100%^
+                    1201~1920|1920*1080$font-size:15fixed;font-weight:bold;color:#a6a6a6;width:288fixed;opacity:0%;left:-100%^
+                    1921~9999|1920*1080$font-size:15response;font-weight:bold;color:#a6a6a6;width:308response;opacity:0%;left:-100%"targetindex='scrollresponse_infodesc1'>
+                        패션과 음악을 사랑하며,
+                        좋아하는 것이라면 열정을 다해 즐기는 It Girl!
+                    </dd>
+                </dl>
+            </li>
+            <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group1"javascript_Css_define="
+            0~570|570*1040$width:100%;height:auto;padding-bottom:40responh;perspective:4000px;perspective-origin:50% 50%^
+            571~990|1200*1100$width:48%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            991~1200|1200*1100$width:436response;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            1201~9999|1920*1080$width:calc(100% *(616/1280));height:auto;perspective:4000px;perspective-origin:50% 50%">
+                <video autoplay muted loop playsinline preload="metadata" class="display_block javascript_Css_define position_relative_normal javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~570|570*1040$width:100%;height:auto;margin-bottom:24responh;box-shadow:0 0 6px 2px #9020df;opacity:0%;left:-100%;transform:rotateX=40deg@rotateY=60deg@translateZ=-600responmax^
+                571~1200|1200*1100$width:100%;height:auto;margin-bottom:24responh;box-shadow:0 0 6px 2px #9020df;opacity:0%;left:-100%;transform:rotateX=50deg@rotateY=70deg@translateZ=-680responmax^
+                1201~9999|1920*1080$width:100%;height:auto;margin-bottom:calc(100vh *(26/1080));box-shadow:0 0 6px 2px #9020df;opacity:0%;left:-100%;transform:rotateX=30deg@rotateY=40deg@translateZ=-760responmin"targetindex='scrollresponse_articleimg2'response_properties="transform">
+                   <source src="imgs/comingsoon.mp4" type="video/mp4">
+                </video>
+                 
+                <dl class="infotxt javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$display:block^
+                571~990|1200*1100$display:block^
+                991~1200|1200*1100$display:flex;flex-flow:row nowrap^
+                1201~9999|1920*1080$display:flex;flex-flow:row nowrap">
+                    <dt class="tit javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:27response;font-weight:bold;width:100%;padding-bottom:8responh;opacity:0%;left:-100%^
+                    571~990|1200*1100$font-size:27fixed;font-weight:bold;width:100%;padding-bottom:4responh;opacity:0%;left:-100%^
+                    991~1200|1200*1100$font-size:27fixed;font-weight:bold;padding-right:66response;opacity:0%;left:-100%^
+                    1201~1920|1920*1080$font-size:33fixed;font-weight:bold;padding-right:63response;opacity:0%;left:-100%^
+                    1921~9999|1920*1080$font-size:33response;font-weight:bold;padding-right:63response;opacity:0%;left:-100%
+                    "targetindex='scrollresponse_infotit2'>
+                    MAVE
+                    </dt>
+                    <dd class="description javascript_Css_define position_relative_normal" javascript_Css_define="
+                    0~570|570*1040$font-size:20response;font-weight:bold;color:#a6a6a6;width:100%;opacity:0%;left:-100%^
+                    571~990|1200*1100$font-size:15fixed;font-weight:bold;color:#a6a6a6;width:100%;opacity:0%;left:-100%^
+                    991~1200|1200*1100$font-size:15fixed;font-weight:bold;color:#a6a6a6;width:288response;opacity:0%;left:-100%^
+                    1201~1920|1920*1080$font-size:15fixed;font-weight:bold;color:#a6a6a6;width:288fixed;opacity:0%;left:-100%^
+                    1921~9999|1920*1080$font-size:15response;font-weight:bold;color:#a6a6a6;width:308response;opacity:0%;left:-100%
+                    "targetindex='scrollresponse_infodesc2'>
+                    메타버스 시대의 New wave를 일으킬
+                    4인조 K-메타  아이돌
+                    </dd>
+                </dl>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="sectionRow javascript_Css_define colorwhite overflow_hidden"
+    javascript_Css_define="
+    0~570|570*1040$width:100%;padding-left:20response;padding-right:20response;padding-bottom:113responh^
+    571~990|1200*1100$width:100%;padding-left:30response;padding-right:30response;padding-bottom:220responh^
+    991~1200|1200*1100$width:100%;padding-left:60response;padding-right:60response;padding-bottom:220responh^
+    1201~1440|1920*1080$width:100%;padding-left:140response;padding-right:140response;padding-bottom:170responh^
+    1441~1920|1920*1080$width:1280fixed;margin:0 auto;padding-bottom:170responh^
+    1921~9999|1920*1080$width:1280response;margin:0 auto;padding-bottom:170responh">
+        <h2 class="sectionTit position_relative_normal javascript_Css_define javascript_scroll_response javascript_scroll_response_groupTits" javascript_Css_define="
+        0~570|570*1040$padding-top:98responh;padding-bottom:76responh;font-size:34response;font-weight:bold;opacity:0%;left:-100%^
+        571~1200|1200*1100$padding-top:108responh;padding-bottom:76responh;font-size:36fixed;font-weight:bold;opacity:0%;left:-100%^
+        1201~1920|1920*1080$padding-top:126responh;padding-bottom:48responh;font-size:48fixed;font-weight:bold;opacity:0%;left:-100%^
+        1921~9999|1920*1080$padding-top:126responh;padding-bottom:48responh;font-size:48responmin;font-weight:bold;opacity:0%;left:-100%
+        "targetindex='scrollresponse_sectionTit2'>
+        WORK
+        </h2>
+        <ul class="contentlist flex_horizontal_spaceBetween colorwhite">
+            <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group2"javascript_Css_define="
+            0~570|570*1040$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            571~990|1200*1100$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            991~1200|1200*1100$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            1201~9999|1920*1080$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%">
+                <div class="imgframe position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group0 javascript_Css_define javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~9999|1920*1080$right:-200%;opacity:0%;transform:rotateY=-360deg@rotateX=-90deg@rotateZ=-45deg"targetindex='scrollresponse_imgframe1'response_properties='transform'>
+                    <img src="imgs/sectionimg1.jpg" class="position_relative_normal display_block javascript_Css_define "javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:auto"/>
+                    <div class="purpleblur javascript_Css_define position_absolute"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:0%;background-color:rgba(128,50,240,0.8);left:50%;top:50%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='effectTargetblur1'>
+                    </div>
+                    <div class="javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:23response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    571~990|1200*1100$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    991~1200|1200*1100$font-size:24response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1201~1920|1920*1080$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1921~9999|1920*1080$font-size:27responmin;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='scrollresponse_imgframetxt1'>
+                        <p targetindex="effectTarget-p1">VFX</p>
+                        <span class="display_block javascript_Css_define"javascript_Css_define="
+                        0~1920|1920*1080$width:0%;height:2fixed;background-color:#efefef^
+                        1921~9999|1920*1080$width:0%;height:2responmin;background-color:#efefef"targetindex='effectTargetspan1'></span>
+                    </div>
+                </div>
+            </li>
+            <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group2"javascript_Css_define="
+            0~570|570*1040$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            571~990|1200*1100$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            991~1200|1200*1100$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            1201~9999|1920*1080$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%">
+                <div class="imgframe position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group0 javascript_Css_define javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~9999|1920*1080$right:-200%;opacity:0%;transform:rotateY=-360deg@rotateX=-90deg@rotateZ=-45deg"targetindex='scrollresponse_imgframe2'response_properties='transform'>
+                    <img src="imgs/sectionimg2.jpg" class="position_relative_normal display_block javascript_Css_define"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:auto"/>
+                    <div class="purpleblur javascript_Css_define position_absolute"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:0%;background-color:rgba(128,50,240,0.8);left:50%;top:50%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='effectTargetblur2'>
+                    </div>
+                    <div class="javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:23response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    571~990|1200*1100$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    991~1200|1200*1100$font-size:24response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1201~1920|1920*1080$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1921~9999|1920*1080$font-size:27responmin;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='scrollresponse_imgframetxt2'>
+                        <p targetindex="effectTarget-p2">ENTERTAINMENT</p>
+                        <span class="display_block javascript_Css_define"javascript_Css_define="
+                        0~1920|1920*1080$width:0%;height:2fixed;background-color:#efefef^
+                        1921~9999|1920*1080$width:0%;height:2responmin;background-color:#efefef"targetindex='effectTargetspan2'></span>
+                    </div>
+                </div>
+            </li>
+            <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group2"javascript_Css_define="
+            0~570|570*1040$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            571~990|1200*1100$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            991~1200|1200*1100$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            1201~9999|1920*1080$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%">
+                <div class="imgframe position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group0 javascript_Css_define javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~9999|1920*1080$right:-200%;opacity:0%;transform:rotateY=-360deg@rotateX=-90deg@rotateZ=-45deg"targetindex='scrollresponse_imgframe3'response_properties='transform'>
+                    <img src="imgs/sectionimg3.jpg" class="position_relative_normal display_block javascript_Css_define"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:auto"/>
+                    <div class="purpleblur javascript_Css_define position_absolute"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:0%;background-color:rgba(128,50,240,0.8);left:50%;top:50%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='effectTargetblur3'>
+                    </div>
+                    <div class="javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:23response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    571~990|1200*1100$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    991~1200|1200*1100$font-size:24response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1201~1920|1920*1080$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1921~9999|1920*1080$font-size:27responmin;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='scrollresponse_imgframetxt3'>
+                        <p targetindex="effectTarget-p3">GAME</p>
+                        <span class="display_block javascript_Css_define"javascript_Css_define="
+                        0~1920|1920*1080$width:0%;height:2fixed;background-color:#efefef^
+                        1921~9999|1920*1080$width:0%;height:2responmin;background-color:#efefef"targetindex='effectTargetspan3'></span>
+                    </div>
+                </div>
+            </li>
+            <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group2"javascript_Css_define="
+            0~570|570*1040$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            571~990|1200*1100$width:50%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            991~1200|1200*1100$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%^
+            1201~9999|1920*1080$width:25%;height:auto;perspective:4000px;perspective-origin:50% 50%">
+                <div class="imgframe position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group0 javascript_Css_define javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~9999|1920*1080$right:-200%;opacity:0%;transform:rotateY=-360deg@rotateX=-90deg@rotateZ=-45deg"targetindex='scrollresponse_imgframe4'response_properties='transform'>
+                    <img src="imgs/sectionimg4.jpg" class="position_relative_normal display_block javascript_Css_define"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:auto"/>
+                    <div class="purpleblur javascript_Css_define position_absolute"javascript_Css_define="
+                    0~9999|1920*1080$width:100%;height:0%;background-color:rgba(128,50,240,0.8);left:50%;top:50%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='effectTargetblur4'>
+                    </div>
+                    <div class="javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:23response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    571~990|1200*1100$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    991~1200|1200*1100$font-size:24response;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1201~1920|1920*1080$font-size:27fixed;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%^
+                    1921~9999|1920*1080$font-size:27responmin;position:absolute;left:50%;top:0%;transform:translateX=-50%@translateY=-50%;opacity:0%"targetindex='scrollresponse_imgframetxt4'>
+                        <p targetindex="effectTarget-p4">META R&D</p>
+                        <span class="display_block javascript_Css_define"javascript_Css_define="
+                        0~1920|1920*1080$width:0%;height:2fixed;background-color:#efefef^
+                        1921~9999|1920*1080$width:0%;height:2responmin;background-color:#efefef"targetindex='effectTargetspan4'></span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section class="sectionRow overflow_hidden">
+        <div class="inner javascript_Css_define colorwhite"
+        javascript_Css_define="
+        0~570|570*1040$width:100%;padding-left:20response;padding-right:20response;padding-bottom:113responh^
+        571~990|1200*1100$width:100%;padding-left:30response;padding-right:30response;padding-bottom:220responh^
+        991~1200|1200*1100$width:100%;padding-left:140response;padding-right:140response;padding-bottom:220responh^
+        1201~1440|1920*1080$width:100%;padding-left:140response;padding-right:140response;padding-bottom:220responh^
+        1441~1920|1920*1080$width:1280fixed;margin:0 auto;padding-bottom:300responh^
+        1921~9999|1920*1080$width:1280response;margin:0 auto;padding-bottom:300responh">
+            <div class="sectionTitArea flex_horizontal_spaceBetween flex_alignitems_flexEnd javascript_Css_define"javascript_Css_define="
+            0~570|570*1040$padding-top:88responh;padding-bottom:76responh;font-weight:bold^
+            571~1200|1200*1100$padding-top:98responh;padding-bottom:76responh;font-weight:bold^
+            1201~9999|1920*1080$padding-top:106responh;padding-bottom:48responh;font-weight:bold">
+                <h2 class="sectionTit position_relative_normal javascript_Css_define javascript_scroll_response javascript_scroll_response_groupTits"javascript_Css_define="
+                0~570|570*1040$font-size:34response;opacity:0%;left:-100%^
+                571~1200|1200*1100$font-size:36fixed;opacity:0%;left:-100%^
+                1201~1920|1920*1080$font-size:48fixed;opacity:0%;left:-100%^
+                1921~9999|1920*1080$font-size:48responmin;opacity:0%;left:-100%" targetindex="scrollresponse_sectionTit3">
+                NEWS
+                </h2>
+                <a href='#' class="display_block viewmore flex_horizontal_flexStart">
+                    <span class="javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:20response;font-weight:bold;color:#f9f9f9;padding-right:16response^
+                    571~1200|1200*1100$font-size:16fixed;font-weight:bold;color:#f9f9f9;padding-right:21response^
+                    1201~1920|1920*1080$font-size:16fixed;font-weight:bold;color:#f9f9f9;padding-right:21response^
+                    1921~9999|1920*1080$font-size:16responmin;font-weight:bold;color:#f9f9f9;padding-right:21response">More</span>
+                    <img src="imgs/rightarrow.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                    0~1920|1920*1080$width:29fixed;height:16fixed^
+                    1921~9999|1920*1080$width:29responmin;height:16responmin"/>
+                </a>
+            </div>
+            
+            <ul class="contentlist flex_horizontal_spaceBetween colorwhite flex_alignitems_flexStart">
+                <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group3"javascript_Css_define="
+                0~570|570*1040$width:100%;height:auto;padding-bottom:40responh;perspective:4000px;perspective-origin:50% 50%^
+                571~990|1200*1100$width:47%;height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%^
+                991~1200|1200*1100$width:calc(100% *(274/920));height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%^
+                1201~9999|1920*1080$width:calc(100% *(396 / 1280));height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%">
+                    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group1 overflow_hidden javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                    0~570|570*1040$margin-bottom:26responh;width:100%;height:250response;opacity:0%;transform:translateZ=1720responmax@rotateZ=60deg@rotateX=40deg^
+                    571~990|1200*1100$margin-bottom:26responh;width:100%;height:360response;opacity:0%;transform:translateZ=1800responmax@rotateZ=60deg@rotateX=40deg^
+                    991~1200|1200*1100$margin-bottom:26responh;width:100%;height:250response;opacity:0%;transform:translateZ=1840responmax@rotateZ=60deg@rotateX=40deg^
+                    1201~1920|1920*1080$margin-bottom:30responh;width:100%;height:250fixed;opacity:0%;transform:translateZ=1840responmin@rotateZ=60deg@rotateX=40deg^
+                    1921~9999|1920*1080$margin-bottom:30responh;width:100%;height:250response;opacity:0%;transform:translateZ=1840responmin@rotateZ=60deg@rotateX=40deg"targetindex='scrollresponse_newsimage1'response_properties='transform'>
+                        <img src="imgs/articleimg1.jpg" class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                        571~1200|1200*1100$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                        1201~9999|1920*1080$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%"/>
+                    </div>
+                    
+                    <h3 class="newstit javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:22response;font-weight:bold;padding-bottom:17responh;opacity:0%;left:-200%^
+                    571~1200|1200*1100$font-size:18fixed;font-weight:bold;padding-bottom:18responh;opacity:0%;left:-200%^
+                    1201~1920|1920*1080$font-size:20fixed;font-weight:bold;padding-bottom:20responh;opacity:0%;left:-200%^
+                    1921~9999|1920*1080$font-size:20response;font-weight:bold;padding-bottom:20responh;opacity:0%;left:-200%"targetindex='scrollresponse_newstit1'>버추얼 인플루언서 리나, K패션 응원 캠페인 참여</h3>
+                    <p class="newscontent javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:19response;font-weight:bold;color:#8d8d8d;padding-bottom:13responh;width:100%;opacity:0%;left:-200%^
+                    571~1200|1200*1100$font-size:15fixed;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:100%;opacity:0%;left:-200%^
+                    1201~1920|1920*1080$font-size:15fixed;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:80%;opacity:0%;left:-200%^
+                    1921~9999|1920*1080$font-size:15response;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:80%;opacity:0%;left:-200%
+                    "targetindex='scrollresponse_newsdesc1'>
+                    최근 K팝, K드라마,K무비처럼 ‘K패션’ 이 전 세계에서
+                    사랑받기를 응원하는
+                    </p>
+                    <p class="newsdate javascript_Css_define position_relative_normal javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                    0~570|570*1040$font-size:17response;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmax^
+                    571~1200|1200*1100$font-size:14fixed;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-300responmax^
+                    1201~1920|1920*1080$font-size:14fixed;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmin^
+                    1921~9999|1920*1080$font-size:14response;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmin"targetindex='scrollresponse_newsdate1'response_properties='bottom'>2022. 12. 08
+                    </p>
+                </li>
+                <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group3"javascript_Css_define="
+                0~570|570*1040$width:100%;height:auto;padding-bottom:40responh;perspective:4000px;perspective-origin:50% 50%^
+                571~990|1200*1100$width:47%;height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%^
+                991~1200|1200*1100$width:calc(100% *(274/920));height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%^
+                1201~9999|1920*1080$width:calc(100% *(396 / 1280));height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%">
+                    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group1 overflow_hidden javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                    0~570|570*1040$margin-bottom:26responh;width:100%;height:250response;opacity:0%;transform:translateZ=1720responmax@rotateZ=60deg@rotateX=40deg^
+                    571~990|1200*1100$margin-bottom:26responh;width:100%;height:360response;opacity:0%;transform:translateZ=1800responmax@rotateZ=60deg@rotateX=40deg^
+                    991~1200|1200*1100$margin-bottom:26responh;width:100%;height:250response;opacity:0%;transform:translateZ=1840responmax@rotateZ=60deg@rotateX=40deg^
+                    1201~1920|1920*1080$margin-bottom:30responh;width:100%;height:250fixed;opacity:0%;transform:translateZ=1840responmin@rotateZ=60deg@rotateX=40deg^
+                    1921~9999|1920*1080$margin-bottom:30responh;width:100%;height:250response;opacity:0%;transform:translateZ=1840responmin@rotateZ=60deg@rotateX=40deg
+                    "targetindex='scrollresponse_newsimage2'response_properties='transform'>
+                        <img src="imgs/articleimg2.jpg" class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                        571~1200|1200*1100$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                        1201~9999|1920*1080$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%"/>
+                    </div>
+                    
+                    <h3 class="newstit javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:22response;font-weight:bold;padding-bottom:17responh;left:-200%;opacity:0%^
+                    571~1200|1200*1100$font-size:18fixed;font-weight:bold;padding-bottom:18responh;left:-200%;opacity:0%^
+                    1201~1920|1920*1080$font-size:20fixed;font-weight:bold;padding-bottom:20responh;left:-200%;opacity:0%^
+                    1921~9999|1920*1080$font-size:20response;font-weight:bold;padding-bottom:20responh;left:-200%;opacity:0%
+                    "targetindex='scrollresponse_newstit2'>메타버스엔터테인먼트, ‘테크 컨퍼런스 2022 ‘ 개최</h3>
+                    <p class="newscontent javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:19response;font-weight:bold;color:#8d8d8d;padding-bottom:13responh;width:100%;opacity:0%;left:-200%^
+                    571~1200|1200*1100$font-size:15fixed;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:100%;opacity:0%;left:-200%^
+                    1201~1920|1920*1080$font-size:15fixed;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:80%;opacity:0%;left:-200%^
+                    1921~9999|1920*1080$font-size:15response;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:80%;opacity:0%;left:-200%
+                    "targetindex='scrollresponse_newsdesc2'>
+                    넷마블에프앤씨(대표 서우원)의  자회사 메타버스엔터테인먼트는 오는 10일 오후  8시
+                    </p>
+                    <p class="newsdate javascript_Css_define position_relative_normal javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                    0~570|570*1040$font-size:17response;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmax^
+                    571~1200|1200*1100$font-size:14fixed;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-300responmax^
+                    1201~1920|1920*1080$font-size:14fixed;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmin^
+                    1921~9999|1920*1080$font-size:14response;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmin"targetindex='scrollresponse_newsdate2'response_properties='bottom'>2022.12.09
+                    </p>
+                </li>
+                <li class="articleitem javascript_Css_define javascript_scroll_response javascript_scroll_response_Group3"javascript_Css_define="
+                0~570|570*1040$width:100%;height:auto;padding-bottom:40responh;perspective:4000px;perspective-origin:50% 50%^
+                571~990|1200*1100$width:47%;height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%^
+                991~1200|1200*1100$width:calc(100% *(274/920));height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%^
+                1201~9999|1920*1080$width:calc(100% *(396 / 1280));height:auto;padding-bottom:20responh;perspective:4000px;perspective-origin:50% 50%">
+                    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_group1 overflow_hidden javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                    0~570|570*1040$margin-bottom:26responh;width:100%;height:250response;opacity:0%;transform:translateZ=1720responmax@rotateZ=60deg@rotateX=40deg^
+                    571~990|1200*1100$margin-bottom:26responh;width:100%;height:360response;opacity:0%;transform:translateZ=1800responmax@rotateZ=60deg@rotateX=40deg^
+                    991~1200|1200*1100$margin-bottom:26responh;width:100%;height:250response;opacity:0%;transform:translateZ=1840responmax@rotateZ=60deg@rotateX=40deg^
+                    1201~1920|1920*1080$margin-bottom:30responh;width:100%;height:250fixed;opacity:0%;transform:translateZ=1840responmin@rotateZ=60deg@rotateX=40deg^
+                    1921~9999|1920*1080$margin-bottom:30responh;width:100%;height:250response;opacity:0%;transform:translateZ=1840responmin@rotateZ=60deg@rotateX=40deg"targetindex='scrollresponse_newsimage3'response_properties='transform'>
+                        <img src="imgs/articleimg3.jpg" class="display_block position_absolute javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                        571~1200|1200*1100$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%^
+                        1201~9999|1920*1080$width:100%;height:auto;min-height:100%;left:50%;top:50%;transform:translateX=-50%@translateY=-50%"/>
+                    </div>
+                    
+                    <h3 class="newstit javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:22response;font-weight:bold;padding-bottom:17responh;left:-200%;opacity:0%^
+                    571~1200|1200*1100$font-size:18fixed;font-weight:bold;padding-bottom:18responh;left:-200%;opacity:0%^
+                    1201~1920|1920*1080$font-size:20fixed;font-weight:bold;padding-bottom:20responh;left:-200%;opacity:0%^
+                    1921~9999|1920*1080$font-size:20response;font-weight:bold;padding-bottom:20responh;left:-200%;opacity:0%
+                    "targetindex='scrollresponse_newstit3'>리나, ‘마이크로 서울  2022’  EDM 페스티벌 참여</h3>
+                    <p class="newscontent javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~570|570*1040$font-size:19response;font-weight:bold;color:#8d8d8d;padding-bottom:13responh;width:100%;opacity:0%;left:-200%^
+                    571~1200|1200*1100$font-size:15fixed;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:100%;opacity:0%;left:-200%^
+                    1201~1920|1920*1080$font-size:15fixed;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:80%;opacity:0%;left:-200%^
+                    1921~9999|1920*1080$font-size:15response;font-weight:bold;color:#8d8d8d;padding-bottom:55responh;width:80%;opacity:0%;left:-200%
+                    "targetindex='scrollresponse_newsdesc3'>
+                    넷마블(대표 권영식,  도기욱) 버추얼 아티스트 리나가 ‘마이크로 서울 2022:
+                    </p>
+                    <p class="newsdate javascript_Css_define position_relative_normal javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                    0~570|570*1040$font-size:17response;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmax^
+                    571~1200|1200*1100$font-size:14fixed;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-300responmax^
+                    1201~1920|1920*1080$font-size:14fixed;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmin^
+                    1921~9999|1920*1080$font-size:14response;font-weight:bold;color:#8d8d8d;opacity:0%;bottom:-200responmin"targetindex='scrollresponse_newsdate3'response_properties='bottom'>2022. 12. 09
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+
+    <section class="footbnaner javascript_Css_define"javascript_Css_define="
+    0~9999|1920*1080$background-color:#1c1329;background-image:url('imgs/partner2.jpg');background-size:cover;background-position:center">
+        <div class="inner javascript_Css_define"javascript_Css_define="
+        0~570|570*1040$width:100%;padding-left:20response;padding-right:20response;padding-bottom:64responh;padding-top:60responh;display:block^
+        571~1200|1200*1100$width:100%;padding-left:70response;padding-right:70response;padding-bottom:82responh;padding-top:66responh;display:flex^
+        1201~1400|1920*1080$width:100%;padding-left:140response;padding-right:140response;padding-bottom:66responh;padding-top:66responh;display:flex^
+        1401~1920|1920*1080$width:1280fixed;margin:0 auto;padding-bottom:66responh;padding-top:66responh;display:flex^
+        1921~9999|1920*1080$width:1280response;margin:0 auto;padding-bottom:66responh;padding-top:66responh;display:flex">
+            <div class="bannercontent">
+                <h3 class="tits javascript_Css_define colorwhite"javascript_Css_define="
+                0~570|570*1040$padding-bottom:27response;width:322response;font-size:24response;font-weight:bold^
+                571~1200|1200*1100$padding-bottom:27response;width:396response;font-size:28response;font-weight:bold^
+                1201~1920|1920*1080$padding-bottom:24responh;width:490fixed;font-size:34fixed;font-weight:bold^
+                1921~9999|1920*1080$padding-bottom:24responh;width:490response;font-size:34response;font-weight:bold
+                ">
+                Being Creative is what we do Be part of ourMetaverse</h3>
+                <p class="description javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$display:none^
+                571~1200|1200*1100$font-size:15fixed;color:#b0abab;padding-bottom:30responh^
+                1201~1920|1920*1080$font-size:15fixed;color:#b0abab;padding-bottom:30responh^
+                1921~9999|1920*1080$font-size:15response;color:#b0abab;padding-bottom:30responh
+                ">
+                새로운 가치를 함께 만들어갈 인재를 기다립니다.</p>
+                <div class="cursorpointer display_inlineblock javascript_Css_define borderstyle_solid colorwhite position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_buttoneffect"javascript_Css_define="
+                0~570|570*1040$font-size:20response;font-weight:bold;padding:16response;border-color:white;border-width:1fixed;background-color:transparent^
+                571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding:12fixed;border-color:white;border-width:1fixed;background-color:transparent^
+                1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding:12fixed;border-color:white;border-width:1fixed;background-color:transparent^
+                1921~9999|1920*1080$font-size:12response;font-weight:bold;padding:12response;border-color:white;border-width:1response;background-color:transparent
+                "targetindex='buttonmother1'>
+                    <span class="display_block effectbar position_absolute javascript_Css_define"javascript_Css_define="
+                    0~9999|1920*1080$width:0%;height:100%;background-color:#7020ef;left:0;top:0"targetindex='buttoneffectbar1'></span>
+                    <p class="position_relative_normal">Recruit</p>
+                </div>
+            </div>
+            <div class="bannercontent javascript_Css_define"javascript_Css_define="
+            0~570|570*1040$padding-top:50responh^
+            571~1200|1200*1100$padding-left:75response^
+            1201~9999|1920*1080$padding-left:163response">
+                <h3 class="tits javascript_Css_define colorwhite"javascript_Css_define="
+                0~570|570*1040$padding-bottom:24responh;width:223response;font-size:24response;font-weight:bold^
+                571~1200|1200*1100$padding-bottom:24responh;width:243response;font-size:28response;font-weight:bold^
+                1201~1920|1920*1080$padding-bottom:24responh;width:300fixed;font-size:34fixed;font-weight:bold^
+                1921~9999|1920*1080$padding-bottom:24responh;width:300response;font-size:34response;font-weight:bold">
+                Let’s collaborate!
+                Let’s be partners!</h3>
+                <p class="description javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$display:none^
+                571~1200|1200*1100$font-size:15fixed;color:#b0abab;padding-bottom:30responh^
+                1201~1920|1920*1080$font-size:15fixed;color:#b0abab;padding-bottom:30responh^
+                1921~9999|1920*1080$font-size:15response;color:#b0abab;padding-bottom:30responh">
+                함께 성장할 크루를 모집합니다.</p>
+                <div class="cursorpointer display_inlineblock javascript_Css_define borderstyle_solid colorwhite position_relative_normal javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_buttoneffect"javascript_Css_define="
+                0~570|570*1040$font-size:20response;font-weight:bold;padding:16response;border-color:white;border-width:1fixed;background-color:transparent^
+                571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding:12fixed;border-color:white;border-width:1fixed;background-color:transparent^
+                1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding:12fixed;border-color:white;border-width:1fixed;background-color:transparent^
+                1921~9999|1920*1080$font-size:12response;font-weight:bold;padding:12fixed;border-color:white;border-width:1response;background-color:transparent"targetindex='buttonmother2'>
+                    <span class="display_block effectbar position_absolute javascript_Css_define"javascript_Css_define="
+                    0~9999|1920*1080$width:0%;height:100%;background-color:#7020ef;left:0;top:0"targetindex='buttoneffectbar2'></span>
+                    <p class="position_relative_normal">Partner</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='javascript_Css_define' javascript_Css_define="
+    0~9999|1920*1080$background-color:#181818">
+        <div class="inner javascript_Css_define"javascript_Css_define="
+        0~570|570*1040$padding-top:157responh;padding-bottom:40responh;width:100%;padding-left:20response;padding-right:20response;display:block^
+        571~999|1200*1100$padding-top:146responh;padding-bottom:130responh;width:100%;padding-left:80response;padding-right:80response;display:block^
+        1000~1200|1200*1100$padding-top:146responh;padding-bottom:130responh;width:100%;padding-left:80response;padding-right:80response;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1201~1400|1920*1080$padding-top:146responh;padding-bottom:130responh;width:100%;padding-left:80response;padding-right:80response;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1401~1920|1920*1080$padding-top:227responh;padding-bottom:186responh;width:1280fixed;margin:0 auto;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1921~9999|1920*1080$padding-top:227responh;padding-bottom:186responh;width:1280response;margin:0 auto;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start">
+            <div class="lefinfo javascript_Css_define"javascript_Css_define="
+            0~1920|1920*1080$padding-bottom:20fixed^
+            1921~9999|1920*1080$padding-bottom:20responmin">
+                <p class="tit javascript_Css_define colorwhite"javascript_Css_define="
+                0~570|570*1040$font-size:24response;font-weight:bold;padding-bottom:26responh^
+                571~1200|1200*1100$font-size:18fixed;font-weight:bold;padding-bottom:26responh^
+                1201~1920|1920*1080$font-size:21fixed;font-weight:bold;padding-bottom:21responh^
+                1921~9999|1920*1080$font-size:21response;font-weight:bold;padding-bottom:21responh">
+                메타버스엔터테인먼트(주)
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:19response;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:10responh;color:#ebebeb">서울시 성동구 뚝섬로1길 63 , 11F
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:19response;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:10responh;color:#ebebeb
+                ">대표전화 :  +82 2  2271 7871
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:19response;font-weight:bold;padding-bottom:33responh;color:#ebebeb^
+                571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:33responh;color:#ebebeb^
+                1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:33responh;color:#ebebeb^
+                1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:33responh;color:#ebebeb">이메일 : meta_info@meta-ent.com
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:18response;font-weight:bold;color:#ebebeb^
+                571~1200|1200*1100$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb">© Metaverse Entertainment Inc.
+                </p>
+            </div>
+            <ul class="centerinfo javascript_clickTarget
+            mobile_display_none
+            tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexStart
+            pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart">
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    ABOUT
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb
+                    ">
+                    회사소개
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb
+                    ">
+                    VFX Lab
+                    </p>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    V-ARTIST
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    RINA
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    MAVE
+                    </p>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    WORK
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    VFX
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb
+                    ">
+                    ENTERTAINMENT
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb">
+                    GAME
+                    </p>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    NEWS
+                    </h4>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    TALENT
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    RECRUIT
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb">
+                    PARTNER
+                    </p>
+                </li>
+            </ul>
+
+            <div class="rightinfo javascript_Css_define javascript_clickTarget"javascript_Css_define="
+            0~999|1200*1100$padding-top:30fixed">
+                <ul class="extra flex_horizontal_flexStart ">
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:20response;font-weight:bold;color:#ebebeb^
+                    571~1200|1200*1100$font-size:14fixed;font-weight:bold;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:14fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:14response;font-weight:bold;color:#ebebeb">
+                    <a href="#"class="CSSHOVER_style1">CONTACT</a>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:19response;font-weight:bold;color:#ebebeb;padding-left:20response^
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;color:#ebebeb;padding-left:20response^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;color:#ebebeb;padding-left:20response^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;color:#ebebeb;padding-left:20response">
+                    <a href="#"class="CSSHOVER_style1">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <div class="CSSHOVER_boxstyle1 selectwrap javascript_Css_define position_relative_normal borderstyle_solid"javascript_Css_define="
+                0~570|570*1040$width:170fixed;height:40fixed;margin-top:60responh;border-color:#afafaf;border-width:1fixed^
+                571~1200|1200*1100$width:170fixed;height:40fixed;margin-top:60responh;border-color:#afafaf;border-width:1fixed^
+                1201~1920|1920*1080$width:170fixed;height:40fixed;margin-top:60responh;border-color:#afafaf;border-width:1fixed^
+                1921~9999|1920*1080$width:170response;height:40response;margin-top:60responh;border-color:#afafaf;border-width:1response">
+                    <select class="footerSelectbox textalignCenter javascript_Css_define
+                    mobile_width_100_percent mobile_height_100_percent
+                    tablet_width_100_percent tablet_height_100_percent
+                    pc_width_100_percent pc_height_100_percent"
+                    javascript_Css_define="
+                    0~1920|1920*1080$background-color:transparent;font-size:12fixed;color:#afafaf;vertical-align:center^
+                    1921~9999|1920*1080$background-color:transparent;font-size:12response;color:#afafaf;vertical-align:center
+                    ">
+                        <option value='Family Site' selected>Family Site</option>
+                        <option value='넷마블'>넷마블</option>
+                        <option value='카카오엔터테인먼트'>카카오엔터테인먼트</option>
+                    </select>  
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--<div class="social-list-widget">
+    <ul class="text-right">
+        
+        <li><a target="_blank" href="https://www.instagram.com/metaverse.ent_official/"><i class="icofont-instagram"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/people/Metaverse-Entertainment/100085442252859/"><i class="icofont-facebook"></i></a></li>
+        <li><i class="icofont-youtube-play" style="color: #444; padding-left: 7px"></i></li>
+        <li><i class="icofont-vimeo" style="color: #444; padding: 0 5px 0 17px"></i></li>
+    </ul>
+</div>-->
+
+<script src="../js/transformanimate$p.js"></script>
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="../js/common_function$p.js"></script>
+<script src="../js/CssStyleDefine_layout$p.js"></script>
+<script src="../js/inputkeyboard_validate.js"></script>
+<script src="../js/styleEffectAnimate$p.js"></script>
+<script src="../js/scrollTest$p.js"></script>
+<script src="../js/scrollContainerVisual$p.js"></script>
+<script src="../js/screentouch_scrollprevent$p.js"></script>
+
+<script src="commonScript$p.js"></script>
+<script src="mainLocalscript$p.js"></script>
+
+</body>
+</html>

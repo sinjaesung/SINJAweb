@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en"targetindex="javascript_scrollContaineronly">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/icons" rel="stylesheet"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+
+   
+</head>
+<body class="position_relative_normal">
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<div id='javascript_contentContainer'>
+    <header class="javascript_Css_define position_fixed"javascript_Css_define="
+    0~570|570*1040$width:100%;height:auto;left:0;top:0;padding-top:17responh;padding-bottom:17responh;padding-left:20response;padding-right:20response;z-index:990;background-color:rgba(0,0,0,0.6)^
+    571~1200|1200*1100$width:100%;height:auto;left:0;top:0;padding-top:23responh;padding-bottom:23responh;padding-left:60response;padding-right:60response;z-index:990;background-color:rgba(0,0,0,0.6)^
+    1201~9999|1920*1080$width:100%;height:auto;left:0;top:0;padding-top:20responh;padding-bottom:20responh;padding-left:80response;padding-right:80response;z-index:990;background-color:rgba(0,0,0,0.6)">
+        <div class="inner flex_horizontal_flexStart  flex_nowrap">
+            <a href='main.html'class='javascript_clickTarget'><img src="imgs/logo-w.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~570|570*1040$width:55px;height:26px;z-index:999^
+            571~1200|1200*1100$width:82px;height:37px;z-index:999^
+            1201~1920|1920*1080$width:82px;height:37px;z-index:999^
+            1921~9999|1920*1080$width:82responmin;height:37responmin;z-index:999"/></a>
+            <ul class="headermenu flex_horizontal_flexStart flex_alignitems_flexStart colorwhite fontweight_700 javascript_Css_define"javascript_Css_define="
+            0~1200|1200*1100$display:none^
+            1201~1460|1920*1080$padding-left:300response;flex:0 1 auto^
+            1461~9999|1920*1080$padding-left:466response;flex:0 1 auto">
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt1">ABOUT</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar1'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget1'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>INTRODUCE</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>VFXLAB</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt2">V-ARTIST</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar2'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget2'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='rina.html'>RINA</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='mave.html'>MAVE</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt3">WORK</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar3'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget3'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>VFX</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>ENTERTAINMENT</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>GAME</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt4">NEWS</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar4'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget4'>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt5">TALENT</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar5'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget5'>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>RECRUIT</a>
+                        </li>
+                        <li class="subitem javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~9999|1920*1080$padding-top:9responh">
+                            <a href='#'>PARTNER</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="item position_relative_normal javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_headerdropdown"javascript_Css_define="
+                0~1200|1200*1100$display:none^
+                1201~1920|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16fixed;margin-right:46response^
+                1921~9999|1920*1080$padding-top:9responh;padding-bottom:9responh;font-size:16responmin;margin-right:46response">
+                    <div class="txt cursorpointer textalignCenter javascript_Css_define position_relative_normal"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$padding-left:10response;padding-right:10response;z-index:5">
+                        <p targetindex="headerdropdowntxt6">CONTACT</p>
+                        <span class="display_block linebar javascript_Css_define"javascript_Css_define="
+                        0~1200|1200*1100$display:none^
+                        1201~1920|1920*1080$width:0%;height:2fixed;margin-top:2responh;background-color:#fff^
+                        1921~9999|1920*1080$width:0%;height:2responmin;margin-top:2responmin;background-color:#fff"targetindex='headerdropdownbar6'></span>
+                    </div>
+                    <ul class="subcategory javascript_Css_define"javascript_Css_define="
+                    0~1200|1200*1100$display:none^
+                    1201~9999|1920*1080$top:200%;opacity:0%;position:absolute;display:none;min-width:80px;padding-left:10response;padding-right:10response;padding-bottom:10response;background-color:rgba(0,0,0,0.6)"targetindex='headerdropdownTarget6'>
+                    </ul>
+                </li>
+            </ul>
+            <div class="rightalignContent flex_horizontal_flexEnd javascript_Css_define"javascript_Css_define="
+            0~1200|1200*1100$flex:1 0 auto;align-self:center^
+            1201~9999|1920*1080$flex:1 0 auto;align-self:center">
+                <div class="menubar cursorpointer javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_naviopen">
+                    <div class="barshape javascript_Css_define bgcolor_white"javascript_Css_define="
+                    0~1200|1200*1100$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1201~1920|1920*1080$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1921~9999|1920*1080$width:26responmin;height:2responmin;margin-bottom:5responmin"></div>
+                    <div class="barshape javascript_Css_define bgcolor_white"javascript_Css_define="
+                    0~1200|1200*1100$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1201~1920|1920*1080$width:26px;height:2fixed;margin-bottom:5fixed^
+                    1921~9999|1920*1080$width:26responmin;height:2responmin;margin-bottom:5responmin"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="naviBg javascript_Css_define position_fixed"targetindex='navBg'javascript_Css_define="
+    0~9999|1920*1080$display:none;left:0;top:0;width:100%;height:100%;background-color:rgba(255,255,255,0.5);z-index:500"style='display:none'></div>
+    <nav class='position_fixed javascript_Css_define' javascript_Css_define="
+    0~9999|1920*1080$width:100%;height:100vh;background-color:rgba(20,20,20,1);left:0;bottom:-100%;z-index:993;opacity:0%;display:none;overflow-y:auto"targetindex='MetaNavi'>
+        <img src="imgs/logo-w.svg" class="display_block javascript_Css_define position_absolute"javascript_Css_define="
+        0~570|570*1040$width:82response;height:37response;z-index:999;left:30response;top:30responh^
+        571~1200|1200*1100$width:82fixed;height:37fixed;z-index:999;left:30fixed;top:30fixed^
+        1201~1920|1920*1080$width:82fixed;height:37fixed;z-index:999;left:30fixed;top:30fixed^
+        1921~9999|1920*1280$width:82responmin;height:37responmin;z-index:999;left:30responmin;top:30responmin
+        "/>
+        <img src="imgs/xbutton.svg" class="cursorpointer display_block javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_naviclose"javascript_Css_define="
+        0~570|570*1040$width:40response;height:40response;right:30response;top:30responh;position:absolute^
+        571~1920|1920*1080$width:30fixed;height:30fixed;right:30fixed;top:30fixed;position:absolute^
+        1921~9999|1920*1080$width:30responmin;height:30responmin;right:30responmin;top:30responmin;position:absolute"/>
+        <div class="inner javascript_Css_define"javascript_Css_define="
+        0~720|570*1040$width:100%;padding-left:18response;padding-right:18response;padding-top:146responh;padding-bottom:411responh^
+        721~1200|1200*1100$width:100%;padding-left:40response;padding-right:40response;padding-top:274responh;padding-bottom:320responh;display:flex;flex-flow:row nowrap;justify-content:space-between^
+        1201~9999|1920*1080$width:100%;padding-left:80response;padding-right:80response;padding-top:258responh;padding-bottom:306responh;display:flex;flex-flow:row nowrap;justify-content:space-between">
+            <div class="leftside">
+                <h3 class="smalltit javascript_Css_define"javascript_Css_define="
+                0~720|570*1040$display:none^
+                721~1200|1200*1100$font-size:19fixed;padding-bottom:25responh;color:white^
+                1201~1920|1920*1080$font-size:19fixed;padding-bottom:28responh;color:white^
+                1921~9999|1920*1080$font-size:19responmin;padding-bottom:28responh;color:white">
+                We Lead Metaverse
+                </h3>
+                <h4 class="bigtit javascript_Css_define"javascript_Css_define="
+                0~720|570*1040$display:none^
+                721~1200|1200*1100$font-size:42response;padding-bottom:148responh;color:white;width:320fixed^
+                1201~1420|1920*1080$font-size:38fixed;padding-bottom:207responh;color:white;width:340fixed^
+                1421~1920|1920*1080$font-size:48fixed;padding-bottom:207responh;color:white^
+                1921~9999|1920*1080$font-size:48responmin;padding-bottom:207responh;color:white
+                ">
+                METAVERSE ENTERTAINMENT
+                </h4>
+                <ul class="contactinfo flex_horizontal_flexStart">
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~720|570*1040$display:none^
+                    721~1200|1200*1100$margin-right:36response;width:116fixed^
+                    1201~9999|1920*1080$padding-right:76response">
+                        <dl class="javascript_Css_define" javascript_Css_define="
+                        0~720|570*1040$display:none^
+                        721~1200|1200*1100$font-size:13fixed;color:#f8f8e0^
+                        1201~1920|1920*1080$font-size:13fixed;color:#f8f8e0^
+                        1921~9999|1920*1080$font-size:13responmin;color:#f8f8e0">
+                            <dt class="javascript_Css_define"javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$font-size:15fixed;padding-bottom:24responh^
+                            1201~1920|1920*1080$font-size:15fixed;padding-bottom:24responh^
+                            1921~9999|1920*1080$font-size:15responmin;padding-bottom:24responh">Contacts</dt>
+                            <dd class="javascript_Css_define"javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$padding-bottom:10responh^
+                            1201~9999|1920*1080$padding-bottom:10responh">meta_info@meta-ent.com</dd>
+                            <dd>+82 2 2271 7871</dd>
+                        </dl>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~720|570*1040$display:none^
+                    721~1200|1200*1100$width:270fixed^
+                    1201~9999|1920*1080$width:270response">
+                        <dl class="javascript_Css_define" javascript_Css_define="
+                        0~720|570*1040$display:none^
+                        721~1200|1200*1100$font-size:13fixed;color:#f8f8e0^
+                        1201~1920|1920*1080$font-size:13fixed;color:#f8f8e0^
+                        1921~9999|1920*1080$font-size:13responmin;color:#f8f8e0">
+                            <dt class='javascript_Css_define'javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$font-size:15fixed;padding-bottom:24responh^
+                            1201~1920|1920*1080$font-size:15fixed;padding-bottom:24responh^
+                            1921~9999|1920*1080$font-size:15responmin;padding-bottom:24responh
+                            ">Office</dt>
+                            <dd class='javascript_Css_define'javascript_Css_define="
+                            0~720|570*1040$display:none^
+                            721~1200|1200*1100$padding-bottom:10responh^
+                            1201~9999|1920*1080$padding-bottom:10responh">서울시 성동구 뚝섬로1길 63,  11F.  메타버스엔터테인먼트</dd>
+                            <dd>11F, 63, Ttukseom -ro 1-gil, Seongdong-gu, Seoul,  Republic of Korea</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+            <div class="rightside javascript_Css_define colorwhite"javascript_Css_define="
+            0~760|570*1040$width:100%;display:flex;flex-flow:row wrap^
+            761~1200|1200*1100$flex:1 1 auto;display:flex;flex-flow:row wrap;justify-content:flex-end^
+            1201~9999|1920*1080$flex:1 0 auto;display:flex;flex-flow:row wrap;justify-content:flex-end">
+                <ul class="menuGroup javascript_Css_define flex_horizontal_spaceBetween flex_alignitems_flexStart"javascript_Css_define="
+                0~760|570*1040$width:100%^
+                761~1200|1200*1100$width:98%^
+                1201~9999|1920*1080$width:80%">
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold;padding-bottom:124responh^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold;padding-bottom:167responh^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold;padding-bottom:167responh">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                        <a href='#'>ABOUT</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='#'>회사소개</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='#'>VFX Lab</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold;padding-bottom:124responh^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold;padding-bottom:167responh^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold;padding-bottom:167responh">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>V-ARTIST</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='rina.html'>RINA</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='mave.html'>MAVE</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold;padding-bottom:124responh^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold;padding-bottom:167responh^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold;padding-bottom:167responh
+                    ">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh
+                       ">
+                       <a href='#'> WORK</a>
+                       </h4>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh">
+                       <a href='#'>VFX</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh
+                       ">
+                       <a href='#'>ENTERTAINMENT</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='#'>GAME</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold">
+                       <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                       571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                       1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                       1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>NEWS</a>
+                       </h4>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold">
+                        <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                        571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                        761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                        1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                        1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>TALENT</a>
+                       </h4>
+                      <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response;padding-bottom:10responh^
+                       571~760|570*1040$font-size:19fixed;padding-bottom:22responh^
+                       761~1200|1200*1100$font-size:19fixed;padding-bottom:28responh^
+                       1201~1920|1920*1080$font-size:21fixed;padding-bottom:28responh^
+                       1921~9999|1920*1080$font-size:21responmin;padding-bottom:28responh
+                       ">
+                       <a href='#'>RECRUIT</a>
+                       </p>
+                       <p class="CSSHOVER_style2 menutitsub javascript_Css_define"javascript_Css_define="
+                       0~570|570*1040$font-size:20response^
+                       571~760|570*1040$font-size:19fixed^
+                       761~1200|1200*1100$font-size:19fixed^
+                       1201~1920|1920*1080$font-size:21fixed^
+                       1921~9999|1920*1080$font-size:21responmin">
+                       <a href='#'>PARTNER</a>
+                       </p>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$width:50%;font-size:20response;font-weight:bold;padding-bottom:47responh^
+                    571~760|570*1040$width:50%;font-size:19fixed;font-weight:bold;padding-bottom:47responh^
+                    761~1200|1200*1100$width:33%;font-size:19fixed;font-weight:bold^
+                    1201~1920|1920*1080$width:33%;font-size:21fixed;font-weight:bold^
+                    1921~9999|1920*1080$width:33%;font-size:21responmin;font-weight:bold">
+                        <h4 class="CSSHOVER_style2 menutit javascript_Css_define"javascript_Css_define="
+                        0~570|570*1040$font-size:28response;padding-bottom:22responh^
+                        571~760|570*1040$font-size:28fixed;padding-bottom:22responh^
+                        761~1200|1200*1100$font-size:28fixed;padding-bottom:36responh^
+                        1201~1920|1920*1080$font-size:30fixed;padding-bottom:43responh^
+                        1921~9999|1920*1080$font-size:30responmin;padding-bottom:43responh">
+                       <a href='#'>CONTACT</a>
+                       </h4>
+                    </li>
+                </ul> 
+            </div>
+        </div>
+    </nav>
+
+    <div class="position_relative_normal overflow_hidden">
+        <div class="javascript_Css_define MaveMainVisual"javascript_Css_define="
+        0~572|572*1080$width:100%;height:1024response;position:relative;left:0;overflow:hidden;background-image:url('./imgs/maveProfileMob.jpg');background-position:center;background-size:cover^
+        573~1024|1024*1100$width:100%;height:1058response;position:relative;left:0;overflow:hidden;background-image:url('./imgs/maveProfile.jpg');background-position:80%;background-size:cover^
+        1025~9999|1920*1080$width:100%;height:100vh;position:relative;left:0;overflow:hidden;background-image:url('./imgs/maveProfile.jpg');background-position:center;background-size:cover">
+            <h2 class="Mave javascript_Css_define"javascript_Css_define="
+            0~572|572*1080$font-size:64response;color:#fff;padding-top:142responmax;padding-left:20response^
+            573~1024|1024*1100$font-size:82response;color:#fff;padding-top:470response;padding-left:50response^
+            1025~1920|1920*1080$font-size:117px;color:#fff;padding-top:446responmin;padding-left:226response^
+            1921~9999|1920*1080$font-size:117response;color:#fff;padding-top:446responmin;padding-left:226response">
+            MAVE:
+            </h2>
+            <a href="https://www.mave-official.com/index"class="colorwhite position_relative_normal maveZoneHref javascript_Css_define javascript_StyleEffectTrigger2 javascript_StyleEffectTrigger2_buttoneffect"javascript_Css_define="
+            0~572|572*1080$margin-top:18responmax;padding-left:20response;padding-right:20response;padding-bottom:10responmax;padding-top:10responmax;border-style:solid;border-color:white;border-width:2px;font-size:18responmax;margin-left:20response;display:inline-block^
+            573~1024|1024*1100$margin-top:18responmax;padding-left:25response;padding-right:25response;padding-bottom:17responmax;padding-top:17responmax;border-style:solid;border-color:white;border-width:2px;font-size:18responmax;margin-left:50response;display:inline-block^
+            1025~1920|1920*1080$margin-top:17responmin;padding-left:25response;padding-right:25response;padding-bottom:17responmin;border-style:solid;border-color:white;border-width:2px;font-size:18px;padding-top:17responmin;margin-left:226response;display:inline-block^
+            1921~9999|1920*1080$margin-top:17responmin;padding-left:25response;padding-right:25response;padding-bottom:17responmin;padding-top:17responmin;border-style:solid;border-color:white;border-width:2px;font-size:18response;margin-left:226response;display:inline-block" targetindex="buttonmother1"target='_blank'>
+            
+                <span class="display_block effectbar position_absolute javascript_Css_define"javascript_Css_define="
+                0~9999|1920*1080$width:0%;height:100%;background-color:#7020ef;left:0;top:0"targetindex='buttoneffectbar1'></span>
+                <p class="position_relative_normal">MAVE: ZONE 가기</p>
+            </a>
+        </div>
+    </div>
+
+    
+    <section class="section2 javascript_Css_define overflow_hidden"javascript_Css_define="
+    0~9999|1920*1080$background-color:#000">
+        <div class="inner javascript_Css_define colorwhite"javascript_Css_define="
+        0~572|572*1040$width:100%;padding-left:20response;padding-right:20response;padding-bottom:0;padding-top:130responmax;display:block^
+        573~1024|1024*1100$width:100%;padding-left:50response;padding-right:50response;padding-bottom:0;padding-top:175responmax;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1025~1400|1400*1080$width:100%;padding-left:140response;padding-right:140response;padding-bottom:0;padding-top:260responmin;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1401~1920|1920*1080$width:1100fixed;margin:0 auto;padding-bottom:0;padding-top:260responmin;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1921~9999|1920*1080$width:1100response;margin:0 auto;padding-bottom:0;padding-top:260responmin;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start">
+            <h3 class="tits javascript_Css_define colorwhite javascript_scroll_response javascript_scroll_response_Group1"javascript_Css_define="
+            0~572|570*1040$font-size:29responmax;font-weight:bold;padding-bottom:18responmax^
+            573~1024|1024*1100$font-size:38response;font-weight:bold;opacity:0^
+            1025~1400|1400*1080$font-size:43response;font-weight:bold;opacity:0^
+            1401~1920|1920*1080$font-size:48px;font-weight:bold;opacity:0^
+            1921~9999|1920*1080$font-size:48response;font-weight:bold;opacity:0"targetindex='javascript_scroll_response_Group1_txtTarget0'>
+            MAKE NEW WAVE!<br/>
+            K-메타 아이돌</h3>
+            <p class="tits javascript_Css_define colorwhite"javascript_Css_define="
+            0~572|570*1040$font-size:15responmax;line-height:1.8;width:390responmax^
+            573~1024|1024*1100$font-size:18responmax;line-height:1.6;width:360response^
+            1025~1400|1400*1080$font-size:15px;line-height:1.6;width:432response^
+            1401~1920|1920*1080$font-size:18px;line-height:1.8;width:432px^
+            1921~9999|1920*1080$font-size:18response;line-height:1.8;width:432response">
+            시우,제나,타이라,마티로 이루어진 4인조 가상 걸그룹으로,
+            KPOP과 메타버스 시대의 NEW WAVE를 일으킬 K-메타아이돌
+            </p>
+        </div>
+        <div class="TeasureImg javascript_Css_define position_relative_normal javascript_scroll_response javascript_scroll_response_ImgGroup0"javascript_Css_define="
+        0~572|570*1040$width:532response;height:314response;margin:0 auto;margin-top:126responmax;margin-bottom:120responmax;right:-36%^
+        573~1024|1024*1100$width:924response;height:600response;margin:0 auto;margin-top:180responmax;margin-bottom:245responmax;right:-36%^
+        1025~1400|1400*1080$width:1103response;height:620response;margin:0 auto;margin-top:206responmin;margin-bottom:400responmin;right:-36%^
+        1401~1920|1920*1080$width:1103px;height:620px;margin:0 auto;margin-top:206responmin;margin-bottom:400responmin;right:-36%^
+        1921~9999|1920*1080$width:1103response;height:620response;margin:0 auto;margin-top:206responmin;margin-bottom:400responmin;right:-36%"targetindex="javascript_scroll_response_ImgGroup0_teasureImg">
+            <img src="imgs/maveTeasure.jpg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1920*1080$width:100%;height:100%"/>
+        </div>
+    </section>
+
+    
+    <section class="section3 javascript_Css_define overflow_hidden"javascript_Css_define="
+    0~990|990*1100$background-color:#000;color:#e1e1e1^
+    991~9999|1920*1080$background-color:#000;background-image:url('./imgs/maveProfile2.jpg');background-size:cover;background-position:center;color:#e1e1e1">
+        <div class="TMProfileBg javascript_Css_define overflow_hidden position_relative_normal"javascript_Css_define="
+        0~990|572*1040$width:100%;height:461response^
+        991~9999|1920*1080$display:none">
+            <img src="imgs/maveProfile2Mob.jpg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~9999|1920*1080$width:100%;height:auto;position:absolute;left:50%;top:0;transform:translateX=-50%"/>
+        </div>
+        <div class="inner javascript_Css_define"javascript_Css_define="
+        0~990|572*1040$width:100%;padding-left:20response;padding-right:20response;padding-top:22responmax;padding-bottom:120responmax^
+        991~1124|1024*1100$width:100%;padding-left:50response;padding-right:50response;padding-bottom:93responmax;padding-top:180responmax^
+        1125~1400|1920*1080$width:100%;padding-left:140response;padding-right:140response;padding-bottom:367response;padding-top:262response^
+        1401~1920|1920*1080$width:1280fixed;margin:0 auto;padding-bottom:367response;padding-top:262response^
+        1921~9999|1920*1080$width:1280response;margin:0 auto;padding-bottom:367response;padding-top:262response">
+            <h3 class="tits javascript_Css_define colorwhite"javascript_Css_define="
+            0~990|572*1040$font-size:27responmax;font-weight:bold;padding-bottom:40responmax^
+            991~1024|1024*1100$font-size:33responmax;font-weight:bold;padding-bottom:36responmax^
+            1025~1400|1400*1080$font-size:43response;font-weight:bold;padding-bottom:32responmin^
+            1401~1920|1920*1080$font-size:47px;font-weight:bold;padding-bottom:32responmin^
+            1921~9999|1920*1080$font-size:47response;font-weight:bold;padding-bottom:32responmin">
+            MAVE: Profile
+            </h3>
+            <ul class="profileList">
+                <li class="item flex_horizontal_flexStart javascript_Css_define flex_nowrap javascript_inlinestyle_responsive_elements javascript_scroll_response javascript_scroll_response_Group_li"javascript_Css_define="
+                0~990|572*1040$padding-bottom:16responmax;opacity:0;transform:skewY=40deg@translateY=400responmax^
+                991~1024|1024*1100$padding-bottom:18responmax;opacity:0;transform:skewY=40deg@translateY=400responmax^
+                1025~1400|1400*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin^
+                1401~1920|1920*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin^
+                1921~9999|1920*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin"targetindex="javascript_scroll_response_Group_li_LItarget0"response_properties="transform">
+                    <span class="txtCircle javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$width:10responmax;height:10responmax;background-color:#707070;border-radius:50%^
+                    991~1024|1024*1100$width:6responmax;height:6responmax;background-color:#707070;border-radius:50%^
+                    1025~1400|1400*1080$width:6px;height:6px;background-color:#707070;border-radius:50%^
+                    1401~1920|1920*1080$width:6px;height:6px;background-color:#707070;border-radius:50%^
+                    1921~9999|1920*1080$width:6response;height:6response;background-color:#707070;border-radius:50%"></span>
+                    <p class="tit javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$font-size:18responmax;margin-left:8response;width:85responmax^
+                    991~1024|1024*1100$font-size:19responmax;margin-left:8response;width:90responmax^
+                    1025~1920|1920*1080$font-size:20px;margin-left:10response;width:90px^
+                    1921~9999|1920*1080$font-size:20response;margin-left:10response;width:90response">
+                    데뷔일
+                    </p>
+                    <p class="tit javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$font-size:18responmax^
+                    991~1024|1024*1100$font-size:19responmax^
+                    1025~1920|1920*1080$font-size:20px^
+                    1921~9999|1920*1080$font-size:20response">
+                    2023년 1월 25일
+                    </p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define flex_nowrap javascript_inlinestyle_responsive_elements javascript_scroll_response javascript_scroll_response_Group_li"javascript_Css_define="
+                0~990|572*1040$padding-bottom:16responmax;opacity:0;transform:skewY=40deg@translateY=400responmax^
+                991~1024|1024*1100$padding-bottom:18responmax;opacity:0;transform:skewY=40deg@translateY=400responmax^
+                1025~1400|1400*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin^
+                1401~1920|1920*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin^
+                1921~9999|1920*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin"targetindex="javascript_scroll_response_Group_li_LItarget1"response_properties="transform">
+                    <span class="txtCircle javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$width:10responmax;height:10responmax;background-color:#707070;border-radius:50%^
+                    991~1024|1024*1100$width:6responmax;height:6responmax;background-color:#707070;border-radius:50%^
+                    1025~1400|1400*1080$width:6px;height:6px;background-color:#707070;border-radius:50%^
+                    1401~1920|1920*1080$width:6px;height:6px;background-color:#707070;border-radius:50%^
+                    1921~9999|1920*1080$width:6response;height:6response;background-color:#707070;border-radius:50%"></span>
+                    <p class="tit javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$font-size:18responmax;margin-left:8response;width:85responmax^
+                    991~1024|1024*1100$font-size:19responmax;margin-left:8response;width:90responmax^
+                    1025~1920|1920*1080$font-size:20px;margin-left:10response;width:90px^
+                    1921~9999|1920*1080$font-size:20response;margin-left:10response;width:90response">
+                    멤버
+                    </p>
+                    <p class="tit javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$font-size:18responmax^
+                    991~1024|1024*1100$font-size:19responmax^
+                    1025~1920|1920*1080$font-size:20px^
+                    1921~9999|1920*1080$font-size:20response">
+                    시우(SIU:), 제나(ZENA:), 타이라(TYRA:), 마티(MARTY:)
+                    </p>
+                </li>
+                <li class="item flex_horizontal_flexStart javascript_Css_define flex_nowrap javascript_inlinestyle_responsive_elements javascript_scroll_response javascript_scroll_response_Group_li"javascript_Css_define="
+                0~990|572*1040$padding-bottom:16responmax;opacity:0;transform:skewY=40deg@translateY=400responmax^
+                991~1024|1024*1100$padding-bottom:18responmax;opacity:0;transform:skewY=40deg@translateY=400responmax^
+                1025~1400|1400*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin^
+                1401~1920|1920*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin^
+                1921~9999|1920*1080$padding-bottom:18responmin;opacity:0;transform:skewY=40deg@translateY=400responmin"targetindex="javascript_scroll_response_Group_li_LItarget2"response_properties="transform">
+                    <span class="txtCircle javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$width:10responmax;height:10responmax;background-color:#707070;border-radius:50%^
+                    991~1024|1024*1100$width:6responmax;height:6responmax;background-color:#707070;border-radius:50%^
+                    1025~1400|1400*1080$width:6px;height:6px;background-color:#707070;border-radius:50%^
+                    1401~1920|1920*1080$width:6px;height:6px;background-color:#707070;border-radius:50%^
+                    1921~9999|1920*1080$width:6response;height:6response;background-color:#707070;border-radius:50%"></span>
+                    <p class="tit javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$font-size:18responmax;margin-left:8response;width:85responmax^
+                    991~1024|1024*1100$font-size:19responmax;margin-left:8response;width:90responmax^
+                    1025~1920|1920*1080$font-size:20px;margin-left:10response;width:90px^
+                    1921~9999|1920*1080$font-size:20response;margin-left:10response;width:90response">
+                    데뷔 앨범
+                    </p>
+                    <p class="tit javascript_Css_define"javascript_Css_define="
+                    0~990|572*1040$font-size:18responmax^
+                    991~1024|1024*1100$font-size:19responmax^
+                    1025~1920|1920*1080$font-size:20px^
+                    1921~9999|1920*1080$font-size:20response">
+                    디지털 앨범 1st Single [PANDORA’S BOX]
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section4 javascript_Css_define overflow_hidden"javascript_Css_define="
+    0~9999|1920*1080$background-color:#000">
+        <div class="inner javascript_Css_define colorwhite"javascript_Css_define="
+        0~572|572*1040$width:100%;padding-left:30response;padding-right:30response;padding-top:96responmax;padding-bottom:257responmax^
+        573~1024|1024*1100$width:560px;margin:0 auto;padding-bottom:343responmax;padding-top:226responmax^
+        1025~1400|1400*1080$width:573px;margin:0 auto;padding-bottom:456responmin;padding-top:264responmin^
+        1401~1920|1920*1080$width:573px;margin:0 auto;padding-bottom:456responmin;padding-top:314responmin^
+        1921~9999|1920*1080$width:573response;margin:0 auto;padding-bottom:456responmin;padding-top:314responmin">
+            <p class="story javascript_Css_define"javascript_Css_define="
+            0~572|572*1040$font-size:15responmax;font-weight:bold;color:white;padding-bottom:113responmax;text-align:center^
+            573~1024|1024*1100$font-size:17responmax;font-weight:bold;color:white;padding-bottom:155responmax;text-align:center^
+            1025~1400|1400*1080$font-size:17px;font-weight:bold;color:white;padding-bottom:221responmin;text-align:center^
+            1401~1920|1920*1080$font-size:17px;font-weight:bold;color:white;padding-bottom:221responmin;text-align:center^
+            1921~9999|1920*1080$font-size:17response;font-weight:bold;color:white;padding-bottom:221responmin;text-align:center">
+            미래세계 이디피아에서 감정의 자유를 찾아 2023년 지구 곳곳에 불시착한 MAVE:
+            현실과 가상세계, 서로 다른 두 세계를 이어주는 여정을 시작하다
+            </p>
+            <p class="story javascript_Css_define"javascript_Css_define="
+            0~572|572*1040$font-size:18responmax;font-weight:bold;color:#818181;padding-bottom:40responmax;text-align:center^
+            573~1024|1024*1100$font-size:20responmax;font-weight:bold;color:#818181;padding-bottom:40responmax;text-align:center;color:#818181^
+            1025~1400|1400*1080$font-size:24px;font-weight:bold;color:white;padding-bottom:55responmin;text-align:center;color:#818181^
+            1401~1920|1920*1080$font-size:24px;font-weight:bold;color:white;padding-bottom:55responmin;text-align:center;color:#818181^
+            1921~9999|1920*1080$font-size:24response;font-weight:bold;color:white;padding-bottom:55responmin;text-align:center;color:#818181">
+            SOCIAL MEDIA 
+            </p>
+            <ul class="flex_horizontal_Center flex_nowrap javascript_Css_define javascript_scroll_response javascript_scroll_response_SNSgroup"javascript_Css_define="
+            0~9999|1920*1080$perspective:4000px;perspective-origin:center">
+                <li class="item javascript_Css_define CSSHOVER_boxstyle1 javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~572|572*1040$width:60responmax;height:60responmax;margin-right:5response;margin-left:5response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1400responmax;opacity:0^
+                573~1024|1024*1100$width:60responmax;height:60responmax;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1400responmax;opacity:0^
+                1025~1400|1400*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0^
+                1401~1920|1920*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0^
+                1921~9999|1920*1080$width:60response;height:60response;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0"targetindex='javascript_scroll_response_SNSgroup_liTarget0' response_properties="transform">
+                    <img src="imgs/ico-youtube.png"class='display_block javascript_Css_define'javascript_Css_define="
+                    0~9999|1920*1080$width:40%;height:auto"/>
+                </li>
+                <li class="item javascript_Css_define CSSHOVER_boxstyle1 javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~572|572*1040$width:60responmax;height:60responmax;margin-right:5response;margin-left:5response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1400responmax;opacity:0^
+                573~1024|1024*1100$width:60responmax;height:60responmax;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1400responmax;opacity:0^
+                1025~1400|1400*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0^
+                1401~1920|1920*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0^
+                1921~9999|1920*1080$width:60response;height:60response;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0"targetindex='javascript_scroll_response_SNSgroup_liTarget1' response_properties="transform">
+                    <img src="imgs/ico-insta.png"class='display_block javascript_Css_define'javascript_Css_define="
+                    0~9999|1920*1080$width:40%;height:auto"/>
+                </li>
+                <li class="item javascript_Css_define CSSHOVER_boxstyle1 javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~572|572*1040$width:60responmax;height:60responmax;margin-right:5response;margin-left:5response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1400responmax;opacity:0^
+                573~1024|1024*1100$width:60responmax;height:60responmax;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1400responmax;opacity:0^
+                1025~1400|1400*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0^
+                1401~1920|1920*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0^
+                1921~9999|1920*1080$width:60response;height:60response;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=50deg@rotateX=22deg@translateZ=1600responmin;opacity:0"targetindex='javascript_scroll_response_SNSgroup_liTarget2' response_properties="transform">
+                    <img src="imgs/ico-facebook.png"class='display_block javascript_Css_define'javascript_Css_define="
+                    0~9999|1920*1080$width:auto;height:50%"/>
+                </li>
+                <li class="item javascript_Css_define CSSHOVER_boxstyle1 javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~572|572*1040$width:60responmax;height:60responmax;margin-right:5response;margin-left:5response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1400responmax;opacity:0^
+                573~1024|1024*1100$width:60responmax;height:60responmax;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1400responmax;opacity:0^
+                1025~1400|1400*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0^
+                1401~1920|1920*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0^
+                1921~9999|1920*1080$width:60response;height:60response;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0"targetindex='javascript_scroll_response_SNSgroup_liTarget3' response_properties="transform">
+                    <img src="imgs/ico-twitter.png"class='display_block javascript_Css_define'javascript_Css_define="
+                    0~9999|1920*1080$width:40%;height:auto"/>
+                </li>
+                <li class="item javascript_Css_define CSSHOVER_boxstyle1 javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~572|572*1040$width:60responmax;height:60responmax;margin-right:5response;margin-left:5response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1400responmax;opacity:0^
+                573~1024|1024*1100$width:60responmax;height:60responmax;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1400responmax;opacity:0^
+                1025~1400|1400*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0^
+                1401~1920|1920*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0^
+                1921~9999|1920*1080$width:60response;height:60response;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0"targetindex='javascript_scroll_response_SNSgroup_liTarget4' response_properties="transform">
+                    <img src="imgs/ico-tiktok.png"class='display_block javascript_Css_define'javascript_Css_define="
+                    0~9999|1920*1080$width:40%;height:auto"/>
+                </li>
+                <li class="item javascript_Css_define CSSHOVER_boxstyle1 javascript_inlinestyle_responsive_elements"javascript_Css_define="
+                0~572|572*1040$width:60responmax;height:60responmax;margin-right:5response;margin-left:5response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1400responmax;opacity:0^
+                573~1024|1024*1100$width:60responmax;height:60responmax;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1400responmax;opacity:0^
+                1025~1400|1400*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0^
+                1401~1920|1920*1080$width:60px;height:60px;margin-right:15px;margin-left:15px;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0^
+                1921~9999|1920*1080$width:60response;height:60response;margin-right:15response;margin-left:15response;border-radius:50%;background-color:#555;display:flex;flex-flow:row wrap;justify-content:center;align-items:center;transform:skewX=-50deg@rotateX=-22deg@translateZ=1600responmin;opacity:0"targetindex='javascript_scroll_response_SNSgroup_liTarget5' response_properties="transform">
+                    <img src="imgs/ico-discord.png"class='display_block javascript_Css_define'javascript_Css_define="
+                    0~9999|1920*1080$width:40%;height:auto"/>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class='javascript_Css_define' javascript_Css_define="
+    0~9999|1920*1080$background-color:#181818">
+        <div class="inner javascript_Css_define"javascript_Css_define="
+        0~570|570*1040$padding-top:157responh;padding-bottom:40responh;width:100%;padding-left:20response;padding-right:20response;display:block^
+        571~999|1200*1100$padding-top:146responh;padding-bottom:130responh;width:100%;padding-left:80response;padding-right:80response;display:block^
+        1000~1200|1200*1100$padding-top:146responh;padding-bottom:130responh;width:100%;padding-left:80response;padding-right:80response;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1201~1400|1920*1080$padding-top:146responh;padding-bottom:130responh;width:100%;padding-left:80response;padding-right:80response;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1401~1920|1920*1080$padding-top:227responh;padding-bottom:186responh;width:1280fixed;margin:0 auto;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start^
+        1921~9999|1920*1080$padding-top:227responh;padding-bottom:186responh;width:1280response;margin:0 auto;display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:flex-start">
+            <div class="lefinfo javascript_Css_define"javascript_Css_define="
+            0~1920|1920*1080$padding-bottom:20fixed^
+            1921~9999|1920*1080$padding-bottom:20responmin">
+                <p class="tit javascript_Css_define colorwhite"javascript_Css_define="
+                0~570|570*1040$font-size:24response;font-weight:bold;padding-bottom:26responh^
+                571~1200|1200*1100$font-size:18fixed;font-weight:bold;padding-bottom:26responh^
+                1201~1920|1920*1080$font-size:21fixed;font-weight:bold;padding-bottom:21responh^
+                1921~9999|1920*1080$font-size:21response;font-weight:bold;padding-bottom:21responh">
+                메타버스엔터테인먼트(주)
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:19response;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:10responh;color:#ebebeb">서울시 성동구 뚝섬로1길 63 , 11F
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:19response;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:10responh;color:#ebebeb^
+                1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:10responh;color:#ebebeb
+                ">대표전화 :  +82 2  2271 7871
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:19response;font-weight:bold;padding-bottom:33responh;color:#ebebeb^
+                571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:33responh;color:#ebebeb^
+                1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:33responh;color:#ebebeb^
+                1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:33responh;color:#ebebeb">이메일 : meta_info@meta-ent.com
+                </p>
+                <p class="info javascript_Css_define"javascript_Css_define="
+                0~570|570*1040$font-size:18response;font-weight:bold;color:#ebebeb^
+                571~1200|1200*1100$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb">© Metaverse Entertainment Inc.
+                </p>
+            </div>
+            <ul class="centerinfo javascript_clickTarget
+            mobile_display_none
+            tablet_flex_horizontal_flexStart tablet_flex_alignitems_flexStart
+            pc_flex_horizontal_flexStart pc_flex_alignitems_flexStart">
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    ABOUT
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb
+                    ">
+                    회사소개
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb
+                    ">
+                    VFX Lab
+                    </p>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    V-ARTIST
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    RINA
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    MAVE
+                    </p>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    WORK
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    VFX
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb
+                    ">
+                    ENTERTAINMENT
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb">
+                    GAME
+                    </p>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    NEWS
+                    </h4>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                571~1200|1200*1100$padding-right:25response^
+                1201~9999|1920*1080$padding-right:25response">
+                    <h4 class="CSSHOVER_style1 tits javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;padding-bottom:19responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;padding-bottom:19responh;color:#ebebeb">
+                    TALENT
+                    </h4>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;padding-bottom:12responh;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;padding-bottom:12responh;color:#ebebeb">
+                    RECRUIT
+                    </p>
+                    <p class="CSSHOVER_style1 infopara javascript_Css_define"javascript_Css_define="
+                    571~1200|1200*1100$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:12fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:12response;font-weight:bold;color:#ebebeb">
+                    PARTNER
+                    </p>
+                </li>
+            </ul>
+
+            <div class="rightinfo javascript_Css_define javascript_clickTarget"javascript_Css_define="
+            0~999|1200*1100$padding-top:30fixed">
+                <ul class="extra flex_horizontal_flexStart ">
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:20response;font-weight:bold;color:#ebebeb^
+                    571~1200|1200*1100$font-size:14fixed;font-weight:bold;color:#ebebeb^
+                    1201~1920|1920*1080$font-size:14fixed;font-weight:bold;color:#ebebeb^
+                    1921~9999|1920*1080$font-size:14response;font-weight:bold;color:#ebebeb">
+                    <a href="#"class="CSSHOVER_style1">CONTACT</a>
+                    </li>
+                    <li class="item javascript_Css_define"javascript_Css_define="
+                    0~570|570*1040$font-size:19response;font-weight:bold;color:#ebebeb;padding-left:20response^
+                    571~1200|1200*1100$font-size:13fixed;font-weight:bold;color:#ebebeb;padding-left:20response^
+                    1201~1920|1920*1080$font-size:13fixed;font-weight:bold;color:#ebebeb;padding-left:20response^
+                    1921~9999|1920*1080$font-size:13response;font-weight:bold;color:#ebebeb;padding-left:20response">
+                    <a href="#"class="CSSHOVER_style1">개인정보처리방침</a>
+                    </li>
+                </ul>
+                <div class="CSSHOVER_boxstyle1 selectwrap javascript_Css_define position_relative_normal borderstyle_solid"javascript_Css_define="
+                0~570|570*1040$width:170fixed;height:40fixed;margin-top:60responh;border-color:#afafaf;border-width:1fixed^
+                571~1200|1200*1100$width:170fixed;height:40fixed;margin-top:60responh;border-color:#afafaf;border-width:1fixed^
+                1201~1920|1920*1080$width:170fixed;height:40fixed;margin-top:60responh;border-color:#afafaf;border-width:1fixed^
+                1921~9999|1920*1080$width:170response;height:40response;margin-top:60responh;border-color:#afafaf;border-width:1response">
+                    <select class="footerSelectbox textalignCenter javascript_Css_define
+                    mobile_width_100_percent mobile_height_100_percent
+                    tablet_width_100_percent tablet_height_100_percent
+                    pc_width_100_percent pc_height_100_percent"
+                    javascript_Css_define="
+                    0~1920|1920*1080$background-color:transparent;font-size:12fixed;color:#afafaf;vertical-align:center^
+                    1921~9999|1920*1080$background-color:transparent;font-size:12response;color:#afafaf;vertical-align:center
+                    ">
+                        <option value='Family Site' selected>Family Site</option>
+                        <option value='넷마블'>넷마블</option>
+                        <option value='카카오엔터테인먼트'>카카오엔터테인먼트</option>
+                    </select>  
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<!--<div class="social-list-widget">
+    <ul class="text-right">
+        
+        <li><a target="_blank" href="https://www.instagram.com/metaverse.ent_official/"><i class="icofont-instagram"></i></a></li>
+        <li><a target="_blank" href="https://www.facebook.com/people/Metaverse-Entertainment/100085442252859/"><i class="icofont-facebook"></i></a></li>
+        <li><i class="icofont-youtube-play" style="color: #444; padding-left: 7px"></i></li>
+        <li><i class="icofont-vimeo" style="color: #444; padding: 0 5px 0 17px"></i></li>
+    </ul>
+</div>-->
+
+<script src="../js/transformanimate$p.js"></script>
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="../js/common_function$p.js"></script>
+<script src="../js/CssStyleDefine_layout$p.js"></script>
+<script src="../js/inputkeyboard_validate.js"></script>
+<script src="../js/styleEffectAnimate$p.js"></script>
+<script src="../js/scrollTest$p.js"></script>
+
+<script src="../js/screentouch_scrollprevent$p.js"></script>
+
+<script src="commonScript$p.js"></script>
+<script src="maveLocalScript$p.js"></script>
+
+</body>
+</html>
