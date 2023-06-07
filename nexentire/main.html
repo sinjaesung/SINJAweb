@@ -1,0 +1,1751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body >
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<header
+class="position_absolute bgcolor_black2 colorwhite javascript_Css_define zindex999"
+javascript_Css_define="
+0~9999|1920$left:0;top:0;width:100%">
+    <div class="inner javascript_Css_define
+    mobile_flex_horizontal_spaceBetween tablet_flex_horizontal_spaceBetween pc_flex_horizontal_spaceBetween"
+    javascript_Css_define="
+    0~720|720$padding-left:11response;padding-right:17response;padding-top:13fixed;padding-bottom:6fixed^
+    721~1240|1120$padding-left:11response;padding-right:14response;padding-top:13fixed;padding-bottom:6fixed^
+    1241~9999|1920$padding-left:43response;padding-right:43response;padding-top:26fixed;padding-bottom:26fixed;flex-flow:row nowrap">
+
+        <div class="search_area bgcolor_black2 color_white zindex9999 javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$position:absolute;width:100%;padding-top:40fixed;padding-bottom:40fixed;top:100%;left:0^
+        721~1240|1120$position:absolute;width:100%;padding-top:40fixed;padding-bottom:40fixed;top:100%;left:0^
+        1241~9999|1920$position:absolute;width:100%;padding-top:40fixed;padding-bottom:40fixed;top:100%;left:0"
+        
+        targetindex="searchuiTarget0"
+        style="display:none">
+            <div class="inner
+            tablet_flex_horizontal_Center
+            pc_flex_horizontal_Center">
+                <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:90%;margin:0 auto^
+                721~1240|1120$width:520fixed^
+                1241~9999|1920$width:520fixed">
+                    <div class="searchwrap  position_relative_normal colorwhite display_block
+                    mobile_flex_horizontal_spaceBetween mobile_width_100percent
+                    tablet_flex_horizontal_spaceBetween tablet_width_100_percent 
+                    pc_flex_horizontal_spaceBetween pc_width_100_percent">
+                        <input type="search" name="search_keyword" class="display_block colorwhite javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$font-size:15fixed;line-height:1.5;width:80%;padding-left:20response;padding-right:20response^
+                        721~1240|1120$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed^
+                        1241~9999|1920$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed"
+                        targetindex="searchform_inputkeyword" placeholder="검색어를 입력해 주세요"/>
+                        <button  class="display_block bgcolor_transparent javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$width:20fixed;height:20fixed;margin-right:20response^
+                        721~1240|1120$width:20fixed;height:20fixed;margin-right:20fixed^
+                        1241~9999|1920$width:20fixed;height:20fixed;margin-right:20fixed">
+                            <img src="imgs/searchIcon.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </button>
+                        <span class="display_block bgcolor_white  javascript_Css_define
+                        mobile_width_100_percent  tablet_width_100_percent  pc_width_100_percent"
+                        javascript_Css_define="
+                        0~720|720$height:1fixed;margin-top:16fixed^
+                        721~1240|1120$height:1fixed;margin-top:20fixed^
+                        1241~9999|1920$height:1fixed;margin-top:20fixed"></span>
+                    </div>
+                </form>
+        
+                <img src="imgs/xButton.svg" class="display_block cursorpointer javascript_Css_define    
+                javascript_StyleEffectTrigger"
+                javascript_Css_define="
+                0~720|720$width:28fixed;height:28fixed;margin:0 auto;margin-top:60response^
+                721~1240|1120$width:32fixed;height:32fixed;margin-left:50response^
+                1241~9999|1920$width:32fixed;height:32fixed;margin-left:220response" 
+                targetdata='{
+                    "click":{
+                        "style_datas":[
+                            {"target":"searchuiTarget0","effectType":"instant","instant_parameters":{"display":"none","opacity":0} }
+                        ]
+                    }
+                }'/>
+            </div>
+        </div>
+
+        <a href='main.html'><img src="imgs/logo.svg" class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:181fixed;height:36fixed^
+        721~1240|1120$width:181fixed;height:36fixed^
+        1241~9999|1920$width:170fixed;height:34fixed"/></a>
+        <ul class="headermenu flex_horizontal_flexStart">
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed" 
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},
+                     {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#8020ef"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},
+                    {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">PRODUCT</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget1_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget2_header","effectType":"instant","instant_parameters":{"background-color":"#00d79d"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]}
+                    ]
+                }
+            }'>
+                <a href="#">SERVICE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget2_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget3_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget3_header","effectType":"instant","instant_parameters":{"background-color":"#df9050"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget3_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget3_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">INFORMATION</a> 
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget3_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget4_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget4_header","effectType":"instant","instant_parameters":{"background-color":"#dfdf50"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget4_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget4_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">COMMUNICATION</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget4_header"></span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget5_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget5_header","effectType":"instant","instant_parameters":{"background-color":"#f0e9a2"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget5_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget5_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">NEWS&EVENT</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget5_header"></span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget6_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget6_header","effectType":"instant","instant_parameters":{"background-color":"#20a0d8"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget6_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget6_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">NEXENTIRE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget6_header"></span>
+            </li>
+        </ul>
+
+        <div class="headerRight flex_horizontal_flexStart">
+            <ul class="usermenu flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~1240|1120$display:none^
+            1241~9999|1920$color:#86827f">
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:43response;padding-right:43response;^
+                721~1240|1120$width:920px,padding-left:40px,padding-right:40px,padding-top:26fixed,padding-bottom:27response^
+                1241~9999|1920$padding-right:11response;font-size:13fixed">
+                    <a href="#">Login</a>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:43response;padding-right:43response;^
+                721~1240|1120$width:920px,padding-left:40px,padding-right:40px,padding-top:26fixed,padding-bottom:27response^
+                1241~9999|1920$padding-right:11response;font-size:13fixed">
+                    <a href="#">Membership</a>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:43response;padding-right:43response;^
+                721~1240|1120$width:920px,padding-left:40px,padding-right:40px,padding-top:26fixed,padding-bottom:27response^
+                1241~9999|1920$font-size:13fixed">
+                    <a href="#">Global Site</a>
+                </li>
+            </ul>
+            <span class="sepdeco javascript_Css_define"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$display:block;background-color:#4c4c4c;margin-left:11response;margin-right:20response;width:1fixed;height:18fixed">
+            </span>
+            <img src="imgs/searchIcon.svg" class="display_block cursorpointer javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~9999|1120$width:24fixed;height:24fixed"
+            targetdata='{
+                "click":{
+                    "style_datas":[
+                        {"target":"searchuiTarget0","effectType":"animate","animate_parameters":[{"property":"opacity","from":"0","to":"100","units":"%","duration":100}]},{"target":"searchuiTarget0","effectType":"instant","instant_parameters":{"display":"block"} }
+                    ]
+                }
+            }'/>
+            <img src="imgs/menuIcon.svg" class="cursorpointer display_block javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~720|720$width:28fixed;height:23fixed;margin-left:5response^
+            721~1240|1120$width:28fixed;height:23fixed;margin-left:5response^
+            1241~9999|1920$display:none"
+            targetdata='{
+                "click":{
+                    "style_datas":[
+                        {"target":"nexentire_navigation","effectType":"animate","animate_parameters":[{"property":"left","from":"-160","to":"0","units":"%","duration":100}]},{"target":"navBg","effectType":"instant","instant_parameters":{"display":"block"}}
+                    ]
+                }
+            }'/>
+        </div>
+    </div>
+</header>
+
+<div class="naviWrap zindex999"targetindex='naviWraps'>
+    <div class="popupbg javascript_StyleEffectTrigger"
+    targetindex="navBg"style="display:none"
+    targetdata='{
+        "click":{
+            "style_datas":[
+                {"target":"nexentire_navigation","effectType":"animate","animate_parameters":[{"property":"left","from":"0","to":"-160","units":"%","duration":100}]},{"target":"navBg","effectType":"instant","instant_parameters":{"display":"none"}}
+            ]
+        }
+    }'></div>
+    <nav class="position_absolute zindex999 javascript_Css_define bgcolor_black2"javascript_Css_define="
+    0~720|720$width:520response;top:55fixed;height:80vh^
+    721~1240|1120$width:420fixed;top:55fixed;height:80vh^
+    1241~9999|1920$width:420fixed;top:55fixed;height:80vh;padding-top:40fixed"
+    targetindex="nexentire_navigation"
+    style="left:-160%">
+    
+        <ul class="menulist position_relative_zindex3  javascript_Css_define"javascript_Css_define="
+        0~9999|1120$padding-top:20fixed;padding-left:20response;padding-right:20response">
+            <li class="fontweight_500  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>PRODUCT</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>SERVICE</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>INFORMATION</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>COMMUNICATION</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>NEWS&EVENT</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>NEXENTIRE</a></li>
+        </ul>
+
+        <div class="usercontrol colorwhite bordercolorwhite position_relative_zindex3 borderstyle_solid javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$padding-left:36response;padding-right:20response">
+            <p class="login fontweight_500 borderstyle_solid bordercolorwhite javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:15fixed;padding-bottom:10fixed;color:#dad2d2"><a href='#'>Login</a></p>
+            <p class="login fontweight_500 borderstyle_solid bordercolorwhite javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:15fixed;padding-bottom:10fixed;color:#dad2d2"><a href='#'>Membership</a></p>
+            <p class="login fontweight_500 borderstyle_solid bordercolorwhite javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:15fixed;color:#dad2d2"><a href='#'>Global Site</a></p>
+        </div>
+    </nav>
+</div>
+
+
+
+<section class="mainbannerSection position_relative_normal javascript_Css_define"javascript_Css_define="
+0~720|720$height:768fixed^
+721~1240|1120$height:920fixed^
+1241~9999|1920$height:1080fixed">
+    <div class="swiper-container mainbanner 
+    mobile_height_100_percent
+    tablet_height_100_percent
+    pc_height_100_percent
+    ">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="videobackground position_relative_normal overflow_hidden javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:100%^
+                721~1240|1120$width:100%;height:100%^
+                1241~9999|1920$width:100%;height:100%">
+                    <video autoplay muted loop playsinline preload="metadata"
+                    class="display_block  javascript_Css_define img_background_cover_height_center"javascript_Css_define="
+                    0~720|720$height:100%^
+                    721~1240|1120$height:100%^
+                    1241~9999|1920$height:100%">
+                        <source src="imgs/kr_01.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="videobackground position_relative_normal overflow_hidden javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:100%^
+                721~1240|1120$width:100%;height:100%^
+                1241~9999|1920$width:100%;height:100%">
+                    <video autoplay muted loop playsinline preload="metadata"
+                    class="display_block  javascript_Css_define img_background_cover_height_center"javascript_Css_define="
+                    0~720|720$height:100%^
+                    721~1240|1120$height:100%^
+                    1241~9999|1920$height:100%">
+                        <source src="imgs/kr_02.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <div class="swiper-slide position_relative_normal  mobile_height_100_percent
+            tablet_height_100_percent pc_height_100_percent">
+                <div class="videobackground position_relative_normal overflow_hidden javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:100%^
+                721~1240|1120$width:100%;height:100%^
+                1241~9999|1920$width:100%;height:100%">
+                    <video autoplay muted loop playsinline preload="metadata"
+                    class="display_block  javascript_Css_define img_background_cover_height_center"javascript_Css_define="
+                    0~720|720$height:100%^
+                    721~1240|1120$height:100%^
+                    1241~9999|1920$height:100%">
+                        <source src="imgs/kr_03.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev swiper-button-prev-style1 javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:37fixed;height:74fixed;left:21response;bottom:412fixed^
+            721~1240|1120$width:37fixed;height:74fixed;left:64response;bottom:193fixed^
+            1241~9999|1920$width:37fixed;height:74fixed;left:64response;bottom:392fixed">
+        </div>
+        <div class="swiper-button-next swiper-button-next-style1 javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:37fixed;height:74fixed;right:21response;bottom:412fixed^
+            721~1240|1120$width:37fixed;height:74fixed;right:64response;bottom:193fixed^
+            1241~9999|1920$width:37fixed;height:74fixed;right:82response;bottom:392fixed">
+        </div>
+      
+        <div class="swiper-pagination swiper-pagination-styleBar1"></div>
+    </div>
+    <ul class="bannerControlData flex_horizontal_Center javascript_Css_define zindex50"
+    javascript_Css_define="
+    0~720|720$position:absolute;bottom:83fixed;left:0;right:0;margin:0 auto^
+    721~1240|1120$position:absolute;bottom:52fixed;left:0;right:0;margin:0 auto^
+    1241~9999|1920$position:absolute;bottom:98fixed;left:0;right:0;margin:0 auto">
+        <li class="item javascript_Css_define bgcolor_graywhite"
+        javascript_Css_define="
+        0~720|720$width:220response;position:relative;padding-left:68response;padding-right:44response;padding-top:12response;padding-bottom:10response;margin-right:10response^
+        721~1040|1120$width:250response;position:relative;padding-left:78response;padding-right:47response;padding-top:12response;padding-bottom:10response;margin-right:10response^
+        1041~1240|1120$width:250fixed;position:relative;padding-left:78fixed;padding-right:47fixed;padding-top:12fixed;padding-bottom:10fixed;margin-right:10response^
+        1241~9999|1920$width:270fixed;position:relative;padding-left:85fixed;padding-right:57fixed;padding-top:12fixed;padding-bottom:10fixed;margin-right:10response">
+            <h3 class="littleTit javascript_Css_define" 
+            javascript_Css_define="
+            0~720|720$font-size:10response;color:#939393^
+            721~1040|1120$font-size:11response;color:#939393^
+            1041~1240|1120$font-size:11fixed;color:#939393^
+            1241~9999|1920$font-size:11fixed;color:#939393">Tire Search</h3>
+            <p class="mainTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16response;color:#383838^
+            721~1040|1120$font-size:18response;color:#939393^
+            1041~1240|1120$font-size:18fixed;color:#383838^
+            1241~9999|1920$font-size:19fixed;color:#383838">
+            차량번호로 찾기
+            </p>
+            <div class="flex_horizontal_Center symbol javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:10response;color:#eaeaea;width:50response;height:50response;background-color:#505050;position:absolute;left:8response;top:-8response^
+            721~1040|1120$font-size:10response;color:#eaeaea;width:54response;height:54response;background-color:#505050;position:absolute;left:7response;top:-7response^
+            1041~1240|1120$font-size:10fixed;color:#eaeaea;width:54fixed;height:54fixed;background-color:#505050;position:absolute;left:7fixed;top:-7fixed^
+            1241~9999|1920$font-size:11fixed;color:#eaeaea;width:60fixed;height:60fixed;background-color:#505050;position:absolute;left:10fixed;top:-10fixed">
+                <span>00EI000</span>
+            </div>
+            <img src="imgs/arrowicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:7response;height:14response;right:18response;bottom:17response;position:absolute^
+            721~1040|1120$width:7response;height:14response;right:21response;bottom:23response;position:absolute^
+            1041~1240|1120$width:7fixed;height:14fixed;right:21fixed;bottom:23fixed;position:absolute^
+            1241~9999|1920$width:7fixed;height:14fixed;right:21fixed;bottom:23fixed;position:absolute"/>
+        </li>
+        <li class="item javascript_Css_define bgcolor_graywhite"
+        javascript_Css_define="
+        0~720|720$width:220response;position:relative;padding-left:68response;padding-right:44response;padding-top:12response;padding-bottom:10response;margin-right:10response^
+        721~1040|1120$width:250response;position:relative;padding-left:78response;padding-right:47response;padding-top:12response;padding-bottom:10response;margin-right:10response^
+        1041~1240|1120$width:250fixed;position:relative;padding-left:78fixed;padding-right:47fixed;padding-top:12fixed;padding-bottom:10fixed;margin-right:10response^
+        1241~9999|1920$width:270fixed;position:relative;padding-left:85fixed;padding-right:57fixed;padding-top:12fixed;padding-bottom:10fixed;margin-right:10response">
+            <h3 class="littleTit javascript_Css_define" 
+            javascript_Css_define="
+            0~720|720$font-size:10response;color:#939393^
+            721~1040|1120$font-size:11response;color:#939393^
+            1041~1240|1120$font-size:11fixed;color:#939393^
+            1241~9999|1920$font-size:11fixed;color:#939393">Tire Search</h3>
+            <p class="mainTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16response;color:#383838^
+            721~1040|1120$font-size:18response;color:#939393^
+            1041~1240|1120$font-size:18fixed;color:#383838^
+            1241~9999|1920$font-size:19fixed;color:#383838">
+            차종으로 찾기
+            </p>
+            <div class="flex_horizontal_Center symbol javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:10response;color:#eaeaea;width:50response;height:50response;background-color:#505050;position:absolute;left:8response;top:-8response^
+            721~1040|1120$font-size:10response;color:#eaeaea;width:54response;height:54response;background-color:#505050;position:absolute;left:7response;top:-7response^
+            1041~1240|1120$font-size:10fixed;color:#eaeaea;width:54fixed;height:54fixed;background-color:#505050;position:absolute;left:7fixed;top:-7fixed^
+            1241~9999|1920$font-size:11fixed;color:#eaeaea;width:60fixed;height:60fixed;background-color:#505050;position:absolute;left:10fixed;top:-10fixed">
+                <img src="imgs/car.svg" class="javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:90%;height:auto^
+                721~1240|1120$width:90%;height:auto^
+                1241~9999|1920$width:51fixed;height:20fixed">
+            </div>
+            <img src="imgs/arrowicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:7response;height:14response;right:18response;bottom:17response;position:absolute^
+            721~1040|1120$width:7response;height:14response;right:21response;bottom:23response;position:absolute^
+            1041~1240|1120$width:7fixed;height:14fixed;right:17fixed;bottom:18fixed;position:absolute^
+            1241~9999|1920$width:7fixed;height:14fixed;right:21fixed;bottom:23fixed;position:absolute"/>
+        </li>
+        <li class="item javascript_Css_define bgcolor_graywhite"
+        javascript_Css_define="
+        0~720|720$width:220response;position:relative;padding-left:68response;padding-right:44response;padding-top:12response;padding-bottom:10response;margin-right:10response^
+        721~1040|1120$width:250response;position:relative;padding-left:78response;padding-right:47response;padding-top:12response;padding-bottom:10response;margin-right:10response^
+        1041~1240|1120$width:250fixed;position:relative;padding-left:78fixed;padding-right:47fixed;padding-top:12fixed;padding-bottom:10fixed;margin-right:10response^
+        1241~9999|1920$width:270fixed;position:relative;padding-left:85fixed;padding-right:57fixed;padding-top:12fixed;padding-bottom:10fixed;margin-right:10response">
+            <h3 class="littleTit javascript_Css_define" 
+            javascript_Css_define="
+            0~720|720$font-size:10response;color:#939393^
+            721~1040|1120$font-size:11response;color:#939393^
+            1041~1240|1120$font-size:11fixed;color:#939393^
+            1241~9999|1920$font-size:11fixed;color:#939393">Tire Search</h3>
+            <p class="mainTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:16response;color:#383838^
+            721~1040|1120$font-size:18response;color:#939393^
+            1041~1240|1120$font-size:18fixed;color:#383838^
+            1241~9999|1920$font-size:19fixed;color:#383838">
+            사이즈로 찾기
+            </p>
+            <div class="flex_horizontal_Center symbol javascript_Css_define"javascript_Css_define="
+            0~720|720$font-size:10response;color:#eaeaea;width:50response;height:50response;background-color:#505050;position:absolute;left:8response;top:-8response^
+            721~1040|1120$font-size:10response;color:#eaeaea;width:54response;height:54response;background-color:#505050;position:absolute;left:7response;top:-7response^
+            1041~1240|1120$font-size:10fixed;color:#eaeaea;width:54fixed;height:54fixed;background-color:#505050;position:absolute;left:7fixed;top:-7fixed^
+            1241~9999|1920$font-size:11fixed;color:#eaeaea;width:60fixed;height:60fixed;background-color:#505050;position:absolute;left:10fixed;top:-10fixed">
+                <img src="imgs/tireMeasure.svg" class="javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:90%;height:auto^
+                721~1240|1120$width:90%;height:auto^
+                1241~9999|1920$width:51fixed;height:20fixed">
+            </div>
+            <img src="imgs/arrowicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:7response;height:14response;right:18response;bottom:17response;position:absolute^
+            721~1040|1120$width:7response;height:14response;right:21response;bottom:23response;position:absolute^
+            1041~1240|1120$width:7fixed;height:14fixed;right:17fixed;bottom:18fixed;position:absolute^
+            1241~9999|1920$width:7fixed;height:14fixed;right:21fixed;bottom:23fixed;position:absolute"/>
+        </li>
+    </ul>
+</section>
+
+<section class="section1 bgcolor_gray4 position_relative_normal javascript_Css_define colorwhite"
+javascript_Css_define="
+0~720|720$padding-left:20response;padding-right:20response;padding-top:30fixed;padding-bottom:70fixed;height:auto^
+721~1240|1120$padding-left:20response;padding-right:20response;padding-top:85fixed;padding-bottom:91fixed;height:auto^
+1241~9999|1920$padding-left:102response;padding-right:100response;padding-top:125fixed;padding-bottom:75fixed;height:1134fixed">
+    <h2 class="sectionTit javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$font-size:38response;text-decoration:underline;margin-bottom:20response^
+    721~920|1120$font-size:36fixed;text-decoration:underline;margin-bottom:20fixed^
+    921~1240|1120$font-size:42fixed;text-decoration:underline;margin-bottom:20fixed^
+    1241~1540|1120$font-size:36fixed;text-decoration:underline^
+    1541~9999|1920$font-size:42fixed;text-decoration:underline">
+    High Quality, High Performance
+    </h2>
+
+    <div class="imgFrame display_block  javascript_Css_define overflow_hidden javascript_StyleEffectTrigger2"
+    javascript_Css_define="
+    0~720|720$width:100%;height:342response;padding-top:218response;padding-left:20response;padding-right:20response;padding-bottom:20response;position:relative^
+    721~920|1120$width:100%;height:532response;padding-top:312response;padding-left:40response;padding-right:40response;padding-bottom:40response;position:relative^
+    921~1240|1120$width:100%;height:532response;padding-top:322response;padding-left:40response;padding-right:40response;padding-bottom:40response;position:relative^
+    1241~9999|1920$width:850response;height:630fixed;padding-top:472fixed;padding-left:40response;padding-right:40response;padding-bottom:40fixed;top:275fixed;left:140response;position:absolute"
+    targetdata='{
+        "event_per_effects":{
+            "mouseenter":[
+               {
+                "scaleEffectTarget0" : {"animstyle": {"width":"150%","height":"150%","border-radius":"30px"},"duration":500}}
+            ],
+            "mouseleave":[
+                {"scaleEffectTarget0" : {"animstyle": {"width":"100%","height":"100%","border-radius":"0"},"duration":500}}
+            ]
+        }
+    }'>
+        <img src="imgs/recommend_01.jpg" class="display_block position_absolute  javascript_Css_define " 
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1240|1120$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1241~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"
+        targetindex="scaleEffectTarget0"/>
+        <img src="imgs/recommend_logo_01.png" class="display_block javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$width:354response;height:auto^
+        721~920|1120$width:284fixed;height:auto^
+        921~1240|1120$width:354fixed;height:auto^
+        1241~9999|1920$width:286fixed;height:auto"/>
+        <p class="descTxt javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$margin-top:15response;font-size:21response^
+        721~920|1120$margin-top:14response;font-size:14fixed^
+        921~1240|1120$margin-top:18response;font-size:16fixed^
+        1241~9999|1920$margin-top:18fixed;font-size:16fixed">소리없이 편안 하니까!</p>
+        <p class="readmore javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$font-size:19response;text-decoration:underline^
+        721~920|1120$margin-top:22response;font-size:11fixed;text-decoration:underline^
+        921~1240|1120$margin-top:30response;font-size:13fixed;text-decoration:underline^
+        1241~9999|1920$margin-top:30fixed;font-size:13fixed;text-decoration:underline">Read more</p>
+    </div>
+    <div class="imgFrame display_block javascript_Css_define overflow_hidden javascript_StyleEffectTrigger2"
+    javascript_Css_define="
+    0~720|720$width:100%;height:342response;padding-top:218response;padding-left:20response;padding-right:20response;padding-bottom:20response;position:relative;margin-top:30response^
+    721~920|1120$width:100%;height:532response;padding-top:312response;padding-left:40response;padding-right:40response;padding-bottom:40response;position:relative;margin-top:20response^
+    921~1240|1120$width:100%;height:532response;padding-top:322response;padding-left:40response;padding-right:40response;padding-bottom:40response;position:relative;margin-top:30response^
+    1241~9999|1920$width:750response;height:400fixed;padding-top:242fixed;padding-left:23response;padding-right:23response;padding-bottom:42fixed;top:125fixed;right:100response;position:absolute" 
+    targetdata='{
+        "event_per_effects":{
+            "mouseenter":[
+               {
+                "scaleEffectTarget1" : {"animstyle": {"width":"74%","height":"74%","border-radius":"60px"},"duration":500}}
+            ],
+            "mouseleave":[
+                {"scaleEffectTarget1" : {"animstyle": {"width":"100%","height":"100%","border-radius":"0"},"duration":500}}
+            ]
+        }
+    }'>
+        <img src="imgs/recommend_02.jpg" class="display_block position_absolute javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1240|1120$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1241~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"targetindex="scaleEffectTarget1"/>
+        <img src="imgs/recommend_logo_02.png" class="display_block javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$width:286response;height:auto^
+        721~920|1120$width:246fixed;height:auto^
+        921~1240|1120$width:286fixed;height:auto^
+        1241~9999|1920$width:286fixed;height:auto"/>
+        <p class="descTxt javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$margin-top:15response;font-size:21response^
+        721~920|1120$margin-top:14response;font-size:14fixed^
+        921~1240|1120$margin-top:18response;font-size:16fixed^
+        1241~9999|1920$margin-top:18fixed;font-size:16fixed">프리미엄에 혁신을 더하다</p>
+        <p class="readmore javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$font-size:19response;text-decoration:underline^
+        721~920|1120$margin-top:20response;font-size:11fixed;text-decoration:underline^
+        921~1240|1120$margin-top:30response;font-size:13fixed;text-decoration:underline^
+        1241~9999|1920$margin-top:30fixed;font-size:13fixed;text-decoration:underline">Read more</p>
+    </div>
+    <div class="imgFrame display_block position_absolute javascript_Css_define overflow_hidden javascript_StyleEffectTrigger2"
+    javascript_Css_define="
+    0~720|720$width:100%;height:342response;padding-top:218response;padding-left:20response;padding-right:20response;padding-bottom:20response;position:relative;margin-top:30response^
+    721~920|1120$width:100%;height:532response;padding-top:312response;padding-left:40response;padding-right:40response;padding-bottom:40response;position:relative;margin-top:20response^
+    921~1240|1120$width:100%;height:532response;padding-top:322response;padding-left:40response;padding-right:40response;padding-bottom:40response;position:relative;margin-top:30response^
+    1241~9999|1920$width:520response;height:510fixed;padding-top:364fixed;padding-left:40response;padding-right:40response;padding-bottom:42fixed;top:549fixed;right:330response" 
+    targetdata='{
+        "event_per_effects":{
+            "mouseenter":[
+               {
+                "scaleEffectTarget2" : {"animstyle": {"width":"120%","height":"120%","border-radius":"60px","margin-left":"-20px"},"duration":500}}
+            ],
+            "mouseleave":[
+                {"scaleEffectTarget2" : {"animstyle": {"width":"100%","height":"100%","border-radius":"0","margin-left":0},"duration":500}}
+            ]
+        }
+    }'>
+        <img src="imgs/recommend_03.jpg" class="display_block position_absolute javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        721~1240|1120$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+        1241~9999|1920$height:100%;width:100%;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)" targetindex="scaleEffectTarget2"/>
+        <img src="imgs/recommend_logo_03.png" class="display_block javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$width:362response;height:auto^
+        721~920|1120$width:286fixed;height:auto^
+        921~1240|1120$width:342fixed;height:auto^
+        1241~9999|1920$width:286fixed;height:auto"/>
+        <p class="descTxt javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$margin-top:15response;font-size:21response^
+        721~920|1120$margin-top:14response;font-size:14fixed^
+        921~1240|1120$margin-top:18response;font-size:16fixed^
+        1241~9999|1920$margin-top:18fixed;font-size:16fixed">국내 최고 수준의 마일리지 성능을 가진 사계절용 타이어</p>
+        <p class="readmore javascript_Css_define position_relative_zindex3"javascript_Css_define="
+        0~720|720$font-size:19response;text-decoration:underline^
+        721~920|1120$margin-top:20response;font-size:11fixed;text-decoration:underline^
+        921~1240|1120$margin-top:30response;font-size:13fixed;text-decoration:underline^
+        1241~9999|1920$margin-top:30fixed;font-size:13fixed;text-decoration:underline">Read more</p>
+    </div>
+</section>
+
+<section class="section2 bgcolor_dark colorwhite">
+    <div class="inner javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$width:100%;height:auto;padding-bottom:60fixed^
+    721~1240|1120$width:100%;height:auto;padding-bottom:60fixed^
+    1241~1400|1600$width:1380response;margin:0 auto;padding-bottom:35fixed^
+    1401~9999|1920$width:1380fixed;margin:0 auto;padding-bottom:35fixed">
+        <div class="horizontal_tit flex_horizontal_flexStart javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padidng-top:41fixed;padding-bottom:41fixed^
+        721~1240|1120$width:100%;height:auto;padding-top:66fixed;padding-bottom:43fixed^
+        1241~9999|1920$padding-bottom:41fixed">
+            <h2 class="bigTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:43fixed;color:white;padding-left:11response^
+            721~1240|1120$font-size:43fixed;color:white;padding-left:11response^
+            1241~9999|1920$font-size:43fixed;color:white;padding-left:25response">
+            Product
+            </h2>
+            <p class="subtit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#c7baa9;padding-left:18response^
+            721~1240|1120$font-size:14fixed;color:#c7baa9;padding-left:18response^
+            1241~9999|1920$font-size:14fixed;color:#c7baa9;padding-left:18response">넥센타이어의 다양한 제품을 확인해 보세요</p>
+        </div>
+        <ul class="productList flex_horizontal_spaceBetween javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-left:205response;padding-right:205response^
+        721~1240|1120$width:100%;height:auto;padding-left:176response;padding-right:176response">
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger2"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;padding-bottom:51fixed^
+            721~1240|1120$width:310response;height:auto;padding-bottom:93fixed^
+            1241~9999|1920$width:24%"
+            targetdata='{
+                "event_per_effects":{
+                    "mouseenter":[
+                        {"txtTarget0" :  {"animstyle":{"margin-left":"-40px"},"duration":400,"instantstyle":{"color":"#8020ef"}}  },{"imgTarget00" :  {"animstyle":{"margin-left":"-40px"},"duration":400 }}          
+                    ],
+                    "mouseleave":[
+                        {"txtTarget0" :  {"animstyle":{"margin-left":"0"},"duration":400,"instantstyle":{"color":"#935a03"}}  },{"imgTarget00" :  {"animstyle":{"margin-left":"0"},"duration":400 }}                   
+                    ]
+                }
+            }'>
+                <p class="tit javascript_Css_define"javascript_Css_define="
+                0~720|720$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                721~1240|1120$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                1241~9999|1920$width:100%;text-align:center;color:#935a03;font-size:16fixed"targetindex='txtTarget0'>승용차</p>
+                <img src="imgs/category_01_off.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:auto^
+                721~1240|1120$width:100%;height:auto^
+                1241~9999|1920$width:100%;height:auto" targetindex='imgTarget00'/>
+                <p class="flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                721~1240|1120$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                1241~9999|1920$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto">
+                    <span class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:14fixed^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">자세히보기</span>
+                    <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:6fixed;height:12fixed;margin-left:9response^
+                    721~1240|1120$width:6fixed;height:12fixed;margin-left:9response^
+                    1241~9999|1920$width:6fixed;height:12fixed;margin-left:9response"/>
+                </p>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger2"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;padding-bottom:51fixed^
+            721~1240|1120$width:310response;height:auto;padding-bottom:93fixed^
+            1241~9999|1920$width:24%" targetdata='{
+                "event_per_effects":{
+                    "mouseenter":[
+                        {"txtTarget01" :  {"animstyle":{"margin-left":"-40px"},"duration":400,"instantstyle":{"color":"#d0a022"}}  },{"imgTarget01" :  {"animstyle":{"margin-left":"-40px"},"duration":400 }}          
+                    ],
+                    "mouseleave":[
+                        {"txtTarget01" :  {"animstyle":{"margin-left":"0"},"duration":400,"instantstyle":{"color":"#935a03"}}  },{"imgTarget01" :  {"animstyle":{"margin-left":"0"},"duration":400 }}                       
+                    ]
+                }
+            }'>
+                <p class="tit javascript_Css_define"javascript_Css_define="
+                0~720|720$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                721~1240|1120$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                1241~9999|1920$width:100%;text-align:center;color:#935a03;font-size:16fixed"targetindex='txtTarget01'>SUV</p>
+                <img src="imgs/category_02_off.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:auto^
+                721~1240|1120$width:100%;height:auto^
+                1241~9999|1920$width:100%;height:auto"targetindex='imgTarget01'/>
+                <p class="flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                721~1240|1120$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                1241~9999|1920$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto">
+                    <span class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:14fixed^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">자세히보기</span>
+                    <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:6fixed;height:12fixed;margin-left:9response^
+                    721~1240|1120$width:6fixed;height:12fixed;margin-left:9response^
+                    1241~9999|1920$width:6fixed;height:12fixed;margin-left:9response"/>
+                </p>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger2"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;padding-bottom:51fixed^
+            721~1240|1120$width:310response;height:auto;padding-bottom:93fixed^
+            1241~9999|1920$width:24%"targetdata='{
+                "event_per_effects":{
+                    "mouseenter":[
+                        {"txtTarget02" :  {"animstyle":{"margin-left":"-40px"},"duration":400,"instantstyle":{"color":"#00efd4"}}  },{"imgTarget02" :  {"animstyle":{"margin-left":"-40px"},"duration":400 }}          
+                    ],
+                    "mouseleave":[
+                        {"txtTarget02" :  {"animstyle":{"margin-left":"0"},"duration":400,"instantstyle":{"color":"#935a03"}}  },{"imgTarget02" :  {"animstyle":{"margin-left":"0"},"duration":400 }}                       
+                    ]
+                }
+            }'>
+                <p class="tit javascript_Css_define"javascript_Css_define="
+                0~720|720$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                721~1240|1120$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                1241~9999|1920$width:100%;text-align:center;color:#935a03;font-size:16fixed"targetindex='txtTarget02'>전기차</p>
+                <img src="imgs/category_03_off.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:auto^
+                721~1240|1120$width:100%;height:auto^
+                1241~9999|1920$width:100%;height:auto"targetindex='imgTarget02'/>
+                <p class="flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                721~1240|1120$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                1241~9999|1920$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto">
+                    <span class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:14fixed^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">자세히보기</span>
+                    <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:6fixed;height:12fixed;margin-left:9response^
+                    721~1240|1120$width:6fixed;height:12fixed;margin-left:9response^
+                    1241~9999|1920$width:6fixed;height:12fixed;margin-left:9response"/>
+                </p>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger2"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto;padding-bottom:51fixed^
+            721~1240|1120$width:310response;height:auto;padding-bottom:93fixed^
+            1241~9999|1920$width:24%"
+            targetdata='{
+                "event_per_effects":{
+                    "mouseenter":[
+                        {"txtTarget03" :  {"animstyle":{"margin-left":"-40px"},"duration":400,"instantstyle":{"color":"#fff"}}  },{"imgTarget03" :  {"animstyle":{"margin-left":"-40px"},"duration":400 }}          
+                    ],
+                    "mouseleave":[
+                        {"txtTarget03" :  {"animstyle":{"margin-left":"0"},"duration":400,"instantstyle":{"color":"#935a03"}}  },{"imgTarget03" :  {"animstyle":{"margin-left":"0"},"duration":400 }}                        
+                    ]
+                }
+            }'>
+                <p class="tit javascript_Css_define"javascript_Css_define="
+                0~720|720$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                721~1240|1120$width:100%;text-align:center;color:#935a03;font-size:16fixed^
+                1241~9999|1920$width:100%;text-align:center;color:#935a03;font-size:16fixed"targetindex='txtTarget03'>겨울용</p>
+                <img src="imgs/category_04_off.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;height:auto^
+                721~1240|1120$width:100%;height:auto^
+                1241~9999|1920$width:100%;height:auto"targetindex='imgTarget03'/>
+                <p class="flex_horizontal_Center javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                721~1240|1120$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto^
+                1241~9999|1920$width:170fixed;height:30fixed;border-width:1fixed;border-style:solid;border-color:#3c3c3c;margin:0 auto">
+                    <span class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:14fixed^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">자세히보기</span>
+                    <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:6fixed;height:12fixed;margin-left:9response^
+                    721~1240|1120$width:6fixed;height:12fixed;margin-left:9response^
+                    1241~9999|1920$width:6fixed;height:12fixed;margin-left:9response"/>
+                </p>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="section3 bgcolor_dark colorwhite">
+    <div class="inner javascript_Css_define "
+    javascript_Css_define="
+    0~720|720$width:100%;height:auto;padding-bottom:65fixed^
+    721~1240|1120$width:100%;height:auto;padding-bottom:68fixed^
+    1241~1400|1600$width:1320response;margin:0 auto;padding-bottom:100fixed^
+    1401~9999|1920$width:1320fixed;margin:0 auto;padding-bottom:100fixed">
+        <div class="horizontal_tit flex_horizontal_flexStart flex_alignitems_flexEnd javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padidng-top:32fixed;padding-bottom:31fixed;padding-left:11response;display:block !important^
+        721~1240|1120$width:100%;height:auto;padding-top:20fixed;padding-bottom:38fixed;padding-left:11response^
+        1241~9999|1920$padding-bottom:41fixed">
+            <h2 class="bigTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:43response;color:white^
+            721~1240|1120$font-size:43fixed;color:white^
+            1241~9999|1920$font-size:43fixed;color:white">
+            Why NEXEN TIRE
+            </h2>
+            <p class="subtit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14response;color:#c7baa9;padding-top:9fixed^
+            721~1240|1120$font-size:14fixed;color:#c7baa9;padding-left:18response^
+            1241~9999|1920$font-size:14fixed;color:#c7baa9;padding-left:18response">우수한 기술력과 노하우를 바탕으로<br/>
+            세계적으로 인정받고 있는 넥센타이어를 확인해 보세요</p>
+        </div>
+        <ul class="productList flex_horizontal_spaceBetween javascript_Css_define colorwhite"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;padding-left:145response;padding-right:145response">
+            <li class="item javascript_Css_define position_relative_normal overflow_hidden"
+            javascript_Css_define="
+            0~720|720$width:100%;height:250response^
+            721~1240|1120$width:calc(100% * (360/1120));height:250fixed^
+            1241~1400|1920$width:32.5%;height:250fixed^
+            1401~9999|1920$width:430fixed;height:250fixed">
+                <img src="imgs/why_01.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$position:absolute;height:100%;width:100%;display:block;z-index:0;left:0%;top:0%^
+                721~1240|1120$position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+                1241~9999|1920$position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+                <div class="position_absolute javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;text-align:center;top:78fixed;left:0^
+                721~1240|1120$width:100%;text-align:center;top:103fixed;left:0^
+                1241~9999|1920$width:100%;text-align:center;top:104fixed;left:0">
+                    <p class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:16response^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">세계로 도약하는</p>
+                    <p class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:19response;margin-top:4response^
+                    721~1240|1120$font-size:19fixed;margin-top:4fixed^
+                    1241~9999|1920$font-size:19fixed;margin-top:4fixed">NEXEN TIRE STORY</p>
+                </div>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal overflow_hidden"
+            javascript_Css_define="
+            0~720|720$width:100%;height:250response;margin-top:9response^
+            721~1240|1120$width:calc(100% * (360/1120));height:250fixed^
+            1241~1400|1920$width:32.5%;height:250fixed^
+            1401~9999|1920$width:430fixed;height:250fixed">
+                <img src="imgs/why_02.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$position:absolute;height:100%;width:100%;display:block;z-index:0;left:0%;top:0%^
+                721~1240|1120$position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+                1241~9999|1920$position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+                <div class="position_absolute javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;text-align:center;top:78fixed;left:0^
+                721~1240|1120$width:100%;text-align:center;top:103fixed;left:0^
+                1241~9999|1920$width:100%;text-align:center;top:104fixed;left:0">
+                    <p class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:16response^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">미래를 여는</p>
+                    <p class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:19response;margin-top:4response^
+                    721~1240|1120$font-size:19fixed;margin-top:4fixed^
+                    1241~9999|1920$font-size:19fixed;margin-top:4fixed">NEXEN TECHNOLOGY</p>
+                </div>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal overflow_hidden"
+            javascript_Css_define="
+            0~720|720$width:100%;height:250response;margin-top:9response^
+            721~1240|1120$width:calc(100% * (360/1120));height:250fixed^
+            1241~1400|1920$width:32.5%;height:250fixed^
+            1401~9999|1920$width:430fixed;height:250fixed">
+                <img src="imgs/why_03.jpg" class="display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$position:absolute;height:100%;width:100%;display:block;z-index:0;left:0%;top:0%^
+                721~1240|1120$position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)^
+                1241~9999|1920$position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"/>
+                <div class="position_absolute javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;text-align:center;top:78fixed;left:0^
+                721~1240|1120$width:100%;text-align:center;top:103fixed;left:0^
+                1241~9999|1920$width:100%;text-align:center;top:104fixed;left:0">
+                    <p class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:16response^
+                    721~1240|1120$font-size:14fixed^
+                    1241~9999|1920$font-size:14fixed">최상의 품질을 인정받은</p>
+                    <p class="javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:19response;margin-top:4response^
+                    721~1240|1120$font-size:19fixed;margin-top:4fixed^
+                    1241~9999|1920$font-size:19fixed;margin-top:4fixed">MAGAZINE TEST</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<seciton class="section4 javascript_Css_define"javascript_Css_define="
+0~720|720$padding-left:20response;padding-right:20response;padding-top:42fixed;padding-bottom:45fixed;background-color:#dcdddf;display:block^
+721~1240|1120$padding-left:20response;padding-right:20response;padding-top:64fixed;padding-bottom:67fixed;background-color:#dcdddf;display:block^
+1241~9999|1920$padding-left:100response;padding-right:100response;padding-top:93fixed;padding-bottom:100fixed;background-color:#dcdddf;display:block">
+    <div class="inner flex_horizontal_spaceBetween flex_alignitems_flexStart">
+        <div class="newsContainer javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto^
+        721~982|1120$width:100%;height:auto^
+        983~1240|1120$width:342response;height:auto^
+        1241~9999|1920$width:990response;height:auto">
+            <h2 class="articleTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:45response;padding-bottom:15response^
+            721~1240|1120$font-size:38fixed;padding-bottom:17fixed^
+            1241~9999|1920$font-size:45fixed;padding-bottom:17fixed">
+            News
+            </h2>
+            <div class="swiper-container slide1 
+            mobile_width_100_percent tablet_width_100_percent pc_width_100_percent
+            ">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide position_relative_normal javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:100% !important;height:auto^
+                    721~1240|1120$width:100% !important;height:auto^
+                    1241~9999|1920$width:301px !important;height:auto;margin-right:20fixed">
+                        <img src="imgs/news1.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                        <p class="news_date javascript_Css_define"javascript_Css_define="
+                        0~720|720$font-size:13fixed;margin-top:13fixed;color:#6c6c6c6^
+                        721~1240|1120$font-size:13fixed;margin-top:13fixed;color:#6c6c6c^
+                        1241~9999|1920$font-size:13fixed;margin-top:13fixed;color:#6c6c6c">
+                        2022.11.04
+                        </p>
+                        <p class="news_date javascript_Css_define"javascript_Css_define="
+                        0~720|720$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600^
+                        721~1240|1120$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600^
+                        1241~9999|1920$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600">
+                        ‘넥센타이어 스피드레이싱’ 최종 라운드 영암인터내셔널 서킷에서...
+                        </p>
+                        <span class="display_block borderlineBar javascript_Css_define"javascript_Css_define="
+                        0~720|720$margin-top:40fixed;width:100%;height:2fixed;background-color:#bbb^
+                        721~1240|1120$margin-top:11fixed;width:100%;height:2fixed;background-color:#bbb^
+                        1241~9999|1920$margin-top:23fixed;width:100%;height:2fixed;background-color:#bbb">
+                        </span>
+                    </div>
+                    <div class="swiper-slide position_relative_normal javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:100% !important;height:auto^
+                    721~1240|1120$width:100% !important;height:auto^
+                    1241~9999|1920$width:301px !important;height:auto;margin-right:20fixed">
+                        <img src="imgs/news2.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                        <p class="news_date javascript_Css_define"javascript_Css_define="
+                        0~720|720$font-size:13fixed;margin-top:13fixed;color:#6c6c6c6^
+                        721~1240|1120$font-size:13fixed;margin-top:13fixed;color:#6c6c6c^
+                        1241~9999|1920$font-size:13fixed;margin-top:13fixed;color:#6c6c6c">
+                        2022.11.02
+                        </p>
+                        <p class="news_date javascript_Css_define"javascript_Css_define="
+                        0~720|720$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600^
+                        721~1240|1120$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600^
+                        1241~9999|1920$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600">
+                        넥센타이어 ‘윈가드 스노보드팀’ 창단, 동계스포츠 저변 확대 ...
+                        </p>
+                        <span class="display_block borderlineBar javascript_Css_define"javascript_Css_define="
+                        0~720|720$margin-top:40fixed;width:100%;height:2fixed;background-color:#bbb^
+                        721~982|1120$margin-top:40fixed;width:100%;height:2fixed;background-color:#bbb^
+                        983~1240|1120$margin-top:11fixed;width:100%;height:2fixed;background-color:#bbb^
+                        1241~9999|1920$margin-top:23fixed;width:100%;height:2fixed;background-color:#bbb">
+                        </span>
+                    </div>
+                    <div class="swiper-slide position_relative_normal javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:100% !important;height:auto^
+                    721~1240|1120$width:100% !important;height:auto^
+                    1241~9999|1920$width:301px !important;height:auto;margin-right:20fixed">
+                        <img src="imgs/news3.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                        <p class="news_date javascript_Css_define"javascript_Css_define="
+                        0~720|720$font-size:13fixed;margin-top:13fixed;color:#6c6c6c6^
+                        721~1240|1120$font-size:13fixed;margin-top:13fixed;color:#6c6c6c^
+                        1241~9999|1920$font-size:13fixed;margin-top:13fixed;color:#6c6c6c">
+                        2022.10.31
+                        </p>
+                        <p class="news_date javascript_Css_define"javascript_Css_define="
+                        0~720|720$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600^
+                        721~1240|1120$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600^
+                        1241~9999|1920$font-size:15fixed;margin-top:14fixed;color:#6c6c6c;font-weight:600">
+                        넥센타이어, 미국 프로하키팀 ‘시카고블랙호크스’ 후원
+                        </p>
+                        <span class="display_block borderlineBar javascript_Css_define"javascript_Css_define="
+                        0~720|720$margin-top:40fixed;width:100%;height:2fixed;background-color:#bbb^
+                        721~982|1120$margin-top:40fixed;width:100%;height:2fixed;background-color:#bbb^
+                        983~1240|1120$margin-top:11fixed;width:100%;height:2fixed;background-color:#bbb^
+                        1241~9999|1920$margin-top:23fixed;width:100%;height:2fixed;background-color:#bbb">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="eventContainer javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;height:auto;margin-top:34fixed^
+        721~982|1120$width:100%;height:auto;margin-top:34fixed^
+        983~1240|1120$width:603response;height:auto^
+        1241~9999|1920$width:600response;height:auto">
+            <h2 class="articleTit javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:45response;padding-bottom:16response^
+            721~1240|1120$font-size:38fixed;padding-bottom:17fixed^
+            1241~9999|1920$font-size:45fixed;padding-bottom:17fixed">
+            Event
+            </h2>
+            <img src="imgs/event_banner_01.png" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:100%;height:auto^
+            721~1240|1120$width:100%;height:auto^
+            1241~9999|1920$width:100%;height:auto">
+        </div>
+    </div>
+</seciton>
+
+<section class="section5 flex_horizontal_flexStart colorwhite bgcolor_dark">
+    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger2 overflow_hidden"
+    javascript_Css_define="
+    0~720|720$width:100%;height:488response;padding-top:20response;padding-bottom:20response^
+    721~1240|1120$width:calc(100% / 2);height:auto;padding-top:58response;padding-bottom:58response^
+    1241~9999|1920$width:calc(100% / 3);height:auto;padding-top:58response;padding-bottom:58response"
+    targetdata='{
+        "event_per_effects":{
+            "mouseenter":[
+                {"imgFrameTarget001" :  {"animstyle":{"width":"120%","height":"120%"},"duration":400}},{"ptxtTarget001" :  {"instantstyle":{"margin-left":"10px","color":"#8020ef"},"duration":400 }},{"spantxtTarget001":{"instantstyle":{"margin-left":"10px","color":"#8020ef"},"duration":400}}         
+            ],
+            "mouseleave":[
+                {"imgFrameTarget001" :  {"animstyle":{"width":"100%","height":"100%"},"duration":400}},{"ptxtTarget001" :  {"instantstyle":{"margin-left":"0","color":"#fff"},"duration":400 }},{"spantxtTarget001":{"instantstyle":{"margin-left":"0","color":"#fff"},"duration":400}}                 
+            ]
+        }
+    }'>
+        <img src="imgs/service_01.jpg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)" targetindex="imgFrameTarget001"/>
+        <p class="service javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$font-size:18response;text-decoration:underline;padding-left:20response^
+        721~1240|1120$font-size:18fixed;text-decoration:underline;padding-left:60response^
+        1241~9999|1920$font-size:18fixed;text-decoration:underline;padding-left:60response" targetindex="ptxtTarget001">SERVICE</p>
+        <div class="linkview flex_horizontal_spaceBetween javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$padding-left:20response;padding-right:20response;font-size:24response;padding-top:340response^
+        721~1240|1120$padding-left:60response;padding-right:60response;font-size:30response;padding-top:156response^
+        1241~9999|1920$padding-left:60response;padding-right:70response;font-size:36response;padding-top:260response">
+            <span targetindex="spantxtTarget001">명품보증서 등록</span>
+            <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20response;height:40response^
+            721~1240|1120$width:12fixed;height:24fixed^
+            1241~9999|1920$width:12fixed;height:24fixed"/>
+        </div>
+    </div>
+    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger2 overflow_hidden"
+    javascript_Css_define="
+    0~720|720$width:100%;height:488response;padding-top:20response;padding-bottom:20response^
+    721~1240|1120$width:calc(100% / 2);height:auto;padding-top:58response;padding-bottom:58response^
+    1241~9999|1920$width:calc(100% / 3);height:auto;padding-top:58response;padding-bottom:58response"targetdata='{
+        "event_per_effects":{
+            "mouseenter":[
+                {"imgFrameTarget002" :  {"animstyle":{"width":"120%","height":"120%"},"duration":400}},{"ptxtTarget002" :  {"instantstyle":{"margin-left":"10px","color":"#8020ef"},"duration":400 }},{"spantxtTarget002":{"instantstyle":{"margin-left":"10px","color":"#8020ef"},"duration":400}}         
+            ],
+            "mouseleave":[
+                {"imgFrameTarget002" :  {"animstyle":{"width":"100%","height":"100%"},"duration":400}},{"ptxtTarget002" :  {"instantstyle":{"margin-left":"0","color":"#fff"},"duration":400 }},{"spantxtTarget002":{"instantstyle":{"margin-left":"0","color":"#fff"},"duration":400}}                 
+            ]
+        }
+    }'>
+        <img src="imgs/service_02.jpg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)" targetindex="imgFrameTarget002"/>
+        <p class="service javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$font-size:18response;text-decoration:underline;padding-left:20response^
+        721~1240|1120$font-size:18fixed;text-decoration:underline;padding-left:60response^
+        1241~9999|1920$font-size:18fixed;text-decoration:underline;padding-left:60response"targetindex="ptxtTarget002">SERVICE</p>
+        <div class="linkview flex_horizontal_spaceBetween javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$padding-left:20response;padding-right:20response;font-size:24response;padding-top:340response^
+        721~1240|1120$padding-left:60response;padding-right:60response;font-size:30response;padding-top:156response^
+        1241~9999|1920$padding-left:60response;padding-right:70response;font-size:36response;padding-top:260response">
+            <span targetindex="spantxtTarget002">타이어 테크</span>
+            <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20response;height:40response^
+            721~1240|1120$width:12fixed;height:24fixed^
+            1241~9999|1920$width:12fixed;height:24fixed"/>
+        </div>
+    </div>
+    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger2 overflow_hidden"
+    javascript_Css_define="
+    0~720|720$width:100%;height:488response;padding-top:20response;padding-bottom:20response^
+    721~1240|1120$width:calc(100% / 2);height:auto;padding-top:58response;padding-bottom:58response^
+    1241~9999|1920$width:calc(100% / 3);height:auto;padding-top:58response;padding-bottom:58response" targetdata='{
+        "event_per_effects":{
+            "mouseenter":[
+                {"imgFrameTarget003" :  {"animstyle":{"width":"120%","height":"120%"},"duration":400}},{"ptxtTarget003" :  {"instantstyle":{"margin-left":"10px","color":"#8020ef"},"duration":400 }},{"spantxtTarget003":{"instantstyle":{"margin-left":"10px","color":"#8020ef"},"duration":400}}         
+            ],
+            "mouseleave":[
+                {"imgFrameTarget003" :  {"animstyle":{"width":"100%","height":"100%"},"duration":400}},{"ptxtTarget003" :  {"instantstyle":{"margin-left":"0","color":"#fff"},"duration":400 }},{"spantxtTarget003":{"instantstyle":{"margin-left":"0","color":"#fff"},"duration":400}}                 
+            ]
+        }
+    }'>
+        <img src="imgs/service_03.jpg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)" targetindex="imgFrameTarget003"/>
+        <p class="service javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$font-size:18response;text-decoration:underline;padding-left:20response^
+        721~1240|1120$font-size:18fixed;text-decoration:underline;padding-left:60response^
+        1241~9999|1920$font-size:18fixed;text-decoration:underline;padding-left:60response" targetindex="ptxtTarget003">SERVICE</p>
+        <div class="linkview flex_horizontal_spaceBetween javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$padding-left:20response;padding-right:20response;font-size:24response;padding-top:340response^
+        721~1240|1120$padding-left:60response;padding-right:60response;font-size:30response;padding-top:156response^
+        1241~9999|1920$padding-left:60response;padding-right:70response;font-size:36response;padding-top:260response">
+            <span targetindex="spantxtTarget003">더 넥센유니버시티 투어신청</span>
+            <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20response;height:40response^
+            721~1240|1120$width:12fixed;height:24fixed^
+            1241~9999|1920$width:12fixed;height:24fixed"/>
+        </div>
+    </div>
+    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger overflow_hidden"
+    javascript_Css_define="
+    0~720|720$width:100%;height:488response;padding-top:20response;padding-bottom:20response^
+    721~1240|1120$width:calc(100% / 2);height:auto;padding-top:58response;padding-bottom:58response^
+    1241~9999|1920$width:calc(100% / 3);height:auto;padding-top:58response;padding-bottom:58response"
+    targetdata='{
+    "mouseenter":{
+        "style_datas":[
+            {"target":"imgFrameTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"120","units":"%","duration":100},{"property":"height","from":"100","to":"120","units":"%","duration":100}]},{"target":"ptxtTarget004","effectType":"instant","instant_parameters":{"color":"#8020ef","marginLeft":"10px"}},{"target":"spantxtTarget004","effectType":"instant","instant_parameters":{"color":"#8020ef","marginLeft":"10px"}}
+        ]
+    },
+    "mouseleave":{
+        "style_datas":[
+            {"target":"imgFrameTarget004","effectType":"animate","animate_parameters":[{"property":"width","from":"120","to":"100","units":"%","duration":100},{"property":"height","from":"120","to":"100","units":"%","duration":100}]},{"target":"ptxtTarget004","effectType":"instant","instant_parameters":{"color":"#fff","marginLeft":"0"}},{"target":"spantxtTarget004","effectType":"instant","instant_parameters":{"color":"#fff","marginLeft":"0"}}
+        ]
+    }
+    }'>
+        <img src="imgs/service_04.jpg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)" targetindex="imgFrameTarget004"/>
+        <p class="service javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$font-size:18response;text-decoration:underline;padding-left:20response^
+        721~1240|1120$font-size:18fixed;text-decoration:underline;padding-left:60response^
+        1241~9999|1920$font-size:18fixed;text-decoration:underline;padding-left:60response"targetindex="ptxtTarget004">SPORTS MARKETING</p>
+        <div class="linkview flex_horizontal_spaceBetween javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$padding-left:20response;padding-right:20response;font-size:24response;padding-top:340response^
+        721~1240|1120$padding-left:60response;padding-right:60response;font-size:30response;padding-top:156response^
+        1241~9999|1920$padding-left:60response;padding-right:70response;font-size:36response;padding-top:260response">
+            <span targetindex="spantxtTarget004">Manchester City</span>
+            <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20response;height:40response^
+            721~1240|1120$width:12fixed;height:24fixed^
+            1241~9999|1920$width:12fixed;height:24fixed"/>
+        </div>
+    </div>
+    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger overflow_hidden"
+    javascript_Css_define="
+    0~720|720$width:100%;height:488response;padding-top:20response;padding-bottom:20response^
+    721~1240|1120$width:calc(100% / 2);height:auto;padding-top:58response;padding-bottom:58response^
+    1241~9999|1920$width:calc(100% / 3);height:auto;padding-top:58response;padding-bottom:58response"targetdata='{
+        "mouseenter":{
+            "style_datas":[
+                {"target":"imgFrameTarget005","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"120","units":"%","duration":100},{"property":"height","from":"100","to":"120","units":"%","duration":100}]},{"target":"ptxtTarget005","effectType":"instant","instant_parameters":{"color":"#8020ef","marginLeft":"10px"}},{"target":"spantxtTarget005","effectType":"instant","instant_parameters":{"color":"#8020ef","marginLeft":"10px"}}
+            ]
+        },
+        "mouseleave":{
+            "style_datas":[
+                {"target":"imgFrameTarget005","effectType":"animate","animate_parameters":[{"property":"width","from":"120","to":"100","units":"%","duration":100},{"property":"height","from":"120","to":"100","units":"%","duration":100}]},{"target":"ptxtTarget005","effectType":"instant","instant_parameters":{"color":"#fff","marginLeft":"0"}},{"target":"spantxtTarget005","effectType":"instant","instant_parameters":{"color":"#fff","marginLeft":"0"}}
+            ]
+        }
+        }'>
+        <img src="imgs/service_05.jpg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)" targetindex="imgFrameTarget005"/>
+        <p class="service javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$font-size:18response;text-decoration:underline;padding-left:20response^
+        721~1240|1120$font-size:18fixed;text-decoration:underline;padding-left:60response^
+        1241~9999|1920$font-size:18fixed;text-decoration:underline;padding-left:60response"targetindex="ptxtTarget005">SPORTS MARKETING</p>
+        <div class="linkview flex_horizontal_spaceBetween javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$padding-left:20response;padding-right:20response;font-size:24response;padding-top:340response^
+        721~1240|1120$padding-left:60response;padding-right:60response;font-size:30response;padding-top:156response^
+        1241~9999|1920$padding-left:60response;padding-right:70response;font-size:36response;padding-top:260response">
+            <span targetindex="spantxtTarget005">넥센-세인트나인 마스터즈</span>
+            <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20response;height:40response^
+            721~1240|1120$width:12fixed;height:24fixed^
+            1241~9999|1920$width:12fixed;height:24fixed"/>
+        </div>
+    </div>
+    <div class="imgFrame javascript_Css_define position_relative_normal javascript_StyleEffectTrigger overflow_hidden"
+    javascript_Css_define="
+    0~720|720$width:100%;height:488response;padding-top:20response;padding-bottom:20response^
+    721~1240|1120$width:calc(100% / 2);height:auto;padding-top:58response;padding-bottom:58response^
+    1241~9999|1920$width:calc(100% / 3);height:auto;padding-top:58response;padding-bottom:58response"targetdata='{
+        "mouseenter":{
+            "style_datas":[
+                {"target":"imgFrameTarget006","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"120","units":"%","duration":100},{"property":"height","from":"100","to":"120","units":"%","duration":100}]},{"target":"ptxtTarget006","effectType":"instant","instant_parameters":{"color":"#8020ef","marginLeft":"10px"}},{"target":"spantxtTarget006","effectType":"instant","instant_parameters":{"color":"#8020ef","marginLeft":"10px"}}
+            ]
+        },
+        "mouseleave":{
+            "style_datas":[
+                {"target":"imgFrameTarget006","effectType":"animate","animate_parameters":[{"property":"width","from":"120","to":"100","units":"%","duration":100},{"property":"height","from":"120","to":"100","units":"%","duration":100}]},{"target":"ptxtTarget006","effectType":"instant","instant_parameters":{"color":"#fff","marginLeft":"0"}},{"target":"spantxtTarget006","effectType":"instant","instant_parameters":{"color":"#fff","marginLeft":"0"}}
+            ]
+        }
+        }'>
+        <img src="imgs/service_06.jpg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$width:100%;height:100%;position:absolute;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)"targetindex="imgFrameTarget006"/>
+        <p class="service javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$font-size:18response;text-decoration:underline;padding-left:20response^
+        721~1240|1120$font-size:18fixed;text-decoration:underline;padding-left:60response^
+        1241~9999|1920$font-size:18fixed;text-decoration:underline;padding-left:60response"targetindex="ptxtTarget006">SPORTS MARKETING</p>
+        <div class="linkview flex_horizontal_spaceBetween javascript_Css_define position_relative_zindex3"
+        javascript_Css_define="
+        0~720|720$padding-left:20response;padding-right:20response;font-size:24response;padding-top:340response^
+        721~1240|1120$padding-left:60response;padding-right:60response;font-size:30response;padding-top:156response^
+        1241~9999|1920$padding-left:60response;padding-right:70response;font-size:36response;padding-top:260response">
+            <span targetindex="spantxtTarget006">NEXEN MotorSports</span>
+            <img src="imgs/arrowicon3.svg" class="display_block javascript_Css_define"javascript_Css_define="
+            0~720|720$width:20response;height:40response^
+            721~1240|1120$width:12fixed;height:24fixed^
+            1241~9999|1920$width:12fixed;height:24fixed"/>
+        </div>
+    </div>
+</section>
+
+<section class="section6 javascript_Css_define"
+javascript_Css_define="
+0~520|720$padding-top:96fixed;padding-bottom:96fixed;background-color:#242424;padding-left:20response;padding-right:20response^
+521~720|720$padding-top:96fixed;padding-bottom:96fixed;background-color:#242424;padding-left:80response;padding-right:80response^
+721~1240|1120$padding-top:112fixed;padding-bottom:156fixed;background-color:#242424;padding-left:120response;padding-right:120response^
+1241~9999|1920$padding-top:108fixed;padding-bottom:113fixed;background-color:#242424">
+    <div class="inner javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$width:100%^
+    721~1240|1120$width:100%^
+    1241~1400|1400$width:1340response;margin:0 auto^
+    1401~9999|1920$width:1380fixed;margin:0 auto">
+        <div class="swiper-container slide2
+        mobile_width_100_percent tablet_width_100_percent pc_width_100_percent
+        ">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide  colorwhite position_relative_normal javascript_Css_define"
+                javascript_Css_define="
+                0~520|720$width:100%;height:auto^
+                521~720|720$width:calc(100vw * (430/720));height:auto;margin-right:20fixed^
+                721~1240|1120$width:430px !important;height:auto;margin-right:20fixed^
+                1241~9999|1920$width:430px !important;height:auto;margin-right:20fixed">
+                    <div class="snslink flex_horizontal_flexStart javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$padding-bottom:15fixed^
+                    721~1240|1120$padding-bottom:15fixed^
+                    1241~9999|1920$padding-bottom:17fixed">
+                        <img src="imgs/facebookicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:11fixed;height:24fixed;margin-right:9response^
+                        721~1240|1120$width:11fixed;height:24fixed;margin-right:9response^
+                        1241~9999|1920$width:11fixed;height:24fixed;margin-right:9response"/>
+                        <span class="txtString javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$font-size:16fixed^
+                        721~1240|1120$font-size:16fixed^
+                        1241~9999|1920$font-size:16fixed">facebook</span>
+                        <div class="leaveSpace javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$flex:1 0 auto;display:flex;justify-content:flex-end^
+                        721~1240|1120$flex:1 0 auto;display:flex;justify-content:flex-end^
+                        1241~9999|1920$flex:1 0 auto;display:flex;justify-content:flex-end">
+                            <img src="imgs/plusicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                            0~720|720$width:11fixed;height:11fixed^
+                            721~1240|1120$width:11fixed;height:11fixed^
+                            1241~9999|1920$width:11fixed;height:11fixed"/>
+                        </div>
+                    </div>
+                    <img src="imgs/sns_01.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <p class="sns_tit javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:20fixed;margin-top:19fixed;color:#6c6c6c6^
+                    721~1240|1120$font-size:20fixed;margin-top:19fixed^
+                    1241~9999|1920$font-size:20fixed;margin-top:19fixed">
+                    넥센타이어, 독일 BMW ‘2 시리즈 액티브 투어러’에신차용 타이어 공급
+                    </p>
+                    <p class="sns_desc javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:16fixed;margin-top:19fixed;color:#969698^
+                    721~1240|1120$font-size:14fixed;margin-top:18fixed;color:#969698^
+                    1241~9999|1920$font-size:14fixed;margin-top:18fixed;color:#969698">
+                    넥센타이어가 독일의 프리미엄 카메이커 ‘BMW’의 ‘2 Series Active Tourer’
+                    2세대 차량에 신차용 타이러를 공급한다고 3일 밝혔다. ‘2 Series Active
+                    Tourer(2 시리즈 액티브 투어러)’는 BMW 최초의 전륜...
+                    </p>
+                    <p class="sns_date javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:15fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed^
+                    721~1240|1120$font-size:12fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed^
+                    1241~9999|1920$font-size:12fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed">
+                    2022.10.01
+                    </p>
+                </div>  
+                <div class="swiper-slide  colorwhite position_relative_normal javascript_Css_define"
+                javascript_Css_define="
+                0~520|720$width:100%;height:auto^
+                521~720|720$width:calc(100vw * (430/720));height:auto;margin-right:20fixed^
+                721~1240|1120$width:430px !important;height:auto;margin-right:20fixed^
+                1241~9999|1920$width:430px !important;height:auto;margin-right:20fixed">
+                    <div class="snslink flex_horizontal_flexStart javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$padding-bottom:15fixed^
+                    721~1240|1120$padding-bottom:15fixed^
+                    1241~9999|1920$padding-bottom:17fixed">
+                        <img src="imgs/instaIcon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:11fixed;height:24fixed;margin-right:9response^
+                        721~1240|1120$width:11fixed;height:24fixed;margin-right:9response^
+                        1241~9999|1920$width:11fixed;height:24fixed;margin-right:9response"/>
+                        <span class="txtString javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$font-size:16fixed^
+                        721~1240|1120$font-size:16fixed^
+                        1241~9999|1920$font-size:16fixed">Instagram</span>
+                        <div class="leaveSpace javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$flex:1 0 auto;display:flex;justify-content:flex-end^
+                        721~1240|1120$flex:1 0 auto;display:flex;justify-content:flex-end^
+                        1241~9999|1920$flex:1 0 auto;display:flex;justify-content:flex-end">
+                            <img src="imgs/plusicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                            0~720|720$width:11fixed;height:11fixed^
+                            721~1240|1120$width:11fixed;height:11fixed^
+                            1241~9999|1920$width:11fixed;height:11fixed"/>
+                        </div>
+                    </div>
+                    <img src="imgs/sns_02.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <p class="sns_tit javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:20fixed;margin-top:19fixed;color:#6c6c6c6^
+                    721~1240|1120$font-size:20fixed;margin-top:19fixed^
+                    1241~9999|1920$font-size:20fixed;margin-top:19fixed">
+                    Smooth and Powerful Braking
+                    </p>
+                    <p class="sns_desc javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:16fixed;margin-top:19fixed;color:#969698^
+                    721~1240|1120$font-size:14fixed;margin-top:18fixed;color:#969698^
+                    1241~9999|1920$font-size:14fixed;margin-top:18fixed;color:#969698">
+                    멈춰야 할 떄를 안다는 것, N’FERA AU7 EV #전기차타이어 #EV타이어 #
+                    넥센EV타이어 #강력한 #제동력 #NFERA_AU7_EV #넥센타이어
+                    #WeGotYou #NexenTire #Tires #타이어추천 #타이어교환 #타이어교체
+                    #타이어맛집 #타이어테크
+                    </p>
+                    <p class="sns_date javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:15fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed^
+                    721~1240|1120$font-size:12fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed^
+                    1241~9999|1920$font-size:12fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed">
+                    2022.09.23
+                    </p>
+                </div>  
+                <div class="swiper-slide  colorwhite position_relative_normal javascript_Css_define"
+                javascript_Css_define="
+                0~520|720$width:100%;height:auto^
+                521~720|720$width:calc(100vw * (430/720));height:auto;margin-right:20fixed^
+                721~1240|1120$width:430px !important;height:auto;margin-right:20fixed^
+                1241~9999|1920$width:430px !important;height:auto;margin-right:20fixed">
+                    <div class="snslink flex_horizontal_flexStart javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$padding-bottom:15fixed^
+                    721~1240|1120$padding-bottom:15fixed^
+                    1241~9999|1920$padding-bottom:17fixed">
+                        <img src="imgs/utubeicon_.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                        0~720|720$width:11fixed;height:24fixed;margin-right:9response^
+                        721~1240|1120$width:11fixed;height:24fixed;margin-right:9response^
+                        1241~9999|1920$width:11fixed;height:24fixed;margin-right:9response"/>
+                        <span class="txtString javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$font-size:16fixed^
+                        721~1240|1120$font-size:16fixed^
+                        1241~9999|1920$font-size:16fixed">Youtube</span>
+                        <div class="leaveSpace javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$flex:1 0 auto;display:flex;justify-content:flex-end^
+                        721~1240|1120$flex:1 0 auto;display:flex;justify-content:flex-end^
+                        1241~9999|1920$flex:1 0 auto;display:flex;justify-content:flex-end">
+                            <img src="imgs/plusicon.svg" class="display_block javascript_Css_define"javascript_Css_define="
+                            0~720|720$width:11fixed;height:11fixed^
+                            721~1240|1120$width:11fixed;height:11fixed^
+                            1241~9999|1920$width:11fixed;height:11fixed"/>
+                        </div>
+                    </div>
+                    <img src="imgs/sns_03.jpg" class="display_block mobile_width_100_percent tablet_width_100_percent pc_width_100_percent"/>
+                    <p class="sns_tit javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:20fixed;margin-top:19fixed;color:#6c6c6c6^
+                    721~1240|1120$font-size:20fixed;margin-top:19fixed^
+                    1241~9999|1920$font-size:20fixed;margin-top:19fixed">
+                    넥센에게 시키세요. 전기차도 역시!
+                    </p>
+                    <p class="sns_desc javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:16fixed;margin-top:19fixed;color:#969698^
+                    721~1240|1120$font-size:14fixed;margin-top:18fixed;color:#969698^
+                    1241~9999|1920$font-size:14fixed;margin-top:18fixed;color:#969698">
+                    편안한 게 좋아, 거친 걸 선호하지, 쉿! 지금 명상중 트렌드를 따르지타이어가
+                    내 취향쯤은 맞춰줘야 하지 않겠어? 당신의 차가 무엇이든 넥센에게
+                    시키세요 교체, 관리, 렌탈까지 클릭 한 번으로! 넥센타이어
+                    </p>
+                    <p class="sns_date javascript_Css_define"javascript_Css_define="
+                    0~720|720$font-size:15fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed^
+                    721~1240|1120$font-size:12fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed^
+                    1241~9999|1920$font-size:12fixed;margin-top:20fixed;color:#969698;letter-spacing:-0.4fixed">
+                    2022.10.03
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="javascript_Css_define bgcolor_dark"
+javascript_Css_define="
+0~720|720$padding-left:20response;padding-right:20response;padding-top:41fixed;padding-bottom:56fixed^
+721~1240|1120$padding-left:30response;padding-right:30response;padding-top:32fixed;padding-bottom:31fixed^
+1241~9999|1920$padding-left:106response;padding-right:106response;padding-top:32fixed;padding-bottom:23fixed">
+    <div class="innerContainer javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$width:100%;display:block;padding-bottom:20fixed;border-bottom-width:1fixed;border-color:#2e2e2e;border-style:solid^
+    721~1240|1120$width:100%;display:flex;justify-content:space-between;padding-bottom:13fixed;border-bottom-width:1fixed;border-color:#2e2e2e;border-style:solid^
+    1241~9999|1920$width:100%;display:flex;justify-content:space-between;padding-bottom:13fixed;border-bottom-width:1fixed;border-color:#2e2e2e;border-style:solid">
+        <ul class="footermenu 
+        mobile_flex_horizontal_Center tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+        >
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">고객문의</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">명품보증서등록</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">타이어 찾기</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">판매점 찾기</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">넥스트레벨</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">이용약관</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">개인정보처리방침</a>
+            </li>
+        </ul>
+        <div class="selectwrap javascript_Css_define position_relative_normal"javascript_Css_define="
+        0~720|720$width:114fixed;height:22fixed;margin:0 auto^
+        721~1240|1120$width:114fixed;height:22fixed^
+        1241~9999|1920$width:114fixed;height:22fixed">
+            <select class="footerSelectbox   javascript_Css_define
+            mobile_width_100_percent mobile_height_100_percent
+            tablet_width_100_percent tablet_height_100_percent
+            pc_width_100_percent pc_height_100_percent"
+            javascript_Css_define="
+            0~720|720$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center^
+            721~1240|1120$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-algin:center^
+            1241~9999|1920$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center">
+                <option value='Family Site' selected>Family Site</option>
+                <option value='넥스트레벨'>넥스트레벨</option>
+                <option value='타이어테크'>타이어테크</option>
+                <option value='(주)넥센'>(주)넥센</option>
+                <option value='KNN'>KNN</option>
+                <option value='네이버블로그'>네이버블로그</option>
+                <option value='페이스북'>페이스북</option>
+                <option value='유튜브'>유튜브</option>
+                <option value='네이버포스트'>네이버포스트</option>
+            </select>  
+            <img src="imgs/arrowdownicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0^
+            721~1240|1120$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0^
+            1241~9999|1920$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0"/>
+        </div>
+    </div>
+    <div class="innerContainer flex_horizontal_spaceBetween">
+        <div class="leftSide javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;order:2^
+        721~1240|1120$order:1^
+        1241~9999|1920$order:1">
+            <div class="footerinfoWrap flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$display:block^
+            721~1240|1120$padding-top:12fixed^
+            1241~9999|1920$padding-top:10fixed">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">사업자등록번호 621-81-10769
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">대표번호 055 370 5114
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">이메일 문의하기
+                </p> 
+            </div>
+            <div class="footerinfo flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$display:block^
+            721~1240|1120$padding-top:12fixed^
+            1241~9999|1920$padding-top:10fixed">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">렌탈 서비스  1855 0100
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">고객만족센터  1577 2781
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">서비스센터 (서울: 02 6671 7003, 부산: 051 929 0042)
+                </p> 
+            </div>   
+        </div>
+        <img src="imgs/footer_logo.svg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:200fixed;height:48fixed;margin:0 auto;margin-top:10fixed;order:1;margin-bottom:18fixed^
+        721~1240|1120$width:200fixed;height:48fixed;margin-top:10fixed;order:2^
+        1241~9999|1920$width:200fixed;height:48fixed;margin-top:10fixed;order:2"/>
+    </div>
+    <p class="footerCopyright javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$margin-top:40fixed;font-size:13fixed;color:#949295^
+    721~1240|1120$margin-top:34fixed;font-size:13fixed;color:#949295^
+    1241~9999|1920$margin-top:34fixed;font-size:13fixed;color:#949295">
+    Copyright ⓒ 2022 Nexen tire. all rights reserved.
+    </p>
+</footer>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/common_function.js"></script>
+<script src="js/animate.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+
+<script>
+ var swiper=new Swiper('.mainbanner',{
+        //slidesPerView:'auto',
+        autoResize: false,
+        pagination:{
+            el : '.swiper-pagination-styleBar1',
+        },
+        navigation:{
+            nextEl : '.swiper-button-next-style1',
+            prevEl : '.swiper-button-prev-style1'
+        },
+        effect: "cube",
+       grabCursor: true,
+        cubeEffect: {
+          shadow: true,
+          slideShadows: true,
+          shadowOffset: 20,
+          shadowScale: 0.94,
+        },
+        /*
+        on:{
+            slideChangeTransitionEnd : function(){
+                console.log("현재 슬라이드카운트 index:",this.activeIndex+1);
+                let target=document.querySelector(`[targetindex='javascript_swipercustom_slidecountTarget_0']`);
+                target.innerText = this.activeIndex+1 < 10? '0'+(this.activeIndex+1) : (this.activeIndex+1);
+            }
+        }*/
+    
+    })
+
+    var swiper2=new Swiper('.slide1',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },*/
+        /*navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var swiper3=new Swiper('.slide2',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+    var section3Swiper=new Swiper('.section3Swiper',{
+        effect: "flip",
+        grabCursor: true,
+        pagination:{
+            el:'.swiper-pagination_section3',
+            clickable:"true",
+            renderBullet: function(index,className){
+                return '<span class="'+className+'">'+(index+1)+"</span>";
+            }
+        },
+       
+    })
+    var swiper4=new Swiper('.slide3',{
+        slidesPerView:'auto',
+        autoResize: true,
+        /*pagination:{
+            el :'.swiper-pagination_style6',
+            type :'progressbar'
+        },
+        navigation:{
+            nextEl : '.swiper-button-next2',
+            prevEl : '.swiper-button-prev2'
+        },*/
+    })
+
+</script>
+</body>
+</html>

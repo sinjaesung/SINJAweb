@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,minimum-scale=1">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <link rel="stylesheet" href="../swiper-4.5.0/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="css/style.css"/>
+    <!--<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>-->
+</head>
+<body >
+<div id="pageLoader">
+    <img src="imgs/Circle-Loading.svg"/>
+</div> 
+
+<header
+class="position_absolute bgcolor_black2 colorwhite javascript_Css_define zindex999"
+javascript_Css_define="
+0~9999|1920$left:0;top:0;width:100%">
+    <div class="inner javascript_Css_define
+    mobile_flex_horizontal_spaceBetween tablet_flex_horizontal_spaceBetween pc_flex_horizontal_spaceBetween"
+    javascript_Css_define="
+    0~720|720$padding-left:11response;padding-right:17response;padding-top:13fixed;padding-bottom:6fixed^
+    721~1240|1120$padding-left:11response;padding-right:14response;padding-top:13fixed;padding-bottom:6fixed^
+    1241~9999|1920$padding-left:43response;padding-right:43response;padding-top:26fixed;padding-bottom:26fixed;flex-flow:row nowrap">
+
+        <div class="search_area bgcolor_black2 color_white zindex9999 javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$position:absolute;width:100%;padding-top:40fixed;padding-bottom:40fixed;top:100%;left:0^
+        721~1240|1120$position:absolute;width:100%;padding-top:40fixed;padding-bottom:40fixed;top:100%;left:0^
+        1241~9999|1920$position:absolute;width:100%;padding-top:40fixed;padding-bottom:40fixed;top:100%;left:0"
+        
+        targetindex="searchuiTarget0"
+        style="display:none">
+            <div class="inner
+            tablet_flex_horizontal_Center
+            pc_flex_horizontal_Center">
+                <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:90%;margin:0 auto^
+                721~1240|1120$width:520fixed^
+                1241~9999|1920$width:520fixed">
+                    <div class="searchwrap  position_relative_normal colorwhite display_block
+                    mobile_flex_horizontal_spaceBetween mobile_width_100percent
+                    tablet_flex_horizontal_spaceBetween tablet_width_100_percent 
+                    pc_flex_horizontal_spaceBetween pc_width_100_percent">
+                        <input type="search" name="search_keyword" class="display_block colorwhite javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$font-size:15fixed;line-height:1.5;width:80%;padding-left:20response;padding-right:20response^
+                        721~1240|1120$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed^
+                        1241~9999|1920$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed"
+                        targetindex="searchform_inputkeyword" placeholder="검색어를 입력해 주세요"/>
+                        <button  class="display_block bgcolor_transparent javascript_Css_define"
+                        javascript_Css_define="
+                        0~720|720$width:20fixed;height:20fixed;margin-right:20response^
+                        721~1240|1120$width:20fixed;height:20fixed;margin-right:20fixed^
+                        1241~9999|1920$width:20fixed;height:20fixed;margin-right:20fixed">
+                            <img src="imgs/searchIcon.svg" class="display_block
+                            mobile_width_100_percent mobile_height_100_percent
+                            tablet_width_100_percent tablet_height_100_percent
+                            pc_width_100_percent pc_height_100_percent"/>
+                        </button>
+                        <span class="display_block bgcolor_white  javascript_Css_define
+                        mobile_width_100_percent  tablet_width_100_percent  pc_width_100_percent"
+                        javascript_Css_define="
+                        0~720|720$height:1fixed;margin-top:16fixed^
+                        721~1240|1120$height:1fixed;margin-top:20fixed^
+                        1241~9999|1920$height:1fixed;margin-top:20fixed"></span>
+                    </div>
+                </form>
+        
+                <img src="imgs/xButton.svg" class="display_block cursorpointer javascript_Css_define    
+                javascript_StyleEffectTrigger"
+                javascript_Css_define="
+                0~720|720$width:28fixed;height:28fixed;margin:0 auto;margin-top:60response^
+                721~1240|1120$width:32fixed;height:32fixed;margin-left:50response^
+                1241~9999|1920$width:32fixed;height:32fixed;margin-left:220response" 
+                targetdata='{
+                    "click":{
+                        "style_datas":[
+                            {"target":"searchuiTarget0","effectType":"instant","instant_parameters":{"display":"none","opacity":0} }
+                        ]
+                    }
+                }'/>
+            </div>
+        </div>
+
+        <a href='main.html'><img src="imgs/logo.svg" class="display_block javascript_Css_define"javascript_Css_define="
+        0~720|720$width:181fixed;height:36fixed^
+        721~1240|1120$width:181fixed;height:36fixed^
+        1241~9999|1920$width:170fixed;height:34fixed"/></a>
+        <ul class="headermenu flex_horizontal_flexStart">
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed" 
+            targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},
+                     {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#8020ef"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget1_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},
+                    {"target":"widthsizeTarget1_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">PRODUCT</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget1_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget2_header","effectType":"instant","instant_parameters":{"background-color":"#00d79d"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget2_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]}
+                    ]
+                }
+            }'>
+                <a href="#">SERVICE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget2_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget3_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget3_header","effectType":"instant","instant_parameters":{"background-color":"#df9050"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget3_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget3_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">INFORMATION</a> 
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget3_header"></span>
+            </li>
+            <li class="item javascript_Css_define javascript_StyleEffectTrigger position_relative_normal"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget4_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget4_header","effectType":"instant","instant_parameters":{"background-color":"#dfdf50"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget4_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget4_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">COMMUNICATION</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget4_header"></span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget5_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget5_header","effectType":"instant","instant_parameters":{"background-color":"#f0e9a2"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget5_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget5_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="#">NEWS&EVENT</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget5_header"></span>
+            </li>
+            <li class="item javascript_Css_define position_relative_normal javascript_StyleEffectTrigger"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$margin-right:36response;font-size:15fixed"targetdata='{
+                "mouseenter":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget6_header","effectType":"animate","animate_parameters":[{"property":"width","from":"0","to":"100","units":"%","duration":80},{"property":"height","from":"0","to":"3","units":"px","duration":90}]},{"target":"widthsizeTarget6_header","effectType":"instant","instant_parameters":{"background-color":"#20a0d8"}}
+                    ]
+                },
+                "mouseleave":{
+                    "style_datas": [
+                    {"target":"widthsizeTarget6_header","effectType":"animate","animate_parameters":[{"property":"width","from":"100","to":"0","units":"%","duration":80},{"property":"height","from":"3","to":"0","units":"px","duration":90}]},{"target":"widthsizeTarget6_header","effectType":"instant","instant_parameters":{"background-color":"#fff"}}
+                    ]
+                }
+            }'>
+                <a href="main.html">NEXENTIRE</a>
+                <span class="display_block javascript_Css_define"javascript_Css_define="
+                0~9999|1120$width:0%;height:0;position:absolute;top:110%;left:0"targetindex="widthsizeTarget6_header"></span>
+            </li>
+        </ul>
+
+        <div class="headerRight flex_horizontal_flexStart">
+            <ul class="usermenu flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~1240|1120$display:none^
+            1241~9999|1920$color:#86827f">
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:43response;padding-right:43response;^
+                721~1240|1120$width:920px,padding-left:40px,padding-right:40px,padding-top:26fixed,padding-bottom:27response^
+                1241~9999|1920$padding-right:11response;font-size:13fixed">
+                    <a href="#">Login</a>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:43response;padding-right:43response;^
+                721~1240|1120$width:920px,padding-left:40px,padding-right:40px,padding-top:26fixed,padding-bottom:27response^
+                1241~9999|1920$padding-right:11response;font-size:13fixed">
+                    <a href="#">Membership</a>
+                </li>
+                <li class="item javascript_Css_define"javascript_Css_define="
+                0~720|720$padding-left:43response;padding-right:43response;^
+                721~1240|1120$width:920px,padding-left:40px,padding-right:40px,padding-top:26fixed,padding-bottom:27response^
+                1241~9999|1920$font-size:13fixed">
+                    <a href="#">Global Site</a>
+                </li>
+            </ul>
+            <span class="sepdeco javascript_Css_define"javascript_Css_define="
+            0~720|720$display:none^
+            721~1240|1120$display:none^
+            1241~9999|1920$display:block;background-color:#4c4c4c;margin-left:11response;margin-right:20response;width:1fixed;height:18fixed">
+            </span>
+            <img src="imgs/searchIcon.svg" class="display_block cursorpointer javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~9999|1120$width:24fixed;height:24fixed"
+            targetdata='{
+                "click":{
+                    "style_datas":[
+                        {"target":"searchuiTarget0","effectType":"animate","animate_parameters":[{"property":"opacity","from":"0","to":"100","units":"%","duration":100}]},{"target":"searchuiTarget0","effectType":"instant","instant_parameters":{"display":"block"} }
+                    ]
+                }
+            }'/>
+            <img src="imgs/menuIcon.svg" class="cursorpointer display_block javascript_Css_define javascript_StyleEffectTrigger"
+            javascript_Css_define="
+            0~720|720$width:28fixed;height:23fixed;margin-left:5response^
+            721~1240|1120$width:28fixed;height:23fixed;margin-left:5response^
+            1241~9999|1920$display:none"
+            targetdata='{
+                "click":{
+                    "style_datas":[
+                        {"target":"nexentire_navigation","effectType":"animate","animate_parameters":[{"property":"left","from":"-160","to":"0","units":"%","duration":100}]},{"target":"navBg","effectType":"instant","instant_parameters":{"display":"block"}}
+                    ]
+                }
+            }'/>
+        </div>
+    </div>
+</header>
+
+<div class="naviWrap zindex999"targetindex='naviWraps'>
+    <div class="popupbg javascript_StyleEffectTrigger"
+    targetindex="navBg"style="display:none"
+    targetdata='{
+        "click":{
+            "style_datas":[
+                {"target":"nexentire_navigation","effectType":"animate","animate_parameters":[{"property":"left","from":"0","to":"-160","units":"%","duration":100}]},{"target":"navBg","effectType":"instant","instant_parameters":{"display":"none"}}
+            ]
+        }
+    }'></div>
+    <nav class="position_absolute zindex999 javascript_Css_define bgcolor_black2"javascript_Css_define="
+    0~720|720$width:520response;top:55fixed;height:80vh^
+    721~1240|1120$width:420fixed;top:55fixed;height:80vh^
+    1241~9999|1920$width:420fixed;top:55fixed;height:80vh;padding-top:40fixed"
+    targetindex="nexentire_navigation"
+    style="left:-160%">
+    
+        <ul class="menulist position_relative_zindex3  javascript_Css_define"javascript_Css_define="
+        0~9999|1120$padding-top:20fixed;padding-left:20response;padding-right:20response">
+            <li class="fontweight_500  javascript_Css_define"
+            javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>PRODUCT</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>SERVICE</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>INFORMATION</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>COMMUNICATION</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='#'>NEWS&EVENT</a></li>
+            <li class="fontweight_500  javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:19fixed;margin-bottom:24fixed;color:#eaeaea"><a href='main.html'>NEXENTIRE</a></li>
+        </ul>
+
+        <div class="usercontrol colorwhite bordercolorwhite position_relative_zindex3 borderstyle_solid javascript_Css_define"
+        javascript_Css_define="
+        0~9999|1120$padding-left:36response;padding-right:20response">
+            <p class="login fontweight_500 borderstyle_solid bordercolorwhite javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:15fixed;padding-bottom:10fixed;color:#dad2d2"><a href='#'>Login</a></p>
+            <p class="login fontweight_500 borderstyle_solid bordercolorwhite javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:15fixed;padding-bottom:10fixed;color:#dad2d2"><a href='#'>Membership</a></p>
+            <p class="login fontweight_500 borderstyle_solid bordercolorwhite javascript_Css_define"javascript_Css_define="
+            0~9999|1120$font-size:15fixed;color:#dad2d2"><a href='#'>Global Site</a></p>
+        </div>
+    </nav>
+</div>
+
+<div class="WrappingContainer bgcolor_dark">
+    <section class="search_section bgcolor_dark colorwhite javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$padding-top:383fixed;padding-bottom:83fixed;width:570response;margin:0 auto^
+    721~1240|1120$padding-top:550fixed;padding-bottom:150fixed;width:1080response;margin:0 auto^
+    1241~9999|1920$padding-top:550fixed;padding-bottom:150fixed;width:1600response;margin:0 auto">
+        <div class="inner
+        tablet_flex_horizontal_Center
+        pc_flex_horizontal_Center">
+            <form action="search.html" class="searchformtype1 display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:90%;margin:0 auto^
+            721~1240|1120$width:520fixed^
+            1241~9999|1920$width:520fixed">
+                <div class="searchwrap  position_relative_normal  display_block borderstyle_solid bordercolorgray2
+                mobile_flex_horizontal_spaceBetween 
+                tablet_flex_horizontal_spaceBetween
+                pc_flex_horizontal_spaceBetween javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$width:100%;padding-top:20fixed;padding-bottom:20fixed;border-radius:20fixed;border-width:1fixed^
+                721~1240|1120$width:520fixed;padding-top:30fixed;padding-bottom:30fixed;border-radius:20fixed;border-width:1fixed^
+                1241~9999|1920$width:520fixed;padding-top:30fixed;padding-bottom:30fixed;border-radius:20fixed;border-width:1fixed">
+                    <input type="search" name="search_keyword" class="display_block  colorwhite javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$font-size:15fixed;line-height:1.5;width:80%;padding-left:20response;padding-right:20response^
+                    721~1240|1120$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed^
+                    1241~9999|1920$font-size:18fixed;line-height:1.5;width:80%;padding-left:20fixed;padding-right:20fixed"
+                    targetindex="searchform_inputkeyword|searchpage_intialize_searchkeyword" placeholder="please input search"/>
+                    <button  class="display_block bgcolor_transparent javascript_Css_define"
+                    javascript_Css_define="
+                    0~720|720$width:20fixed;height:20fixed;margin-right:20response^
+                    721~1240|1120$width:20fixed;height:20fixed;margin-right:20fixed^
+                    1241~9999|1920$width:20fixed;height:20fixed;margin-right:20fixed">
+                        <img src="imgs/searchIcon.svg" class="display_block
+                        mobile_width_100_percent mobile_height_100_percent
+                        tablet_width_100_percent tablet_height_100_percent
+                        pc_width_100_percent pc_height_100_percent"/>
+                    </button>
+                    <!--<span class="display_block bgcolor_white 
+                    mobile_width_100_percent mobilefixed_height_1 mobilefixed_margintop_16
+                    tablet_width_100_percent tlfixed_height_1 tlfixed_margintop_20
+                    pc_width_100_percent pcfixed_height_1 pcfixed_margintop_20 "></span>-->
+                </div>
+            </form>
+
+            <!--<img src="img/xbutton2.svg" class="display_block cursorpointer
+            mobilefixed_width_28 mobilefixed_height_28 mobile_response_margintop_60_important mobile_marginhorizontal_auto
+            tlfixed_width_32 tlfixed_height_32 tl_response_marginleft_50
+            pcfixed_width_32 pcfixed_height_32 pc_response_marginleft_220
+            
+            javascript_effectTrigger"
+            targetdata='{"effectTarget":"slidedownEffectTarget0_search";"event_per_effects":{"click":"slideup_simple"}}'/>-->
+        </div>
+        <p class=" textalignCenter javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$font-size:17fixed;margin-top:22fixed^
+        721~1240|1120$font-size:22fixed;margin-top:32fixed^
+        1241~9999|1920$font-size:22fixed;margin-top:32fixed">keyword: <span class="colorblue" targetindex="searchpage_intialize_searchkeyword"></span> to results</p>
+    </section>
+
+    <section class="searchresult bgcolor_dark  colorwhite javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:570response;margin:0 auto^
+        721~1240|1120$width:1020response;margin:0 auto^
+        1241~9999|1920$width:1600response;margin:0 auto">
+        <div class="inner
+        ">
+            <h3 class="tits textalignCenter javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:22fixed;line-height:1.5^
+            721~1240|1120$font-size:38fixed;line-height:1.5^
+            1241~9999|1920$font-size:42fixed;line-height:1.5"> search results</h3>
+            <p class="res_cnt javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed^
+            721~1240|1120$font-size:20fixed^
+            1241~9999|1920$font-size:22fixed">total <span targetindex="searchcnt_intialize_value">0</span> cnts</p>
+
+            <span class="display_block bgcolor_white javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:100%;height:1fixed;margin-top:10fixed^
+            721~1240|1120$width:100%;height:1fixed;margin-top:16fixed^
+            1241~9999|1920$width:100%;height:1fixed;margin-top:16fixed"></span>
+            <div class="contents javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$padding-top:60fixed;padding-bottom:60fixed^
+            721~1240|1120$padding-top:120fixed;padding-bottom:120fixed^
+            1241~9999|1920$padding-top:120fixed;padding-bottom:120fixed">
+
+            </div>
+        </div>
+        <!--<span class="display_block bgcolor_white javascript_Css_define"
+        javascript_Css_define="
+        0~600|600$width:100%;height:2fixed;margin-top:83fixed^
+        601~1400|1200$width:100%;height:2fixed;margin-top:83fixed^
+        1401~9999|1920$width:100%;height:2fixed;margin-top:83fixed"></span>-->
+    </section>
+
+</div>
+
+
+<footer class="javascript_Css_define bgcolor_dark"
+javascript_Css_define="
+0~720|720$padding-left:20response;padding-right:20response;padding-top:41fixed;padding-bottom:56fixed^
+721~1240|1120$padding-left:30response;padding-right:30response;padding-top:32fixed;padding-bottom:31fixed^
+1241~9999|1920$padding-left:106response;padding-right:106response;padding-top:32fixed;padding-bottom:23fixed">
+    <div class="innerContainer javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$width:100%;display:block;padding-bottom:20fixed;border-bottom-width:1fixed;border-color:#2e2e2e;border-style:solid^
+    721~1240|1120$width:100%;display:flex;justify-content:space-between;padding-bottom:13fixed;border-bottom-width:1fixed;border-color:#2e2e2e;border-style:solid^
+    1241~9999|1920$width:100%;display:flex;justify-content:space-between;padding-bottom:13fixed;border-bottom-width:1fixed;border-color:#2e2e2e;border-style:solid">
+        <ul class="footermenu 
+        mobile_flex_horizontal_Center tablet_flex_horizontal_flexStart pc_flex_horizontal_flexStart"
+        >
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">고객문의</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">명품보증서등록</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">타이어 찾기</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">판매점 찾기</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">넥스트레벨</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">이용약관</a>
+            </li>
+            <li class="item javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$font-size:14fixed;color:#949295;padding-bottom:22fixed;padding-left:8response;padding-right:8response^
+            721~1240|1120$font-size:14fixed;color:#949295;padding-right:16response^
+            1241~9999|1920$font-size:14fixed;color:#949295;padding-right:16response">
+                <a href="#">개인정보처리방침</a>
+            </li>
+        </ul>
+        <div class="selectwrap javascript_Css_define position_relative_normal"javascript_Css_define="
+        0~720|720$width:114fixed;height:22fixed;margin:0 auto^
+        721~1240|1120$width:114fixed;height:22fixed^
+        1241~9999|1920$width:114fixed;height:22fixed">
+            <select class="footerSelectbox   javascript_Css_define
+            mobile_width_100_percent mobile_height_100_percent
+            tablet_width_100_percent tablet_height_100_percent
+            pc_width_100_percent pc_height_100_percent"
+            javascript_Css_define="
+            0~720|720$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center^
+            721~1240|1120$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-algin:center^
+            1241~9999|1920$background-color:white;font-size:12fixed;color:#7b6045;padding-left:15fixed;padding-right:15fixed;vertical-align:center">
+                <option value='Family Site' selected>Family Site</option>
+                <option value='넥스트레벨'>넥스트레벨</option>
+                <option value='타이어테크'>타이어테크</option>
+                <option value='(주)넥센'>(주)넥센</option>
+                <option value='KNN'>KNN</option>
+                <option value='네이버블로그'>네이버블로그</option>
+                <option value='페이스북'>페이스북</option>
+                <option value='유튜브'>유튜브</option>
+                <option value='네이버포스트'>네이버포스트</option>
+            </select>  
+            <img src="imgs/arrowdownicon.svg" class="display_block javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0^
+            721~1240|1120$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0^
+            1241~9999|1920$width:9fixed;height:6fixed;position:absolute;right:6fixed;top:0;bottom:0;margin:auto 0"/>
+        </div>
+    </div>
+    <div class="innerContainer flex_horizontal_spaceBetween">
+        <div class="leftSide javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:100%;order:2^
+        721~1240|1120$order:1^
+        1241~9999|1920$order:1">
+            <div class="footerinfoWrap flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$display:block^
+            721~1240|1120$padding-top:12fixed^
+            1241~9999|1920$padding-top:10fixed">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">사업자등록번호 621-81-10769
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">대표번호 055 370 5114
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">이메일 문의하기
+                </p> 
+            </div>
+            <div class="footerinfo flex_horizontal_flexStart javascript_Css_define"
+            javascript_Css_define="
+            0~720|720$display:block^
+            721~1240|1120$padding-top:12fixed^
+            1241~9999|1920$padding-top:10fixed">
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">렌탈 서비스  1855 0100
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;padding-bottom:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">고객만족센터  1577 2781
+                </p> 
+                <span class="sepbar javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$display:none^
+                721~1240|1120$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646^
+                1241~9999|1920$width:1fixed;height:14fixed;margin-left:12response;margin-right:12response;background-color:#464646">
+                </span>
+                <p class="txt javascript_Css_define"
+                javascript_Css_define="
+                0~720|720$font-size:13fixed;color:#949295^
+                721~1240|1120$font-size:13fixed;color:#949295^
+                1241~9999|1920$font-size:13fixed;color:#949295">서비스센터 (서울: 02 6671 7003, 부산: 051 929 0042)
+                </p> 
+            </div>   
+        </div>
+        <img src="imgs/footer_logo.svg" class="display_block javascript_Css_define"
+        javascript_Css_define="
+        0~720|720$width:200fixed;height:48fixed;margin:0 auto;margin-top:10fixed;order:1;margin-bottom:18fixed^
+        721~1240|1120$width:200fixed;height:48fixed;margin-top:10fixed;order:2^
+        1241~9999|1920$width:200fixed;height:48fixed;margin-top:10fixed;order:2"/>
+    </div>
+    <p class="footerCopyright javascript_Css_define"
+    javascript_Css_define="
+    0~720|720$margin-top:40fixed;font-size:13fixed;color:#949295^
+    721~1240|1120$margin-top:34fixed;font-size:13fixed;color:#949295^
+    1241~9999|1920$margin-top:34fixed;font-size:13fixed;color:#949295">
+    Copyright ⓒ 2022 Nexen tire. all rights reserved.
+    </p>
+</footer>
+
+<script src="../swiper-4.5.0/dist/js/swiper.min.js"></script>
+<script src="js/common_function.js"></script>
+<script src="js/animate.js"></script>
+
+<script src="js/form_related.js"></script>
+<script src="js/commonui_javascript.js"></script>
+<script src="js/CssStyleDefine_layout.js"></script>
+
+<script>
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <style>
+        *{box-sizing:border-box;}
+        #test1{
+            width:400px;height:400px;background-color:red;
+        }
+        #test2{
+            width:500px;height:500px;background-color:blue;
+        }
+    </style>
+</head>
+<body>
+    <div id="test1">
+        히히ㅣㅎ
+    </div>
+    <div id="test2">
+        히히ㅣㅎggg
+    </div>
+
+<script>
+$('#test1').animate({
+    'width':'80%',
+    'height':"290px",
+    //'background-color':"#2090df"
+},2000);
+$('#test1').animate({
+    'width':'50%',
+    'height':"190px"
+},2000);
+
+</script>
+
+</body>
+</html>
