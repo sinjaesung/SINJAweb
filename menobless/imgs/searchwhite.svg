@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" style="enable-background:new 0 0 24 24;" xml:space="preserve">
+<style type="text/css">
+	.st0 { fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF; }
+	.st1 { fill:#FFFFFF; }
+</style>
+<path class="st0" d="M11.5,16c3,0,5.5-2.5,5.5-5.5c0-3-2.5-5.5-5.5-5.5C8.5,5,6,7.5,6,10.5C6,13.5,8.5,16,11.5,16z M11.5,20
+	c5.2,0,9.5-4.3,9.5-9.5C21,5.3,16.7,1,11.5,1C6.3,1,2,5.3,2,10.5C2,15.7,6.3,20,11.5,20z"/>
+<path class="st1" d="M18.3,15.5l4.7,4.7L20.2,23l-4.7-4.7L18.3,15.5z"/>
+</svg>
