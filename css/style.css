@@ -1,0 +1,84 @@
+/*swiper pagination common style project per local stylesss*/
+.swiper-pagination .swiper-pagination-bullet{
+    background-color:#858585;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color:#fe5040
+}
+.swiper-pagination-styleBar1 .swiper-pagination-bullet{
+    background-color:#c9d7e2;  width:40px !important; height:6px !important;
+    margin:0 5px !important;border-radius:0 !important;
+}
+.swiper-pagination-styleBar1 .swiper-pagination-bullet-active{
+    background-color:#fa2829; width:40px !important; height:6px !important;
+    margin:0 5px !important;border-radius:0 !important;
+}
+
+.swiper-pagination_section3 .swiper-pagination-bullet{
+    display:inline-flex !important;  flex-flow:row wrap;justify-content:center;width:40px !important;height:40px !important; border-radius:50% !important;border:1px solid #c2cad3 !important;font-size:15px; color:#c2cad3; background-color:transparent;align-items:center;
+}
+.swiper-pagination_section3 .swiper-pagination-bullet-active{
+    border:1px solid #ff6820 !important; color:#ff6820
+}
+
+
+.swiper-pagination_style1.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#303031 !important
+}
+.swiper-pagination_style1.swiper-pagination-progressbar{
+    background:#ccc !important;
+}
+.swiper-pagination_style2.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:white !important
+}
+.swiper-pagination_style2.swiper-pagination-progressbar{
+    background:#e7cfbe !important;
+}
+
+.swiper-pagination_style3.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#2e2e2e !important
+}
+.swiper-pagination_style3.swiper-pagination-progressbar{
+    background:#cacaca !important;
+}
+.swiper-pagination_style4.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#2e2e2e !important
+}
+.swiper-pagination_style4.swiper-pagination-progressbar{
+    background:#cacaca !important;
+}
+.swiper-pagination_style5.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#2e2e2e !important
+}
+.swiper-pagination_style5.swiper-pagination-progressbar{
+    background:#cacaca !important;
+}
+.swiper-pagination_style6.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background:#ff6620 !important;height:150% !important; top:auto !important; bottom:0
+}
+.swiper-pagination_style6.swiper-pagination-progressbar{
+    background:#cfcecd !important;
+}
+
+
+.swiper-button-prev-style1{
+    background-image:url('../imgs/slideArrowPrev.svg') !important;background-position:center !important;
+    background-size:contain !important;
+}
+.swiper-button-next-style1{
+    background-image:url('../imgs/slideArrowNext.svg') !important;background-position:center !important;
+    background-size:contain !important;
+}
+
+@media all and (max-width:720px){
+
+
+}
+@media all and (min-width:721px) and (max-width:1240px){
+    
+}
+
+
+@media all and (min-width:1241px){
+   
+}

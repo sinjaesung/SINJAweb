@@ -1,0 +1,312 @@
+//for문!!!
+//1~3  for from thorough
+
+//fixed..
+/*width,height,paddingleft,paddingright,paddingTop,paddingBottom,
+marginbottom,marginright,marginleft,margintop
+borderleft,borderright,bordertop,borderbottom, 
+bordertopleftradius,bordertoprightradius,borderbottomleftradius,borderbottomrightradius,borderradius
+fontsize, lineheight
+positiontop,posiotionbottom,positionright,positionleft
+positiontopminus,posiitonbottomminus,positionrightminus,positionleftminus
+*/
+@media screen and (max-width:720px){
+    @for $i from 1 through 2000 {
+        .mobilefixed_width#{$i}{
+            width:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_height#{$i}{
+            height:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_paddingLeft#{$i}{
+            padding-left:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_paddingRight#{$i}{
+            padding-right:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_paddingTop#{$i}{
+            padding-top:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_paddingBottom#{$i}{
+            padding-bottom:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_marginBottom#{$i}{
+            margin-bottom:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_marginTop#{$i}{
+            margin-top:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_marginRight#{$i}{
+            margin-right:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_marginLeft#{$i}{
+            margin-left:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderBottom#{$i}{
+            border-bottom-width:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderTop#{$i}{
+            border-top-width:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderRight#{$i}{
+            border-right-width:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderLeft#{$i}{
+            border-left-width:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_bordertopleftRadius#{$i}{
+            border-top-left-radius:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_bordertoprightRadius#{$i}{
+            border-top-right-radius:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderbottomleftRadius#{$i}{
+            border-bottom-left-radius:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderbottomrightRadius#{$i}{
+            border-bottom-right-radius:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_borderRadius#{$i}{
+            border-radius:  1px * $i;
+        }
+    }
+    @for $i from 1 through 400 {
+        .mobilefixed_fontSize#{$i}{
+            font-size:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positiontop#{$i}{
+            top:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positionbottom#{$i}{
+            bottom:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positionleft#{$i}{
+            left:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positionright#{$i}{
+            right:  1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positiontopminus#{$i}{
+            top:  -1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positionbottomminus#{$i}{
+            bottom:  -1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positionleftminus#{$i}{
+            left:  -1px * $i;
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobilefixed_positionrightminus#{$i}{
+            right:  -1px * $i;
+        }
+    }
+    
+    @for $i from 1 through 2000 {
+        .mobileresponse_width#{$i}{
+            width:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_height#{$i}{
+            height:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_paddingLeft#{$i}{
+            padding-left:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_paddingRight#{$i}{
+            padding-right:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_paddingTop#{$i}{
+            padding-top:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_paddingBottom#{$i}{
+            padding-bottom: calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_marginBottom#{$i}{
+            margin-bottom:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_marginTop#{$i}{
+            margin-top:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_marginRight#{$i}{
+            margin-right: calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_marginLeft#{$i}{
+            margin-left:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderBottom#{$i}{
+            border-bottom-width:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderTop#{$i}{
+            border-top-width:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderRight#{$i}{
+            border-right-width:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderLeft#{$i}{
+            border-left-width:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_bordertopleftRadius#{$i}{
+            border-top-left-radius:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_bordertoprightRadius#{$i}{
+            border-top-right-radius:   calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderbottomleftRadius#{$i}{
+            border-bottom-left-radius:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderbottomrightRadius#{$i}{
+            border-bottom-right-radius:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_borderRadius#{$i}{
+            border-radius: calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 400 {
+        .mobileresponse_fontSize#{$i}{
+            font-size:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positiontop#{$i}{
+            top:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positionbottom#{$i}{
+            bottom:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positionleft#{$i}{
+            left:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positionright#{$i}{
+            right:  calc(100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positiontopminus#{$i}{
+            top:  calc(-100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positionbottomminus#{$i}{
+            bottom:  calc(-100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positionleftminus#{$i}{
+            left:  calc(-100vw  *($i / 720));
+        }
+    }
+    @for $i from 1 through 2000 {
+        .mobileresponse_positionrightminus#{$i}{
+            right:  calc(-100vw  *($i / 720));
+        }
+    }
+    
+    
+    @for $i from 1 through 400 {
+        .mobile_fontSizeRem#{$i}{
+            font-size:  0.1rem * $i;
+        }
+    }
+    @for $i from 1 through 400 {
+        .mobile_lineHeight#{$i}{
+            line-height:  0.1 * $i;
+        }
+    }
+}
+
+
+
+
+
