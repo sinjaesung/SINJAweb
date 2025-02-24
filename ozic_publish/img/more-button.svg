@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140" height="35" viewBox="0 0 140 35">
+    <defs>
+        <filter id="prefix__a" width="121.4%" height="185.7%" x="-10.7%" y="-42.9%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.921280571 0 0 0 0 0.921280571 0 0 0 0 0.921280571 0 0 0 0.5 0"/>
+        </filter>
+        <rect id="prefix__b" width="140" height="35" x="0" y="0" rx="17.5"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="#FFF" xlink:href="#prefix__b"/>
+        <text fill="#2398FF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="10">
+            <tspan x="43.636" y="19">더</tspan> <tspan x="52.286" y="19" font-family="Helvetica"> </tspan> <tspan x="55.064" y="19">많이</tspan>
+        </text>
+        <text fill="#414141" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="10">
+            <tspan x="76" y="19">발견하기</tspan>
+        </text>
+        <g fill="#2398FF">
+            <path d="M9.511 11.96c.092-.184.013-.413-.175-.512l-.466-.244c.65-.215 1.24-.577 1.725-1.062 1.766-1.766 1.708-4.698-.13-6.535-1.837-1.838-4.77-1.896-6.535-.13-1.766 1.766-1.708 4.698.13 6.535.15.151.39.156.535.01.145-.144.14-.384-.01-.535C3.048 7.951 3 5.5 4.476 4.023c1.477-1.476 3.928-1.428 5.464.109 1.536 1.536 1.585 3.987.108 5.464-.406.406-.9.71-1.445.889l.238-.48c.091-.185.013-.415-.176-.514-.188-.098-.414-.029-.506.156l-.63 1.275c-.074.148-.037.326.078.44.028.029.06.053.097.072l1.301.682c.188.099.415.03.506-.155z" transform="translate(27 11)"/>
+        </g>
+    </g>
+</svg>

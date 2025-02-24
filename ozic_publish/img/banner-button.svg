@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="132" height="38" viewBox="0 0 132 38">
+    <defs>
+        <filter id="prefix__a" width="143.5%" height="266.7%" x="-21.7%" y="-83.3%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0.16 0"/>
+        </filter>
+        <text id="prefix__b" fill="#FFF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="12" font-weight="normal">
+            <tspan x="0" y="11">직무</tspan> <tspan x="20.76" y="11" font-family="Helvetica"> </tspan> <tspan x="24.094" y="11">제안하기</tspan>
+        </text>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#292929" d="M18.957 0h112.707v37.913H18.957C8.487 37.913 0 29.426 0 18.957 0 8.487 8.487 0 18.957 0z" transform="translate(.336 .087)"/>
+        <g>
+            <g fill="#FFF" transform="translate(.336 .087) translate(24.094 9.957)">
+                <use filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+                <use xlink:href="#prefix__b"/>
+            </g>
+            <g transform="translate(.336 .087) translate(24.094 9.957) translate(77 2)">
+                <circle cx="7.5" cy="7.5" r="7.5" fill="#FFF"/>
+                <path fill="#292929" d="M8.39 7.5L6.196 5.854c-.26-.196-.26-.512 0-.707.261-.196.682-.196.943 0l2.667 2c.26.195.26.511 0 .707l-2.667 2c-.13.097-.3.146-.471.146-.17 0-.342-.049-.472-.146-.26-.196-.26-.512 0-.707L8.391 7.5z"/>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="320" height="40" viewBox="0 0 320 40">
+    <defs>
+        <filter id="prefix__a" width="106.9%" height="156.9%" x="-3.4%" y="-25.9%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.0163043478 0 0 0 0 0.0163043478 0 0 0 0 0.0163043478 0 0 0 0.18 0"/>
+        </filter>
+        <filter id="prefix__d" width="135.7%" height="330.8%" x="-17.9%" y="-115.4%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0.16 0"/>
+        </filter>
+        <linearGradient id="prefix__c" x1="30.413%" x2="84.656%" y1="49.72%" y2="53.222%">
+            <stop offset="0%" stop-color="#6739FF"/>
+            <stop offset="99.955%" stop-color="#00C8FF"/>
+        </linearGradient>
+        <text id="prefix__e" fill="#EEE" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="10" font-weight="normal">
+            <tspan x="113.297" y="21">주문</tspan> <tspan x="130.597" y="21" font-family="Helvetica"> </tspan> <tspan x="133.375" y="21">정보</tspan> <tspan x="150.675" y="21" font-family="Helvetica"> </tspan> <tspan x="153.453" y="21">자세히보기</tspan>
+        </text>
+        <rect id="prefix__b" width="320" height="38.684" x="0" y="0" rx="19.342"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(0 .467)">
+        <use fill="#000" filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+        <use fill="url(#prefix__c)" xlink:href="#prefix__b"/>
+        <path fill="#FFF" d="M208.39 19.342l-2.195-1.91c-.26-.227-.26-.594 0-.821.261-.227.682-.227.943 0l2.667 2.32c.26.228.26.595 0 .821l-2.667 2.321c-.13.114-.3.17-.471.17-.17 0-.342-.056-.472-.17-.26-.226-.26-.593 0-.82l2.196-1.91z"/>
+        <g fill="#EEE">
+            <use filter="url(#prefix__d)" xlink:href="#prefix__e"/>
+            <use xlink:href="#prefix__e"/>
+        </g>
+    </g>
+</svg>

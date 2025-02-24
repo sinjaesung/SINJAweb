@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76" height="24" viewBox="0 0 76 24">
+    <defs>
+        <text id="b" fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="10" font-weight="bold">
+            <tspan x="18.465" y="16">전체 듣기</tspan>
+        </text>
+        <filter id="a" width="139.5%" height="300%" x="-19.7%" y="-100%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0.16 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="76" height="24" fill="#565656" rx="12"/>
+        <g fill="#FFF">
+            <use filter="url(#a)" xlink:href="#b"/>
+            <use xlink:href="#b"/>
+        </g>
+    </g>
+</svg>

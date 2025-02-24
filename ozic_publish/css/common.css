@@ -1,0 +1,944 @@
+/*font처리*/
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap');
+
+/*폰트스타일 기타스타일 공통  [[기기별 전역범위사용]]*/
+.cursorpointer{
+    cursor:pointer
+}
+.linethrough{
+    text-decoration:line-through
+}
+.fontweight_100{
+    font-weight:100
+}
+.fontweight_200{
+    font-weight:200
+}
+.fontweight_300{
+    font-weight:300
+}
+.fontweight_400{
+    font-weight:400
+}
+.fontweight_500{
+    font-weight:500
+}
+.fontweight_600{
+    font-weight:600
+}
+.fontweight_700{
+    font-weight:700
+}
+.fontweight_800{
+    font-weight:800
+}
+.fontweight_900{
+    font-weight:900
+}
+
+/*기타 제어  [[기기별 전역범위사용]]*/
+.zindex50{
+    z-index:50
+}
+.zindex550{
+    z-index:550
+}
+.zindex999{
+    z-index:999
+}
+.zindex9999{
+    z-index:9999
+}
+.display_block{
+    display:block
+}
+
+.display_none{
+    display:none;
+}
+.borderstyle_solid{
+    border-style:solid;
+}
+.borderstyle_dotted{
+    border-style:dotted
+}
+.text-null{
+    opacity:0
+}
+.radio_element{
+    display:none !important
+}
+.checkbox_element{
+    display:none !important
+}
+.float_right{
+    float:right !important;
+}
+.float_left{
+    float:left !important;
+}
+
+
+/*공통적 위치제어관련   [[기기별 전역범위사용]]*/
+.position_relative_zindex3{
+    position:relative;z-index:3
+}
+.position_relative_normal{
+    position:relative;
+}
+.position_absolute{
+    position:absolute;
+}
+.position_fixed{
+    position:fixed;
+}
+
+/*특수적인 효과 ,어떤 특정효과   [[기기별 전역범위사용]]*/
+.box_shadow{
+    box-shadow:0 1px 7px 0 rgba(4,4,4,0.18)
+}
+.itemRadius{
+    position:relative;background-color:transparent;
+}
+.itemRadius .borderradiusDeco{
+    width:100%;height:100%;position:absolute;left:0%;top:0%;z-index:2; border-color:rgba(230,230,230,0.5);border-style:solid;background-color:transparent;border-radius:50%
+}
+.itemRadius img{
+    z-index:0
+}
+.shadow_blur{
+    width:100%;height:100%;display:block;position:absolute;left:0;top:0;background-color:rgba(30,30,30,0.3);z-index:1
+}
+.shadow_blur2{
+    width:100%;height:100%;display:block;position:absolute;left:0;top:0;background:linear-gradient(114deg, rgba(0,0,0,0.8) 7%, rgba(0,0,0,0.2) 83%);z-index:1
+}
+.ozicbutton{
+    background:linear-gradient(127deg ,#6739ff 30%,#00c8ff 106%);color:white;
+    margin:0 auto;
+}
+.ozicgradient{
+    background:linear-gradient(127deg ,#6739ff 30%,#00c8ff 106%);
+}
+.blackgradient{
+    background:linear-gradient(to bottom,#a4a5a7,#363733);
+}
+.ozicborderstyle_blue{
+    border-color:#2398ff
+}
+.oziccolor_blue{
+    color:#2398ff
+}
+
+.deco_highlight{
+    background-color:#3e3e3e !important;color:white !important;
+}
+.traiangle1{
+    border-top-color:transparent !important;transform:translateY(30%)
+}
+ .traiangle2{
+    border-top-color:transparent !important;transform:translateY(30%)
+}
+
+@keyframes rotate360{
+    from{
+        transform:rotateZ(0deg)
+    }
+    to{
+        transform:rotateZ(360deg)
+    }
+}
+@keyframes rotate180{
+    from{
+        transform:rotateZ(0deg)
+    }
+    to{
+        transform:rotateZ(180deg)
+    }
+ }
+.rotate360_infinite{
+    animation-name:rotate360;animation-timing-function:linear;
+    animation-duration:1.5s;animation-direction:normal;animation-iteration-count:infinite;
+}
+.rotate180_animation{
+    animation-name:rotate180;animation-timing-function:linear;
+    animation-duration:0.5s;animation-direction:normal;animation-fill-mode: forwards;
+}
+.rotate90_fix{
+    transform:rotateZ(90deg)
+}
+.rotate180_fix{
+    transform:rotateZ(180deg)
+}
+
+
+/*swiper pagination common style project per local stylesss*/
+.swiper-pagination .swiper-pagination-bullet{
+    background-color:#c7c7c7;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+    background-color:#fe1020
+}
+
+
+/*색상관련 공통 색상스타일 project pers  [[기기별 전역범위사용]]*/
+.bgcolor_graywhite{
+    background-color:#f8f8f8
+}
+.bgcolor_transparent{
+    background-color:transparent !important;
+}
+.bgcolor_white{
+    background-color:white;
+}
+.bgcolor_gray{
+    background-color:#eee
+}
+.bgcolor_gray1{
+    background-color:#858585
+}
+.bgcolor_gray2{
+    background-color:#565656
+}
+.bgcolor_yellow{
+    background-color:#ffe812
+}
+.bgcolor_green{
+    background-color:#01c73c 
+}
+.bgcolor_black{
+    background-color:#565656
+}
+.bgcolor_black1{
+    background-color:#414141
+}
+.bgcolor_dark{
+    background-color:#000
+}
+.bgcolor_blue{
+    background-color:#2398ff
+}
+.bgcolor_ozicgradient1{
+    background:linear-gradient(136deg, #6739ff 30%, #00c8ff 120%)
+}
+.colorwhite{
+    color:white;
+}
+.colorblack{
+    color:#565656
+}
+.colorblack1{
+    color:#414141
+}
+.colorgray{
+    color:#a1a1a1
+}
+.colorgray1{
+    color:#858585
+}
+.colorgray2{
+    color:#eee
+}
+.colorred{
+    color:#ff2e5a
+}
+.bgcolorred{
+    background-color:#ff2e5a
+}
+.bordercolorblack{
+    border-color:#565656
+}
+.bordercolorblack1{
+    border-color:#414141
+}
+.bordercolorgray{
+    border-color:#a1a1a1
+}
+.bordercolorgray1{
+    border-color:#858585
+}
+.bordercolorgray2{
+    border-color:#f3f3f3
+}
+.bordercolorred{
+    border-color:#ff2e5a
+}
+.bordercolortransparent{
+    border-color:transparent
+}
+
+/*배경이미지 이미지관련처리(viewing)   [[기기별 전역범위사용]]*/
+.css_background_cover_center{
+    background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.img_background_cover_center{
+    position:absolute;width:100%;height:100%;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)
+}
+.img_background_cover_width_center{
+    position:absolute;width:100%;height:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)
+}
+.img_background_cover_height_center{
+    position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:50%;transform:translateX(-50%) translateY(-50%)
+}
+.img_background_cover_height_right{
+    position:absolute;height:100%;width:auto;display:block;z-index:0;right:0;top:50%;transform:translateX(0%) translateY(-50%)
+}
+.img_background_cover_width_right{
+    position:absolute;height:auto;width:100%;display:block;z-index:0;right:0;top:50%;transform:translateX(0%) translateY(-50%)
+}
+.img_background_cover_width_center_top{
+    position:absolute;width:100%;height:auto;display:block;z-index:0;left:50%;top:0%;transform:translateX(-50%)
+}
+.img_background_cover_height_center_top{
+    position:absolute;height:100%;width:auto;display:block;z-index:0;left:50%;top:0;transform:translateX(-50%)
+}
+
+
+
+@media all and (max-width:480px){
+    .container{
+        width:100%;height:auto;display:block; margin:0 auto;overflow:hidden;min-height:100vh;position:relative
+    }
+
+    /* 레이아웃 관련 기기별로 다를수있으므로 분기스타일지정가능토록 필요 레이아웃 [[기기별 분기별 공통스타일]]*/
+.mobile_overflow_auto{
+    overflow-y:auto
+}
+.mobile_overflow_hidden{
+    overflow:hidden !important;
+}
+.mobile_overflow_visible{
+    overflow:visible !important
+}
+
+.mobile_textalignCenter{
+    text-align:center !important;
+}
+.mobile_textalignLeft{
+    text-align:left !important;
+}
+.mobile_textalignRight{
+    text-align:right !important;
+}
+.mobile_textoverflow_prevent_singlerow{
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.mobile_marginhorizontal_auto{
+    margin:0 auto
+}
+
+.mobile_positiontop_0{
+    top:0 !important;
+}
+.mobile_positionbottom_0{
+    bottom:0 !important;
+}
+.mobile_positionright_0{
+    right:0 !important;
+}
+.mobile_positionleft_0{
+    left:0 !important;
+}
+.mobile_positiontop_100percent{
+    top:100% !important;
+}
+.mobile_positionright_100percent{
+    right:100% !important;
+}
+.mobile_positionbottom_100percent{
+    bottom:100% !important;
+}
+.mobile_positionleft_100percent{
+    left:100% !important;
+}
+
+.mobile_Xoverflow_horizontal_list{
+    display:block;white-space:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch
+}
+.mobile_Xoverflow_horizontal_list::-webkit-scrollbar{
+    display:none;
+}
+.mobile_Xoverflow_horizontal_list .item{
+    display:inline-block; white-space:normal;
+}
+.mobile_Xoverflow_horizontal_list .item > *{
+    white-space:normal;
+}
+.mobile_Xoverflow_horizontal_list_scrollvisible{
+    display:block;white-space:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch
+}
+.mobile_Xoverflow_horizontal_list_scrollvisible .item{
+    display:inline-block; white-space:normal;
+}
+.mobile_Xoverflow_horizontal_list_scrollvisible .item > *{
+    white-space:normal;
+}
+.mobile_width_100_percent{
+    width:100% !important;
+}
+.mobile_height_100_percent{
+    height:100% !important
+}
+
+.mobile_flex_horizontal_flexEnd{
+    justify-content:flex-end;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.mobile_flex_horizontal_flexStart{
+    justify-content:flex-start;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.mobile_flex_horizontal_spaceBetween{
+    justify-content:space-between;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.mobile_flex_horizontal_Center{
+    justify-content:center;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.mobile_flex_alignitems_flexStart{
+    align-items:flex-start !important;display:flex;flex-flow:row wrap;align-content:flex-start
+}
+.mobile_flex_alignitems_flexEnd{
+    align-items:flex-end !important;display:flex;flex-flow:row wrap;align-content:flex-end
+}
+.mobile_flex_nowrap{
+    flex-flow:row nowrap;
+}
+/*요소 크기 제어 초기화 특정연산 공통적 사용(모바일,모바일태블릿,피시,피시고정)   [[기기별 전역범위사용]]*/
+.mobile_auto_height{
+    height:auto !important;
+}
+.mobile_width_auto{
+    width:auto !important;;
+}
+.mobile_height_auto{
+    height:auto !important;
+}
+.mobile_width_null{
+    width:0 !important;
+}
+.mobile_height_null{
+    height:0 !important;
+}
+.mobile_padding_null{
+    padding:0  !important;
+}
+.mobile_margin_null{
+    margin:0 !important;
+}
+.mobile_border_null{
+    border:0 !important;
+}
+.mobile_onlyview{
+    display:block;
+}
+.tablet_onlyview{
+    display:none
+}
+.pc_onlyview{
+    display:none
+}
+
+    .box_shadow{
+        box-shadow:0 calc(100vw *(1/360)) calc(100vw *(7/360)) 0 rgba(4,4,4,0.18)
+    }
+    .textshadow1{
+        text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .bottom_decoline_shadow{
+        box-shadow:0 calc(100vw *(7/360)) calc(100vw *(8/360)) 0 rgba(69,69,69,0.08)
+    }
+    /*서브헤더*/
+    .sub_header{
+        width:100%; display:flex;flex-flow:row nowrap;justify-content:flex-start;position:relative;border-color:#e7e7e7;border-style:solid;
+    }
+    .sub_header .back_btn{
+        position:absolute;
+    }
+    .sub_header .page_title{
+        text-align:center;margin:0 auto
+    }
+    /*헤더*/
+    .header{
+        width:100%;height:auto;display:flex;flex-flow:row nowrap;justify-content:space-between;position:relative; align-items:center;
+    }
+    .header .menubar{
+    }
+    .header .sitelogo{
+    }
+    .header .carticon{
+        position:relative;
+    }
+    .carticon .cart{
+        display:block;
+    }
+    .carticon .cartcnt{
+        position:absolute;right:0;top:0;border-radius:50%;background-color:#ff2e5a;display:flex;flex-flow:row wrap;justify-content:center;align-items:center; color:white;
+    }
+
+    /*푸터*/
+    .footer{
+        background-color:#f3f3f3
+    }
+    .footer ul li a{
+        color:#a1a1a1
+    }
+    .footer .content{
+        color:#a1a1a1
+    }
+    .footer .copyright{
+        color:#a1a1a1
+    }
+    .footer ul .dot{
+        background-color:#a1a1a1; border-radius:50%;display:block;
+    }
+
+    /*네비게이션*/
+    .nav_container{
+        background:linear-gradient(41deg,#6739ff 13%,#4469ff 26%,#1f9cff 42%,#09bcff 54%,#00c8ff 67%);
+        min-height:100vh
+    }
+    .nav_container .alrambtn{
+        background-color:white;color:#414141
+    }
+    .nav_container .alramcnt{
+        color:white; background-color:#fe1020; border-radius:50%;transform:translateX(20%) translateY(-50%)
+    }
+    .nav_container .navibanner .info_area{
+        background-color:rgba(0,0,0,0.5);
+    }
+
+}
+
+@media all and (min-width:481px) and (max-width:1148px){
+    .container{
+        width:100%;height:auto;display:block; margin:0 auto;overflow:hidden;min-height:100vh;position:relative
+    }
+
+
+    /* 레이아웃 관련 기기별로 다를수있으므로 분기스타일지정가능토록 필요 레이아웃 [[기기별 분기별 공통스타일]]*/
+.tablet_overflow_auto{
+    overflow-y:auto
+}
+.tablet_overflow_hidden{
+    overflow:hidden !important;
+}
+.tablet_overflow_visible{
+    overflow:visible !important
+}
+
+.tablet_textalignCenter{
+    text-align:center !important;
+}
+.tablet_textalignLeft{
+    text-align:left !important;
+}
+.tablet_textalignRight{
+    text-align:right !important;
+}
+.tablet_textoverflow_prevent_singlerow{
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.tablet_marginhorizontal_auto{
+    margin:0 auto
+}
+
+.tablet_positiontop_0{
+    top:0 !important;
+}
+.tablet_positionbottom_0{
+    bottom:0 !important;
+}
+.tablet_positionright_0{
+    right:0 !important;
+}
+.tablet_positionleft_0{
+    left:0 !important;
+}
+.tablet_positiontop_100percent{
+    top:100% !important;
+}
+.tablet_positionright_100percent{
+    right:100% !important;
+}
+.tablet_positionbottom_100percent{
+    bottom:100% !important;
+}
+.tablet_positionleft_100percent{
+    left:100% !important;
+}
+
+.tablet_Xoverflow_horizontal_list{
+    display:block;white-space:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch
+}
+.tablet_Xoverflow_horizontal_list::-webkit-scrollbar{
+    display:none;
+}
+.tablet_Xoverflow_horizontal_list .item{
+    display:inline-block; white-space:normal;
+}
+.tablet_Xoverflow_horizontal_list .item > *{
+    white-space:normal;
+}
+.tablet_Xoverflow_horizontal_list_scrollvisible{
+    display:block;white-space:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch
+}
+.tablet_Xoverflow_horizontal_list_scrollvisible .item{
+    display:inline-block; white-space:normal;
+}
+.tablet_Xoverflow_horizontal_list_scrollvisible .item > *{
+    white-space:normal;
+}
+.tablet_width_100_percent{
+    width:100% !important;
+}
+.tablet_height_100_percent{
+    height:100% !important
+}
+
+.tablet_flex_horizontal_flexEnd{
+    justify-content:flex-end;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.tablet_flex_horizontal_flexStart{
+    justify-content:flex-start;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.tablet_flex_horizontal_spaceBetween{
+    justify-content:space-between;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.tablet_flex_horizontal_Center{
+    justify-content:center;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.tablet_flex_alignitems_flexStart{
+    align-items:flex-start !important;display:flex;flex-flow:row wrap;align-content:flex-start
+}
+.tablet_flex_alignitems_flexEnd{
+    align-items:flex-end !important;display:flex;flex-flow:row wrap;align-content:flex-end
+}
+.tablet_flex_nowrap{
+    flex-flow:row nowrap;
+}
+/*요소 크기 제어 초기화 특정연산 공통적 사용(모바일,모바일태블릿,피시,피시고정)   [[기기별 전역범위사용]]*/
+.tablet_auto_height{
+    height:auto !important;
+}
+.tablet_width_auto{
+    width:auto !important;;
+}
+.tablet_height_auto{
+    height:auto !important;
+}
+.tablet_width_null{
+    width:0 !important;
+}
+.tablet_height_null{
+    height:0 !important;
+}
+.tablet_padding_null{
+    padding:0  !important;
+}
+.tablet_margin_null{
+    margin:0 !important;
+}
+.tablet_border_null{
+    border:0 !important;
+}
+.mobile_onlyview{
+    display:none;
+}
+.tablet_onlyview{
+    display:block
+}
+.pc_onlyview{
+    display:none
+}
+    .box_shadow{
+        box-shadow:0 1px 7px 0 rgba(4,4,4,0.18)
+    }
+    .textshadow1{
+        text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .bottom_decoline_shadow{
+        box-shadow:0 7px 8px 0 rgba(69,69,69,0.08)
+    }
+    /*서브헤더*/
+    .sub_header{
+        width:100%; display:flex;flex-flow:row nowrap;justify-content:flex-start;position:relative;border-color:#e7e7e7;border-style:solid;
+    }
+    .sub_header .back_btn{
+        position:absolute;
+
+    }
+    .sub_header .page_title{
+        text-align:center;margin:0 auto
+    }
+
+    /*헤더*/
+    .header{
+        width:100%;height:auto;display:flex;flex-flow:row nowrap;justify-content:space-between;position:relative; align-items:center;
+    }
+    .header .menubar{
+    }
+    .header .sitelogo{
+    }
+    .header .carticon{
+        position:relative;
+    }
+    .carticon .cart{
+        display:block;
+    }
+    .carticon .cartcnt{
+        position:absolute;right:0;top:0;border-radius:50%;background-color:#ff2e5a;display:flex;flex-flow:row wrap;justify-content:center;align-items:center; color:white;
+    }
+
+     /*푸터*/
+     .footer{
+        background-color:#f3f3f3
+    }
+    .footer ul li a{
+        color:#a1a1a1
+    }
+    .footer .content{
+        color:#a1a1a1
+    }
+    .footer .copyright{
+        color:#a1a1a1
+    }
+    .footer ul .dot{
+        background-color:#a1a1a1; border-radius:50%;display:block;
+    }
+
+    /*네비게이션*/
+    .nav_container{
+        background:linear-gradient(41deg,#6739ff 13%,#4469ff 26%,#1f9cff 42%,#09bcff 54%,#00c8ff 67%);
+        min-height:100vh
+    }
+    .nav_container .alrambtn{
+        background-color:white;color:#414141
+    }
+    .nav_container .alramcnt{
+        color:white; background-color:#fe1020;border-radius:50%;
+        transform:translateX(20%) translateY(-50%)
+    }
+    .nav_container .navibanner .info_area{
+        background-color:rgba(0,0,0,0.5);
+    }
+}
+
+@media all and (min-width:1149px){
+    .container{
+        width:100%;height:auto;display:block; max-width:1240px;margin:0 auto;overflow:hidden;position:relative;min-height:100vh
+    }
+
+
+     /* 레이아웃 관련 기기별로 다를수있으므로 분기스타일지정가능토록 필요 레이아웃 [[기기별 분기별 공통스타일]]*/
+.pc_overflow_auto{
+    overflow-y:auto
+}
+.pc_overflow_hidden{
+    overflow:hidden !important;
+}
+.pc_overflow_visible{
+    overflow:visible !important
+}
+
+.pc_textalignCenter{
+    text-align:center !important;
+}
+.pc_textalignLeft{
+    text-align:left !important;
+}
+.pc_textalignRight{
+    text-align:right !important;
+}
+.pc_textoverflow_prevent_singlerow{
+    overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+}
+.pc_marginhorizontal_auto{
+    margin:0 auto
+}
+
+.pc_positiontop_0{
+    top:0 !important;
+}
+.pc_positionbottom_0{
+    bottom:0 !important;
+}
+.pc_positionright_0{
+    right:0 !important;
+}
+.pc_positionleft_0{
+    left:0 !important;
+}
+.pc_positiontop_100percent{
+    top:100% !important;
+}
+.pc_positionright_100percent{
+    right:100% !important;
+}
+.pc_positionbottom_100percent{
+    bottom:100% !important;
+}
+.pc_positionleft_100percent{
+    left:100% !important;
+}
+
+.pc_Xoverflow_horizontal_list{
+    display:block;white-space:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch
+}
+.pc_Xoverflow_horizontal_list::-webkit-scrollbar{
+    display:none;
+}
+.pc_Xoverflow_horizontal_list .item{
+    display:inline-block; white-space:normal;
+}
+.pc_Xoverflow_horizontal_list .item > *{
+    white-space:normal;
+}
+.pc_Xoverflow_horizontal_list_scrollvisible{
+    display:block;white-space:nowrap;overflow-x:auto;overflow-y:hidden;
+    -webkit-overflow-scrolling:touch
+}
+.pc_Xoverflow_horizontal_list_scrollvisible .item{
+    display:inline-block; white-space:normal;
+}
+.pc_Xoverflow_horizontal_list_scrollvisible .item > *{
+    white-space:normal;
+}
+.pc_width_100_percent{
+    width:100% !important;
+}
+.pc_height_100_percent{
+    height:100% !important
+}
+
+.pc_flex_horizontal_flexEnd{
+    justify-content:flex-end;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.pc_flex_horizontal_flexStart{
+    justify-content:flex-start;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.pc_flex_horizontal_spaceBetween{
+    justify-content:space-between;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.pc_flex_horizontal_Center{
+    justify-content:center;display:flex;align-items:center;flex-flow:row wrap;align-content:center
+}
+.pc_flex_alignitems_flexStart{
+    align-items:flex-start !important;display:flex;flex-flow:row wrap;align-content:flex-start
+}
+.pc_flex_alignitems_flexEnd{
+    align-items:flex-end !important;display:flex;flex-flow:row wrap;align-content:flex-end
+}
+.pc_flex_nowrap{
+    flex-flow:row nowrap;
+}
+/*요소 크기 제어 초기화 특정연산 공통적 사용(모바일,모바일태블릿,피시,피시고정)   [[기기별 전역범위사용]]*/
+.pc_auto_height{
+    height:auto !important;
+}
+.pc_width_auto{
+    width:auto !important;;
+}
+.pc_height_auto{
+    height:auto !important;
+}
+.pc_width_null{
+    width:0 !important;
+}
+.pc_height_null{
+    height:0 !important;
+}
+.pc_padding_null{
+    padding:0  !important;
+}
+.pc_margin_null{
+    margin:0 !important;
+}
+.pc_border_null{
+    border:0 !important;
+}
+.mobile_onlyview{
+    display:none;
+}
+.tablet_onlyview{
+    display:none
+}
+.pc_onlyview{
+    display:block
+}
+
+    .box_shadow{
+        box-shadow:0 1px 7px 0 rgba(4,4,4,0.18)
+    }
+    .textshadow1{
+        text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .bottom_decoline_shadow{
+        box-shadow:0 7px 8px 0 rgba(69,69,69,0.08)
+    }
+    /*서브헤더*/
+    .sub_header{
+        width:100%; display:flex;flex-flow:row nowrap;justify-content:flex-start;position:relative;border-color:#e7e7e7;border-style:solid;
+    }
+    .sub_header .back_btn{
+        position:absolute;
+
+    }
+    .sub_header .page_title{
+        text-align:center;margin:0 auto
+    }
+
+    /*헤더*/
+    .header{
+        width:100%;height:auto;display:flex;flex-flow:row nowrap;justify-content:space-between;position:relative; align-items:center;
+    }
+    .header .menubar{
+    }
+    .header .sitelogo{
+    }
+    .header .carticon{
+        position:relative;
+    }
+    .carticon .cart{
+        display:block;
+    }
+    .carticon .cartcnt{
+        position:absolute;right:0;top:0;border-radius:50%;background-color:#ff2e5a;display:flex;flex-flow:row wrap;justify-content:center;align-items:center; color:white;
+    }
+
+     /*푸터*/
+     .footer{
+        background-color:#f3f3f3
+    }
+    .footer ul li a{
+        color:#a1a1a1
+    }
+    .footer .content{
+        color:#a1a1a1
+    }
+    .footer .copyright{
+        color:#a1a1a1
+    }
+    .footer ul .dot{
+        background-color:#a1a1a1; border-radius:50%;display:block;
+    }
+
+    /*네비게이션*/
+    .nav_container{
+        background:linear-gradient(41deg,#6739ff 13%,#4469ff 26%,#1f9cff 42%,#09bcff 54%,#00c8ff 67%);
+        min-height:100vh
+    }
+    .nav_container .alrambtn{
+        background-color:white;color:#414141
+    }
+    .nav_container .alramcnt{
+        color:white; background-color:#fe1020;border-radius:50%;
+        transform:translateX(20%) translateY(-50%)
+    }
+    .nav_container .navibanner .info_area{
+        background-color:rgba(0,0,0,0.5);
+    }
+}

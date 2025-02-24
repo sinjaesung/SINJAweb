@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css">
+    <link rel="stylesheet" href="css/position_and_another_based.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header class="sub_header position_relative_normal
+        mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_16 mobile_paddingbottom_16 
+        tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_16 tablet_paddingbottom_16 
+
+        pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_35 pc_paddingbottom_30
+
+    ">
+        <img src="img/pageback.svg" id="prevPage" class="back_btn position_absolute cursorpointer
+
+        mobile_width_10 mobile_height_15 mobile_positionleft_20 mobile_positiontop_20
+        tablet_width_10 tablet_height_15 tablet_positionleft_20 tablet_positiontop_20
+
+        pc_width_10 pc_height_15 pc_positionleft_20 pc_positiontop_43
+
+        "/>
+        <h2 class='page_title fontweight_800 
+        
+        mobile_width_218 mobile_height_27  mobile_fontsize_18 mobile_textalignCenter mobile_marginhorizontal_auto
+        tablet_width_218 tablet_height_27  tablet_fontsize_18 tablet_textalignCenter tablet_marginhorizontal_auto
+
+        pc_width_318 pc_height_32 pc_fontsize_24 
+        '>후기 작성하기</h2>
+    </header>
+
+    <div class="position_absolute width_100 height_100 bgcolor_graywhite colorblack fontsize_20 
+    mobile_positionleft_20 mobile_positiontop_100
+    tablet_positionleft_20 tablet_positiontop_100
+    pc_positionleft_20 pc_positiontop_100 
+    "
+    targetindex="javascript_highlight_inputtingTarget_0"
+    targetdata='{"highlight_inputting":{"txtdata":"","effect":"","groupid":"","triggerfrom":"keyboard_triggerTarget_0"}}'></div>
+
+
+    <div class="write_content">
+        <p class="tit fontweight_500
+        mobile_flex_horizontal_Center mobile_fontsize_14  mobile_paddingtop_42
+        tablet_flex_horizontal_Center tablet_fontsize_14  tablet_paddingtop_42
+        pc_flex_horizontal_Center pc_fontsize_16 pc_paddingtop_42
+
+        ">강의는 어떠셨나요?</p>
+        <h3 class="message 
+        mobile_flex_horizontal_Center mobile_margintop_7 mobile_fontsize_22 mobile_marginbottom_42 mobile_textalignCenter
+        tablet_flex_horizontal_Center tablet_margintop_7 tablet_fontsize_22 tablet_marginbottom_42 tablet_textalignCenter
+        pc_flex_horizontal_Center pc_margintop_7 pc_fontsize_24 pc_marginbottom_42 pc_textalignCenter
+        ">
+            다른 분들의 선택을<br/>
+            도와주세요!
+        </h3>
+
+        <div class="write_area  borderstyle_solid position_relative_normal
+        mobile_marginleft_20 mobile_marginright_20 mobile_borderradius_5 mobile_border_1  mobile_paddingtop_21 mobile_paddingleft_20 mobile_paddingright_15 mobile_paddingbottom_13
+        tablet_marginleft_20 tablet_marginright_20 tablet_borderradius_5 tablet_border_1  tablet_paddingtop_21 tablet_paddingleft_20 tablet_paddingright_15 tablet_paddingbottom_13
+        pc_marginhorizontal_auto pc_width_860 pc_borderradius_5 pc_border_1 pc_paddingtop_21 pc_paddingleft_20 pc_paddingright_15 pc_paddingbottom_13
+
+        ">
+            <textarea name="review_string"  
+            class="display_block fontweight_500
+            mobile_fontsize_12  mobile_height_180  mobile_width_100_percent
+            tablet_fontsize_12  tablet_height_180  tablet_width_100_percent
+            pc_fontsize_14 pc_height_320 pc_width_100_percent
+
+            javascript_trigger_keyboard
+            "
+            triggerindex="keyboard_triggerTarget_0"
+            triggerType="highlight_inputting|textarea_inputting"
+            triggerdata='{"highlight_inputting":{"groupid":"","targetindex":"0"},"textarea_inputting":{"groupid":"","targetindex":"0"}}'
+
+            placeholder="다른 사람의 권리를 침해하거나 명예를 훼손하는 게시물은 이용 약관 및 관련 법률에 의해 제재를 받을 수 있습니다." >
+            후기작성했던 내용이다.후기작성내용
+            </textarea>
+            <div class="reviewwrite_control 
+            mobile_flex_horizontal_flexStart mobile_height_32
+            tablet_flex_horizontal_flexStart tablet_height_32
+            pc_flex_horizontal_flexStart pc_height_32
+            ">
+                <p class="txtlength 
+                mobile_fontsize_12 mobile_height_18 mobile_margintop_10
+                tablet_fontsize_12 tablet_height_18 tablet_margintop_10
+                pc_fontsize_13 pc_height_20 pc_margintop_10
+                ">
+                    <span id="txtlength"
+                    targetindex="javascript_textarea_inputtingTarget_0"
+                    targetdata='{"textarea_inputting":{"txtdata":"","effect":"","groupid":"","triggerfrom":"keyboard_triggerTarget_0","inputtingtrack":"length"}}'>0</span> / 300
+                </p>
+            </div>
+        </div>
+
+                
+        <button class="display_block ozicbutton fontweight_500 textshadow1
+        mobile_margintop_38 mobile_width_320 mobile_height_55 mobile_borderradius_27 mobile_fontsize_16
+        tablet_margintop_38 tablet_width_320 tablet_height_55 tablet_borderradius_27 tablet_fontsize_16
+        pc_margintop_38 pc_width_420 pc_height_72 pc_borderradius_36 pc_fontsize_18
+
+        ">후기 작성하기</button>
+    </div> 
+</div>
+
+<script src="common_function.js"></script>
+<script src="commonui_javascript.js"></script>
+
+</body>
+</html>

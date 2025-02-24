@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="20" viewBox="0 0 70 20">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#2398FF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="14">
+            <tspan x="0" y="13">구매하기</tspan>
+        </text>
+        <g transform="translate(56 4)">
+            <circle cx="7" cy="7" r="7" fill="#2398FF"/>
+            <path fill="#FFF" d="M7.831 7L5.782 5.463c-.243-.182-.243-.477 0-.66.244-.182.637-.182.88 0L9.151 6.67c.243.183.243.478 0 .66L6.662 9.197c-.121.09-.28.136-.44.136-.159 0-.318-.045-.44-.136-.243-.183-.243-.478 0-.66L7.832 7z"/>
+        </g>
+    </g>
+</svg>

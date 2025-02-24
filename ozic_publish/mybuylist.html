@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css">
+    <link rel="stylesheet" href="css/position_and_another_based.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <header class="sub_header position_relative_normal
+        mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_16 mobile_paddingbottom_16 
+        tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_16 tablet_paddingbottom_16 
+
+        pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_35 pc_paddingbottom_30
+
+        ">
+        <img src="img/pageback.svg" id='prevPage'class="back_btn position_absolute cursorpointer
+
+        mobile_width_10 mobile_height_15 mobile_positionleft_20 mobile_positiontop_20
+        tablet_width_10 tablet_height_15 tablet_positionleft_20 tablet_positiontop_20
+
+        pc_width_10 pc_height_15 pc_positionleft_20 pc_positiontop_43
+
+        "/>
+        <h2 class='page_title fontweight_800 
+        
+        mobile_width_218 mobile_height_27  mobile_fontsize_18 mobile_textalignCenter mobile_marginhorizontal_auto
+        tablet_width_218 tablet_height_27  tablet_fontsize_18 tablet_textalignCenter tablet_marginhorizontal_auto
+
+        pc_width_318 pc_height_32 pc_fontsize_24 
+        '>구매내역</h2>
+    </header>
+
+    <ul class="head_content colorblack2 borderstyle_solid bordercolorgray2
+    mobile_flex_horizontal_spaceBetween mobile_paddingleft_40 mobile_paddingright_48 mobile_paddingtop_19 mobile_paddingbottom_22 mobile_borderbottom_5
+    tablet_flex_horizontal_spaceBetween tablet_paddingleft_40 tablet_paddingright_48 tablet_paddingtop_19 tablet_paddingbottom_22 tablet_borderbottom_5
+    pc_flex_horizontal_spaceBetween pc_paddingleft_40 pc_paddingright_48 pc_paddingtop_19 pc_paddingbottom_22 pc_borderbottom_5
+    ">
+        <li class="item  fontweight_500
+        mobile_fontsize_14  mobile_height_17
+        tablet_fontsize_14  tablet_height_17
+        pc_fontsize_16 pc_height_21
+
+        ">주문번호</li>
+        <li class="item  fontweight_500
+        mobile_fontsize_14  mobile_height_17 mobile_paddingleft_40 mobile_paddingright_52
+        tablet_fontsize_14  tablet_height_17 tablet_paddingleft_40 tablet_paddingright_52
+        pc_fontsize_16 pc_height_21 pc_paddingleft_40 pc_paddingright_52
+
+        ">주문일자</li>
+        <li class="item  fontweight_500
+        mobile_fontsize_14  mobile_height_17
+        tablet_fontsize_14  tablet_height_17
+        pc_fontsize_16 pc_height_21
+
+        ">포함강의</li>
+    </ul>
+
+    <ul class="row_content colorblack
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_18
+    tablet_flex_horizontal_spaceBetween tablet_paddingtop_18
+    pc_flex_horizontal_spaceBetween pc_paddingtop_18
+
+    ">
+        <li class="item 
+        mobile_fontsize_11 mobile_height_15 mobile_paddingleft_10 mobile_width_95 mobile_textoverflow_prevent_singlerow mobile_marginbottom_22
+        tablet_fontsize_11 tablet_height_15 tablet_paddingleft_10 tablet_width_95 tablet_textoverflow_prevent_singlerow tablet_marginbottom_22
+        pc_fontsize_13 pc_height_20 pc_paddingleft_30 pc_width_135 pc_textoverflow_prevent_singlerow pc_marginbottom_22
+
+        ">20156456459789</li>
+        <li class="item 
+        mobile_fontsize_12  mobile_height_15 mobile_paddingleft_28 mobile_paddingright_25 mobile_marginbottom_22
+        tablet_fontsize_12  tablet_height_15 tablet_paddingleft_28 tablet_paddingright_25 tablet_marginbottom_22
+        pc_fontsize_14 pc_height_20 pc_poaddingleft_28 pc_paddingright_25 pc_marginbottom_22
+
+        ">2020.01.29</li>
+        <li class="buydetailviewmore item ozicborderstyle_blue oziccolor_blue borderstyle_solid
+        mobile_fontsize_10 mobile_height_28 mobile_width_110 mobile_flex_horizontal_Center mobile_border_2 mobile_marginright_10 mobile_marginbottom_22 mobile_borderradius_14 mobile_textoverflow_prevent_singlerow 
+        tablet_fontsize_10 tablet_height_28 tablet_width_110 tablet_flex_horizontal_Center tablet_border_2 tablet_marginright_10 tablet_marginbottom_22 tablet_borderradius_14 tablet_textoverflow_prevent_singlerow 
+        pc_fontsize_14 pc_height_42 pc_width_165 pc_flex_horizontal_Center pc_border_2 pc_marginright_10 pc_marginbottom_22 pc_borderradius_14 pc_textoverflow_prevent_singlerow
+
+        javascript_trigger "  
+        
+        triggerType="SlideToggle|txtToggle|iconToggle" 
+        triggerdata='{"SlideToggle":{"groupid":"","targetindex":"0"},"txtToggle":{"groupid":"","targetindex":"0"},"iconToggle":{"groupid":"","targetindex":"0"}}'>
+            포함 강의 3개 <span targetindex="javascript_txtToggleTarget_0" actionType="txtToggle" targetdata='{"txtToggle":{"txtdata":"닫기,열기","effect":"","groupid":""}}'
+            >닫기</span>  <img src="img/bluearrowsmall.svg" class=" width_8 height_5 display_block" targetindex="javascript_iconToggleTarget_0" actionType="iconToggle" targetdata='{"iconToggle":{"txtdata":"","effect":"rotate180_animation","groupid":""}}' toggle_status="opened"/>
+        </li>
+
+        <div class="buyhistory_detail bgcolor_graywhite
+        mobile_width_100_percent
+        tablet_width_100_percent tablet_flex_horizontal_flexStart
+        pc_width_100_percent pc_flex_horizontal_flexStart
+        "  targetindex="javascript_SlideToggleTarget_0" targetdata='{"SlideToggle":{"txtdata":"","effect":"","groupid":""}}' toggle_status="opened" actionType="SlideToggle">
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+
+            <div class="
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "></div>
+            <img class="display_block cursorpointer
+            mobile_height_39 mobile_width_320  mobile_margintop_28 mobile_marginbottom_34 mobile_marginleft_20
+            tablet_height_39 tablet_width_320  tablet_margintop_28 tablet_marginbottom_34 tablet_marginhorizontal_auto
+            pc_height_55 pc_width_440 pc_margintop_28 pc_marginbottom_34 pc_marginhorizontal_auto
+
+            " src="img/buydetailview.svg"onclick="location.href='buyconfirm.html'"/>
+        </div>
+    </ul>
+    <ul class="row_content colorblack
+    mobile_flex_horizontal_spaceBetween mobile_paddingtop_18
+    tablet_flex_horizontal_spaceBetween tablet_paddingtop_18
+    pc_flex_horizontal_spaceBetween pc_paddingtop_18
+
+    ">
+        <li class="item 
+        mobile_fontsize_11 mobile_height_15 mobile_paddingleft_10 mobile_width_95 mobile_textoverflow_prevent_singlerow mobile_marginbottom_22
+        tablet_fontsize_11 tablet_height_15 tablet_paddingleft_10 tablet_width_95 tablet_textoverflow_prevent_singlerow tablet_marginbottom_22
+        pc_fontsize_13 pc_height_20 pc_paddingleft_30 pc_width_135 pc_textoverflow_prevent_singlerow pc_marginbottom_22
+
+        ">20156456459789</li>
+        <li class="item 
+        mobile_fontsize_12  mobile_height_15 mobile_paddingleft_28 mobile_paddingright_25 mobile_marginbottom_22
+        tablet_fontsize_12  tablet_height_15 tablet_paddingleft_28 tablet_paddingright_25 tablet_marginbottom_22
+        pc_fontsize_14 pc_height_20 pc_poaddingleft_28 pc_paddingright_25 pc_marginbottom_22
+
+        ">2020.01.29</li>
+        <li class="buydetailviewmore item ozicborderstyle_blue oziccolor_blue borderstyle_solid
+        mobile_fontsize_10 mobile_height_28 mobile_width_110 mobile_flex_horizontal_Center mobile_border_2 mobile_marginright_10 mobile_marginbottom_22 mobile_borderradius_14 mobile_textoverflow_prevent_singlerow 
+        tablet_fontsize_10 tablet_height_28 tablet_width_110 tablet_flex_horizontal_Center tablet_border_2 tablet_marginright_10 tablet_marginbottom_22 tablet_borderradius_14 tablet_textoverflow_prevent_singlerow 
+        pc_fontsize_14 pc_height_42 pc_width_165 pc_flex_horizontal_Center pc_border_2 pc_marginright_10 pc_marginbottom_22 pc_borderradius_14 pc_textoverflow_prevent_singlerow
+
+        javascript_trigger "  
+        
+        triggerType="SlideToggle|txtToggle|iconToggle" 
+        triggerdata='{"SlideToggle":{"groupid":"","targetindex":"1"},"txtToggle":{"groupid":"","targetindex":"1"},"iconToggle":{"groupid":"","targetindex":"1"}}'>
+            포함 강의 3개 <span targetindex="javascript_txtToggleTarget_1" actionType="txtToggle" targetdata='{"txtToggle":{"txtdata":"닫기,열기","effect":"","groupid":""}}'
+            >닫기</span>  <img src="img/bluearrowsmall.svg" class=" width_8 height_5 display_block" targetindex="javascript_iconToggleTarget_1" actionType="iconToggle" targetdata='{"iconToggle":{"txtdata":"","effect":"rotate180_animation","groupid":""}}' toggle_status="opened"/>
+        </li>
+
+        <div class="buyhistory_detail bgcolor_graywhite
+        mobile_width_100_percent
+        tablet_width_100_percent tablet_flex_horizontal_flexStart
+        pc_width_100_percent pc_flex_horizontal_flexStart
+        "  targetindex="javascript_SlideToggleTarget_1" targetdata='{"SlideToggle":{"txtdata":"","effect":"","groupid":""}}' toggle_status="opened" actionType="SlideToggle">
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+            <div class="history_item position_relative_normal
+            mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+            tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29 tablet_marginright_20
+            pc_flex_horizontal_flexStart pc_paddingleft_20 pc_paddingright_20 pc_paddingtop_29 pc_marginright_20
+            ">
+                <div class="itemRadius audioitem position_relative_normal
+                mobile_width_50 mobile_height_50 mobile_marginright_11
+                tablet_width_50 tablet_height_50 tablet_marginright_11
+                pc_width_70 pc_height_70 pc_marginright_16
+                ">
+                    <span class="borderradiusDeco display_block position_absolute
+                    mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positiontop_0 mobile_border_4
+                    tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positiontop_0 tablet_border_4
+                    pc_width_70 pc_height_70 pc_positionleft_0 pc_positiontop_0 pc_border_5
+
+                    "></span>
+                    <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                    mobile_width_50 mobile_height_50 mobile_borderradius_25
+                    tablet_width_50 tablet_height_50 tablet_borderradius_25
+                    pc_width_70 pc_height_70 pc_borderradius_35
+                    "/>
+                </div>
+                <div class="info_right">
+                    <p class="tit fontweight_500 colorblack
+                    mobile_fontsize_14  mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                    tablet_fontsize_14  tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                    pc_fontsize_16 pc_height_24 pc_width_160 pc_textoverflow_prevent_singlerow
+
+                    ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                    <p class="subtit  fontweight_500 colorgray
+                    mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                    tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                    pc_margintop_3 pc_fontsize_14 pc_height_24
+                    ">오프라인</p>
+                </div>
+                <img src="img/play-button-color.svg" class="display_block
+                mobile_width_38 mobile_height_38  mobile_marginleft_40
+                tablet_width_38 tablet_height_38  tablet_marginleft_20
+                pc_width_52 pc_height_52 pc_marginleft_40
+                "/>
+                <span class="display_block bgcolor_gray
+                mobile_width_320 mobile_height_1 mobile_margintop_29
+                tablet_width_100_percent tablet_height_1 tablet_margintop_29
+                pc_width_100_percent pc_height_1 pc_margintop_29
+
+                "></span>
+            </div>
+
+            <div class="
+            mobile_width_100_percent
+            tablet_width_100_percent
+            pc_width_100_percent
+            "></div>
+            <img class="display_block cursorpointer
+            mobile_height_39 mobile_width_320  mobile_margintop_28 mobile_marginbottom_34 mobile_marginleft_20
+            tablet_height_39 tablet_width_320  tablet_margintop_28 tablet_marginbottom_34 tablet_marginhorizontal_auto
+            pc_height_55 pc_width_440 pc_margintop_28 pc_marginbottom_34 pc_marginhorizontal_auto
+
+            " src="img/buydetailview.svg"onclick="location.href='buyconfirm.html'"/>
+        </div>
+    </ul>
+</div>
+
+<script src="common_function.js"></script>
+<script src="commonui_javascript.js"></script>
+<script>
+    
+</script>
+</body>
+</html>

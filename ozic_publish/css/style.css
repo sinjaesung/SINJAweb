@@ -1,0 +1,1204 @@
+.checkbox_element + label.checklabel2{
+    display:block;background-image:url('../img/uncheck_checkbox2.svg'); background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.checkbox_element:checked + label.checklabel2{
+    display:block;background-image:url('../img/check_checkbox2.svg');background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.checkbox_element + label.checklabel{
+    display:block;background-image:url('../img/uncheck_checkbox.svg');background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.checkbox_element:checked + label.checklabel{
+    display:block;background-image:url('../img/check_checkbox.svg');background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.radio_element + label.radiolabel{
+    display:block;background-image:url('../img/radiouncheck.svg');background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.radio_element:checked + label.radiolabel{
+    display:block;background-image:url('../img/radiocheck.svg');background-size:cover;background-repeat:no-repeat;background-position:center
+}
+.radio_element + label.radiolabel2{
+    border-color:#e7e7e7;color:#e7e7e7
+}
+.radio_element:checked + label.radiolabel2{
+    border-color:#2398ff;color:#2398ff
+}
+@media all and (max-width:360px){
+
+    /*팝업 공통*/
+    .dark_bg{
+        width:100%;height:100vh; background-color:rgba(0,0,0,0.5); position:fixed;left:0;top:0
+    }
+    .popup_box{
+        background-color:white; position:fixed;
+        margin:0 auto;left:0;right:0;
+    }
+    .popup_box .message_title{
+        text-align:center;color:#3e3e3e; line-height:1.55
+    }
+
+    .button1{
+        background:linear-gradient(138deg,  #6739ff 31%, #00c8ff 125% );color:white; text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .button2{
+        background:#ffe812;color:#3c1e1e; text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .button3{
+        background:#3c5a9a;color:white;text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .button4{
+        background:#2daae1;color:white;text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+
+    .popup_box .popup_close{
+        position:absolute; background-color:red; 
+    }
+
+    /*알람리스트페이지*/
+    .alram_control{
+        display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center; background-color:#f3f3f3
+    }
+    .alram_control .selectlist{
+        color:#414141;position:relative;
+    }
+    .alram_control .selectlist img{
+        right:0;position:absolute;top:0;bottom:0;margin:auto 0;
+    }
+    .alram_control .alram_all_delete{
+        color:#858585; 
+    }
+    .alram_list{
+        position:relative;
+    }
+    .alram_list .item{
+        position:relative;
+    }
+    .alram_list .item .borderline{
+        display:block;content:'';position:absolute;bottom:0;background-color:#e7e7e7;right:0
+    }
+    .alram_list .line_area{
+        position:absolute; display:block;background-color:#e7e7e7;height:100%
+    }
+    .alram_list .item .tit{
+        color:#858585; display:flex;flex-flow:row wrap;align-items:center;position:relative;
+    }
+    .alram_list .item .tit .icon{
+        border-color:#e7e7e7;border-style:solid;border-radius:50%;position:relative;background-color:white;
+    }
+    .alram_list .item .message{
+        color:#414141;line-height:1.36;overflow:hidden;
+    }
+    .alram_list .item .extra_message{
+        display:flex;flex-flow:row nowrap;align-items:center;justify-content:flex-start;
+    }
+    .alram_list .item .extra_message .txt{
+        color:#2398ff; line-height:normal;
+    }
+    .alram_list .item .extra_message .dot{
+        background-color:#858585;  border-radius:50%;display:block;
+    }
+    .alram_list .item .extra_message .date{
+        color:#858585;
+    }
+    .alram_list .item .del_btn{
+        position:absolute;right:0;
+    }
+
+    /*메인*/
+   .mainbanner{
+    position:relative;
+   }
+   .mainbanner .swiper-slide{
+        width:auto;width:calc(100vw *(320/360));height:auto;
+    }
+    .mainbanner .bannerimg{
+        width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:0
+    }
+    .mainbanner .searchbtn{
+        bottom:0;position:absolute;display:flex;left:0;right:0;margin:0 auto;justify-content:center;flex-flow:row wrap;align-items:center;
+        z-index:8;
+    }
+    .mainbanner .banner_info{
+        position:relative;z-index:8
+    }
+    .mainbanner .banner_info .tit{
+        color:#fff;line-height:1.36;text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .mainbanner .banner_info .messsage{
+        line-height:normal; color:#f0f0f0;text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .searchbtn .txt{
+        color:#fff;
+    }
+
+    .playlist{
+    }
+    .playlist .tit{
+        color:#3e3e3e;line-height:1.3
+    }
+    .playlist .playlistcontent{
+
+    }
+    .playlist .playlistcontent .swiper-slide{
+        width:auto;height:auto;width:calc(100vw *(75/360));
+    }
+    .playlist .playlistcontent .imgwrap{
+        box-shadow:0 0 rgba(100vw *(10/360)) rgba(69,69,69,0.16);
+        border-style:solid;border-radius:50%;
+        border-color:rgba(40,40,40,0.1); position:relative;
+    }
+    .playlist .playlistcontent .imgwrap .item_img{
+        border-radius:50%;
+    }
+    .playlist .playlistcontent .desc{
+        color:#565656;text-align:center; 
+    }
+    .playlist .playlistcontent .txt{
+        color:#565656;text-align:center;
+    }
+
+    .site_menu{
+        width:100%;height:auto;display:block; border-style:solid; border-color:#eee
+    }
+    .site_menu .menulist{
+    }
+    .site_menu .menulist .item{
+        display:flex;flex-flow:row nowrap;align-items:center; color:#b8b8b8;position:relative;
+    }
+    .site_menu .menulist .item.active{
+        color:#3e3e3e
+    }
+    .menulist .item .menusquare{
+        width:100%;position:absolute;bottom:0;left:0;display:block;background-color:#3e3e3e
+    }
+
+    
+    .recommend_list_area{
+
+    }
+    .recommend_list_area .tit{
+
+    }
+    .recommend_list_area .listcontent{
+        overflow:visible !important
+    }
+    .recommend_list_area .listcontent .swiper-slide{
+        width:calc(100vw *(320/360));background:linear-gradient(to bottom,#a4a5a7,#363733); position:relative;        overflow:visible !important
+    }
+    .recommend_list_area .listcontent .item .tit{
+        color:white;text-shadow:0 0 calc(100vw *(10/360)) rgba(69,69,69,0.16)
+    }
+    .recommend_list_area .listcontent .item .txt{
+        color:#eee;
+    }
+    .recommend_list_area .listcontent .item .cartbtn{
+    }
+    .recommend_list_area .listcontent .item .cartbtn img{
+        width:100%;height:100%;display:block;
+    }
+    .recommend_list_area .listcontent .item .item_img{
+        border-radius:50%;display:block;position:absolute;
+    }
+    .recommend_list_area .swiper-pagination{
+        text-align:left;height:calc(100vw *(6/360)) !important;bottom:calc(100vw *(12/360))
+    }
+    .recommend_list_area .swiper-pagination .swiper-pagination-bullet{
+        width:calc(100vw *(6/360));height:calc(100vw *(6/360));background-color:#c7c7c7;
+        margin-right:calc(100vw *(11/360));
+    }
+    .recommend_list_area .swiper-pagination .swiper-pagination-bullet-active{
+        background-color:#3e3e3e
+    }
+
+    .findmore_area{
+
+    }
+    .findmore_area .tit{
+
+    }
+    .findmore_area .listcontent{
+        display:flex;flex-flow:row wrap;
+    }
+    .findmore_area .listcontent .item{
+        position:relative;
+    }
+    .findmore_area .listcontent .shadow_blur{
+        width:100%;height:100%;display:block;position:absolute;z-index:1;background-color:rgba(69,69,69,0.36)
+    }
+    .findmore_area .listcontent .item .item_img{
+        width:100%;height:100%;display:block;z-index:0; position:absolute;left:0;top:0
+    }
+    .findmore_area .listcontent .item .txt{
+        position:relative;z-index:3; color:#f0f0f0
+    }
+    .findmore_area .morebtn{
+        margin:0 auto;display:block;
+    }
+
+    .package_list{   
+    }
+    .package_list .listcontent{
+
+    }
+    .package_list .listcontent .pack_item{
+        position:relative;background-color:blue;
+    }
+    .package_list .listcontent .pack_item .message{
+        color:white;line-height:1.29
+    }
+    .package_list .listcontent .normal_item .item_description .txt{
+        color:#f0f0f0
+    }
+    .package_list .listcontent .normal_item .item_description .txt2{
+        color:#f0f0f0
+    }
+    .package_list .listcontent .normal_item .itemplay .info_tit{
+        color:#414141;
+    }
+    .package_list .listcontent .normal_item .itemplay .extra_txt{
+        color:#858585
+    }
+
+    .related_list_area{
+
+    }
+    .related_list_area .message{
+        color:#a6a6a6
+    }
+    .related_list_area .listcontent .item .item_img{
+        border-color:rgba(30,30,30,0.2);border-style:solid; border-radius:50%
+    }
+    .related_list_area .listcontent .item .item_img img{
+        border-radius:50%
+    }
+
+    .related_list_area .listcontent .item .buycnt{
+        border-radius:50%;background-color:#fe1010; color:white;
+    }
+    .related_list_area .listcontent .item .buycnt_border{
+        border-radius:50%;border-color:#fe1010;border-style:solid; background-color:white;color:#fe1010
+    }
+    .related_list_area .listcontent .item .item_info .tit{
+        color:#565656
+    }
+    .related_list_area .listcontent .item .item_info p{
+        color:#a1a1a1
+    }
+    .related_list_area .listcontent .item .dot{
+        background-color:#a1a1a1
+    }
+    .related_list_area .listcontent .item .botline{
+        background-color:#e1e1e1
+    }
+
+    /*검색페이지*/
+    .search_wrap {
+        background-color:#f3f3f3
+    }
+    .search_wrap input[type='text']{
+        width:100%; color:#a1a1a1
+    }
+
+    .search_list{
+        overflow-y:auto;
+    }
+    .search_list .list_item{
+        color:#414141
+    }
+    .search_list .list_item .match{
+        color:#2398ff
+    }
+
+    .search_list .list_item{
+        color:#a1a1a1
+    }
+
+    /*오디오패널 플레이어*/
+    .audioplayer{
+        background-color:#f8f8f8;margin:0 auto
+    }
+    .audioplayer .txt_info .tit{
+        color:#414141
+    }
+    .audioplayer .txt_info .sub_tit{
+        color:#858585
+    }
+    .audioplayer .playstatusbar{
+        width:100%;transform:translateY(-50%);z-index:8
+    }
+    .audioplayer .playstatusbar .bar{
+        background-color:#ff2e5a;
+    }
+    .audioplayer .playstatusbar .bar .barEdge{
+        transform:translateY(30%)translateX(6%);background-color:#ff2e5a; border-radius:50%
+
+    }
+    .audioplayer .addonpopup{
+        background-color:rgba(20,20,20,0.8);z-index:2
+    }
+    .audioplayer .addonpopup .tit{
+        color:#a1a1a1
+    }
+    .audioplayer .addonpopup .message{
+        color:white
+    }
+    
+    .audioplayer .player_detail{
+        border-color:#e7e7e7;border-style:solid
+    }
+    .audioplayer .audio_info{
+        border-color:#e7e7e7;border-style:solid
+    }
+    .audioplayer .player_base_bar{
+        background-color:#e7e7e7;display:block
+    }
+    .audioplayer .player_base_bar .progress_bar{
+        background-color:#ff2e5a
+    }
+    .audioplayer .progress_bar .barEdge{
+        background-color:#ff2e5a;border-radius:50%;transform:translateX(30%)translateY(-30%)
+    }
+    .audioplayer .player_extra button{
+        color:#414141;background-color:white;
+    }
+    .audioplayer .select_speedList{
+        background-color:#fff;border-style:solid;border-color:#e7e7e7
+    }
+    .audioplayer .select_speedList li.active a{
+        color:#ff2e5a
+    }
+
+    .audioplayer .player_detail .audiodetail{
+        margin:0 auto; z-index:90; background-color:#f8f8f8; width:100%
+    }
+    .audioplayer .player_detail .audiodetail .audiodetail_sliderimg{
+        z-index:92;margin:0 auto;
+    }
+    .audioplayer .player_detail .audiodetail .audio_title{
+        text-align:center;color:#3e3e3e;margin:0 auto;
+    }
+    .audioplayer .player_detail .audiodetail .audio_subtitle{
+        text-align:center;color:#858585
+    }
+    .audioplayer  .decoline{
+        background-color:#f8f8f8;transform:translateY(-400%);margin:0 auto
+    }
+
+    .audioplayer .audiodetail_tabmenuarea{
+
+    }
+    .audioplayer .audiodetail_tabmenuarea .menulist{
+        background-color:#f8f8f8;border-style:solid;border-color:#e3e3e3
+    }
+    .audioplayer .audiodetail_tabmenuarea .menulist .item{
+        color:#3e3e3e
+    }
+ 
+    .audioplayer .audiodetail_tabmenuarea .menulist .item .bar{
+        width:100%;background-color:#3e3e3e
+    }
+
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1 .info_right .tit{
+        color:#565656;
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1 .info_right .subtit{
+        color:#858585
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1 .audio_title_area{
+        border-color:#f8f8f8;border-style:solid;   
+    }
+    
+    .audioplayer .audiodetail_tabmenuarea .tabcontent::webkit-scrollbar{
+        display:none;
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1  .playlistcontent .item{
+        border-color:#f3f3f3;border-style:solid;
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1  .playlistcontent .item .tit{
+        color:#414141
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1  .playlistcontent .item .subtit{
+        color:#a1a1a1
+    }
+
+    .audioplayer .audiodetail_tabmenuarea .tabcontent2 .item_info_bottom .right_info .txt{
+        color:#414141
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent2 .item_info_bottom .right_info  .name{
+        color:#0080df
+    }
+ 
+
+    
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.head_content{
+        border-style:solid;border-color:#f3f3f3
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.row_content  .buyhistory_detail{
+        background-color:#f8f8f8
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.row_content  .buyhistory_detail .history_item{
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 .history_item .borderlinebottom{
+        background-color:#eee;margin:0 auto
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.row_content li.buydetailviewmore{
+        color:#2398ff;border-style:solid;border-color:#2398ff
+    }
+
+    /*직무제안하기*/
+    .jobsuggest_content{
+        min-height:100vh;
+    }
+    .jobsuggest_content .tit{
+        color:#414141
+    }
+    .jobsuggest_content .message{
+        color:#3e3e3e
+    }
+    .jobsuggest_content .search_wrap{
+        background-color:#f3f3f3
+    }
+    .jobsuggest_content .search_wrap input{
+        color:#a1a1a1
+    }
+    .jobsuggest_content .search_wrap .txt{
+        color:#414141   
+    }
+    .searchselectList .selectitem{
+        border-style:dotted;border-color:#a4a4a4; color:#858585
+    }
+
+    /*오디오디테일 오디오강의상세*/
+    .audiodetail_content .detailinfo_header .tit{
+        color:#3e3e3e
+    }
+    .audiodetail_content .detailinfo_header .subtit{
+        color:#b8b8b8
+    }
+    .audiodetail_content .buttonwrap .buybutton1{
+       color:white 
+    }
+    .audiodetail_content .buttonwrap .buybutton1 .pricediscount{
+        color:#b0b0ff   
+    }
+    .audiodetail_content .buttonwrap .buybutton2{
+        color:#2398ff
+    }
+    .audiodetail_content .buttonwrap .buybutton2 .price{
+        color:#3e3e3e
+    }
+    .audiodetail_content .buttonwrap .buybutton2 .pricediscount{
+        color:#a6a6a6
+    }
+
+    .related_match_area .item_info_bottom .right_info .txt{
+        color:#414141
+    }
+    .related_match_area .item_info_bottom .right_info  .name{
+        color:#0080df
+    }
+
+    .audiodetail_content .detailinfo_body .review_area_head .tit{
+        color:#3e3e3e
+    }
+    .write_area{
+        border-style:solid;border-color:#e7e7e7
+    }
+    .audiodetail_content .detailinfo_body .write_area{
+        border-style:solid;border-color:#e7e7e7
+    }
+    .audiodetail_content .detailinfo_body .reviewwrite_control .txtlength{
+        color:#565656
+    }
+    .listcontrol{
+        border-style:solid;border-color:#f3f3f3;color:#a1a1a1
+    }
+    .listcontrol .leftinfo li p{
+        color:#a1a1a1
+    }
+    .listcontrol .leftinfo li.active p{
+        color:#ff2e5a
+    }
+    .listcontrol .leftinfo li span{
+        background-color:#a1a1a1
+    }
+    .listcontrol .leftinfo li.active span{
+        background-color:#ff2e5a
+    }
+
+    .audiodetail_content .review_area_body{
+        color:#a1a1a1
+    }
+    .audiodetail_content .review_area_body .name{
+        color:#565656
+    }
+    .audiodetail_content .review_area_body .content{
+        color:#565656
+    }
+    .audiodetail_content .review_area_body .sepbar{
+        background-color:#eee
+    }
+
+
+    /*오디오페이지*/
+    .item_category .head{
+        color:#a1a1a1
+    }
+    .item_category .head p.nowstatus{
+        color:#565656
+    }
+    .item_category .body .item{
+        border-color:#e7e7e7;color:#565656
+    }
+    .item_category .bottom_decoline{
+        box-shadow:0 calc(100vw *(7/360)) calc(100vw *(8/360)) 0 rgba(69,69,69,0.08)
+    }
+   
+
+
+    /*오프라인*/
+    .related_list_area_offline{
+    }
+    .related_list_area_offline .listcontent .item .item_description{
+        background:linear-gradient(114deg, rgba(0,0,0,0.8) 7%,rgba(0,0,0,0.2) 83%);
+    }
+    .related_list_area_offline .listcontent .item .message{
+        color:white;
+    }
+    .related_list_area_offline .listcontent .item .txt{
+        color:#eee
+    }
+    .related_list_area_offline .listcontent .item .dot{
+        background-color:#eee
+    }
+    .related_list_area_offline .listcontent .offline_bottominfo dt{
+        color:#414141
+    }
+    .related_list_area_offline .listcontent .offline_bottominfo dd{
+        color:#858585
+    }
+    .related_list_area_offline .listcontent .offline_bottominfo .decoline{
+        background-color:#e7e7e7
+    }
+
+    /*직무전체보기*/
+    .jobcategorylist .item a{
+        color:#565656;
+    }
+    .jobcategorylist .item{
+        border-color:#f3f3f3;
+    }
+    .jobcategorylist .subcategory .item{
+       color:#a1a1a1;
+    }
+    .jobcategorylist .subcategory .item span{
+        background-color:#e7e7e7
+    }
+
+    /*카트 / 결제 등등 부분적 */
+    .cartcontent .highlight_message{
+        background-color:#ff2e5a; color:white
+    }
+    
+
+
+    .cart_head{
+        border-color:#f3f3f3
+    }
+    .cart_body .description .info_right .sepline{
+        background-color:#eee
+    }
+  
+}
+
+
+@media all and (min-width:361px){
+
+   
+    /*팝업 공통*/
+    .dark_bg{
+        width:100%;height:100vh; background-color:rgba(0,0,0,0.5); position:fixed;left:0;top:0
+    }
+    .popup_box{
+        background-color:white; position:fixed;
+        margin:0 auto;left:0;right:0;
+    }
+    .popup_box .message_title{
+        text-align:center;color:#3e3e3e; line-height:1.55
+    }
+
+    .button1{
+        background:linear-gradient(138deg,  #6739ff 31%, #00c8ff 125% );color:white; text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .button2{
+        background:#ffe812;color:#3c1e1e; text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .button3{
+        background:#3c5a9a;color:white;text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .button4{
+        background:#2daae1;color:white;text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .popup_box .popup_close{
+        position:absolute; background-color:red;
+    }
+
+    /*알람리스트페이지*/
+    .alram_control{
+        display:flex;flex-flow:row nowrap;justify-content:space-between;align-items:center; background-color:#f3f3f3
+    }
+    .alram_control .selectlist{
+        color:#414141;position:relative;background-color:#f3f3f3;
+    }
+    .alram_control .selectlist img{
+        right:0;position:absolute;top:0;bottom:0;margin:auto 0; display:block;
+    }
+    .alram_control .alram_all_delete{
+        color:#858585; 
+    }
+
+    .alram_list{
+        position:relative;
+    }
+    .alram_list .item{
+        position:relative;
+    }
+   
+    .alram_list .item .borderline{
+        display:block;content:'';position:absolute;bottom:0;background-color:#e7e7e7;right:0
+    }
+    .alram_list .line_area{
+        position:absolute; display:block;background-color:#e7e7e7;height:100%
+    }
+    .alram_list .item .tit{
+        color:#858585; display:flex;flex-flow:row wrap;align-items:center;position:relative;
+    }
+    .alram_list .item .tit .icon{
+        border-color:#e7e7e7;border-style:solid;border-radius:50%;position:relative;background-color:white;position:relative;z-index:15
+    }
+    .alram_list .item .message{
+        color:#414141;line-height:1.36;overflow:hidden;
+    }
+    .alram_list .item .extra_message{
+        display:flex;flex-flow:row nowrap;align-items:center;justify-content:flex-start;
+    }
+    .alram_list .item .extra_message .txt{
+        color:#2398ff; line-height:normal;
+    }
+    .alram_list .item .extra_message .dot{
+        background-color:#858585;  border-radius:50%;display:block;
+    }
+    .alram_list .item .extra_message .date{
+        color:#858585;
+    }
+    .alram_list .item .del_btn{
+        position:absolute;right:0;
+    }
+
+
+    /*메인*/
+   .mainbanner{
+    position:relative;
+   }
+   .mainbanner .swiper-slide{
+        width:auto;height:auto;
+    }
+    .mainbanner .bannerimg{
+        width:100%;height:100%;display:block;position:absolute;left:0;top:0;z-index:0
+    }
+    .mainbanner .searchbtn{
+        bottom:0;position:absolute;display:flex;left:0;right:0;margin:0 auto;justify-content:center;flex-flow:row wrap;align-items:center;
+        z-index:8;
+    }
+    .mainbanner .banner_info{
+        position:relative;z-index:8
+    }
+    .mainbanner .banner_info .tit{
+        color:#fff;line-height:1.36;text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .mainbanner .banner_info .messsage{
+        line-height:normal; color:#f0f0f0;text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .searchbtn .txt{
+        color:#fff;
+    }
+
+    .playlist{
+    }
+    .playlist .tit{
+        color:#3e3e3e;line-height:1.3
+    }
+    .playlist .playlistcontent{
+
+    }
+    .playlist .playlistcontent .swiper-slide{
+        width:auto;height:auto;width:75px
+    }
+    .playlist .playlistcontent .imgwrap{
+        box-shadow:0 0 10px rgba(69,69,69,0.16);
+        border-style:solid;border-radius:50%;
+        border-color:rgba(40,40,40,0.1); position:relative;
+    }
+    .playlist .playlistcontent .imgwrap .item_img{
+        border-radius:50%;
+    }
+    .playlist .playlistcontent .desc{
+        color:#565656;text-align:center; 
+    }
+    .playlist .playlistcontent .txt{
+        color:#565656;text-align:center;
+    }
+
+    .site_menu{
+        width:100%;height:auto;display:block; border-style:solid; border-color:#eee
+    }
+    .site_menu .menulist{
+    }
+    .site_menu .menulist .item{
+        display:flex;flex-flow:row nowrap;align-items:center; color:#b8b8b8;position:relative;
+    }
+    .site_menu .menulist .item.active{
+        color:#3e3e3e
+    }
+    .menulist .item .menusquare{
+        width:100%;position:absolute;bottom:0;left:0;display:block;background-color:#3e3e3e
+    }
+
+    
+    .recommend_list_area{
+
+    }
+    .recommend_list_area .tit{
+
+    }
+    .recommend_list_area .listcontent{
+        overflow:visible !important
+    }
+    .recommend_list_area .listcontent .swiper-slide{
+        width:320px;background:linear-gradient(to bottom,#a4a5a7,#363733); position:relative; overflow:visible !important
+    }
+    .recommend_list_area .listcontent .item .tit{
+        color:white;text-shadow:0 0 10px rgba(69,69,69,0.16)
+    }
+    .recommend_list_area .listcontent .item .txt{
+        color:#eee;
+    }
+    .recommend_list_area .listcontent .item .cartbtn{
+    }
+    .recommend_list_area .listcontent .item .cartbtn img{
+        width:100%;height:100%;display:block;
+    }
+    .recommend_list_area .listcontent .item .item_img{
+        border-radius:50%;display:block;position:absolute;
+    }
+    .recommend_list_area .swiper-pagination{
+        text-align:left;height:6px !important;bottom:12px
+    }
+    .recommend_list_area .swiper-pagination .swiper-pagination-bullet{
+        width:6px;height:6px;background-color:#c7c7c7;
+        margin-right:11px
+    }
+    .recommend_list_area .swiper-pagination .swiper-pagination-bullet-active{
+        background-color:#3e3e3e
+    }
+
+    .findmore_area{
+
+    }
+    .findmore_area .tit{
+
+    }
+    .findmore_area .listcontent{
+        display:flex;flex-flow:row wrap;
+    }
+    .findmore_area .listcontent .item{
+        position:relative;
+    }
+    .findmore_area .listcontent .shadow_blur{
+        width:100%;height:100%;display:block;position:absolute;z-index:1;background-color:rgba(69,69,69,0.36)
+    }
+    .findmore_area .listcontent .item .item_img{
+        width:100%;height:100%;display:block;z-index:0; position:absolute;left:0;top:0
+    }
+    .findmore_area .listcontent .item .txt{
+        position:relative;z-index:3; color:#f0f0f0
+    }
+    .findmore_area .morebtn{
+        margin:0 auto;display:block;
+    }
+
+    .package_list{   
+    }
+    .package_list .listcontent{
+
+    }
+    .package_list .listcontent .pack_item{
+        position:relative;background-color:blue;
+    }
+    .package_list .listcontent .pack_item .message{
+        color:white;line-height:1.29
+    }
+    .package_list .listcontent .normal_item .item_description .txt{
+        color:#f0f0f0
+    }
+    .package_list .listcontent .normal_item .item_description .txt2{
+        color:#f0f0f0
+    }
+    .package_list .listcontent .normal_item .itemplay .info_tit{
+        color:#414141;
+    }
+    .package_list .listcontent .normal_item .itemplay .extra_txt{
+        color:#858585
+    }
+
+    .related_list_area{
+
+    }
+    .related_list_area .message{
+        color:#a6a6a6
+    }
+    .related_list_area .listcontent .item .item_img{
+        border-color:rgba(30,30,30,0.2);border-style:solid; border-radius:50%
+    }
+    .related_list_area .listcontent .item .item_img img{
+        border-radius:50%
+    }
+
+    .related_list_area .listcontent .item .buycnt{
+        border-radius:50%;background-color:#fe1010; color:white;
+    }
+    .related_list_area .listcontent .item .buycnt_border{
+        border-radius:50%;border-color:#fe1010;border-style:solid; background-color:white;color:#fe1010
+    }
+    .related_list_area .listcontent .item .item_info .tit{
+        color:#565656
+    }
+    .related_list_area .listcontent .item .dot{
+        background-color:#a1a1a1
+    }
+    .related_list_area .listcontent .item .item_info p{
+        color:#a1a1a1
+    }
+    .related_list_area .listcontent .item .botline{
+        background-color:#e1e1e1
+    }
+
+
+     /*검색페이지*/
+     .search_wrap {
+        background-color:#f3f3f3
+    }
+    .search_wrap input[type='text']{
+        width:100%; color:#a1a1a1
+    }
+
+    .search_list{
+        overflow-y:auto;
+    }
+    .search_list .list_item{
+        color:#414141
+    }
+    .search_list .list_item .match{
+        color:#2398ff
+    }
+
+    .search_list .list_item{
+        color:#a1a1a1
+    }
+
+    /*오디오패널 플레이어*/
+    .audioplayer{
+        background-color:#f8f8f8;margin:0 auto
+    }
+    .audioplayer .txt_info .tit{
+        color:#414141
+    }
+    .audioplayer .txt_info .sub_tit{
+        color:#858585
+    }
+    .audioplayer .playstatusbar{
+        width:100%;transform:translateY(-50%);z-index:8
+    }
+    .audioplayer .playstatusbar .bar{
+        background-color:#ff2e5a;
+    }
+    .audioplayer .playstatusbar .bar .barEdge{
+        transform:translateY(30%)translateX(6%);background-color:#ff2e5a; border-radius:50%
+
+    }
+    .audioplayer .addonpopup{
+        background-color:rgba(20,20,20,0.8);z-index:2
+    }
+    .audioplayer .addonpopup .tit{
+        color:#a1a1a1
+    }
+    .audioplayer .addonpopup .message{
+        color:white
+    }
+
+    
+    .audioplayer .player_detail{
+        border-color:#e7e7e7;border-style:solid
+    }
+    .audioplayer .audio_info{
+        border-color:#e7e7e7;border-style:solid
+    }
+    .audioplayer .player_base_bar{
+        background-color:#e7e7e7;display:block
+    }
+    .audioplayer .player_base_bar .progress_bar{
+        background-color:#ff2e5a
+    }
+    .audioplayer .progress_bar .barEdge{
+        background-color:#ff2e5a;border-radius:50%;transform:translateX(30%)translateY(-30%)
+    }
+    .audioplayer .player_extra button{
+        color:#414141;background-color:white;
+    }
+    .audioplayer .select_speedList{
+        background-color:#fff;border-style:solid;border-color:#e7e7e7
+    }
+    .audioplayer .select_speedList li.active a{
+        color:#ff2e5a
+    }
+    
+    .audioplayer .player_detail .audiodetail{
+        margin:0 auto; z-index:90; background-color:#f8f8f8; width:100%
+    }
+    .audioplayer .player_detail .audiodetail .audiodetail_sliderimg{
+        z-index:92;margin:0 auto;
+    }
+    .audioplayer .player_detail .audiodetail .audio_title{
+        text-align:center;color:#3e3e3e;margin:0 auto;
+    }
+    .audioplayer .player_detail  .audiodetail .audio_subtitle{
+        text-align:center;color:#858585;
+    }
+    .audioplayer .decoline{
+        background-color:#f8f8f8;transform:translateY(-400%);margin:0 auto
+    }
+
+    .audioplayer .audiodetail_tabmenuarea{
+
+    }
+    .audioplayer .audiodetail_tabmenuarea .menulist{
+        background-color:#f8f8f8;border-style:solid;border-color:#e3e3e3
+    }
+    .audioplayer .audiodetail_tabmenuarea .menulist .item{
+        color:#3e3e3e
+    }
+   
+    .audioplayer .audiodetail_tabmenuarea .menulist .item .bar{
+        width:100%;background-color:#3e3e3e
+    }
+
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1 .info_right .tit{
+        color:#565656;
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1 .info_right .subtit{
+        color:#858585
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1 .audio_title_area{
+        border-color:#f8f8f8;border-style:solid;   
+    }
+   
+    .audioplayer .audiodetail_tabmenuarea .tabcontent::webkit-scrollbar{
+        display:none;
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1  .playlistcontent .item{
+        border-color:#f3f3f3;border-style:solid;
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1  .playlistcontent .item .tit{
+        color:#414141
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent1  .playlistcontent .item .subtit{
+        color:#a1a1a1
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent2 .item_info_bottom .right_info .txt{
+        color:#414141
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent2 .item_info_bottom .right_info  .name{
+        color:#0080df
+    }
+
+
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.head_content{
+        border-style:solid;border-color:#f3f3f3
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.row_content  .buyhistory_detail{
+        background-color:#f8f8f8
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.row_content  .buyhistory_detail .history_item{
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 .history_item .borderlinebottom{
+        background-color:#eee;margin:0 auto
+    }
+    .audioplayer .audiodetail_tabmenuarea .tabcontent3 ul.row_content li.buydetailviewmore{
+        color:#2398ff;border-style:solid;border-color:#2398ff
+    }
+
+
+     /*직무제안하기*/
+    .jobsuggest_content{
+        min-height:100vh;
+    }
+    .jobsuggest_content .tit{
+        color:#414141
+    }
+    .jobsuggest_content .message{
+        color:#3e3e3e
+    }
+    .jobsuggest_content .search_wrap{
+        background-color:#f3f3f3
+    }
+    .jobsuggest_content .search_wrap input{
+        color:#a1a1a1
+    }
+    .jobsuggest_content .search_wrap .txt{
+        color:#414141   
+    }
+
+    .searchselectList .selectitem{
+        border-style:dotted;border-color:#a4a4a4; color:#858585
+    }
+
+
+    /*오디오디테일 오디오강의상세*/
+    .audiodetail_content .detailinfo_header .tit{
+        color:#3e3e3e
+    }
+    .audiodetail_content .detailinfo_header .subtit{
+        color:#b8b8b8
+    }
+    .audiodetail_content .buttonwrap .buybutton1{
+        color:white 
+    }
+    .audiodetail_content .buttonwrap .buybutton1 .pricediscount{
+        color:#b0b0ff   
+    }
+    .audiodetail_content .buttonwrap .buybutton2{
+        color:#2398ff
+    }
+    .audiodetail_content .buttonwrap .buybutton2 .price{
+        color:#3e3e3e
+    }
+    .audiodetail_content .buttonwrap .buybutton2 .pricediscount{
+        color:#a6a6a6
+    }
+
+    .related_match_area .item_info_bottom .right_info .txt{
+        color:#414141
+    }
+    .related_match_area .item_info_bottom .right_info  .name{
+        color:#0080df
+    }
+
+    .audiodetail_content .detailinfo_body .review_area_head .tit{
+        color:#3e3e3e
+    }
+    .write_area{
+        border-style:solid;border-color:#e7e7e7
+    }
+    .audiodetail_content .detailinfo_body .write_area{
+        border-style:solid;border-color:#e7e7e7
+    }
+    .audiodetail_content .detailinfo_body .reviewwrite_control .txtlength{
+        color:#565656
+    }
+    .listcontrol{
+        border-style:solid;border-color:#f3f3f3;color:#a1a1a1
+    }
+    .listcontrol .leftinfo li p{
+        color:#a1a1a1
+    }
+    .listcontrol .leftinfo li.active p{
+        color:#ff2e5a
+    }
+    .listcontrol .leftinfo li span{
+        background-color:#a1a1a1
+    }
+    .listcontrol .leftinfo li.active span{
+        background-color:#ff2e5a
+    }
+
+    .audiodetail_content .review_area_body{
+        color:#a1a1a1
+    }
+    .audiodetail_content .review_area_body .name{
+        color:#565656
+    }
+    .audiodetail_content .review_area_body .content{
+        color:#565656
+    }
+    .audiodetail_content .review_area_body .sepbar{
+        background-color:#eee
+    }
+
+
+    /*오디오페이지*/
+    .item_category .head{
+        color:#a1a1a1
+    }
+    .item_category .head p.nowstatus{
+        color:#565656
+    }
+    .item_category .body .item{
+        border-color:#e7e7e7;color:#565656
+    }
+    .item_category .bottom_decoline{
+        box-shadow:0 7px 8px 0 rgba(69,69,69,0.08)
+    }
+    
+
+
+     /*오프라인*/
+     .related_list_area_offline{
+    }
+    .related_list_area_offline .listcontent .item .item_description{
+        background:linear-gradient(114deg, rgba(0,0,0,0.8) 7%,rgba(0,0,0,0.2) 83%);
+    }
+    .related_list_area_offline .listcontent .item .message{
+        color:white;
+    }
+    .related_list_area_offline .listcontent .item .txt{
+        color:#eee
+    }
+    .related_list_area_offline .listcontent .item .dot{
+        background-color:#eee
+    }
+    .related_list_area_offline .listcontent .offline_bottominfo dt{
+        color:#414141
+    }
+    .related_list_area_offline .listcontent .offline_bottominfo dd{
+        color:#858585
+    }
+    .related_list_area_offline .listcontent .offline_bottominfo .decoline{
+        background-color:#e7e7e7
+    }
+
+    /*직무전체보기*/
+    .jobcategorylist .item a{
+        color:#565656;
+    }
+    .jobcategorylist .item{
+        border-color:#f3f3f3;
+    }
+    .jobcategorylist .subcategory .item{
+       color:#a1a1a1;
+    }
+    .jobcategorylist .subcategory .item span{
+        background-color:#e7e7e7
+    }
+
+
+    /*카트 / 결제등등*/
+    .cartcontent .highlight_message{
+        background-color:#ff2e5a; color:white
+    }
+    
+    .cart_head{
+        border-color:#f3f3f3
+    }
+    .cart_body .description .info_right .sepline{
+        background-color:#eee
+    }
+}

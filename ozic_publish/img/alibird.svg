@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="92" height="24" viewBox="0 0 92 24">
+    <defs>
+        <filter id="prefix__a" width="132.6%" height="300%" x="-16.3%" y="-100%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0.16 0"/>
+        </filter>
+        <text id="prefix__b" fill="#FFF" font-family="NotoSansCJKkr-Bold, Noto Sans CJK KR" font-size="10" font-weight="bold">
+            <tspan x="17.265" y="16">얼리버드 할인</tspan>
+        </text>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <rect width="92" height="24" fill="#2398FF" rx="12"/>
+        <g fill="#FFF">
+            <use filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+            <use xlink:href="#prefix__b"/>
+        </g>
+    </g>
+</svg>

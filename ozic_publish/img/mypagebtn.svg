@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="94" height="24" viewBox="0 0 94 24">
+    <defs>
+        <filter id="prefix__a" width="140.5%" height="225%" x="-20.3%" y="-62.5%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0 0.270588235 0 0 0 0.16 0"/>
+        </filter>
+        <text id="prefix__b" fill="#FFF" font-family="AppleSDGothicNeo-Regular, Apple SD Gothic Neo" font-size="16" font-weight="normal">
+            <tspan x="0" y="14">마이페이지</tspan>
+        </text>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="#FFF">
+            <use filter="url(#prefix__a)" xlink:href="#prefix__b"/>
+            <use xlink:href="#prefix__b"/>
+        </g>
+        <g transform="translate(79 6)">
+            <circle cx="7.5" cy="7.5" r="7.5" fill="#FFF"/>
+            <path fill="#2398FF" d="M8.39 7.5L6.196 5.854c-.26-.196-.26-.512 0-.707.261-.196.682-.196.943 0l2.667 2c.26.195.26.511 0 .707l-2.667 2c-.13.097-.3.146-.471.146-.17 0-.342-.049-.472-.146-.26-.196-.26-.512 0-.707L8.391 7.5z"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/width_height_margin_padding_border_base.css">
+    <link rel="stylesheet" href="css/position_and_another_based.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="swiper-4.5.0/dist/css/swiper.min.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+</head>
+<body>
+
+<div class="container position_relative_normal">
+    <div class="audioplayer position_absolute
+        mobile_positionbottom_0 mobile_positionleft_0 mobile_positionright_0 mobile_marginhorizontal_auto
+        tablet_positionbottom_0 tablet_positionleft_0 tablet_positionright_0 tablet_width_360 tablet_marginhorizontal_auto
+        pc_positionbottom_0 pc_positionleft_0 pc_positionright_0 pc_marginhorizontal_auto pc_width_800
+
+        ">
+        <div class="playerbase position_relative_normal bgcolor_graywhite  borderstyle_solid bordercolorgray1 zindex50
+            mobile_height_80 mobile_bordertop_1 
+            tablet_height_80 tablet_bordertop_1
+            pc_bordertop_1
+            ">
+            <!--<div class="playstatusbar position_absolute positiontop_0 positionleft_0 height_13 paddingbottom_3 paddingtop_3">
+                <span class="bar width_170 display_block height_7 position_relative_normal">
+                    <span class="barEdge display_block width_13 height_13 position_absolute positionright_0 positionbottom_0"></span>
+                </span>
+            </div>-->
+            <div class="audio_info 
+            mobile_paddingtop_22 mobile_paddingleft_25 mobile_paddingright_20 mobile_paddingbottom_20 mobile_flex_horizontal_spaceBetween mobile_bordertop_1
+            tablet_paddingtop_22 tablet_paddingleft_25 tablet_paddingright_20 tablet_paddingbottom_20 tablet_flex_horizontal_spaceBetween tablet_bordertop_1
+            pc_paddingtop_26 pc_paddingleft_25 pc_paddingright_20 pc_paddingbottom_24 pc_flex_horizontal_spaceBetween pc_bordertop_1
+            ">
+                <div class="txt_info ">
+                    <p class="tit  fontweight_800
+                    mobile_width_178 mobile_fontsize_14 mobile_textoverflow_prevent_singlerow
+                    tablet_width_178 tablet_fontsize_14 tablet_textoverflow_prevent_singlerow
+                    pc_width_348 pc_fontsize_18 pc_height_27 pc_textoverflow_prevent_singlerow
+                    ">흘러가면서 제목 보여줘요 sdgasgasdgasdgasdgasdgasdgasdgasgasdgㄴㅇㅎㅁㄴㅇㅎㅁㄴㅇㅎ</p>
+                    <p class="sub_tit fontweight_500
+                    mobile_margintop_4  mobile_fontsize_11
+                    tablet_margintop_4  tablet_fontsize_11
+                    pc_margintop_8 pc_fontsize_16 pc_height_24
+
+                    ">위 강의가 속한 제목</p>
+                </div>
+
+                <div class="playcontrol 
+                mobile_flex_horizontal_spaceBetween
+                tablet_flex_horizontal_spaceBetween
+                pc_flex_horizontal_spaceBetween
+                ">
+                    
+                    <img src="img/playlist.svg" id='playlistbtn'class="display_block
+                    mobile_width_23 mobile_marginright_24 mobile_height_20 
+                    tablet_width_23 tablet_marginright_24 tablet_height_20 
+                    pc_width_28 pc_marginright_24 pc_height_29
+
+                    javascript_trigger"
+                    
+                    triggerdata='{"SlideToggle":{"groupid":"","targetindex":"90"},"invisibleimme":{"groupid":"","targetindex":"58"},"iconchanged":{"groupid":"","targetindex":"58"}}'
+                    />
+
+                    <div class="display_block
+
+                    mobile_width_15 mobile_height_9 
+                    tablet_width_15 tablet_height_9 
+                    pc_widht_24 pc_height_14
+
+                    javascript_trigger"
+                    triggerdata='{"SlideToggle":{"txtdata":"","targetindex":"58","groupid":""},"iconToggle":{"groupid":"","targetindex":"58"},"invisibleimme":{"groupid":"","targetindex":"90"}}'
+                    >
+                        <img src="img/palyer-open.svg" class="display_block
+                        mobile_width_15 mobile_height_9 
+                        tablet_width_15 tablet_height_9 
+                        pc_width_24 pc_height_14"
+                        
+    
+                        targetdata='{"iconToggle":{"txtdata":"","effect":"rotate180_fix","groupid":""},"iconchanged":{"txtdata":"","effect":"rotate180_fix","groupid":""}}' 
+                        actionType="iconToggle"
+                        targetindex='javascript_iconToggleTarget_58|javascript_iconchangedTarget_58'
+                        toggle_status="opened"
+                        />
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="addonpopup position_absolute 
+            mobile_positionbottom_81  mobile_positionleft_0  mobile_flex_horizontal_flexStart  mobile_paddingbottom_24  mobile_paddingleft_20  mobile_paddingtop_20  mobile_paddingright_20  mobile_height_85 mobile_width_100_percent
+            tablet_positionbottom_81  tablet_positionleft_0 tablet_flex_horizontal_flexStart  tablet_paddingbottom_24  tablet_paddingleft_20  tablet_paddingtop_20  tablet_paddingright_20 tablet_height_85 tablet_width_100_percent
+            pc_positionbottom_105 pc_positionleft_0 pc_flex_horizontal_flexStart pc_paddingbottom_24 pc_paddingleft_20 pc_paddingtop_20 pc_paddingright_20 pc_width_100_percent
+            
+            "
+
+            actionType="invisibleimme"
+            targetdata='{"invisibleimme":{"txtdata":"","effect":"","groupid":""}}'
+            targetindex="javascript_invisibleimmeTarget_0"
+                >
+                <p class="tit fontweight_500
+                mobile_fontsize_14  mobile_height_20   mobile_width_240
+                tablet_fontsize_14   tablet_height_20   tablet_width_240
+                pc_fontsize_16 pc_height_24 pc_width_320
+
+                ">지금은 1강 미리듣기 중 입니다.</p>
+                <p class="message fontweight_900 colorwhite
+                mobile_margintop_4 mobile_fontsize_14 mobile_height_20
+                tablet_margintop_4 tablet_fontsize_14 tablet_height_20
+                pc_margintop_4 pc_fontsize_16 pc_height_24 
+                ">여러 개 묶어서 사면 10% 절약</p>
+                <img src="img/player-login-cart-icon@2x.png" class="loginbtn  display_none
+                mobile_width_57 mobile_margintop_4 mobile_height_20  mobile_marginleft_9
+                tablet_width_57 tablet_margintop_4 tablet_height_20  tablet_marginleft_9
+                pc_width_65 pc_margintop_4 pc_height_24 pc_marginleft_9
+                "/>
+                <img src="img/player-login-buy-icon@2x.png" class="buybtn  display_block
+                mobile_width_57 mobile_margintop_4 mobile_height_20  mobile_marginleft_9
+                tablet_width_57 tablet_margintop_4 tablet_height_20  tablet_marginleft_9
+                pc_width_65 pc_margintop_4 pc_height_24 pc_marginleft_9
+
+                "/>
+                <img src="img/xBtn.svg" class="position_absolute
+                mobile_width_15 mobile_height_15  mobile_positiontop_18 mobile_positionright_18
+                tablet_width_15 tablet_height_15  tablet_positiontop_18 tablet_positionright_18
+                pc_width_19 pc_height_19 pc_positiontop_18 pc_positionright_18
+                javascript_trigger"
+                triggerdata='{"invisibleimme":{"targetindex":"0","groupid":""}}'
+                />
+            </div>
+
+            <!--playerbase(bottom하단부 기본)의 자식형태 tabmenuList형태 -->
+            <div class="audiodetail_tabmenuarea position_absolute
+            mobile_height_453  mobile_positionbottom_80 mobile_positionleft_0 mobile_borderradiustopleft_10 mobile_borderradiustopright_10  mobile_width_360
+            
+            tablet_height_453  tablet_positionbottom_80 tablet_positionleft_0 tablet_borderradiustopleft_10 tablet_borderradiustopright_10  tablet_width_360
+
+            pc_height_553 pc_positionbottom_100 pc_positionleft_0 pc_borderradiustopleft_10 pc_borderradiustopright_10 pc_width_100_percent
+
+            " style="display:none"
+            actionType="SlideToggle"
+            targetdata='{"SlideToggle":{"txtdata":"","effect":"","groupid":""},"invisibleimme":{"txtdata":"","effect":"","groupid":""}}'
+            targetindex="javascript_SlideToggleTarget_90,javascript_invisibleimmeTarget_90"
+            toggle_status="closed"
+            >
+                <div class="decoline position_absolute
+                mobile_positiontop_0 mobile_positionleft_0 mobile_positionright_0  mobile_width_60 mobile_height_6 mobile_borderradiustopleft_3 mobile_borderradiustopright_3 mobile_borderradiusbottomleft_3 mobile_borderradiusbottomright_3
+                tablet_positiontop_0 tablet_positionleft_0 tablet_positionright_0  tablet_width_60 tablet_height_6 tablet_borderradiustopleft_3 tablet_borderradiustopright_3 tablet_borderradiusbottomleft_3 tablet_borderradiusbottomright_3
+                pc_positiontop_0 pc_positionleft_0 pc_positionright_0 pc_width_60 pc_height_6 pc_borderradiustopleft_3 pc_borderradiustopright_3 pc_borderradiusbottomleft_3 pc_borderradiusbottomright_3
+
+                "></div>
+
+                <div class="tabcontent 
+                mobile_height_453
+                tablet_height_453
+                pc_height_553
+                ">
+                    <ul class="menulist display_block bgcolor_graywhite
+                    mobile_height_61  mobile_flex_horizontal_Center mobile_borderbottom_1
+                    tablet_height_61 tablet_flex_horizontal_Center tablet_borderbottom_1
+                    pc_flex_horizontal_Center pc_borderbottom_1
+
+                    ">
+                        <li class="item active fontweight_500 position_relative_normal
+                        mobile_fontsize_16  mobile_height_61 mobile_flex_horizontal_Center 
+                        tablet_fontsize_16  tablet_height_61 tablet_flex_horizontal_Center 
+                        pc_fontsize_20  pc_height_73 pc_flex_horizontal_Center 
+
+                        javascript_trigger"   
+                        targetindex="tabcontentbar_dsiplayblocknone_group0_1"                        
+                        triggerdata='{"displayblocknone":{"groupid":"0","targetindex":"1","clickmenubar":"true"}}'>
+                            <a href='#'>현재강의</a> 
+                            <span class="bar display_block position_absolute bgcolor_dark
+                            mobile_height_4  mobile_positionbottom_0 mobile_positionleft_0 mobile_width_100_percent
+                            tablet_height_4  tablet_positionbottom_0 tablet_positionleft_0 tablet_width_100_percent
+                            pc_height_6 pc_positionbottom_0 pc_positionleft_0 pc_width_100_percent
+                            " targetindex="tabcontentbar_displayblocknone_group0"></span>
+                        </li>
+                        <li class="item active fontweight_500 position_relative_normal
+                        mobile_fontsize_16  mobile_height_61 mobile_flex_horizontal_Center mobile_marginleft_30 mobile_marginright_30
+                        tablet_fontsize_16  tablet_height_61 tablet_flex_horizontal_Center tablet_marginleft_30 tablet_marginright_30
+                        pc_fontsize_20  pc_height_73 pc_flex_horizontal_Center pc_marginleft_103 pc_marginright_103
+
+                        javascript_trigger" 
+                        targetindex="tabcontentbar_dsiplayblocknone_group0_2"                        
+                        triggerdata='{"displayblocknone":{"groupid":"0","targetindex":"2","clickmenubar":"true"}}'>
+                            <a href='#'>연관강의</a>
+                        </li>
+                        <li class="item active fontweight_500 position_relative_normal
+                        mobile_fontsize_16  mobile_height_61 mobile_flex_horizontal_Center 
+                        tablet_fontsize_16  tablet_height_61 tablet_flex_horizontal_Center 
+                        pc_fontsize_20  pc_height_73 pc_flex_horizontal_Center 
+
+                        javascript_trigger" 
+                        targetindex="tabcontentbar_dsiplayblocknone_group0_3"                        
+                        triggerdata='{"displayblocknone":{"groupid":"0","targetindex":"3","clickmenubar":"true"}}'>
+                                <a href='#'>구매목록</a>
+                        </li>
+                    </ul>
+                    <div targetindex="javascript_displayblocknoneTargetgroup0_1"  
+
+                    actionType="displayblocknone"
+                    targetdata='{"displayblocknone":{"txtdata":"","effect":"","groupid":"0"}}'
+
+                    class="tabcontent1 
+                    mobile_overflow_auto mobile_height_392
+                    tablet_overflow_auto tablet_height_392
+                    pc_overflow_auto pc_height_473
+                    " >
+                        <div class="audio_title_area borderstyle_solid bordercolorgray2
+                        
+                        mobile_flex_horizontal_flexStart mobile_paddingtop_31 mobile_paddingleft_20 mobile_paddingright_20 mobile_borderbottom_5 mobile_paddingbottom_29
+                        tablet_flex_horizontal_flexStart tablet_paddingtop_31 tablet_paddingleft_20 tablet_paddingright_20 tablet_borderbottom_5 tablet_paddingbottom_29
+
+                        pc_flex_horizontal_flexStart pc_paddingtop_31 pc_paddingleft_20 pc_paddingright_20 pc_borderbottom_5 pc_paddingbottom_29 
+                        ">
+                            <div class="itemRadius justaudio position_relative_normal
+                            mobile_width_50 mobile_height_50 mobile_marginright_13
+                            tablet_width_50 tablet_height_50 tablet_marginright_13
+                            pc_width_80 pc_height_80 pc_marginright_13
+                            ">
+                                <span class="borderradiusDeco display_block  position_absolute
+                                
+                                mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_6 pc_borderbottom_6 pc_borderleft_6 pc_borderright_6
+                                "></span>
+                                <img src="img/Image3@3x.png" class="display_block position_absolute img_background_cover_center
+                                mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25
+                                tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40 
+                                "/>
+                            </div>
+                            <div class="info_right">
+                                <p class="tit  fontweight_500
+                                mobile_fontsize_16   mobile_height_21  mobile_width_240  mobile_textoverflow_prevent_singlerow
+                                tablet_fontsize_16   tablet_height_21 tablet_width_240 tablet_textoverflow_prevent_singlerow
+                                pc_fontsize_18 pc_height_24 pc_width_320 pc_textoverflow_prevent_singlerow
+
+                                ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                <p class="subtit fontweight_500
+                                mobile_margintop_2 mobile_fontsize_12  mobile_height_18
+                                tablet_margintop_2 tablet_fontsize_12  tablet_height_18
+                                pc_margintop_4 pc_fontisze_15 pc_height_20
+                                ">총 51강</p>
+                            </div>
+                        </div>
+                        <ul class="playlistcontent 
+                        mobile_paddingleft_20 mobile_paddingright_20
+                        tablet_paddingleft_20 tablet_paddingright_20
+                        pc_paddingleft_20 pc_paddingright_20
+
+                        ">
+                            <li class="item 
+                            mobile_paddingtop_20 mobile_paddingbottom_17 mobile_flex_horizontal_spaceBetween mobile_borderbottom_1
+                            tablet_paddingtop_20 tablet_paddingbottom_17 tablet_flex_horizontal_spaceBetween tablet_borderbottom_1
+                            pc_paddingtop_24 pc_paddingbottom_20 pc_flex_horizontal_spaceBetween pc_borderbottom_1
+                            ">
+                                <div class="leftinfo">
+                                    <p class="tit fontweight_500
+                                    mobile_fontsize_14  mobile_height_20 mobile_width_257 mobile_textoverflow_prevent_singlerow
+                                    tablet_fontsize_14  tablet_height_20 tablet_width_257 tablet_textoverflow_prevent_singlerow
+                                    pc_fontsize_18 pc_height_28 pc_width_457 pc_textoverflow_prevent_singlerow
+                                    ">1강 강의 제목을 적어요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                    <p class="subtit fontweight_500
+                                    mobile_margintop_2  mobile_fontsize_10
+                                    tablet_margintop_2  tablet_fontsize_10
+                                    pc_margintop_2 pc_fontsize_16
+                                    ">10분 50초</p>
+                                </div>
+                                <img class="play display_block
+                                mobile_width_38 mobile_height_38
+                                tablet_width_38 tablet_height_38
+                                pc_width_50 pc_height_50
+                                "  src="img/play-button-color.svg"/>
+                            </li>
+                            <li class="item 
+                            mobile_paddingtop_20 mobile_paddingbottom_17 mobile_flex_horizontal_spaceBetween mobile_borderbottom_1
+                            tablet_paddingtop_20 tablet_paddingbottom_17 tablet_flex_horizontal_spaceBetween tablet_borderbottom_1
+                            pc_paddingtop_24 pc_paddingbottom_20 pc_flex_horizontal_spaceBetween pc_borderbottom_1
+                            ">
+                                <div class="leftinfo">
+                                    <p class="tit fontweight_500
+                                    mobile_fontsize_14  mobile_height_20 mobile_width_257 mobile_textoverflow_prevent_singlerow
+                                    tablet_fontsize_14  tablet_height_20 tablet_width_257 tablet_textoverflow_prevent_singlerow
+                                    pc_fontsize_18 pc_height_28 pc_width_457 pc_textoverflow_prevent_singlerow
+                                    ">1강 강의 제목을 적어요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                    <p class="subtit fontweight_500
+                                    mobile_margintop_2  mobile_fontsize_10
+                                    tablet_margintop_2  tablet_fontsize_10
+                                    pc_margintop_2 pc_fontsize_16
+                                    ">10분 50초</p>
+                                </div>
+                                <img class="play display_block
+                                mobile_width_38 mobile_height_38
+                                tablet_width_38 tablet_height_38
+                                pc_width_50 pc_height_50
+                                "  src="img/play-button-color.svg"/>
+                            </li>
+                            <li class="item 
+                            mobile_paddingtop_20 mobile_paddingbottom_17 mobile_flex_horizontal_spaceBetween mobile_borderbottom_1
+                            tablet_paddingtop_20 tablet_paddingbottom_17 tablet_flex_horizontal_spaceBetween tablet_borderbottom_1
+                            pc_paddingtop_24 pc_paddingbottom_20 pc_flex_horizontal_spaceBetween pc_borderbottom_1
+                            ">
+                                <div class="leftinfo">
+                                    <p class="tit fontweight_500
+                                    mobile_fontsize_14  mobile_height_20 mobile_width_257 mobile_textoverflow_prevent_singlerow
+                                    tablet_fontsize_14  tablet_height_20 tablet_width_257 tablet_textoverflow_prevent_singlerow
+                                    pc_fontsize_18 pc_height_28 pc_width_457 pc_textoverflow_prevent_singlerow
+                                    ">1강 강의 제목을 적어요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                    <p class="subtit fontweight_500
+                                    mobile_margintop_2  mobile_fontsize_10
+                                    tablet_margintop_2  tablet_fontsize_10
+                                    pc_margintop_2 pc_fontsize_16
+                                    ">10분 50초</p>
+                                </div>
+                                <img class="play display_block
+                                mobile_width_38 mobile_height_38
+                                tablet_width_38 tablet_height_38
+                                pc_width_50 pc_height_50
+                                "  src="img/play-button-color.svg"/>
+                            </li>
+                            <li class="item 
+                            mobile_paddingtop_20 mobile_paddingbottom_17 mobile_flex_horizontal_spaceBetween mobile_borderbottom_1
+                            tablet_paddingtop_20 tablet_paddingbottom_17 tablet_flex_horizontal_spaceBetween tablet_borderbottom_1
+                            pc_paddingtop_24 pc_paddingbottom_20 pc_flex_horizontal_spaceBetween pc_borderbottom_1
+                            ">
+                                <div class="leftinfo">
+                                    <p class="tit fontweight_500
+                                    mobile_fontsize_14  mobile_height_20 mobile_width_257 mobile_textoverflow_prevent_singlerow
+                                    tablet_fontsize_14  tablet_height_20 tablet_width_257 tablet_textoverflow_prevent_singlerow
+                                    pc_fontsize_18 pc_height_28 pc_width_457 pc_textoverflow_prevent_singlerow
+                                    ">1강 강의 제목을 적어요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                    <p class="subtit fontweight_500
+                                    mobile_margintop_2  mobile_fontsize_10
+                                    tablet_margintop_2  tablet_fontsize_10
+                                    pc_margintop_2 pc_fontsize_16
+                                    ">10분 50초</p>
+                                </div>
+                                <img class="play display_block
+                                mobile_width_38 mobile_height_38
+                                tablet_width_38 tablet_height_38
+                                pc_width_50 pc_height_50
+                                "  src="img/play-button-color.svg"/>
+                            </li>
+                            <li class="item 
+                            mobile_paddingtop_20 mobile_paddingbottom_17 mobile_flex_horizontal_spaceBetween mobile_borderbottom_1
+                            tablet_paddingtop_20 tablet_paddingbottom_17 tablet_flex_horizontal_spaceBetween tablet_borderbottom_1
+                            pc_paddingtop_24 pc_paddingbottom_20 pc_flex_horizontal_spaceBetween pc_borderbottom_1
+                            ">
+                                <div class="leftinfo">
+                                    <p class="tit fontweight_500
+                                    mobile_fontsize_14  mobile_height_20 mobile_width_257 mobile_textoverflow_prevent_singlerow
+                                    tablet_fontsize_14  tablet_height_20 tablet_width_257 tablet_textoverflow_prevent_singlerow
+                                    pc_fontsize_18 pc_height_28 pc_width_457 pc_textoverflow_prevent_singlerow
+                                    ">1강 강의 제목을 적어요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                    <p class="subtit fontweight_500
+                                    mobile_margintop_2  mobile_fontsize_10
+                                    tablet_margintop_2  tablet_fontsize_10
+                                    pc_margintop_2 pc_fontsize_16
+                                    ">10분 50초</p>
+                                </div>
+                                <img class="play display_block
+                                mobile_width_38 mobile_height_38
+                                tablet_width_38 tablet_height_38
+                                pc_width_50 pc_height_50
+                                "  src="img/play-button-color.svg"/>
+                            </li>
+                            <li class="item 
+                            mobile_paddingtop_20 mobile_paddingbottom_17 mobile_flex_horizontal_spaceBetween mobile_borderbottom_1
+                            tablet_paddingtop_20 tablet_paddingbottom_17 tablet_flex_horizontal_spaceBetween tablet_borderbottom_1
+                            pc_paddingtop_24 pc_paddingbottom_20 pc_flex_horizontal_spaceBetween pc_borderbottom_1
+                            ">
+                                <div class="leftinfo">
+                                    <p class="tit fontweight_500
+                                    mobile_fontsize_14  mobile_height_20 mobile_width_257 mobile_textoverflow_prevent_singlerow
+                                    tablet_fontsize_14  tablet_height_20 tablet_width_257 tablet_textoverflow_prevent_singlerow
+                                    pc_fontsize_18 pc_height_28 pc_width_457 pc_textoverflow_prevent_singlerow
+                                    ">1강 강의 제목을 적어요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                    <p class="subtit fontweight_500
+                                    mobile_margintop_2  mobile_fontsize_10
+                                    tablet_margintop_2  tablet_fontsize_10
+                                    pc_margintop_2 pc_fontsize_16
+                                    ">10분 50초</p>
+                                </div>
+                                <img class="play display_block
+                                mobile_width_38 mobile_height_38
+                                tablet_width_38 tablet_height_38
+                                pc_width_50 pc_height_50
+                                "  src="img/play-button-color.svg"/>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div targetindex="javascript_displayblocknoneTargetgroup0_2" 
+
+                    actionType="displayblocknone"
+                    targetdata='{"displayblocknone":{"txtdata":"","effect":"","groupid":"0"}}'
+
+                    class="tabcontent2 
+                    
+                    mobile_overflow_auto mobile_height_392
+                    tablet_overflow_auto tablet_height_392
+                    pc_overflow_auto pc_height_473
+
+                    "
+                    style="transform:translateX(-100%);height:1px !important;opacity:0">
+                        <div class="related_match_area  
+                        mobile_paddingtop_32 mobile_paddingleft_20 mobile_paddingbottom_42
+                        tablet_paddingtop_32  tablet_paddingleft_20  tablet_paddingbottom_42
+                        pc_paddingtop_32 pc_paddingleft_20 pc_paddingbottom_42
+                        ">
+                            <h3 class="tit fontweight_500  display_block
+                            mobile_paddingbottom_28  mobile_fontsize_20
+                            tablet_paddingbottom_28  tablet_fontsize_20
+                            pc_paddingbottom_28 pc_fontsize_22
+                            ">강의 추천을 하단에 보여주기</h3>
+                            <div class="listcontent 
+                            mobile_Xoverflow_horizontal_list
+                            tablet_Xoverflow_horizontal_list
+                            pc_Xoverflow_horizontal_list
+
+                            ">                              
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                        </div>
+                        <div class="related_match_area  
+                        mobile_paddingtop_32 mobile_paddingleft_20 mobile_paddingbottom_42
+                        tablet_paddingtop_32  tablet_paddingleft_20  tablet_paddingbottom_42
+                        pc_paddingtop_32 pc_paddingleft_20 pc_paddingbottom_42
+                        ">
+                            <h3 class="tit fontweight_500  display_block
+                            mobile_paddingbottom_28  mobile_fontsize_20
+                            tablet_paddingbottom_28  tablet_fontsize_20
+                            pc_paddingbottom_28 pc_fontsize_22
+                            ">영업 관리 한방에 뿌시기</h3>
+                            <div class="listcontent 
+                            mobile_Xoverflow_horizontal_list
+                            tablet_Xoverflow_horizontal_list
+                            pc_Xoverflow_horizontal_list
+
+                            ">                              
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item 
+                                mobile_width_142 mobile_marginright_17
+                                tablet_width_142 tablet_marginright_17
+                                pc_width_162 pc_marginright_17
+
+                                ">
+                                    <div class="itemimg position_relative_normal 
+                                    mobile_width_142 mobile_height_142  mobile_paddingtop_20 mobile_paddingleft_15 mobile_paddingright_23
+                                    tablet_width_142 tablet_height_142  tablet_paddingtop_20 tablet_paddingleft_15 tablet_paddingright_23
+                                    pc_width_162 pc_height_162 pc_paddingtop_20 pc_paddingleft_15 pc_paddingright_23
+                                    ">
+                                        <div class="shadow_blur"></div>
+                                        <img class="img_background_cover_center  
+                                        mobile_borderradiustopleft_5 mobile_borderradiustopright_5 mobile_borderradiusbottomleft_5 mobile_borderradiusbottomright_5
+                                        tablet_borderradiustopleft_5 tablet_borderradiustopright_5 tablet_borderradiusbottomleft_5 tablet_borderradiusbottomright_5
+                                        pc_borradiustopleft_5 pc_borderradiustopright_5 pc_borderradiusbottomleft_5 pc_borderradiusbottomright_5
+                                        " src="img/image2@3x.png"/>
+                                        <p class="message fontweight_500 textshadow1 position_relative_zindex3 colorwhite
+                                        mobile_fontsize_12
+                                        tablet_fontsize_12
+                                        pc_fontsize_14
+
+                                        ">
+                                            오디오 직무 강의 제목을 적어주세요
+                                        </p>
+                                    </div>
+                                    <div class="item_info_bottom 
+                                    mobile_margintop_11 mobile_flex_horizontal_flexStart
+                                    tablet_margintop_11 tablet_flex_horizontal_flexStart
+                                    pc_margintop_16 pc_flex_horizontal_flexStart
+                                    ">
+                                        <img src="img/play-button-color.svg" class="display_block
+                                        mobile_width_33 mobile_height_32 mobile_marginright_5
+                                        tablet_width_33 tablet_height_32 tablet_marginright_5
+                                        pc_width_38 pc_height_37 pc_marginright_5
+
+                                        "/>
+                                        <div class="right_info 
+                                        mobile_width_102
+                                        tablet_width_102
+                                        pc_width_108
+                                        ">
+                                            <p class="txt fontweight_500
+                                            mobile_width_102 mobile_textoverflow_prevent_singlerow mobile_height_15 mobile_fontsize_10 
+                                            tablet_width_102 tablet_textoverflow_prevent_singlerow tablet_height_15 tablet_fontsize_10 
+                                            pc_width_108 pc_textoverflow_prevent_singlerow pc_height_22 pc_fontsize_14
+
+                                            ">강사 이름을 적어요</p>
+                                            <p class="name  fontweight_500
+                                            mobile_margintop_3  mobile_fontsize_13   mobile_height_16
+                                            tablet_margintop_3  tablet_fontsize_13   tablet_height_16
+                                            pc_margintop_3 pc_fontsize_15 pc_height_22
+
+                                            ">브레인</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>              
+                        </div>
+                    </div>
+
+
+                    <div targetindex="javascript_displayblocknoneTargetgroup0_3" 
+                    actionType="displayblocknone"
+                    targetdata='{"displayblocknone":{"txtdata":"","effect":"","groupid":"0"}}'
+
+                        class="tabcontent3 
+                        mobile_overflow_auto mobile_height_392
+                        tablet_overflow_auto tablet_height_392 
+                        pc_overflow_auto pc_height_473
+                        " 
+                        
+                        style="transform:translateX(-100%);height:1px !important;opacity:0";
+                    >
+                        <ul class="head_content 
+                        mobile_flex_horizontal_spaceBetween mobile_paddingleft_40 mobile_paddingright_48 mobile_paddingtop_19 mobile_paddingbottom_22 mobile_borderbottom_5
+                        tablet_flex_horizontal_spaceBetween tablet_paddingleft_40 tablet_paddingright_48 tablet_paddingtop_19 tablet_paddingbottom_22 tablet_borderbottom_5
+                        pc_flex_horizontal_Center pc_paddingtop_19 pc_paddingbottom_22 pc_borderbottom_5
+                        ">
+                            <li class="item fontweight_500
+                            mobile_fontsize_14  mobile_height_17
+                            tablet_fontsize_14  tablet_height_17
+                            pc_fontsize_18 pc_height_28
+                            ">주문번호</li>
+                            <li class="item fontweight_500 
+                            mobile_fontsize_14  mobile_height_17 mobile_paddingleft_40 mobile_paddingright_52
+                            tablet_fontsize_14  tablet_height_17 tablet_paddingleft_40 tablet_paddingright_52
+                            pc_fontsize_18 pc_height_28 pc_paddingleft_140 pc_paddingright_142
+                            
+                            ">주문일자</li>
+                            <li class="item fontweight_500 
+                            mobile_fontsize_14  mobile_height_17
+                            tablet_fontsize_14  tablet_height_17
+                            pc_fontsize_18 pc_height_28">포함강의</li>
+                        </ul>
+                        <ul class="row_content colorblack
+                        mobile_flex_horizontal_spaceBetween mobile_paddingtop_18
+                        tablet_flex_horizontal_spaceBetween tablet_paddingtop_18
+                        pc_flex_horizontal_Center pc_paddingtop_18
+
+                        ">
+                            <li class="item 
+                            mobile_fontsize_10  mobile_height_18  mobile_paddingleft_10  mobile_width_95  mobile_textoverflow_prevent_singlerow  mobile_marginbottom_22
+                            tablet_fontsize_10  tablet_height_18  tablet_paddingleft_10  tablet_width_95  tablet_textoverflow_prevent_singlerow  tablet_marginbottom_22
+                            pc_fontsize_14 pc_height_25 pc_paddingleft_10 pc_textoverflow_prevent_singlerow pc_marginbottom_22
+                            ">20156456459789</li>
+                            <li class="item 
+                            mobile_fontsize_10   mobile_height_15  mobile_paddingleft_28  mobile_paddingright_25  mobile_marginbottom_22
+                            tablet_fontsize_10   tablet_height_15  tablet_paddingleft_28  tablet_paddingright_25  tablet_marginbottom_22
+                            pc_fontsize_15 pc_height_25 pc_paddingleft_100 pc_paddingright_80 pc_marginbottom_22
+                            ">2020.01.29</li>
+                            <li class="buydetailviewmore item ozicborderstyle_blue oziccolor_blue  borderstyle_solid
+                            mobile_fontsize_10 mobile_height_28 mobile_width_110 mobile_flex_horizontal_Center mobile_bordertop_2 mobile_borderbottom_2 mobile_borderright_2 mobile_borderleft_2 mobile_marginright_10 mobile_marginbottom_22 mobile_borderradiustopleft_14 mobile_borderradiustopright_14 mobile_borderradiusbottomleft_14 mobile_borderradiusbottomright_14 mobile_textoverflow_prevent_singlerow  
+                            
+                            tablet_fontsize_10 tablet_height_28 tablet_width_110 tablet_flex_horizontal_Center tablet_bordertop_2 tablet_borderbottom_2 tablet_borderright_2 tablet_borderleft_2 tablet_marginright_10 tablet_marginbottom_22 tablet_borderradiustopleft_14  tablet_borderradiustopright_14 tablet_borderradiusbottomleft_14 tablet_borderradiusbottomright_14 tablet_textoverflow_prevent_singlerow  
+
+                            pc_fontsize_13 pc_height_46 pc_width_150 pc_flex_horizontal_Center pc_bordertop_2 pc_borderbottom_2 pc_borderleft_2 pc_borderright_2 pc_marginright_10 pc_marginbottom_22 pc_borderradiustopleft_23 pc_borderradiustopright_23 pc_borderradiusbottomleft_23 pc_borderradiusbottomright_23 pc_textoverflow_prevent_singlerow
+                            javascript_trigger "  
+                            
+                            triggerType="SlideToggle|txtToggle|iconToggle" 
+                            triggerdata='{"SlideToggle":{"groupid":"","targetindex":"0"},"txtToggle":{"groupid":"","targetindex":"0"},"iconToggle":{"groupid":"","targetindex":"0"}}'>
+                                포함 강의 3개 <span targetindex="javascript_txtToggleTarget_0" actionType="txtToggle" targetdata='{"txtToggle":{"txtdata":"닫기,열기","effect":"","groupid":""}}'
+                                >닫기</span>  <img src="img/bluearrowsmall.svg" class="display_block
+                                mobile_width_8 mobile_height_5
+                                tablet_width_8 tablet_height_5
+                                pc_width_10 pc_height_7
+
+                                " targetindex="javascript_iconToggleTarget_0" actionType="iconToggle" targetdata='{"iconToggle":{"txtdata":"","effect":"rotate180_animation","groupid":""}}' toggle_status="opened"/>
+                    
+                            </li>
+                            <div class="buyhistory_detail bgcolor_graywhite
+                            mobile_width_100_percent
+                            tablet_width_100_percent
+                            pc_width_100_percent 
+                            "  targetindex="javascript_SlideToggleTarget_0" targetdata='{"SlideToggle":{"txtdata":"","effect":"","groupid":""}}' toggle_status="opened" actionType="SlideToggle">
+                                <div class="history_item  position_relative_normal
+                                mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+                                tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29
+                                pc_flex_horizontal_flexStart pc_paddingleft_40 pc_paddingright_40 pc_paddingtop_29
+
+                                ">
+                                    <div class="itemRadius audioitem position_relative_normal
+                                    mobile_width_50 mobile_height_50 mobile_marginright_11
+                                    tablet_width_50 tablet_height_50 tablet_marginright_11
+                                    pc_width_80 pc_height_80 pc_marginright_22
+                                    ">
+                                        <span class="borderradiusDeco display_block position_absolute
+
+                                        mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                        tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                        pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_5 pc_borderbottom_5 pc_borderleft_5 pc_borderright_5
+                                        "></span>
+                                        <img src="img/Image3@3x.png" class="display_block  position_absolute img_background_cover_center
+                                        mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25 
+                                        tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                        pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40
+                                        "/>
+                                    </div>
+                                    <div class="info_right">
+                                        <p class="tit  fontweight_500 colorblack
+                                        
+                                        mobile_fontsize_14 mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                                        tablet_fontsize_14 tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                                        pc_fontsize_17 pc_height_27 pc_width_400 pc_textoverflow_prevent_singlerow
+                                        ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                        <p class="subtit fontweight_500 colorgray
+                                        mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                                        tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                                        pc_margintop_5 pc_fontsize_16 pc_height_26
+                                        ">오프라인</p>
+                                    </div>
+                                    <img src="img/play-button-color.svg" class="display_block
+                                    mobile_width_38 mobile_height_38  mobile_marginleft_40
+                                    tablet_width_38 tablet_height_38  tablet_marginleft_40
+                                    pc_width_50 pc_height_50 pc_marginleft_120
+
+                                    "/>
+                                    <span class="display_block bgcolor_gray
+                                    mobile_width_320  mobile_height_1  mobile_margintop_29
+                                    tablet_width_320  tablet_height_1  tablet_margintop_29
+                                    pc_width_100_percent pc_height_1 pc_margintop_29
+                                    "></span>
+                                </div>
+                                <div class="history_item  position_relative_normal
+                                mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+                                tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29
+                                pc_flex_horizontal_flexStart pc_paddingleft_40 pc_paddingright_40 pc_paddingtop_29
+
+                                ">
+                                    <div class="itemRadius audioitem position_relative_normal
+                                    mobile_width_50 mobile_height_50 mobile_marginright_11
+                                    tablet_width_50 tablet_height_50 tablet_marginright_11
+                                    pc_width_80 pc_height_80 pc_marginright_22
+                                    ">
+                                        <span class="borderradiusDeco display_block position_absolute
+
+                                        mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                        tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                        pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_5 pc_borderbottom_5 pc_borderleft_5 pc_borderright_5
+                                        "></span>
+                                        <img src="img/Image3@3x.png" class="display_block  position_absolute img_background_cover_center
+                                        mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25 
+                                        tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                        pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40
+                                        "/>
+                                    </div>
+                                    <div class="info_right">
+                                        <p class="tit  fontweight_500 colorblack
+                                        
+                                        mobile_fontsize_14 mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                                        tablet_fontsize_14 tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                                        pc_fontsize_17 pc_height_27 pc_width_400 pc_textoverflow_prevent_singlerow
+                                        ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                        <p class="subtit fontweight_500 colorgray
+                                        mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                                        tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                                        pc_margintop_5 pc_fontsize_16 pc_height_26
+                                        ">오프라인</p>
+                                    </div>
+                                    <img src="img/play-button-color.svg" class="display_block
+                                    mobile_width_38 mobile_height_38  mobile_marginleft_40
+                                    tablet_width_38 tablet_height_38  tablet_marginleft_40
+                                    pc_width_50 pc_height_50 pc_marginleft_120
+
+                                    "/>
+                                    <span class="display_block bgcolor_gray
+                                    mobile_width_320  mobile_height_1  mobile_margintop_29
+                                    tablet_width_320  tablet_height_1  tablet_margintop_29
+                                    pc_width_100_percent pc_height_1 pc_margintop_29
+                                    "></span>
+                                </div>
+                                <div class="history_item  position_relative_normal
+                                mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+                                tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29
+                                pc_flex_horizontal_flexStart pc_paddingleft_40 pc_paddingright_40 pc_paddingtop_29
+
+                                ">
+                                    <div class="itemRadius audioitem position_relative_normal
+                                    mobile_width_50 mobile_height_50 mobile_marginright_11
+                                    tablet_width_50 tablet_height_50 tablet_marginright_11
+                                    pc_width_80 pc_height_80 pc_marginright_22
+                                    ">
+                                        <span class="borderradiusDeco display_block position_absolute
+
+                                        mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                        tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                        pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_5 pc_borderbottom_5 pc_borderleft_5 pc_borderright_5
+                                        "></span>
+                                        <img src="img/Image3@3x.png" class="display_block  position_absolute img_background_cover_center
+                                        mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25 
+                                        tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                        pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40
+                                        "/>
+                                    </div>
+                                    <div class="info_right">
+                                        <p class="tit  fontweight_500 colorblack
+                                        
+                                        mobile_fontsize_14 mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                                        tablet_fontsize_14 tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                                        pc_fontsize_17 pc_height_27 pc_width_400 pc_textoverflow_prevent_singlerow
+                                        ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                        <p class="subtit fontweight_500 colorgray
+                                        mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                                        tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                                        pc_margintop_5 pc_fontsize_16 pc_height_26
+                                        ">오프라인</p>
+                                    </div>
+                                    <img src="img/play-button-color.svg" class="display_block
+                                    mobile_width_38 mobile_height_38  mobile_marginleft_40
+                                    tablet_width_38 tablet_height_38  tablet_marginleft_40
+                                    pc_width_50 pc_height_50 pc_marginleft_120
+
+                                    "/>
+                                    <span class="display_block bgcolor_gray
+                                    mobile_width_320  mobile_height_1  mobile_margintop_29
+                                    tablet_width_320  tablet_height_1  tablet_margintop_29
+                                    pc_width_100_percent pc_height_1 pc_margintop_29
+                                    "></span>
+                                </div>
+                                
+                                <img class="display_block 
+                                mobile_height_39 mobile_width_320  mobile_margintop_28 mobile_marginbottom_34 mobile_marginleft_20
+                                tablet_height_39 tablet_width_320  tablet_margintop_28 tablet_marginbottom_34 tablet_marginleft_20
+                                pc_height_55 pc_width_451 pc_margintop_28 pc_marginbottom_34 pc_marginhorizontal_auto
+
+                                " src="img/buydetailview.svg"/>
+                            </div>
+                        </ul>
+                        <ul class="row_content colorblack
+                        mobile_flex_horizontal_spaceBetween mobile_paddingtop_18
+                        tablet_flex_horizontal_spaceBetween tablet_paddingtop_18
+                        pc_flex_horizontal_Center pc_paddingtop_18
+
+                        ">
+                            <li class="item 
+                            mobile_fontsize_10  mobile_height_18  mobile_paddingleft_10  mobile_width_95  mobile_textoverflow_prevent_singlerow  mobile_marginbottom_22
+                            tablet_fontsize_10  tablet_height_18  tablet_paddingleft_10  tablet_width_95  tablet_textoverflow_prevent_singlerow  tablet_marginbottom_22
+                            pc_fontsize_14 pc_height_25 pc_paddingleft_10 pc_textoverflow_prevent_singlerow pc_marginbottom_22
+                            ">20156456459789</li>
+                            <li class="item 
+                            mobile_fontsize_10   mobile_height_15  mobile_paddingleft_28  mobile_paddingright_25  mobile_marginbottom_22
+                            tablet_fontsize_10   tablet_height_15  tablet_paddingleft_28  tablet_paddingright_25  tablet_marginbottom_22
+                            pc_fontsize_15 pc_height_25 pc_paddingleft_100 pc_paddingright_80 pc_marginbottom_22
+                            ">2020.01.29</li>
+                            <li class="buydetailviewmore item ozicborderstyle_blue oziccolor_blue  borderstyle_solid
+                            mobile_fontsize_10 mobile_height_28 mobile_width_110 mobile_flex_horizontal_Center mobile_bordertop_2 mobile_borderbottom_2 mobile_borderright_2 mobile_borderleft_2 mobile_marginright_10 mobile_marginbottom_22 mobile_borderradiustopleft_14 mobile_borderradiustopright_14 mobile_borderradiusbottomleft_14 mobile_borderradiusbottomright_14 mobile_textoverflow_prevent_singlerow  
+                            
+                            tablet_fontsize_10 tablet_height_28 tablet_width_110 tablet_flex_horizontal_Center tablet_bordertop_2 tablet_borderbottom_2 tablet_borderright_2 tablet_borderleft_2 tablet_marginright_10 tablet_marginbottom_22 tablet_borderradiustopleft_14  tablet_borderradiustopright_14 tablet_borderradiusbottomleft_14 tablet_borderradiusbottomright_14 tablet_textoverflow_prevent_singlerow  
+
+                            pc_fontsize_13 pc_height_46 pc_width_150 pc_flex_horizontal_Center pc_bordertop_2 pc_borderbottom_2 pc_borderleft_2 pc_borderright_2 pc_marginright_10 pc_marginbottom_22 pc_borderradiustopleft_23 pc_borderradiustopright_23 pc_borderradiusbottomleft_23 pc_borderradiusbottomright_23 pc_textoverflow_prevent_singlerow
+                            javascript_trigger "  
+                            
+                            triggerType="SlideToggle|txtToggle|iconToggle" 
+                            triggerdata='{"SlideToggle":{"groupid":"","targetindex":"1"},"txtToggle":{"groupid":"","targetindex":"1"},"iconToggle":{"groupid":"","targetindex":"1"}}'>
+                                포함 강의 3개 <span targetindex="javascript_txtToggleTarget_1" actionType="txtToggle" targetdata='{"txtToggle":{"txtdata":"닫기,열기","effect":"","groupid":""}}'
+                                >닫기</span>  <img src="img/bluearrowsmall.svg" class="display_block
+                                mobile_width_8 mobile_height_5
+                                tablet_width_8 tablet_height_5
+                                pc_width_10 pc_height_7
+
+                                " targetindex="javascript_iconToggleTarget_1" actionType="iconToggle" targetdata='{"iconToggle":{"txtdata":"","effect":"rotate180_animation","groupid":""}}' toggle_status="opened"/>
+                    
+                            </li>
+                            <div class="buyhistory_detail bgcolor_graywhite
+                            mobile_width_100_percent
+                            tablet_width_100_percent
+                            pc_width_100_percent 
+                            "  targetindex="javascript_SlideToggleTarget_1" targetdata='{"SlideToggle":{"txtdata":"","effect":"","groupid":""}}' toggle_status="opened" actionType="SlideToggle">
+                                <div class="history_item  position_relative_normal
+                                mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+                                tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29
+                                pc_flex_horizontal_flexStart pc_paddingleft_40 pc_paddingright_40 pc_paddingtop_29
+
+                                ">
+                                    <div class="itemRadius audioitem position_relative_normal
+                                    mobile_width_50 mobile_height_50 mobile_marginright_11
+                                    tablet_width_50 tablet_height_50 tablet_marginright_11
+                                    pc_width_80 pc_height_80 pc_marginright_22
+                                    ">
+                                        <span class="borderradiusDeco display_block position_absolute
+
+                                        mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                        tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                        pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_5 pc_borderbottom_5 pc_borderleft_5 pc_borderright_5
+                                        "></span>
+                                        <img src="img/Image3@3x.png" class="display_block  position_absolute img_background_cover_center
+                                        mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25 
+                                        tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                        pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40
+                                        "/>
+                                    </div>
+                                    <div class="info_right">
+                                        <p class="tit  fontweight_500 colorblack
+                                        
+                                        mobile_fontsize_14 mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                                        tablet_fontsize_14 tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                                        pc_fontsize_17 pc_height_27 pc_width_400 pc_textoverflow_prevent_singlerow
+                                        ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                        <p class="subtit fontweight_500 colorgray
+                                        mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                                        tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                                        pc_margintop_5 pc_fontsize_16 pc_height_26
+                                        ">오프라인</p>
+                                    </div>
+                                    <img src="img/play-button-color.svg" class="display_block
+                                    mobile_width_38 mobile_height_38  mobile_marginleft_40
+                                    tablet_width_38 tablet_height_38  tablet_marginleft_40
+                                    pc_width_50 pc_height_50 pc_marginleft_120
+
+                                    "/>
+                                    <span class="display_block bgcolor_gray
+                                    mobile_width_320  mobile_height_1  mobile_margintop_29
+                                    tablet_width_320  tablet_height_1  tablet_margintop_29
+                                    pc_width_100_percent pc_height_1 pc_margintop_29
+                                    "></span>
+                                </div>
+                                <div class="history_item  position_relative_normal
+                                mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+                                tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29
+                                pc_flex_horizontal_flexStart pc_paddingleft_40 pc_paddingright_40 pc_paddingtop_29
+
+                                ">
+                                    <div class="itemRadius audioitem position_relative_normal
+                                    mobile_width_50 mobile_height_50 mobile_marginright_11
+                                    tablet_width_50 tablet_height_50 tablet_marginright_11
+                                    pc_width_80 pc_height_80 pc_marginright_22
+                                    ">
+                                        <span class="borderradiusDeco display_block position_absolute
+
+                                        mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                        tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                        pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_5 pc_borderbottom_5 pc_borderleft_5 pc_borderright_5
+                                        "></span>
+                                        <img src="img/Image3@3x.png" class="display_block  position_absolute img_background_cover_center
+                                        mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25 
+                                        tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                        pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40
+                                        "/>
+                                    </div>
+                                    <div class="info_right">
+                                        <p class="tit  fontweight_500 colorblack
+                                        
+                                        mobile_fontsize_14 mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                                        tablet_fontsize_14 tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                                        pc_fontsize_17 pc_height_27 pc_width_400 pc_textoverflow_prevent_singlerow
+                                        ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                        <p class="subtit fontweight_500 colorgray
+                                        mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                                        tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                                        pc_margintop_5 pc_fontsize_16 pc_height_26
+                                        ">오프라인</p>
+                                    </div>
+                                    <img src="img/play-button-color.svg" class="display_block
+                                    mobile_width_38 mobile_height_38  mobile_marginleft_40
+                                    tablet_width_38 tablet_height_38  tablet_marginleft_40
+                                    pc_width_50 pc_height_50 pc_marginleft_120
+
+                                    "/>
+                                    <span class="display_block bgcolor_gray
+                                    mobile_width_320  mobile_height_1  mobile_margintop_29
+                                    tablet_width_320  tablet_height_1  tablet_margintop_29
+                                    pc_width_100_percent pc_height_1 pc_margintop_29
+                                    "></span>
+                                </div>
+                                <div class="history_item  position_relative_normal
+                                mobile_flex_horizontal_flexStart mobile_paddingleft_20 mobile_paddingright_20 mobile_paddingtop_29
+                                tablet_flex_horizontal_flexStart tablet_paddingleft_20 tablet_paddingright_20 tablet_paddingtop_29
+                                pc_flex_horizontal_flexStart pc_paddingleft_40 pc_paddingright_40 pc_paddingtop_29
+
+                                ">
+                                    <div class="itemRadius audioitem position_relative_normal
+                                    mobile_width_50 mobile_height_50 mobile_marginright_11
+                                    tablet_width_50 tablet_height_50 tablet_marginright_11
+                                    pc_width_80 pc_height_80 pc_marginright_22
+                                    ">
+                                        <span class="borderradiusDeco display_block position_absolute
+
+                                        mobile_width_50 mobile_height_50  mobile_positionleft_0 mobile_positionright_0 mobile_bordertop_4 mobile_borderbottom_4 mobile_borderleft_4 mobile_borderright_4
+                                        tablet_width_50 tablet_height_50  tablet_positionleft_0 tablet_positionright_0 tablet_bordertop_4 tablet_borderbottom_4 tablet_borderleft_4 tablet_borderright_4
+                                        pc_width_80 pc_height_80 pc_positionleft_0 pc_positionright_0 pc_bordertop_5 pc_borderbottom_5 pc_borderleft_5 pc_borderright_5
+                                        "></span>
+                                        <img src="img/Image3@3x.png" class="display_block  position_absolute img_background_cover_center
+                                        mobile_width_50 mobile_height_50  mobile_borderradiustopleft_25 mobile_borderradiustopright_25 mobile_borderradiusbottomleft_25 mobile_borderradiusbottomright_25 
+                                        tablet_width_50 tablet_height_50  tablet_borderradiustopleft_25 tablet_borderradiustopright_25 tablet_borderradiusbottomleft_25 tablet_borderradiusbottomright_25
+                                        pc_width_80 pc_height_80 pc_borderradiustopleft_40 pc_borderradiustopright_40 pc_borderradiusbottomleft_40 pc_borderradiusbottomright_40
+                                        "/>
+                                    </div>
+                                    <div class="info_right">
+                                        <p class="tit  fontweight_500 colorblack
+                                        
+                                        mobile_fontsize_14 mobile_height_18 mobile_width_160 mobile_textoverflow_prevent_singlerow
+                                        tablet_fontsize_14 tablet_height_18 tablet_width_160 tablet_textoverflow_prevent_singlerow
+                                        pc_fontsize_17 pc_height_27 pc_width_400 pc_textoverflow_prevent_singlerow
+                                        ">여기에 직무 강의 제목을 적어주세요 하하하하하하하하하핳하하하하핳하하하핳하하핳하하하하하하핳</p>
+                                        <p class="subtit fontweight_500 colorgray
+                                        mobile_margintop_3 mobile_fontsize_12  mobile_height_18
+                                        tablet_margintop_3 tablet_fontsize_12  tablet_height_18
+                                        pc_margintop_5 pc_fontsize_16 pc_height_26
+                                        ">오프라인</p>
+                                    </div>
+                                    <img src="img/play-button-color.svg" class="display_block
+                                    mobile_width_38 mobile_height_38  mobile_marginleft_40
+                                    tablet_width_38 tablet_height_38  tablet_marginleft_40
+                                    pc_width_50 pc_height_50 pc_marginleft_120
+
+                                    "/>
+                                    <span class="display_block bgcolor_gray
+                                    mobile_width_320  mobile_height_1  mobile_margintop_29
+                                    tablet_width_320  tablet_height_1  tablet_margintop_29
+                                    pc_width_100_percent pc_height_1 pc_margintop_29
+                                    "></span>
+                                </div>
+                                
+                                <img class="display_block 
+                                mobile_height_39 mobile_width_320  mobile_margintop_28 mobile_marginbottom_34 mobile_marginleft_20
+                                tablet_height_39 tablet_width_320  tablet_margintop_28 tablet_marginbottom_34 tablet_marginleft_20
+                                pc_height_55 pc_width_451 pc_margintop_28 pc_marginbottom_34 pc_marginhorizontal_auto
+
+                                " src="img/buydetailview.svg"/>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!--하단부 오디오제어 detailMedium-->
+        <div class="player_detail position_relative_normal
+        mobile_paddingleft_22 mobile_paddingtop_22 mobile_paddingright_22 mobile_paddingbottom_22 mobile_bordertop_1
+        tablet_paddingleft_22 tablet_paddingtop_22 tablet_paddingright_22 tablet_paddingbottom_22 tablet_bordertop_1
+        pc_paddingleft_22 pc_paddingtop_28 pc_paddingright_22 pc_paddingbottom_28 pc_bordertop_1
+        " style="display:block"
+        
+        targetindex="javascript_SlideToggleTarget_58,javascript_invisibleimmeTarget_58"
+        actionType="SlideToggle|invisibleimme"
+        targetdata='{"SlideToggle":{"txtdata":"","groupid":"","effect":""},"invisibleimme":{"txtdata":"","groupid":"","effect":""}}'
+
+        toggle_status="opened"
+        >
+            <div class="player_detail_bar display_block
+            mobile_height_13  mobile_paddingbottom_4 mobile_paddingtop_4
+            tablet_height_13  tablet_paddingbottom_4 tablet_paddingtop_4
+            pc_height_18 pc_paddingbottom_6 pc_paddingtop_6
+            ">
+                <div class="player_base_bar display_block bgcolor_gray
+                mobile_height_5  mobile_borderradiustopleft_2 mobile_borderradiustopright_2 mobile_borderradiusbottomleft_2 mobile_borderradiusbottomright_2
+                tablet_height_5  tablet_borderradiustopleft_2 tablet_borderradiustopright_2 tablet_borderradiusbottomleft_2 tablet_borderradiusbottomright_2
+                pc_height_6 pc_borderradiustopleft_4 pc_borderradiustopright_4 pc_borderradiusbottomleft_4 pc_borderradiusbottomright_4
+
+                ">
+                    <div class="progress_bar position_relative_normal  display_block  bgcolorred
+                    mobile_height_5 mobile_borderradiustopleft_2 mobile_borderradiustopright_2 mobile_borderradiusbottomleft_2 mobile_borderradiusbottomright_2
+                    tablet_height_5  tablet_borderradiustopleft_2  tablet_borderradiustopright_2  tablet_borderradiusbottomleft_2  tablet_borderradiusbottomright_2
+                    pc_height_6   pc_borderradiustopleft_4   pc_borderradiustopright_4   pc_borderradiusbottomleft_4   pc_borderradiusbottomright_4
+                    ">
+                        <span class="barEdge position_absolute
+                        mobile_width_13 mobile_height_13  mobile_positionright_0 mobile_positiontop_0
+                        tablet_width_13 tablet_height_13  tablet_positionright_0 tablet_positiontop_0
+                        pc_width_18 pc_height_18 pc_positionright_0 pc_positiontop_0  pc_borderradiustopleft_9   pc_borderradiustopright_9   pc_borderradiusbottomleft_9   pc_borderradiusbottomright_9
+                        "></span>
+                    </div>
+                </div>
+            </div>
+            <p class="timestatus 
+            mobile_margintop_5 mobile_flex_horizontal_spaceBetween
+            tablet_margintop_5  tablet_flex_horizontal_spaceBetween
+            pc_margintop_8 pc_flex_horizontal_spaceBetween
+
+            ">
+                <span class="nowtime fontweight_500 
+                mobile_fontsize_8 mobile_height_12
+                tablet_fontsize_8 tablet_height_12
+                pc_fontsize_13 pc_height_20
+
+                ">02:39</span>
+                <span class="totaltime fontweight_500 
+                mobile_fontsize_8 mobile_height_12
+                tablet_fontsize_8 tablet_height_12
+                pc_fontsize_13 pc_height_20
+                ">13:15</span>
+            </p>
+
+            <div class="player_control 
+            mobile_margintop_35 mobile_flex_horizontal_Center mobile_height_40
+            tablet_margintop_35 tablet_flex_horizontal_Center tablet_height_40
+            pc_margintop_35 pc_flex_horizontal_Center pc_height_60
+
+            ">
+                <img src="img/prevcourse.svg" class="prev_course display_block
+                mobile_width_15 mobile_height_14  mobile_marginright_39
+                tablet_width_15 tablet_height_14  tablet_marginright_39
+                pc_width_25 pc_height_24 pc_marginright_39
+                "/>
+                <img src="img/prevtime_.svg" class="prev_time display_block
+                mobile_width_30  mobile_height_30   mobile_marginright_45
+                tablet_width_30  tablet_height_30   tablet_marginright_45
+                pc_width_40 pc_height_40 pc_marginright_45
+
+                "/>
+                <img src="img/play-full.svg" class="playbig display_block
+                mobile_width_35 mobile_height_40  mobile_marginright_34
+                tablet_width_35 tablet_height_40  tablet_marginright_34
+                pc_width_49 pc_height_49 pc_marginright_34
+
+                "/>
+                <img src="img/nexttime.svg" class="next_time display_block 
+                mobile_width_30 mobile_height_30  mobile_marginright_39
+                tablet_width_30 tablet_height_30  tablet_marginright_39
+                pc_width_40 pc_height_40 pc_marginright_39
+                "/>
+                <img src="img/nextcourse.svg" class="next_course display_block 
+                    mobile_width_15 mobile_height_14
+                tablet_width_15  tablet_height_14
+                pc_width_25 pc_height_24
+                    "/>
+            </div>
+
+            <div class="player_extra position_relative_normal
+            mobile_margintop_38 mobile_flex_horizontal_spaceBetween 
+            tablet_margintop_38 tablet_flex_horizontal_spaceBetween 
+            pc_margintop_38 pc_flex_horizontal_spaceBetween
+
+            ">
+                <button class="courseinfo fontweight_500
+                mobile_width_96 mobile_height_40 mobile_borderradiustopleft_20 mobile_borderradiustopright_20 mobile_borderradiusbottomleft_20 mobile_borderradiusbottomright_20 mobile_bordertop_2 mobile_borderbottom_2 mobile_borderleft_2 mobile_borderright_2 mobile_fontsize_12 
+                tablet_width_96 tablet_height_40 tablet_borderradiustopleft_20 tablet_borderradiustopright_20 tablet_borderradiusbottomleft_20 tablet_borderradiusbottomright_20 tablet_bordertop_2 tablet_borderbottom_2 tablet_borderleft_2 tablet_borderright_2 tablet_fontsize_12 
+                pc_width_120 pc_height_50 pc_borderradiustopleft_25 pc_borderradiustopright_25 pc_borderradiusbottomleft_25 pc_borderradiusbottomright_25 pc_bordertop_2 pc_borderbottom_2 pc_borderleft_2 pc_borderright_2 pc_fontsize_15 
+                javascript_trigger
+                "
+                
+                triggerdata='{"SlideToggle":{"groupid":"","targetindex":"77"},"iconToggle":{"groupid":"","targetindex":"77"}}'
+                
+            
+                >강의정보</button>
+                <button class="speedcontrol fontweight_500
+                mobile_width_70 mobile_height_40 mobile_borderradiustopleft_20 mobile_borderradiustopright_20 mobile_borderradiusbottomleft_20 mobile_borderradiusbottomright_20 mobile_bordertop_2 mobile_borderbottom_2 mobile_borderleft_2 mobile_borderright_2 mobile_fontsize_12 
+                tablet_width_70 tablet_height_40 tablet_borderradiustopleft_20 tablet_borderradiustopright_20 tablet_borderradiusbottomleft_20 tablet_borderradiusbottomright_20 tablet_bordertop_2 tablet_borderbottom_2 tablet_borderleft_2 tablet_borderright_2 tablet_fontsize_12
+                pc_width_86 pc_height_50 pc_borderradiustopleft_25 pc_borderradiustopright_25 pc_borderradiusbottomleft_25 pc_borderradiusbottomright_25 pc_bordertop_2 pc_borderbottom_2 pc_borderleft_2 pc_borderright_2 pc_fontsize_15
+                javascript_trigger
+                "
+                triggerdata='{"SlideToggle":{"groupid":"","targetindex":"80"}}'
+
+                >1.0x</button>
+
+                <ul class="select_speedList position_absolute zindex550
+                mobile_positionbottom_55 mobile_positionright_0 mobile_width_165 mobile_borderradiustopleft_10 mobile_borderradiustopright_10 mobile_borderradiusbottomleft_10 mobile_borderradiusbottomright_10 mobile_bordertop_1 mobile_borderbottom_1 mobile_borderright_1 mobile_borderleft_1
+                tablet_positionbottom_55 tablet_positionright_0 tablet_width_165 tablet_borderradiustopleft_10 tablet_borderradiustopright_10 tablet_borderradiusbottomleft_10 tablet_borderradiusbottomright_10 tablet_bordertop_1 tablet_borderbottom_1 tablet_borderright_1 tablet_borderleft_1
+                pc_positionbottom_75 pc_positionright_0 pc_width_225 pc_borderradiustopleft_10 pc_borderradiustopright_10 pc_borderradiusbottomleft_10 pc_borderradiusbottomright_10 pc_bordertop_1 pc_borderbottom_1 pc_borderright_1 pc_borderleft_1
+                "
+                
+                targetindex="javascript_SlideToggleTarget_80"
+                actionType="SlideToggle"
+                targetdata='{"SlideToggle":{"txtdata":"","groupid":"","effect":""}}'
+                toggle_status="closed"
+                style="display:none;"
+                >
+                    <li class=" fontweight_500
+                        mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_20 mobile_paddingbottom_10
+                        tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_20  tablet_paddingbottom_10
+                        pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_24 pc_paddingbottom_14
+
+                        ">
+                        <a href="#">0.25x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_10
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_10
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_14">
+                        <a href="#">0.5x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_10
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_10
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_14">
+                        <a href="#">0.75x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_10
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_10
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_14 active">
+                        <a href="#">1.0x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_10
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_10
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_14">
+                        <a href="#">1.25x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_10
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_10
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_14">
+                        <a href="#">1.5x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_10
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_10
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_14">
+                        <a href="#">1.75x</a>
+                    </li>
+                    <li class="fontweight_500 
+                    mobile_fontsize_12 mobile_paddingleft_27 mobile_paddingtop_10 mobile_paddingbottom_20
+                    tablet_fontsize_12  tablet_paddingleft_27  tablet_paddingtop_10  tablet_paddingbottom_20
+                    pc_fontsize_15 pc_paddingleft_27 pc_paddingtop_14 pc_paddingbottom_24">
+                        <a href="#">2.0x</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--오디오 강의정보-->
+            <div class="audiodetail position_absolute zindex50 bgcolor_graywhite
+                mobile_paddingtop_47  mobile_paddingleft_36  mobile_paddingright_36  mobile_paddingbottom_15  mobile_positionbottom_100percent mobile_positionleft_0  mobile_borderradiustopleft_10 mobile_borderradiustopright_10 mobile_borderradiusbottomleft_10 mobile_borderradiusbottomright_10
+                tablet_paddingtop_47  tablet_paddingleft_36  tablet_paddingright_36 tablet_paddingbottom_15  tablet_positionbottom_100percent tablet_positionleft_0  tablet_borderradiustopleft_10 tablet_borderradiustopright_10 tablet_borderradiusbottomleft_10 tablet_borderradiusbottomright_10
+            pc_paddingtop_67 pc_paddingleft_36 pc_paddingright_36 pc_paddingbottom_35 pc_width_100_percent pc_positionleft_0  pc_positionbottom_100percent pc_borderradiustopleft_10 pc_borderradiustopright_10 pc_borderradiusbottomleft_10 pc_borderradiusbottomright_10 
+                
+                " style="display:none"
+            
+            targetdata='{"SlideToggle":{"txtdata":"","effect":"","groupid":""}}'
+            actionType="SlideToggle"
+            targetindex="javascript_SlideToggleTarget_77"
+            toggle_status='closed'
+            >
+                <div class="decoline position_absolute bgcolor_graywhite
+                mobile_positiontop_0 mobile_positionleft_0 mobile_positionright_0  mobile_width_60 mobile_height_6 mobile_borderradiustopleft_3 mobile_borderradiustopright_3 mobile_borderradiusbottomleft_3 mobile_borderradiusbottomright_3
+                mobile_marginhorizontal_auto 
+                tablet_positiontop_0 tablet_positionleft_0 tablet_positionright_0  tablet_width_60 tablet_height_6 tablet_borderradiustopleft_3 tablet_borderradiustopright_3 tablet_borderradiusbottomleft_3 tablet_borderradiusbottomright_3
+                tablet_marginhorizontal_auto
+
+                pc_positiontop_0 pc_positionleft_0 pc_positionright_0 pc_width_60 pc_height_6 pc_borderradiustopleft_3 pc_borderradiustopright_3 pc_borderradiusbottomright_3 pc_borderradiusbottomleft_3 pc_marginhorizontal_auto
+                " style="transform:translateY(-400%)"></div>
+
+                <img src="img/leftslide.png" class="position_absolute
+                mobile_width_40 mobile_height_40  mobile_positiontop_108 mobile_positionleft_14
+                tablet_width_40 tablet_height_40  tablet_positiontop_108 tablet_positionleft_14
+                pc_width_60 pc_height_60 pc_positiontop_128 pc_positionleft_14
+                "/>
+                <img src="img/rightslide.png" class="position_absolute
+                mobile_width_40 mobile_height_40  mobile_positiontop_108 mobile_positionright_14
+                tablet_width_40 tablet_height_40  tablet_positiontop_108 tablet_positionright_14
+                pc_width_60 pc_height_60 pc_positiontop_128 pc_positionright_14
+
+                "/>
+
+                <div class="listcontent 
+                mobile_Xoverflow_horizontal_list_scrollvisible mobile_height_162
+                tablet_Xoverflow_horizontal_list_scrollvisible  tablet_height_162
+                pc_Xoverflow_horizontal_list_scrollvisible pc_height_203
+
+                ">
+                    <div class="item position_relative_normal
+                    mobile_width_288 mobile_height_162 
+                    tablet_width_288 tablet_height_162
+                    pc_width_360 pc_height_203 pc_marginright_12
+
+                    ">
+                        <img class="img_background_cover_center" src="img/image1@3x.png"/>
+                    </div>
+                    <div class="item position_relative_normal 
+                    mobile_width_288 mobile_height_162 
+                    tablet_width_288 tablet_height_162
+                    pc_width_360 pc_height_203 pc_marginright_12 ">
+                        <img class="img_background_cover_center" src="img/image1@3x.png"/>
+                    </div>
+                    <div class="item position_relative_normal 
+                    mobile_width_288 mobile_height_162 
+                    tablet_width_288 tablet_height_162
+                    pc_width_360 pc_height_203 pc_marginright_12">
+                        <img class="img_background_cover_center" src="img/image1@3x.png"/>
+                    </div>
+                    <div class="item position_relative_normal 
+                    mobile_width_288 mobile_height_162 
+                    tablet_width_288 tablet_height_162
+                    pc_width_360 pc_height_203 pc_marginright_12">
+                        <img class="img_background_cover_center" src="img/image1@3x.png"/>
+                    </div>
+                    <div class="item position_relative_normal 
+                    mobile_width_288 mobile_height_162 
+                    tablet_width_288 tablet_height_162
+                    pc_width_360 pc_height_203 pc_marginright_12 ">
+                        <img class="img_background_cover_center" src="img/image1@3x.png"/>
+                    </div>
+                </div>
+                <p class="audio_title fontweight_900 
+                mobile_margintop_35 mobile_fontsize_16  mobile_height_24 mobile_width_200 mobile_textoverflow_prevent_singlerow
+                tablet_margintop_35 tablet_fontsize_16  tablet_height_24 tablet_width_200 tablet_textoverflow_prevent_singlerow
+                pc_margintop_35  pc_fontsize_20  pc_height_28  pc_width_400  pc_textoverflow_prevent_singlerow pc_textalignCenter pc_marginhorizontal_auto
+
+                ">
+                    1강 강의 제목을 적어요 ggggggggggggggggggggㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎㅎ
+                </p>
+                <p class="audio_subtitle fontweight_500
+                    mobile_margintop_4 mobile_fontsize_12
+                    tablet_margintop_4 tablet_fontsize_12
+                    pc_margintop_4 pc_fontsize_17 pc_textalignCenter
+
+                    ">
+                    위 강의가 속한 강의 제목
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="commonui_javascript.js"></script>
+   
+
+</body>
+</html>
